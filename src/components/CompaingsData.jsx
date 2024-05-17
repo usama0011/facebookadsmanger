@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const CompaingsData = () => {
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
@@ -868,7 +868,9 @@ const CompaingsData = () => {
                                                                                                                     <div class="_62h_">
                                                                                                                         <div class="_62i0">
                                                                                                                             <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
-                                                                                                                                <div data-visualcompletion="ignore" class="xt0psk2"></div><span class=" " data-tracked="true" data-clickable="1"><a class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#"><span class="_3dfi _3dfj">[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/</span></a></span>
+                                                                                                                                <div data-visualcompletion="ignore" class="xt0psk2"></div><span class=" " data-tracked="true" data-clickable="1"><a class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#"><span class="_3dfi _3dfj">
+                                                                                                                                    <Link to="/editcampaing">[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/</Link>
+                                                                                                                                </span></a></span>
                                                                                                                             </div>
                                                                                                                             <div data-visualcompletion="ignore" class=""></div>
                                                                                                                         </div>
