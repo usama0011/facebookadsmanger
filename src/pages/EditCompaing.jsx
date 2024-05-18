@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/EditComaping.css'
+import { Link } from 'react-router-dom'
 const EditCompaing = () => {
     return (
         <div>
@@ -10,17 +11,19 @@ const EditCompaing = () => {
                             <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
                         </div>
                     </div>
-                    <div id="INSIGHTS_DRAWER_tip"><span>
-                        <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
-                            <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0">
-                                <div class="xbsr9hj">
-                                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                                        <div class="xtwfq29 style-pvA3C" id="style-pvA3C"></div>
+                    <Link to="/editmainchart">
+                        <div id="INSIGHTS_DRAWER_tip"><span>
+                            <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
+                                <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0">
+                                    <div class="xbsr9hj">
+                                        <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                                            <div class="xtwfq29 style-pvA3C" id="style-pvA3C"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </span></div>
                         </span></div>
-                    </span></div>
+                    </Link>
                     <div id="EDITOR_DRAWER_tip">
                         <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
                             <div aria-disabled="false" aria-label="Edit (Ctrl+U)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf" data-pitloot-persistonclick="false" role="button" tabindex="0">
@@ -152,11 +155,13 @@ const EditCompaing = () => {
                                                         </g>
                                                     </g>
                                                 </svg></span>
-                                                    <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
-                                                        <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                    <Link to="/editcompaingtwo">
+                                                        <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
+                                                            <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
+                                                                <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
                                                         <div class="x1lliihq">
                                                             <div class="x3nfvp2 x193iq5w xxymvpz" role="none">

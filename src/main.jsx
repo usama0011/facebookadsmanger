@@ -11,6 +11,7 @@ import App from "./App";
 import EditCompaing from "./pages/EditCompaing";
 import EditCompaingTwo from "./pages/EditCompaingTwo";
 import EditCompaingThree from "./pages/EditCompaingThree";
+import EditChartMain from "./pages/EditChartMain";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/editcampaingthree",
     element: <EditCompaingThree />
+  },
+  {
+    path: "/editmainchart",
+    element: <EditChartMain />
   },
 
 ]);
