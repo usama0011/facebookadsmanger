@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import EditCompaing from "./pages/EditCompaing";
+import EditCompaingTwo from "./pages/EditCompaingTwo";
+import EditCompaingThree from "./pages/EditCompaingThree";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/editcampaing",
     element: <EditCompaing />
+  },
+  {
+    path: "/editcampaingtwo",
+    element: <EditCompaingTwo />
+  },
+  {
+    path: "/editcampaingthree",
+    element: <EditCompaingThree />
   },
 
 ]);
