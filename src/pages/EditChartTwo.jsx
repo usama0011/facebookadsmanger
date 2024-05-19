@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/EditChartTwo.css'
+import { Link } from 'react-router-dom'
 const EditChartTwo = () => {
     return (
         <div>
@@ -199,7 +200,13 @@ const EditChartTwo = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
+
+                                                                <Link style={{ textDecoration: 'unset', color: "unset" }} to="/editmainchartthree">
+                                                                    <span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span>
+                                                                </Link>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
