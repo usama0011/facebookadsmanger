@@ -12,6 +12,9 @@ import EditCompaing from "./pages/EditCompaing";
 import EditCompaingTwo from "./pages/EditCompaingTwo";
 import EditCompaingThree from "./pages/EditCompaingThree";
 import EditChartMain from "./pages/EditChartMain";
+import EditChartTwo from "./pages/EditChartTwo";
+import EditChartThree from "./pages/EditChartThree";
+import PaymentPage from "./pages/PaymentPage";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +36,18 @@ const router = createBrowserRouter([
   {
     path: "/editmainchart",
     element: <EditChartMain />
+  },
+  {
+    path: "/editmaincharttwo",
+    element: <EditChartTwo />
+  },
+  {
+    path: "/editmainchartthree",
+    element: <EditChartThree />
+  },
+  {
+    path: "/payment",
+    element: <PaymentPage />
   },
 
 ]);

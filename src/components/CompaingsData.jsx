@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 const CompaingsData = () => {
+    const [mydata, setMyData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const mylistdata = await axios.get("https://jsonplaceholder.typicode.com/posts");
+                setMyData(mylistdata.data);
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        fetchData()
+    }, [])
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
             <div class="_2utz style-Seeed" id="style-Seeed">
@@ -815,45 +828,48 @@ const CompaingsData = () => {
                                                                                 </div>
 
                                                                                 <div class="_219p style-cT1M9" id="style-cT1M9">
-                                                                                    <div class="_1gda _2djg style-JEZF4" id="style-JEZF4">
-                                                                                        <div class="_1gd4 _4li _52no  _5a1o _5a1n _3c7k style-7vkFo" role="presentation" id="style-7vkFo">
-                                                                                            <div class="_1gd5">
-                                                                                                <div class="_3pzk style-fR5Ve" id="style-fR5Ve">
-                                                                                                    <div class="_3pzj style-kz7i4" id="style-kz7i4">
-                                                                                                        <div class="_4lg0 _4lg6 _4h2q _4h2m style-eWiLw" id="style-eWiLw">
-                                                                                                            <div class="_1b33 _1xah">
-                                                                                                                <div class="x1rg5ohu x5yr21d">
-                                                                                                                    <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d"><span id="row-checkbox-0">
-                                                                                                                        <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                                                                                                                            <div class="x1n2onr6 x14atkfc">
-                                                                                                                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                                                                                                                    <div class=""></div><input aria-checked="false" aria-disabled="false" aria-label="" aria-describedby="js_29" aria-labelledby="js_2a" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_28" type="checkbox" />
-                                                                                                                                    <div class="x13dflua xnnyp6c x12w9bfk x78zum5 xg01cxk x1f85oc2 x6o7n8i">
-                                                                                                                                        <div class="x3nfvp2 x120ccyz x1qsmy5i" role="presentation"><svg height="16" viewBox="0 0 16 16" width="16">
-                                                                                                                                            <path d="M13.305 3.28L5.993 10.6l-3.31-3.306a1 1 0 00-1.415 1.414l4.013 4.012a.997.997 0 001.414 0l8.024-8.024a1 1 0 00-1.414-1.416z"></path>
-                                                                                                                                        </svg></div>
+
+                                                                                    {mydata?.map((item) => (
+                                                                                        <div class="_1gda _2djg style-JEZF4" id="style-JEZF4">
+                                                                                            <div class="_1gd4 _4li _52no  _5a1o _5a1n _3c7k style-7vkFo" role="presentation" id="style-7vkFo">
+                                                                                                <div class="_1gd5">
+                                                                                                    <div class="_3pzk style-fR5Ve" id="style-fR5Ve">
+                                                                                                        <div class="_3pzj style-kz7i4" id="style-kz7i4">
+                                                                                                            <div class="_4lg0 _4lg6 _4h2q _4h2m style-eWiLw" id="style-eWiLw">
+                                                                                                                <div class="_1b33 _1xah">
+                                                                                                                    <div class="x1rg5ohu x5yr21d">
+                                                                                                                        <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d"><span id="row-checkbox-0">
+                                                                                                                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                                                                                                                                <div class="x1n2onr6 x14atkfc">
+                                                                                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                                                                                                                        <div class=""></div><input aria-checked="false" aria-disabled="false" aria-label="" aria-describedby="js_29" aria-labelledby="js_2a" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_28" type="checkbox" />
+                                                                                                                                        <div class="x13dflua xnnyp6c x12w9bfk x78zum5 xg01cxk x1f85oc2 x6o7n8i">
+                                                                                                                                            <div class="x3nfvp2 x120ccyz x1qsmy5i" role="presentation"><svg height="16" viewBox="0 0 16 16" width="16">
+                                                                                                                                                <path d="M13.305 3.28L5.993 10.6l-3.31-3.306a1 1 0 00-1.415 1.414l4.013 4.012a.997.997 0 001.414 0l8.024-8.024a1 1 0 00-1.414-1.416z"></path>
+                                                                                                                                            </svg></div>
+                                                                                                                                        </div>
                                                                                                                                     </div>
+                                                                                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                                                                                                                                 </div>
-                                                                                                                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                                                                                                                             </div>
-                                                                                                                        </div>
-                                                                                                                    </span></div>
+                                                                                                                        </span></div>
+                                                                                                                    </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-FFYa3" id="style-FFYa3">
-                                                                                                            <div class="_1b33 _a524">
-                                                                                                                <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d">
-                                                                                                                    <div data-visualcompletion="ignore" class="">
-                                                                                                                        <div>
-                                                                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
-                                                                                                                                <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="true" aria-label="On/Off" role="switch" aria-describedby="js_2d" aria-labelledby="js_jg" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl" disabled="" id="js_2c" type="checkbox" value="true" checked="" />
-                                                                                                                                    <div class="x1n2onr6 xh8yej3">
-                                                                                                                                        <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
-                                                                                                                                            <div class="x1s85apg"></div>
-                                                                                                                                            <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x8xg6ae x1psfjxj"></div>
+                                                                                                            <div class="_4lg0 _4h2m style-FFYa3" id="style-FFYa3">
+                                                                                                                <div class="_1b33 _a524">
+                                                                                                                    <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d">
+                                                                                                                        <div data-visualcompletion="ignore" class="">
+                                                                                                                            <div>
+                                                                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                                                                                                                                    <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="true" aria-label="On/Off" role="switch" aria-describedby="js_2d" aria-labelledby="js_jg" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl" disabled="" id="js_2c" type="checkbox" value="true" checked="" />
+                                                                                                                                        <div class="x1n2onr6 xh8yej3">
+                                                                                                                                            <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                                                                                                                                                <div class="x1s85apg"></div>
+                                                                                                                                                <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x8xg6ae x1psfjxj"></div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                                                                                                                                         </div>
-                                                                                                                                        <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                                                                                                                                     </div>
                                                                                                                                 </div>
                                                                                                                             </div>
@@ -861,259 +877,118 @@ const CompaingsData = () => {
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-9TXMo" id="style-9TXMo">
-                                                                                                            <div class=" _1b33" id="js_2h">
-                                                                                                                <div class="_2czl">
-                                                                                                                    <div class="_62h_">
-                                                                                                                        <div class="_62i0">
-                                                                                                                            <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
-                                                                                                                                <div data-visualcompletion="ignore" class="xt0psk2"></div><span class=" " data-tracked="true" data-clickable="1"><a class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#"><span class="_3dfi _3dfj">
-                                                                                                                                    <Link to="/editcampaing">[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/</Link>
-                                                                                                                                </span></a></span>
+                                                                                                            <div class="_4lg0 _4h2m style-9TXMo" id="style-9TXMo">
+                                                                                                                <div class=" _1b33" id="js_2h">
+                                                                                                                    <div class="_2czl">
+                                                                                                                        <div class="_62h_">
+                                                                                                                            <div class="_62i0">
+                                                                                                                                <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
+                                                                                                                                    <div data-visualcompletion="ignore" class="xt0psk2"></div><span class=" " data-tracked="true" data-clickable="1"><a class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#"><span class="_3dfi _3dfj">
+                                                                                                                                        <Link to="/editcampaing">[05/11/2024] Promoting https://www.mdl02isk.com/3J67C/3S5BXL/</Link>
+                                                                                                                                    </span></a></span>
+
+                                                                                                                                </div>
+                                                                                                                                <div data-visualcompletion="ignore" class=""></div>
+                                                                                                                            </div>
+                                                                                                                            <div>
+                                                                                                                                {/* buttons */}
+                                                                                                                                <div style={{ display: "flex", alignItems: 'center', paddingTop: '4px' }} className='hidebuttons'>
+                                                                                                                                    <div style={{ marginRight: "10px" }}>View Charts</div>
+                                                                                                                                    <div style={{ marginRight: "10px" }}>Edit</div>
+                                                                                                                                    <div style={{ marginRight: "10px" }}>Pin</div>
+                                                                                                                                </div>
                                                                                                                             </div>
                                                                                                                             <div data-visualcompletion="ignore" class=""></div>
                                                                                                                         </div>
-                                                                                                                        <div>
-                                                                                                                            {/* buttons */}
-                                                                                                                        </div>
-                                                                                                                        <div data-visualcompletion="ignore" class=""></div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="_3pzk style-4YLoA" id="style-4YLoA">
-                                                                                                    <div class="_3pzj style-AglOc" id="style-AglOc">
-                                                                                                        <div class="_4lg0 _4h2m style-T9Wbq" id="style-T9Wbq">
-                                                                                                            <div class="_1b33"><span>
-                                                                                                                <div class="ellipsis"><span data-surface-wrapper="1" data-surface="/am/table/msg:AdsPERelayEnvironmentContainer" data-auto-logging-id="f1e5c23aa4d9818" id="style-cMzic" class="style-cMzic">
-                                                                                                                    <div class="clearfix _ikh">
-                                                                                                                        <div class="_4bl7">
-                                                                                                                            <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli x1yc453h x1y5rjcf xw4jnvo x1qx5ct2"><span class="xlid4zk x13tp074 x1qns1p2 xipx5yg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x9f619 x1lliihq x2lah0s xsmyaan x1kpxq89 xa05pge x16p5pjb x1anald3 xgi1ddd x1kr8tdy x1e7kja xqm4iv x19d7kov"></span></div>
-                                                                                                                        </div>
-                                                                                                                        <div class="_4bl9"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Active</span></div>
-                                                                                                                    </div>
-                                                                                                                </span></div>
-                                                                                                            </span></div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-yOCIw" id="style-yOCIw">
-                                                                                                            <div class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj">Highest volume</div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-npc5Q" id="style-npc5Q">
-                                                                                                            <div adaccount="[object Object]" adobjectid="120209876334360644" objecttype="CAMPAIGN_GROUP" class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>
-                                                                                                                            <div data-visualcompletion="ignore" class=""></div><span>Rs300.00</span>
-                                                                                                                        </span></div>
-                                                                                                                        <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
-                                                                                                                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">Daily</div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-m8EAW" id="style-m8EAW">
-                                                                                                            <div class=" _1b33 _e9h" column="attribution_setting" conversionannotations="" conversioncountsetting="" currencycode="PKR" defaultattributionwindows="" formattype="STRING" objecttype="CAMPAIGN_GROUP" primaryvalue="1d_view_7d_click" rowtype="summary" timezoneid="105" rowindex="0">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj" id="js_bl">7-day click or 1-day view</div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-yUOZ6" id="style-yUOZ6"><span><span>
-                                                                                                            <div class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>7</span></div>
-                                                                                                                        <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
-                                                                                                                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf"><span>Link Clicks</span></div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div data-visualcompletion="ignore" class=""></div>
-                                                                                                        </span></span></div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-YScpC" id="style-YScpC">
-                                                                                                            <div class=" _1b33 _e9h _1b33">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>1,015</span></div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-34nrj" id="style-34nrj">
-                                                                                                            <div class=" _1b33 _e9h _1b33">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>1,173</span></div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="_1gd6 _1gd8 style-Ri894" id="style-Ri894"></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="_1gda _2djg style-ohveF" id="style-ohveF">
-                                                                                        <div class="_1gd4 _4li _4lo _52nn  _5a1n _3c7k style-1XTkM" role="presentation" id="style-1XTkM">
-                                                                                            <div class="_1gd5">
-                                                                                                <div class="_3pzk style-AnNeW" id="style-AnNeW">
-                                                                                                    <div class="_3pzj style-hO6Ch" id="style-hO6Ch">
-                                                                                                        <div class="_4lg0 _4lg6 _4h2q _4h2m style-A282N" id="style-A282N">
-                                                                                                            <div class="_1b33 _1xah">
-                                                                                                                <div class="x1rg5ohu x5yr21d">
-                                                                                                                    <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d"><span id="ads_manager_dcp_side_panel_onboarding_selector_button_nux_id">
-                                                                                                                        <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                                                                                                                            <div class="x1n2onr6 x14atkfc">
-                                                                                                                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                                                                                                                    <div class=""></div><input aria-checked="false" aria-disabled="false" aria-label="" aria-describedby="js_2j" aria-labelledby="js_2k" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_2i" type="checkbox" />
-                                                                                                                                    <div class="x13dflua xnnyp6c x12w9bfk x78zum5 xg01cxk x1f85oc2 x6o7n8i">
-                                                                                                                                        <div class="x3nfvp2 x120ccyz x1qsmy5i" role="presentation"><svg height="16" viewBox="0 0 16 16" width="16">
-                                                                                                                                            <path d="M13.305 3.28L5.993 10.6l-3.31-3.306a1 1 0 00-1.415 1.414l4.013 4.012a.997.997 0 001.414 0l8.024-8.024a1 1 0 00-1.414-1.416z"></path>
-                                                                                                                                        </svg></div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                                                    <div class="_3pzk style-4YLoA" id="style-4YLoA">
+                                                                                                        <div class="_3pzj style-AglOc" id="style-AglOc">
+                                                                                                            <div class="_4lg0 _4h2m style-T9Wbq" id="style-T9Wbq">
+                                                                                                                <div class="_1b33"><span>
+                                                                                                                    <div class="ellipsis"><span data-surface-wrapper="1" data-surface="/am/table/msg:AdsPERelayEnvironmentContainer" data-auto-logging-id="f1e5c23aa4d9818" id="style-cMzic" class="style-cMzic">
+                                                                                                                        <div class="clearfix _ikh">
+                                                                                                                            <div class="_4bl7">
+                                                                                                                                <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli x1yc453h x1y5rjcf xw4jnvo x1qx5ct2"><span class="xlid4zk x13tp074 x1qns1p2 xipx5yg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x9f619 x1lliihq x2lah0s xsmyaan x1kpxq89 xa05pge x16p5pjb x1anald3 xgi1ddd x1kr8tdy x1e7kja xqm4iv x19d7kov"></span></div>
                                                                                                                             </div>
+                                                                                                                            <div class="_4bl9"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Active</span></div>
                                                                                                                         </div>
                                                                                                                     </span></div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-5Ltov" id="style-5Ltov">
-                                                                                                            <div class="_1b33 _a524">
-                                                                                                                <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d">
-                                                                                                                    <div data-visualcompletion="ignore" class="">
-                                                                                                                        <div>
-                                                                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
-                                                                                                                                <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="true" aria-label="On/Off" role="switch" aria-describedby="js_2n" aria-labelledby="js_jh" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl" disabled="" id="js_2m" type="checkbox" value="true" checked="" />
-                                                                                                                                    <div class="x1n2onr6 xh8yej3">
-                                                                                                                                        <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
-                                                                                                                                            <div class="x1s85apg"></div>
-                                                                                                                                            <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x8xg6ae x1psfjxj"></div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-BdrNa" id="style-BdrNa">
-                                                                                                            <div class=" _1b33" id="js_2r">
-                                                                                                                <div class="_2czl">
-                                                                                                                    <div class="_62h_">
-                                                                                                                        <div class="_62i0">
-                                                                                                                            <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="[05/06/2024] Promoting https://thesearchresults.xyz/cf/r/663238f421ab6d0012a8e0d1?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campa..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
-                                                                                                                                <div data-visualcompletion="ignore" class="xt0psk2"></div><span class=" " data-tracked="true" data-clickable="1"><a class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#"><span class="_3dfi _3dfj">[05/06/2024] Promoting https://thesearchresults.xyz/cf/r/663238f421ab6d0012a8e0d1?ad_id=&amp;adset_id=&amp;campa...</span></a></span>
-                                                                                                                            </div>
-                                                                                                                            <div data-visualcompletion="ignore" class=""></div>
-                                                                                                                        </div>
-                                                                                                                        <div data-visualcompletion="ignore" class=""></div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="_3pzk style-KjYOk" id="style-KjYOk">
-                                                                                                    <div class="_3pzj style-pvn7A" id="style-pvn7A">
-                                                                                                        <div class="_4lg0 _4h2m style-cTSyq" id="style-cTSyq">
-                                                                                                            <div class="_1b33"><span>
-                                                                                                                <div class="ellipsis"><span data-surface-wrapper="1" data-surface="/am/table/msg:AdsPERelayEnvironmentContainer" id="style-CDvmM" class="style-CDvmM">
-                                                                                                                    <div class="clearfix _ikh">
-                                                                                                                        <div class="_4bl7">
-                                                                                                                            <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli x1yc453h x1y5rjcf xw4jnvo x1qx5ct2"><span class="xlid4zk x13tp074 x1qns1p2 xipx5yg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x9f619 x1lliihq x2lah0s xsmyaan x1kpxq89 xa05pge x16p5pjb x1anald3 xgi1ddd x1kr8tdy x1e7kja xqm4iv x19d7kov"></span></div>
-                                                                                                                        </div>
-                                                                                                                        <div class="_4bl9"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Active</span></div>
-                                                                                                                    </div>
                                                                                                                 </span></div>
-                                                                                                            </span></div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-Z1nHU" id="style-Z1nHU">
-                                                                                                            <div class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj">Highest volume</div>
-                                                                                                                    </div>
-                                                                                                                </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-wYOqa" id="style-wYOqa">
-                                                                                                            <div adaccount="[object Object]" adobjectid="120209671287950644" objecttype="CAMPAIGN_GROUP" class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>
-                                                                                                                            <div data-visualcompletion="ignore" class=""></div><span>Rs300.00</span>
-                                                                                                                        </span></div>
-                                                                                                                        <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
-                                                                                                                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">Daily</div>
+                                                                                                            <div class="_4lg0 _4lg5 _4h2p _4h2m style-yOCIw" id="style-yOCIw">
+                                                                                                                <div class=" _1b33 _e9h">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj">Highest volume</div>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4h2m style-F5DTd" id="style-F5DTd">
-                                                                                                            <div class=" _1b33 _e9h" column="attribution_setting" conversionannotations="" conversioncountsetting="" currencycode="PKR" defaultattributionwindows="" formattype="STRING" objecttype="CAMPAIGN_GROUP" primaryvalue="1d_view_7d_click" rowtype="summary" timezoneid="105" rowindex="1">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj">7-day click or 1-day view</div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-Zm9L4" id="style-Zm9L4"><span><span>
-                                                                                                            <div class=" _1b33 _e9h">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>12</span></div>
-                                                                                                                        <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
-                                                                                                                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf"><span>Link Clicks</span></div>
+                                                                                                            <div class="_4lg0 _4lg5 _4h2p _4h2m style-npc5Q" id="style-npc5Q">
+                                                                                                                <div adaccount="[object Object]" adobjectid="120209876334360644" objecttype="CAMPAIGN_GROUP" class=" _1b33 _e9h">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>
+                                                                                                                                <div data-visualcompletion="ignore" class=""></div><span>Rs300.00</span>
+                                                                                                                            </span></div>
+                                                                                                                            <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
+                                                                                                                                <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">Daily</div>
+                                                                                                                            </div>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <div data-visualcompletion="ignore" class=""></div>
-                                                                                                        </span></span></div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-nooOi" id="style-nooOi">
-                                                                                                            <div class=" _1b33 _e9h _1b33">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>2,128</span></div>
+                                                                                                            <div class="_4lg0 _4h2m style-m8EAW" id="style-m8EAW">
+                                                                                                                <div class=" _1b33 _e9h" column="attribution_setting" conversionannotations="" conversioncountsetting="" currencycode="PKR" defaultattributionwindows="" formattype="STRING" objecttype="CAMPAIGN_GROUP" primaryvalue="1d_view_7d_click" rowtype="summary" timezoneid="105" rowindex="0">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj" id="js_bl">7-day click or 1-day view</div>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="_4lg0 _4lg5 _4h2p _4h2m style-n2dBO" id="style-n2dBO">
-                                                                                                            <div class=" _1b33 _e9h _1b33">
-                                                                                                                <div class="_e9n">
-                                                                                                                    <div class="">
-                                                                                                                        <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>2,370</span></div>
+                                                                                                            <div class="_4lg0 _4lg5 _4h2p _4h2m style-yUOZ6" id="style-yUOZ6"><span><span>
+                                                                                                                <div class=" _1b33 _e9h">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>7</span></div>
+                                                                                                                            <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
+                                                                                                                                <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf"><span>Link Clicks</span></div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div data-visualcompletion="ignore" class=""></div>
+                                                                                                            </span></span></div>
+                                                                                                            <div class="_4lg0 _4lg5 _4h2p _4h2m style-YScpC" id="style-YScpC">
+                                                                                                                <div class=" _1b33 _e9h _1b33">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>1,015</span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="_4lg0 _4lg5 _4h2p _4h2m style-34nrj" id="style-34nrj">
+                                                                                                                <div class=" _1b33 _e9h _1b33">
+                                                                                                                    <div class="_e9n">
+                                                                                                                        <div class="">
+                                                                                                                            <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>1,173</span></div>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+                                                                                                    <div class="_1gd6 _1gd8 style-Ri894" id="style-Ri894"></div>
                                                                                                 </div>
-                                                                                                <div class="_1gd6 _1gd8 style-o2136" id="style-o2136"></div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
+                                                                                    ))}
 
 
 
