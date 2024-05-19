@@ -15,6 +15,7 @@ import EditChartMain from "./pages/EditChartMain";
 import EditChartTwo from "./pages/EditChartTwo";
 import EditChartThree from "./pages/EditChartThree";
 import PaymentPage from "./pages/PaymentPage";
+import TestPage from "./components/TestPage";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/payment",
     element: <PaymentPage />
+  },
+  {
+    path: "/test",
+    element: <TestPage />
   },
 
 ]);
