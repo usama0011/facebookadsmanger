@@ -3,12 +3,14 @@ import '../styles/CompaingsData.css'
 import axios from 'axios';
 import { Switch, Table } from 'antd';
 import { Link } from 'react-router-dom';
-import { BarChartOutlined } from '@ant-design/icons';
+import { BarChartOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
+import EditImage from '../assets/edit.png'
 
 const CompaingsData = () => {
     const [campaigns, setCampaigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [togglebutton, settogglebutton] = useState(false)
 
     useEffect(() => {
         const fetchCampaigns = async () => {
@@ -46,7 +48,28 @@ const CompaingsData = () => {
             key: 'currentSwitch',
             fixed: 'left',
             render: (text, record) => (
-                <Switch className='custom-switch' handleBg="red" style={{ width: '25px' }} size='default' checked={record.currentSwitch} />
+                <div onClick={() => settogglebutton((prev) => !prev)}>
+                    {record.currentSwitch === false ? <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy snipcss-5XQZY">
+                        <div class=""></div>
+                        <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+                    </div> : <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d snipcss-5ryNs">
+                        <div data-visualcompletion="ignore" class="">
+                            <div>
+                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                                    <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="true" aria-label="On/Off" role="switch" aria-describedby="js_36" aria-labelledby="js_34" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_35" type="checkbox" value="true" checked="" />
+                                        <div class="x1n2onr6 xh8yej3">
+                                            <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                                                <div class=""></div>
+                                                <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x1qsmy5i x1psfjxj"></div>
+                                            </div>
+                                            <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
+                </div>
             ),
         },
         {
@@ -59,21 +82,28 @@ const CompaingsData = () => {
                 <>
                     <div className='mainparentcontainer'>
                         <div style={{ overflow: "hidden" }} className="campaign-name-cell">
-                            <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px" }} className="campaign-name">
-                                {truncateText(text, 35)}
+                            <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
+                                {truncateText(text, 30)}
+                                <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
                             </div>
                         </div>
                         <div className='hoverbuttonsmyspec'>
                             <div style={{ display: 'flex', alignItems: 'center', }}>
-                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '10px', height: "10px", color: "red" }} /><Link style={{ color: "unset" }} to="/editmainchart">
+                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '10px', height: "10px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
 
                                     View Charts
                                 </Link></div>
                                 <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                    <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
                                     Edit
                                 </Link></div>
-                                <div style={{ marginRight: '10px' }}>Duplicate</div>
-                                <div style={{ marginRight: '10px' }}>Pin</div>
+                                <div style={{ marginRight: '10px' }}>
+                                    <FileTextOutlined style={{ marginRight: "3px" }} />
+                                    Duplicate</div>
+
+                                <div style={{ marginRight: '10px' }}>
+                                    <PushpinOutlined style={{ marginRight: "3px" }} />
+                                    Pin</div>
                             </div>
                         </div>
                     </div>
