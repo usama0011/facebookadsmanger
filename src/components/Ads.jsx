@@ -118,7 +118,8 @@ const Ads = () => {
         },
     ];
     console.log(campaigns)
-    //okay
+    //okay i ma here to help 
+
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
             <div class="_2utz style-Seeed" id="style-Seeed">
