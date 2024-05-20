@@ -39,7 +39,7 @@ const CompaingsData = () => {
             key: 'currentSwitch',
             fixed: 'left',
             render: (text, record) => (
-                <Switch checked={record.currentSwitch} />
+                <Switch className='custom-switch' handleBg="red" style={{ width: '25px' }} size='default' checked={record.currentSwitch} />
             ),
         },
         {
@@ -50,7 +50,7 @@ const CompaingsData = () => {
             width: 250,
             render: (text) => (
                 <div className="campaign-name-cell">
-                    <div className="campaign-name">
+                    <div style={{ color: "#297def", textTransform: 'uppercase' }} className="campaign-name">
                         {text}
                     </div>
 
@@ -61,7 +61,7 @@ const CompaingsData = () => {
             title: 'Delivery',
             dataIndex: 'Delivery',
             key: 'Delivery',
-            width: 100,
+            width: 150,
         },
         {
             title: 'Bid Strategy',
@@ -404,6 +404,8 @@ const CompaingsData = () => {
                             <div className="campaign-table-container">
                                 <Table style={{ borderRadius: "10px" }}
                                     columns={columns}
+                                    bordered={true}
+
                                     dataSource={campaigns}
                                     loading={loading}
                                     scroll={{

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/ViewCampaignsPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const ViewMyCampaings = () => {
     const [campaigns, setCampaigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const navigation = useNavigate();
 
     useEffect(() => {
         const fetchCampaigns = async () => {
@@ -24,8 +26,9 @@ const ViewMyCampaings = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`https://facebookadsmangerserver.vercel.app/campaigns/${id}`);
+            await axios.delete(`https://facebookadsmangerserver.vercel.app/api/newcampaing/${id}`);
             setCampaigns(campaigns.filter(campaign => campaign._id !== id));
+            alert("Campaing has been delteed successfully")
         } catch (err) {
             setError('Error deleting campaign');
         }
@@ -33,6 +36,7 @@ const ViewMyCampaings = () => {
 
     const handleEdit = (id) => {
         // Redirect to edit page or show edit form (not implemented here)
+        navigation(`/editmycampaing/${id}`)
     };
 
     if (loading) {
@@ -45,7 +49,7 @@ const ViewMyCampaings = () => {
 
     return (
         <div className="campaigns-container">
-            <h1 className="campaigns-title">Campaigns</h1>
+            <h1 className="campaigns-title">Campaigns {campaigns?.length}</h1>
             <div className="campaigns-list">
                 {campaigns.map((campaign) => (
                     <div key={campaign._id} className="campaign-item">
@@ -64,9 +68,10 @@ const ViewMyCampaings = () => {
                             <p><strong>Ends:</strong> {campaign.Ends}</p>
                             <p><strong>Campaign Image:</strong> <img src={campaign.campaingImage} alt={campaign.campaingname} className="campaign-image" /></p>
                         </div>
-                        <div className="campaign-actions">
-                            <button onClick={() => handleEdit(campaign._id)} className="edit-button">Edit</button>
-                            <button onClick={() => handleDelete(campaign._id)} className="delete-button">Delete</button>
+                        <br />
+                        <div className="campaignactions">
+                            <button style={{ marginLeft: "10px" }} onClick={() => handleEdit(campaign._id)} className="edit-button">Edit</button>
+                            <button style={{ marginLeft: "10px" }} onClick={() => handleDelete(campaign._id)} className="delete-button">Delete</button>
                         </div>
                     </div>
                 ))}

@@ -24,6 +24,7 @@ import MainNavigation from "./pages/MainNavigation";
 import ViewAdSet from "./pages/ViewAdSet";
 import ViewPayments from "./pages/ViewPayments";
 import ViewAds from "./pages/ViewAds";
+import EditMyCampaing from "./pages/EditMyCampaing";
 
 const router = createBrowserRouter([
   {
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
   {
     path: "/viewads",
     element: <ViewAds />
+  },
+  {
+    path: "/editmycampaing/:id",
+    element: <EditMyCampaing />
   },
 
 ]);

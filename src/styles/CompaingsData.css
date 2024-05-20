@@ -4682,3 +4682,17 @@ i.img u {
     text-align: center;
     margin-top: 10px;
 }
+
+.ant-switch-unchecked {
+    background: white !important;
+    border: 1px solid gainsboro;
+}
+
+.ant-table-tbody {
+    padding: 0 !important;
+}
+
+.ant-table-tbody>tr>td {
+    padding: 5px !important;
+
+}
