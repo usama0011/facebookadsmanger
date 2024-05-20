@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/CompaingsData.css'
 import axios from 'axios';
 import { Switch, Table } from 'antd';
+import { Link } from 'react-router-dom';
 
 const CompaingsData = () => {
     const [campaigns, setCampaigns] = useState([]);
@@ -23,11 +24,16 @@ const CompaingsData = () => {
 
         fetchCampaigns();
     }, []);
-
+    const truncateText = (text, charLimit = 30) => {
+        if (text.length > charLimit) {
+            return text.slice(0, charLimit) + '...';
+        }
+        return text;
+    };
     const columns = [
         {
             title: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />,
-            width: 100,
+            width: 50,
             key: 'checkbox',
             fixed: 'left',
             render: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />
@@ -49,12 +55,27 @@ const CompaingsData = () => {
             fixed: 'left',
             width: 250,
             render: (text) => (
-                <div className="campaign-name-cell">
-                    <div style={{ color: "#297def", textTransform: 'uppercase' }} className="campaign-name">
-                        {text}
+                <>
+                    <div className='mainparentcontainer'>
+                        <div style={{ overflow: "hidden" }} className="campaign-name-cell">
+                            <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px" }} className="campaign-name">
+                                {truncateText(text, 35)}
+                            </div>
+                        </div>
+                        <div className='hoverbuttonsmyspec'>
+                            <div style={{ display: 'flex', alignItems: 'center', }}>
+                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editmainchart">
+                                    View Charts
+                                </Link></div>
+                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                    Edit
+                                </Link></div>
+                                <div style={{ marginRight: '10px' }}>Duplicate</div>
+                                <div style={{ marginRight: '10px' }}>Pin</div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
+                </>
             ),
         },
         {
@@ -62,6 +83,14 @@ const CompaingsData = () => {
             dataIndex: 'Delivery',
             key: 'Delivery',
             width: 150,
+            render: (text) => (
+                <div className="campaign-name-cell">
+                    <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
+                        <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div><div>{text}</div>
+                    </div>
+
+                </div>
+            ),
         },
         {
             title: 'Bid Strategy',
@@ -145,6 +174,8 @@ const CompaingsData = () => {
             <div className="footer-ends" />
         </div>
     );
+
+
     return (
         <div>
             <div class="_2utw snipcss-91VzL style-dnFY6" id="style-dnFY6">

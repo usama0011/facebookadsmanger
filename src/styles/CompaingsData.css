@@ -4696,3 +4696,17 @@ i.img u {
     padding: 5px !important;
 
 }
+
+.ant-table-tbody>tr.ant-table-row:hover>td {
+    background-color: #dadbe5;
+    cursor: pointer;
+}
+
+
+.hoverbuttonsmyspec {
+    display: none;
+}
+
+.mainparentcontainer:hover .hoverbuttonsmyspec {
+    display: block;
+}
