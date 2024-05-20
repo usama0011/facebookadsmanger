@@ -16,6 +16,15 @@ import EditChartTwo from "./pages/EditChartTwo";
 import EditChartThree from "./pages/EditChartThree";
 import PaymentPage from "./pages/PaymentPage";
 import TestPage from "./components/TestPage";
+import CreatePayment from "./pages/CreatePayment";
+import CreateAd from "./pages/CreateAd";
+import CreateAdsSet from "./pages/CreateAdsSet";
+import CreateCampaing from "./pages/CreateCampaing";
+import ViewMyCampaings from "./pages/ViewMyCampaings";
+import MainNavigation from "./pages/MainNavigation";
+import ViewAdSet from "./pages/ViewAdSet";
+import ViewPayments from "./pages/ViewPayments";
+import ViewAds from "./pages/ViewAds";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +62,42 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <TestPage />
+  },
+  {
+    path: "/createpayment",
+    element: <CreatePayment />
+  },
+  {
+    path: "/createad",
+    element: <CreateAd />
+  },
+  {
+    path: "/createAdSet",
+    element: <CreateAdsSet />
+  },
+  {
+    path: "/createcampaing",
+    element: <CreateCampaing />
+  },
+  {
+    path: "/viewmyampaings",
+    element: <ViewMyCampaings />
+  },
+  {
+    path: "/mainnavigation",
+    element: <MainNavigation />
+  },
+  {
+    path: "/viewadsset",
+    element: <ViewAdSet />
+  },
+  {
+    path: "/viewpayments",
+    element: <ViewPayments />
+  },
+  {
+    path: "/viewads",
+    element: <ViewAds />
   },
 
 ]);
