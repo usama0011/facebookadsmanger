@@ -4657,11 +4657,12 @@ i.img u {
     opacity: 1;
 }
 
+
+
 #style-UWGir.style-UWGir {
     bottom: 0px;
 }
 
-/* Custom scrollbar styling
 .campaign-table-container .ant-table-body::-webkit-scrollbar {
     height: 10px;
 }
@@ -4673,7 +4674,7 @@ i.img u {
 
 .campaign-table-container .ant-table-body::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-} */
+}
 
 /* Error message styling */
 .error-message {

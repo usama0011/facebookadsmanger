@@ -53,6 +53,7 @@ const CompaingsData = () => {
                     <div className="campaign-name">
                         {text}
                     </div>
+
                 </div>
             ),
         },
@@ -401,13 +402,13 @@ const CompaingsData = () => {
                                 </div>
                             </div>
                             <div className="campaign-table-container">
-                                <Table
+                                <Table style={{ borderRadius: "10px" }}
                                     columns={columns}
                                     dataSource={campaigns}
                                     loading={loading}
                                     scroll={{
                                         x: 2000,
-                                        y: 385,
+                                        y: 420,
                                     }}
                                     pagination={false}
                                     rowKey={(record) => record._id}

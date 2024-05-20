@@ -1,222 +1,122 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Ads.css'
+import axios from 'axios';
+import { Table, Switch } from 'antd';
 const Ads = () => {
-    const [campaigns, setCampaigns] = useState([
+    const [campaigns, setCampaigns] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+
+    useEffect(() => {
+        const fetchCampaigns = async () => {
+            try {
+                const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/ads');
+                setCampaigns(response.data);
+            } catch (err) {
+                setError('Error fetching campaigns');
+                message.error('Error fetching campaigns');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCampaigns();
+    }, []);
+
+    const columns = [
         {
-            id: 1,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />,
+            width: 100,
+            key: 'checkbox',
+            fixed: 'left',
+            render: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />
         },
         {
-            id: 2,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Off/On',
+            width: 70,
+            dataIndex: 'currentSwitch',
+            key: 'currentSwitch',
+            fixed: 'left',
+            render: (text, record) => (
+                <Switch checked={record.currentSwitch} />
+            ),
         },
         {
-            id: 3,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Campaigns',
+            dataIndex: 'campaingname',
+            key: 'campaingname',
+            fixed: 'left',
+            width: 250,
+            render: (text) => (
+                <div className="campaign-name-cell">
+                    <div className="campaign-name">
+                        {text}
+                    </div>
+
+                </div>
+            ),
         },
         {
-            id: 4,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Delivery',
+            dataIndex: 'Delivery',
+            key: 'Delivery',
+            width: 100,
         },
         {
-            id: 5,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Bid Strategy',
+            dataIndex: 'Bidstrategy',
+            key: 'Bidstrategy',
+            width: 150,
         },
         {
-            id: 6,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Budget',
+            dataIndex: 'Budget',
+            key: 'Budget',
+            width: 100,
         },
         {
-            id: 7,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Attribution Settings',
+            dataIndex: 'Attributionsetting',
+            key: 'Attributionsetting',
+            width: 150,
         },
         {
-            id: 8,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Results',
+            dataIndex: 'Results',
+            key: 'Results',
+            width: 100,
         },
         {
-            id: 9,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Reach',
+            dataIndex: 'Reach',
+            key: 'Reach',
+            width: 100,
         },
         {
-            id: 10,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Impressions',
+            dataIndex: 'Impressions',
+            key: 'Impressions',
+            width: 150,
         },
         {
-            id: 11,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Cost per Result',
+            dataIndex: 'Costperresult',
+            key: 'Costperresult',
+            width: 150,
         },
         {
-            id: 12,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Amount Spent',
+            dataIndex: 'Amountspent',
+            key: 'Amountspent',
+            width: 150,
         },
         {
-            id: 13,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
+            title: 'Ends',
+            dataIndex: 'Ends',
+            key: 'Ends',
+            width: 150,
         },
-        {
-            id: 14,
-            onOff: true,
-            name: 'Campaign 1',
-            delivery: 'Active',
-            bidStrategy: 'Lowest Cost',
-            budget: '$500',
-            attributionSetting: '7-day click',
-            results: '1500',
-            reach: '20000',
-            impressions: '30000',
-            costPerResult: '$3.33',
-            amountSpent: '$5000',
-            ends: '2024-06-01',
-        },
-        // Add more campaign data here
-    ]);
-    const toggleCampaign = (id) => {
-        setCampaigns(campaigns.map(campaign => campaign.id === id ? { ...campaign, onOff: !campaign.onOff } : campaign));
-    };
+    ];
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
             <div class="_2utz style-Seeed" id="style-Seeed">
@@ -469,66 +369,20 @@ const Ads = () => {
                         </div>
                         {/* table start here from */}
                         <div className="campaign-table-container">
-                            <div className="campaign-table">
-                                <div className="campaign-header">
-                                    <div className="fixed-column"><input type="checkbox" /></div>
-                                    <div className="fixed-column">Off/On</div>
-                                    <div className="fixed-column">Campaigns</div>
-                                    <div>Delivery</div>
-                                    <div>Bid Strategy</div>
-                                    <div>Budget</div>
-                                    <div>Attribution Settings</div>
-                                    <div>Results</div>
-                                    <div>Reach</div>
-                                    <div>Impressions</div>
-                                    <div>Cost per Result</div>
-                                    <div>Amount Spent</div>
-                                    <div>Ends</div>
-                                </div>
-                                <div className="campaign-body">
-                                    {campaigns.map((campaign, index) => (
-                                        <div key={campaign.id} className={`campaign-row ${index % 2 === 0 ? 'even-row' : ''}`}>
-                                            <div className="fixed-column"><input type="checkbox" /></div>
-                                            <div className="fixed-column">
-                                                <label className="switch">
-                                                    <input type="checkbox" checked={campaign.onOff} onChange={() => toggleCampaign(campaign.id)} />
-                                                    <span className="slider round"></span>
-                                                </label>
-                                            </div>
-                                            <div className="fixed-column campaign-name-cell">
-                                                <div className="campaign-name">
-                                                    {campaign.name}
-                                                </div>
-                                            </div>
-                                            <div>{campaign.delivery}</div>
-                                            <div>{campaign.bidStrategy}</div>
-                                            <div>{campaign.budget}</div>
-                                            <div>{campaign.attributionSetting}</div>
-                                            <div>{campaign.results}</div>
-                                            <div>{campaign.reach}</div>
-                                            <div>{campaign.impressions}</div>
-                                            <div>{campaign.costPerResult}</div>
-                                            <div>{campaign.amountSpent}</div>
-                                            <div>{campaign.ends}</div>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="campaign-footer">
-                                    <div className="fixed-column"><input type="checkbox" /></div>
-                                    <div className="fixed-column"></div>
-                                    <div className="fixed-column">Results from {campaigns.length} campaigns</div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div>7-day click or 1-day view</div>
-                                    <div>1,931</div>
-                                    <div>153,356</div>
-                                    <div>54,454</div>
-                                    <div>323</div>
-                                    <div>3,434</div>
-                                    <div></div>
-                                </div>
-                            </div>
+                            <Table style={{ borderRadius: "10px" }}
+                                columns={columns}
+                                dataSource={campaigns}
+                                loading={loading}
+                                scroll={{
+                                    x: 2000,
+                                    y: 420,
+                                }}
+                                pagination={false}
+                                rowKey={(record) => record._id}
+                                className="campaign-table"
+
+                            />
+                            {error && <div className="error-message">{error}</div>}
                         </div>
                         {/* talbe end here  */}
                     </div>
