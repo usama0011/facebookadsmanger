@@ -4692,9 +4692,16 @@ i.img u {
     padding: 0 !important;
 }
 
+.ant-table-thead>tr>th {
+    padding: 5px 8px !important;
+}
+
+.ant-table-tbody>tr:nth-child(even) {
+    background-color: #f5f6f7;
+}
+
 .ant-table-tbody>tr>td {
     padding: 5px !important;
-
 }
 
 .ant-table-tbody>tr.ant-table-row:hover>td {
@@ -4723,75 +4730,42 @@ i.img u {
     text-decoration: underline;
 }
 
-.switch {
-    position: relative;
+.budygetcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-JFqyS.style-JFqyS {
+    cursor: default;
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/aHFgJLu8jo0.png?_nc_eui2=AeFe2K9I4r0GdS3zyx-ecn-imm8RpxZwUW2abxGnFnBRbe10xC9hkdJgGmo-0o_jZYSFvXBfVfwQcrPR_BXUki3o");
+    background-position: -390px -910px;
+    background-size: auto;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 55px;
-    height: 34px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.resulsconainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-kgHNC.style-kgHNC {
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/wwrPLYIMWpv.png?_nc_eui2=AeFEGeY7RRGZ6sy8SrAvx3rvZ-_6tnDX3zln7_q2cNffOajlDNCJknHcBAa5ezxY0C5Hr4qIc1Zrdb8gSsNZokIn");
+    background-position: 0px -3824px;
+    background-size: auto;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 34px;
-    height: 20px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
+.resulsconainer:hover {
+    color: #3a86ce;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    transition: .4s;
-    border: 0.5px solid gainsboro;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 17px;
-    width: 17px;
-    left: 1px;
-    bottom: 1px;
-    background-color: black;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked+.slider {
-    background-color: #e1edf7;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    transform: translateX(14px);
-    background-color: #0a78be;
-    /* Change background color when checked */
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
 }

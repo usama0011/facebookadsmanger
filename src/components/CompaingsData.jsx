@@ -3,7 +3,7 @@ import '../styles/CompaingsData.css'
 import axios from 'axios';
 import { Switch, Table } from 'antd';
 import { Link } from 'react-router-dom';
-import { BarChartOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
+import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
 import EditImage from '../assets/edit.png'
 
 const CompaingsData = () => {
@@ -52,7 +52,7 @@ const CompaingsData = () => {
                     {record.currentSwitch === false ? <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy snipcss-5XQZY">
                         <div class=""></div>
                         <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
-                    </div> : <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d snipcss-5ryNs">
+                    </div> :
                         <div data-visualcompletion="ignore" class="">
                             <div>
                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
@@ -68,12 +68,12 @@ const CompaingsData = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>}
+                    }
                 </div>
             ),
         },
         {
-            title: 'Campaigns',
+            title: <div className='resulsconainer'> <div>Campaing</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'campaingname',
             key: 'campaingname',
             fixed: 'left',
@@ -89,7 +89,7 @@ const CompaingsData = () => {
                         </div>
                         <div className='hoverbuttonsmyspec'>
                             <div style={{ display: 'flex', alignItems: 'center', }}>
-                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '10px', height: "10px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
+                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
 
                                     View Charts
                                 </Link></div>
@@ -111,14 +111,14 @@ const CompaingsData = () => {
             ),
         },
         {
-            title: 'Delivery',
+            title: <div className='resulsconainer'> <div>Delivery</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Delivery',
             key: 'Delivery',
             width: 150,
             render: (text) => (
                 <div className="campaign-name-cell">
                     <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
-                        <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div><div>{text}</div>
+                        {text === "Active" ? <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div> : null}<div style={{ fontSize: '14px' }}>{text}</div>
                     </div>
 
                 </div>
@@ -128,55 +128,108 @@ const CompaingsData = () => {
             title: 'Bid Strategy',
             dataIndex: 'Bidstrategy',
             key: 'Bidstrategy',
-            width: 150,
+            width: 120,
+            render: (text) => (
+                <div>
+                    {truncateText(text, 16)}
+                </div>
+            )
         },
         {
             title: 'Budget',
             dataIndex: 'Budget',
             key: 'Budget',
-            width: 100,
+            width: 140,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                    <br />
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Daily</span>
+                </div>
+            )
         },
         {
             title: 'Attribution Settings',
             dataIndex: 'Attributionsetting',
             key: 'Attributionsetting',
+            width: 80,
+            render: (text) => (
+                <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
+            )
+        },
+        {
+            title: () => <div className='resulsconainer'> <div><span style={{ marginRight: "5px" }} id="js_26j" class="snipcss-1Co3h"><i alt="" data-visualcompletion="css-img" class="img style-JFqyS" id="style-JFqyS"></i></span>Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Results',
+            key: 'Results',
+            width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                    <br />
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Link Clicks</span>
+                </div>
+            )
+        },
+        {
+            title: <div className='resulsconainer'> <div>Reach</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Reach',
+            key: 'Reach',
             width: 150,
         },
         {
-            title: 'Results',
-            dataIndex: 'Results',
-            key: 'Results',
-            width: 100,
-        },
-        {
-            title: 'Reach',
-            dataIndex: 'Reach',
-            key: 'Reach',
-            width: 100,
-        },
-        {
-            title: 'Impressions',
+            title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Impressions',
             key: 'Impressions',
             width: 150,
         },
         {
-            title: 'Cost per Result',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost Per <br /> Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Costperresult',
             key: 'Costperresult',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                    <br />
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Per link click</span>
+                </div>
+            )
         },
         {
-            title: 'Amount Spent',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Amount Spend</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Amountspent',
             key: 'Amountspent',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
         },
         {
-            title: 'Ends',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Ends</div><div><CaretDownOutlined style={{ color: "gray" }} color='blue' /></div> </div>,
             dataIndex: 'Ends',
             key: 'Ends',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+
+                </div>
+            )
+
+        },
+        {
+            title: () => <i alt="Customise columns..." aria-label="Customise columns..." data-visualcompletion="css-img" class="img snipcss-saPsI style-kgHNC" id="style-kgHNC"><u>Customise columns...</u></i>,
+            dataIndex: 'Plus',
+            key: 'Plus',
+            width: 30,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
+
         },
     ];
     const footerData = {
@@ -468,13 +521,13 @@ const CompaingsData = () => {
                                 <Table style={{ borderRadius: "10px" }}
                                     columns={columns}
                                     bordered={true}
-
                                     dataSource={campaigns}
                                     loading={loading}
                                     scroll={{
                                         x: 2000,
-                                        y: 420,
+                                        y: 500,
                                     }}
+                                    sticky
                                     pagination={false}
                                     rowKey={(record) => record._id}
                                     className="campaign-table"
@@ -485,7 +538,7 @@ const CompaingsData = () => {
                         </div>
                     </div>
                 </div>
-                <div class="xeq5yr9 x12peec7 x1lcm9me x1yr5g0i x5pf9jr xo71vjh x1n2onr6 xiaao90 x1i64zmx"></div>
+
             </div>
         </div>
     )
