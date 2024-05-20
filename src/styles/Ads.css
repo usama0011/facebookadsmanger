@@ -4195,3 +4195,181 @@ input:checked+.slider:before {
     align-items: center;
     font-size: 14px;
 }
+
+._61ve span {
+    font-family: inherit;
+}
+
+._6nw._61ve span {
+    font-family: inherit;
+}
+
+._61ve div {
+    font-family: inherit;
+}
+
+._6nw._61ve div {
+    font-family: inherit;
+}
+
+body {
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+html {
+    touch-action: manipulation;
+}
+
+:root {
+    --fds-gray-05: #F2F3F5;
+    --accent: hsl(214, 89%, 52%);
+    --always-white: #FFFFFF;
+    --badge-background-color-blue: var(--accent);
+    --badge-background-color-dark-gray: var(--secondary-icon);
+    --badge-background-color-gray: var(--disabled-icon);
+    --badge-background-color-green: var(--positive);
+    --badge-background-color-light-blue: var(--highlight-bg);
+    --badge-background-color-red: var(--notification-badge);
+    --badge-background-color-yellow: var(--base-lemon);
+    --base-lemon: #F7B928;
+    --disabled-button-background: #E4E6EB;
+    --disabled-icon: #BCC0C4;
+    --focus-ring-blue: #1877F2;
+    --highlight-bg: #E7F3FF;
+    --inverse-text: var(--always-white);
+    --messenger-card-background: #FFFFFF;
+    --mwp-header-background-color: var(--messenger-card-background);
+    --mwp-header-button-color: var(--accent);
+    --mwp-message-row-background: var(--messenger-card-background);
+    --notification-badge: #e41e3f;
+    --placeholder-text: #65676B;
+    --positive: #31A24C;
+    --primary-icon: #050505;
+    --secondary-button-background: #E4E6EB;
+    --secondary-icon: #65676B;
+    --shadow-1: rgba(0, 0, 0, 0.1);
+    --shadow-2: rgba(0, 0, 0, 0.2);
+    --shadow-5: rgba(0, 0, 0, 0.5);
+    --shadow-base: 0 1px 2px var(--shadow-2);
+    --shadow-emphasis: 0 2px 12px var(--shadow-2);
+    --input-border-color-hover: var(--placeholder-text);
+    --tooltip-box-shadow: 0 2px 4px 0 var(--shadow-5);
+    --chat-outgoing-message-bubble-background-color: var(--accent);
+    --radio-border-color: var(--primary-icon);
+    --radio-border-color-disabled: var(--disabled-button-background);
+    --radio-border-color-selected: var(--accent);
+    --radio-checked-icon-color: var(--accent);
+    --radio-checked-icon-color-disabled: var(--disabled-button-background);
+    --button-height-medium: 36px;
+    --card-box-shadow: 0 12px 28px 0 var(--shadow-2), 0 2px 4px 0 var(--shadow-1);
+    --focus-ring-outline-link: 2px auto var(--focus-ring-blue);
+    --focus-ring-shadow-default: 0 0 0 2px var(--always-white), 0 0 0 4px var(--focus-ring-blue);
+    --focus-ring-shadow-inset: 0 0 0 2px var(--focus-ring-blue) inset, 0 0 0 4px var(--always-white) inset;
+}
+
+:root {
+    --fds-gray-05: #F2F3F5;
+    --accent: rgb(8, 102, 255);
+    --always-white: rgb(255, 255, 255);
+    --disabled-button-background: rgb(228, 230, 235);
+    --disabled-icon: rgb(188, 192, 196);
+    --notification-badge: rgb(228, 30, 63);
+    --placeholder-text: rgb(101, 103, 107);
+    --positive: rgb(49, 162, 76);
+    --primary-icon: rgb(5, 5, 5);
+    --secondary-button-background: rgb(228, 230, 235);
+    --secondary-icon: rgb(101, 103, 107);
+}
+
+:root {
+    --x1dflwya: var(--secondary-button-background);
+    --xgcszl1: var(--button-height-medium);
+}
+
+.x1yc453h {
+    text-align: left;
+}
+
+.xepox01:hover {
+    background-color: var(--fds-gray-05);
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+._4bl9 {
+    word-wrap: break-word;
+}
+
+._4bl9 {
+    overflow: hidden;
+}
+
+._4bl7 {
+    word-wrap: break-word;
+}
+
+._4bl7 {
+    float: left;
+    min-height: 1px;
+}
+
+.x1y5rjcf {
+    line-height: 1.67;
+}
+
+.x1kky2od {
+    width: 16px;
+}
+
+.x1h4wwuj {
+    word-wrap: normal;
+}
+
+.xmi5d70 {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.xo1l8bm {
+    font-weight: 400;
+}
+
+.xeuugli {
+    min-width: 0;
+}
+
+.x1fvot60 {
+    font-size: .875rem !important;
+}
+
+.xbsr9hj {
+    color: rgba(28, 43, 51, 1);
+}
+
+.xq9mrsl {
+    white-space: inherit;
+}
+
+.xxio538 {
+    line-height: 1.42858 !important;
+}
+
+i.img {
+    -ms-high-contrast-adjust: none;
+}

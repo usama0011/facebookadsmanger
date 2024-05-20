@@ -63,7 +63,7 @@ const ViewAdSet = () => {
                             <p><strong>Ends:</strong> {campaign.Ends}</p>
                             <p><strong>Campaign Image:</strong> <img src={campaign.campaingImage} alt={campaign.campaingname} className="campaign-image" /></p>
                         </div>
-                        <div className="campaign-actions">
+                        <div className="">
                             <button onClick={() => handleEdit(campaign._id)} className="edit-button">Edit</button>
                             <button onClick={() => handleDelete(campaign._id)} className="delete-button">Delete</button>
                         </div>

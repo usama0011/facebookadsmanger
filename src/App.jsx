@@ -125,7 +125,9 @@ const App = () => {
                                                         <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                           <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
                                                           <div class="xeuugli">
-                                                            <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli" id="js_1d" role="heading">Campaigns</div>
+                                                            <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli" id="js_1d" role="heading">{currentfolder === "Campaings" ? "Campaigns" : null}
+                                                              {currentfolder === "Ads" ? "Ads" : null}
+                                                              {currentfolder === "AdsSets" ? "AdsSets" : null}</div>
                                                           </div>
                                                         </div>
                                                         <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>

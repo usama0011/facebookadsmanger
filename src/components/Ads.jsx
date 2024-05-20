@@ -42,9 +42,9 @@ const Ads = () => {
             ),
         },
         {
-            title: 'Campaigns',
-            dataIndex: 'campaingname',
-            key: 'campaingname',
+            title: 'Ad',
+            dataIndex: 'Adname',
+            key: 'Adname',
             fixed: 'left',
             width: 250,
             render: (text) => (
@@ -61,6 +61,19 @@ const Ads = () => {
             dataIndex: 'Delivery',
             key: 'Delivery',
             width: 100,
+        },
+        {
+            title: 'Ad set name',
+            dataIndex: 'AdsetName',
+            key: 'AdsetName',
+            width: 100,
+            render: (text) => (
+                <div>
+                    {text}
+                    <br />
+                    <span>1 active ad</span>
+                </div>
+            )
         },
         {
             title: 'Bid Strategy',
