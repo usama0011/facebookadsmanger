@@ -77,7 +77,7 @@ const AdsSets = () => {
             dataIndex: 'AdsSetname',
             key: 'AdsSetname',
             fixed: 'left',
-            width: 250,
+            width: 270,
             render: (text) => (
                 <>
                     <div className='mainparentcontainer'>

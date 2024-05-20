@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Ads.css'
+import { Switch, Table } from 'antd';
 import axios from 'axios';
-import { Table, Switch } from 'antd';
+import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
+import EditImage from '../assets/edit.png'
+import { Link } from 'react-router-dom';
 const Ads = () => {
     const [campaigns, setCampaigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [togglebutton, settogglebutton] = useState(false)
 
     useEffect(() => {
         const fetchCampaigns = async () => {
@@ -22,11 +26,16 @@ const Ads = () => {
 
         fetchCampaigns();
     }, []);
-
+    const truncateText = (text, charLimit = 30) => {
+        if (text?.length > charLimit) {
+            return text.slice(0, charLimit) + '...';
+        }
+        return text;
+    };
     const columns = [
         {
             title: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />,
-            width: 100,
+            width: 50,
             key: 'checkbox',
             fixed: 'left',
             render: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />
@@ -38,101 +47,252 @@ const Ads = () => {
             key: 'currentSwitch',
             fixed: 'left',
             render: (text, record) => (
-                <Switch checked={record.currentSwitch} />
+                <div onClick={() => settogglebutton((prev) => !prev)}>
+                    {record.currentSwitch === false ? <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy snipcss-5XQZY">
+                        <div class=""></div>
+                        <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+                    </div> :
+                        <div data-visualcompletion="ignore" class="">
+                            <div>
+                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                                    <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="true" aria-label="On/Off" role="switch" aria-describedby="js_36" aria-labelledby="js_34" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_35" type="checkbox" value="true" checked="" />
+                                        <div class="x1n2onr6 xh8yej3">
+                                            <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                                                <div class=""></div>
+                                                <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x1qsmy5i x1psfjxj"></div>
+                                            </div>
+                                            <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
             ),
         },
         {
-            title: 'Ad',
+            title: <div className='resulsconainer'> <div>Ad</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Adname',
             key: 'Adname',
             fixed: 'left',
-            width: 250,
+            width: 350,
+            render: (text) => (
+                <>
+                    <div className='mainparentcontainer'>
+                        <div style={{ overflow: "hidden" }} className="campaign-name-cell">
+                            <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
+                                {truncateText(text, 30)}
+                                <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
+                            </div>
+                        </div>
+                        <div className='hoverbuttonsmyspec'>
+                            <div style={{ display: 'flex', alignItems: 'center', }}>
+                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
+
+                                    View Charts
+                                </Link></div>
+                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                    <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
+                                    Edit
+                                </Link></div>
+                                <div style={{ marginRight: '10px' }}>
+                                    <FileTextOutlined style={{ marginRight: "3px" }} />
+                                    Duplicate</div>
+
+                                <div style={{ marginRight: '10px' }}>
+                                    <PushpinOutlined style={{ marginRight: "3px" }} />
+                                    Pin</div>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            ),
+        },
+        {
+            title: <div className='resulsconainer'> <div>Delivery</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Delivery',
+            key: 'Delivery',
+            width: 150,
             render: (text) => (
                 <div className="campaign-name-cell">
-                    <div className="campaign-name">
-                        {text}
+                    <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
+                        {text === "active" ? <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div> : null}<div style={{ fontSize: '14px' }}>{text}</div>
                     </div>
 
                 </div>
             ),
         },
         {
-            title: 'Delivery',
-            dataIndex: 'Delivery',
-            key: 'Delivery',
-            width: 100,
-        },
-        {
-            title: 'Ad set name',
+            title: <div className='resulsconainer'> <div>Ad set name</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'AdsetName',
             key: 'AdsetName',
-            width: 100,
+            width: 250,
             render: (text) => (
-                <div>
-                    {text}
-                    <br />
-                    <span>1 active ad</span>
+                <div className="campaign-name-cell">
+                    <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
+                        {text === "active" ? <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div> : null}<div style={{ fontSize: '14px' }}>{text}</div>
+                        <br />
+                    </div>
+                    1 active ad
+
                 </div>
-            )
+            ),
         },
+
         {
             title: 'Bid Strategy',
             dataIndex: 'Bidstrategy',
             key: 'Bidstrategy',
-            width: 150,
+            width: 120,
+            render: (text) => (
+                <div style={{ textAlign: "right" }}>
+                    {text}
+                    <br />
+                    <span>Links clicks</span>
+                </div>
+            )
         },
         {
             title: 'Budget',
             dataIndex: 'Budget',
             key: 'Budget',
-            width: 100,
+            width: 140,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {truncateText(text, 30)}
+
+                </div>
+            )
+        },
+        {
+            title: 'Last Significant Edit',
+            dataIndex: 'Lastsignificantedit',
+            key: 'Lastsignificantedit',
+            width: 120,
+            render: (text) => (
+                <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
+            )
         },
         {
             title: 'Attribution Settings',
             dataIndex: 'Attributionsetting',
             key: 'Attributionsetting',
+            width: 90,
+            render: (text) => (
+                <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
+            )
+        },
+        {
+            title: () => <div className='resulsconainer'> <div><span style={{ marginRight: "5px" }} id="js_26j" class="snipcss-1Co3h"><i alt="" data-visualcompletion="css-img" class="img style-JFqyS" id="style-JFqyS"></i></span>Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'results',
+            key: 'results',
+            width: 120,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                    <br />
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Link Clicks</span>
+                </div>
+            )
+        },
+        {
+            title: <div className='resulsconainer'> <div>Reach</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Reach',
+            key: 'Reach',
             width: 150,
         },
         {
-            title: 'Results',
-            dataIndex: 'Results',
-            key: 'Results',
-            width: 100,
-        },
-        {
-            title: 'Reach',
-            dataIndex: 'Reach',
-            key: 'Reach',
-            width: 100,
-        },
-        {
-            title: 'Impressions',
+            title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Impressions',
             key: 'Impressions',
             width: 150,
         },
         {
-            title: 'Cost per Result',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost per <br /> results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Costperresult',
             key: 'Costperresult',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                    <br />
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Per link click</span>
+                </div>
+            )
         },
         {
-            title: 'Amount Spent',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Quality Ranking</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Amountspent',
             key: 'Amountspent',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
         },
         {
-            title: 'Ends',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Engagement rate ranking</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'EngagementRateRanking',
+            key: 'EngagementRateRanking',
+            width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
+        },
+        {
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Conversion rate ranking</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'ConversionRateRanking',
+            key: 'ConversionRateRanking',
+            width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
+        },
+
+        {
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Amount Spend</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Amountspent',
+            key: 'Amountspent',
+            width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
+        },
+        {
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Ends</div><div><CaretDownOutlined style={{ color: "gray" }} color='blue' /></div> </div>,
             dataIndex: 'Ends',
             key: 'Ends',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+
+                </div>
+            )
+
+        },
+
+        {
+            title: () => <i alt="Customise columns..." aria-label="Customise columns..." data-visualcompletion="css-img" class="img snipcss-saPsI style-kgHNC" id="style-kgHNC"><u>Customise columns...</u></i>,
+            dataIndex: 'Plus',
+            key: 'Plus',
+            width: 30,
+            render: (text) => (
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    {text}
+                </div>
+            )
+
         },
     ];
-    console.log(campaigns)
-    //okay i ma here to help 
-
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
             <div class="_2utz style-Seeed" id="style-Seeed">
