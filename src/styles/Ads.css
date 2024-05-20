@@ -4074,7 +4074,7 @@ button {
 .campaign-footer,
 .campaign-row {
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid #f2efef;
 }
 
 .campaign-header div,
@@ -4082,7 +4082,7 @@ button {
 .campaign-row div {
     flex: 1;
     padding: 8px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #f2efef;
     text-align: left;
 }
 
@@ -4188,4 +4188,10 @@ input:checked+.slider:before {
 
 .campaign-table-container::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+}
+
+.campaign-header>div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 }
