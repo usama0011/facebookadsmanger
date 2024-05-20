@@ -3,6 +3,7 @@ import '../styles/CompaingsData.css'
 import axios from 'axios';
 import { Switch, Table } from 'antd';
 import { Link } from 'react-router-dom';
+import { BarChartOutlined } from '@ant-design/icons';
 
 const CompaingsData = () => {
     const [campaigns, setCampaigns] = useState([]);
@@ -64,7 +65,8 @@ const CompaingsData = () => {
                         </div>
                         <div className='hoverbuttonsmyspec'>
                             <div style={{ display: 'flex', alignItems: 'center', }}>
-                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editmainchart">
+                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '10px', height: "10px", color: "red" }} /><Link style={{ color: "unset" }} to="/editmainchart">
+
                                     View Charts
                                 </Link></div>
                                 <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
