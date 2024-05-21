@@ -4366,10 +4366,22 @@ html {
     white-space: inherit;
 }
 
-.xxio538 {
+/* .xxio538 {
     line-height: 1.42858 !important;
-}
+    background-color: rgb(69, 63, 63);
+} */
 
 i.img {
     -ms-high-contrast-adjust: none;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-ftbBX.style-ftbBX {
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/wwrPLYIMWpv.png?_nc_eui2=AeFEGeY7RRGZ6sy8SrAvx3rvZ-_6tnDX3zln7_q2cNffOajlDNCJknHcBAa5ezxY0C5Hr4qIc1Zrdb8gSsNZokIn");
+    background-position: -13px -3328px;
+    background-size: auto;
+    width: 8px;
+    height: 8px;
+    background-repeat: no-repeat;
+    display: inline-block;
 }

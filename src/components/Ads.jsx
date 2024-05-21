@@ -80,9 +80,19 @@ const Ads = () => {
             render: (text) => (
                 <>
                     <div className='mainparentcontainer'>
-                        <div style={{ overflow: "hidden" }} className="campaign-name-cell">
-                            <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
-                                {truncateText(text, 30)}
+                        <div style={{ overflow: "hidden", display: 'flex' }}
+                            className="campaign-name-cell">
+
+                            <div style={{ display: 'flex', alignItems: "center" }} className="campaign-name">
+                                <div class="_62i0 snipcss-9NrJ2">
+                                    <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="Promoting website: https://thesearchguide.xyz/cf/r/661b84e19cfeda0012066a3c?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaign_id..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto" id="js_5hd">
+                                        <div data-visualcompletion="ignore" class="xt0psk2"></div>
+                                        <div class="xt0psk2 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj"><span class="_3dfi _3dfj" >{truncateText(text, 40)}</span></div>
+                                    </div>
+                                    <div data-visualcompletion="ignore" class=""><a aria-label="Edit" class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#" id="js_5oz">
+                                        <div class="_5_6n"><span class="_5_6o"></span></div>
+                                    </a></div>
+                                </div>
                                 <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
                             </div>
                         </div>
@@ -116,9 +126,16 @@ const Ads = () => {
             width: 150,
             render: (text) => (
                 <div className="campaign-name-cell">
-                    <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
-                        {text === "active" ? <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div> : null}<div style={{ fontSize: '14px' }}>{text}</div>
-                    </div>
+                    <div style={{ border: "none" }} class="_1b33 snipcss-B7bFk tether-target tether-enabled tether-element-attached-bottom tether-abutted tether-abutted-top tether-target-attached-top tether-element-attached-right tether-target-attached-right"><span>
+                        <div class="ellipsis">
+                            <div class="clearfix _ikh">
+                                <div class="_4bl7">
+                                    <div class="x1yc453h x1kky2od x1y5rjcf"><i alt="" data-visualcompletion="css-img" class="img style-ftbBX" id="style-ftbBX"></i></div>
+                                </div>
+                                <div class="_4bl9"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Active</span></div>
+                            </div>
+                        </div>
+                    </span></div>
 
                 </div>
             ),
@@ -130,11 +147,11 @@ const Ads = () => {
             width: 250,
             render: (text) => (
                 <div className="campaign-name-cell">
-                    <div style={{ position: 'relative', display: 'flex', alignItems: "center" }} className="campaign-name">
-                        {text === "active" ? <div style={{ width: '8px', marginRight: "5px", height: '8px', borderRadius: '50%', backgroundColor: '#66be0f' }}></div> : null}<div style={{ fontSize: '14px' }}>{text}</div>
-                        <br />
+                    <div style={{ border: 'none' }} class="_1b33 ellipsis" data-hover="tooltip" data-tooltip-display="overflow"><a class="x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u x1lliihq" data-hover="tooltip" data-tooltip-display="overflow" href="#">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/661b84e19cfeda0012066a3c?ad_id=&amp;campaig...</a>
+                        <div data-visualcompletion="ignore" class="">
+                            <div class="x1rg5ohu x67bb7w"><span class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xq9mrsl x1h4wwuj xeuugli">1 active ad</span></div>
+                        </div>
                     </div>
-                    1 active ad
 
                 </div>
             ),
@@ -144,12 +161,15 @@ const Ads = () => {
             title: 'Bid Strategy',
             dataIndex: 'Bidstrategy',
             key: 'Bidstrategy',
-            width: 120,
+            width: 130,
             render: (text) => (
-                <div style={{ textAlign: "right" }}>
-                    {text}
-                    <br />
-                    <span>Links clicks</span>
+                <div class="snipcss-UtGF5">
+                    <div geotextcolor="value" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto" class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"><span>
+                        <div data-visualcompletion="ignore" class=""></div>{text}
+                    </span></div>
+                    <div class="ellipsis _1ha4" data-hover="tooltip" data-tooltip-display="overflow" data-tooltip-text-direction="auto">
+                        <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">Link clicks</div>
+                    </div>
                 </div>
             )
         },
@@ -161,7 +181,6 @@ const Ads = () => {
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
                     {truncateText(text, 30)}
-
                 </div>
             )
         },
@@ -178,7 +197,7 @@ const Ads = () => {
             title: 'Attribution Settings',
             dataIndex: 'Attributionsetting',
             key: 'Attributionsetting',
-            width: 90,
+            width: 120,
             render: (text) => (
                 <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
             )
@@ -192,7 +211,7 @@ const Ads = () => {
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
                     {text}
                     <br />
-                    <span style={{ fontSize: '12px', color: 'gray' }}>Link Clicks</span>
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Link clicks</span>
                 </div>
             )
         },
@@ -217,7 +236,7 @@ const Ads = () => {
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
                     {text}
                     <br />
-                    <span style={{ fontSize: '12px', color: 'gray' }}>Per link click</span>
+                    <span style={{ fontSize: '12px', color: 'gray', whiteSpace: "nowrap" }}>Per link click</span>
                 </div>
             )
         },
@@ -293,6 +312,11 @@ const Ads = () => {
 
         },
     ];
+    const Footer = () => (
+        <div style={{ display: 'flex', justifyContent: 'space-between', boxShadow: '0 -4px 8px rgba(0,0,0,0.1)', padding: '10px 20px', background: '#fff' }}>
+            footer
+        </div>
+    );
     return (
         <div class="_3-9a style-5nd4I" id="style-5nd4I">
             <div class="_2utz style-Seeed" id="style-Seeed">
@@ -553,9 +577,11 @@ const Ads = () => {
                                     x: 2000,
                                     y: 420,
                                 }}
+                                bordered
                                 pagination={false}
                                 rowKey={(record) => record._id}
                                 className="campaign-table"
+
 
                             />
                             {error && <div className="error-message">{error}</div>}
