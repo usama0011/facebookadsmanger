@@ -45,7 +45,7 @@ const router = createBrowserRouter([
     element: <EditCompaingTwo />
   },
   {
-    path: "/editcampaingthree",
+    path: "/editcampaingthree/:id",
     element: <EditCompaingThree />
   },
   {
