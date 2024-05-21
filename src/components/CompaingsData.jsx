@@ -153,7 +153,7 @@ const CompaingsData = () => {
             key: 'Bidstrategy',
             width: 120,
             render: (text) => (
-                <div>
+                <div style={{ fontSize: "14px" }}>
                     {truncateText(text, 16)}
                 </div>
             )
@@ -189,7 +189,7 @@ const CompaingsData = () => {
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
                     {text}
                     <br />
-                    <span style={{ fontSize: '12px', color: 'gray' }}>Link Clicks</span>
+                    <span style={{ fontSize: '12px', color: 'gray' }}>Link clicks</span>
                 </div>
             )
         },
@@ -198,12 +198,22 @@ const CompaingsData = () => {
             dataIndex: 'Reach',
             key: 'Reach',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px" }}>
+                    {text}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Impressions',
             key: 'Impressions',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px" }}>
+                    {text}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost Per <br /> Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,

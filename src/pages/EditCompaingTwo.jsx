@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/EditCompaingtwo.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import axios from 'axios'
 const EditCompaingTwo = () => {
+    const { id } = useParams()
+    const [campaign, setCampaigns] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    const navigation = useNavigate();
+    useEffect(() => {
+        const fetchCampaigns = async () => {
+            try {
+                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/newcampaing/${id}`);
+                setCampaigns(response.data);
+            } catch (err) {
+                setError('Error fetching campaigns');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCampaigns();
+    }, []);
+    console.log(campaign)
     return (
         <div>
-
             <div class="_2ww1 _7y7x" style={{ width: '40px' }}>
                 <div data-pagelet="AdsSideNavWithContent.react" class=""><span data-surface-wrapper="1" data-surface="/am/navigation_toolbar" data-auto-logging-id="f2e26c5d802f984" class="style-cIfEa" id="style-cIfEa">
                     <div class="_2y5j _2y5k style-zGyTf" id="style-zGyTf">
