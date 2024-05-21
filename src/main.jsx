@@ -1,5 +1,6 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
+import { Suspense, lazy } from 'react';
 import './index.css'
 import {
   createBrowserRouter,
@@ -14,7 +15,7 @@ import EditCompaingThree from "./pages/EditCompaingThree";
 import EditChartMain from "./pages/EditChartMain";
 import EditChartTwo from "./pages/EditChartTwo";
 import EditChartThree from "./pages/EditChartThree";
-import PaymentPage from "./pages/PaymentPage";
+const PaymentPage = lazy(() => import('./pages/PaymentPage'));
 import CreatePayment from "./pages/CreatePayment";
 import CreateAd from "./pages/CreateAd";
 import CreateAdsSet from "./pages/CreateAdsSet";
@@ -28,6 +29,7 @@ import EditMyCampaing from "./pages/EditMyCampaing";
 import EditMyAds from "./pages/EditMyAds";
 import EditPayment from "./pages/EditPayment";
 import EditMyAdsSet from "./pages/EditMyAdsSet";
+import PaymentLoadingPage from "./pages/PaymentLoadingPage";
 
 const router = createBrowserRouter([
   {
@@ -60,7 +62,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/payment",
-    element: <PaymentPage />
+    element: (
+      <Suspense fallback={<PaymentLoadingPage />}>
+        <PaymentPage />
+      </Suspense>
+    )
   },
 
   {
