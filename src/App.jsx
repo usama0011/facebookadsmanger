@@ -11,6 +11,8 @@ import { DateRangePicker } from 'react-date-range'
 const App = () => {
   const [showcalender, setShowCalender] = useState(false)
   const [currentfolder, setcurrentFolder] = useState("Campaings");
+  const [data, setData] = useState([]);
+
   // Initialize state with the current date
   const [selectionRange, setSelectionRange] = useState({
     startDate: new Date(),
@@ -34,8 +36,10 @@ const App = () => {
     });
   };
   const handleUpdatbtn = () => {
-    setShowCalender(false)
+    setShowCalender((per) => !per)
+    console.log("I ma the log")
   }
+  const { startDate, endDate } = selectionRange;
   return (
     <div>
       <div class="_605a _6nw _jn7 _2is9 _61ve roboto bizsitePage chrome webkit win x1 Locale_en_GB snipcss-WaAOv" dir="ltr" cz-shortcut-listen="true" tabindex="-1">
@@ -598,9 +602,9 @@ const App = () => {
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div onClick={() => setShowCalender((pre) => !pre)} style={{ position: "relative" }} class="xsgj6o6">
+                                              <div style={{ position: "relative" }} class="xsgj6o6">
                                                 <div><span class=" " data-tracked="true" data-clickable="1"><span class="_5ldw"><span><button aria-haspopup="true" type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-z8QcL" id="style-z8QcL">
-                                                  <div class="_43rl">
+                                                  <div onClick={() => setShowCalender((prev) => !prev)} class="_43rl">
                                                     <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">
                                                       <div class="_1uz0">
                                                         <div>This month:   {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}&nbsp;</div>
@@ -729,7 +733,7 @@ const App = () => {
                                         </div>
                                       </div>
                                       {/* compaing data start here  */}
-                                      {currentfolder === "Campaings" && <CompaingsData />}
+                                      {currentfolder === "Campaings" && <CompaingsData startDate={startDate} endDat={endDate} />}
                                       {currentfolder === "AdsSets" && < AdsSets />}
                                       {currentfolder === "Ads" && <Ads />}
 
