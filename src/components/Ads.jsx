@@ -26,6 +26,7 @@ const Ads = () => {
 
         fetchCampaigns();
     }, []);
+    console.log(campaigns.map((item) => item.adsImage))
     const truncateText = (text, charLimit = 30) => {
         if (text?.length > charLimit) {
             return text.slice(0, charLimit) + '...';
