@@ -598,7 +598,7 @@ const App = () => {
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div onClick={() => setShowCalender(true)} style={{ position: "relative" }} class="xsgj6o6">
+                                              <div onClick={() => setShowCalender((pre) => !pre)} style={{ position: "relative" }} class="xsgj6o6">
                                                 <div><span class=" " data-tracked="true" data-clickable="1"><span class="_5ldw"><span><button aria-haspopup="true" type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-z8QcL" id="style-z8QcL">
                                                   <div class="_43rl">
                                                     <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">

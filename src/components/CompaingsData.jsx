@@ -83,7 +83,7 @@ const CompaingsData = () => {
                     <div className='mainparentcontainer'>
                         <div style={{ overflow: "hidden" }} className="campaign-name-cell">
                             <div style={{ color: "#297def", textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
-                                {truncateText(text, 30)}
+                                {truncateText(text, 33)}
                                 <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
                             </div>
                         </div>
@@ -111,7 +111,29 @@ const CompaingsData = () => {
             ),
         },
         {
-            title: <div className='resulsconainer'> <div>Delivery</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            title: <div className='resulsconainer'>
+                <div>
+                    <div class="_2si5 _76gi style-IPDWW" id="style-IPDWW">
+                        <div class="_643k style-JFY4E" id="reporting_table_column_delivery">
+                            <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli" role="heading">
+                                <div class="_643l">
+                                    <div class="_3ea9" id="js_2a4">Delivery<span id="style-I46WW" class="style-I46WW"><i alt="" data-visualcompletion="css-img" class="img"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-visualcompletion="ignore" class="">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="x10l6tqk xnx3k43">
+                        <div class="x1pha0wt x78zum5 x2lwn1j xeuugli">
+                            <div><button aria-label="open sorting options drop-down menu" class="x78zum5 x6s0dn4 xl56j7k x1nn3v0j xg83lxy x1120s5i x1h0ha7o x8j4wrb x1npaq5j x1c83p5e x1enjb0b x199158v xgcd1z6 x1ejq31n xd10rxx x1sy0etr x17r0tee xx8sgm8" type="button">
+                                <div class="xgxxoiu"><i alt="" data-visualcompletion="css-img" class="img style-Qf8pB" id="style-Qf8pB"></i></div><span class="accessible_elem"> </span>
+                            </button></div>
+                        </div>
+                    </div>
+                </div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div>
+            </div>,
             dataIndex: 'Delivery',
             key: 'Delivery',
             width: 150,

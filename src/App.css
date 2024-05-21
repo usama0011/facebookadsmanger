@@ -6320,3 +6320,15 @@ i.img u {
     border-radius: 6px;
     border-width: 0px;
 }
+
+.custom-date-range-picker .rdrDayNumber span {
+    background-color: #ebedf0 !important;
+    color: #000;
+    /* Change text color if needed */
+}
+
+.custom-date-range-picker .rdrDay:hover .rdrDayNumber span,
+.custom-date-range-picker .rdrDayPassive .rdrDayNumber span {
+    background-color: inherit !important;
+    color: inherit !important;
+}
