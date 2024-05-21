@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import "../styles/Editmycampaing.css"
-const EditMyAds = () => {
+const EditMyAdsSet = () => {
     const { id } = useParams();
     const [campaign, setCampaign] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -14,7 +13,7 @@ const EditMyAds = () => {
     useEffect(() => {
         const fetchCampaign = async () => {
             try {
-                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/ads/${id}`);
+                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/adsset/${id}`);
                 setCampaign(response.data);
             } catch (err) {
                 setError('Error fetching campaign');
@@ -38,7 +37,7 @@ const EditMyAds = () => {
         e.preventDefault();
         setSaving(true);
         try {
-            await axios.put(`https://facebookadsmangerserver.vercel.app/api/ads/${id}`, campaign);
+            await axios.put(`https://facebookadsmangerserver.vercel.app/api/adsset/${id}`, campaign);
             alert('Campaign has been updated successfully');
 
         } catch (err) {
@@ -58,7 +57,7 @@ const EditMyAds = () => {
 
     return (
         <div className="edit-campaign-container">
-            <h1 className="edit-campaign-title">Edit Ads</h1>
+            <h1 className="edit-campaign-title">Edit Ads Set</h1>
             {campaign && (
                 <form className="edit-campaign-form" onSubmit={handleSubmit}>
                     <label>
@@ -70,21 +69,13 @@ const EditMyAds = () => {
                             onChange={handleChange}
                         />
                     </label>
-                    <label>
-                        Ad Name:
-                        <input
-                            type="text"
-                            name="Adname"
-                            value={campaign.Adname}
-                            onChange={handleChange}
-                        />
-                    </label>
+
                     <label>
                         Ad Set Name:
                         <input
                             type="text"
-                            name="AdsetName"
-                            value={campaign.AdsetName}
+                            name="AdsSetname"
+                            value={campaign.AdsSetname}
                             onChange={handleChange}
                         />
                     </label>
@@ -180,16 +171,16 @@ const EditMyAds = () => {
                         />
                     </label>
                     <label>
-                        Campaign Image:
+                        Ad Set Image:
                         <input
                             type="text"
                             name="adImage"
-                            value={campaign.adImage}
+                            value={campaign.adssetImage}
                             onChange={handleChange}
                         />
                     </label>
                     <label>
-                        EntryDate:
+                        Ad Set EntryDate:
                         <input
                             type="date"
                             name="entryDate"
@@ -206,4 +197,4 @@ const EditMyAds = () => {
     );
 };
 
-export default EditMyAds;
+export default EditMyAdsSet;

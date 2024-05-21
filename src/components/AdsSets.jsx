@@ -372,7 +372,7 @@ const AdsSets = () => {
                                                                 </div>
                                                             </span></div>
                                                         </div>
-                                                        <div class="x3nfvp2 x193iq5w xxymvpz style-cSERk" role="none" id="style-cSERk">
+                                                        <div style={{ height: '32px' }} class="x3nfvp2 x193iq5w xxymvpz style-cSERk" role="none" id="style-cSERk">
                                                             <div aria-busy="false" aria-controls="js_9" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d style-cKL4m" role="button" tabindex="0" id="style-cKL4m"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                                 <div class="x78zum5">
                                                                     <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Export and import ad configuration data</div>

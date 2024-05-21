@@ -5,6 +5,7 @@ import axios from 'axios';
 const CreateCampaing = () => {
     const [formData, setFormData] = useState({
         currentSwitch: '',
+        entryDate: "",
         campaingname: '',
         Delivery: '',
         Bidstrategy: '',
@@ -205,6 +206,17 @@ const CreateCampaing = () => {
                         type="text"
                         name="campaingImage"
                         value={formData.campaingImage}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="entryDate">Entery Date:</label>
+                    <input
+                        type="date"
+                        name="entryDate"
+                        value={formData.entryDate}
                         onChange={handleChange}
                         className="form-input"
                         required

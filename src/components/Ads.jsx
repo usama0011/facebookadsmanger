@@ -77,11 +77,11 @@ const Ads = () => {
             key: 'Adname',
             fixed: 'left',
             width: 350,
-            render: (text) => (
+            render: (text, record) => (
                 <>
                     <div style={{ display: 'flex', alignItems: 'center' }} className='mainparentcontainer'>
                         <div style={{ width: '35px', height: '32px', marginRight: "5px" }}>
-                            <img style={{ width: "100%", height: "100%" }} src="https://external.flhe11-1.fna.fbcdn.net/emg1/v/t13/11509708760447420005?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKwjq-7EgZjwOK4He35c9xq9VVIi5scBahGwGLrFK8OFpiKaCNnPnj0o7CCBy_B3Ym9igf-qA_v60i2h9QickD7Xhigh8_5-YEwYSiOWKM8cslu9DWBvB0MRVvI48aSzh6FulddiM3uJIHrWaZJy82u&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p46x46_q75&_nc_eui2=AeENU4vBwpOLFf65Ix51xgPGXMDpptZLZA1cwOmm1ktkDauTu7nZHfsBZaVQU1lNUJRm92I4PGkusvxIlcTxLjLn&ccb=13-1&oh=06_Q399hFvFN-_j9Aejb2mrOFNgTHlZKQaMq14x7X3T0C8f6xY&oe=664E1E9A&_nc_sid=58080a" alt="" />
+                            <img style={{ width: "100%", height: "100%" }} src={record.adImage} alt="" />
                         </div>
                         <div>
                             <div style={{ overflow: "hidden" }}
@@ -443,7 +443,7 @@ const Ads = () => {
                                                                 </div>
                                                             </span></div>
                                                         </div>
-                                                        <div class="x3nfvp2 x193iq5w xxymvpz style-cSERk" role="none" id="style-cSERk">
+                                                        <div style={{ height: '32px' }} class="x3nfvp2 x193iq5w xxymvpz style-cSERk" role="none" id="style-cSERk">
                                                             <div aria-busy="false" aria-controls="js_9" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d style-cKL4m" role="button" tabindex="0" id="style-cKL4m"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                                 <div class="x78zum5">
                                                                     <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Export and import ad configuration data</div>

@@ -3,14 +3,38 @@ import './App.css'
 import CompaingsData from './components/CompaingsData'
 import AdsSets from './components/AdsSets'
 import Ads from './components/Ads'
-import Calender from './components/Calender'
 import { Link } from 'react-router-dom'
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import { DateRangePicker } from 'react-date-range'
 
 const App = () => {
   const [showcalender, setShowCalender] = useState(false)
   const [currentfolder, setcurrentFolder] = useState("Campaings");
+  // Initialize state with the current date
+  const [selectionRange, setSelectionRange] = useState({
+    startDate: new Date(),
+    endDate: new Date(),
+    key: 'selection',
+  });
   const handleClickRun = (currentfolder) => {
     setcurrentFolder(currentfolder)
+  }
+  // Update state with selected date range
+  const handleSelect = (ranges) => {
+    console.log(ranges);
+    setSelectionRange(ranges.selection);
+  };
+  // Format dates to desired format
+  const formatDate = (date) => {
+    return new Date(date).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  };
+  const handleUpdatbtn = () => {
+    setShowCalender(false)
   }
   return (
     <div>
@@ -413,7 +437,7 @@ const App = () => {
                                           <div class="_8fgf _8ox0 snipcss0-1-1-2">
                                             <div class="_3qn7 _61-0 _2fyi _3qng snipcss0-2-2-3">
                                               <div class="x1t2a60a x1mpkggp snipcss0-3-3-4">
-                                                <div aria-level="2" class="x1xqt7ti xm46was x1xlr1w8 x1jrz1v4 xbsr9hj xuxw1ft x1yc453h x1h4wwuj xeuugli snipcss0-4-4-5" role="heading">Campaigns</div>
+                                                <div aria-level="2" class="x1xqt7ti xm46was x1xlr1w8 x1jrz1v4 xbsr9hj xuxw1ft x1yc453h x1h4wwuj xeuugli snipcss0-4-4-5" role="heading">{currentfolder === "Campaings" ? "Campaings" : currentfolder === "AdsSets" ? "Ad Sets" : "Ads"}</div>
                                               </div>
                                               <div class="x1i64zmx snipcss0-3-3-6">
                                                 <div class="snipcss0-4-6-7">
@@ -574,18 +598,42 @@ const App = () => {
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div onClick={() => setShowCalender((prev) => !prev)} style={{ position: "relative" }} class="xsgj6o6">
+                                              <div onClick={() => setShowCalender(true)} style={{ position: "relative" }} class="xsgj6o6">
                                                 <div><span class=" " data-tracked="true" data-clickable="1"><span class="_5ldw"><span><button aria-haspopup="true" type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-z8QcL" id="style-z8QcL">
                                                   <div class="_43rl">
                                                     <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">
                                                       <div class="_1uz0">
-                                                        <div>This month: 1 May 2024 - 13 May 2024&nbsp;</div>
+                                                        <div>This month:   {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}&nbsp;</div>
                                                       </div>
                                                     </div><i aria-hidden="true" class="_271o img style-fq3tz" alt="" data-visualcompletion="css-img" id="style-fq3tz"></i>
                                                   </div>
                                                 </button></span></span></span></div>
-                                                {showcalender && <div style={{ position: "absolute", bottom: "-20px", right: "20px", zIndex: 999 }}>
-                                                  <Calender showcalender={showcalender} setShowCalender={setShowCalender} />
+                                                {showcalender && <div style={{ position: "absolute", top: "40px", right: "20px", zIndex: 999 }}>
+                                                  <DateRangePicker
+                                                    ranges={[selectionRange]}
+                                                    onChange={handleSelect}
+                                                  />
+                                                  <div style={{ backgroundColor: 'white', paddingRight: '10px', paddingBottom: "10px" }} class="_4iqv _2pi9 _2pi3 _3qn7 _61-3 _2fyi _3qng">
+                                                    <div></div>
+                                                    <div id="style-kzDKj" class="style-kzDKj">
+                                                      <div id="style-8VIoe" class="style-8VIoe">
+                                                        <div style={{ paddingRight: '10px' }} aria-atomic="true" aria-live="polite" aria-readonly="true" class=" _4iqx" id="js_6h-selectedLabel" role="textbox">
+                                                          {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}
+                                                          <div className="_5wr">Karachi Time</div>
+                                                        </div>
+                                                      </div>
+                                                      <div id="style-LDZSI" class="style-LDZSI"><button type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-3a3at" id="style-3a3at">
+                                                        <div class="_43rl">
+                                                          <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">Cancel</div>
+                                                        </div>
+                                                      </button></div>
+                                                      <div id="style-QIOO5" class="style-QIOO5"><button type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-cD2t8" id="style-cD2t8">
+                                                        <div class="_43rl">
+                                                          <div onClick={handleUpdatbtn} data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">Update</div>
+                                                        </div>
+                                                      </button></div>
+                                                    </div>
+                                                  </div>
                                                 </div>
                                                 }                                              </div>
                                             </div>
@@ -597,7 +645,7 @@ const App = () => {
                                           <div class="x1iyjqo2 x2lah0s xdl72j9">
                                             <ul class="x78zum5 xuk3077 x1rdy4ex _43o4 _4470" role="tablist"><span data-surface-wrapper="1" data-surface="/am/table/table_tab:campaign" data-auto-logging-id="f21ee556f7cacf8" id="style-o9ibw" class="style-o9ibw">
                                               <li class="x1iyjqo2 x1r8uery x6ikm8r x10wlt62 x1vjfegm x1jyxor1 _45hc _1hqh" role="presentation"><a aria-haspopup="false" role="tab" tabindex="-1" class="_3m1v _468f _8z64" aria-selected="true"><span class=" " data-tracked="true" data-clickable="1">
-                                                <div onClick={() => handleClickRun("Campaings")} class="x78zum5 x1gslohp xw3qccf xat24cr xsgj6o6 xgqcy7u x1lq5wgf x1f92s9n xn3w4p2 x1xp15n3 x1q0q8m5 xso031l x2izyaf" id="CAMPAIGN_GROUP_AdsClassicTab">
+                                                <div onClick={() => handleClickRun("Campaings")} class={`x78zum5 x1gslohp xw3qccf xat24cr xsgj6o6 xgqcy7u x1lq5wgf x1f92s9n xn3w4p2 x1xp15n3 x1q0q8m5 xso031l ${currentfolder === "Campaings" ? "x2izyaf" : ""} `} id="CAMPAIGN_GROUP_AdsClassicTab">
                                                   <div class="x6ikm8r x10wlt62 x1iyjqo2 x78zum5 x6s0dn4 x16n37ib xq8finb">
                                                     <div class="x6ikm8r x10wlt62 x6s0dn4 x78zum5 x1iyjqo2">
                                                       <div class="x1rg5ohu x67bb7w">
@@ -608,7 +656,7 @@ const App = () => {
                                                           <path d="m30.9 32.57-5.95-12c-.17-.35-.54-.57-.95-.57s-.77.22-.95.57l-5.95 12c-.19.39-.1.86.23 1.16.33.3.83.36 1.23.14L24 30.98l5.44 2.89a1.075 1.075 0 0 0 1.23-.14c.33-.3.42-.76.23-1.16z"></path>
                                                         </svg>}
                                                           <div class="x6ikm8r" data-sscoverage-ignore="true">
-                                                            <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli x1i64zmx" role="heading">Campaigns </div>
+                                                            <div style={currentfolder === "Campaings" ? { color: '#0a78be' } : { color: 'black' }} aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4  x1i64zmx" role="heading">Campaigns </div>
                                                           </div>
                                                         </div>
                                                       </div>
@@ -618,7 +666,7 @@ const App = () => {
                                               </span></a></li>
                                             </span><span data-surface-wrapper="1" data-surface="/am/table/table_tab:adset" data-auto-logging-id="f281680e3b25a24" id="style-fOWQi" class="style-fOWQi">
                                                 <li class="x1iyjqo2 x1r8uery x6ikm8r x10wlt62 _45hc" role="presentation"><a aria-haspopup="false" role="tab" tabindex="-1" class="_3m1v _468f _8z64" aria-selected="false"><span class=" " data-tracked="true" data-clickable="1">
-                                                  <div onClick={() => handleClickRun("AdsSets")} class="x78zum5 x1vqgdyp x1gslohp xw3qccf xat24cr xsgj6o6 x10lqkbw xgqcy7u x1lq5wgf x1f92s9n" id="CAMPAIGN_AdsClassicTab">
+                                                  <div onClick={() => handleClickRun("AdsSets")} class={`x78zum5 x1gslohp xw3qccf xat24cr xsgj6o6 xgqcy7u x1lq5wgf x1f92s9n xn3w4p2 x1xp15n3 x1q0q8m5 xso031l ${currentfolder === "AdsSets" ? "x2izyaf" : ""} `}>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 x78zum5 x6s0dn4 x16n37ib xq8finb">
                                                       <div class="x6ikm8r x10wlt62 x6s0dn4 x78zum5 x1iyjqo2">
                                                         <div class="x1rg5ohu x67bb7w">
@@ -639,7 +687,7 @@ const App = () => {
                                                             </g>
                                                           </svg>}
                                                             <div class="x6ikm8r" data-sscoverage-ignore="true">
-                                                              <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli x1i64zmx" role="heading">Ad sets </div>
+                                                              <div style={currentfolder === "AdsSets" ? { color: '#0a78be' } : { color: 'black' }} aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli x1i64zmx" role="heading">Ad sets </div>
                                                             </div>
                                                           </div>
                                                         </div>
@@ -649,7 +697,7 @@ const App = () => {
                                                 </span></a></li>
                                               </span><span data-surface-wrapper="1" data-surface="/am/table/table_tab:ad" data-auto-logging-id="f191984a1c2abb4" id="style-j557g" class="style-j557g">
                                                 <li class="x1iyjqo2 x1r8uery x6ikm8r x10wlt62 _45hc" role="presentation"><a aria-haspopup="false" role="tab" tabindex="-1" class="_3m1v _468f _8z64" aria-selected="false"><span class=" " data-tracked="true" data-clickable="1">
-                                                  <div onClick={() => handleClickRun("Ads")} class="x78zum5 x1vqgdyp x1gslohp xw3qccf xat24cr xsgj6o6 x10lqkbw xgqcy7u x1lq5wgf x1f92s9n" id="ADGROUP_AdsClassicTab">
+                                                  <div onClick={() => handleClickRun("Ads")} class={`x78zum5 x1gslohp xw3qccf xat24cr xsgj6o6 xgqcy7u x1lq5wgf x1f92s9n xn3w4p2 x1xp15n3 x1q0q8m5 xso031l ${currentfolder === "Ads" ? "x2izyaf" : ""} `} id="ADGROUP_AdsClassicTab">
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 x78zum5 x6s0dn4 x16n37ib xq8finb">
                                                       <div class="x6ikm8r x10wlt62 x6s0dn4 x78zum5 x1iyjqo2">
                                                         <div class="x1rg5ohu x67bb7w">
@@ -667,7 +715,7 @@ const App = () => {
                                                             </g>
                                                           </svg>}
                                                             <div class="x6ikm8r" data-sscoverage-ignore="true">
-                                                              <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli x1i64zmx" role="heading">Ads</div>
+                                                              <div style={currentfolder === "Ads" ? { color: '#0a78be' } : { color: 'black' }} aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli x1i64zmx" role="heading">Ads</div>
                                                             </div>
                                                           </div>
                                                         </div>

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const ViewAds = () => {
     const [campaigns, setCampaigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-
+    const navigation = useNavigate()
     useEffect(() => {
         const fetchCampaigns = async () => {
             try {
@@ -25,6 +26,7 @@ const ViewAds = () => {
         try {
             await axios.delete(`https://facebookadsmangerserver.vercel.app/api/ads/${id}`);
             setCampaigns(campaigns.filter(campaign => campaign._id !== id));
+            alert("Ads has been Deleted")
         } catch (err) {
             setError('Error deleting campaign');
         }
@@ -32,6 +34,7 @@ const ViewAds = () => {
 
     const handleEdit = (id) => {
         // Redirect to edit page or show edit form (not implemented here)
+        navigation(`/editmyads/${id}`)
     };
 
     if (loading) {
@@ -44,7 +47,7 @@ const ViewAds = () => {
 
     return (
         <div className="campaigns-container">
-            <h1 className="campaigns-title">Ads</h1>
+            <h1 className="campaigns-title">Ads {campaigns?.length}</h1>
             <div className="campaigns-list">
                 {campaigns.map((campaign) => (
                     <div key={campaign._id} className="campaign-item">
@@ -61,9 +64,9 @@ const ViewAds = () => {
                             <p><strong>Cost Per Result:</strong> {campaign.Costperresult}</p>
                             <p><strong>Amount Spent:</strong> {campaign.Amountspent}</p>
                             <p><strong>Ends:</strong> {campaign.Ends}</p>
-                            <p><strong>Campaign Image:</strong> <img src={campaign.campaingImage} alt={campaign.campaingname} className="campaign-image" /></p>
+                            <p><strong>Campaign Image:</strong> <img src={campaign.adImage} alt={campaign.adImage} className="campaign-image" /></p>
                         </div>
-                        <div className="campaign-actions">
+                        <div className="">
                             <button onClick={() => handleEdit(campaign._id)} className="edit-button">Edit</button>
                             <button onClick={() => handleDelete(campaign._id)} className="delete-button">Delete</button>
                         </div>

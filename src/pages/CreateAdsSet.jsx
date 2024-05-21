@@ -4,6 +4,7 @@ import axios from 'axios';
 const CreateAdsSet = () => {
     const [formData, setFormData] = useState({
         currentSwitch: '',
+        entryDate: "",
         AdsSetname: '',
         Delivery: '',
         Bidstrategy: '',
@@ -52,6 +53,7 @@ const CreateAdsSet = () => {
                 Impressions: '',
                 Costperresult: '',
                 Amountspent: '',
+                entryDate: "",
                 Ends: '',
                 Schedule: '',
                 adssetImage: ''
@@ -230,6 +232,17 @@ const CreateAdsSet = () => {
                         type="text"
                         name="adssetImage"
                         value={formData.adssetImage}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="entryDate">Ads EntryDate</label>
+                    <input
+                        type="date"
+                        name="entryDate"
+                        value={formData.entryDate}
                         onChange={handleChange}
                         className="form-input"
                         required

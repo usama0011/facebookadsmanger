@@ -6,6 +6,7 @@ const CreateAd = () => {
         currentSwitch: '',
         Adname: '',
         Delivery: '',
+        entryDate: "",
         AdsetName: '',
         Bidstrategy: '',
         Budget: '',
@@ -269,6 +270,17 @@ const CreateAd = () => {
                         type="text"
                         name="adImage"
                         value={formData.adImage}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="entryDate">Ad entryDate</label>
+                    <input
+                        type="date"
+                        name="entryDate"
+                        value={formData.entryDate}
                         onChange={handleChange}
                         className="form-input"
                         required

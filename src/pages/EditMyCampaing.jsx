@@ -79,6 +79,15 @@ const EditMyCampaing = () => {
                         />
                     </label>
                     <label>
+                        EntryDate:
+                        <input
+                            type="date"
+                            name="entryDate"
+                            value={campaign.entryDate}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
                         Delivery:
                         <input
                             type="text"

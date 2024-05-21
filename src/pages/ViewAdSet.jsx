@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const ViewAdSet = () => {
     const [campaigns, setCampaigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const naivgation = useNavigate()
 
     useEffect(() => {
         const fetchCampaigns = async () => {
@@ -25,6 +27,7 @@ const ViewAdSet = () => {
         try {
             await axios.delete(`https://facebookadsmangerserver.vercel.app/api/adsset/${id}`);
             setCampaigns(campaigns.filter(campaign => campaign._id !== id));
+            alert("Ads set Deleted")
         } catch (err) {
             setError('Error deleting campaign');
         }
@@ -32,6 +35,7 @@ const ViewAdSet = () => {
 
     const handleEdit = (id) => {
         // Redirect to edit page or show edit form (not implemented here)
+        naivgation(`/editmyadset/${id}`)
     };
 
     if (loading) {
@@ -44,7 +48,7 @@ const ViewAdSet = () => {
 
     return (
         <div className="campaigns-container">
-            <h1 className="campaigns-title">AdsSets</h1>
+            <h1 className="campaigns-title">AdsSets {campaigns?.length}</h1>
             <div className="campaigns-list">
                 {campaigns.map((campaign) => (
                     <div key={campaign._id} className="campaign-item">

@@ -25,6 +25,9 @@ import ViewAdSet from "./pages/ViewAdSet";
 import ViewPayments from "./pages/ViewPayments";
 import ViewAds from "./pages/ViewAds";
 import EditMyCampaing from "./pages/EditMyCampaing";
+import EditMyAds from "./pages/EditMyAds";
+import EditPayment from "./pages/EditPayment";
+import EditMyAdsSet from "./pages/EditMyAdsSet";
 
 const router = createBrowserRouter([
   {
@@ -99,6 +102,18 @@ const router = createBrowserRouter([
   {
     path: "/editmycampaing/:id",
     element: <EditMyCampaing />
+  },
+  {
+    path: "/editmyads/:id",
+    element: <EditMyAds />
+  },
+  {
+    path: "/editpayment/:id",
+    element: <EditPayment />
+  },
+  {
+    path: "/editmyadset/:id",
+    element: <EditMyAdsSet />
   },
 
 ]);

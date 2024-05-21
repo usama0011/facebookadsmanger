@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/ViewTransactionsPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const ViewPayments = () => {
     const [transactions, setTransactions] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-
+    const navigation = useNavigate()
     useEffect(() => {
         const fetchTransactions = async () => {
             try {
@@ -33,6 +34,7 @@ const ViewPayments = () => {
 
     const handleEdit = (id) => {
         // Redirect to edit page or show edit form (not implemented here)
+        navigation(`/editpayment/${id}`)
     };
 
     if (loading) {
