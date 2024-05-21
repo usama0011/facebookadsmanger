@@ -79,40 +79,45 @@ const Ads = () => {
             width: 350,
             render: (text) => (
                 <>
-                    <div className='mainparentcontainer'>
-                        <div style={{ overflow: "hidden", display: 'flex' }}
-                            className="campaign-name-cell">
-
-                            <div style={{ display: 'flex', alignItems: "center" }} className="campaign-name">
-                                <div class="_62i0 snipcss-9NrJ2">
-                                    <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="Promoting website: https://thesearchguide.xyz/cf/r/661b84e19cfeda0012066a3c?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaign_id..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto" id="js_5hd">
-                                        <div data-visualcompletion="ignore" class="xt0psk2"></div>
-                                        <div class="xt0psk2 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj"><span class="_3dfi _3dfj" >{truncateText(text, 40)}</span></div>
-                                    </div>
-                                    <div data-visualcompletion="ignore" class=""><a aria-label="Edit" class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#" id="js_5oz">
-                                        <div class="_5_6n"><span class="_5_6o"></span></div>
-                                    </a></div>
-                                </div>
-                                <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
-                            </div>
+                    <div style={{ display: 'flex', alignItems: 'center' }} className='mainparentcontainer'>
+                        <div style={{ width: '35px', height: '32px', marginRight: "5px" }}>
+                            <img style={{ width: "100%", height: "100%" }} src="https://external.flhe11-1.fna.fbcdn.net/emg1/v/t13/11509708760447420005?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKwjq-7EgZjwOK4He35c9xq9VVIi5scBahGwGLrFK8OFpiKaCNnPnj0o7CCBy_B3Ym9igf-qA_v60i2h9QickD7Xhigh8_5-YEwYSiOWKM8cslu9DWBvB0MRVvI48aSzh6FulddiM3uJIHrWaZJy82u&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p46x46_q75&_nc_eui2=AeENU4vBwpOLFf65Ix51xgPGXMDpptZLZA1cwOmm1ktkDauTu7nZHfsBZaVQU1lNUJRm92I4PGkusvxIlcTxLjLn&ccb=13-1&oh=06_Q399hFvFN-_j9Aejb2mrOFNgTHlZKQaMq14x7X3T0C8f6xY&oe=664E1E9A&_nc_sid=58080a" alt="" />
                         </div>
-                        <div className='hoverbuttonsmyspec'>
-                            <div style={{ display: 'flex', alignItems: 'center', }}>
-                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
+                        <div>
+                            <div style={{ overflow: "hidden" }}
+                                className="campaign-name-cell">
 
-                                    View Charts
-                                </Link></div>
-                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
-                                    <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
-                                    Edit
-                                </Link></div>
-                                <div style={{ marginRight: '10px' }}>
-                                    <FileTextOutlined style={{ marginRight: "3px" }} />
-                                    Duplicate</div>
+                                <div style={{ display: 'flex', alignItems: "center" }} className="campaign-name">
+                                    <div class="_62i0 snipcss-9NrJ2">
+                                        <div class="ellipsis _13is" data-hover="tooltip" data-tooltip-content="Promoting website: https://thesearchguide.xyz/cf/r/661b84e19cfeda0012066a3c?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaign_id..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto" id="js_5hd">
+                                            <div data-visualcompletion="ignore" class="xt0psk2"></div>
+                                            <div class="xt0psk2 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj"><span class="_3dfi _3dfj" >{truncateText(text, 40)}</span></div>
+                                        </div>
+                                        <div data-visualcompletion="ignore" class=""><a aria-label="Edit" class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u" href="#" id="js_5oz">
+                                            <div class="_5_6n"><span class="_5_6o"></span></div>
+                                        </a></div>
+                                    </div>
+                                    <img className='largetimagepenc' style={{ width: "10px", height: "10px", marginLeft: "3px" }} src={EditImage} alt="" />
+                                </div>
+                            </div>
+                            <div className='hoverbuttonsmyspec'>
+                                <div style={{ display: 'flex', alignItems: 'center', }}>
+                                    <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
 
-                                <div style={{ marginRight: '10px' }}>
-                                    <PushpinOutlined style={{ marginRight: "3px" }} />
-                                    Pin</div>
+                                        View Charts
+                                    </Link></div>
+                                    <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                        <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
+                                        Edit
+                                    </Link></div>
+                                    <div style={{ marginRight: '10px' }}>
+                                        <FileTextOutlined style={{ marginRight: "3px" }} />
+                                        Duplicate</div>
+
+                                    <div style={{ marginRight: '10px' }}>
+                                        <PushpinOutlined style={{ marginRight: "3px" }} />
+                                        Pin</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -580,7 +585,7 @@ const Ads = () => {
                                 bordered
                                 pagination={false}
                                 rowKey={(record) => record._id}
-                                className="campaign-table"
+                                className="campaign-table yete"
 
 
                             />
