@@ -39,6 +39,7 @@ const CompaingsData = () => {
             width: 50,
             key: 'checkbox',
             fixed: 'left',
+
             render: () => <input style={{ width: "30px", height: '23px', border: "1px solid #f5f4f4" }} type="checkbox" />
         },
         {
@@ -78,7 +79,7 @@ const CompaingsData = () => {
             key: 'campaingname',
             fixed: 'left',
             width: 250,
-            render: (text) => (
+            render: (text, record) => (
                 <>
                     <div className='mainparentcontainer'>
                         <div style={{ overflow: "hidden" }} className="campaign-name-cell">
@@ -93,7 +94,7 @@ const CompaingsData = () => {
 
                                     View Charts
                                 </Link></div>
-                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to={`/editcampaing/${record._id}`}>
                                     <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
                                     Edit
                                 </Link></div>

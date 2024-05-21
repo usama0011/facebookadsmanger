@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/EditComaping.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import axios from 'axios';
 const EditCompaing = () => {
+    const { id } = useParams()
+    const [campaign, setCampaigns] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    const navigation = useNavigate();
+
+    useEffect(() => {
+        const fetchCampaigns = async () => {
+            try {
+                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/newcampaing/${id}`);
+                setCampaigns(response.data);
+            } catch (err) {
+                setError('Error fetching campaigns');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCampaigns();
+    }, []);
+    console.log(campaign)
     return (
         <div>
             <div class="_2ww1 _7y7x">
@@ -474,7 +496,7 @@ const EditCompaing = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign.campaingname}</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -524,7 +546,7 @@ const EditCompaing = () => {
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
                                                                 <Link style={{ textDecoration: 'unset', color: "unset" }} to="/editcampaingtwo">
-                                                                    <span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span>
+                                                                    <span class="_3dfi _3dfj">{campaign.campaingname}</span>
                                                                 </Link>
                                                             </div>
                                                         </div>
@@ -571,7 +593,7 @@ const EditCompaing = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promoting website: {campaign.campaingname}</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -827,7 +849,7 @@ const EditCompaing = () => {
                                                                                                                                                 <div class=""></div>
                                                                                                                                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                                                                                                                     <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                                                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94"><input aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox" role="combobox" placeholder="Enter your campaign name here..." id="js_2f" aria-labelledby="js_2g" aria-controls="js_2e" aria-busy="false" aria-disabled="false" autocomplete="off" class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3" type="text" value="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..." /></div>
+                                                                                                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94"><input aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox" role="combobox" placeholder="Enter your campaign name here..." id="js_2f" aria-labelledby="js_2g" aria-controls="js_2e" aria-busy="false" aria-disabled="false" autocomplete="off" class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3" type="text" value={campaign.campaingname} /></div>
                                                                                                                                                     </div>
                                                                                                                                                 </div>
                                                                                                                                             </div>
@@ -1265,7 +1287,7 @@ const EditCompaing = () => {
                                                                                                                                                                     <div class="x1iyjqo2 x2lah0s x4pfjvb">
                                                                                                                                                                         <div class="xh8yej3 x1rg5ohu xt7dq6l x1i64zmx">
                                                                                                                                                                             <div class="_aed4"><span class="accessible_elem"><label for="js_bw" id="js_bx"><span role="heading" aria-level="4" id="style-FSh8p" class="style-FSh8p"></span></label></span>
-                                                                                                                                                                                <div class="_aed7 _3qn7 _61-0 _2fyh _3qnf"><span class="_agh9 _agha style-1yKDA" id="style-1yKDA"><input class="_58al _aghb" aria-invalid="false" aria-labelledby="js_bx" placeholder="Please enter an amount" id="js_bw" type="text" value="Rs300.00" />PKR</span></div>
+                                                                                                                                                                                <div class="_aed7 _3qn7 _61-0 _2fyh _3qnf"><span class="_agh9 _agha style-1yKDA" id="style-1yKDA"><input class="_58al _aghb" aria-invalid="false" aria-labelledby="js_bx" placeholder="Please enter an amount" id="js_bw" type="text" value={campaign.Budget} />$</span></div>
                                                                                                                                                                             </div>
                                                                                                                                                                         </div>
                                                                                                                                                                     </div>

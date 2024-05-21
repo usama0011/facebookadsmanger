@@ -4697,7 +4697,12 @@ i.img u {
 }
 
 .ant-table-tbody>tr:nth-child(even) {
-    background-color: #f5f6f7;
+    background-color: #f5f6f7 !important;
+}
+
+/* Apply background color to even rows in the fixed left columns */
+.ant-table-fixed-left {
+    background-color: orange !important;
 }
 
 .ant-table-tbody>tr>td {

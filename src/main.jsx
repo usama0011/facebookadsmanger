@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "/editcampaing",
+    path: "/editcampaing/:id",
     element: <EditCompaing />
   },
   {
@@ -121,6 +121,7 @@ const router = createBrowserRouter([
     path: "/editmyadset/:id",
     element: <EditMyAdsSet />
   },
+
 
 ]);
 
