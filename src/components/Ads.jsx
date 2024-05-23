@@ -26,7 +26,7 @@ const Ads = () => {
 
         fetchCampaigns();
     }, []);
-    console.log(campaigns.map((item) => item.adsImage))
+    console.log(campaigns)
     const truncateText = (text, charLimit = 30) => {
         if (text?.length > charLimit) {
             return text.slice(0, charLimit) + '...';
@@ -80,10 +80,9 @@ const Ads = () => {
             width: 350,
             render: (text, record) => (
                 <>
-                    {console.log("singlerecord", record)}
                     <div style={{ display: 'flex', alignItems: 'center' }} className='mainparentcontainer'>
                         <div style={{ width: '35px', height: '32px', marginRight: "5px" }}>
-                            <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src="https://res.cloudinary.com/dfqzvupho/image/upload/fl_preserve_transparency/v1716296494/WhatsApp_Image_2024-05-21_at_17.56.45_odhnla.jpg?_s=public-apps" alt="" />
+                            <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={record.adImage} alt="" />
                         </div>
                         <div>
                             <div style={{ overflow: "hidden" }}
