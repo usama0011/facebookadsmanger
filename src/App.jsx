@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import CompaingsData from './components/CompaingsData'
 import AdsSets from './components/AdsSets'
@@ -7,11 +7,18 @@ import { Link } from 'react-router-dom'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range'
+import axios from 'axios'
+const formatDate = (date) => {
+  const d = new Date(date);
+  return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
+}
 
 const App = () => {
   const [showcalender, setShowCalender] = useState(false)
   const [currentfolder, setcurrentFolder] = useState("Campaings");
-  const [data, setData] = useState([]);
+  const [campaigns, setCampaigns] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('')
 
   // Initialize state with the current date
   const [selectionRange, setSelectionRange] = useState({
@@ -24,10 +31,9 @@ const App = () => {
   }
   // Update state with selected date range
   const handleSelect = (ranges) => {
-    console.log(ranges);
     setSelectionRange(ranges.selection);
   };
-  // Format dates to desired format
+
   const formatDate = (date) => {
     return new Date(date).toLocaleDateString('en-GB', {
       day: 'numeric',
@@ -35,11 +41,34 @@ const App = () => {
       year: 'numeric',
     });
   };
+
   const handleUpdatbtn = () => {
     setShowCalender((per) => !per)
-    console.log("I ma the log")
   }
-  const { startDate, endDate } = selectionRange;
+  useEffect(() => {
+    const fetchCampaigns = async () => {
+      try {
+        console.log('Fetching campaigns with dates:', formatDate(selectionRange.startDate), formatDate(selectionRange.endDate));
+        const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/newcampaing', {
+          params: {
+            startDate: formatDate(selectionRange.startDate),
+            endDate: formatDate(selectionRange.endDate)
+          }
+        });
+        console.log('Response:', response);
+        setCampaigns(response.data);
+      } catch (err) {
+        setError('Error fetching campaigns');
+        console.error('API Error:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCampaigns();
+  }, [selectionRange.startDate, selectionRange.endDate]);
+
+
   return (
     <div>
       <div class="_605a _6nw _jn7 _2is9 _61ve roboto bizsitePage chrome webkit win x1 Locale_en_GB snipcss-WaAOv" dir="ltr" cz-shortcut-listen="true" tabindex="-1">
@@ -607,7 +636,7 @@ const App = () => {
                                                   <div onClick={() => setShowCalender((prev) => !prev)} class="_43rl">
                                                     <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">
                                                       <div class="_1uz0">
-                                                        <div>This month:   {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}&nbsp;</div>
+                                                        <div>  {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}&nbsp;</div>
                                                       </div>
                                                     </div><i aria-hidden="true" class="_271o img style-fq3tz" alt="" data-visualcompletion="css-img" id="style-fq3tz"></i>
                                                   </div>
@@ -733,7 +762,7 @@ const App = () => {
                                         </div>
                                       </div>
                                       {/* compaing data start here  */}
-                                      {currentfolder === "Campaings" && <CompaingsData startDate={startDate} endDat={endDate} />}
+                                      {currentfolder === "Campaings" && <CompaingsData campaigns={campaigns} loading={loading} setLoading={setLoading} setError={setError} />}
                                       {currentfolder === "AdsSets" && < AdsSets />}
                                       {currentfolder === "Ads" && <Ads />}
 

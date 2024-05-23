@@ -1,32 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/CompaingsData.css'
-import axios from 'axios';
 import { Switch, Table } from 'antd';
 import { Link } from 'react-router-dom';
 import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
 import EditImage from '../assets/edit.png'
 
-const CompaingsData = () => {
-    const [campaigns, setCampaigns] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
-    const [togglebutton, settogglebutton] = useState(false)
 
-    useEffect(() => {
-        const fetchCampaigns = async () => {
-            try {
-                const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/newcampaing');
-                setCampaigns(response.data);
-            } catch (err) {
-                setError('Error fetching campaigns');
-                message.error('Error fetching campaigns');
-            } finally {
-                setLoading(false);
-            }
-        };
 
-        fetchCampaigns();
-    }, []);
+
+const CompaingsData = ({ campaigns, loading, error, setError }) => {
+
     const truncateText = (text, charLimit = 30) => {
         if (text.length > charLimit) {
             return text.slice(0, charLimit) + '...';
@@ -523,8 +506,8 @@ const CompaingsData = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="campaign-table-container">
-                            <Table style={{ borderRadius: "10px" }}
+                        <div style={{ height: "100%", backgroundColor: '#f5f6f7' }} className="campaign-table-container">
+                            <Table style={{ borderRadius: "10px", height: "100%" }}
                                 columns={columns}
                                 bordered={true}
                                 dataSource={campaigns}

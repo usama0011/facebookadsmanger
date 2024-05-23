@@ -66,6 +66,7 @@ const ViewMyCampaings = () => {
                             <p><strong>Cost Per Result:</strong> {campaign.Costperresult}</p>
                             <p><strong>Amount Spent:</strong> {campaign.Amountspent}</p>
                             <p><strong>Ends:</strong> {campaign.Ends}</p>
+                            <p><strong>Entry Date:</strong> {campaign.entryDate}</p>
                             <p><strong>Campaign Image:</strong> <img src={campaign.campaingImage} alt={campaign.campaingname} className="campaign-image" /></p>
                         </div>
                         <br />
