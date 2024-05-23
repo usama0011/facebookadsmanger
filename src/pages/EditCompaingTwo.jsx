@@ -489,13 +489,15 @@ const EditCompaingTwo = () => {
                                 <div aria-label="grid" class="ReactVirtualized__Grid ReactVirtualized__List style-NMJEP" role="grid" tabindex="0" id="style-NMJEP">
                                     <div class="ReactVirtualized__Grid__innerScrollContainer style-4eRCT" id="style-4eRCT">
                                         <div role="row" id="style-PoOgz" class="style-PoOgz"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:campaign" data-auto-logging-id="f149aec1e7d9bf4" id="style-3wLLM" class="style-3wLLM">
-                                            <div aria-label="Campaign" class="x9f619 x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 xo1l8bm xbsr9hj x1k4ywey x14ihq94 x1ug7tv7 x6kzwsm xd1rtb7 x19p7ews x26u7qi " data-id="120210088012940644" data-objecttype="CAMPAIGN_GROUP" id="ads_campaign_structure_item_120210088012940644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
-                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
-                                                    <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
+                                            <div aria-label="Campaign" class="x9f619 x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3  " data-id="120210088012940644" data-objecttype="CAMPAIGN_GROUP" id="ads_campaign_structure_item_120210088012940644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od snipcss-vXOZo">
+                                                    <g>
+                                                        <path d="m19.95 8.76-.18-.53a4 4 0 0 0-3.79-2.74H6.5c-1.66 0-3 1.34-3 3v30c0 2.21 1.79 4 4 4h33c2.21 0 4-1.79 4-4V15.5c0-2.21-1.79-4-4-4H23.74c-1.72 0-3.25-1.1-3.79-2.74z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" fill="none"></path>
+                                                    </g>
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign.campaingname}</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">  <Link style={{ textDecoration: 'unset', color: "unset" }} to={`/editcampaing/${campaign._id}`}>{campaign.campaingname}</Link></span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -527,22 +529,21 @@ const EditCompaingTwo = () => {
                                                 </div>
                                             </div>
                                         </span></div>
-                                        <div role="row" id="style-qASOf" class="style-qASOf"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:adset" data-auto-logging-id="f20c0422cef1c98" id="style-ajrU3" class="style-ajrU3">
-                                            <div aria-label="Ad set" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088012960644" data-objecttype="CAMPAIGN" id="ads_campaign_structure_item_120210088012960644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
-                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1wpsl4u"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
+                                        <div role="row" id="style-qASOf" class="style-qASOf"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:adset" data-auto-logging-id="f20c0422cef1c98" id="style-ajrU3" class="style-ajrU3 xwvwv9b x1sxyh0 xo1l8bm xbsr9hj x1k4ywey x14ihq94 x1ug7tv7 x6kzwsm xd1rtb7 x19p7ews x26u7qi">
+                                            <div aria-label="Ad set" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0  " data-id="120210088012960644" data-objecttype="CAMPAIGN" id="ads_campaign_structure_item_120210088012960644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b xwvwv9b x1sxyh0 xo1l8bm xbsr9hj x1k4ywey x14ihq94 x1ug7tv7 x6kzwsm xd1rtb7 x19p7ews x26u7qi"><span class="x1c4vz4f x2lah0s x1wpsl4u"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od snipcss-AlIZ4">
                                                     <g data-name="Layer 2">
                                                         <g>
                                                             <g data-name="16">
-                                                                <rect class="xbh8q5q xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect>
-                                                                <rect class="xbh8q5q xi5qq39" x="0.5" y="0.5" width="6" height="6" rx="1"></rect>
-                                                                <rect class="xbh8q5q xi5qq39" x="9.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 12.5 12.5)"></rect>
-                                                                <rect class="xbh8q5q xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect>
+                                                                <rect class="xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect>
+                                                                <path d="M5.5 0h-4A1.5 1.5 0 0 0 0 1.5v4A1.5 1.5 0 0 0 1.5 7h4A1.5 1.5 0 0 0 7 5.5v-4A1.5 1.5 0 0 0 5.5 0zM14.5 9h-4A1.5 1.5 0 0 0 9 10.5v4a1.5 1.5 0 0 0 1.5 1.5h4a1.5 1.5 0 0 0 1.5-1.5v-4A1.5 1.5 0 0 0 14.5 9z" ></path>
+                                                                <rect class="xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect>
                                                             </g>
                                                         </g>
                                                     </g>
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
-                                                        <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
+                                                        <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib ">
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
                                                                 <Link style={{ textDecoration: 'unset', color: "unset" }} to={`/editcampaingtwo/${campaign._id}`}>
                                                                     <span class="_3dfi _3dfj">{campaign.campaingname}</span>
@@ -655,33 +656,34 @@ const EditCompaingTwo = () => {
                                         </div>
                                     </div>
                                     <div class="x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k x1qughib x6ikm8r x10wlt62">
-                                        <div class="x6s0dn4 x3nfvp2 x1r8uery x1iyjqo2 xq8finb xeuugli">
+                                        <div class="x6s0dn4 x3nfvp2 x1r8uery x1iyjqo2 xq8finb xeuugli stle">
                                             <div class="x6s0dn4 x3nfvp2 style-j6gBx" id="style-j6gBx">
-                                                <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
+                                                <div class=" xc02obx     ">
                                                     <div class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
-                                                        <div class="x1xlr1w8 x1qsmy5i x1k4ywey x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r" data-hover="tooltip" data-testid="nav-header-CAMPAIGN_GROUP" data-tooltip-content="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
+                                                        <div data-hover="tooltip" data-testid="nav-header-CAMPAIGN_GROUP" data-tooltip-content="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
                                                             <div class="_96mf">
-                                                                <div class="_96mg"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
-                                                                    <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
+                                                                <div class="_96mg"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od snipcss-vXOZo">
+                                                                    <g>
+                                                                        <path d="m19.95 8.76-.18-.53a4 4 0 0 0-3.79-2.74H6.5c-1.66 0-3 1.34-3 3v30c0 2.21 1.79 4 4 4h33c2.21 0 4-1.79 4-4V15.5c0-2.21-1.79-4-4-4H23.74c-1.72 0-3.25-1.1-3.79-2.74z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" fill="none"></path>
+                                                                    </g>
                                                                 </svg></div>
-                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">{campaign.campaingname}</span></div>
+                                                                <div aria-level="4" style={{ color: "black" }} class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">{campaign.campaingname}</span></div>
                                                             </div>
                                                         </div>
                                                     </span></div>
                                                 </div>
                                                 <div class="x6s0dn4 x3nfvp2 x1i64zmx x1emribx"><i alt="" data-visualcompletion="css-img" class="img style-slg5M" id="style-slg5M"></i></div>
                                                 <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
-                                                    <div class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
-                                                        <div class="xo1l8bm xbsr9hj x1v911su x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r" data-hover="tooltip" data-testid="nav-header-CAMPAIGN" data-tooltip-content="1 Ad set" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto"><a data-hover="tooltip" data-tooltip-display="overflow" class="_231w _4yeg style-dIHCX" href="#" id="style-dIHCX">
+                                                    <div style={{ backgroundColor: "#e1edf7" }} class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
+                                                        <div class="xo1l8bm xbsr9hj x1v911su x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r " data-hover="tooltip" data-testid="nav-header-CAMPAIGN" data-tooltip-content="1 Ad set" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto"><a data-hover="tooltip" data-tooltip-display="overflow" class="_231w _4yeg style-dIHCX" href="#" id="style-dIHCX">
                                                             <div class="_96mf">
-                                                                <div class="_96mg"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
+                                                                <div class="_96mg"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od snipcss-AlIZ4">
                                                                     <g data-name="Layer 2">
                                                                         <g>
                                                                             <g data-name="16">
-                                                                                <rect class="xbh8q5q xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect>
-                                                                                <rect class="xbh8q5q xi5qq39" x="0.5" y="0.5" width="6" height="6" rx="1"></rect>
-                                                                                <rect class="xbh8q5q xi5qq39" x="9.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 12.5 12.5)"></rect>
-                                                                                <rect class="xbh8q5q xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect>
+                                                                                <rect class="xi5qq39" x="9.5" y="0.5" width="6" height="6" rx="1"></rect>
+                                                                                <path d="M5.5 0h-4A1.5 1.5 0 0 0 0 1.5v4A1.5 1.5 0 0 0 1.5 7h4A1.5 1.5 0 0 0 7 5.5v-4A1.5 1.5 0 0 0 5.5 0zM14.5 9h-4A1.5 1.5 0 0 0 9 10.5v4a1.5 1.5 0 0 0 1.5 1.5h4a1.5 1.5 0 0 0 1.5-1.5v-4A1.5 1.5 0 0 0 14.5 9z" ></path>
+                                                                                <rect class="xi5qq39" x="0.5" y="9.5" width="6" height="6" rx="1" transform="rotate(90 3.5 12.5)"></rect>
                                                                             </g>
                                                                         </g>
                                                                     </g>
@@ -1404,6 +1406,7 @@ const EditCompaingTwo = () => {
                                                                                                                                                                                                                         </div>
                                                                                                                                                                                                                         </div><input aria-labelledby="js_zd js_zj" id="js_zi" autocomplete="off" class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xis6omg x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 xh8yej3" disabled="" placeholder="dd/mm/yyyy" value={campaign?.entryDate} />
                                                                                                                                                                                                                     </div>
+
                                                                                                                                                                                                                 </div>
                                                                                                                                                                                                             </div>
                                                                                                                                                                                                         </div>
