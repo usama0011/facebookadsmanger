@@ -5,6 +5,7 @@ import axios from 'axios';
 const CreateCampaing = () => {
     const [formData, setFormData] = useState({
         currentSwitch: '',
+        campainglink: "",
         entryDate: "",
         campaingname: '',
         Delivery: '',
@@ -42,6 +43,7 @@ const CreateCampaing = () => {
             setFormData({
                 currentSwitch: '',
                 campaingname: '',
+                campainglink: "",
                 Delivery: '',
                 Bidstrategy: '',
                 Budget: '',
@@ -85,6 +87,17 @@ const CreateCampaing = () => {
                         type="text"
                         name="campaingname"
                         value={formData.campaingname}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="campainglink">Campaign Link</label>
+                    <input
+                        type="text"
+                        name="campainglink"
+                        value={formData.campainglink}
                         onChange={handleChange}
                         className="form-input"
                         required
