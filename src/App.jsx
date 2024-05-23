@@ -19,11 +19,20 @@ const App = () => {
   const [campaigns, setCampaigns] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('')
+  // Get the first and last day of the current month
+  const getFirstDayOfMonth = () => {
+    const date = new Date();
+    return new Date(date.getFullYear(), date.getMonth(), 1);
+  };
 
+  const getLastDayOfMonth = () => {
+    const date = new Date();
+    return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+  };
   // Initialize state with the current date
   const [selectionRange, setSelectionRange] = useState({
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: getFirstDayOfMonth(),
+    endDate: getLastDayOfMonth(),
     key: 'selection',
   });
   const handleClickRun = (currentfolder) => {
