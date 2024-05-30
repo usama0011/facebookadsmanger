@@ -14,6 +14,7 @@ const MainNavigation = () => {
                 <Link to="/createAdSet" className="nav-button create-adset-button">Create Ad Set</Link>
                 <Link to="/createpayment" className="nav-button create-adset-button">Create Payment</Link>
                 <Link to="/viewpayments" className="nav-button create-adset-button">View Payments</Link>
+                <Link to="/login" className="nav-button create-adset-button">Login</Link>
             </div>
         </div>
     )
