@@ -30,7 +30,8 @@ import EditMyAds from "./pages/EditMyAds";
 import EditPayment from "./pages/EditPayment";
 import EditMyAdsSet from "./pages/EditMyAdsSet";
 import PaymentLoadingPage from "./pages/PaymentLoadingPage";
-
+import Login from "./pages/Login";
+import CurrentAccount from "./pages/currentAccount";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: "/editcampaing/:id",
     element: <EditCompaing />
+  },
+  {
+    path: "/currentaccount",
+    element: <CurrentAccount />
+  },
+  {
+    path: "/login",
+    element: <Login />
   },
   {
     path: "/editcampaingtwo/:id",
