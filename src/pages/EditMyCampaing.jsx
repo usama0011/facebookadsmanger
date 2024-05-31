@@ -186,6 +186,52 @@ const EditMyCampaing = () => {
                             onChange={handleChange}
                         />
                     </label>
+                    {/* start here  */}
+                    <label>
+                        lastSignificent:
+                        <input
+                            type="text"
+                            name="lastSignificent"
+                            value={campaign.lastSignificent}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        schedule:
+                        <input
+                            type="text"
+                            name="schedule"
+                            value={campaign.schedule}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        qualityRanking:
+                        <input
+                            type="text"
+                            name="qualityRanking"
+                            value={campaign.qualityRanking}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        engagementrateranking:
+                        <input
+                            type="text"
+                            name="engagementrateranking"
+                            value={campaign.engagementrateranking}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        conversionrateranking:
+                        <input
+                            type="text"
+                            name="conversionrateranking"
+                            value={campaign.conversionrateranking}
+                            onChange={handleChange}
+                        />
+                    </label>
                     <label>
                         Campaign Image:
                         <input

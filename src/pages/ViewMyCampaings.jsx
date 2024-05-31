@@ -68,6 +68,11 @@ const ViewMyCampaings = () => {
                             <p><strong>Ends:</strong> {campaign.Ends}</p>
                             <p><strong>Entry Date:</strong> {campaign.entryDate}</p>
                             <p><strong>Campaign Image:</strong> <img src={campaign.campaingImage} alt={campaign.campaingname} className="campaign-image" /></p>
+                            <p><strong>lastSignificent:</strong> {campaign.lastSignificent}</p>
+                            <p><strong>schedule:</strong> {campaign.schedule}</p>
+                            <p><strong>qualityRanking:</strong> {campaign.qualityRanking}</p>
+                            <p><strong>engagementrateranking:</strong> {campaign.engagementrateranking}</p>
+                            <p><strong>conversionrateranking:</strong> {campaign.conversionrateranking}</p>
                         </div>
                         <br />
                         <div className="campaignactions">

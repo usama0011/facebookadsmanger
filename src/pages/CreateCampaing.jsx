@@ -18,7 +18,12 @@ const CreateCampaing = () => {
         Costperresult: '',
         Amountspent: '',
         Ends: '',
-        campaingImage: ''
+        campaingImage: '',
+        lastSignificent: "",
+        schedule: "",
+        qualityRanking: "",
+        engagementrateranking: "",
+        conversionrateranking: ""
     });
 
     const [loading, setLoading] = useState(false);
@@ -54,7 +59,12 @@ const CreateCampaing = () => {
                 Costperresult: '',
                 Amountspent: '',
                 Ends: '',
-                campaingImage: ''
+                campaingImage: '',
+                lastSignificent: "",
+                schedule: "",
+                qualityRanking: "",
+                engagementrateranking: "",
+                conversionrateranking: ""
             })
         } catch (err) {
             setError('Error submitting form');
@@ -224,6 +234,63 @@ const CreateCampaing = () => {
                         required
                     />
                 </div>
+
+                <div className="form-group">
+                    <label htmlFor="lastSignificent">last Significent Edit:</label>
+                    <input
+                        type="date"
+                        name="lastSignificent"
+                        value={formData.lastSignificent}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="schedule">Schedule:</label>
+                    <input
+                        type="string"
+                        name="schedule"
+                        value={formData.schedule}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="qualityRanking">Quality Ranking:</label>
+                    <input
+                        type="string"
+                        name="qualityRanking"
+                        value={formData.qualityRanking}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="engagementrateranking">Engagement Rate Ranking:</label>
+                    <input
+                        type="string"
+                        name="engagementrateranking"
+                        value={formData.engagementrateranking}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="conversionrateranking">Conversion Rate Ranking:</label>
+                    <input
+                        type="string"
+                        name="conversionrateranking"
+                        value={formData.conversionrateranking}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+
                 <div className="form-group">
                     <label htmlFor="entryDate">Entery Date:</label>
                     <input
