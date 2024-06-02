@@ -5,10 +5,7 @@ import { Link } from 'react-router-dom';
 import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
 import EditImage from '../assets/edit.png'
 
-
-
-
-const CompaingsData = ({ campaigns, loading, error, setError }) => {
+const CompaingsData = ({ campaigns, loading, error }) => {
 
     const truncateText = (text, charLimit = 30) => {
         if (text.length > charLimit) {

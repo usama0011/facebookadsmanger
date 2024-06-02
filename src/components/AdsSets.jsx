@@ -1,32 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/AdsSet.css'
 import { Switch, Table } from 'antd';
-import axios from 'axios';
 import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
 import EditImage from '../assets/edit.png'
 import { Link } from 'react-router-dom';
 
-const AdsSets = () => {
-    const [campaigns, setCampaigns] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
-    const [togglebutton, settogglebutton] = useState(false)
+const AdsSets = ({ campaigns, loading, error }) => {
 
-    useEffect(() => {
-        const fetchCampaigns = async () => {
-            try {
-                const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/adsset');
-                setCampaigns(response.data);
-            } catch (err) {
-                setError('Error fetching campaigns');
-                message.error('Error fetching campaigns');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchCampaigns();
-    }, []);
     const truncateText = (text, charLimit = 30) => {
         if (text?.length > charLimit) {
             return text.slice(0, charLimit) + '...';
@@ -154,8 +134,8 @@ const AdsSets = () => {
         },
         {
             title: 'Last Significant Edit',
-            dataIndex: 'Lastsignificantedit',
-            key: 'Lastsignificantedit',
+            dataIndex: 'lastSignificent',
+            key: 'lastSignificent',
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
@@ -172,8 +152,8 @@ const AdsSets = () => {
         },
         {
             title: () => <div className='resulsconainer'> <div><span style={{ marginRight: "5px" }} id="js_26j" class="snipcss-1Co3h"><i alt="" data-visualcompletion="css-img" class="img style-JFqyS" id="style-JFqyS"></i></span>Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'results',
-            key: 'results',
+            dataIndex: 'Results',
+            key: 'Results',
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
@@ -234,8 +214,8 @@ const AdsSets = () => {
         },
         {
             title: <div className='resulsconainer'> <div>Schedule</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Schedule',
-            key: 'Schedule',
+            dataIndex: 'schedule',
+            key: 'schedule',
             width: 200,
         },
         {

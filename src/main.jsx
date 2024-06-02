@@ -32,6 +32,7 @@ import EditMyAdsSet from "./pages/EditMyAdsSet";
 import PaymentLoadingPage from "./pages/PaymentLoadingPage";
 import Login from "./pages/Login";
 import CurrentAccount from "./pages/currentAccount";
+import NewCalender from "./pages/NewCalender";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/calender",
+    element: <NewCalender />
   },
   {
     path: "/editcampaingtwo/:id",

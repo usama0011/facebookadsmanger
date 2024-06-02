@@ -5,27 +5,10 @@ import axios from 'axios';
 import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined } from '@ant-design/icons';
 import EditImage from '../assets/edit.png'
 import { Link } from 'react-router-dom';
-const Ads = () => {
-    const [campaigns, setCampaigns] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
+const Ads = ({ campaigns, loading, error }) => {
+
     const [togglebutton, settogglebutton] = useState(false)
 
-    useEffect(() => {
-        const fetchCampaigns = async () => {
-            try {
-                const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/ads');
-                setCampaigns(response.data);
-            } catch (err) {
-                setError('Error fetching campaigns');
-                message.error('Error fetching campaigns');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchCampaigns();
-    }, []);
     console.log(campaigns)
     const truncateText = (text, charLimit = 30) => {
         if (text?.length > charLimit) {
@@ -74,8 +57,8 @@ const Ads = () => {
         },
         {
             title: <div className='resulsconainer'> <div>Ad</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Adname',
-            key: 'Adname',
+            dataIndex: 'campainglink',
+            key: 'campainglink',
             fixed: 'left',
             width: 350,
             render: (text, record) => (
@@ -148,12 +131,12 @@ const Ads = () => {
         },
         {
             title: <div className='resulsconainer'> <div>Ad set name</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'AdsetName',
-            key: 'AdsetName',
+            dataIndex: 'campaingname',
+            key: 'campaingname',
             width: 250,
             render: (text) => (
                 <div className="campaign-name-cell">
-                    <div style={{ border: 'none' }} class="_1b33 ellipsis" data-hover="tooltip" data-tooltip-display="overflow"><a class="x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u x1lliihq" data-hover="tooltip" data-tooltip-display="overflow" href="#">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/661b84e19cfeda0012066a3c?ad_id=&amp;campaig...</a>
+                    <div style={{ border: 'none' }} class="_1b33 ellipsis" data-hover="tooltip" data-tooltip-display="overflow"><a class="x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u x1lliihq" data-hover="tooltip" data-tooltip-display="overflow" href="#">{text}</a>
                         <div data-visualcompletion="ignore" class="">
                             <div class="x1rg5ohu x67bb7w"><span class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xq9mrsl x1h4wwuj xeuugli">1 active ad</span></div>
                         </div>
@@ -192,8 +175,8 @@ const Ads = () => {
         },
         {
             title: 'Last Significant Edit',
-            dataIndex: 'Lastsignificantedit',
-            key: 'Lastsignificantedit',
+            dataIndex: 'lastSignificent',
+            key: 'lastSignificent',
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
@@ -210,8 +193,8 @@ const Ads = () => {
         },
         {
             title: () => <div className='resulsconainer'> <div><span style={{ marginRight: "5px" }} id="js_26j" class="snipcss-1Co3h"><i alt="" data-visualcompletion="css-img" class="img style-JFqyS" id="style-JFqyS"></i></span>Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'results',
-            key: 'results',
+            dataIndex: 'Results',
+            key: 'Results',
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
@@ -259,8 +242,8 @@ const Ads = () => {
         },
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Engagement rate ranking</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'EngagementRateRanking',
-            key: 'EngagementRateRanking',
+            dataIndex: 'engagementrateranking',
+            key: 'engagementrateranking',
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
@@ -270,8 +253,8 @@ const Ads = () => {
         },
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Conversion rate ranking</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'ConversionRateRanking',
-            key: 'ConversionRateRanking',
+            dataIndex: 'conversionrateranking',
+            key: 'conversionrateranking',
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">

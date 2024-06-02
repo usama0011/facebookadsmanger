@@ -8,18 +8,15 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range'
 import axios from 'axios'
-const formatDate = (date) => {
-  const d = new Date(date);
-  return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
-}
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
+import './styles/NewCalender.css';
 
 const App = () => {
   const [showcalender, setShowCalender] = useState(false)
   const [currentfolder, setcurrentFolder] = useState("Campaings");
-  const [campaigns, setCampaigns] = useState([]);
+  const [campaings, setCampaigns] = useState([])
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('')
-  // Get the first and last day of the current month
   const getFirstDayOfMonth = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth(), 1);
@@ -29,39 +26,118 @@ const App = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth() + 1, 0);
   };
-  // Initialize state with the current date
-  const [selectionRange, setSelectionRange] = useState({
-    startDate: getFirstDayOfMonth(),
-    endDate: getLastDayOfMonth(),
-    key: 'selection',
-  });
-  const handleClickRun = (currentfolder) => {
-    setcurrentFolder(currentfolder)
-  }
-  // Update state with selected date range
-  const handleSelect = (ranges) => {
-    setSelectionRange(ranges.selection);
+  const [startDate, setStartDate] = useState(getFirstDayOfMonth());
+  const [endDate, setEndDate] = useState(getLastDayOfMonth());
+  const [hoverDate, setHoverDate] = useState(null);
+  const [selectingEnd, setSelectingEnd] = useState(false);
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+
+  const handleDayClick = (date) => {
+    if (!selectingEnd) {
+      setStartDate(date);
+      setEndDate(null);
+      setSelectingEnd(true);
+    } else {
+      if (date < startDate) {
+        setStartDate(date);
+        setEndDate(startDate);
+      } else {
+        setEndDate(date);
+      }
+      setSelectingEnd(false);
+    }
   };
 
+  const handleDayMouseEnter = (date) => {
+    setHoverDate(date);
+  };
+
+  const handlePrevMonth = () => {
+    setCurrentMonth(new Date(currentMonth.setMonth(currentMonth.getMonth() - 1)));
+  };
+
+  const handleNextMonth = () => {
+    setCurrentMonth(new Date(currentMonth.setMonth(currentMonth.getMonth() + 1)));
+  };
+
+  const setPresetDates = (range) => {
+    setStartDate(range.startDate);
+    setEndDate(range.endDate);
+  };
+
+  const renderCalendar = (date) => {
+    const year = date.getFullYear();
+    const month = date.getMonth();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const firstDayIndex = new Date(year, month, 1).getDay();
+
+    const days = [];
+    for (let i = 0; i < firstDayIndex; i++) {
+      days.push(<div key={`empty-${month}-${i}`} className="day empty"></div>);
+    }
+    for (let day = 1; day <= daysInMonth; day++) {
+      const currentDate = new Date(year, month, day);
+      const isInRange = startDate && endDate && currentDate >= startDate && currentDate <= endDate;
+      const isSelectedStart = startDate && currentDate.getTime() === startDate.getTime();
+      const isSelectedEnd = endDate && currentDate.getTime() === endDate.getTime();
+      const isHovering = startDate && !endDate && hoverDate && currentDate > startDate && currentDate <= hoverDate;
+
+      days.push(
+        <div
+          key={day}
+          className={`day ${isInRange ? 'in-range' : ''} ${isSelectedStart ? 'selected-start' : ''} ${isSelectedEnd ? 'selected-end' : ''} ${isHovering ? 'hover' : ''}`}
+          onClick={() => handleDayClick(currentDate)}
+          onMouseEnter={() => handleDayMouseEnter(currentDate)}
+        >
+          {day}
+        </div>
+      );
+    }
+    return days;
+  };
+
+  const renderDatePresets = () => {
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const last7Days = new Date(today);
+    last7Days.setDate(today.getDate() - 7);
+    const last14Days = new Date(today);
+    last14Days.setDate(today.getDate() - 14);
+    const last30Days = new Date(today);
+    last30Days.setDate(today.getDate() - 30);
+    const thisWeekStart = new Date(today);
+    thisWeekStart.setDate(today.getDate() - today.getDay());
+    const lastWeekStart = new Date(thisWeekStart);
+    lastWeekStart.setDate(thisWeekStart.getDate() - 7);
+    const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+    const lastMonthStart = new Date(today.getFullYear(), today.getMonth() - 1, 1);
+    const lastMonthEnd = new Date(today.getFullYear(), today.getMonth(), 0);
+
+    return (
+      <div className="presets">
+        <div onClick={() => setPresetDates({ startDate: today, endDate: today })}>Today</div>
+        <div onClick={() => setPresetDates({ startDate: yesterday, endDate: yesterday })}>Yesterday</div>
+        <div onClick={() => setPresetDates({ startDate: last7Days, endDate: today })}>Last 7 days</div>
+        <div onClick={() => setPresetDates({ startDate: last14Days, endDate: today })}>Last 14 days</div>
+        <div onClick={() => setPresetDates({ startDate: last30Days, endDate: today })}>Last 30 days</div>
+        <div onClick={() => setPresetDates({ startDate: thisWeekStart, endDate: today })}>This week</div>
+        <div onClick={() => setPresetDates({ startDate: lastWeekStart, endDate: new Date(lastWeekStart.getTime() + 6 * 24 * 60 * 60 * 1000) })}>Last week</div>
+        <div onClick={() => setPresetDates({ startDate: thisMonthStart, endDate: today })}>This month</div>
+        <div onClick={() => setPresetDates({ startDate: lastMonthStart, endDate: lastMonthEnd })}>Last month</div>
+      </div>
+    );
+  };
   const formatDate = (date) => {
-    return new Date(date).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    });
+    return date?.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   };
-
-  const handleUpdatbtn = () => {
-    setShowCalender((per) => !per)
-  }
   useEffect(() => {
     const fetchCampaigns = async () => {
       try {
-        console.log('Fetching campaigns with dates:', formatDate(selectionRange.startDate), formatDate(selectionRange.endDate));
         const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/newcampaing', {
           params: {
-            startDate: formatDate(selectionRange.startDate),
-            endDate: formatDate(selectionRange.endDate)
+            startDate: formatDate(startDate),
+            endDate: formatDate(endDate)
           }
         });
         console.log('Response:', response);
@@ -75,8 +151,10 @@ const App = () => {
     };
 
     fetchCampaigns();
-  }, [selectionRange.startDate, selectionRange.endDate]);
-
+  }, [startDate, endDate]);
+  const handleupdatebutton = () => {
+    setShowCalender(false)
+  }
 
   return (
     <div>
@@ -645,37 +723,112 @@ const App = () => {
                                                   <div onClick={() => setShowCalender((prev) => !prev)} class="_43rl">
                                                     <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">
                                                       <div class="_1uz0">
-                                                        <div>  {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}&nbsp;</div>
+                                                        <div>  {formatDate(startDate)} - {formatDate(endDate)}&nbsp;</div>
                                                       </div>
                                                     </div><i aria-hidden="true" class="_271o img style-fq3tz" alt="" data-visualcompletion="css-img" id="style-fq3tz"></i>
                                                   </div>
                                                 </button></span></span></span></div>
                                                 {showcalender && <div style={{ position: "absolute", top: "40px", right: "20px", zIndex: 999 }}>
-                                                  <DateRangePicker
-                                                    ranges={[selectionRange]}
-                                                    onChange={handleSelect}
-                                                  />
-                                                  <div style={{ backgroundColor: 'white', paddingRight: '10px', paddingBottom: "10px" }} class="_4iqv _2pi9 _2pi3 _3qn7 _61-3 _2fyi _3qng">
-                                                    <div></div>
-                                                    <div id="style-kzDKj" class="style-kzDKj">
-                                                      <div id="style-8VIoe" class="style-8VIoe">
-                                                        <div style={{ paddingRight: '10px' }} aria-atomic="true" aria-live="polite" aria-readonly="true" class=" _4iqx" id="js_6h-selectedLabel" role="textbox">
-                                                          {formatDate(selectionRange.startDate)} - {formatDate(selectionRange.endDate)}
-                                                          <div className="_5wr">Karachi Time</div>
+                                                  <div className="date-range-picker">
+                                                    <div className="content">
+                                                      <div className="ss">
+                                                        <div class="_3-95 snipcss-i26Cr">
+                                                          <div class="_3qn7 _61-3 _2fyi _3qnf">
+                                                            <div class="_3-8_"></div>
+                                                            <div class="_2pic _38_g">
+                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                                                                <div>
+                                                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av"><label class="x1ypdohk" for="js_81"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Compare dates</span></label></div>
+                                                                </div>
+                                                                <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="false" aria-label="Compare dates" role="switch" aria-describedby="js_82" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_81" type="checkbox" value="false" />
+                                                                  <div class="x1n2onr6 xh8yej3">
+                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                                                                      <div class=""></div>
+                                                                      <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+                                                                    </div>
+                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div id="style-qjCAo" class="style-qjCAo"></div>
+                                                        </div>
+                                                        <div className="calendars">
+                                                          <div className="calendar">
+                                                            <div className="month-title">
+                                                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                                                <button className='moveicon' onClick={handlePrevMonth}><ChevronLeftIcon className='cheronleft' /></button>
+                                                                <div>
+                                                                  {currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}
+                                                                </div>
+                                                                <div style={{ visibility: 'hidden' }}>s</div>
+                                                              </div>
+                                                              <div>
+                                                                <ul class="_owx uiList _4ki _509- snipcss-Hwb3w" role="row">
+                                                                  <li class="_oww" role="columnheader">Sun</li>
+                                                                  <li class="_oww" role="columnheader">Mon</li>
+                                                                  <li class="_oww" role="columnheader">Tues</li>
+                                                                  <li class="_oww" role="columnheader" >Wed</li>
+                                                                  <li class="_oww" role="columnheader">Thurs</li>
+                                                                  <li class="_oww" role="columnheader">Fri</li>
+                                                                  <li class="_oww" role="columnheader">Sat</li>
+                                                                </ul>
+                                                              </div>
+                                                            </div>
+                                                            <div className="days">
+                                                              {renderCalendar(currentMonth)}
+                                                            </div>
+                                                          </div>
+                                                          <div className="calendar">
+                                                            <div className="month-title">
+
+                                                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                                                <div style={{ visibility: "hidden" }}>s</div>
+                                                                <div>
+                                                                  {new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1).toLocaleString('default', { month: 'long', year: 'numeric' })}
+                                                                </div>
+                                                                <button className='moveicon' onClick={handleNextMonth}>
+                                                                  <ChevronRightIcon className='cheronleft' />
+                                                                </button>
+
+                                                              </div>
+                                                              <div>
+                                                                <ul class="_owx uiList _4ki _509- snipcss-Hwb3w" role="row">
+                                                                  <li class="_oww" role="columnheader">Sun</li>
+                                                                  <li class="_oww" role="columnheader">Mon</li>
+                                                                  <li class="_oww" role="columnheader">Tues</li>
+                                                                  <li class="_oww" role="columnheader" >Wed</li>
+                                                                  <li class="_oww" role="columnheader">Thurs</li>
+                                                                  <li class="_oww" role="columnheader">Fri</li>
+                                                                  <li class="_oww" role="columnheader">Sat</li>
+                                                                </ul>
+                                                              </div>
+                                                            </div>
+                                                            <div className="days">
+                                                              {renderCalendar(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1))}
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div className="footer">
+                                                          <div class="snipcss-CZB9d">{startDate && endDate ? `${formatDate(startDate)} - ${formatDate(endDate)} Karachi Time` : 'Select a date range'}<div class="_5wr">Karachi Time</div>
+                                                          </div>
+                                                          <button className="cancel-btn" onClick={() => { setStartDate(null); setEndDate(null); }}>Cancel</button>
+                                                          <button
+                                                            onClick={handleupdatebutton}
+                                                            className="update-btn">Update</button>
                                                         </div>
                                                       </div>
-                                                      <div id="style-LDZSI" class="style-LDZSI"><button type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-3a3at" id="style-3a3at">
-                                                        <div class="_43rl">
-                                                          <div data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">Cancel</div>
-                                                        </div>
-                                                      </button></div>
-                                                      <div id="style-QIOO5" class="style-QIOO5"><button type="button" aria-disabled="false" class="_271k _271m _1qjd _ai7j _ai7l _ai7m style-cD2t8" id="style-cD2t8">
-                                                        <div class="_43rl">
-                                                          <div onClick={handleUpdatbtn} data-hover="tooltip" data-tooltip-display="overflow" class="_43rm">Update</div>
-                                                        </div>
-                                                      </button></div>
+                                                      <div>
+                                                        <span className='datepresetns'>
+                                                          <li style={{ listStyle: 'none', marginLeft: "13px" }} data-hover="tooltip" data-tooltip-display="overflow" class="_1qpp snipcss-PwavB" >Date presets</li>
+                                                        </span>
+                                                        {renderDatePresets()}
+                                                      </div>
                                                     </div>
+
                                                   </div>
+
                                                 </div>
                                                 }                                              </div>
                                             </div>
@@ -771,9 +924,9 @@ const App = () => {
                                         </div>
                                       </div>
                                       {/* compaing data start here  */}
-                                      {currentfolder === "Campaings" && <CompaingsData campaigns={campaigns} loading={loading} setLoading={setLoading} setError={setError} />}
-                                      {currentfolder === "AdsSets" && < AdsSets />}
-                                      {currentfolder === "Ads" && <Ads />}
+                                      {currentfolder === "Campaings" && <CompaingsData campaigns={campaings} loading={loading} setLoading={setLoading} setError={setError} />}
+                                      {currentfolder === "AdsSets" && < AdsSets campaigns={campaings} loading={loading} setLoading={setLoading} setError={setError} />}
+                                      {currentfolder === "Ads" && <Ads campaigns={campaings} loading={loading} setLoading={setLoading} setError={setError} />}
 
                                       {/* comaping data end here  */}
 
