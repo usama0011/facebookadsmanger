@@ -38,7 +38,7 @@ const EditChartTwo = () => {
                                                                 <div class="x2lah0s x10w6t97 x1td3qas x1n2onr6">
                                                                     <div class="x78zum5 x2lwn1j xeuugli">
                                                                         <div class="x1lliihq x1n2onr6 x2lah0s x10w6t97 x1td3qas x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
-                                                                            <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8" role="img"><img src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=2rwCWuFOrp4Q7kNvgFu7tOu&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYDQ4DpBZLgnZzR9aiSI1e88oNwAeU1Er26GG8HP3jMa7w&amp;oe=664802FF" alt="" class="img" /></div>
+                                                                            <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8" role="img"><img src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iSFNcadiXuMQ7kNvgG3oO6V&_nc_ht=scontent.flhe11-1.fna&oh=00_AYDfoGWxtFwt9AQWN2eHW2fRx1-D_ZevAtqH8-o0d3nbgw&oe=666309BF" alt="" class="img" /></div>
                                                                         </div>
                                                                         <div class="x78zum5 x2lwn1j xeuugli x1exxf4d x1y71gwh x1nb4dca xu1343h x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x10l6tqk style-iFQws" id="style-iFQws"></div>
                                                                     </div>
@@ -552,57 +552,59 @@ const EditChartTwo = () => {
                                                 </div>
                                             </div>
                                         </span></div>
-                                        <div role="row" id="style-gDBQx" class="style-gDBQx"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:ad" data-auto-logging-id="f399f6a1b8bbc18" id="style-rgwOE" class="style-rgwOE">
-                                            <div aria-label="Ad" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088013000644" data-objecttype="ADGROUP" id="ads_campaign_structure_item_120210088013000644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
-                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1sx8fc2"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
-                                                    <g data-name="Layer 2">
-                                                        <g data-name="16">
-                                                            <rect x="1.5" y="1.5" width="13" height="13" rx="1.25" stroke="currentColor" fill="none"></rect>
-                                                            <circle cx="4.5" cy="4.5" r="1"></circle>
-                                                            <path stroke-linecap="round" stroke="currentColor" fill="none" d="M7.5 4.5 12.5 4.5"></path>
+                                        <Link to="/editmainchartthree">
+                                            <div role="row" id="style-gDBQx" class="style-gDBQx"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:ad" data-auto-logging-id="f399f6a1b8bbc18" id="style-rgwOE" class="style-rgwOE">
+                                                <div aria-label="Ad" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088013000644" data-objecttype="ADGROUP" id="ads_campaign_structure_item_120210088013000644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                    <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1sx8fc2"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
+                                                        <g data-name="Layer 2">
+                                                            <g data-name="16">
+                                                                <rect x="1.5" y="1.5" width="13" height="13" rx="1.25" stroke="currentColor" fill="none"></rect>
+                                                                <circle cx="4.5" cy="4.5" r="1"></circle>
+                                                                <path stroke-linecap="round" stroke="currentColor" fill="none" d="M7.5 4.5 12.5 4.5"></path>
+                                                            </g>
                                                         </g>
-                                                    </g>
-                                                </svg></span>
-                                                    <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
-                                                        <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div style={{ border: "1px solid red" }} class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
+                                                    </svg></span>
+                                                        <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
+                                                            <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
+                                                                <div style={{ border: "1px solid red" }} class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
 
-                                                                <Link style={{ textDecoration: 'unset', color: "unset" }} to="/editmainchartthree">
+
                                                                     <span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span>
-                                                                </Link>
 
+
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
-                                                        <div class="x1lliihq">
-                                                            <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                                                                <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                    <div class="x78zum5">
-                                                                        <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">default</div>
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-BiUOt" id="style-BiUOt"></i></div>
+                                                        <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
+                                                            <div class="x1lliihq">
+                                                                <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                                                                    <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                        <div class="x78zum5">
+                                                                            <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">default</div>
+                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                                <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-BiUOt" id="style-BiUOt"></i></div>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                </span></div>
+                                                                    </span></div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="x1s85apg">
-                                                            <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                                                                <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                    <div class="x78zum5">
-                                                                        <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Action menu</div>
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-96RHk" id="style-96RHk"></i></div>
+                                                            <div class="x1s85apg">
+                                                                <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                                                                    <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                        <div class="x78zum5">
+                                                                            <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Action menu</div>
+                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                                <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-96RHk" id="style-96RHk"></i></div>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                </span></div>
+                                                                    </span></div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </span></div>
+                                            </span></div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -967,7 +969,7 @@ const EditChartTwo = () => {
                                                                 </svg></span>
                                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
+                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promotings website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">

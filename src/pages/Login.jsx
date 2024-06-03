@@ -1034,24 +1034,9 @@ const Login = () => {
                         </div>
                     </section>
                 </div><iframe allow="join-ad-interest-group" data-tagging-id="AW-721340463" data-load-time="1717001491371" height="0" width="0" src="https://td.doubleclick.net/td/rul/721340463?random=1717001491350&amp;cv=11&amp;fst=1717001491350&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be45m0v873877211za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fwww.facebook.com%2Fbusiness%2Ftools%2Fads-manager&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Facebook%20Ads%20Manager%3A%20Ads%20management%20for%20Facebook%2C%20Instagram%20%7C%20Meta%20for%20Business&amp;npa=0&amp;pscdl=noapi&amp;auid=1711531366.1717001491&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B125.0.6422.78%7CChromium%3B125.0.6422.78%7CNot.A%252FBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" id="style-QAOEb" class="style-QAOEb"></iframe><iframe height="0" width="0" src="https://12919106.fls.doubleclick.net/activityi;src=12919106;npa=0;auiddc=449705571.1717001492;ps=1;pcor=395125882;uaa=x86;uab=64;uafvl=Google%2520Chrome%3B125.0.6422.78%7CChromium%3B125.0.6422.78%7CNot.A%252FBrand%3B24.0.0.0;uamb=0;uam=;uap=Windows;uapv=15.0.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe45m0za200zb873877211;gcd=13l3l3l3l1;dma=0;epver=2;match_id=342aa31b70791a;~oref=https%3A%2F%2Fwww.facebook.com%2Fbusiness%2Ftools%2Fads-manager?" id="style-HIbyR" class="style-HIbyR"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="DC-12919106" data-load-time="1717001491852" height="0" width="0" src="https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=12919106;npa=0;auiddc=449705571.1717001492;ps=1;pcor=395125882;uaa=x86;uab=64;uafvl=Google%2520Chrome%3B125.0.6422.78%7CChromium%3B125.0.6422.78%7CNot.A%252FBrand%3B24.0.0.0;uamb=0;uam=;uap=Windows;uapv=15.0.0;uaw=0;pscdl=noapi;frm=0;gtm=45fe45m0za200zb873877211;gcd=13l3l3l3l1;dma=0;epver=2;match_id=342aa31b70791a;~oref=https%3A%2F%2Fwww.facebook.com%2Fbusiness%2Ftools%2Fads-manager?" id="style-lmJGV" class="style-lmJGV"></iframe><a id="GBMModalHiddenCloseButton"></a>
-                <div id="snipcss-panel-container" class="style-hccBP">
-                    <div id="snipcss-button-relative-container">
-                        <div class="snipcss_birdcontainer style-eHUVJ" id="style-eHUVJ"><img class="snipcss_bird style-BiIHo" src="chrome-extension://hbdnoadcmapfbngbodpppofgagiclicf/img/kiwi_transparent_run_text.png" id="style-BiIHo" /></div><button id="snipcss-close" class=""><span id="snipcss-close-svg"><svg viewBox="0 0 24 24" class="close">
-                            <path d="M 2 2 L 22 22 M 2 22 L22 2" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
-                        </svg></span></button>
-                    </div>
-                    <div class="snipcss-shadowcontainer"></div>
-                </div>
-                <div class="snipcss-modal snipcss-micromodal-slide" id="modal-pick-resolution"></div>
-                <div class="edge_builder edge_builder_top style-h8SHk" id="style-h8SHk"></div>
-                <div class="edge_builder edge_builder_right style-fRRJR" id="style-fRRJR"></div>
-                <div class="edge_builder edge_builder_bottom style-E46VB" id="style-E46VB"></div>
-                <div class="edge_builder edge_builder_left style-bOPTt" id="style-bOPTt"></div>
-                <div class="edge_builder2 edge_builder_top style-gVR5k" id="style-gVR5k"></div>
-                <div class="edge_builder2 edge_builder_right style-mUvSJ" id="style-mUvSJ"></div>
-                <div class="edge_builder2 edge_builder_bottom style-mtG7N" id="style-mtG7N"></div>
-                <div class="edge_builder2 edge_builder_left style-gqsah" id="style-gqsah"></div>
-                <div data-tether-id="1" id="style-3TJ1T" class="style-3TJ1T"></div><canvas width="70" height="70" id="snipcss-kiwi" class="style-khaYR"></canvas>
+
+
+
             </div>
 
         </div>
