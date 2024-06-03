@@ -215,7 +215,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Ends">Ends</label>
                     <input
-                        type="date"
+                        type="text"
                         name="Ends"
                         value={formData.Ends}
                         onChange={handleChange}
