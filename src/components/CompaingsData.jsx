@@ -70,7 +70,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                         </div>
                         <div className='hoverbuttonsmyspec'>
                             <div style={{ display: 'flex', alignItems: 'center', }}>
-                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
+                                <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to={`/editmainchart/${record._id}`}>
 
                                     View Charts
                                 </Link></div>

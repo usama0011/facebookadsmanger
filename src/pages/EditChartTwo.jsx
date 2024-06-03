@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/EditChartTwo.css'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import axios from 'axios'
 const EditChartTwo = () => {
+    const { id } = useParams()
+    const [campaign, setCampaigns] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+
+    useEffect(() => {
+        const fetchCampaigns = async () => {
+            try {
+                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/newcampaing/${id}`);
+                setCampaigns(response.data);
+            } catch (err) {
+                setError('Error fetching campaigns');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCampaigns();
+    }, []);
+    console.log(campaign)
     return (
         <div>
-            <div class="_2ww1 _7y7x" style={{ width: '40px' }}>
+            <div class="_2ww1 _7y7x">
                 <div data-pagelet="AdsSideNavWithContent.react" class=""><span data-surface-wrapper="1" data-surface="/am/navigation_toolbar" data-auto-logging-id="f2e26c5d802f984" class="style-cIfEa" id="style-cIfEa">
                     <div class="_2y5j _2y5k style-zGyTf" id="style-zGyTf">
                         <div class="_7o1x style-5J6RB" id="style-5J6RB">
@@ -86,22 +107,30 @@ const EditChartTwo = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <Link to="/">
-                                                        <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
-                                                            <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                                                <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
-                                                                    <div class="x78zum5 x1iyjqo2">
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
-                                                                            <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                                                                                <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
-                                                                            </div>
+                                                    <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
+                                                        <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                                            <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
+                                                                <div class="x78zum5 x1iyjqo2">
+                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
+                                                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                                                                            <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
-                                                    </Link>
+                                                        <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                                            <div class="x78zum5 x1iyjqo2" role="listitem">
+                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+
+                                                                    </div>
+                                                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="x1n2onr6 x3oybdh" role="listitem">
                                                         <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0"><a aria-labelledby="js_1f" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv" href="/adsreporting/?act=1387295665246598" id="ecosystem_nav_more_tools_context_id" role="link" tabindex="0">
                                                             <div class="x78zum5 x1iyjqo2">
@@ -370,26 +399,26 @@ const EditChartTwo = () => {
 
             </div>
             <div class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy" id="style-VS3Gy">
-                <div style={{ marginLeft: "13px", zIndex: 999 }} class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4">
-                    <div class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r" icon="[object Object]" aria-label="Close" role="button" tabindex="0"><i alt="" data-visualcompletion="css-img" class="img style-t6yDt" id="style-t6yDt"></i>
-                        <div class="x1rg5ohu x67bb7w">
-                            <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
+                <div style={{ marginLeft: '13px', zIndex: "999" }} class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4">
+                    <Link to="/">
+                        <div class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r" icon="[object Object]" aria-label="Close" role="button" tabindex="0"><i alt="" data-visualcompletion="css-img" class="img style-t6yDt" id="style-t6yDt"></i>
+                            <div class="x1rg5ohu x67bb7w">
+                                <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="INSIGHTS_DRAWER_tip"><span>
-                        <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
-                            <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0">
-                                <div class="xbsr9hj">
-                                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                                        <div class="xtwfq29 style-pvA3C" id="style-pvA3C"></div>
-                                    </div>
+                    </Link>
+                    <Link to="/editmainchart">
+                        <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-yCiBg" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0" data-auto-logging-id="f29e6006c05405">
+                            <div class="xbsr9hj">
+                                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                                    <div class="xtwfq29 style-TwJ3O" id="style-TwJ3O"></div>
                                 </div>
                             </div>
-                        </span></div>
-                    </span></div>
+                        </div>
+                    </Link>
                     <div id="EDITOR_DRAWER_tip">
                         <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
-                            <div aria-disabled="false" aria-label="Edit (Ctrl+U)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf" data-pitloot-persistonclick="false" role="button" tabindex="0">
+                            <div aria-disabled="false" aria-label="Edit (Ctrl+U)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf " data-pitloot-persistonclick="false" role="button" tabindex="0">
                                 <div class="xbsr9hj">
                                     <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
                                         <div class="xtwfq29 style-yi88r" id="style-yi88r"></div>
@@ -470,9 +499,10 @@ const EditChartTwo = () => {
                                                 <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
                                                     <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
                                                 </svg></span>
+
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">sssdddd{campaign?.campaingname}</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -520,7 +550,15 @@ const EditChartTwo = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
+                                                                {/* work here  */}
+
+                                                                <Link style={{ textDecoration: 'unset', color: "unset" }} to="/editmaincharttwo">
+                                                                    <span class="_3dfi _3dfj">{campaign?.campaingname}</span>
+                                                                </Link>
+
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -552,59 +590,51 @@ const EditChartTwo = () => {
                                                 </div>
                                             </div>
                                         </span></div>
-                                        <Link to="/editmainchartthree">
-                                            <div role="row" id="style-gDBQx" class="style-gDBQx"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:ad" data-auto-logging-id="f399f6a1b8bbc18" id="style-rgwOE" class="style-rgwOE">
-                                                <div aria-label="Ad" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088013000644" data-objecttype="ADGROUP" id="ads_campaign_structure_item_120210088013000644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
-                                                    <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1sx8fc2"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
-                                                        <g data-name="Layer 2">
-                                                            <g data-name="16">
-                                                                <rect x="1.5" y="1.5" width="13" height="13" rx="1.25" stroke="currentColor" fill="none"></rect>
-                                                                <circle cx="4.5" cy="4.5" r="1"></circle>
-                                                                <path stroke-linecap="round" stroke="currentColor" fill="none" d="M7.5 4.5 12.5 4.5"></path>
-                                                            </g>
+                                        <div role="row" id="style-gDBQx" class="style-gDBQx"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:ad" data-auto-logging-id="f399f6a1b8bbc18" id="style-rgwOE" class="style-rgwOE">
+                                            <div aria-label="Ad" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088013000644" data-objecttype="ADGROUP" id="ads_campaign_structure_item_120210088013000644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1sx8fc2"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
+                                                    <g data-name="Layer 2">
+                                                        <g data-name="16">
+                                                            <rect x="1.5" y="1.5" width="13" height="13" rx="1.25" stroke="currentColor" fill="none"></rect>
+                                                            <circle cx="4.5" cy="4.5" r="1"></circle>
+                                                            <path stroke-linecap="round" stroke="currentColor" fill="none" d="M7.5 4.5 12.5 4.5"></path>
                                                         </g>
-                                                    </svg></span>
-                                                        <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
-                                                            <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                                <div style={{ border: "1px solid red" }} class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
-
-
-                                                                    <span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span>
-
-
-                                                                </div>
+                                                    </g>
+                                                </svg></span>
+                                                    <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
+                                                        <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign?.campainglink}</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
+                                                        <div class="x1lliihq">
+                                                            <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                                                                <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                    <div class="x78zum5">
+                                                                        <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">default</div>
+                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-BiUOt" id="style-BiUOt"></i></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </span></div>
                                                             </div>
                                                         </div>
-                                                        <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
-                                                            <div class="x1lliihq">
-                                                                <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                                                                    <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                        <div class="x78zum5">
-                                                                            <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">default</div>
-                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                                <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-BiUOt" id="style-BiUOt"></i></div>
-                                                                            </div>
+                                                        <div class="x1s85apg">
+                                                            <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                                                                <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                    <div class="x78zum5">
+                                                                        <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Action menu</div>
+                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-96RHk" id="style-96RHk"></i></div>
                                                                         </div>
-                                                                    </span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="x1s85apg">
-                                                                <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                                                                    <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                        <div class="x78zum5">
-                                                                            <div class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s" data-sscoverage-ignore="true">Action menu</div>
-                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                                <div class="x3nfvp2 x2lah0s x1c4vz4f"><i alt="" data-visualcompletion="css-img" class="img style-96RHk" id="style-96RHk"></i></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </span></div>
-                                                                </div>
+                                                                    </div>
+                                                                </span></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </span></div>
-                                        </Link>
+                                            </div>
+                                        </span></div>
                                     </div>
                                 </div>
                             </div>
@@ -644,7 +674,7 @@ const EditChartTwo = () => {
                                                                 <div class="_96mg"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
                                                                     <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
                                                                 </svg></div>
-                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">[06/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">{campaign?.campaingname}</span></div>
                                                             </div>
                                                         </div>
                                                     </span></div>
@@ -870,13 +900,13 @@ const EditChartTwo = () => {
                                                 <div aria-label="grid" class="ReactVirtualized__Grid ReactVirtualized__List style-NMJEP" role="grid" tabindex="0" id="style-NMJEP">
                                                     <div class="ReactVirtualized__Grid__innerScrollContainer style-4eRCT" id="style-4eRCT">
                                                         <div role="row" id="style-PoOgz" class="style-PoOgz"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:campaign" data-auto-logging-id="f149aec1e7d9bf4" id="style-3wLLM" class="style-3wLLM">
-                                                            <div aria-label="Campaign" class="x9f619 x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 xo1l8bm xbsr9hj x1k4ywey x14ihq94 x1ug7tv7 x6kzwsm xd1rtb7 x19p7ews x26u7qi " data-id="120210088012940644" data-objecttype="CAMPAIGN_GROUP" id="ads_campaign_structure_item_120210088012940644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                            <div aria-label="Campaign" class="x9f619 x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 xo1l8bm xbsr9hj  x14ihq94 x1ug7tv7 x6kzwsm xd1rtb7 x19p7ews x26u7qi " data-id="120210088012940644" data-objecttype="CAMPAIGN_GROUP" id="ads_campaign_structure_item_120210088012940644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
                                                                 <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
                                                                     <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
                                                                 </svg></span>
                                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign?.campaingname}</span></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -909,8 +939,8 @@ const EditChartTwo = () => {
                                                             </div>
                                                         </span></div>
                                                         <div role="row" id="style-qASOf" class="style-qASOf"><span data-surface-wrapper="1" data-surface="/am/editor_drawer/editor_tree:adset" data-auto-logging-id="f20c0422cef1c98" id="style-ajrU3" class="style-ajrU3">
-                                                            <div aria-label="Ad set" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088012960644" data-objecttype="CAMPAIGN" id="ads_campaign_structure_item_120210088012960644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
-                                                                <div class="x6s0dn4 x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1wpsl4u"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
+                                                            <div aria-label="Ad set" class="x19p7ews x26u7qi x1ftr3km x2izyaf x9f619 x1k4ywey x5e6ka x1ypdohk x1lliihq x1a2a7pz x6ikm8r x10wlt62 x1ye3gou x1hzt7jf x87ps6o xh8yej3 xwvwv9b x1sxyh0 " data-id="120210088012960644" data-objecttype="CAMPAIGN" id="ads_campaign_structure_item_120210088012960644" role="rowheader" tabindex="0" data-tracked="true" data-clickable="1">
+                                                                <div class="x6s0dn4 x1k4ywey x9f619 x78zum5 x1iorvi4 x4uap5 xjkvuk6 xkhd6sd xwvwv9b"><span class="x1c4vz4f x2lah0s x1wpsl4u"></span><span class="x1ok221b x1emribx xat24cr x1mh8g0r"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
                                                                     <g data-name="Layer 2">
                                                                         <g>
                                                                             <g data-name="16">
@@ -924,7 +954,7 @@ const EditChartTwo = () => {
                                                                 </svg></span>
                                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign?.campaingname}</span></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -969,7 +999,12 @@ const EditChartTwo = () => {
                                                                 </svg></span>
                                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promotings website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
+                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
+
+                                                                                <Link style={{ color: 'unset', textDecoration: "none" }} to={`/editmainchartthree/${campaign?._id}`}>
+                                                                                    <span class="_3dfi _3dfj">{campaign?.campainglink}</span>
+                                                                                </Link>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -1035,19 +1070,19 @@ const EditChartTwo = () => {
                                                             <div class="x6s0dn4 x3nfvp2 style-j6gBx" id="style-j6gBx">
                                                                 <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
                                                                     <div class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
-                                                                        <div class="x1xlr1w8 x1qsmy5i x1k4ywey x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r" data-hover="tooltip" data-testid="nav-header-CAMPAIGN_GROUP" data-tooltip-content="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
+                                                                        <div class="" data-hover="tooltip" data-testid="nav-header-CAMPAIGN_GROUP" data-tooltip-content="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..." data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto">
                                                                             <div class="_96mf">
                                                                                 <div class="_96mg"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
                                                                                     <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
                                                                                 </svg></div>
-                                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">{campaign?.campaingname}</span></div>
                                                                             </div>
                                                                         </div>
                                                                     </span></div>
                                                                 </div>
                                                                 <div class="x6s0dn4 x3nfvp2 x1i64zmx x1emribx"><i alt="" data-visualcompletion="css-img" class="img style-slg5M" id="style-slg5M"></i></div>
                                                                 <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
-                                                                    <div class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
+                                                                    <div class="_3qn7 _61-0 _2fyi _3qng x1iyjqo2 xc02obx x6ikm8r x10wlt62 x1xlr1w8 x1qsmy5i x1k4ywey x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r xlyipyv xuxw1ft x1r8uery"><span class=" " data-tracked="true" data-clickable="1">
                                                                         <div class="xo1l8bm xbsr9hj x1v911su x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r" data-hover="tooltip" data-testid="nav-header-CAMPAIGN" data-tooltip-content="1 Ad set" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto"><a data-hover="tooltip" data-tooltip-display="overflow" class="_231w _4yeg style-dIHCX" href="#" id="style-dIHCX">
                                                                             <div class="_96mf">
                                                                                 <div class="_96mg"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" class="x4s1yf2 xlup9mm x1kky2od">
@@ -1068,7 +1103,7 @@ const EditChartTwo = () => {
                                                                     </span></div>
                                                                 </div>
                                                                 <div class="x6s0dn4 x3nfvp2 x1i64zmx x1emribx"><i alt="" data-visualcompletion="css-img" class="img style-5Skjy" id="style-5Skjy"></i></div>
-                                                                <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
+                                                                <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery ">
                                                                     <div class="_3qn7 _61-0 _2fyi _3qng"><span class=" " data-tracked="true" data-clickable="1">
                                                                         <div class="xo1l8bm xbsr9hj x1v911su x1iorvi4 xjkvuk6 x1e558r4 x150jy0e x1lcm9me x1yr5g0i xrt01vj x10y3i5r" data-hover="tooltip" data-testid="nav-header-ADGROUP" data-tooltip-content="1 Ad" data-tooltip-display="overflow" data-tooltip-position="above" data-tooltip-text-direction="auto"><a data-hover="tooltip" data-tooltip-display="overflow" class="_231w _4yeg style-d7ijO" href="#" id="style-d7ijO">
                                                                             <div class="_96mf">
@@ -1233,7 +1268,7 @@ const EditChartTwo = () => {
                                                                                                                                                             </div>
                                                                                                                                                         </div>
                                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s">13</div>
+                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s">{campaign?.Results}</div>
                                                                                                                                                             <div id="style-nB9XB" class="style-nB9XB">
                                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                                             </div>
@@ -1260,7 +1295,7 @@ const EditChartTwo = () => {
                                                                                                                                                             </div>
                                                                                                                                                         </div>
                                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">Rs46.29</span></div>
+                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">{campaign?.Costperresult}</span></div>
                                                                                                                                                             <div id="style-QSsSq" class="style-QSsSq">
                                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                                             </div>
@@ -1287,7 +1322,7 @@ const EditChartTwo = () => {
                                                                                                                                                             </div>
                                                                                                                                                         </div>
                                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">Rs601.73</span></div>
+                                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">{campaign?.Amountspent}</span></div>
                                                                                                                                                             <div id="style-GmxKE" class="style-GmxKE">
                                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                                             </div>

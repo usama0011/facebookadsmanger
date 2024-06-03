@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/EditChartMain.css'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import axios from 'axios'
 const EditChartMain = () => {
+    const { id } = useParams()
+    const [campaign, setCampaigns] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+
+    useEffect(() => {
+        const fetchCampaigns = async () => {
+            try {
+                const response = await axios.get(`https://facebookadsmangerserver.vercel.app/api/newcampaing/${id}`);
+                setCampaigns(response.data);
+            } catch (err) {
+                setError('Error fetching campaigns');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchCampaigns();
+    }, []);
+    console.log(campaign)
     return (
         <div>
-            <div class="_2ww1 _7y7x" style={{ width: '40px' }}>
+            <div class="_2ww1 _7y7x">
                 <div data-pagelet="AdsSideNavWithContent.react" class=""><span data-surface-wrapper="1" data-surface="/am/navigation_toolbar" data-auto-logging-id="f2e26c5d802f984" class="style-cIfEa" id="style-cIfEa">
                     <div class="_2y5j _2y5k style-zGyTf" id="style-zGyTf">
                         <div class="_7o1x style-5J6RB" id="style-5J6RB">
@@ -86,48 +107,54 @@ const EditChartMain = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <Link to="/">
-                                                        <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
-                                                            <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                                                <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
-                                                                    <div class="x78zum5 x1iyjqo2">
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
-                                                                            <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                                                                                <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </Link>
-                                                    <Link to="/">
-                                                        <div class="x1n2onr6 x3oybdh" role="listitem">
-                                                            <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0"><a aria-labelledby="js_1f" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv" href="/adsreporting/?act=1387295665246598" id="ecosystem_nav_more_tools_context_id" role="link" tabindex="0">
+                                                    <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
+                                                        <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                                            <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
                                                                 <div class="x78zum5 x1iyjqo2">
-                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                                                                            <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-hn62s" id="style-hn62s"></i></div>
+                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
+                                                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                                                                            <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                            </a></div>
-                                                            <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                            <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                                                            <div class="xeuugli">
-                                                                                <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" id="js_1f" role="heading">Ads reporting</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </Link>
+                                                        <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                                            <div class="x78zum5 x1iyjqo2" role="listitem">
+                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+
+                                                                    </div>
+                                                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="x1n2onr6 x3oybdh" role="listitem">
+                                                        <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0"><a aria-labelledby="js_1f" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv" href="/adsreporting/?act=1387295665246598" id="ecosystem_nav_more_tools_context_id" role="link" tabindex="0">
+                                                            <div class="x78zum5 x1iyjqo2">
+                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                                                    <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                                                        <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-hn62s" id="style-hn62s"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                        <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                                            <div class="x78zum5 x1iyjqo2" role="listitem">
+                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                                                        <div class="xeuugli">
+                                                                            <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" id="js_1f" role="heading">Ads reporting</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="x1n2onr6 x3oybdh" role="listitem">
                                                         <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0"><a aria-labelledby="js_1h" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv" href="/adsmanager/?act=1387295665246598&amp;tool=AUDIENCES&amp;nav_entry_point=ads_ecosystem_navigation_menu&amp;nav_source=ads_manager" role="link" tabindex="0">
                                                             <div class="x78zum5 x1iyjqo2">
@@ -381,21 +408,17 @@ const EditChartMain = () => {
                         </div>
                     </Link>
                     <Link to="/editmainchart">
-                        <div id="INSIGHTS_DRAWER_tip"><span>
-                            <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
-                                <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0">
-                                    <div class="xbsr9hj">
-                                        <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                                            <div class="xtwfq29 style-pvA3C" id="style-pvA3C"></div>
-                                        </div>
-                                    </div>
+                        <div aria-disabled="false" aria-label="View charts (Ctrl+Y)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-yCiBg" data-pitloot-persistonclick="false" id="insights_tray_button" role="button" tabindex="0" data-auto-logging-id="f29e6006c05405">
+                            <div class="xbsr9hj">
+                                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                                    <div class="xtwfq29 style-TwJ3O" id="style-TwJ3O"></div>
                                 </div>
-                            </span></div>
-                        </span></div>
+                            </div>
+                        </div>
                     </Link>
                     <div id="EDITOR_DRAWER_tip">
                         <div class="x1rg5ohu x67bb7w"><span class=" " data-tracked="true" data-clickable="1">
-                            <div aria-disabled="false" aria-label="Edit (Ctrl+U)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf" data-pitloot-persistonclick="false" role="button" tabindex="0">
+                            <div aria-disabled="false" aria-label="Edit (Ctrl+U)" class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf " data-pitloot-persistonclick="false" role="button" tabindex="0">
                                 <div class="xbsr9hj">
                                     <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
                                         <div class="xtwfq29 style-yi88r" id="style-yi88r"></div>
@@ -478,7 +501,7 @@ const EditChartMain = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign?.campaingname}</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -528,11 +551,9 @@ const EditChartMain = () => {
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
                                                                 {/* work here  */}
-                                                                <Link style={{ textDecoration: 'unset', color: "unset" }} to="/editmaincharttwo">
-                                                                    <span class="_3dfi _3dfj">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span>
+                                                                <Link style={{ textDecoration: 'unset', color: "unset" }} to={`/editmaincharttwo/${campaign?._id}`}>
+                                                                    <span class="_3dfi _3dfj">{campaign?.campaingname}</span>
                                                                 </Link>
-
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -578,7 +599,7 @@ const EditChartMain = () => {
                                                 </svg></span>
                                                     <div class="x6ikm8r x10wlt62 x1iyjqo2 xs83m0k x1t1x2f9">
                                                         <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
-                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">Promoting website: https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaign_id...</span></div>
+                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c"><span class="_3dfi _3dfj">{campaign?.campainglink}</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="x6s0dn4 x78zum5 xl56j7k x1gryazu xt4ypqs">
@@ -649,7 +670,7 @@ const EditChartMain = () => {
                                                                 <div class="_96mg"><svg viewBox="0 0 48 48" width="1em" height="1em" fill="currentColor" class="x1qsmy5i xlup9mm x1kky2od">
                                                                     <path d="M40.5 10H23.74c-1.08 0-2.03-.69-2.37-1.71s-.18-.53-.18-.53A5.496 5.496 0 0 0 15.97 4H6.5C4.02 4 2 6.02 2 8.5v30C2 41.53 4.47 44 7.5 44h33c3.03 0 5.5-2.47 5.5-5.5v-23c0-3.03-2.47-5.5-5.5-5.5z"></path>
                                                                 </svg></div>
-                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id=&amp;adset_id=&amp;campaig...</span></div>
+                                                                <div aria-level="4" class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli" role="heading"><span class="_4gz1">{campaign?.campaingname}</span></div>
                                                             </div>
                                                         </div>
                                                     </span></div>
@@ -842,7 +863,7 @@ const EditChartMain = () => {
                                                                                                                                             </div>
                                                                                                                                         </div>
                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s">13</div>
+                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s">{campaign?.Results}</div>
                                                                                                                                             <div id="style-nB9XB" class="style-nB9XB">
                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                             </div>
@@ -869,7 +890,7 @@ const EditChartMain = () => {
                                                                                                                                             </div>
                                                                                                                                         </div>
                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">Rs46.29</span></div>
+                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">{campaign?.Costperresult}</span></div>
                                                                                                                                             <div id="style-QSsSq" class="style-QSsSq">
                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                             </div>
@@ -896,7 +917,7 @@ const EditChartMain = () => {
                                                                                                                                             </div>
                                                                                                                                         </div>
                                                                                                                                         <div class="x78zum5 xdt5ytf x1a02dak x2lwn1j xeuugli x1iyjqo2 xavht8x x1pha0wt">
-                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">Rs601.73</span></div>
+                                                                                                                                            <div class="x1xqt7ti x10d9sdx x1iikomf xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli x2lah0s"><span class="_3dfi _3dfj">{campaign?.Amountspent}</span></div>
                                                                                                                                             <div id="style-GmxKE" class="style-GmxKE">
                                                                                                                                                 <div class="x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av x1pha0wt xbsr9hj"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">––</span></div>
                                                                                                                                             </div>

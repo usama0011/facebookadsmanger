@@ -63,15 +63,15 @@ const router = createBrowserRouter([
     element: <EditCompaingThree />
   },
   {
-    path: "/editmainchart",
+    path: "/editmainchart/:id",
     element: <EditChartMain />
   },
   {
-    path: "/editmaincharttwo",
+    path: "/editmaincharttwo/:id",
     element: <EditChartTwo />
   },
   {
-    path: "/editmainchartthree",
+    path: "/editmainchartthree/:id",
     element: <EditChartThree />
   },
   {

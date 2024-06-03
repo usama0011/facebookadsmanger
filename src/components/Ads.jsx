@@ -86,11 +86,11 @@ const Ads = ({ campaigns, loading, error }) => {
                             </div>
                             <div className='hoverbuttonsmyspec'>
                                 <div style={{ display: 'flex', alignItems: 'center', }}>
-                                    <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to="/editmainchart">
+                                    <div style={{ marginRight: '10px' }}> <BarChartOutlined style={{ width: '12px', height: "12px", color: "black", marginRight: '3px' }} /><Link style={{ color: "unset" }} to={`/editmainchart/${record._id}`}>
 
                                         View Charts
                                     </Link></div>
-                                    <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to="/editcampaing">
+                                    <div style={{ marginRight: '10px' }}><Link style={{ color: "unset" }} to={`/editcampaing/${record._id}`}>
                                         <img style={{ width: "10px", height: "10px", marginRight: "3px" }} src={EditImage} alt="" />
                                         Edit
                                     </Link></div>
