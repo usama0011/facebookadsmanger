@@ -65,7 +65,7 @@ const Ads = ({ campaigns, loading, error }) => {
                 <>
                     <div style={{ display: 'flex', alignItems: 'center' }} className='mainparentcontainer'>
                         <div style={{ width: '35px', height: '32px', marginRight: "5px" }}>
-                            <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={record.adImage} alt="" />
+                            <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={record.campaingImage} alt="" />
                         </div>
                         <div>
                             <div style={{ overflow: "hidden" }}

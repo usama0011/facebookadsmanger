@@ -33,6 +33,7 @@ import PaymentLoadingPage from "./pages/PaymentLoadingPage";
 import Login from "./pages/Login";
 import CurrentAccount from "./pages/currentAccount";
 import NewCalender from "./pages/NewCalender";
+import UplaodCampaings from "./pages/UplaodCampaings";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/editmaincharttwo/:id",
     element: <EditChartTwo />
+  },
+  {
+    path: "/uploadcamapings",
+    element: <UplaodCampaings />
   },
   {
     path: "/editmainchartthree/:id",
