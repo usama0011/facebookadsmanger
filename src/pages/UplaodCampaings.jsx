@@ -2,7 +2,13 @@ import axios from 'axios';
 import React, { useState } from 'react'
 
 const UplaodCampaings = () => {
-    const [loading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(false);
+    const [file, setFile] = useState(null);
+
+    const handleFileChange = (event) => {
+        const selectedFile = event.target.files[0];
+        setFile(selectedFile);
+    };
     const handleUpload = async () => {
         if (!file) {
             alert("Please select a file.");
@@ -11,22 +17,17 @@ const UplaodCampaings = () => {
 
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("agentId", agentId);
-        formData.append("branchname", branchname);
-        formData.append("username", username);
 
         try {
             setIsLoading(true);
 
-            await axios.post("/leads/singlefile/upload", formData, {
-                withCredentials: true,
+            await axios.post("https://facebookadsmangerserver.vercel.app/api/leads/singlefile/upload", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
             });
 
             alert("File uploaded successfully🎉🎉");
-            refetch();
         } catch (error) {
             console.error("Error uploading file:", error.message);
             const errorMessage = error.response
@@ -40,8 +41,11 @@ const UplaodCampaings = () => {
     return (
         <div>UplaodCampaings
             <div>
-                <input type="file" name="file" id="file" title='upload file' />
+                <input type="file" accept=".csv" onChange={handleFileChange} />
             </div>
+            <button onClick={handleUpload} disabled={isLoading}>
+                {isLoading ? "Uploading..." : "Upload File"}
+            </button>
         </div>
     )
 }
