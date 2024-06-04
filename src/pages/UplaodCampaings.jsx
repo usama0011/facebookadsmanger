@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/FileUpload.css'; // Import CSS file for styling
 
 const FileUpload = () => {
-
     const [file, setFile] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -43,16 +43,16 @@ const FileUpload = () => {
     };
 
     return (
-        <div>
-            <h1>Upload CSV File</h1>
-            <form onSubmit={handleSubmit}>
-                <input type="file" onChange={handleFileChange} accept=".csv" />
-                <button type="submit" disabled={loading}>
+        <div className="file-upload-container">
+            <h1 className="file-upload-title">Upload CSV File</h1>
+            <form onSubmit={handleSubmit} className="file-upload-form">
+                <input type="file" onChange={handleFileChange} title='selet' accept=".csv" className="file-upload-input" />
+                <button type="submit" disabled={loading} className="file-upload-button">
                     {loading ? 'Uploading...' : 'Upload'}
                 </button>
             </form>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            {message && <p style={{ color: 'green' }}>{message}</p>}
+            {error && <p className="file-upload-error">{error}</p>}
+            {message && <p className="file-upload-success">{message}</p>}
         </div>
     );
 };
