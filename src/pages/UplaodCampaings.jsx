@@ -27,7 +27,8 @@ const FileUpload = () => {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://localhost:3001/api/leads/upload', formData, {
+            const response = await axios.post('https://facebookadsmangerserver.vercel.app/api/leads/upload', formData, {
+                withCredentials: true,
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
