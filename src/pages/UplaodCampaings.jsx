@@ -1,53 +1,59 @@
+import React, { useState } from 'react';
 import axios from 'axios';
-import React, { useState } from 'react'
 
-const UplaodCampaings = () => {
-    const [isLoading, setIsLoading] = useState(false);
+const FileUpload = () => {
+
     const [file, setFile] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
+    const [message, setMessage] = useState('');
 
     const handleFileChange = (event) => {
-        const selectedFile = event.target.files[0];
-        setFile(selectedFile);
+        setFile(event.target.files[0]);
     };
-    const handleUpload = async () => {
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
         if (!file) {
-            alert("Please select a file.");
+            setError('Please select a file');
             return;
         }
 
+        setLoading(true);
+        setError('');
+        setMessage('');
+
         const formData = new FormData();
-        formData.append("file", file);
+        formData.append('file', file);
 
         try {
-            setIsLoading(true);
-
-            await axios.post("https://facebookadsmangerserver.vercel.app/api/leads/singlefile/upload", formData, {
+            const response = await axios.post('http://localhost:3001/api/leads/upload', formData, {
                 headers: {
-                    "Content-Type": "multipart/form-data",
+                    'Content-Type': 'multipart/form-data',
                 },
             });
-
-            alert("File uploaded successfully🎉🎉");
-        } catch (error) {
-            console.error("Error uploading file:", error.message);
-            const errorMessage = error.response
-                ? error.response.data.message
-                : error.message;
-            alert(`Error uploading file: ${errorMessage}`);
+            setMessage(response.data);
+        } catch (err) {
+            setError('Error uploading file');
+            console.error('Upload error:', err);
         } finally {
-            setIsLoading(false);
+            setLoading(false);
         }
     };
-    return (
-        <div>UplaodCampaings
-            <div>
-                <input type="file" accept=".csv" onChange={handleFileChange} />
-            </div>
-            <button onClick={handleUpload} disabled={isLoading}>
-                {isLoading ? "Uploading..." : "Upload File"}
-            </button>
-        </div>
-    )
-}
 
-export default UplaodCampaings
+    return (
+        <div>
+            <h1>Upload CSV File</h1>
+            <form onSubmit={handleSubmit}>
+                <input type="file" onChange={handleFileChange} accept=".csv" />
+                <button type="submit" disabled={loading}>
+                    {loading ? 'Uploading...' : 'Upload'}
+                </button>
+            </form>
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {message && <p style={{ color: 'green' }}>{message}</p>}
+        </div>
+    );
+};
+
+export default FileUpload;
