@@ -117,7 +117,7 @@ const EditMyCampaing = () => {
                     <label>
                         Budget:
                         <input
-                            type="text"
+                            type="number"
                             name="Budget"
                             value={campaign.Budget}
                             onChange={handleChange}
@@ -135,7 +135,7 @@ const EditMyCampaing = () => {
                     <label>
                         Results:
                         <input
-                            type="text"
+                            type="number"
                             name="Results"
                             value={campaign.Results}
                             onChange={handleChange}
@@ -144,7 +144,7 @@ const EditMyCampaing = () => {
                     <label>
                         Reach:
                         <input
-                            type="text"
+                            type="number"
                             name="Reach"
                             value={campaign.Reach}
                             onChange={handleChange}
@@ -153,7 +153,7 @@ const EditMyCampaing = () => {
                     <label>
                         Impressions:
                         <input
-                            type="text"
+                            type="number"
                             name="Impressions"
                             value={campaign.Impressions}
                             onChange={handleChange}
@@ -162,7 +162,7 @@ const EditMyCampaing = () => {
                     <label>
                         Cost Per Result:
                         <input
-                            type="text"
+                            type="number"
                             name="Costperresult"
                             value={campaign.Costperresult}
                             onChange={handleChange}
@@ -171,7 +171,7 @@ const EditMyCampaing = () => {
                     <label>
                         Amount Spent:
                         <input
-                            type="text"
+                            type="number"
                             name="Amountspent"
                             value={campaign.Amountspent}
                             onChange={handleChange}

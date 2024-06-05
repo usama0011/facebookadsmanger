@@ -138,7 +138,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Budget">Budget</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Budget"
                         value={formData.Budget}
                         onChange={handleChange}
@@ -160,7 +160,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Results">Results</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Results"
                         value={formData.Results}
                         onChange={handleChange}
@@ -171,7 +171,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Reach">Reach</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Reach"
                         value={formData.Reach}
                         onChange={handleChange}
@@ -182,7 +182,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Impressions">Impressions</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Impressions"
                         value={formData.Impressions}
                         onChange={handleChange}
@@ -193,7 +193,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Costperresult">Cost Per Result</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Costperresult"
                         value={formData.Costperresult}
                         onChange={handleChange}
@@ -204,7 +204,7 @@ const CreateCampaing = () => {
                 <div className="form-group">
                     <label htmlFor="Amountspent">Amount Spent</label>
                     <input
-                        type="text"
+                        type="number"
                         name="Amountspent"
                         value={formData.Amountspent}
                         onChange={handleChange}

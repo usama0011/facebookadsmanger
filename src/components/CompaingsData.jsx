@@ -6,7 +6,10 @@ import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined 
 import EditImage from '../assets/edit.png'
 
 const CompaingsData = ({ campaigns, loading, error }) => {
-
+    const FormatNumbers = (entrynum) => {
+        let nf = new Intl.NumberFormat();
+        return nf.format(entrynum); // "1,234,567,890"
+    }
     const truncateText = (text, charLimit = 30) => {
         if (text.length > charLimit) {
             return text.slice(0, charLimit) + '...';
@@ -145,7 +148,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 140,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    ${FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Daily</span>
                 </div>
@@ -167,7 +170,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Link clicks</span>
                 </div>
@@ -180,7 +183,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: "14px" }}>
-                    {text}
+                    {FormatNumbers(text)}
                 </div>
             )
         },
@@ -191,7 +194,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: "14px" }}>
-                    {text}
+                    {FormatNumbers(text)}
                 </div>
             )
         },

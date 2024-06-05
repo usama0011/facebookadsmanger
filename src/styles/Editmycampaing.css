@@ -22,6 +22,8 @@
 }
 
 .edit-campaign-form input[type="text"],
+.edit-campaign-form input[type="number"],
+.edit-campaign-form input[type="date"],
 .edit-campaign-form input[type="checkbox"] {
     width: 100%;
     padding: 8px;
