@@ -205,7 +205,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    ${FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Per link click</span>
                 </div>
@@ -218,7 +218,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    ${FormatNumbers(text)}
                 </div>
             )
         },
