@@ -131,29 +131,30 @@ const App = () => {
   const formatDate = (date) => {
     return date?.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   };
-  useEffect(() => {
-    const fetchCampaigns = async () => {
-      try {
-        const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/newcampaing', {
-          params: {
-            startDate: formatDate(startDate),
-            endDate: formatDate(endDate)
-          }
-        });
-        console.log('Response:', response);
-        setCampaigns(response.data);
-      } catch (err) {
-        setError('Error fetching campaigns');
-        console.error('API Error:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchCampaigns = async () => {
+    try {
+      const response = await axios.get('https://facebookadsmangerserver.vercel.app/api/newcampaing', {
+        params: {
+          startDate: formatDate(startDate),
+          endDate: formatDate(endDate)
+        }
+      });
+      console.log('Response:', response);
+      setCampaigns(response.data);
+    } catch (err) {
+      setError('Error fetching campaigns');
+      console.error('API Error:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchCampaigns();
-  }, [startDate, endDate]);
+  }, []);
   const handleupdatebutton = () => {
     setShowCalender(false)
+    fetchCampaigns()
   }
   const handleClickRun = (value) => {
     setcurrentFolder(value)

@@ -182,7 +182,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             key: 'Reach',
             width: 150,
             render: (text) => (
-                <div style={{ fontSize: "14px" }}>
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
                     {FormatNumbers(text)}
                 </div>
             )
@@ -193,7 +193,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             key: 'Impressions',
             width: 150,
             render: (text) => (
-                <div style={{ fontSize: "14px" }}>
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
                     {FormatNumbers(text)}
                 </div>
             )
