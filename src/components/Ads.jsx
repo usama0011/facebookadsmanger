@@ -6,7 +6,10 @@ import { BarChartOutlined, CaretDownOutlined, FileTextOutlined, PushpinOutlined 
 import EditImage from '../assets/edit.png'
 import { Link } from 'react-router-dom';
 const Ads = ({ campaigns, loading, error }) => {
-
+    const FormatNumbers = (entrynum) => {
+        let nf = new Intl.NumberFormat();
+        return nf.format(entrynum); // "1,234,567,890"
+    }
     const [togglebutton, settogglebutton] = useState(false)
 
     console.log(campaigns)
@@ -198,7 +201,7 @@ const Ads = ({ campaigns, loading, error }) => {
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Link clicks</span>
                 </div>
@@ -209,12 +212,22 @@ const Ads = ({ campaigns, loading, error }) => {
             dataIndex: 'Reach',
             key: 'Reach',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
+                    {FormatNumbers(text)}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Impressions',
             key: 'Impressions',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
+                    {FormatNumbers(text)}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost per <br /> results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
@@ -223,7 +236,7 @@ const Ads = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray', whiteSpace: "nowrap" }}>Per link click</span>
                 </div>
@@ -236,7 +249,7 @@ const Ads = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                 </div>
             )
         },
@@ -270,7 +283,7 @@ const Ads = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                 </div>
             )
         },

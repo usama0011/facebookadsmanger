@@ -6,7 +6,10 @@ import EditImage from '../assets/edit.png'
 import { Link } from 'react-router-dom';
 
 const AdsSets = ({ campaigns, loading, error }) => {
-
+    const FormatNumbers = (entrynum) => {
+        let nf = new Intl.NumberFormat();
+        return nf.format(entrynum); // "1,234,567,890"
+    }
     const truncateText = (text, charLimit = 30) => {
         if (text?.length > charLimit) {
             return text.slice(0, charLimit) + '...';
@@ -157,7 +160,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
             width: 120,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Link clicks</span>
                 </div>
@@ -168,12 +171,22 @@ const AdsSets = ({ campaigns, loading, error }) => {
             dataIndex: 'Reach',
             key: 'Reach',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
+                    {FormatNumbers(text)}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Impressions',
             key: 'Impressions',
             width: 150,
+            render: (text) => (
+                <div style={{ fontSize: "14px", textAlign: "right" }}>
+                    {FormatNumbers(text)}
+                </div>
+            )
         },
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost Per <br /> Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
@@ -182,7 +195,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                     <br />
                     <span style={{ fontSize: '12px', color: 'gray' }}>Per link click</span>
                 </div>
@@ -195,7 +208,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    {text}
+                    {FormatNumbers(text)}
                 </div>
             )
         },
