@@ -6,7 +6,7 @@ const FileUpload = () => {
     const [file, setFile] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState({});
 
     const handleFileChange = (event) => {
         setFile(event.target.files[0]);
@@ -21,13 +21,13 @@ const FileUpload = () => {
 
         setLoading(true);
         setError('');
-        setMessage('');
+        setMessage({});
 
         const formData = new FormData();
         formData.append('file', file);
 
         try {
-            const response = await axios.post('https://facebookadsmangerserver.vercel.app/api/leads/upload', formData, {
+            const response = await axios.post('http://localhost:3001/api/leads/upload', formData, {
                 withCredentials: true,
                 headers: {
                     'Content-Type': 'multipart/form-data',
@@ -46,13 +46,17 @@ const FileUpload = () => {
         <div className="file-upload-container">
             <h1 className="file-upload-title">Upload CSV File</h1>
             <form onSubmit={handleSubmit} className="file-upload-form">
-                <input type="file" onChange={handleFileChange} title='selet' accept=".csv" className="file-upload-input" />
+                <input type="file" onChange={handleFileChange} title='select' accept=".csv" className="file-upload-input" />
                 <button type="submit" disabled={loading} className="file-upload-button">
                     {loading ? 'Uploading...' : 'Upload'}
                 </button>
             </form>
             {error && <p className="file-upload-error">{error}</p>}
-            {message && <p className="file-upload-success">{message}</p>}
+            {message.success !== undefined && (
+                <p className={`file-upload-${message.success ? 'success' : 'error'}`}>
+                    {message.message}
+                </p>
+            )}
         </div>
     );
 };
