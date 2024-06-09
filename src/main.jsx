@@ -34,6 +34,7 @@ import Login from "./pages/Login";
 import CurrentAccount from "./pages/currentAccount";
 import NewCalender from "./pages/NewCalender";
 import UplaodCampaings from "./pages/UplaodCampaings";
+import Reporting from "./pages/Reporting";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/currentaccount",
     element: <CurrentAccount />
+  },
+  {
+    path: "/reporting",
+    element: <Reporting />
   },
   {
     path: "/login",
