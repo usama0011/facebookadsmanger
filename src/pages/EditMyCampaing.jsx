@@ -233,6 +233,33 @@ const EditMyCampaing = () => {
                         />
                     </label>
                     <label>
+                        Quote Heading:
+                        <input
+                            type="text"
+                            name="quoteheading"
+                            value={campaign.quoteheading}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        Quote Text:
+                        <input
+                            type="text"
+                            name="quotetext"
+                            value={campaign.quotetext}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        Frequency:
+                        <input
+                            type="number"
+                            name="frequency"
+                            value={campaign.frequency}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
                         Campaign Image:
                         <input
                             type="text"

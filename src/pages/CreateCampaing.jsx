@@ -23,7 +23,10 @@ const CreateCampaing = () => {
         schedule: "",
         qualityRanking: "",
         engagementrateranking: "",
-        conversionrateranking: ""
+        conversionrateranking: "",
+        quoteheading: "",
+        quotetext: "",
+        frequency: "",
     });
 
     const [loading, setLoading] = useState(false);
@@ -64,7 +67,10 @@ const CreateCampaing = () => {
                 schedule: "",
                 qualityRanking: "",
                 engagementrateranking: "",
-                conversionrateranking: ""
+                conversionrateranking: "",
+                quoteheading: "",
+                quotetext: "",
+                frequency: "",
             })
         } catch (err) {
             setError('Error submitting form');
@@ -274,6 +280,39 @@ const CreateCampaing = () => {
                         type="string"
                         name="engagementrateranking"
                         value={formData.engagementrateranking}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="quoteheading">Quote Heading:</label>
+                    <input
+                        type="string"
+                        name="quoteheading"
+                        value={formData.quoteheading}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="quotetext">Quote Text:</label>
+                    <input
+                        type="string"
+                        name="quotetext"
+                        value={formData.quotetext}
+                        onChange={handleChange}
+                        className="form-input"
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="frequency">Frequency:</label>
+                    <input
+                        type="number"
+                        name="frequency"
+                        value={formData.frequency}
                         onChange={handleChange}
                         className="form-input"
                         required

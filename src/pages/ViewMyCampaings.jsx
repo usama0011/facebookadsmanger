@@ -73,6 +73,9 @@ const ViewMyCampaings = () => {
                             <p><strong>qualityRanking:</strong> {campaign.qualityRanking}</p>
                             <p><strong>engagementrateranking:</strong> {campaign.engagementrateranking}</p>
                             <p><strong>conversionrateranking:</strong> {campaign.conversionrateranking}</p>
+                            <p><strong>Quote Heading:</strong> {campaign.quoteheading}</p>
+                            <p><strong>Quote Text:</strong> {campaign.quotetext}</p>
+                            <p><strong>Frequency:</strong> {campaign.frequency}</p>
                         </div>
                         <br />
                         <div className="campaignactions">

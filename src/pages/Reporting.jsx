@@ -179,14 +179,117 @@ const Reporting = () => {
                 <>
                     <div className=''>
                         <div style={{ textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
-                            <div style={{ width: "60px", height: "60px" }}>
+                            <div style={{ width: "60px", height: "60px" }} className='largeimgcontainerme'>
                                 <img style={{ width: "100%", height: "100%", objectFit: "cover", }} src={record.campaingImage} alt="" />
+                            </div>
+                            <div style={{ position: 'absolute', top: "0", left: '0', zIndex: "1000", border: "1px solid red", height: "600px" }} className='showmefacebook'>
+                                <div class="_ag3c _2ph- _228q snipcss-tDqHs" id="fd4aae0d273d82a55">
+                                    <div class="" id="fd4aae0d273d82a55-2">
+                                        <div data-testid="ad-preview-mobile-feed-standard" data-react-ad-preview="reactPreviewContainer" data-clickable="1" data-inputable="1" data-keydownable="1" data-keyupable="1" data-mouseoverable="1" data-changeable="1" data-auto-logging-id="f32b2c60d2c8bb4" class="">
+                                            <div class="x2izyaf x1m258z3 x1yc453h xdj266r xkrivgy xat24cr x1gryazu xw2csxc x1odjw0f x47corl x87ps6o">
+                                                <div class="x78zum5 xdj266r x11i5rnm xod5an3 x1mh8g0r x889kno x1iji9kk x18d9i69 x1sln4lm x1cy8zhl">
+                                                    <div class="x78zum5 x16dsc37 x1sxyh0"><img class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img" src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/438081996_122107532576291822_6689468160500379891_n.png?stp=dst-png_p200x200&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=gKQzl2pY57sQ7kNvgEs0TMD&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYDsE_En2ZdSsJHJvbzNvQGy57cDrXW_6tG5XHoEKxB6jA&amp;oe=666E4AAA" alt="" /></div>
+                                                    <div class="x78zum5 xamitd3">
+                                                        <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
+                                                            <div><span class="x1fzdab9 x1f6kntn xuy8w9f"><span class="x1xlr1w8">AI Quotes</span></span></div>
+                                                            <div class="x1hjcb3a x1pg5gke x9438zm x1n2onr6 x17ocude xt0psk2">
+                                                                <div class="xt0psk2">Sponsored</div> · <img src="https://adsmanager.facebook.com/images/mobile/privacy/wordmark/everyone.png" alt="" class="img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="x78zum5 x1q0g3np x1gfops9 xh8yej3 x13a6bvl"><i class="xamitd3 img style-nwXBp" alt="" data-visualcompletion="css-img" id="style-nwXBp"></i><i class="x1d52u69 xamitd3 img style-5DRac" alt="" data-visualcompletion="css-img" id="style-5DRac"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="x1xmf6yo x11i5rnm x1e56ztr x1mh8g0r xexx8yu x1iji9kk x18d9i69 x1sln4lm _3qn7 _61-0 _2fyh _1a9e">
+                                                    <div class="xogfrqt x1f6kntn xd4r4e8 x1vvkbs" data-ad-preview="message" data-react-ad-preview="message">
+                                                        <div>
+                                                            <div class="" dir=""><span><span>Be the Change, Solar powers the way forward</span><br /></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="x1n2onr6 x1ja2u2z x1m258z3 x1e56ztr">
+                                                    <div class="x1n2onr6">
+                                                        <div class="x10l6tqk x178xt8z x13fuv20 xqvba61 x1m258z3 x1vjfegm x17qophe x13vifvy"></div>
+                                                        <div class="x1n2onr6" data-ad-preview="image-container" data-react-ad-preview="image-container"><img class="x1lliihq x193iq5w img" data-ad-preview="image" data-react-ad-preview="image" height="268" src="https://scontent.flhe11-1.fna.fbcdn.net/v/t45.1600-4/440114698_120209521971040644_2692843687006159541_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=L00KU9f0LqsQ7kNvgEIASz8&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYCN0UgrD4Oe1UduYDCTnMGTDE0euquIbOOcJUT2nAroaQ&amp;oe=666E54B8" width="320" alt="" /></div>
+                                                        <div class="xz9dl7a xn6708d xsag5q8 x1ye3gou xz2iaq5 x1ba4aug _3qn7 _61-0 _2fyi _3qng">
+                                                            <div class="_6g3g x6ikm8r x10wlt62 x1vvkbs x1qughib x1jquxbb style-VtzRr" id="style-VtzRr">
+                                                                <div>
+                                                                    <div class="xh8yej3 x1d3mw78" data-ad-preview="display-link-container"><span class="x1nxh6w3 x1kyqaxf _6i6a"><span id="style-Nd7I6" class="style-Nd7I6">scqg4t8trk.com</span></span></div>
+                                                                    <div class="xowg6hp">
+                                                                        <div><span class="xh8yej3 x1fc57z9 x6prxxf x117nqv4" data-ad-preview="headline" dir="">Get Quotes</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-ad-preview="link-description" dir="" id="style-MCo8H" class="style-MCo8H"><span class="x1fc57z9 x6prxxf _6i6a"></span></div>
+                                                            </div>
+                                                            <div class="x16n37ib">
+                                                                <div data-ad-preview="cta">
+                                                                    <div aria-label="Learn more" class="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3" role="button" tabindex="0">
+                                                                        <div role="none" class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou x1qhmfi1 x1r1pt67">
+                                                                            <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
+                                                                                <div role="none" class="x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x1fbi1t2 xl8fo4v"><span class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f x1dem4cn" dir="auto"><span class="x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft">Learn more</span></span></div>
+                                                                            </div>
+                                                                            <div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m" role="none" data-visualcompletion="ignore"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="x10l6tqk xso031l x1q0q8m5 x1mpk314 x1m258z3 x1vjfegm xds687c x1ey2m1c"></div>
+                                                    </div>
+                                                </div>
+                                                <div></div>
+                                                <div class="x1anpbxc _3qn7 _61-0 _2fyh _3qnf">
+                                                    <div class="_6g3g xdzyupr x1nn3v0j x1iji9kk x10b6aqq x1sln4lm style-aqORe" id="style-aqORe">
+                                                        <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                <div class="_6g3g x150jy0e style-1wrWr" id="style-1wrWr"><span class="_9zc _9--"><i class="_3j7o _2p78 _9--"></i></span></div>
+                                                                <div class="_6g3g x150jy0e style-P5Xwp" id="style-P5Xwp"><span class="_9zc _9--"><i class="_3j7l _2p78 _9--"></i></span></div>
+                                                                <div class="_6g3g x150jy0e style-Nzfiw" id="style-Nzfiw"><span class="_9zc _9--"><i class="_3j7r _2p78 _9--"></i></span></div>
+                                                            </div>
+                                                            <div class="_6g3g x1h0ha7o x1mpkggp xeuugli x11hbpws style-2qTEy" id="style-2qTEy">
+                                                                <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">6</div>
+                                                            </div>
+                                                            <div class="_6g3g x11hbpws x1f6kntn x14atkfc style-mNjX6" id="style-mNjX6">
+                                                                <div class="_3qn7 _61-2 _2fyi _3qnf">
+                                                                    <div class="_6g3g x1iji9kk xmix8c7 style-UfDqt" id="style-UfDqt"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">18 comments</span></div>
+                                                                    <div class="_6g3v style-LWq4i" id="style-LWq4i"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">1 share</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="x14nfmen xjm9jq1 x1gryazu xkrivgy xdzyupr"></div>
+                                                    <div class="_6g3g xdzyupr x1y1aw1k x1iji9kk x1120s5i x1sln4lm style-IgisJ" id="style-IgisJ">
+                                                        <div class="x1s688f x11hbpws _3qn7 _6twk _2fyi _3qnf">
+                                                            <div class="_6g3g style-BPkH6" id="style-BPkH6">
+                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-yv87C" id="style-yv87C"><i alt="" data-visualcompletion="css-img" class="img style-T8S7e" id="style-T8S7e"></i></div>
+                                                                    <div class="_6g3g style-chr2o" id="style-chr2o">Like</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_6g3g style-NtcKA" id="style-NtcKA">
+                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-5vX2W" id="style-5vX2W"><i alt="" data-visualcompletion="css-img" class="img style-aLrB1" id="style-aLrB1"></i></div>
+                                                                    <div class="_6g3g style-3ewDP" id="style-3ewDP">Comment</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_6g3g style-HbYLn" id="style-HbYLn">
+                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-SJoY1" id="style-SJoY1"><i alt="" data-visualcompletion="css-img" class="img style-ddTp4" id="style-ddTp4"></i></div>
+                                                                    <div class="_6g3g style-kiSNV" id="style-kiSNV">Share</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div style={{
                                 marginLeft: "10px", display: 'flex', flexDirection: "column"
                             }}>
-                                <span style={{ fontWeight: "bold" }}>Get Quotes</span>
-                                <span>{truncateText("Be the Change, Solar powers the way forward", 24)}</span>
+                                <span style={{ fontWeight: "bold" }}>{record?.quoteheading}</span>
+                                <span>{truncateText(record?.quotetext, 24)}</span>
                                 <span style={{ color: "gray" }}>Used in 1 Ad</span>
                             </div>
                         </div>
@@ -257,8 +360,8 @@ const Reporting = () => {
         },
         {
             title: <div className='resulsconainer'> <div>Frequency</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Impressions',
-            key: 'Impressions',
+            dataIndex: 'frequency',
+            key: 'frequency',
             width: 150,
             render: (text) => (
                 <div style={{ fontSize: "14px", textAlign: "left" }}>
@@ -291,27 +394,17 @@ const Reporting = () => {
             )
         },
         {
-            title: <div className='resulsconainer'> <div>Reach</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Reach',
-            key: 'Reach',
+            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Amount Spend</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
+            dataIndex: 'Amountspent',
+            key: 'Amountspent',
             width: 150,
             render: (text) => (
-                <div style={{ fontSize: "14px", textAlign: "left" }}>
-                    {FormatNumbers(text)}
+                <div style={{ fontSize: '14px' }} className="budygetcontainer">
+                    ${FormatNumbers(text)}
                 </div>
             )
         },
-        {
-            title: <div className='resulsconainer'> <div>Impressions</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Impressions',
-            key: 'Impressions',
-            width: 150,
-            render: (text) => (
-                <div style={{ fontSize: "14px", textAlign: "left" }}>
-                    {FormatNumbers(text)}
-                </div>
-            )
-        },
+
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Cost Per <br /> Results</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
             dataIndex: 'Costperresult',
@@ -325,17 +418,7 @@ const Reporting = () => {
                 </div>
             )
         },
-        {
-            title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Amount Spend</div><div><CaretDownOutlined style={{ color: "gray" }} color='red' /></div> </div>,
-            dataIndex: 'Amountspent',
-            key: 'Amountspent',
-            width: 150,
-            render: (text) => (
-                <div style={{ fontSize: '14px' }} className="budygetcontainer">
-                    ${FormatNumbers(text)}
-                </div>
-            )
-        },
+
         {
             title: <div className='resulsconainer'> <div style={{ padding: 0, margin: 0 }}>Schedule</div><div><CaretDownOutlined style={{ color: "gray" }} color='blue' /></div> </div>,
             dataIndex: 'Ends',
@@ -457,40 +540,43 @@ const Reporting = () => {
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
-                                                                                                    <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                                                                                        <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
-                                                                                                            <div class="x78zum5 x1iyjqo2">
-                                                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
-                                                                                                                    <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                                                                                                                        <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
+                                                                                                <Link to="/">
+                                                                                                    <div class="x1n2onr6 x3oybdh" role="listitem" aria-current="page">
+                                                                                                        <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                                                                                            <div aria-labelledby="js_1d" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2" role="button" tabindex="0">
+                                                                                                                <div class="x78zum5 x1iyjqo2">
+                                                                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj ">
+                                                                                                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                                                                                                                            <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-GPoZh" id="style-GPoZh"></i></div>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                    </div>
-                                                                                                    <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                                                                                        <div class="x78zum5 x1iyjqo2" role="listitem">
-                                                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                                                                    <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                                                                                                    <div class="xeuugli">
-                                                                                                                        <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli" id="js_1d" role="heading">{currentfolder === "Campaings" ? "Campaigns" : null}
-                                                                                                                            {currentfolder === "Ads" ? "Ads" : null}
-                                                                                                                            {currentfolder === "AdsSets" ? "AdsSets" : null}</div>
+                                                                                                        <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                                                                                            <div class="x78zum5 x1iyjqo2" role="listitem">
+                                                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                                                                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                                                                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                                                                                                        <div class="xeuugli">
+                                                                                                                            <div aria-level="3" class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli" id="js_1d" role="heading">{currentfolder === "Campaings" ? "Campaigns" : null}
+                                                                                                                                {currentfolder === "Ads" ? "Ads" : null}
+                                                                                                                                {currentfolder === "AdsSets" ? "AdsSets" : null}</div>
+                                                                                                                        </div>
                                                                                                                     </div>
+                                                                                                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                                                                                                 </div>
-                                                                                                                <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                </div>
+                                                                                                </Link>
+
                                                                                                 <Link to="/reporting">
                                                                                                     <div class="x1n2onr6 x3oybdh" role="listitem">
                                                                                                         <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0"><a aria-labelledby="js_1f" class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv" href="/adsreporting/?act=1387295665246598" id="ecosystem_nav_more_tools_context_id" role="link" tabindex="0">
                                                                                                             <div class="x78zum5 x1iyjqo2">
                                                                                                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                                                                                                    <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                                                                                                    <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11 ">
                                                                                                                         <div class="x3nfvp2"><i alt="" data-visualcompletion="css-img" class="img style-hn62s" id="style-hn62s"></i></div>
                                                                                                                     </div>
                                                                                                                 </div>
@@ -803,7 +889,8 @@ const Reporting = () => {
                                                                                     </div>
                                                                                     <div class="_4bl7 snipcss0-2-2-26">
                                                                                         <div class="x6s0dn4 x78zum5 x1nhvcw1 x19lwn94 snipcss0-3-26-27" role="toolbar" data-auto-logging-component-type="GeoToolBar">
-                                                                                            <div class="x78zum5 xdt5ytf x2lwn1j xeuugli snipcss0-4-27-28 style-noQcZ" id="style-noQcZ"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xp4054r x1h4wwuj xeuugli snipcss0-5-28-29">You have unsaved changes</span><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x6lvj10 xq9mrsl x1h4wwuj xeuugli snipcss0-5-28-30">Data refreshed 3 minutes ago</span></div>
+                                                                                            <div class="x78zum5 xdt5ytf x2lwn1j xeuugli snipcss0-4-27-28 style-noQcZ" id="style-noQcZ"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xp4054r x1h4wwuj xeuugli snipcss0-5-28-29">You have unsaved changes</span><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x6lvj10 xq9mrsl x1h4wwuj xeuugli snipcss0-5-28-30">Data refreshed less than 1 minute ago
+                                                                                            </span></div>
                                                                                             <div class="x3oybdh xuxw1ft x3nfvp2 xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x193iq5w xeuugli snipcss0-4-27-31" role="group">
                                                                                                 <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1xlr1w8 x140t73q xb57al4 x1y1aw1k xwib8y2 x1swvt13 x1pi30zi style-knE8i" role="button" tabindex="0" id="style-knE8i"><span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3 snipcss0-6-32-33">
                                                                                                     <div class="x78zum5 snipcss0-7-33-34">
@@ -884,7 +971,7 @@ const Reporting = () => {
                                                                                                 <div class="x9f619 x78zum5 x1iyjqo2 x5yr21d x2lwn1j x1n2onr6 xh8yej3">
                                                                                                     <div class="xw2csxc x1odjw0f xh8yej3 x18d9i69">
                                                                                                         <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1jyxor1"></div>
-                                                                                                        <div class="x6s0dn4 xn6708d _5aj7">
+                                                                                                        <div class="x6s0dn4 xn6708d _5aj7" >
                                                                                                             <div class="_4bl9">
                                                                                                                 <div class="">
                                                                                                                     <div class="_90__ _8dtr _9ikp" role="search" tabindex="-1" data-auto-logging-id="f24b55065799d">
@@ -910,11 +997,11 @@ const Reporting = () => {
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <div class="_4bl7">
+                                                                                                            <div class="_4bl7" style={{ position: 'relative' }}>
                                                                                                                 <div class="x1iorvi4 xjkvuk6">
                                                                                                                     <div>
                                                                                                                         <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1ye3gou xn6708d" role="button" tabindex="0"><span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                                                                            <div class="x78zum5">
+                                                                                                                            <div class="x78zum5" onClick={() => setShowCalender(!showcalender)}>
                                                                                                                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
                                                                                                                                     <div class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f" role="presentation">
                                                                                                                                         <div class="xtwfq29 style-OIfFZ" id="style-OIfFZ"></div>
@@ -927,8 +1014,113 @@ const Reporting = () => {
                                                                                                                             </div>
                                                                                                                         </span></div>
                                                                                                                     </div>
+
                                                                                                                 </div>
+
                                                                                                             </div>
+                                                                                                            {showcalender && <div style={{ position: "absolute", top: "40px", right: "20px", zIndex: 999 }}>
+                                                                                                                <div className="date-range-picker">
+                                                                                                                    <div className="content">
+                                                                                                                        <div className="ss">
+                                                                                                                            <div class="_3-95 snipcss-i26Cr">
+                                                                                                                                <div class="_3qn7 _61-3 _2fyi _3qnf">
+                                                                                                                                    <div class="_3-8_"></div>
+                                                                                                                                    <div class="_2pic _38_g">
+                                                                                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                                                                                                                                            <div>
+                                                                                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av"><label class="x1ypdohk" for="js_81"><span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">Compare dates</span></label></div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="x1rg5ohu x1n2onr6 x3oybdh"><input aria-checked="false" aria-label="Compare dates" role="switch" aria-describedby="js_82" class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm" id="js_81" type="checkbox" value="false" />
+                                                                                                                                                <div class="x1n2onr6 xh8yej3">
+                                                                                                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                                                                                                                                                        <div class=""></div>
+                                                                                                                                                        <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+                                                                                                                                                    </div>
+                                                                                                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div id="style-qjCAo" class="style-qjCAo"></div>
+                                                                                                                            </div>
+                                                                                                                            <div className="calendars">
+                                                                                                                                <div className="calendar">
+                                                                                                                                    <div className="month-title">
+                                                                                                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                                                                                                                            <button className='moveicon' onClick={handlePrevMonth}><ChevronLeftIcon className='cheronleft' /></button>
+                                                                                                                                            <div>
+                                                                                                                                                {currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}
+                                                                                                                                            </div>
+                                                                                                                                            <div style={{ visibility: 'hidden' }}>s</div>
+                                                                                                                                        </div>
+                                                                                                                                        <div>
+                                                                                                                                            <ul class="_owx uiList _4ki _509- snipcss-Hwb3w" role="row">
+                                                                                                                                                <li class="_oww" role="columnheader">Sun</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Mon</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Tues</li>
+                                                                                                                                                <li class="_oww" role="columnheader" >Wed</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Thurs</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Fri</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Sat</li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div className="days">
+                                                                                                                                        {renderCalendar(currentMonth)}
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div className="calendar">
+                                                                                                                                    <div className="month-title">
+
+                                                                                                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                                                                                                                            <div style={{ visibility: "hidden" }}>s</div>
+                                                                                                                                            <div>
+                                                                                                                                                {new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1).toLocaleString('default', { month: 'long', year: 'numeric' })}
+                                                                                                                                            </div>
+                                                                                                                                            <button className='moveicon' onClick={handleNextMonth}>
+                                                                                                                                                <ChevronRightIcon className='cheronleft' />
+                                                                                                                                            </button>
+
+                                                                                                                                        </div>
+                                                                                                                                        <div>
+                                                                                                                                            <ul class="_owx uiList _4ki _509- snipcss-Hwb3w" role="row">
+                                                                                                                                                <li class="_oww" role="columnheader">Sun</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Mon</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Tues</li>
+                                                                                                                                                <li class="_oww" role="columnheader" >Wed</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Thurs</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Fri</li>
+                                                                                                                                                <li class="_oww" role="columnheader">Sat</li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div className="days">
+                                                                                                                                        {renderCalendar(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1))}
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div className="footer">
+                                                                                                                                <div class="snipcss-CZB9d">{startDate && endDate ? `${formatDate(startDate)} - ${formatDate(endDate)} Karachi Time` : 'Select a date range'}<div class="_5wr">Karachi Time</div>
+                                                                                                                                </div>
+                                                                                                                                <button className="cancel-btn" onClick={() => { setStartDate(null); setEndDate(null); }}>Cancel</button>
+                                                                                                                                <button
+                                                                                                                                    onClick={handleupdatebutton}
+                                                                                                                                    className="update-btn">Update</button>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div>
+                                                                                                                            <span className='datepresetns'>
+                                                                                                                                <li style={{ listStyle: 'none', marginLeft: "13px" }} data-hover="tooltip" data-tooltip-display="overflow" class="_1qpp snipcss-PwavB" >Date presets</li>
+                                                                                                                            </span>
+                                                                                                                            {renderDatePresets()}
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                            </div>
+                                                                                                            }
                                                                                                         </div>
                                                                                                         <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1y332i5"></div>
                                                                                                     </div>
