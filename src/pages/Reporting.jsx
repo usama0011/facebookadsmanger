@@ -1239,16 +1239,16 @@ const Reporting = () => {
                                                                                             bordered={true}
                                                                                             dataSource={campaings}
                                                                                             loading={loading}
-                                                                                            scroll={{
-                                                                                                x: 2000,
-                                                                                                y: 900,
-                                                                                            }}
-
+                                                                                            size='large'
                                                                                             sticky
                                                                                             pagination={false}
                                                                                             rowKey={(record) => record._id}
                                                                                             className="campaign-table"
+                                                                                            scroll={{
+                                                                                                x: 2000,
+                                                                                                y: 1200
 
+                                                                                            }}
                                                                                         />
                                                                                         {error && <div className="error-message">{error}</div>}
                                                                                     </div>
