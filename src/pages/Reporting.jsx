@@ -175,107 +175,118 @@ const Reporting = () => {
             key: 'campaingname',
             fixed: 'left',
             width: 300,
+
+
             render: (text, record) => (
                 <>
-                    <div className=''>
+                    <div style={{ zIndex: "auto", overflow: 'visible' }} className='campign-row'>
                         <div style={{ textTransform: 'uppercase', fontSize: "13px", display: 'flex', alignItems: "center" }} className="campaign-name">
                             <div style={{ width: "60px", height: "60px" }} className='largeimgcontainerme'>
                                 <img style={{ width: "100%", height: "100%", objectFit: "cover", }} src={record.campaingImage} alt="" />
                             </div>
-                            <div style={{ position: 'absolute', top: "0", left: '0', zIndex: "1000", border: "1px solid red", height: "600px" }} className='showmefacebook'>
-                                <div class="_ag3c _2ph- _228q snipcss-tDqHs" id="fd4aae0d273d82a55">
-                                    <div class="" id="fd4aae0d273d82a55-2">
-                                        <div data-testid="ad-preview-mobile-feed-standard" data-react-ad-preview="reactPreviewContainer" data-clickable="1" data-inputable="1" data-keydownable="1" data-keyupable="1" data-mouseoverable="1" data-changeable="1" data-auto-logging-id="f32b2c60d2c8bb4" class="">
-                                            <div class="x2izyaf x1m258z3 x1yc453h xdj266r xkrivgy xat24cr x1gryazu xw2csxc x1odjw0f x47corl x87ps6o">
-                                                <div class="x78zum5 xdj266r x11i5rnm xod5an3 x1mh8g0r x889kno x1iji9kk x18d9i69 x1sln4lm x1cy8zhl">
-                                                    <div class="x78zum5 x16dsc37 x1sxyh0"><img class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img" src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/438081996_122107532576291822_6689468160500379891_n.png?stp=dst-png_p200x200&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=gKQzl2pY57sQ7kNvgEs0TMD&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYDsE_En2ZdSsJHJvbzNvQGy57cDrXW_6tG5XHoEKxB6jA&amp;oe=666E4AAA" alt="" /></div>
-                                                    <div class="x78zum5 xamitd3">
-                                                        <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
-                                                            <div><span class="x1fzdab9 x1f6kntn xuy8w9f"><span class="x1xlr1w8">AI Quotes</span></span></div>
-                                                            <div class="x1hjcb3a x1pg5gke x9438zm x1n2onr6 x17ocude xt0psk2">
-                                                                <div class="xt0psk2">Sponsored</div> · <img src="https://adsmanager.facebook.com/images/mobile/privacy/wordmark/everyone.png" alt="" class="img" />
-                                                            </div>
+
+                            <div style={{
+                                marginLeft: "10px", display: 'flex', flexDirection: "column"
+                            }}>
+                                <span style={{ fontWeight: "bold" }}>{record?.quoteheading}</span>
+                                <span>{truncateText(record?.quotetext, 24)}</span>
+                                <span style={{ color: "gray" }}>Used in 1 Ad</span>
+                            </div>
+                        </div>
+                        <div className='myabosuotediv'>
+
+                            <div class="_ag3c _2ph- _228q snipcss-tDqHs" id="fd4aae0d273d82a55">
+                                <div class="" id="fd4aae0d273d82a55-2">
+                                    <div data-testid="ad-preview-mobile-feed-standard" data-react-ad-preview="reactPreviewContainer" data-clickable="1" data-inputable="1" data-keydownable="1" data-keyupable="1" data-mouseoverable="1" data-changeable="1" data-auto-logging-id="f32b2c60d2c8bb4" class="">
+                                        <div class="x2izyaf x1m258z3 x1yc453h xdj266r xkrivgy xat24cr x1gryazu xw2csxc x1odjw0f x47corl x87ps6o">
+                                            <div class="x78zum5 xdj266r x11i5rnm xod5an3 x1mh8g0r x889kno x1iji9kk x18d9i69 x1sln4lm x1cy8zhl">
+                                                <div class="x78zum5 x16dsc37 x1sxyh0"><img class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img" src="https://images.pexels.com/photos/26018022/pexels-photo-26018022/free-photo-of-a-vase-of-flowers-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" /></div>
+                                                <div class="x78zum5 xamitd3">
+                                                    <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
+                                                        <div><span class="x1fzdab9 x1f6kntn xuy8w9f"><span class="x1xlr1w8">AI Quotes</span></span></div>
+                                                        <div class="x1hjcb3a x1pg5gke x9438zm x1n2onr6 x17ocude xt0psk2">
+                                                            <div class="xt0psk2">Sponsored</div> · <img src="" alt="" class="img" />
                                                         </div>
-                                                        <div class="x78zum5 x1q0g3np x1gfops9 xh8yej3 x13a6bvl"><i class="xamitd3 img style-nwXBp" alt="" data-visualcompletion="css-img" id="style-nwXBp"></i><i class="x1d52u69 xamitd3 img style-5DRac" alt="" data-visualcompletion="css-img" id="style-5DRac"></i></div>
+                                                    </div>
+                                                    <div class="x78zum5 x1q0g3np x1gfops9 xh8yej3 x13a6bvl"><i class="xamitd3 img style-nwXBp" alt="" data-visualcompletion="css-img" id="style-nwXBp"></i><i class="x1d52u69 xamitd3 img style-5DRac" alt="" data-visualcompletion="css-img" id="style-5DRac"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="x1xmf6yo x11i5rnm x1e56ztr x1mh8g0r xexx8yu x1iji9kk x18d9i69 x1sln4lm _3qn7 _61-0 _2fyh _1a9e">
+                                                <div class="xogfrqt x1f6kntn xd4r4e8 x1vvkbs" data-ad-preview="message" data-react-ad-preview="message">
+                                                    <div>
+                                                        <div class="" dir=""><span><span>Be the Change, Solar powers the way forward</span><br /></span></div>
                                                     </div>
                                                 </div>
-                                                <div class="x1xmf6yo x11i5rnm x1e56ztr x1mh8g0r xexx8yu x1iji9kk x18d9i69 x1sln4lm _3qn7 _61-0 _2fyh _1a9e">
-                                                    <div class="xogfrqt x1f6kntn xd4r4e8 x1vvkbs" data-ad-preview="message" data-react-ad-preview="message">
-                                                        <div>
-                                                            <div class="" dir=""><span><span>Be the Change, Solar powers the way forward</span><br /></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="x1n2onr6 x1ja2u2z x1m258z3 x1e56ztr">
-                                                    <div class="x1n2onr6">
-                                                        <div class="x10l6tqk x178xt8z x13fuv20 xqvba61 x1m258z3 x1vjfegm x17qophe x13vifvy"></div>
-                                                        <div class="x1n2onr6" data-ad-preview="image-container" data-react-ad-preview="image-container"><img class="x1lliihq x193iq5w img" data-ad-preview="image" data-react-ad-preview="image" height="268" src="https://scontent.flhe11-1.fna.fbcdn.net/v/t45.1600-4/440114698_120209521971040644_2692843687006159541_n.jpg?stp=cp0_dst-jpg_q75_s640x640_spS444&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=L00KU9f0LqsQ7kNvgEIASz8&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYCN0UgrD4Oe1UduYDCTnMGTDE0euquIbOOcJUT2nAroaQ&amp;oe=666E54B8" width="320" alt="" /></div>
-                                                        <div class="xz9dl7a xn6708d xsag5q8 x1ye3gou xz2iaq5 x1ba4aug _3qn7 _61-0 _2fyi _3qng">
-                                                            <div class="_6g3g x6ikm8r x10wlt62 x1vvkbs x1qughib x1jquxbb style-VtzRr" id="style-VtzRr">
-                                                                <div>
-                                                                    <div class="xh8yej3 x1d3mw78" data-ad-preview="display-link-container"><span class="x1nxh6w3 x1kyqaxf _6i6a"><span id="style-Nd7I6" class="style-Nd7I6">scqg4t8trk.com</span></span></div>
-                                                                    <div class="xowg6hp">
-                                                                        <div><span class="xh8yej3 x1fc57z9 x6prxxf x117nqv4" data-ad-preview="headline" dir="">Get Quotes</span></div>
-                                                                    </div>
+                                            </div>
+                                            <div class="x1n2onr6 x1ja2u2z x1m258z3 x1e56ztr">
+                                                <div class="x1n2onr6">
+                                                    <div class="x10l6tqk x178xt8z x13fuv20 xqvba61 x1m258z3 x1vjfegm x17qophe x13vifvy"></div>
+                                                    <div class="x1n2onr6" data-ad-preview="image-container" data-react-ad-preview="image-container"><img class="x1lliihq x193iq5w img" data-ad-preview="image" data-react-ad-preview="image" height="268" src="https://images.unsplash.com/photo-1718547389141-59736120c5b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" width="320" alt="" /></div>
+                                                    <div class="xz9dl7a xn6708d xsag5q8 x1ye3gou xz2iaq5 x1ba4aug _3qn7 _61-0 _2fyi _3qng">
+                                                        <div class="_6g3g x6ikm8r x10wlt62 x1vvkbs x1qughib x1jquxbb style-VtzRr" id="style-VtzRr">
+                                                            <div>
+                                                                <div class="xh8yej3 x1d3mw78" data-ad-preview="display-link-container"><span class="x1nxh6w3 x1kyqaxf _6i6a"><span id="style-Nd7I6" class="style-Nd7I6">scqg4t8trk.com</span></span></div>
+                                                                <div class="xowg6hp">
+                                                                    <div><span class="xh8yej3 x1fc57z9 x6prxxf x117nqv4" data-ad-preview="headline" dir="">Get Quotes</span></div>
                                                                 </div>
-                                                                <div data-ad-preview="link-description" dir="" id="style-MCo8H" class="style-MCo8H"><span class="x1fc57z9 x6prxxf _6i6a"></span></div>
                                                             </div>
-                                                            <div class="x16n37ib">
-                                                                <div data-ad-preview="cta">
-                                                                    <div aria-label="Learn more" class="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3" role="button" tabindex="0">
-                                                                        <div role="none" class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou x1qhmfi1 x1r1pt67">
-                                                                            <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
-                                                                                <div role="none" class="x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x1fbi1t2 xl8fo4v"><span class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f x1dem4cn" dir="auto"><span class="x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft">Learn more</span></span></div>
-                                                                            </div>
-                                                                            <div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m" role="none" data-visualcompletion="ignore"></div>
+                                                            <div data-ad-preview="link-description" dir="" id="style-MCo8H" class="style-MCo8H"><span class="x1fc57z9 x6prxxf _6i6a"></span></div>
+                                                        </div>
+                                                        <div class="x16n37ib">
+                                                            <div data-ad-preview="cta">
+                                                                <div aria-label="Learn more" class="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3" role="button" tabindex="0">
+                                                                    <div role="none" class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou x1qhmfi1 x1r1pt67">
+                                                                        <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
+                                                                            <div role="none" class="x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x1fbi1t2 xl8fo4v"><span class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f x1dem4cn" dir="auto"><span class="x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft">Learn more</span></span></div>
                                                                         </div>
+                                                                        <div class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m" role="none" data-visualcompletion="ignore"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="x10l6tqk xso031l x1q0q8m5 x1mpk314 x1m258z3 x1vjfegm xds687c x1ey2m1c"></div>
                                                     </div>
+                                                    <div class="x10l6tqk xso031l x1q0q8m5 x1mpk314 x1m258z3 x1vjfegm xds687c x1ey2m1c"></div>
                                                 </div>
-                                                <div></div>
-                                                <div class="x1anpbxc _3qn7 _61-0 _2fyh _3qnf">
-                                                    <div class="_6g3g xdzyupr x1nn3v0j x1iji9kk x10b6aqq x1sln4lm style-aqORe" id="style-aqORe">
+                                            </div>
+                                            <div></div>
+                                            <div class="x1anpbxc _3qn7 _61-0 _2fyh _3qnf">
+                                                <div class="_6g3g xdzyupr x1nn3v0j x1iji9kk x10b6aqq x1sln4lm style-aqORe" id="style-aqORe">
+                                                    <div class="_3qn7 _61-0 _2fyi _3qnf">
                                                         <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                                <div class="_6g3g x150jy0e style-1wrWr" id="style-1wrWr"><span class="_9zc _9--"><i class="_3j7o _2p78 _9--"></i></span></div>
-                                                                <div class="_6g3g x150jy0e style-P5Xwp" id="style-P5Xwp"><span class="_9zc _9--"><i class="_3j7l _2p78 _9--"></i></span></div>
-                                                                <div class="_6g3g x150jy0e style-Nzfiw" id="style-Nzfiw"><span class="_9zc _9--"><i class="_3j7r _2p78 _9--"></i></span></div>
-                                                            </div>
-                                                            <div class="_6g3g x1h0ha7o x1mpkggp xeuugli x11hbpws style-2qTEy" id="style-2qTEy">
-                                                                <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">6</div>
-                                                            </div>
-                                                            <div class="_6g3g x11hbpws x1f6kntn x14atkfc style-mNjX6" id="style-mNjX6">
-                                                                <div class="_3qn7 _61-2 _2fyi _3qnf">
-                                                                    <div class="_6g3g x1iji9kk xmix8c7 style-UfDqt" id="style-UfDqt"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">18 comments</span></div>
-                                                                    <div class="_6g3v style-LWq4i" id="style-LWq4i"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">1 share</span></div>
-                                                                </div>
+                                                            <div class="_6g3g x150jy0e style-1wrWr" id="style-1wrWr"><span class="_9zc _9--"><i class="_3j7o _2p78 _9--"></i></span></div>
+                                                            <div class="_6g3g x150jy0e style-P5Xwp" id="style-P5Xwp"><span class="_9zc _9--"><i class="_3j7l _2p78 _9--"></i></span></div>
+                                                            <div class="_6g3g x150jy0e style-Nzfiw" id="style-Nzfiw"><span class="_9zc _9--"><i class="_3j7r _2p78 _9--"></i></span></div>
+                                                        </div>
+                                                        <div class="_6g3g x1h0ha7o x1mpkggp xeuugli x11hbpws style-2qTEy" id="style-2qTEy">
+                                                            <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">6</div>
+                                                        </div>
+                                                        <div class="_6g3g x11hbpws x1f6kntn x14atkfc style-mNjX6" id="style-mNjX6">
+                                                            <div class="_3qn7 _61-2 _2fyi _3qnf">
+                                                                <div class="_6g3g x1iji9kk xmix8c7 style-UfDqt" id="style-UfDqt"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">18 comments</span></div>
+                                                                <div class="_6g3v style-LWq4i" id="style-LWq4i"><span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">1 share</span></div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="x14nfmen xjm9jq1 x1gryazu xkrivgy xdzyupr"></div>
-                                                    <div class="_6g3g xdzyupr x1y1aw1k x1iji9kk x1120s5i x1sln4lm style-IgisJ" id="style-IgisJ">
-                                                        <div class="x1s688f x11hbpws _3qn7 _6twk _2fyi _3qnf">
-                                                            <div class="_6g3g style-BPkH6" id="style-BPkH6">
-                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-yv87C" id="style-yv87C"><i alt="" data-visualcompletion="css-img" class="img style-T8S7e" id="style-T8S7e"></i></div>
-                                                                    <div class="_6g3g style-chr2o" id="style-chr2o">Like</div>
-                                                                </div>
+                                                </div>
+                                                <div class="x14nfmen xjm9jq1 x1gryazu xkrivgy xdzyupr"></div>
+                                                <div class="_6g3g xdzyupr x1y1aw1k x1iji9kk x1120s5i x1sln4lm style-IgisJ" id="style-IgisJ">
+                                                    <div class="x1s688f x11hbpws _3qn7 _6twk _2fyi _3qnf">
+                                                        <div class="_6g3g style-BPkH6" id="style-BPkH6">
+                                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-yv87C" id="style-yv87C"><i alt="" data-visualcompletion="css-img" class="img style-T8S7e" id="style-T8S7e"></i></div>
+                                                                <div class="_6g3g style-chr2o" id="style-chr2o">Like</div>
                                                             </div>
-                                                            <div class="_6g3g style-NtcKA" id="style-NtcKA">
-                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-5vX2W" id="style-5vX2W"><i alt="" data-visualcompletion="css-img" class="img style-aLrB1" id="style-aLrB1"></i></div>
-                                                                    <div class="_6g3g style-3ewDP" id="style-3ewDP">Comment</div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="_6g3g style-NtcKA" id="style-NtcKA">
+                                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-5vX2W" id="style-5vX2W"><i alt="" data-visualcompletion="css-img" class="img style-aLrB1" id="style-aLrB1"></i></div>
+                                                                <div class="_6g3g style-3ewDP" id="style-3ewDP">Comment</div>
                                                             </div>
-                                                            <div class="_6g3g style-HbYLn" id="style-HbYLn">
-                                                                <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                                    <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-SJoY1" id="style-SJoY1"><i alt="" data-visualcompletion="css-img" class="img style-ddTp4" id="style-ddTp4"></i></div>
-                                                                    <div class="_6g3g style-kiSNV" id="style-kiSNV">Share</div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="_6g3g style-HbYLn" id="style-HbYLn">
+                                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                                                <div class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-SJoY1" id="style-SJoY1"><i alt="" data-visualcompletion="css-img" class="img style-ddTp4" id="style-ddTp4"></i></div>
+                                                                <div class="_6g3g style-kiSNV" id="style-kiSNV">Share</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -285,15 +296,11 @@ const Reporting = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div style={{
-                                marginLeft: "10px", display: 'flex', flexDirection: "column"
-                            }}>
-                                <span style={{ fontWeight: "bold" }}>{record?.quoteheading}</span>
-                                <span>{truncateText(record?.quotetext, 24)}</span>
-                                <span style={{ color: "gray" }}>Used in 1 Ad</span>
-                            </div>
+
+
                         </div>
                     </div>
+
                 </>
             ),
         },
@@ -1234,7 +1241,7 @@ const Reporting = () => {
                                                                                             loading={loading}
                                                                                             scroll={{
                                                                                                 x: 2000,
-                                                                                                y: 500,
+                                                                                                y: 900,
                                                                                             }}
 
                                                                                             sticky
@@ -3408,3 +3415,4 @@ const Reporting = () => {
 
 
 export default Reporting
+
