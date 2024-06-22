@@ -221,7 +221,7 @@ const Reporting = () => {
                                             <div class="x1n2onr6 x1ja2u2z x1m258z3 x1e56ztr">
                                                 <div class="x1n2onr6">
                                                     <div class="x10l6tqk x178xt8z x13fuv20 xqvba61 x1m258z3 x1vjfegm x17qophe x13vifvy"></div>
-                                                    <div class="x1n2onr6" data-ad-preview="image-container" data-react-ad-preview="image-container"><img class="x1lliihq x193iq5w img" data-ad-preview="image" data-react-ad-preview="image" height="268" src="https://images.unsplash.com/photo-1718547389141-59736120c5b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" width="320" alt="" /></div>
+                                                    <div class="x1n2onr6" data-ad-preview="image-container" data-react-ad-preview="image-container"><img class="x1lliihq x193iq5w img" data-ad-preview="image" data-react-ad-preview="image" height="268" src={record.campaingImage} width="320" alt="" /></div>
                                                     <div class="xz9dl7a xn6708d xsag5q8 x1ye3gou xz2iaq5 x1ba4aug _3qn7 _61-0 _2fyi _3qng">
                                                         <div class="_6g3g x6ikm8r x10wlt62 x1vvkbs x1qughib x1jquxbb style-VtzRr" id="style-VtzRr">
                                                             <div>
