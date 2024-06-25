@@ -1233,8 +1233,9 @@ const Reporting = () => {
                                                                                         </div>
                                                                                     </div>
                                                                                     {/* Table Goes here brothere */}
-                                                                                    <div style={{ height: "100%", backgroundColor: '#f5f6f7' }} className="campaign-table-container">
-                                                                                        <Table style={{ borderRadius: "10px", height: "100%" }}
+                                                                                    <div className="campaign-table-container" style={{ height: "100%" }}>
+                                                                                        <Table
+                                                                                            style={{ height: "100%" }}
                                                                                             columns={columns}
                                                                                             bordered={true}
                                                                                             dataSource={campaings}
@@ -1243,7 +1244,7 @@ const Reporting = () => {
                                                                                             sticky
                                                                                             pagination={false}
                                                                                             rowKey={(record) => record._id}
-                                                                                            className="campaign-table"
+
                                                                                             scroll={{
                                                                                                 x: 2000,
                                                                                                 y: 1200
