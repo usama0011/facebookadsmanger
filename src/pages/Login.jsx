@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Login.css";
 import { Link } from "react-router-dom";
 import LoginImage from "../assets/login.png";
+import LOgoLogo from "../assets/logologo.jpeg";
 const Login = () => {
   return (
     <div>
@@ -1090,7 +1091,7 @@ const Login = () => {
                                   >
                                     <img
                                       class="_s0 _4ooo _7wcz _tzw img"
-                                      src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/b911847cb3ea2a5076830efc98d66739/detailed"
+                                      src={LOgoLogo}
                                       alt=""
                                       aria-label="Ali Hamza"
                                       role="img"
