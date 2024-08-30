@@ -1239,7 +1239,12 @@ const Reporting = () => {
                                                         </div>
                                                       </Link>
 
-                                                      <Link to="/reporting">
+                                                      <Link
+                                                        to="/reporting"
+                                                        style={{
+                                                          marginTop: "-15px",
+                                                        }}
+                                                      >
                                                         <div
                                                           class="x1n2onr6 x3oybdh"
                                                           role="listitem"
