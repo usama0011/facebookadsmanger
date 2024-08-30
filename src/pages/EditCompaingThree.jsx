@@ -2429,7 +2429,7 @@ const EditCompaingThree = () => {
                                                                                               >
                                                                                                 <img
                                                                                                   height="30"
-                                                                                                  src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                  src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                   width="30"
                                                                                                   alt=""
                                                                                                   class="img"
