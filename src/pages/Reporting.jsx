@@ -24,7 +24,6 @@ const Reporting = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth(), 1);
   };
-
   const getLastDayOfMonth = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth() + 1, 0);
@@ -139,7 +138,6 @@ const Reporting = () => {
       1
     );
     const lastMonthEnd = new Date(today.getFullYear(), today.getMonth(), 0);
-
     return (
       <div className="presets">
         <div
@@ -201,6 +199,7 @@ const Reporting = () => {
         >
           This month
         </div>
+
         <div
           onClick={() =>
             setPresetDates({ startDate: lastMonthStart, endDate: lastMonthEnd })
@@ -233,7 +232,6 @@ const Reporting = () => {
       setCampaigns(response.data);
     } catch (err) {
       setError("Error fetching campaigns");
-      console.error("API Error:", err);
     } finally {
       setLoading(false);
     }
@@ -912,6 +910,7 @@ const Reporting = () => {
       ),
     },
   ];
+
   return (
     <div>
       <div
@@ -2363,10 +2362,13 @@ const Reporting = () => {
                                                                         <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli x1iyjqo2">
                                                                           This
                                                                           month:
-                                                                          1 Jun
-                                                                          2024 -
-                                                                          9 Jun
-                                                                          2024
+                                                                          {formatDate(
+                                                                            startDate
+                                                                          )}{" "}
+                                                                          -
+                                                                          {formatDate(
+                                                                            endDate
+                                                                          )}
                                                                         </div>
                                                                         <div
                                                                           class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
