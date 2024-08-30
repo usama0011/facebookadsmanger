@@ -345,7 +345,7 @@ const Reporting = () => {
                               objectFit: "cover",
                             }}
                             class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                            src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                            src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                             alt=""
                           />
                         </div>
