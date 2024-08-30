@@ -2179,73 +2179,11 @@ const Login = () => {
                         </div>
                       </div>
                       <div class="__sw _9f24 _9f2e _9f2e _9ol9">
-                        <div class="_9r42">
-                          <div
-                            class="_1c_u _189l lazyvideo _9r8e _al4k _aoh5 _16sp _9sud style-DcD3o"
-                            id="u_0_39_p3"
-                          >
-                            <div
-                              class="_53j5 _37u6 _9kkd style-RFFiZ"
-                              tabindex="0"
-                              id="u_0_3a_s5"
-                            >
-                              <video
-                                muted="1"
-                                height="504"
-                                width="630"
-                                preload="metadata"
-                                class="_ox1 _21y0 style-JvoW7"
-                                data-video-width="630"
-                                data-video-height="504"
-                                id="u_0_3b_B1"
-                                src="blob:https://www.facebook.com/30b8299a-361d-4a52-80e3-43f9e74da93d"
-                              ></video>
-                              <div class="_m54 _1jto _3htz" id="u_0_3c_Oc">
-                                <img
-                                  class="_1445 _2sy9 img style-ss7Jk"
-                                  src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif?_nc_eui2=AeEL2ts7o5GqgC8wv-qxByoRyf9_vOetHnzJ_3-8560efEh7xqY8PrWDk2ywybxJnZSVSUabCyRdmh9XVeQaBVAd"
-                                  alt=""
-                                  id="u_0_3d_ul"
-                                />
-                              </div>
-                              <div class="_18xu _9omd _3htz">
-                                <div
-                                  class="_5l7x _360f _167h hidden_elem"
-                                  id="u_0_5_6w"
-                                ></div>
-                                <input
-                                  aria-label="Play Video"
-                                  class="_530-"
-                                  type="button"
-                                  id="u_0_4_v/"
-                                />
-                              </div>
-                              <div class="_4ctp _1jto _3htz">
-                                <div class="_4ctq">
-                                  <div class="_4ctr" id="u_0_3e_de">
-                                    Something went wrong
-                                  </div>
-                                  <div id="u_0_3f_AM">
-                                    We're having trouble with playing this
-                                    video.
-                                  </div>
-                                  <div class="_5hdy">
-                                    <a
-                                      class="_4cts"
-                                      href="https://www.facebook.com/help/396404120401278/list"
-                                      id="u_0_3g_3F"
-                                    >
-                                      Learn more
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="_2i84">
-                              <div id="u_0_3h_ZC"></div>
-                            </div>
-                          </div>
-                        </div>
+                        <img
+                          src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/2732f172a537a9fbd7d06410d9557596/detailed"
+                          style={{ height: "500px", borderRadius: "10px" }}
+                          alt=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -2512,11 +2450,12 @@ const Login = () => {
                                                   height="630"
                                                   width="504"
                                                   preload="metadata"
-                                                  class="_ox1 _21y0 _1_d1 style-tkQvS"
+                                                  style={{ display: "block" }}
+                                                  class="_ox1 _21y0"
                                                   data-video-width="504"
                                                   data-video-height="630"
-                                                  id="u_0_3u_bG"
-                                                  src="blob:https://www.facebook.com/b593e5f9-b76c-4acc-bc29-7147429e78d3"
+                                                  id="u_0_3r_Hc"
+                                                  src="blob:https://www.facebook.com/ac0b0f92-107b-4a72-bec4-eddc8ff62c75"
                                                 ></video>
                                                 <div
                                                   class="_4ubd _170l _27db _3htz"
