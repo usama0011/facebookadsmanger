@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Login.css";
 import { Link } from "react-router-dom";
+import LoginImage from "../assets/login.png";
 const Login = () => {
   return (
     <div>
@@ -2180,7 +2181,7 @@ const Login = () => {
                       </div>
                       <div class="__sw _9f24 _9f2e _9f2e _9ol9">
                         <img
-                          src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/2732f172a537a9fbd7d06410d9557596/detailed"
+                          src={LoginImage}
                           style={{ height: "500px", borderRadius: "10px" }}
                           alt=""
                         />
@@ -5101,5 +5102,3 @@ const Login = () => {
 };
 
 export default Login;
-
-// add more
