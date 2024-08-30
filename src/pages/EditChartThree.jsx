@@ -86,7 +86,7 @@ const EditChartThree = () => {
                                       alt="Meta"
                                       class="img"
                                       height="28"
-                                      src={LOgoLOgo}
+                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg?_nc_eui2=AeHKwknQesn94TNLWmx-T_z_tf_JPOr9hBa1_8k86v2EFmaBEik4xi7pURPecXmNF-1-npcsN93AIkwa-uvDfPYO"
                                       width="28"
                                     />
                                   </div>
@@ -5498,10 +5498,11 @@ const EditChartThree = () => {
                                                                                                                     <div class="x78zum5 x16dsc37 x1sxyh0">
                                                                                                                       <img
                                                                                                                         class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                                                                                                                        src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                        src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                         alt=""
                                                                                                                       />
                                                                                                                     </div>
+                                                                                                                    ss
                                                                                                                     <div class="x78zum5 xamitd3">
                                                                                                                       <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
                                                                                                                         <div>
@@ -6691,7 +6692,7 @@ const EditChartThree = () => {
                                                                                                                   <div>
                                                                                                                     <img
                                                                                                                       class="_67w_ img"
-                                                                                                                      src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                      src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                       alt=""
                                                                                                                     />
                                                                                                                     <div class="_67x2">
@@ -6860,7 +6861,7 @@ const EditChartThree = () => {
                                                                                                                     <div class="x78zum5 xc9qbxq x16dsc37 x1td3qas">
                                                                                                                       <img
                                                                                                                         class="x14yjl9h xudhj91 x18nykt9 xww2gxu x1td3qas x10w6t97 x3ajldb img"
-                                                                                                                        src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                        src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                         alt=""
                                                                                                                       />
                                                                                                                     </div>
@@ -7621,7 +7622,7 @@ const EditChartThree = () => {
                                                                                                                         <div class="_aco7">
                                                                                                                           <img
                                                                                                                             class="_6f4f img"
-                                                                                                                            src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                            src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                             alt=""
                                                                                                                           />
                                                                                                                           <div class="_acov">
@@ -8367,7 +8368,7 @@ const EditChartThree = () => {
                                                                                                                           <div class="x78zum5 xqyf9gi x6s0dn4">
                                                                                                                             <img
                                                                                                                               class="xnwf7zb x40j3uw x1s7lred x15gyhx8 x78zum5 x1gnnpzl x1849jeq img"
-                                                                                                                              src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/433912504_7336238556430311_6209908747308057942_n.jpg?stp=dst-jpg_p200x200&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeEFyKZtn-oi_wcGb577V9YjLCUfgxYEgdIsJR-DFgSB0tF7XA49vzosymlrrLolwtNpiqWY4MOkOIzKpb68CGpC&amp;_nc_ohc=Iid45yreBLAQ7kNvgHRxmFT&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYBKBCsgDH5c7XAwynzydpBNleDKqQHsiS9f198zFuH3Ow&amp;oe=664EDCDB"
+                                                                                                                              src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                               alt=""
                                                                                                                             />
                                                                                                                             <div>
@@ -8630,7 +8631,7 @@ const EditChartThree = () => {
                                                                                                                       <div class="x6ikm8r x10wlt62 x1n2onr6 x2lah0s x78zum5 x6s0dn4 xl56j7k x1emribx">
                                                                                                                         <img
                                                                                                                           class="x1gb2em4 x13zx6y xa06r8k x1lq5wgf x13lgxp2 x5pf9jr x9jhf4c xl1xv1r img"
-                                                                                                                          src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                          src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                           alt=""
                                                                                                                         />
                                                                                                                       </div>
@@ -8903,7 +8904,7 @@ const EditChartThree = () => {
                                                                                                                     <div class="x78zum5 x16dsc37 x1sxyh0">
                                                                                                                       <img
                                                                                                                         class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                                                                                                                        src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                        src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                         alt=""
                                                                                                                       />
                                                                                                                     </div>
@@ -9421,7 +9422,7 @@ const EditChartThree = () => {
                                                                                                                           >
                                                                                                                             <img
                                                                                                                               class="x1m258z3 x3ajldb img style-lUvrK"
-                                                                                                                              src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                              src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                               alt=""
                                                                                                                               id="style-lUvrK"
                                                                                                                             />
@@ -9461,7 +9462,7 @@ const EditChartThree = () => {
                                                                                                                             <div class="x1dnml7z x1n2onr6 x1fxk84t x6ikm8r x10wlt62 x14yjl9h xudhj91 x18nykt9 xww2gxu x1tpqehw x1tk7jg1 xn0vg7t">
                                                                                                                               <img
                                                                                                                                 class="x1dnml7z x1fxk84t x1n2onr6 xl1xv1r img"
-                                                                                                                                src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                                src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                                 alt=""
                                                                                                                               />
                                                                                                                             </div>
@@ -9939,7 +9940,7 @@ const EditChartThree = () => {
                                                                                                                             <div class="_6f4g">
                                                                                                                               <img
                                                                                                                                 class="_8qr4 img"
-                                                                                                                                src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                                                src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
                                                                                                                                 alt=""
                                                                                                                               />
                                                                                                                               <div class="_74ad">
