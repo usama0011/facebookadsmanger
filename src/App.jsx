@@ -1283,14 +1283,27 @@ const App = () => {
                                                         >
                                                           <div class="x1a2a7pz xh8yej3 snipcss0-7-9-10">
                                                             <div
+                                                              style={{
+                                                                display: "flex",
+                                                                alignItems:
+                                                                  "center",
+                                                                justifyContent:
+                                                                  "space-between",
+                                                              }}
                                                               aria-disabled="false"
                                                               class="_af4f snipcss0-8-10-11 style-l5AWB"
                                                               id="js_7t"
                                                               role="button"
                                                               tabindex="0"
                                                             >
-                                                              <span class="_aee4 snipcss0-9-11-12">
-                                                                <span class="snipcss0-10-12-13">
+                                                              <span
+                                                                style={{
+                                                                  paddingLeft:
+                                                                    "10px",
+                                                                }}
+                                                                class=""
+                                                              >
+                                                                <span class="">
                                                                   <span
                                                                     class="snipcss0-11-13-14 style-JHIWA"
                                                                     id="style-JHIWA"

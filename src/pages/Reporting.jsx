@@ -1160,11 +1160,11 @@ const Reporting = () => {
                                                       </div>
                                                       <Link to="/">
                                                         <div
-                                                          class="x1n2onr6 x3oybdh"
+                                                          class=""
                                                           role="listitem"
                                                           aria-current="page"
                                                         >
-                                                          <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                                          <div class="x10l6tqk x8knxv4 x3nfvp2   x17qophe    xurb0ha ">
                                                             <div
                                                               aria-labelledby="js_1d"
                                                               class=""
@@ -1172,14 +1172,29 @@ const Reporting = () => {
                                                               tabindex="0"
                                                             >
                                                               <div class="x78zum5 x1iyjqo2">
-                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj ">
+                                                                <div class="         x1yr5g0i   x1y1aw1k  xurb0ha    ">
                                                                   <div class="">
-                                                                    <div class="">
+                                                                    <div className="x3nfvp2">
                                                                       <i
                                                                         alt=""
-                                                                        data-visualcompletion=""
-                                                                        class="img style-GPoZh"
-                                                                        id="style-GPoZh"
+                                                                        data-visualcompletion="css-img"
+                                                                        className="img"
+                                                                        style={{
+                                                                          backgroundImage:
+                                                                            "url('https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/VfbGYyBVjxk.png')",
+                                                                          backgroundPosition:
+                                                                            "0px -583px",
+                                                                          backgroundSize:
+                                                                            "auto",
+                                                                          width:
+                                                                            "24px",
+                                                                          height:
+                                                                            "24px",
+                                                                          backgroundRepeat:
+                                                                            "no-repeat",
+                                                                          display:
+                                                                            "inline-block",
+                                                                        }}
                                                                       ></i>
                                                                     </div>
                                                                   </div>
@@ -1192,13 +1207,13 @@ const Reporting = () => {
                                                               class="x78zum5 x1iyjqo2"
                                                               role="listitem"
                                                             >
-                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                              <div class=" x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                                                <div class="">
                                                                   <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
                                                                   <div class="xeuugli">
                                                                     <div
                                                                       aria-level="3"
-                                                                      class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
+                                                                      class=""
                                                                       id="js_1d"
                                                                       role="heading"
                                                                     >
@@ -1217,7 +1232,7 @@ const Reporting = () => {
                                                                     </div>
                                                                   </div>
                                                                 </div>
-                                                                <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                                                <div class=""></div>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -1241,16 +1256,64 @@ const Reporting = () => {
                                                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
                                                                   <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
                                                                     <div class="x3nfvp2">
-                                                                      <i
+                                                                      <a
+                                                                        aria-labelledby="js_g"
+                                                                        href="/adsreporting/?act=1789195501571701"
+                                                                        role="link"
+                                                                        tabIndex="0"
                                                                         style={{
+                                                                          textDecoration:
+                                                                            "none", // example to remove underline
                                                                           color:
-                                                                            "blue",
+                                                                            "inherit", // inherit color from parent
                                                                         }}
-                                                                        alt=""
-                                                                        data-visualcompletion="css-img"
-                                                                        class="img style-hn62s"
-                                                                        id="style-hn62s"
-                                                                      ></i>
+                                                                      >
+                                                                        <div
+                                                                          style={{
+                                                                            display:
+                                                                              "flex",
+                                                                          }}
+                                                                        >
+                                                                          <div
+                                                                            style={{
+                                                                              display:
+                                                                                "flex",
+                                                                              flexDirection:
+                                                                                "column",
+                                                                            }}
+                                                                          >
+                                                                            <div
+                                                                              style={{
+                                                                                display:
+                                                                                  "flex",
+                                                                              }}
+                                                                            >
+                                                                              <div>
+                                                                                <i
+                                                                                  alt=""
+                                                                                  data-visualcompletion="css-img"
+                                                                                  style={{
+                                                                                    backgroundImage:
+                                                                                      "url('https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/VfbGYyBVjxk.png')",
+                                                                                    backgroundPosition:
+                                                                                      "0px -908px",
+                                                                                    backgroundSize:
+                                                                                      "auto",
+                                                                                    width:
+                                                                                      "24px",
+                                                                                    height:
+                                                                                      "24px",
+                                                                                    backgroundRepeat:
+                                                                                      "no-repeat",
+                                                                                    display:
+                                                                                      "inline-block",
+                                                                                  }}
+                                                                                ></i>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </a>
                                                                     </div>
                                                                   </div>
                                                                 </div>
