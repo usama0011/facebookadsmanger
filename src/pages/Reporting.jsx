@@ -380,9 +380,7 @@ const Reporting = () => {
                           <div>
                             <div class="" dir="">
                               <span>
-                                <span>
-                                  Be the Change, Solar powers the way forward
-                                </span>
+                                <span>{record?.quotetext}</span>
                                 <br />
                               </span>
                             </div>
@@ -910,7 +908,7 @@ const Reporting = () => {
       ),
     },
   ];
-
+  console.log(campaings);
   return (
     <div>
       <div
