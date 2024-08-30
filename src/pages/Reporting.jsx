@@ -338,8 +338,14 @@ const Reporting = () => {
                       <div class="x78zum5 xdj266r x11i5rnm xod5an3 x1mh8g0r x889kno x1iji9kk x18d9i69 x1sln4lm x1cy8zhl">
                         <div class="x78zum5 x16dsc37 x1sxyh0">
                           <img
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              borderRadius: "50%",
+                              objectFit: "cover",
+                            }}
                             class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                            src="https://images.pexels.com/photos/26018022/pexels-photo-26018022/free-photo-of-a-vase-of-flowers-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/b911847cb3ea2a5076830efc98d66739/detailed"
                             alt=""
                           />
                         </div>
