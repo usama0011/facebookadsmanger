@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/currentAccout.css";
+import LOgoLogo from "../assets/logologo.jpeg";
+
 import { Link } from "react-router-dom";
 const CurrentAccount = () => {
   return (
@@ -1510,7 +1512,7 @@ const CurrentAccount = () => {
                                           objectFit: "cover",
                                         }}
                                         class="img"
-                                        src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                        src={LOgoLogo}
                                         height="28"
                                         width="28"
                                         alt=""
