@@ -2254,7 +2254,6 @@ const EditCompaingTwo = () => {
                                                                                 role="radiogroup"
                                                                               >
                                                                                 <label
-                                                                                  aria-disabled="true"
                                                                                   class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1h6gzvc x1t137rt"
                                                                                   tabindex="-1"
                                                                                 >
@@ -2267,11 +2266,7 @@ const EditCompaingTwo = () => {
                                                                                               <div class="x1s85apg"></div>
                                                                                               <input
                                                                                                 aria-checked="true"
-                                                                                                aria-disabled="true"
-                                                                                                aria-describedby="js_138"
-                                                                                                aria-labelledby="js_139"
                                                                                                 class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl"
-                                                                                                disabled=""
                                                                                                 id="js_137"
                                                                                                 type="radio"
                                                                                                 value="WEBSITE"
@@ -2292,8 +2287,11 @@ const EditCompaingTwo = () => {
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                           <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_139"
+                                                                                            class=""
+                                                                                            style={{
+                                                                                              color:
+                                                                                                "black",
+                                                                                            }}
                                                                                           >
                                                                                             Website
                                                                                           </div>
@@ -2339,14 +2337,17 @@ const EditCompaingTwo = () => {
                                                                                         data-sscoverage-ignore="true"
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                                                                                          <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_13f"
-                                                                                          >
+                                                                                          <div class="">
                                                                                             App
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                        <div
+                                                                                          class=""
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                        >
                                                                                           Choose
                                                                                           the
                                                                                           app
@@ -2421,14 +2422,17 @@ const EditCompaingTwo = () => {
                                                                                         data-sscoverage-ignore="true"
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                                                                                          <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_13l"
-                                                                                          >
+                                                                                          <div class="">
                                                                                             Messenger
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                        <div
+                                                                                          class=""
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                        >
                                                                                           Send
                                                                                           people
                                                                                           from
@@ -2495,10 +2499,7 @@ const EditCompaingTwo = () => {
                                                                                         data-sscoverage-ignore="true"
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                                                                                          <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_13r"
-                                                                                          >
+                                                                                          <div class="">
                                                                                             Instagram
                                                                                             profile
                                                                                           </div>
@@ -2544,14 +2545,17 @@ const EditCompaingTwo = () => {
                                                                                         data-sscoverage-ignore="true"
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                                                                                          <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_13x"
-                                                                                          >
+                                                                                          <div class="">
                                                                                             WhatsApp
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                        <div
+                                                                                          class=""
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                        >
                                                                                           When
                                                                                           someone
                                                                                           clicks
@@ -2625,14 +2629,17 @@ const EditCompaingTwo = () => {
                                                                                         data-sscoverage-ignore="true"
                                                                                       >
                                                                                         <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                                                                                          <div
-                                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
-                                                                                            id="js_143"
-                                                                                          >
+                                                                                          <div class="">
                                                                                             Calls
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                        <div
+                                                                                          class=""
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                        >
                                                                                           When
                                                                                           someone
                                                                                           taps
