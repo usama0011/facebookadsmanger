@@ -777,9 +777,7 @@ const Reporting = () => {
       key: "Attributionsetting",
       width: 150,
       render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "left" }}>
-          {FormatNumbers(text)}
-        </div>
+        <div style={{ fontSize: "14px", textAlign: "left" }}>{text}</div>
       ),
     },
     {
