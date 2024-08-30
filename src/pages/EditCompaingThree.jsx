@@ -86,7 +86,7 @@ const EditCompaingThree = () => {
                                       alt="Meta"
                                       class="img"
                                       height="28"
-                                      src={LOgoLogo}
+                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg?_nc_eui2=AeHKwknQesn94TNLWmx-T_z_tf_JPOr9hBa1_8k86v2EFmaBEik4xi7pURPecXmNF-1-npcsN93AIkwa-uvDfPYO"
                                       width="28"
                                     />
                                   </div>
