@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/EditCompaingThree.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import LOgoLogo from "../assets/logologo.jpeg";
 
 const EditCompaingThree = () => {
   const { id } = useParams();
@@ -85,7 +86,7 @@ const EditCompaingThree = () => {
                                       alt="Meta"
                                       class="img"
                                       height="28"
-                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg?_nc_eui2=AeHKwknQesn94TNLWmx-T_z_tf_JPOr9hBa1_8k86v2EFmaBEik4xi7pURPecXmNF-1-npcsN93AIkwa-uvDfPYO"
+                                      src={LOgoLogo}
                                       width="28"
                                     />
                                   </div>

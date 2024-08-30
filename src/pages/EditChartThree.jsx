@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/EditChartThree.css";
 import { Link, useParams } from "react-router-dom";
+import LOgoLOgo from "../assets/logologo.jpeg";
 import axios from "axios";
 const EditChartThree = () => {
   const { id } = useParams();
@@ -85,7 +86,7 @@ const EditChartThree = () => {
                                       alt="Meta"
                                       class="img"
                                       height="28"
-                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg?_nc_eui2=AeHKwknQesn94TNLWmx-T_z_tf_JPOr9hBa1_8k86v2EFmaBEik4xi7pURPecXmNF-1-npcsN93AIkwa-uvDfPYO"
+                                      src={LOgoLOgo}
                                       width="28"
                                     />
                                   </div>
