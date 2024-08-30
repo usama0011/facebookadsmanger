@@ -2311,6 +2311,10 @@ const Reporting = () => {
                                                                         id="style-Sz8Jc"
                                                                       >
                                                                         <span
+                                                                          style={{
+                                                                            marginRight:
+                                                                              "10px",
+                                                                          }}
                                                                           id="style-ifDwy"
                                                                           class="style-ifDwy"
                                                                         >
