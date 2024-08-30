@@ -347,7 +347,9 @@ const Reporting = () => {
                           <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
                             <div>
                               <span class="x1fzdab9 x1f6kntn xuy8w9f">
-                                <span class="x1xlr1w8">AI Quotes</span>
+                                <span class="x1xlr1w8">
+                                  {record?.quoteheading}
+                                </span>
                               </span>
                             </div>
                             <div class="x1hjcb3a x1pg5gke x9438zm x1n2onr6 x17ocude xt0psk2">

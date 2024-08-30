@@ -113,7 +113,7 @@ const EditChartThree = () => {
                                             role="img"
                                           >
                                             <img
-                                              src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iSFNcadiXuMQ7kNvgG3oO6V&_nc_ht=scontent.flhe11-1.fna&oh=00_AYDfoGWxtFwt9AQWN2eHW2fRx1-D_ZevAtqH8-o0d3nbgw&oe=666309BF"
+                                              src="https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=c1jcfOuRHgAQ7kNvgEDawKb&_nc_ht=scontent.flhe7-1.fna&_nc_gid=AcS2fcmXiVJJnkfyYhvi2O4&oh=00_AYC8ORQjreYnUbz3la1CbMwbbh6-bz_VE0PoE9idEgnzQw&oe=66D70DBF"
                                               alt=""
                                               class="img"
                                             />
