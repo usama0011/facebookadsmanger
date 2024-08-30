@@ -3083,7 +3083,13 @@ const EditCompaingTwo = () => {
                                                                     </div>
                                                                   </div>
                                                                 </div>
-                                                                <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                                                <div
+                                                                  style={{
+                                                                    textAlign:
+                                                                      "left",
+                                                                  }}
+                                                                  class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                                                >
                                                                   Provide
                                                                   creative
                                                                   elements, such
@@ -3236,22 +3242,35 @@ const EditCompaingTwo = () => {
                                                                         <div class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
                                                                           <div class="x78zum5 xdt5ytf x1iyjqo2">
                                                                             <div class="x1iyjqo2">
-                                                                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                                Your
-                                                                                budget
-                                                                                was
-                                                                                set
-                                                                                using
-                                                                                Advantage
-                                                                                campaign
-                                                                                budget.
-                                                                                Visit
-                                                                                the
-                                                                                campaign
-                                                                                level
-                                                                                to
-                                                                                make
-                                                                                updates.
+                                                                              <span
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
+                                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                                              >
+                                                                                <span
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
+                                                                                >
+                                                                                  Your
+                                                                                  budget
+                                                                                  was
+                                                                                  set
+                                                                                  using
+                                                                                  Advantage
+                                                                                  campaign
+                                                                                  budget.
+                                                                                  Visit
+                                                                                  the
+                                                                                  campaign
+                                                                                  level
+                                                                                  to
+                                                                                  make
+                                                                                  updates.
+                                                                                </span>
                                                                               </span>
                                                                             </div>
                                                                           </div>
@@ -3954,7 +3973,13 @@ const EditCompaingTwo = () => {
                                                                       </div>
                                                                     </div>
                                                                   </div>
-                                                                  <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                                                  <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
+                                                                    class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                                                  >
                                                                     Define who
                                                                     you want to
                                                                     see your

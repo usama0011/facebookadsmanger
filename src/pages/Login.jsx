@@ -1089,7 +1089,7 @@ const Login = () => {
                                   >
                                     <img
                                       class="_s0 _4ooo _7wcz _tzw img"
-                                      src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p40x40&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=DRHw0Oj1EroQ7kNvgG-bfGG&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYB4yppCQW2e3ulg4ZVH-ouYHkKWEXtZDYLodKl_HbeXWQ&amp;oe=665D1AFF"
+                                      src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/b911847cb3ea2a5076830efc98d66739/detailed"
                                       alt=""
                                       aria-label="Ali Hamza"
                                       role="img"

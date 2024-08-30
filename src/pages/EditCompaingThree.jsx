@@ -2192,7 +2192,10 @@ const EditCompaingThree = () => {
                                                     </div>
                                                   </div>
                                                 </div>
-                                                <div class="x78zum5 x2lwn1j xeuugli x4arcmf x1d52u69 xktsk01">
+                                                <div
+                                                  style={{ textAlign: "left" }}
+                                                  class="x78zum5 x2lwn1j xeuugli x4arcmf x1d52u69 xktsk01"
+                                                >
                                                   <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                     Run ads with creators,
                                                     brands and other businesses.
@@ -2424,9 +2427,9 @@ const EditCompaingThree = () => {
                                                                                                 role="img"
                                                                                               >
                                                                                                 <img
-                                                                                                  height="16"
-                                                                                                  src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/433912504_7336238556430311_6209908747308057942_n.jpg?stp=cp0_dst-jpg_p50x50&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeEFyKZtn-oi_wcGb577V9YjLCUfgxYEgdIsJR-DFgSB0tF7XA49vzosymlrrLolwtNpiqWY4MOkOIzKpb68CGpC&amp;_nc_ohc=Iid45yreBLAQ7kNvgHRxmFT&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYCKGZtcMaTtD0ImXze4csobd83XcJNJeKPbJy8-3gVU9g&amp;oe=664DFBDB"
-                                                                                                  width="16"
+                                                                                                  height="30"
+                                                                                                  src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
+                                                                                                  width="30"
                                                                                                   alt=""
                                                                                                   class="img"
                                                                                                 />
@@ -2762,6 +2765,10 @@ const EditCompaingThree = () => {
                                                                 >
                                                                   <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli">
                                                                     <div
+                                                                      style={{
+                                                                        textAlign:
+                                                                          "left",
+                                                                      }}
                                                                       class=""
                                                                       data-sscoverage-ignore="true"
                                                                     >
@@ -2774,7 +2781,15 @@ const EditCompaingThree = () => {
                                                                     </div>
                                                                   </div>
                                                                 </div>
-                                                                <span class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                                <span
+                                                                  style={{
+                                                                    textAlign:
+                                                                      "left",
+                                                                    marginLeft:
+                                                                      "-50px",
+                                                                  }}
+                                                                  class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj"
+                                                                >
                                                                   Choose how
                                                                   you'd like to
                                                                   provide the
@@ -2861,6 +2876,12 @@ const EditCompaingThree = () => {
                                                                             >
                                                                               <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                 <div
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                    fontWeight:
+                                                                                      "bold",
+                                                                                  }}
                                                                                   class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                   id="js_yq"
                                                                                 >
@@ -2868,7 +2889,13 @@ const EditCompaingThree = () => {
                                                                                   upload
                                                                                 </div>
                                                                               </div>
-                                                                              <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                              <div
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
+                                                                                class="xw23nyj xo1l8bm x63nzvj"
+                                                                              >
                                                                                 Manually
                                                                                 upload
                                                                                 images
@@ -2918,7 +2945,11 @@ const EditCompaingThree = () => {
                                                                               >
                                                                                 <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                   <div
-                                                                                    class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
+                                                                                    style={{
+                                                                                      fontWeight:
+                                                                                        "bold",
+                                                                                    }}
+                                                                                    class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg "
                                                                                     id="js_yw"
                                                                                   >
                                                                                     <div class="x1rg5ohu">
@@ -2936,7 +2967,13 @@ const EditCompaingThree = () => {
                                                                                     </div>
                                                                                   </div>
                                                                                 </div>
-                                                                                <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                <div
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
+                                                                                  class="xmi5d70 xw23nyj xo1l8bm x63nzvj xis6omg xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                                >
                                                                                   Automatically
                                                                                   use
                                                                                   media
@@ -3082,6 +3119,10 @@ const EditCompaingThree = () => {
                                                                                     >
                                                                                       <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                         <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
                                                                                           class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                           id="js_64"
                                                                                         >
@@ -3151,6 +3192,10 @@ const EditCompaingThree = () => {
                                                                                     >
                                                                                       <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                         <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
                                                                                           class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                           id="js_6a"
                                                                                         >
@@ -3160,7 +3205,13 @@ const EditCompaingThree = () => {
                                                                                           video
                                                                                         </div>
                                                                                       </div>
-                                                                                      <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                      <div
+                                                                                        style={{
+                                                                                          textAlign:
+                                                                                            "left",
+                                                                                        }}
+                                                                                        class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                                      >
                                                                                         One
                                                                                         image
                                                                                         or
@@ -3214,13 +3265,23 @@ const EditCompaingThree = () => {
                                                                                     >
                                                                                       <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                         <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
                                                                                           class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                           id="js_6g"
                                                                                         >
                                                                                           Carousel
                                                                                         </div>
                                                                                       </div>
-                                                                                      <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                      <div
+                                                                                        style={{
+                                                                                          textAlign:
+                                                                                            "left",
+                                                                                        }}
+                                                                                        class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                                      >
                                                                                         Two
                                                                                         or
                                                                                         more
@@ -3271,13 +3332,23 @@ const EditCompaingThree = () => {
                                                                                     >
                                                                                       <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                         <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
                                                                                           class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                           id="js_6m"
                                                                                         >
                                                                                           Collection
                                                                                         </div>
                                                                                       </div>
-                                                                                      <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                                      <div
+                                                                                        style={{
+                                                                                          textAlign:
+                                                                                            "left",
+                                                                                        }}
+                                                                                        class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                                      >
                                                                                         A
                                                                                         group
                                                                                         of
@@ -3409,8 +3480,20 @@ const EditCompaingThree = () => {
                                                                           </span>
                                                                         </div>
                                                                       </div>
-                                                                      <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
-                                                                        <span class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1heor9g xq9mrsl x1h4wwuj xeuugli">
+                                                                      <div
+                                                                        style={{
+                                                                          textAlign:
+                                                                            "left",
+                                                                        }}
+                                                                        class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                      >
+                                                                        <span
+                                                                          style={{
+                                                                            textAlign:
+                                                                              "left",
+                                                                          }}
+                                                                          class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1heor9g xq9mrsl x1h4wwuj xeuugli"
+                                                                        >
                                                                           Your
                                                                           ads
                                                                           can
@@ -3556,7 +3639,12 @@ const EditCompaingThree = () => {
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                                    <div
+                                                      style={{
+                                                        textAlign: "left",
+                                                      }}
+                                                      class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                                    >
                                                       Select the media and text
                                                       for your ad. You can also
                                                       customise your media and
@@ -3671,7 +3759,13 @@ const EditCompaingThree = () => {
                                                                           </div>
                                                                         </div>
                                                                       </div>
-                                                                      <div class="_21op">
+                                                                      <div
+                                                                        style={{
+                                                                          textAlign:
+                                                                            "left",
+                                                                        }}
+                                                                        class="_21op"
+                                                                      >
                                                                         <span class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xq9mrsl x1h4wwuj xeuugli x12nagc">
                                                                           22
                                                                           placements
@@ -3863,8 +3957,20 @@ const EditCompaingThree = () => {
                                                                                             </div>
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xh8yej3">
-                                                                                          <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
+                                                                                        <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                          class="xh8yej3"
+                                                                                        >
+                                                                                          <span
+                                                                                            style={{
+                                                                                              textAlign:
+                                                                                                "left",
+                                                                                            }}
+                                                                                            class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                                                          >
                                                                                             Feeds,
                                                                                             In-stream
                                                                                             ads
@@ -3986,7 +4092,13 @@ const EditCompaingThree = () => {
                                                                                             </div>
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xh8yej3">
+                                                                                        <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                          class="xh8yej3"
+                                                                                        >
                                                                                           <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
                                                                                             Stories
                                                                                             and
@@ -4106,7 +4218,13 @@ const EditCompaingThree = () => {
                                                                                             </div>
                                                                                           </div>
                                                                                         </div>
-                                                                                        <div class="xh8yej3">
+                                                                                        <div
+                                                                                          style={{
+                                                                                            textAlign:
+                                                                                              "left",
+                                                                                          }}
+                                                                                          class="xh8yej3"
+                                                                                        >
                                                                                           <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
                                                                                             Right
                                                                                             column,
@@ -4749,7 +4867,12 @@ const EditCompaingThree = () => {
                                                                         </div>
                                                                       </div>
                                                                       <div class="_21op">
-                                                                        <div>
+                                                                        <div
+                                                                          style={{
+                                                                            textAlign:
+                                                                              "left",
+                                                                          }}
+                                                                        >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             Use
                                                                             info
@@ -4782,7 +4905,12 @@ const EditCompaingThree = () => {
                                                                           </span>
                                                                         </a>
                                                                         <div>
-                                                                          <div>
+                                                                          <div
+                                                                            style={{
+                                                                              textAlign:
+                                                                                "left",
+                                                                            }}
+                                                                          >
                                                                             <br />
                                                                             <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                               0
@@ -4908,7 +5036,12 @@ const EditCompaingThree = () => {
                                                           ></i>
                                                         </div>
                                                       </div>
-                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                      <span
+                                                        style={{
+                                                          textAlign: "left",
+                                                        }}
+                                                        class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                      >
                                                         Tailor your ad for the{" "}
                                                         <a
                                                           class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1qlqyl8 x1pd3egz"
@@ -4949,12 +5082,29 @@ const EditCompaingThree = () => {
                                                   >
                                                     <div>
                                                       <div>
-                                                        <div class="x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k xavht8x x1gslohp xod5an3 x1d52u69 xktsk01">
+                                                        <div
+                                                          style={{
+                                                            textAlign: "left",
+                                                          }}
+                                                          class="x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k xavht8x x1gslohp xod5an3 x1d52u69 xktsk01"
+                                                        >
                                                           <div class="">
                                                             <div class="x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k xyqj3jm">
                                                               <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
-                                                                <div class="x1rg5ohu">
-                                                                  <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli">
+                                                                <div
+                                                                  style={{
+                                                                    textAlign:
+                                                                      "left",
+                                                                  }}
+                                                                  class="x1rg5ohu"
+                                                                >
+                                                                  <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
+                                                                    class="x6s0dn4 x78zum5 x2lwn1j xeuugli"
+                                                                  >
                                                                     Enhancements
                                                                     <div class="x1rg5ohu x67bb7w">
                                                                       <div class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x1fcty0u x78zum5 xl56j7k x6s0dn4">
@@ -5161,7 +5311,12 @@ const EditCompaingThree = () => {
                                                         </div>
                                                         <div class="x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x2lah0s x19lwn94 x6s0dn4 x13a6bvl xu0aao5 x9otpla x1wsgfga"></div>
                                                       </div>
-                                                      <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                                      <div
+                                                        style={{
+                                                          textAlign: "left",
+                                                        }}
+                                                        class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                                      >
                                                         Tell us where to send
                                                         people immediately after
                                                         they've tapped or
@@ -5235,6 +5390,10 @@ const EditCompaingThree = () => {
                                                                     </div>
                                                                   </div>
                                                                   <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
                                                                   >
@@ -5307,6 +5466,10 @@ const EditCompaingThree = () => {
                                                                     </div>
                                                                   </div>
                                                                   <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
                                                                   >
@@ -5851,6 +6014,10 @@ const EditCompaingThree = () => {
                                                                                 </div>
                                                                               </div>
                                                                               <div
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
                                                                               >
@@ -5920,6 +6087,10 @@ const EditCompaingThree = () => {
                                                                                 </div>
                                                                               </div>
                                                                               <div
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
                                                                               >
@@ -6015,6 +6186,10 @@ const EditCompaingThree = () => {
                                                                                 </div>
                                                                               </div>
                                                                               <div
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
                                                                               >
@@ -6092,6 +6267,10 @@ const EditCompaingThree = () => {
                                                                     </div>
                                                                   </div>
                                                                   <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
                                                                   >
@@ -6163,6 +6342,10 @@ const EditCompaingThree = () => {
                                                                     </div>
                                                                   </div>
                                                                   <div
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
                                                                   >
@@ -6293,7 +6476,13 @@ const EditCompaingThree = () => {
                                                       <div>
                                                         <div>
                                                           <div>
-                                                            <div class="x1jk998j x1rg5ohu xat24cr x1h4wwuj x1n2onr6 x12c0h9u">
+                                                            <div
+                                                              style={{
+                                                                textAlign:
+                                                                  "left",
+                                                              }}
+                                                              class="x1jk998j x1rg5ohu xat24cr x1h4wwuj x1n2onr6 x12c0h9u"
+                                                            >
                                                               <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                 Add your own
                                                                 translations or
@@ -6359,6 +6548,7 @@ const EditCompaingThree = () => {
                                                 </div>
                                               </div>
                                               <div
+                                                style={{ textAlign: "left" }}
                                                 aria-level="3"
                                                 class="x1xqt7ti x1uxerd5 x1xlr1w8 xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuugli"
                                                 role="heading"
@@ -6367,7 +6557,10 @@ const EditCompaingThree = () => {
                                               </div>
                                               <div class="x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x2lah0s x19lwn94 x6s0dn4 x13a6bvl xu0aao5 x9otpla x1wsgfga"></div>
                                             </div>
-                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                            <div
+                                              style={{ textAlign: "left" }}
+                                              class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                            >
                                               Track event data sets that contain
                                               the conversions your ad might
                                               motivate. The dataset that
@@ -6609,7 +6802,13 @@ const EditCompaingThree = () => {
                                                             role="alert"
                                                             data-auto-logging-component-type="GeoNotice"
                                                           >
-                                                            <div class="x1cy8zhl x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                            <div
+                                                              style={{
+                                                                textAlign:
+                                                                  "left",
+                                                              }}
+                                                              class="x1cy8zhl x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94"
+                                                            >
                                                               <div class="x1c4vz4f x2lah0s xlup9mm x1nn3v0j">
                                                                 <div
                                                                   class="x3nfvp2 x120ccyz x4s1yf2"

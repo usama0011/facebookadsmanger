@@ -1500,15 +1500,21 @@ const CurrentAccount = () => {
                                     role="button"
                                     aria-controls="u_6_1_1Q"
                                   >
-                                    <div class="_skv">
+                                    <div
+                                      style={{ marginLeft: "5px" }}
+                                      class="_skv"
+                                    >
                                       <img
+                                        style={{
+                                          borderRadius: "50%",
+                                          objectFit: "cover",
+                                        }}
                                         class="img"
-                                        src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=DRHw0Oj1EroQ7kNvgGVcqvb&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYAPYwOy-8fZxVASRcWTTbJOCGq4Bhbz87kcEpI0uEFeXg&amp;oe=665E343F"
+                                        src="https://res-console.cloudinary.com/usamaahmad/media_explorer_thumbnails/e3f83f1db8394e89d4b760b8905c9125/detailed"
                                         height="28"
                                         width="28"
                                         alt=""
                                       />
-                                      Ali
                                     </div>
                                     <div class="_3oo9"></div>
                                   </div>

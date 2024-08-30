@@ -2193,7 +2193,13 @@ const EditCompaing = () => {
                                                               <div class="x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x2lah0s x19lwn94 x6s0dn4 x13a6bvl xu0aao5 x9otpla x1wsgfga"></div>
                                                             </div>
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
-                                                              <div class="x1xmf6yo">
+                                                              <div
+                                                                style={{
+                                                                  textAlign:
+                                                                    "left",
+                                                                }}
+                                                                class="x1xmf6yo"
+                                                              >
                                                                 Declare if your
                                                                 ads are related
                                                                 to credit,
@@ -2241,7 +2247,13 @@ const EditCompaing = () => {
                                                                     special ad
                                                                     categories
                                                                   </div>
-                                                                  <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1e56ztr">
+                                                                  <span
+                                                                    style={{
+                                                                      textAlign:
+                                                                        "left",
+                                                                    }}
+                                                                    class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1e56ztr"
+                                                                  >
                                                                     Accurately
                                                                     declaring
                                                                     your ad
@@ -2311,7 +2323,11 @@ const EditCompaing = () => {
                                                                               </label>
                                                                             </div>
                                                                             <div
-                                                                              class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                                              style={{
+                                                                                textAlign:
+                                                                                  "left",
+                                                                              }}
+                                                                              class="x mi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xq9mrsl x1h4wwuj xeuugli"
                                                                               id="js_af"
                                                                             >
                                                                               Select
@@ -2790,7 +2806,13 @@ const EditCompaing = () => {
                                                               data-auto-logging-dependent-region=""
                                                             >
                                                               <div class="x1cy8zhl x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 x1kxxb1g">
-                                                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                                <span
+                                                                  style={{
+                                                                    textAlign:
+                                                                      "left",
+                                                                  }}
+                                                                  class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                                >
                                                                   To help
                                                                   improve ad
                                                                   performance,
@@ -2945,7 +2967,13 @@ const EditCompaing = () => {
                                                                   </div>
                                                                 </div>
                                                               </div>
-                                                              <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo">
+                                                              <div
+                                                                style={{
+                                                                  textAlign:
+                                                                    "left",
+                                                                }}
+                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli x1xmf6yo"
+                                                              >
                                                                 Advantage
                                                                 campaign budget
                                                                 will distribute
