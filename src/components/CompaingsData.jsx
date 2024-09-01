@@ -478,53 +478,127 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   // Define additional columns for performance and clicks
   const additionalColumns = [
     {
-      title: "CPM (cost per 1,000 impressions)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>
+            CPM (cost per 1,000 impressions)
+          </div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "CPM",
       key: "CPM",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>${text}</div>
+      ),
     },
     {
-      title: "Links clicks",
-      dataIndex: "Links_clicks",
-      key: "Links_clicks",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Links clicks</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "LinksClicks",
+      key: "LinksClicks",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}</div>
+      ),
     },
     {
-      title: "CPC (cost per link click)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>CPC (cost per link click)</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "CPC",
       key: "CPC",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>${text}</div>
+      ),
     },
     {
-      title: "CTR (link click-through rate)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>
+            CTR (link click-through rate)
+          </div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "CTR",
       key: "CTR",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}%</div>
+      ),
     },
     {
-      title: "Clicks (All)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Clicks (All)</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "clicksAll",
       key: "clicksAll",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}</div>
+      ),
     },
     {
-      title: "CTR (All)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>CTR (All)</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "CTRALL",
       key: "CTRALL",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}%</div>
+      ),
     },
     {
-      title: "CPC (All)",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>CPC (All)</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "CPCAll",
       key: "CPCAll",
       width: 180,
-      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>${text}</div>
+      ),
     },
   ];
   const MoreColoumsAdds =
@@ -537,7 +611,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   const perfomarnaceandclicks = () => {
     setShowPerformanceAndClicks("performanceandclicks");
   };
-
+  console.log(campaigns);
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
