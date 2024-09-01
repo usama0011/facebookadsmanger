@@ -312,7 +312,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
       title: "Attribution Settings",
       dataIndex: "Attributionsetting",
       key: "Attributionsetting",
-      width: 80,
+      width: 120,
       render: (text) => (
         <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
       ),
@@ -478,34 +478,53 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   // Define additional columns for performance and clicks
   const additionalColumns = [
     {
-      title: "CPC (Cost Per Link Click)",
+      title: "CPM (cost per 1,000 impressions)",
+      dataIndex: "CPM",
+      key: "CPM",
+      width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+    },
+    {
+      title: "Links clicks",
+      dataIndex: "Links_clicks",
+      key: "Links_clicks",
+      width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
+    },
+    {
+      title: "CPC (cost per link click)",
       dataIndex: "CPC",
       key: "CPC",
       width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
     },
     {
-      title: "CTR (Link Click-Through Rate)",
-      dataIndex: "CTR_link",
-      key: "CTR_link",
+      title: "CTR (link click-through rate)",
+      dataIndex: "CTR",
+      key: "CTR",
       width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
     },
     {
       title: "Clicks (All)",
-      dataIndex: "clicks_all",
-      key: "clicks_all",
+      dataIndex: "clicksAll",
+      key: "clicksAll",
       width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
     },
     {
       title: "CTR (All)",
-      dataIndex: "CTR_all",
-      key: "CTR_all",
+      dataIndex: "CTRALL",
+      key: "CTRALL",
       width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
     },
     {
       title: "CPC (All)",
-      dataIndex: "CPC_all",
-      key: "CPC_all",
+      dataIndex: "CPCAll",
+      key: "CPCAll",
       width: 180,
+      render: (text) => <div style={{ fontSize: "14px" }}>{text}</div>,
     },
   ];
   const MoreColoumsAdds =
