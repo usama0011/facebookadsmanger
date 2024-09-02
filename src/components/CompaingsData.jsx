@@ -33,9 +33,18 @@ const CompaingsData = ({ campaigns, loading, error }) => {
 
   const handleMouseLeavePerformance = () => {
     setIsHoveredPerformance(false);
-    setShowCustumizeBanner((prev) => !prev);
+  };
+  const handleCloseBannerPerformance = () => {
+    setShowPerformanceAndClicks("performance");
+    setShowCustumizeBanner(false);
+    setIsHoveredPerformance(false);
   };
 
+  const handleCloseBannerPerformanceandClicks = () => {
+    setShowPerformanceAndClicks("performanceandclicks");
+    setShowCustumizeBanner(false);
+    setIsHovered(false);
+  };
   const FormatNumbers = (entrynum) => {
     let nf = new Intl.NumberFormat();
     return nf.format(entrynum); // "1,234,567,890"
@@ -453,27 +462,29 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         </div>
       ),
     },
-    {
-      title: () => (
-        <i
-          alt="Customise columns..."
-          aria-label="Customise columns..."
-          data-visualcompletion="css-img"
-          class="img snipcss-saPsI style-kgHNC"
-          id="style-kgHNC"
-        >
-          <u>Customise columns...</u>
-        </i>
-      ),
-      dataIndex: "Plus",
-      key: "Plus",
-      width: 30,
-      render: (text) => (
-        <div style={{ fontSize: "14px" }} className="budygetcontainer">
-          {text}
-        </div>
-      ),
-    },
+    showPerformanceAndClicks === "performance"
+      ? {
+          title: () => (
+            <i
+              alt="Customise columns..."
+              aria-label="Customise columns..."
+              data-visualcompletion="css-img"
+              class="img snipcss-saPsI style-kgHNC"
+              id="style-kgHNC"
+            >
+              <u>Customise columns...</u>
+            </i>
+          ),
+          dataIndex: "Plus",
+          key: "Plus",
+          width: 30,
+          render: (text) => (
+            <div style={{ fontSize: "14px" }} className="budygetcontainer">
+              {text}
+            </div>
+          ),
+        }
+      : {},
   ];
   // Define additional columns for performance and clicks
   const additionalColumns = [
@@ -600,6 +611,27 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         <div style={{ fontSize: "14px", textAlign: "right" }}>${text}</div>
       ),
     },
+    {
+      title: () => (
+        <i
+          alt="Customise columns..."
+          aria-label="Customise columns..."
+          data-visualcompletion="css-img"
+          class="img snipcss-saPsI style-kgHNC"
+          id="style-kgHNC"
+        >
+          <u>Customise columns...</u>
+        </i>
+      ),
+      dataIndex: "Plus",
+      key: "Plus",
+      width: 30,
+      render: (text) => (
+        <div style={{ fontSize: "14px" }} className="budygetcontainer">
+          {text}
+        </div>
+      ),
+    },
   ];
   const MoreColoumsAdds =
     showPerformanceAndClicks === "performance"
@@ -611,7 +643,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   const perfomarnaceandclicks = () => {
     setShowPerformanceAndClicks("performanceandclicks");
   };
-  console.log(campaigns);
+  console.log("udpate data", campaigns);
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -1295,73 +1327,6 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                       </span>
                     </label>
                   </div>
-
-                  <label
-                    style={{
-                      backgroundColor:
-                        showPerformanceAndClicks === "performanceandclicks"
-                          ? "#ecf2fe"
-                          : "", // Corrected ternary and removed double curly braces
-                      padding: "10px 20px",
-                      borderRadius: "10px",
-                    }}
-                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1h6gzvc x1t137rt"
-                    tabindex="-1"
-                  >
-                    <div class="x78zum5 x1iyjqo2">
-                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
-                          <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                            <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                <div class="x1s85apg"></div>
-                                <input
-                                  class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
-                                  id="js_yo"
-                                  type="radio"
-                                  value="IMAGE_OR_VIDEO"
-                                  checked=""
-                                  name="js_yj"
-                                />
-                                <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
-                                  <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x22siqj xis6omg"></div>
-                                </div>
-                              </div>
-                              <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          onClick={perfomarnace}
-                          onMouseEnter={handleMouseEnter}
-                          onMouseLeave={handleMouseLeave}
-                          class="x1iyjqo2 xamitd3"
-                          data-sscoverage-ignore="true"
-                        >
-                          <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
-                            <div
-                              style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                textAlign: "left",
-                              }}
-                            >
-                              <div
-                                class=""
-                                style={{
-                                  color: "black",
-                                }}
-                              >
-                                Performance and clicks
-                              </div>
-                              <span>Default</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-
                   <label
                     style={{
                       padding: "10px 20px",
@@ -1371,33 +1336,45 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                           ? "#ecf2fe"
                           : "",
                     }}
+                    onClick={handleCloseBannerPerformance}
                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1h6gzvc x1t137rt"
                     tabindex="-1"
                   >
                     <div class="x78zum5 x1iyjqo2">
                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
-                          <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                            <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                <div class="x1s85apg"></div>
-                                <input
-                                  aria-checked="true"
-                                  class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl"
-                                  id="js_137"
-                                  type="radio"
-                                  value="WEBSITE"
-                                  checked=""
-                                  name="js_132"
-                                />
-                                <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
-                                  <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x22siqj xis6omg"></div>
+                        {/* performance check box */}
+                        {showPerformanceAndClicks === "performance" ? (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                  <div class=""></div>
+                                  <input
+                                    class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
+                                    id="js_yo"
+                                    type="radio"
+                                    value="IMAGE_OR_VIDEO"
+                                    checked=""
+                                    name="js_yj"
+                                  />
+                                  <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
+                                    <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
+                                  </div>
                                 </div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                               </div>
-                              <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                             </div>
                           </div>
-                        </div>
+                        ) : (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                         <div
                           onClick={perfomarnaceandclicks}
                           onMouseEnter={handleMouseEnterPerformance}
@@ -1421,6 +1398,93 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                               >
                                 Performance
                               </div>
+                              {showPerformanceAndClicks === "performance" ? (
+                                <span>Default</span>
+                              ) : (
+                                ""
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <label
+                    style={{
+                      backgroundColor:
+                        showPerformanceAndClicks === "performanceandclicks"
+                          ? "#ecf2fe"
+                          : "", // Corrected ternary and removed double curly braces
+                      padding: "10px 20px",
+                      borderRadius: "10px",
+                    }}
+                    onClick={handleCloseBannerPerformanceandClicks}
+                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1h6gzvc x1t137rt"
+                    tabindex="-1"
+                  >
+                    <div class="x78zum5 x1iyjqo2">
+                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
+                        {showPerformanceAndClicks === "performanceandclicks" ? (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                  <div class=""></div>
+                                  <input
+                                    class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
+                                    id="js_yo"
+                                    type="radio"
+                                    value="IMAGE_OR_VIDEO"
+                                    checked=""
+                                    name="js_yj"
+                                  />
+                                  <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
+                                    <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
+                                  </div>
+                                </div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        <div
+                          onClick={perfomarnace}
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
+                          class="x1iyjqo2 xamitd3"
+                          data-sscoverage-ignore="true"
+                        >
+                          <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
+                            <div
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                textAlign: "left",
+                              }}
+                            >
+                              <div
+                                class=""
+                                style={{
+                                  color: "black",
+                                }}
+                              >
+                                Performance and clicks
+                              </div>
+                              {showPerformanceAndClicks ===
+                              "performanceandclicks" ? (
+                                <span>Default</span>
+                              ) : (
+                                ""
+                              )}
                             </div>
                           </div>
                         </div>
@@ -1451,23 +1515,13 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                   >
                     <div class="x78zum5 x1iyjqo2">
                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                        <div
+                          style={{ marginTop: "5px" }}
+                          class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s"
+                        >
                           <div class="x1rg5ohu x1n2onr6 x3oybdh">
                             <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                <div class=""></div>
-                                <input
-                                  class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
-                                  id="js_yo"
-                                  type="radio"
-                                  value="IMAGE_OR_VIDEO"
-                                  checked=""
-                                  name="js_yj"
-                                />
-                                <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
-                                  <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
-                                </div>
-                              </div>
+                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
                               <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                             </div>
                           </div>
@@ -1507,23 +1561,13 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                   >
                     <div class="x78zum5 x1iyjqo2">
                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                        <div
+                          style={{ marginTop: "5px" }}
+                          class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s"
+                        >
                           <div class="x1rg5ohu x1n2onr6 x3oybdh">
                             <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                <div class=""></div>
-                                <input
-                                  class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
-                                  id="js_yo"
-                                  type="radio"
-                                  value="IMAGE_OR_VIDEO"
-                                  checked=""
-                                  name="js_yj"
-                                />
-                                <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
-                                  <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
-                                </div>
-                              </div>
+                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
                               <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                             </div>
                           </div>
@@ -1563,23 +1607,13 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                   >
                     <div class="x78zum5 x1iyjqo2">
                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                        <div
+                          style={{ marginTop: "5px" }}
+                          class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s"
+                        >
                           <div class="x1rg5ohu x1n2onr6 x3oybdh">
                             <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
-                                <div class=""></div>
-                                <input
-                                  class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
-                                  id="js_yo"
-                                  type="radio"
-                                  value="IMAGE_OR_VIDEO"
-                                  checked=""
-                                  name="js_yj"
-                                />
-                                <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
-                                  <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
-                                </div>
-                              </div>
+                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
                               <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                             </div>
                           </div>
