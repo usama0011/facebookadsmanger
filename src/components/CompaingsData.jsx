@@ -15,10 +15,10 @@ import EditImage from "../assets/edit.png";
 const CompaingsData = ({ campaigns, loading, error }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredPeformance, setIsHoveredPerformance] = useState(false);
+  const [ishoverEngagement, setIsHoveredEngagement] = useState(false);
   const [showcustomizedbanner, setShowCustumizeBanner] = useState(false);
   const [showPerformanceAndClicks, setShowPerformanceAndClicks] =
     useState("performance");
-
   // Event handlers to toggle state
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -40,10 +40,23 @@ const CompaingsData = ({ campaigns, loading, error }) => {
     setIsHoveredPerformance(false);
   };
 
+  const handleMouseEnterEngagement = () => {
+    setIsHoveredEngagement(true);
+  };
+
+  const handleMouseLeaveEngagement = () => {
+    setIsHoveredEngagement(false);
+  };
   const handleCloseBannerPerformanceandClicks = () => {
     setShowPerformanceAndClicks("performanceandclicks");
     setShowCustumizeBanner(false);
     setIsHovered(false);
+  };
+  const handleCloseBannerEngagement = () => {
+    setShowPerformanceAndClicks("engagement");
+    setShowCustumizeBanner(false);
+    setIsHoveredPerformance(false);
+    setIsHoveredEngagement(false);
   };
   const FormatNumbers = (entrynum) => {
     let nf = new Intl.NumberFormat();
@@ -487,6 +500,248 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         }
       : {},
   ];
+  const coloumsforengagementstart = [
+    {
+      title: () => (
+        <input
+          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          type="checkbox"
+        />
+      ),
+      width: 50,
+      key: "checkbox",
+      fixed: "left",
+
+      render: () => (
+        <input
+          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          type="checkbox"
+        />
+      ),
+    },
+    {
+      title: "Off/On",
+      width: 70,
+      dataIndex: "currentSwitch",
+      key: "currentSwitch",
+      fixed: "left",
+      render: (text, record) => (
+        <div onClick={() => settogglebutton((prev) => !prev)}>
+          {record.currentSwitch === false ? (
+            <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy snipcss-5XQZY">
+              <div class=""></div>
+              <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+            </div>
+          ) : (
+            <div data-visualcompletion="ignore" class="">
+              <div>
+                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                  <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                    <input
+                      aria-checked="true"
+                      aria-label="On/Off"
+                      role="switch"
+                      aria-describedby="js_36"
+                      aria-labelledby="js_34"
+                      class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm"
+                      id="js_35"
+                      type="checkbox"
+                      value="true"
+                      checked=""
+                    />
+                    <div class="x1n2onr6 xh8yej3">
+                      <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                        <div class=""></div>
+                        <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x1qsmy5i x1psfjxj"></div>
+                      </div>
+                      <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div>Campaing</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "campaingname",
+      key: "campaingname",
+      fixed: "left",
+      // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
+      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      render: (text, record) => (
+        <>
+          <div className="mainparentcontainer">
+            <div style={{ overflow: "hidden" }} className="campaign-name-cell">
+              <div
+                style={{
+                  color: "#297def",
+                  textTransform: "uppercase",
+                  fontSize: "13px",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="campaign-name"
+              >
+                {truncateText(text, 33)}
+                <img
+                  className="largetimagepenc"
+                  style={{ width: "10px", height: "10px", marginLeft: "3px" }}
+                  src={EditImage}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="hoverbuttonsmyspec">
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <div style={{ marginRight: "10px" }}>
+                  {" "}
+                  <BarChartOutlined
+                    style={{
+                      width: "12px",
+                      height: "12px",
+                      color: "black",
+                      marginRight: "3px",
+                    }}
+                  />
+                  <Link
+                    style={{ color: "unset" }}
+                    to={`/editmainchart/${record._id}`}
+                  >
+                    View Charts
+                  </Link>
+                </div>
+                <div style={{ marginRight: "10px" }}>
+                  <Link
+                    style={{ color: "unset" }}
+                    to={`/editcampaing/${record._id}`}
+                  >
+                    <img
+                      style={{
+                        width: "10px",
+                        height: "10px",
+                        marginRight: "3px",
+                      }}
+                      src={EditImage}
+                      alt=""
+                    />
+                    Edit
+                  </Link>
+                </div>
+                <div style={{ marginRight: "10px" }}>
+                  <FileTextOutlined style={{ marginRight: "3px" }} />
+                  Duplicate
+                </div>
+
+                <div style={{ marginRight: "10px" }}>
+                  <PushpinOutlined style={{ marginRight: "3px" }} />
+                  Pin
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          <div>
+            <div class="_2si5 _76gi style-IPDWW" id="style-IPDWW">
+              <div
+                class="_643k style-JFY4E"
+                id="reporting_table_column_delivery"
+              >
+                <div
+                  aria-level="4"
+                  class="x1xqt7ti xsuwoey x63nzvj xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
+                  role="heading"
+                >
+                  <div class="_643l">
+                    <div class="_3ea9" id="js_2a4">
+                      Delivery
+                      <span id="style-I46WW" class="style-I46WW">
+                        <i
+                          alt=""
+                          data-visualcompletion="css-img"
+                          class="img"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-visualcompletion="ignore" class="">
+                <div></div>
+              </div>
+            </div>
+            <div class="x10l6tqk xnx3k43">
+              <div class="x1pha0wt x78zum5 x2lwn1j xeuugli">
+                <div>
+                  <button
+                    aria-label="open sorting options drop-down menu"
+                    class="x78zum5 x6s0dn4 xl56j7k x1nn3v0j xg83lxy x1120s5i x1h0ha7o x8j4wrb x1npaq5j x1c83p5e x1enjb0b x199158v xgcd1z6 x1ejq31n xd10rxx x1sy0etr x17r0tee xx8sgm8"
+                    type="button"
+                  >
+                    <div class="xgxxoiu">
+                      <i
+                        alt=""
+                        data-visualcompletion="css-img"
+                        class="img style-Qf8pB"
+                        id="style-Qf8pB"
+                      ></i>
+                    </div>
+                    <span class="accessible_elem"> </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+          </div>
+        </div>
+      ),
+      dataIndex: "Delivery",
+      key: "Delivery",
+      width: 150,
+      render: (text) => (
+        <div className="campaign-name-cell">
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+            }}
+            className="campaign-name"
+          >
+            {text === "Active" ? (
+              <div
+                style={{
+                  width: "8px",
+                  marginRight: "5px",
+                  height: "8px",
+                  borderRadius: "50%",
+                  backgroundColor: "#66be0f",
+                }}
+              ></div>
+            ) : null}
+            <div style={{ fontSize: "14px" }}>{text}</div>
+          </div>
+        </div>
+      ),
+    },
+  ];
   // Define additional columns for performance and clicks
   const additionalColumns = [
     {
@@ -634,10 +889,407 @@ const CompaingsData = ({ campaigns, loading, error }) => {
       ),
     },
   ];
-  const MoreColoumsAdds =
-    showPerformanceAndClicks === "performance"
-      ? [...columns]
-      : [...columns, ...additionalColumns];
+  // Engagement coloums start
+  const additionalColumnsEngagement = [
+    {
+      title: () => (
+        <input
+          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          type="checkbox"
+        />
+      ),
+      width: 50,
+      key: "checkbox",
+      fixed: "left",
+
+      render: () => (
+        <input
+          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          type="checkbox"
+        />
+      ),
+    },
+    {
+      title: "Off/On",
+      width: 70,
+      dataIndex: "currentSwitch",
+      key: "currentSwitch",
+      fixed: "left",
+      render: (text, record) => (
+        <div onClick={() => settogglebutton((prev) => !prev)}>
+          {record.currentSwitch === false ? (
+            <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy snipcss-5XQZY">
+              <div class=""></div>
+              <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
+            </div>
+          ) : (
+            <div data-visualcompletion="ignore" class="">
+              <div>
+                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
+                  <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                    <input
+                      aria-checked="true"
+                      aria-label="On/Off"
+                      role="switch"
+                      aria-describedby="js_36"
+                      aria-labelledby="js_34"
+                      class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm"
+                      id="js_35"
+                      type="checkbox"
+                      value="true"
+                      checked=""
+                    />
+                    <div class="x1n2onr6 xh8yej3">
+                      <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm xbsr9hj x1k4ywey x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
+                        <div class=""></div>
+                        <div class="xw4jnvo x1qx5ct2 x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x1qsmy5i x1psfjxj"></div>
+                      </div>
+                      <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div>Campaing</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "campaingname",
+      key: "campaingname",
+      fixed: "left",
+      // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
+      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      render: (text, record) => (
+        <>
+          <div className="mainparentcontainer">
+            <div style={{ overflow: "hidden" }} className="campaign-name-cell">
+              <div
+                style={{
+                  color: "#297def",
+                  textTransform: "uppercase",
+                  fontSize: "13px",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="campaign-name"
+              >
+                {truncateText(text, 33)}
+                <img
+                  className="largetimagepenc"
+                  style={{ width: "10px", height: "10px", marginLeft: "3px" }}
+                  src={EditImage}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="hoverbuttonsmyspec">
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <div style={{ marginRight: "10px" }}>
+                  {" "}
+                  <BarChartOutlined
+                    style={{
+                      width: "12px",
+                      height: "12px",
+                      color: "black",
+                      marginRight: "3px",
+                    }}
+                  />
+                  <Link
+                    style={{ color: "unset" }}
+                    to={`/editmainchart/${record._id}`}
+                  >
+                    View Charts
+                  </Link>
+                </div>
+                <div style={{ marginRight: "10px" }}>
+                  <Link
+                    style={{ color: "unset" }}
+                    to={`/editcampaing/${record._id}`}
+                  >
+                    <img
+                      style={{
+                        width: "10px",
+                        height: "10px",
+                        marginRight: "3px",
+                      }}
+                      src={EditImage}
+                      alt=""
+                    />
+                    Edit
+                  </Link>
+                </div>
+                <div style={{ marginRight: "10px" }}>
+                  <FileTextOutlined style={{ marginRight: "3px" }} />
+                  Duplicate
+                </div>
+
+                <div style={{ marginRight: "10px" }}>
+                  <PushpinOutlined style={{ marginRight: "3px" }} />
+                  Pin
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          <div>
+            <div class="_2si5 _76gi style-IPDWW" id="style-IPDWW">
+              <div
+                class="_643k style-JFY4E"
+                id="reporting_table_column_delivery"
+              >
+                <div
+                  aria-level="4"
+                  class="x1xqt7ti xsuwoey x63nzvj xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
+                  role="heading"
+                >
+                  <div class="_643l">
+                    <div class="_3ea9" id="js_2a4">
+                      Delivery
+                      <span id="style-I46WW" class="style-I46WW">
+                        <i
+                          alt=""
+                          data-visualcompletion="css-img"
+                          class="img"
+                        ></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-visualcompletion="ignore" class="">
+                <div></div>
+              </div>
+            </div>
+            <div class="x10l6tqk xnx3k43">
+              <div class="x1pha0wt x78zum5 x2lwn1j xeuugli">
+                <div>
+                  <button
+                    aria-label="open sorting options drop-down menu"
+                    class="x78zum5 x6s0dn4 xl56j7k x1nn3v0j xg83lxy x1120s5i x1h0ha7o x8j4wrb x1npaq5j x1c83p5e x1enjb0b x199158v xgcd1z6 x1ejq31n xd10rxx x1sy0etr x17r0tee xx8sgm8"
+                    type="button"
+                  >
+                    <div class="xgxxoiu">
+                      <i
+                        alt=""
+                        data-visualcompletion="css-img"
+                        class="img style-Qf8pB"
+                        id="style-Qf8pB"
+                      ></i>
+                    </div>
+                    <span class="accessible_elem"> </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+          </div>
+        </div>
+      ),
+      dataIndex: "Delivery",
+      key: "Delivery",
+      width: 150,
+      render: (text) => (
+        <div className="campaign-name-cell">
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+            }}
+            className="campaign-name"
+          >
+            {text === "Active" ? (
+              <div
+                style={{
+                  width: "8px",
+                  marginRight: "5px",
+                  height: "8px",
+                  borderRadius: "50%",
+                  backgroundColor: "#66be0f",
+                }}
+              ></div>
+            ) : null}
+            <div style={{ fontSize: "14px" }}>{text}</div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Page engagement</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "CPM",
+      key: "CPM",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>189</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Post reactions</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "LinksClicks",
+      key: "LinksClicks",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>09</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}></div>Post comments
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "CPC",
+      key: "CPC",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>--</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Post Saves</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "CTR",
+      key: "CTR",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}--</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Links clicks</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "clicksAll",
+      key: "clicksAll",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>--</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>Follow or likes</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "CTRALL",
+      key: "CTRALL",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>--</div>
+      ),
+    },
+    {
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div style={{ padding: 0, margin: 0 }}>CPC (cost per link click)</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
+          </div>{" "}
+        </div>
+      ),
+      dataIndex: "CPCAll",
+      key: "CPCAll",
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>${text}</div>
+      ),
+    },
+    {
+      title: () => (
+        <i
+          alt="Customise columns..."
+          aria-label="Customise columns..."
+          data-visualcompletion="css-img"
+          class="img snipcss-saPsI style-kgHNC"
+          id="style-kgHNC"
+        >
+          <u>Customise columns...</u>
+        </i>
+      ),
+      dataIndex: "Plus",
+      key: "Plus",
+      width: 30,
+      render: (text) => (
+        <div style={{ fontSize: "14px" }} className="budygetcontainer">
+          {text}
+        </div>
+      ),
+    },
+  ];
+  //Engagement coloums end
+
+  const MoreColoumsAdds = (() => {
+    switch (showPerformanceAndClicks) {
+      case "performance":
+        return [...columns]; // Show only the columns array for 'performance'
+
+      case "performanceandclicks":
+        return [...columns, ...additionalColumns]; // Show columns + additionalColumns for 'performanceandclicks'
+
+      case "engagement":
+        return [...coloumsforengagementstart, ...additionalColumnsEngagement]; // Show columns + engagementColumns for 'engagement'
+
+      default:
+        return [...columns]; // Fallback to default columns
+    }
+  })();
+
   const perfomarnace = () => {
     setShowPerformanceAndClicks("performance");
   };
@@ -1513,22 +2165,55 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                     </div>
                   </div>
                   <label
+                    style={{
+                      backgroundColor:
+                        showPerformanceAndClicks === "engagement"
+                          ? "#ecf2fe"
+                          : "", // Corrected ternary and removed double curly braces
+                      padding: "10px 20px",
+                      borderRadius: "10px",
+                      cursor: "pointer",
+                    }}
+                    onClick={handleCloseBannerEngagement}
+                    onMouseEnter={handleMouseEnterEngagement}
+                    onMouseLeave={handleMouseLeaveEngagement}
                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                     tabindex="-1"
                   >
                     <div class="x78zum5 x1iyjqo2">
                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1iorvi4 xjkvuk6 xurb0ha x1sxyh0 xp7jhwk x1n0m28w">
-                        <div
-                          style={{ marginTop: "5px" }}
-                          class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s"
-                        >
-                          <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                            <div class="x1n2onr6 x14atkfc">
-                              <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
-                              <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                        {showPerformanceAndClicks === "engagement" ? (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                  <div class=""></div>
+                                  <input
+                                    class="xjyslct  x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy  "
+                                    id="js_yo"
+                                    type="radio"
+                                    value="IMAGE_OR_VIDEO"
+                                    checked=""
+                                    name="js_yj"
+                                  />
+                                  <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
+                                    <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
+                                  </div>
+                                </div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                              </div>
                             </div>
                           </div>
-                        </div>
+                        ) : (
+                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                              <div class="x1n2onr6 x14atkfc">
+                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p"></div>
+                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                         <div
                           class="x1iyjqo2 xr9ek0c xamitd3"
                           data-sscoverage-ignore="true"
@@ -1542,7 +2227,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                               class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                               id="js_yq"
                             >
-                              Engagement
+                              Engagement{" "}
                             </div>
                           </div>
                           <div
@@ -1559,6 +2244,15 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                     </div>
                   </label>
                   <label
+                    style={{
+                      backgroundColor:
+                        showPerformanceAndClicks === "delivery"
+                          ? "#ecf2fe"
+                          : "", // Corrected ternary and removed double curly braces
+                      padding: "10px 20px",
+                      borderRadius: "10px",
+                      cursor: "pointer",
+                    }}
                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                     tabindex="-1"
                   >
@@ -1605,6 +2299,15 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                     </div>
                   </label>
                   <label
+                    style={{
+                      backgroundColor:
+                        showPerformanceAndClicks === "videoengagement"
+                          ? "#ecf2fe"
+                          : "", // Corrected ternary and removed double curly braces
+                      padding: "10px 20px",
+                      borderRadius: "10px",
+                      cursor: "pointer",
+                    }}
                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                     tabindex="-1"
                   >
@@ -1840,6 +2543,48 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                     <li>Amount spend</li>
                     <li>Ends</li>
                     <li>Schedule</li>
+                  </ul>
+                </div>
+              </div>
+            )}
+            {ishoverEngagement && (
+              <div
+                className="mywollcos"
+                style={{
+                  position: "absolute",
+                  width: "250px",
+                  height: "300px",
+                  top: "250px",
+                  left: "405px",
+                  borderRadius: "5px",
+                  zIndex: 999,
+                  padding: "10px",
+                }}
+              >
+                <label
+                  style={{ textAlign: "left", marginBottom: "15px" }}
+                  id="js_14i"
+                  for="js_14h"
+                >
+                  <span className="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli lethoveronw">
+                    Engagement
+                  </span>
+                </label>
+                <div>
+                  <p>
+                    Here are the metrics and details included in this column
+                    preset:
+                  </p>
+                  <ul className="mycustomUIhere">
+                    <li>Delivery</li>
+                    <li>Page engagement</li>
+                    <li>Post reactions</li>
+                    <li>Post Comments</li>
+                    <li>Post saves</li>
+                    <li>Post shares</li>
+                    <li>Link clicks</li>
+                    <li>Follow or likes</li>
+                    <li>CPC (cost perlink click)</li>
                   </ul>
                 </div>
               </div>

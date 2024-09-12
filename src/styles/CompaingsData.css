@@ -5407,3 +5407,10 @@ html {
   color: rgb(77, 75, 75);
   padding-bottom: 7px;
 }
+
+.mywollcos {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: left;
+  padding: 15px 10px;
+}
