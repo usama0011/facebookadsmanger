@@ -1283,7 +1283,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         return [...columns, ...additionalColumns]; // Show columns + additionalColumns for 'performanceandclicks'
 
       case "engagement":
-        return [...coloumsforengagementstart, ...additionalColumnsEngagement]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsEngagement]; // Show columns + engagementColumns for 'engagement'
 
       default:
         return [...columns]; // Fallback to default columns
