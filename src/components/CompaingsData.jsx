@@ -39,6 +39,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   const handleCloseBannerPerformance = () => {
     setShowPerformanceAndClicks("performance");
     setShowCustumizeBanner(false);
+    setIsHovered(false);
     setIsHoveredPerformance(false);
     setIsHoveredEngagement(false);
     setIsHoveredDelivery(false);
@@ -55,6 +56,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
   const handleCloseBannerPerformanceandClicks = () => {
     setShowPerformanceAndClicks("performanceandclicks");
     setShowCustumizeBanner(false);
+    setIsHovered(false);
     setIsHoveredPerformance(false);
     setIsHoveredEngagement(false);
     setIsHoveredDelivery(false);
@@ -2212,6 +2214,25 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         return [...columns]; // Fallback to default columns
     }
   })();
+  const setLayoutWidth = (() => {
+    switch (showPerformanceAndClicks) {
+      case "performance":
+        return 3000; // Show only the columns array for 'performance'
+
+      case "performanceandclicks":
+        return 3000; // Show columns + additionalColumns for 'performanceandclicks'
+
+      case "engagement":
+        return 1800; // Show columns + engagementColumns for 'engagement'
+      case "delivery":
+        return 1500; // Show columns + engagementColumns for 'engagement'
+      case "videoengagement":
+        return 3000; // Show columns + engagementColumns for 'engagement'
+
+      default:
+        return 3000; // Fallback to default columns
+    }
+  })();
 
   const perfomarnace = () => {
     setShowPerformanceAndClicks("performance");
@@ -2997,6 +3018,8 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                       cursor: "pointer",
                     }}
                     onClick={handleCloseBannerPerformanceandClicks}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1h6gzvc x1t137rt"
                     tabindex="-1"
                   >
@@ -3035,9 +3058,6 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                           </div>
                         )}
                         <div
-                          onClick={perfomarnace}
-                          onMouseEnter={handleMouseEnter}
-                          onMouseLeave={handleMouseLeave}
                           class="x1iyjqo2 xamitd3"
                           data-sscoverage-ignore="true"
                         >
@@ -3686,7 +3706,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                 dataSource={campaigns}
                 loading={loading}
                 scroll={{
-                  x: 3000,
+                  x: setLayoutWidth,
                   y: 500,
                 }}
                 sticky
@@ -3705,7 +3725,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
 
 export default CompaingsData;
 
-/* 
+/* p
 
   
 */
