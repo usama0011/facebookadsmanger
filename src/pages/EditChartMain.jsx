@@ -55,7 +55,7 @@ const EditChartMain = () => {
                     <div></div>
                   </div>
                 </div>
-                <div class="x1gzqxud x13dflua xxziih7 x12w9bfk xavht8x x6ikm8r x10wlt62 x15yg21f x9f619 xxrbq2n x87ps6o x78zum5 xdt5ytf x2lah0s x1y1aw1k xwib8y2 x5yr21d">
+                <div class="x1gzqxud x13dflua xxziih7 x12w9bfk xavht8x x6ikm8r x10wlt62 x15yg21f x9f619 xxrbq2n x87ps6o x78zum5 xdt5ytf x2lah0s x1y1aw1k xwib8y2 x5yr21d snipcss-mpOM8">
                   <div class="x2lah0s xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 x15yg21f">
                     <div>
                       <div class="x6s0dn4 x78zum5 xdt5ytf x1qughib x2lwn1j xeuugli x1yztbdb">
@@ -63,12 +63,9 @@ const EditChartMain = () => {
                           class="x3nfvp2 x193iq5w xxymvpz x12nagc"
                           role="none"
                         >
-                          <a
-                            aria-busy="false"
+                          <Link
                             class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                            href="/adsmanager/?act=1387295665246598"
-                            role="link"
-                            tabindex="0"
+                            to="/"
                           >
                             <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                               <div class="x78zum5">
@@ -84,63 +81,46 @@ const EditChartMain = () => {
                                       alt="Meta"
                                       class="img"
                                       height="28"
-                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg?_nc_eui2=AeHKwknQesn94TNLWmx-T_z_tf_JPOr9hBa1_8k86v2EFmaBEik4xi7pURPecXmNF-1-npcsN93AIkwa-uvDfPYO"
                                       width="28"
+                                      src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg"
                                     />
                                   </div>
+                                  ​
                                 </div>
                               </div>
                             </span>
-                          </a>
+                          </Link>
                         </div>
-                        <div class="xng8ra">
-                          <div class="_3-95">
-                            <div class="_96sk" id="global_scope_selector">
-                              <div class="x1rg5ohu x67bb7w">
-                                <div
-                                  aria-label="Global Scope Selector"
-                                  class="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1n2onr6 x1q0g3np xxymvpz x1ejq31n xd10rxx x1sy0etr x17r0tee x87ps6o x1t137rt xlh3980 xvmahel x1hl2dhg x1lku1pv x78zum5 x1iyjqo2 xs83m0k x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                    <div class="x2lah0s x10w6t97 x1td3qas x1n2onr6">
-                                      <div class="x78zum5 x2lwn1j xeuugli">
-                                        <div class="x1lliihq x1n2onr6 x2lah0s x10w6t97 x1td3qas x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
-                                          <div
-                                            class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8"
-                                            role="img"
-                                          >
-                                            <img
-                                              src="https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=c1jcfOuRHgAQ7kNvgEDawKb&_nc_ht=scontent.flhe7-1.fna&oh=00_AYC-NOGBXewBlvsxFAbefw3djAKRFCAtFKexBI5z30zUrQ&oe=66D6D57F"
-                                              alt=""
-                                              class="img"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="x78zum5 x2lwn1j xeuugli x1exxf4d x1y71gwh x1nb4dca xu1343h x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x10l6tqk style-iFQws"
-                                          id="style-iFQws"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </span>
+                        <div>
+                          <div class="x78zum5 x2lwn1j xeuugli xbyyjgo">
+                            <div
+                              aria-label="Pressable"
+                              class="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1n2onr6 x3nfvp2 x1q0g3np xxymvpz x1ejq31n xd10rxx x1sy0etr x17r0tee x87ps6o x1t137rt xlh3980 xvmahel x1hl2dhg x1lku1pv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
+                              role="button"
+                              tabindex="0"
+                            >
+                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
+                                  <div
+                                    class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8"
+                                    role="img"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="img"
+                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
+                                    />
+                                    <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
+                                  </div>
                                 </div>
-                              </div>
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <div
-                        data-surface="/am/navigation_toolbar"
-                        data-clickable="1"
-                        data-inputable="1"
-                        data-keydownable="1"
-                        data-keyupable="1"
-                        data-changeable="1"
-                      ></div>
+                      <div></div>
                     </div>
                   </div>
                   <div class="xb57i2i x1q594ok x5lxg6s x78zum5 xdt5ytf x6ikm8r x1ja2u2z x1pq812k x1rohswg xfk6m8 x1yqm8si xjx87ck xx8ngbg xwo3gff x1n2onr6 x1oyok0e x1odjw0f x1e4zzel x5yr21d">
@@ -151,193 +131,20 @@ const EditChartMain = () => {
                             class="x78zum5 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd xdt5ytf xdm93yi"
                             role="list"
                           >
-                            <div class="x1n2onr6 x3oybdh" role="listitem">
-                              <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                <div
-                                  aria-labelledby="js_1b"
-                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
-                                  id="js_15"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  <div class="x78zum5 x1iyjqo2">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                      <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                                        <div class="x3nfvp2">
-                                          <i
-                                            class="img style-CP1ko"
-                                            alt=""
-                                            data-visualcompletion="css-img"
-                                            id="style-CP1ko"
-                                          ></i>
-                                        </div>
-                                        <div class="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                      <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                      <div class="xeuugli">
-                                        <div
-                                          aria-level="3"
-                                          class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                          id="js_1b"
-                                          role="heading"
-                                        >
-                                          Account overview
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="x1n2onr6 x3oybdh"
-                              role="listitem"
-                              aria-current="page"
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:START_YOUR_DAY"
+                              data-auto-logging-id="f2b55dd4af62fd8"
+                              id="style-NDmPP"
+                              class="style-NDmPP"
                             >
-                              <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                <div
-                                  aria-labelledby="js_1d"
-                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  <div class="x78zum5 x1iyjqo2">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
-                                      <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                                        <div class="x3nfvp2">
-                                          <i
-                                            alt=""
-                                            data-visualcompletion="css-img"
-                                            class="img style-GPoZh"
-                                            id="style-GPoZh"
-                                          ></i>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                      <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                    </div>
-                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="x1n2onr6 x3oybdh" role="listitem">
-                              <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                <a
-                                  aria-labelledby="js_1f"
-                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
-                                  href="/adsreporting/?act=1387295665246598"
-                                  id="ecosystem_nav_more_tools_context_id"
-                                  role="link"
-                                  tabindex="0"
-                                >
-                                  <div class="x78zum5 x1iyjqo2">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                      <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                                        <div class="x3nfvp2">
-                                          <i
-                                            alt=""
-                                            data-visualcompletion="css-img"
-                                            class="img style-hn62s"
-                                            id="style-hn62s"
-                                          ></i>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                      <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                      <div class="xeuugli">
-                                        <div
-                                          aria-level="3"
-                                          class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                          id="js_1f"
-                                          role="heading"
-                                        >
-                                          Ads reporting
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="x1n2onr6 x3oybdh" role="listitem">
-                              <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                <a
-                                  aria-labelledby="js_1h"
-                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
-                                  href="/adsmanager/?act=1387295665246598&amp;tool=AUDIENCES&amp;nav_entry_point=ads_ecosystem_navigation_menu&amp;nav_source=ads_manager"
-                                  role="link"
-                                  tabindex="0"
-                                >
-                                  <div class="x78zum5 x1iyjqo2">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                      <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                                        <div class="x3nfvp2">
-                                          <i
-                                            alt=""
-                                            data-visualcompletion="css-img"
-                                            class="img style-c55rP"
-                                            id="style-c55rP"
-                                          ></i>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                      <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                      <div class="xeuugli">
-                                        <div
-                                          aria-level="3"
-                                          class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                          id="js_1h"
-                                          role="heading"
-                                        >
-                                          Audiences
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <Link to="/payment">
                               <div class="x1n2onr6 x3oybdh" role="listitem">
                                 <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                  <a
-                                    aria-labelledby="js_1j"
-                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
-                                    href="/billing_hub/payment_activity/?asset_id=1387295665246598&amp;business_id=&amp;placement=ads_manager"
-                                    role="link"
+                                  <div
+                                    aria-labelledby="js_9"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
+                                    id="js_3"
+                                    role="button"
                                     tabindex="0"
                                   >
                                     <div class="x78zum5 x1iyjqo2">
@@ -347,8 +154,116 @@ const EditChartMain = () => {
                                             <i
                                               alt=""
                                               data-visualcompletion="css-img"
-                                              class="img style-YIDBt"
-                                              id="style-YIDBt"
+                                              class="img style-sSl3X"
+                                              id="style-sSl3X"
+                                            ></i>
+                                          </div>
+                                          <div class="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                  <div class="x78zum5 x1iyjqo2" role="listitem">
+                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                        <div class="xeuugli">
+                                          <div
+                                            class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                                            id="js_9"
+                                          >
+                                            Account overview
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:ADS_MANAGER"
+                              data-auto-logging-id="f20a20e99cbced8"
+                              id="style-cQo6G"
+                              class="style-cQo6G"
+                            >
+                              <div
+                                class="x1n2onr6 x3oybdh"
+                                role="listitem"
+                                aria-current="page"
+                              >
+                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                  <div
+                                    aria-labelledby="js_b"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="x78zum5 x1iyjqo2">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
+                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                                          <div class="x3nfvp2">
+                                            <i
+                                              alt=""
+                                              data-visualcompletion="css-img"
+                                              class="img style-bolNn"
+                                              id="style-bolNn"
+                                            ></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                  <div class="x78zum5 x1iyjqo2" role="listitem">
+                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                        <div class="xeuugli">
+                                          <div
+                                            class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
+                                            id="js_b"
+                                          >
+                                            Campaigns
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:ADS_REPORTING"
+                              data-auto-logging-id="f2dd24f4c4b32d8"
+                              id="style-e2jhC"
+                              class="style-e2jhC"
+                            >
+                              <div class="x1n2onr6 x3oybdh" role="listitem">
+                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                  <a
+                                    aria-labelledby="js_d"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
+                                    role="link"
+                                    tabindex="0"
+                                    href="/adsreporting/?act=1387295665246598"
+                                  >
+                                    <div class="x78zum5 x1iyjqo2">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                          <div class="x3nfvp2">
+                                            <i
+                                              alt=""
+                                              data-visualcompletion="css-img"
+                                              class="img style-Gd5tE"
+                                              id="style-Gd5tE"
                                             ></i>
                                           </div>
                                         </div>
@@ -363,10 +278,112 @@ const EditChartMain = () => {
                                         <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
                                         <div class="xeuugli">
                                           <div
-                                            aria-level="3"
                                             class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                            id="js_1j"
-                                            role="heading"
+                                            id="js_d"
+                                          >
+                                            Ads reporting
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:AUDIENCES"
+                              data-auto-logging-id="f1093293bc6dcb8"
+                              id="style-CbwDJ"
+                              class="style-CbwDJ"
+                            >
+                              <div class="x1n2onr6 x3oybdh" role="listitem">
+                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                  <a
+                                    aria-labelledby="js_f"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
+                                    role="link"
+                                    tabindex="0"
+                                    href="/adsmanager/?act=1387295665246598&amp;tool=AUDIENCES&amp;nav_entry_point=ads_ecosystem_navigation_menu&amp;nav_source=ads_manager"
+                                  >
+                                    <div class="x78zum5 x1iyjqo2">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                          <div class="x3nfvp2">
+                                            <i
+                                              alt=""
+                                              data-visualcompletion="css-img"
+                                              class="img style-4NOtb"
+                                              id="style-4NOtb"
+                                            ></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                  <div class="x78zum5 x1iyjqo2" role="listitem">
+                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                        <div class="xeuugli">
+                                          <div
+                                            class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                                            id="js_f"
+                                          >
+                                            Audiences
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:BILLING"
+                              data-auto-logging-id="f3d0c2e009aada4"
+                              id="style-rntZ7"
+                              class="style-rntZ7"
+                            >
+                              <div class="x1n2onr6 x3oybdh" role="listitem">
+                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                  <a
+                                    aria-labelledby="js_h"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
+                                    role="link"
+                                    tabindex="0"
+                                    href="/billing_hub/payment_activity/?placement=ads_manager&amp;asset_id=1387295665246598"
+                                  >
+                                    <div class="x78zum5 x1iyjqo2">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                          <div class="x3nfvp2">
+                                            <i
+                                              alt=""
+                                              data-visualcompletion="css-img"
+                                              class="img style-wA5Re"
+                                              id="style-wA5Re"
+                                            ></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                  <div class="x78zum5 x1iyjqo2" role="listitem">
+                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                        <div class="xeuugli">
+                                          <div
+                                            class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                                            id="js_h"
                                           >
                                             Billing &amp; payments
                                           </div>
@@ -377,57 +394,63 @@ const EditChartMain = () => {
                                   </div>
                                 </div>
                               </div>
-                            </Link>
-                            <div class="x1n2onr6 x3oybdh" role="listitem">
-                              <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                <div
-                                  aria-labelledby="js_1l"
-                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
-                                  id="ecosystem_nav_advertising_preferences_context_id"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  <div class="x78zum5 x1iyjqo2">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
-                                      <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                                        <div class="x3nfvp2">
-                                          <i
-                                            alt=""
-                                            data-visualcompletion="css-img"
-                                            class="img style-EDeNZ"
-                                            id="style-EDeNZ"
-                                          ></i>
+                            </span>
+                            <span
+                              data-surface-wrapper="1"
+                              data-surface="/am/navigation_toolbar/lbl:ADVERTISING_SETTINGS"
+                              data-auto-logging-id="fe8c1cc7479cc8"
+                              id="style-kGQgD"
+                              class="style-kGQgD"
+                            >
+                              <div class="x1n2onr6 x3oybdh" role="listitem">
+                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                  <div
+                                    aria-labelledby="js_j"
+                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
+                                    id="ecosystem_nav_advertising_preferences_context_id"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="x78zum5 x1iyjqo2">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                                          <div class="x3nfvp2">
+                                            <i
+                                              alt=""
+                                              data-visualcompletion="css-img"
+                                              class="img style-qjhZw"
+                                              id="style-qjhZw"
+                                            ></i>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                <div class="x78zum5 x1iyjqo2" role="listitem">
-                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                      <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                      <div class="xeuugli">
-                                        <div
-                                          aria-level="3"
-                                          class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                          id="js_1l"
-                                          role="heading"
-                                        >
-                                          Advertising settings
+                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                  <div class="x78zum5 x1iyjqo2" role="listitem">
+                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                        <div class="xeuugli">
+                                          <div
+                                            class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                                            id="js_j"
+                                          >
+                                            Advertising settings
+                                          </div>
                                         </div>
                                       </div>
+                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                     </div>
-                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </span>
                             <div class="x1n2onr6 x3oybdh" role="listitem">
                               <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
                                 <div
-                                  aria-labelledby="js_1n"
+                                  aria-labelledby="js_l"
                                   class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
                                   id="ecosystem_nav_all_tools_context_id"
                                   role="button"
@@ -440,8 +463,8 @@ const EditChartMain = () => {
                                           <i
                                             alt=""
                                             data-visualcompletion="css-img"
-                                            class="img style-TCC6M"
-                                            id="style-TCC6M"
+                                            class="img style-rRLCD"
+                                            id="style-rRLCD"
                                           ></i>
                                         </div>
                                       </div>
@@ -456,10 +479,8 @@ const EditChartMain = () => {
                                       <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
                                       <div class="xeuugli">
                                         <div
-                                          aria-level="3"
                                           class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                                          id="js_1n"
-                                          role="heading"
+                                          id="js_l"
                                         >
                                           All tools
                                         </div>
@@ -475,16 +496,16 @@ const EditChartMain = () => {
                       </div>
                     </div>
                     <div
-                      class="x14nfmen x1s85apg x5yr21d xds687c xg01cxk x10l6tqk x13vifvy x1wsgiic x19991ni xwji4o3 x1kky2od x1sd63oq style-x3Jop"
+                      class="x14nfmen x1s85apg x5yr21d xds687c xg01cxk x10l6tqk x13vifvy x1wsgiic x19991ni xwji4o3 x1kky2od x1sd63oq style-KPiCh"
                       data-visualcompletion="ignore"
                       data-thumb="1"
-                      id="style-x3Jop"
+                      id="style-KPiCh"
                     ></div>
                     <div
-                      class="x9f619 x1s85apg xds687c xg01cxk xexx8yu x150jy0e x18d9i69 x1e558r4 x47corl x10l6tqk x13vifvy x1n4smgl x1d8287x x19991ni xwji4o3 x1kky2od style-Rk5FT"
+                      class="x9f619 x1s85apg xds687c xg01cxk xexx8yu x18d9i69 x1e558r4 x150jy0e x47corl x10l6tqk x13vifvy x1n4smgl x1d8287x x19991ni xwji4o3 x1kky2od style-dnltf"
                       data-visualcompletion="ignore"
                       data-thumb="1"
-                      id="style-Rk5FT"
+                      id="style-dnltf"
                     >
                       <div class="x1hwfnsy x1lcm9me x1yr5g0i xrt01vj x10y3i5r x5yr21d xh8yej3"></div>
                     </div>
@@ -512,8 +533,8 @@ const EditChartMain = () => {
                                       <i
                                         alt=""
                                         data-visualcompletion="css-img"
-                                        class="img style-LTymw"
-                                        id="style-LTymw"
+                                        class="img style-M9oOk"
+                                        id="style-M9oOk"
                                       ></i>
                                     </div>
                                   </span>
@@ -522,7 +543,7 @@ const EditChartMain = () => {
                             </div>
                           </span>
                           <div id="ads_manager_nux_privacy_guidance_onboarding_button">
-                            <div id="style-zM5g1" class="style-zM5g1">
+                            <div id="style-srDcU" class="style-srDcU">
                               <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
                                 <div
                                   aria-busy="false"
@@ -543,32 +564,15 @@ const EditChartMain = () => {
                                           <i
                                             alt=""
                                             data-visualcompletion="css-img"
-                                            class="img style-8JNcR"
-                                            id="style-8JNcR"
+                                            class="img style-2xUJN"
+                                            id="style-2xUJN"
                                           ></i>
                                         </div>
+                                        ​
                                       </div>
                                     </div>
                                   </span>
                                 </div>
-                              </div>
-                              <div id="style-9oKL5" class="style-9oKL5">
-                                <span class="x3nfvp2 xmix8c7 x1n2onr6">
-                                  <span class="x6s0dn4 x9f619 x78zum5 xmix8c7 xl56j7k x16xo4sp x1t137rt x1j85h84 xsyo7zv x16hj40l x4p5aij x1n2onr6 xzolkzo x12go9s9 x1rnf11y xprq8jg xmi5d70 xw23nyj x63nzvj x140t73q xuxw1ft x2b8uid x117nqv4 xbmvcp8">
-                                    <div class="xmi5d70 xw23nyj x63nzvj x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
-                                      1
-                                    </div>
-                                  </span>
-                                  <div
-                                    aria-atomic="true"
-                                    aria-live="polite"
-                                    role="status"
-                                    class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                    data-sscoverage-ignore="true"
-                                  >
-                                    You have 1 notification
-                                  </div>
-                                </span>
                               </div>
                             </div>
                           </div>
@@ -593,10 +597,11 @@ const EditChartMain = () => {
                                       role="presentation"
                                     >
                                       <div
-                                        class="xtwfq29 style-LNPrX"
-                                        id="style-LNPrX"
+                                        class="xtwfq29 style-zfqsM"
+                                        id="style-zfqsM"
                                       ></div>
                                     </div>
+                                    ​
                                   </div>
                                 </div>
                               </span>
@@ -633,10 +638,11 @@ const EditChartMain = () => {
                                             role="presentation"
                                           >
                                             <div
-                                              class="xtwfq29 style-ilGo5"
-                                              id="style-ilGo5"
+                                              class="xtwfq29 style-9KpMj"
+                                              id="style-9KpMj"
                                             ></div>
                                           </div>
+                                          ​
                                         </div>
                                       </div>
                                     </span>
@@ -644,18 +650,19 @@ const EditChartMain = () => {
                                 </div>
                               </div>
                               <div id="globalNavNotificationsJewel">
-                                <div id="u_a_1_ds" data-clickable="1">
+                                <div id="u_7_1_K2" data-clickable="1">
                                   <div
-                                    class="uiToggle _4962 _4xi2 _5orl _85d4"
+                                    class="uiToggle _4962 _4xi2 _5orl _85d4 hasNew"
                                     id="fbNotificationsJewel"
                                     data-toggle-wc="1"
+                                    data-mouseoverable="1"
                                   >
                                     <a
                                       class="jewelButton _3eo9"
                                       href="#"
                                       rel="toggle"
                                       role="button"
-                                      aria-labelledby="u_a_0_qu"
+                                      aria-labelledby="u_7_0_G3"
                                       name="notifications"
                                       data-gt='{"ua_id":"jewel:notifications"}'
                                       data-target="fbNotificationsFlyout"
@@ -666,10 +673,10 @@ const EditChartMain = () => {
                                     >
                                       <div class="_2n_9">
                                         <div
-                                          class="_76t_ _7257"
+                                          class="_76t_ _7256"
                                           id="NotifIndeterminateBadge"
                                         >
-                                          0
+                                          82
                                         </div>
                                       </div>
                                     </a>
@@ -684,6 +691,7 @@ const EditChartMain = () => {
                                         data-inputable="1"
                                         data-keydownable="1"
                                         data-keyupable="1"
+                                        data-mouseoverable="1"
                                         data-changeable="1"
                                       >
                                         <div class=" _9q20">
@@ -704,16 +712,16 @@ const EditChartMain = () => {
                                                 data-tooltip-position="below"
                                                 type="button"
                                                 aria-disabled="false"
-                                                class="_271k _271l _1o4e _271m _1qjd _ai7j _ai7k _ai7m style-tYm19"
-                                                id="style-tYm19"
+                                                class="_271k _271l _1o4e _271m _1qjd _ai7j _ai7k _ai7m style-gC94T"
+                                                id="style-gC94T"
                                               >
                                                 <div class="_43rl">
                                                   <i
                                                     aria-hidden="true"
-                                                    class="_271o img style-Xyrqf"
+                                                    class="_271o img style-ZBf6z"
                                                     alt=""
                                                     data-visualcompletion="css-img"
-                                                    id="style-Xyrqf"
+                                                    id="style-ZBf6z"
                                                   ></i>
                                                   <span class="accessible_elem">
                                                     Preferences
@@ -728,14 +736,14 @@ const EditChartMain = () => {
                                               data-tooltip-content="Notifications are personalised for this account"
                                               height="20"
                                               width="20"
-                                              src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=2rwCWuFOrp4Q7kNvgFu7tOu&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYDQ4DpBZLgnZzR9aiSI1e88oNwAeU1Er26GG8HP3jMa7w&amp;oe=664802FF"
                                               alt=""
+                                              src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=4a1148&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A2FpY1a73Xl-w5VC-YrqJ0l&amp;oh=00_AYCNL8_YqeJ9s0VW2IVYotM7pT5IUWlqeOD3Ef44fykT6Q&amp;oe=670B917F"
                                             />
                                           </div>
                                         </div>
                                       </div>
                                       <div class="_33p">
-                                        <div id="u_a_3_sp">
+                                        <div id="u_7_3_dF">
                                           <span
                                             class="img _55ym _55yn _55yo jewelLoading"
                                             aria-busy="true"
@@ -751,14 +759,15 @@ const EditChartMain = () => {
                                         data-inputable="1"
                                         data-keydownable="1"
                                         data-keyupable="1"
+                                        data-mouseoverable="1"
                                         data-changeable="1"
                                       >
                                         <div class="x178xt8z x13fuv20 xc074nb x1o1nzlu x1y1aw1k xwib8y2 x1swvt13 x1pi30zi">
                                           <div class="x1rg5ohu">
                                             <a
-                                              class="_231w _231z  _4yef style-UoUyv"
+                                              class="_231w _231z  _4yef style-T4GKe"
                                               href="#"
-                                              id="style-UoUyv"
+                                              id="style-T4GKe"
                                             >
                                               Mark all as read
                                             </a>
@@ -793,51 +802,50 @@ const EditChartMain = () => {
                                         role="presentation"
                                       >
                                         <div
-                                          class="xtwfq29 style-RAzNq"
-                                          id="style-RAzNq"
+                                          class="xtwfq29 style-AA4xG"
+                                          id="style-AA4xG"
                                         ></div>
                                       </div>
+                                      ​
                                     </div>
                                   </div>
                                 </span>
                               </div>
                             </div>
                           </div>
-                          <Link to="/mainnavigation">
-                            <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                              <div
-                                aria-busy="false"
-                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                role="button"
-                                tabindex="0"
-                              >
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                  <div class="x78zum5">
-                                    <div
-                                      class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                      data-sscoverage-ignore="true"
-                                    >
-                                      Report a problem
-                                    </div>
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                      <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                        <i
-                                          alt=""
-                                          data-visualcompletion="css-img"
-                                          class="img style-PGmEQ"
-                                          id="style-PGmEQ"
-                                        ></i>
-                                      </div>
-                                    </div>
+                          <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                            <div
+                              aria-busy="false"
+                              class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
+                              role="button"
+                              tabindex="0"
+                            >
+                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                <div class="x78zum5">
+                                  <div
+                                    class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                    data-sscoverage-ignore="true"
+                                  >
+                                    Report a problem
                                   </div>
-                                </span>
-                              </div>
+                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                    <div class="x3nfvp2 x2lah0s x1c4vz4f">
+                                      <i
+                                        alt=""
+                                        data-visualcompletion="css-img"
+                                        class="img style-oF4KY"
+                                        id="style-oF4KY"
+                                      ></i>
+                                    </div>
+                                    ​
+                                  </div>
+                                </div>
+                              </span>
                             </div>
-                          </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-
                     <div>
                       <div></div>
                     </div>

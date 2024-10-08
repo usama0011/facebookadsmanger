@@ -1,7 +1,7 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { Suspense, lazy } from 'react';
-import './index.css'
+import { Suspense, lazy } from "react";
+import "./index.css";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,7 +15,7 @@ import EditCompaingThree from "./pages/EditCompaingThree";
 import EditChartMain from "./pages/EditChartMain";
 import EditChartTwo from "./pages/EditChartTwo";
 import EditChartThree from "./pages/EditChartThree";
-const PaymentPage = lazy(() => import('./pages/PaymentPage'));
+const PaymentPage = lazy(() => import("./pages/PaymentPage"));
 import CreatePayment from "./pages/CreatePayment";
 import CreateAd from "./pages/CreateAd";
 import CreateAdsSet from "./pages/CreateAdsSet";
@@ -38,51 +38,51 @@ import Reporting from "./pages/Reporting";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
   },
   {
     path: "/editcampaing/:id",
-    element: <EditCompaing />
+    element: <EditCompaing />,
   },
   {
     path: "/currentaccount",
-    element: <CurrentAccount />
+    element: <CurrentAccount />,
   },
   {
     path: "/reporting",
-    element: <Reporting />
+    element: <Reporting />,
   },
   {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/calender",
-    element: <NewCalender />
+    element: <NewCalender />,
   },
   {
     path: "/editcampaingtwo/:id",
-    element: <EditCompaingTwo />
+    element: <EditCompaingTwo />,
   },
   {
     path: "/editcampaingthree/:id",
-    element: <EditCompaingThree />
+    element: <EditCompaingThree />,
   },
   {
     path: "/editmainchart/:id",
-    element: <EditChartMain />
+    element: <EditChartMain />,
   },
   {
     path: "/editmaincharttwo/:id",
-    element: <EditChartTwo />
+    element: <EditChartTwo />,
   },
   {
     path: "/uploadcamapings",
-    element: <UplaodCampaings />
+    element: <UplaodCampaings />,
   },
   {
     path: "/editmainchartthree/:id",
-    element: <EditChartThree />
+    element: <EditChartThree />,
   },
   {
     path: "/payment",
@@ -90,63 +90,61 @@ const router = createBrowserRouter([
       <Suspense fallback={<PaymentLoadingPage />}>
         <PaymentPage />
       </Suspense>
-    )
+    ),
   },
 
   {
     path: "/createpayment",
-    element: <CreatePayment />
+    element: <CreatePayment />,
   },
   {
     path: "/createad",
-    element: <CreateAd />
+    element: <CreateAd />,
   },
   {
     path: "/createAdSet",
-    element: <CreateAdsSet />
+    element: <CreateAdsSet />,
   },
   {
     path: "/createcampaing",
-    element: <CreateCampaing />
+    element: <CreateCampaing />,
   },
   {
     path: "/viewmyampaings",
-    element: <ViewMyCampaings />
+    element: <ViewMyCampaings />,
   },
   {
     path: "/mainnavigation",
-    element: <MainNavigation />
+    element: <MainNavigation />,
   },
   {
     path: "/viewadsset",
-    element: <ViewAdSet />
+    element: <ViewAdSet />,
   },
   {
     path: "/viewpayments",
-    element: <ViewPayments />
+    element: <ViewPayments />,
   },
   {
     path: "/viewads",
-    element: <ViewAds />
+    element: <ViewAds />,
   },
   {
     path: "/editmycampaing/:id",
-    element: <EditMyCampaing />
+    element: <EditMyCampaing />,
   },
   {
     path: "/editmyads/:id",
-    element: <EditMyAds />
+    element: <EditMyAds />,
   },
   {
     path: "/editpayment/:id",
-    element: <EditPayment />
+    element: <EditPayment />,
   },
   {
     path: "/editmyadset/:id",
-    element: <EditMyAdsSet />
+    element: <EditMyAdsSet />,
   },
-
-
 ]);
 
 createRoot(document.getElementById("root")).render(
