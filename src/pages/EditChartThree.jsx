@@ -66,8 +66,8 @@ const EditChartThree = () => {
                           role="none"
                         >
                           <Link
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
                             to="/"
+                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
                           >
                             <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                               <div class="x78zum5">
@@ -186,61 +186,66 @@ const EditChartThree = () => {
                                 </div>
                               </div>
                             </span>
-                            <span
-                              data-surface-wrapper="1"
-                              data-surface="/am/navigation_toolbar/lbl:ADS_MANAGER"
-                              data-auto-logging-id="f20a20e99cbced8"
-                              id="style-cQo6G"
-                              class="style-cQo6G"
-                            >
-                              <div
-                                class="x1n2onr6 x3oybdh"
-                                role="listitem"
-                                aria-current="page"
+                            <Link to="/">
+                              <span
+                                data-surface-wrapper="1"
+                                data-surface="/am/navigation_toolbar/lbl:ADS_MANAGER"
+                                data-auto-logging-id="f20a20e99cbced8"
+                                id="style-cQo6G"
+                                class="style-cQo6G"
                               >
-                                <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                  <div
-                                    aria-labelledby="js_b"
-                                    class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
-                                    role="button"
-                                    tabindex="0"
-                                  >
-                                    <div class="x78zum5 x1iyjqo2">
-                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
-                                        <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                                          <div class="x3nfvp2">
-                                            <i
-                                              alt=""
-                                              data-visualcompletion="css-img"
-                                              class="img style-bolNn"
-                                              id="style-bolNn"
-                                            ></i>
+                                <div
+                                  class="x1n2onr6 x3oybdh"
+                                  role="listitem"
+                                  aria-current="page"
+                                >
+                                  <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
+                                    <div
+                                      aria-labelledby="js_b"
+                                      class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1iyjqo2"
+                                      role="button"
+                                      tabindex="0"
+                                    >
+                                      <div class="x78zum5 x1iyjqo2">
+                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1k4ywey">
+                                          <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                                            <div class="x3nfvp2">
+                                              <i
+                                                alt=""
+                                                data-visualcompletion="css-img"
+                                                class="img style-bolNn"
+                                                id="style-bolNn"
+                                              ></i>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
-                                  <div class="x78zum5 x1iyjqo2" role="listitem">
-                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
-                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                        <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
-                                        <div class="xeuugli">
-                                          <div
-                                            class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
-                                            id="js_b"
-                                          >
-                                            Campaigns
+                                  <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
+                                    <div
+                                      class="x78zum5 x1iyjqo2"
+                                      role="listitem"
+                                    >
+                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x13dflua xxziih7 x12w9bfk x19991ni xg01cxk xjbqb8w xjwf9q1">
+                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                          <div class="x1rg5ohu x2lah0s xvy4d1p xxk0z11"></div>
+                                          <div class="xeuugli">
+                                            <div
+                                              class="x1xqt7ti x1uxerd5 xrohxju x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli"
+                                              id="js_b"
+                                            >
+                                              Campaigns
+                                            </div>
                                           </div>
                                         </div>
+                                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                       </div>
-                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x2lah0s"></div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                            </span>
+                              </span>
+                            </Link>
                             <span
                               data-surface-wrapper="1"
                               data-surface="/am/navigation_toolbar/lbl:ADS_REPORTING"
@@ -250,12 +255,9 @@ const EditChartThree = () => {
                             >
                               <div class="x1n2onr6 x3oybdh" role="listitem">
                                 <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                  <a
-                                    aria-labelledby="js_d"
+                                  <Link
                                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
-                                    role="link"
-                                    tabindex="0"
-                                    href="/adsreporting/?act=1387295665246598"
+                                    to="/reporting"
                                   >
                                     <div class="x78zum5 x1iyjqo2">
                                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
@@ -271,7 +273,7 @@ const EditChartThree = () => {
                                         </div>
                                       </div>
                                     </div>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
                                   <div class="x78zum5 x1iyjqo2" role="listitem">
@@ -354,12 +356,9 @@ const EditChartThree = () => {
                             >
                               <div class="x1n2onr6 x3oybdh" role="listitem">
                                 <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0">
-                                  <a
-                                    aria-labelledby="js_h"
+                                  <Link
                                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
-                                    role="link"
-                                    tabindex="0"
-                                    href="/billing_hub/payment_activity/?placement=ads_manager&amp;asset_id=1387295665246598"
+                                    to="/payment"
                                   >
                                     <div class="x78zum5 x1iyjqo2">
                                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
@@ -375,7 +374,7 @@ const EditChartThree = () => {
                                         </div>
                                       </div>
                                     </div>
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div class="x47corl x7elk82 x1779cjh xh6r515 x1vf8kge xurb0ha x1sxyh0 x9f619 x6ikm8r x10wlt62 xdzyupr">
                                   <div class="x78zum5 x1iyjqo2" role="listitem">
