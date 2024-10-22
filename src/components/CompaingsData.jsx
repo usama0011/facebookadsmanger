@@ -12,13 +12,25 @@ import {
 } from "@ant-design/icons";
 import EditImage from "../assets/edit.png";
 
-const CompaingsData = ({ campaigns, loading, error }) => {
+const CompaingsData = ({
+  campaigns,
+  loading,
+  setLoading,
+  error,
+  selectedValues,
+  showcustumizedcoloums,
+  setShowCustumizedlayout,
+  showcustomizedbanner,
+  setShowCustumizeBanner,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredPeformance, setIsHoveredPerformance] = useState(false);
   const [ishoverEngagement, setIsHoveredEngagement] = useState(false);
   const [ishoverDelivery, setIsHoveredDelivery] = useState(false);
+  const [loadingProgress, setLoadingProgress] = useState(0);
+
   const [ishovervedioengagement, setIsHoveredvedioengagement] = useState(false);
-  const [showcustomizedbanner, setShowCustumizeBanner] = useState(false);
+
   const [showPerformanceAndClicks, setShowPerformanceAndClicks] =
     useState("performance");
   // Event handlers to toggle state
@@ -123,7 +135,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
           type="checkbox"
         />
       ),
-      width: 50,
+      width: 35,
       key: "checkbox",
       fixed: "left",
 
@@ -136,7 +148,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
     },
     {
       title: "Off/On",
-      width: 70,
+      width: 50,
       dataIndex: "currentSwitch",
       key: "currentSwitch",
       fixed: "left",
@@ -200,7 +212,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
             <div style={{ overflow: "hidden" }} className="campaign-name-cell">
               <div
                 style={{
-                  color: "#297def",
+                  color: "#1461cc",
                   textTransform: "uppercase",
                   fontSize: "13px",
                   display: "flex",
@@ -218,49 +230,137 @@ const CompaingsData = ({ campaigns, loading, error }) => {
               </div>
             </div>
             <div className="hoverbuttonsmyspec">
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div style={{ marginRight: "10px" }}>
-                  {" "}
-                  <BarChartOutlined
-                    style={{
-                      width: "12px",
-                      height: "12px",
-                      color: "black",
-                      marginRight: "3px",
-                    }}
-                  />
-                  <Link
-                    style={{ color: "unset" }}
-                    to={`/editmainchart/${record._id}`}
-                  >
-                    View Charts
-                  </Link>
+              <div class="snipcss-gMhxl style-eyGxB" id="style-eyGxB">
+                <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
+                  <div class="_9p_z">
+                    <div class="_9p_y" role="toolbar">
+                      <div class="x78zum5 x2lwn1j xeuugli">
+                        <span class=" " data-tracked="true" data-clickable="1">
+                          <a
+                            aria-label="View Charts"
+                            class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
+                            href="#"
+                          >
+                            <span class="_3qjp">
+                              <Link
+                                style={{ color: "unset" }}
+                                to={`/editmainchart/${record._id}`}
+                              >
+                                <div class="x6s0dn4 x78zum5">
+                                  <span
+                                    class="ellipsis"
+                                    data-tooltip-display="overflow"
+                                  >
+                                    View Charts
+                                  </span>
+                                </div>
+                              </Link>
+                            </span>
+                          </a>
+                        </span>
+                        <span class=" " data-tracked="true" data-clickable="1">
+                          <a
+                            aria-label="Edit"
+                            class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
+                            href="#"
+                          >
+                            <span class="_3qjp">
+                              <Link
+                                style={{ color: "unset" }}
+                                to={`/editcampaing/${record._id}`}
+                              >
+                                <div class="x6s0dn4 x78zum5">
+                                  <span
+                                    class="ellipsis"
+                                    data-tooltip-display="overflow"
+                                  >
+                                    Edit
+                                  </span>
+                                </div>
+                              </Link>
+                            </span>
+                          </a>
+                        </span>
+                        <span class=" " data-tracked="true" data-clickable="1">
+                          <a
+                            aria-label="Duplicate"
+                            class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
+                            href="#"
+                          >
+                            <span class="_3qjp">
+                              <div class="x6s0dn4 x78zum5">
+                                <span
+                                  class="ellipsis"
+                                  data-tooltip-display="overflow"
+                                >
+                                  Duplicate
+                                </span>
+                              </div>
+                            </span>
+                          </a>
+                        </span>
+                        <span id="ads_manager_dcp_updated_inline_entry_point_nux1z">
+                          <div>
+                            <div data-visualcompletion="ignore" class=""></div>
+                          </div>
+                          <span
+                            class=" "
+                            data-tracked="true"
+                            data-clickable="1"
+                          >
+                            <a
+                              aria-label="Compare"
+                              class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
+                              href="#"
+                            >
+                              <span class="_3qjp">
+                                <div class="x6s0dn4 x78zum5">
+                                  <span
+                                    class="ellipsis"
+                                    data-tooltip-display="overflow"
+                                  >
+                                    Compare
+                                  </span>
+                                </div>
+                              </span>
+                            </a>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div style={{ marginRight: "10px" }}>
-                  <Link
-                    style={{ color: "unset" }}
-                    to={`/editcampaing/${record._id}`}
-                  >
-                    <img
-                      style={{
-                        width: "10px",
-                        height: "10px",
-                        marginRight: "3px",
-                      }}
-                      src={EditImage}
-                      alt=""
-                    />
-                    Edit
-                  </Link>
-                </div>
-                <div style={{ marginRight: "10px" }}>
-                  <FileTextOutlined style={{ marginRight: "3px" }} />
-                  Duplicate
-                </div>
-
-                <div style={{ marginRight: "10px" }}>
-                  <PushpinOutlined style={{ marginRight: "3px" }} />
-                  Pin
+                <div
+                  aria-busy="false"
+                  aria-controls="js_25"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su xurb0ha x1sxyh0 xexx8yu x18d9i69"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                    <div class="x78zum5">
+                      <div
+                        class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                        data-sscoverage-ignore="true"
+                      >
+                        Open Drop-down
+                      </div>
+                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                        <div
+                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                          role="presentation"
+                        >
+                          <div
+                            class="xtwfq29 style-EMnwe"
+                            id="style-EMnwe"
+                          ></div>
+                        </div>
+                        ​
+                      </div>
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -2195,23 +2295,44 @@ const CompaingsData = ({ campaigns, loading, error }) => {
       ),
     },
   ];
+  // Function to convert selected data to the desired format
+  const convertSelectedData = (selectedData) => {
+    return selectedData.map((item) => ({
+      title: (
+        <div className="resultsContainer">
+          <div style={{ padding: 0, margin: 0 }}>{item}</div>
+          <div>
+            <CaretDownOutlined style={{ color: "gray" }} />
+          </div>
+        </div>
+      ),
+      dataIndex: item.replace(/\s+/g, "").toLowerCase(), // Create a dataIndex based on the title
+      key: item.replace(/\s+/g, "").toLowerCase(), // Use the same for the key
+      width: 180,
+      render: (text) => (
+        <div style={{ fontSize: "14px", textAlign: "right" }}>--</div>
+      ),
+    }));
+  };
+  const formattedData = convertSelectedData(selectedValues);
+
   const MoreColoumsAdds = (() => {
     switch (showPerformanceAndClicks) {
       case "performance":
-        return [...columns]; // Show only the columns array for 'performance'
+        return [...columns, ...formattedData]; // Show only the columns array for 'performance'
 
       case "performanceandclicks":
-        return [...columns, ...additionalColumns]; // Show columns + additionalColumns for 'performanceandclicks'
+        return [...columns, ...formattedData, ...additionalColumns]; // Show columns + additionalColumns for 'performanceandclicks'
 
       case "engagement":
-        return [...additionalColumnsEngagement]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsEngagement, ...formattedData]; // Show columns + engagementColumns for 'engagement'
       case "delivery":
-        return [...additionalColumnsDelivery]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsDelivery, ...formattedData]; // Show columns + engagementColumns for 'engagement'
       case "videoengagement":
-        return [...additionalColumnsVedioEngagement]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsVedioEngagement, ...formattedData]; // Show columns + engagementColumns for 'engagement'
 
       default:
-        return [...columns]; // Fallback to default columns
+        return [...columns, ...formattedData]; // Fallback to default columns
     }
   })();
   const setLayoutWidth = (() => {
@@ -2233,6 +2354,7 @@ const CompaingsData = ({ campaigns, loading, error }) => {
         return 3000; // Fallback to default columns
     }
   })();
+  console.log("selected items are here", selectedValues);
 
   const perfomarnace = () => {
     setShowPerformanceAndClicks("performance");
@@ -2241,6 +2363,21 @@ const CompaingsData = ({ campaigns, loading, error }) => {
     setShowPerformanceAndClicks("performanceandclicks");
   };
   console.log("udpate data", campaigns);
+
+  const mycustomlaodingbox = () => {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 10;
+      setLoadingProgress(progress);
+
+      if (progress >= 100) {
+        clearInterval(interval);
+        setLoading(false);
+        setLoadingProgress(0);
+      }
+    }, 100);
+  };
+
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -3547,10 +3684,12 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                       ></div>
                     </span>
                     <span
+                      onClick={() => setShowCustumizedlayout(true)}
                       style={{
                         paddingLeft: "10px",
                         fontSize: "14px",
                         color: "gray",
+                        cursor: "pointer",
                       }}
                     >
                       Customise columns
@@ -3788,6 +3927,16 @@ const CompaingsData = ({ campaigns, loading, error }) => {
                     <li>Video plays at 100%</li>
                   </ul>
                 </div>
+              </div>
+            )}
+            {loading && (
+              <div className="loading-bar-container">
+                <div
+                  className="loading-bar"
+                  style={{
+                    width: `${loadingProgress}%`,
+                  }}
+                ></div>
               </div>
             )}
             <div

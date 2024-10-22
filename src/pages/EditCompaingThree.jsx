@@ -864,89 +864,74 @@ const EditCompaingThree = () => {
         >
           <Link to="/">
             <div
-              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
+              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r snipcss-2972g"
               icon="[object Object]"
               aria-label="Close"
               role="button"
               tabindex="0"
+              data-auto-logging-id="f3f1c09c92ec05"
             >
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                class="img style-t6yDt"
-                id="style-t6yDt"
+                class="img style-NqtPU"
+                id="style-NqtPU"
               ></i>
               <div class="x1rg5ohu x67bb7w">
                 <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
               </div>
             </div>
           </Link>
-          <div id="INSIGHTS_DRAWER_tip">
-            <span>
-              <div class="x1rg5ohu x67bb7w">
-                <span class=" " data-tracked="true" data-clickable="1">
-                  <div
-                    aria-disabled="false"
-                    aria-label="View charts (Ctrl+Y)"
-                    class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w"
-                    data-pitloot-persistonclick="false"
-                    id="insights_tray_button"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <div class="xbsr9hj">
-                      <div
-                        class="x3nfvp2 x120ccyz x140t73q"
-                        role="presentation"
-                      >
-                        <div class="xtwfq29 style-pvA3C" id="style-pvA3C"></div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
+
+          <div
+            aria-disabled="false"
+            aria-label="View charts (Ctrl+Y)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-2nYG7"
+            data-pitloot-persistonclick="false"
+            id="insights_tray_button"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="ff96db40273478"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-iBrpU" id="style-iBrpU"></div>
               </div>
-            </span>
-          </div>
-          <div id="EDITOR_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="Edit (Ctrl+U)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf"
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-yi88r" id="style-yi88r"></div>
-                    </div>
-                  </div>
-                </div>
-              </span>
             </div>
           </div>
-          <div id="ACTIVITY_HISTORY_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="See history (Ctrl+I)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w"
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-jA4U2" id="style-jA4U2"></div>
-                    </div>
-                  </div>
+          <Link to="/editmainchart">
+            <div
+              aria-disabled="false"
+              aria-label="Edit (Ctrl+U)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-Vnwlp"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f3f9bdbb5acfde"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-TLZOk" id="style-TLZOk"></div>
                 </div>
-              </span>
+              </div>
+            </div>
+          </Link>
+          <div
+            aria-disabled="false"
+            aria-label="See history (Ctrl+I)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+            data-pitloot-persistonclick="false"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="f19b1362991cda8"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+              </div>
             </div>
           </div>
+
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
               <span class=" " data-tracked="true" data-clickable="1">
@@ -968,7 +953,7 @@ const EditCompaingThree = () => {
             </div>
           </div>
         </div>
-        <div class="_96uw">
+        <div style={{ paddingLeft: "7px" }} class="_96uw">
           <div class="_1_tm _9898" id="campaign_structure_tree_root">
             <div class="x2izyaf x178xt8z xcfux6l xso031l xy80clv x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x15bcfbt xolcy6v x3ckiwt xc2dlm9 x9f619 xgif2c7 xod5an3 x1yrsyyn x10b6aqq x1ye3gou xn6708d x1n2onr6 xh8yej3">
               <div class="xgqtt45 xeq5yr9">
@@ -1506,99 +1491,52 @@ const EditCompaingThree = () => {
                 >
                   <div class="x6s0dn4 x1ypdohk x78zum5 xq8finb">
                     <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                      <div
-                        aria-busy="false"
-                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                        role="button"
-                        tabindex="0"
-                        id="js_t4"
-                      >
-                        <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                          <div class="x78zum5">
-                            <div
-                              class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                              data-sscoverage-ignore="true"
-                            >
-                              Open
-                            </div>
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                              <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                <i
-                                  alt=""
-                                  data-visualcompletion="css-img"
-                                  class="img style-j7s6N"
-                                  id="style-j7s6N"
-                                ></i>
+                      <div class="_96mf">
+                        <div
+                          style={{ marginRight: "15px" }}
+                          aria-busy="false"
+                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d snipcss-XfqzJ"
+                          role="button"
+                          tabindex="0"
+                          id="js_o1"
+                          data-auto-logging-id="f281397a5db011c"
+                        >
+                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                            <div class="x78zum5">
+                              <div
+                                class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                data-sscoverage-ignore="true"
+                              >
+                                Open
+                              </div>
+                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                <div class="x3nfvp2 x2lah0s x1c4vz4f">
+                                  <i
+                                    alt=""
+                                    data-visualcompletion="css-img"
+                                    class="img style-sRVqT"
+                                    id="style-sRVqT"
+                                  ></i>
+                                </div>
+                                ​
                               </div>
                             </div>
-                          </div>
-                        </span>
+                          </span>
+                        </div>
+                        <div
+                          aria-level="4"
+                          style={{ color: "black" }}
+                          class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i "
+                          role="heading"
+                        >
+                          <span class="_4gz1">{campaign.campaingname}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k x1qughib x6ikm8r x10wlt62">
                     <div class="x6s0dn4 x3nfvp2 x1r8uery x1iyjqo2 xq8finb xeuugli">
                       <div class="x6s0dn4 x3nfvp2 style-j6gBx" id="style-j6gBx">
-                        <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
-                          <div class="_3qn7 _61-0 _2fyi _3qng">
-                            <span
-                              class=" "
-                              data-tracked="true"
-                              data-clickable="1"
-                            >
-                              <div
-                                class=""
-                                data-hover="tooltip"
-                                data-testid="nav-header-CAMPAIGN_GROUP"
-                                data-tooltip-content="[05/16/2024] Promoting https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaig..."
-                                data-tooltip-display="overflow"
-                                data-tooltip-position="above"
-                                data-tooltip-text-direction="auto"
-                              >
-                                <div class="_96mf">
-                                  <div class="_96mg">
-                                    <svg
-                                      viewBox="0 0 48 48"
-                                      width="1em"
-                                      height="1em"
-                                      fill="currentColor"
-                                      class="x4s1yf2 xlup9mm x1kky2od snipcss-q6Mb3"
-                                    >
-                                      <g>
-                                        <path
-                                          d="m19.95 8.76-.18-.53a4 4 0 0 0-3.79-2.74H6.5c-1.66 0-3 1.34-3 3v30c0 2.21 1.79 4 4 4h33c2.21 0 4-1.79 4-4V15.5c0-2.21-1.79-4-4-4H23.74c-1.72 0-3.25-1.1-3.79-2.74z"
-                                          stroke="currentColor"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="3px"
-                                          fill="none"
-                                        ></path>
-                                      </g>
-                                    </svg>
-                                  </div>
-                                  <div
-                                    aria-level="4"
-                                    style={{ color: "black" }}
-                                    class="x1xqt7ti xsuwoey x63nzvj x1qsmy5i "
-                                    role="heading"
-                                  >
-                                    <span class="_4gz1">
-                                      {campaign.campaingname}
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="x6s0dn4 x3nfvp2 x1i64zmx x1emribx">
-                          <i
-                            alt=""
-                            data-visualcompletion="css-img"
-                            class="img style-slg5M"
-                            id="style-slg5M"
-                          ></i>
-                        </div>
                         <div class="x1iyjqo2 xc02obx x6ikm8r x10wlt62 xlyipyv xuxw1ft x1r8uery">
                           <div class="_3qn7 _61-0 _2fyi _3qng">
                             <span

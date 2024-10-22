@@ -2,12 +2,7 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import { Suspense, lazy } from "react";
 import "./index.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import EditCompaing from "./pages/EditCompaing";
 import EditCompaingTwo from "./pages/EditCompaingTwo";
@@ -35,6 +30,10 @@ import CurrentAccount from "./pages/currentAccount";
 import NewCalender from "./pages/NewCalender";
 import UplaodCampaings from "./pages/UplaodCampaings";
 import Reporting from "./pages/Reporting";
+import Overview from "./pages/Overview";
+import TestPage from "./components/TestPage";
+import NewTask from "./components/NewTask";
+import History from "./pages/History";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +48,18 @@ const router = createBrowserRouter([
     element: <CurrentAccount />,
   },
   {
+    path: "/test",
+    element: <TestPage />,
+  },
+  {
+    path: "/newtask",
+    element: <NewTask />,
+  },
+  {
+    path: "/overviewaccount",
+    element: <Overview />,
+  },
+  {
     path: "/reporting",
     element: <Reporting />,
   },
@@ -59,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/calender",
     element: <NewCalender />,
+  },
+  {
+    path: "/history",
+    element: <History />,
   },
   {
     path: "/editcampaingtwo/:id",

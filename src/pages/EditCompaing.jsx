@@ -109,7 +109,7 @@ const EditCompaing = () => {
                                     <img
                                       alt=""
                                       class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
+                                      src="https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&_nc_ohc=cbZqWQHSYPgQ7kNvgGqjkiv&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=AswsEGLMOPlO7Vx3_Zwi18V&oh=00_AYDnLMNqLDPD2yfe3gnCqOe-sNdyrZKQrFnNNrJnPWGC5A&oe=671DCE3F"
                                     />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>
@@ -863,94 +863,74 @@ const EditCompaing = () => {
         >
           <Link to="/">
             <div
-              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
+              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r snipcss-2972g"
               icon="[object Object]"
               aria-label="Close"
               role="button"
               tabindex="0"
+              data-auto-logging-id="f3f1c09c92ec05"
             >
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                class="img style-t6yDt"
-                id="style-t6yDt"
+                class="img style-NqtPU"
+                id="style-NqtPU"
               ></i>
               <div class="x1rg5ohu x67bb7w">
                 <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
               </div>
             </div>
           </Link>
+
+          <div
+            aria-disabled="false"
+            aria-label="View charts (Ctrl+Y)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-2nYG7"
+            data-pitloot-persistonclick="false"
+            id="insights_tray_button"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="ff96db40273478"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-iBrpU" id="style-iBrpU"></div>
+              </div>
+            </div>
+          </div>
           <Link to="/editmainchart">
-            <div id="INSIGHTS_DRAWER_tip">
-              <span>
-                <div class="x1rg5ohu x67bb7w">
-                  <span class=" " data-tracked="true" data-clickable="1">
-                    <div
-                      aria-disabled="false"
-                      aria-label="View charts (Ctrl+Y)"
-                      class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w"
-                      data-pitloot-persistonclick="false"
-                      id="insights_tray_button"
-                      role="button"
-                      tabindex="0"
-                    >
-                      <div class="xbsr9hj">
-                        <div
-                          class="x3nfvp2 x120ccyz x140t73q"
-                          role="presentation"
-                        >
-                          <div
-                            class="xtwfq29 style-pvA3C"
-                            id="style-pvA3C"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </span>
+            <div
+              aria-disabled="false"
+              aria-label="Edit (Ctrl+U)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-Vnwlp"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f3f9bdbb5acfde"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-TLZOk" id="style-TLZOk"></div>
                 </div>
-              </span>
+              </div>
             </div>
           </Link>
-          <div id="EDITOR_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="Edit (Ctrl+U)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf"
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-yi88r" id="style-yi88r"></div>
-                    </div>
-                  </div>
-                </div>
-              </span>
+          <div
+            aria-disabled="false"
+            aria-label="See history (Ctrl+I)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+            data-pitloot-persistonclick="false"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="f19b1362991cda8"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+              </div>
             </div>
           </div>
-          <div id="ACTIVITY_HISTORY_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="See history (Ctrl+I)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w"
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-jA4U2" id="style-jA4U2"></div>
-                    </div>
-                  </div>
-                </div>
-              </span>
-            </div>
-          </div>
+
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
               <span class=" " data-tracked="true" data-clickable="1">
@@ -972,7 +952,7 @@ const EditCompaing = () => {
             </div>
           </div>
         </div>
-        <div class="_96uw">
+        <div style={{ paddingLeft: "11px" }} class="_96uw">
           <div class="_1_tm _9898" id="campaign_structure_tree_root">
             <div class="x2izyaf x178xt8z xcfux6l xso031l xy80clv x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x15bcfbt xolcy6v x3ckiwt xc2dlm9 x9f619 xgif2c7 xod5an3 x1yrsyyn x10b6aqq x1ye3gou xn6708d x1n2onr6 xh8yej3">
               <div class="xgqtt45 xeq5yr9">
@@ -1052,7 +1032,11 @@ const EditCompaing = () => {
                 </div>
               </div>
             </div>
-            <div class="_67gr style-23dHh" id="style-23dHh">
+            <div
+              style={{ paddingLeft: "3px" }}
+              class="_67gr style-23dHh"
+              id="style-23dHh"
+            >
               <div id="style-D9jtO" class="style-D9jtO">
                 <div
                   aria-label="grid"
@@ -1132,40 +1116,6 @@ const EditCompaing = () => {
                                               data-visualcompletion="css-img"
                                               class="img style-tIMLP"
                                               id="style-tIMLP"
-                                            ></i>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="x1s85apg">
-                                <div
-                                  class="x3nfvp2 x193iq5w xxymvpz"
-                                  role="none"
-                                >
-                                  <div
-                                    aria-busy="false"
-                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                    role="button"
-                                    tabindex="0"
-                                  >
-                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                      <div class="x78zum5">
-                                        <div
-                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                          data-sscoverage-ignore="true"
-                                        >
-                                          Action menu
-                                        </div>
-                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                          <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                            <i
-                                              alt=""
-                                              data-visualcompletion="css-img"
-                                              class="img style-zMAMl"
-                                              id="style-zMAMl"
                                             ></i>
                                           </div>
                                         </div>
@@ -3445,6 +3395,7 @@ const EditCompaing = () => {
                                                                                                 </div>
                                                                                               </div>
                                                                                             </div>
+                                                                                            ss
                                                                                             <div class="_4rlo">
                                                                                               <div class="_4dqc">
                                                                                                 <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
