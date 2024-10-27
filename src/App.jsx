@@ -2974,7 +2974,12 @@ const App = () => {
                                                     </div>
                                                   </div>
                                                 </div>
-                                                <div class="_4540 snipcss0-2-18-49">
+                                                <div
+                                                  style={{
+                                                    marginRight: "20px",
+                                                  }}
+                                                  class="_4540 snipcss0-2-18-49"
+                                                >
                                                   <div
                                                     aria-busy="false"
                                                     aria-controls="js_73"
@@ -3035,29 +3040,17 @@ const App = () => {
                                           class="_2k0c _8_1l style-rd1rQ"
                                           id="style-rd1rQ"
                                         >
-                                          <div class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4">
-                                            <div
-                                              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
-                                              icon="[object Object]"
-                                              aria-label="Close"
-                                              role="button"
-                                              tabindex="-1"
-                                            >
-                                              <i
-                                                alt=""
-                                                data-visualcompletion="css-img"
-                                                class="img style-Wr938"
-                                                id="style-Wr938"
-                                              ></i>
-                                              <div class="xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz xx83zyx xt0e3qv"></div>
-                                            </div>
+                                          <div class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x4uap5 x18d9i69 xkhd6sd x1iorvi4 x10l6tqk x187nhsf x1vjfegm x5jzwa4 snipcss-KhfKO">
                                             <div id="INSIGHTS_DRAWER_tip">
                                               <span>
-                                                <div class="x1rg5ohu x67bb7w">
+                                                <div
+                                                  class="x1rg5ohu x67bb7w"
+                                                  id="js_8v"
+                                                >
                                                   <span
                                                     class=" "
                                                     data-tracked="true"
-                                                    data-clickable="1"
+                                                    data-interactable="|click|"
                                                   >
                                                     <div
                                                       aria-disabled="false"
@@ -3074,8 +3067,8 @@ const App = () => {
                                                           role="presentation"
                                                         >
                                                           <div
-                                                            class="xtwfq29 style-5ho1q"
-                                                            id="style-5ho1q"
+                                                            class="xtwfq29 style-dihaS"
+                                                            id="style-dihaS"
                                                           ></div>
                                                         </div>
                                                       </div>
@@ -3089,7 +3082,7 @@ const App = () => {
                                                 <span
                                                   class=" "
                                                   data-tracked="true"
-                                                  data-clickable="1"
+                                                  data-interactable="|click|"
                                                 >
                                                   <div
                                                     aria-disabled="true"
@@ -3105,8 +3098,8 @@ const App = () => {
                                                         role="presentation"
                                                       >
                                                         <div
-                                                          class="xtwfq29 style-MsQPd"
-                                                          id="style-MsQPd"
+                                                          class="xtwfq29 style-msQB8"
+                                                          id="style-msQB8"
                                                         ></div>
                                                       </div>
                                                     </div>
@@ -3115,11 +3108,14 @@ const App = () => {
                                               </div>
                                             </div>
                                             <div id="ACTIVITY_HISTORY_DRAWER_tip">
-                                              <div class="x1rg5ohu x67bb7w">
+                                              <div
+                                                class="x1rg5ohu x67bb7w"
+                                                id="js_c8"
+                                              >
                                                 <span
                                                   class=" "
                                                   data-tracked="true"
-                                                  data-clickable="1"
+                                                  data-interactable="|click|"
                                                 >
                                                   <div
                                                     aria-disabled="true"
@@ -3135,8 +3131,8 @@ const App = () => {
                                                         role="presentation"
                                                       >
                                                         <div
-                                                          class="xtwfq29 style-1Ia8e"
-                                                          id="style-1Ia8e"
+                                                          class="xtwfq29 style-EXAvT"
+                                                          id="style-EXAvT"
                                                         ></div>
                                                       </div>
                                                     </div>
@@ -3192,16 +3188,7 @@ const App = () => {
                                                                     ></i>
                                                                   </div>
                                                                   <div class="x1sliqq">
-                                                                    <div
-                                                                      onClick={(
-                                                                        prev
-                                                                      ) =>
-                                                                        setshowsearchfilterbar(
-                                                                          !prev
-                                                                        )
-                                                                      }
-                                                                      class="x6s0dn4 x78zum5"
-                                                                    >
+                                                                    <div class="x6s0dn4 x78zum5">
                                                                       <input
                                                                         value={
                                                                           searchQuery

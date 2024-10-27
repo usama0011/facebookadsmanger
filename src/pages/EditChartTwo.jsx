@@ -857,86 +857,79 @@ const EditChartTwo = () => {
       </div>
       <div class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy" id="style-VS3Gy">
         <div
-          style={{ marginLeft: "13px", zIndex: "999" }}
+          style={{ marginLeft: "14px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"
         >
           <Link to="/">
             <div
-              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
+              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r snipcss-2972g"
               icon="[object Object]"
               aria-label="Close"
               role="button"
               tabindex="0"
+              data-auto-logging-id="f3f1c09c92ec05"
             >
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                class="img style-t6yDt"
-                id="style-t6yDt"
+                class="img style-NqtPU"
+                id="style-NqtPU"
               ></i>
               <div class="x1rg5ohu x67bb7w">
                 <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
               </div>
             </div>
           </Link>
+
+          <div
+            aria-disabled="false"
+            aria-label="View charts (Ctrl+Y)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-2nYG7"
+            data-pitloot-persistonclick="false"
+            id="insights_tray_button"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="ff96db40273478"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-iBrpU" id="style-iBrpU"></div>
+              </div>
+            </div>
+          </div>
           <Link to="/editmainchart">
             <div
               aria-disabled="false"
-              aria-label="View charts (Ctrl+Y)"
-              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-yCiBg"
+              aria-label="Edit (Ctrl+U)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-Vnwlp"
               data-pitloot-persistonclick="false"
-              id="insights_tray_button"
               role="button"
               tabindex="0"
-              data-auto-logging-id="f29e6006c05405"
+              data-auto-logging-id="f3f9bdbb5acfde"
             >
               <div class="xbsr9hj">
                 <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                  <div class="xtwfq29 style-TwJ3O" id="style-TwJ3O"></div>
+                  <div class="xtwfq29 style-TLZOk" id="style-TLZOk"></div>
                 </div>
               </div>
             </div>
           </Link>
-          <div id="EDITOR_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="Edit (Ctrl+U)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf "
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-yi88r" id="style-yi88r"></div>
-                    </div>
-                  </div>
-                </div>
-              </span>
+          <div
+            aria-disabled="false"
+            aria-label="See history (Ctrl+I)"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+            data-pitloot-persistonclick="false"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="f19b1362991cda8"
+          >
+            <div class="xbsr9hj">
+              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+              </div>
             </div>
           </div>
-          <div id="ACTIVITY_HISTORY_DRAWER_tip">
-            <div class="x1rg5ohu x67bb7w">
-              <span class=" " data-tracked="true" data-clickable="1">
-                <div
-                  aria-disabled="false"
-                  aria-label="See history (Ctrl+I)"
-                  class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w"
-                  data-pitloot-persistonclick="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="xbsr9hj">
-                    <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                      <div class="xtwfq29 style-jA4U2" id="style-jA4U2"></div>
-                    </div>
-                  </div>
-                </div>
-              </span>
-            </div>
-          </div>
+
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
               <span class=" " data-tracked="true" data-clickable="1">

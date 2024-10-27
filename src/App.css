@@ -8674,3 +8674,23 @@ html {
     rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
   border-radius: 10px;
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-dihaS.style-dihaS {
+  width: 16px;
+  height: 16px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/Oq4hWev4Svf.png");
+  mask-position: 0px -2335px;
+}
+#style-msQB8.style-msQB8 {
+  width: 16px;
+  height: 16px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/Oq4hWev4Svf.png");
+  mask-position: 0px -3253px;
+}
+#style-EXAvT.style-EXAvT {
+  width: 16px;
+  height: 16px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/-GyEkqKwLX8.png");
+  mask-position: -21px -194px;
+}

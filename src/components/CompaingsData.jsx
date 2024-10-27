@@ -462,7 +462,9 @@ const CompaingsData = ({
       key: "Bidstrategy",
       width: 120,
       render: (text) => (
-        <div style={{ fontSize: "14px" }}>{truncateText(text, 16)}</div>
+        <div style={{ fontSize: "14px", color: "#1c2b33" }}>
+          {truncateText(text, 16)}
+        </div>
       ),
     },
     {

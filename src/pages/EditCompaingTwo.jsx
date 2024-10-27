@@ -914,21 +914,23 @@ const EditCompaingTwo = () => {
               </div>
             </div>
           </Link>
-          <div
-            aria-disabled="false"
-            aria-label="See history (Ctrl+I)"
-            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
-            data-pitloot-persistonclick="false"
-            role="button"
-            tabindex="0"
-            data-auto-logging-id="f19b1362991cda8"
-          >
-            <div class="xbsr9hj">
-              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+          <Link to="/history">
+            <div
+              aria-disabled="false"
+              aria-label="See history (Ctrl+I)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f19b1362991cda8"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
