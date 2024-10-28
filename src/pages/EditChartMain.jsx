@@ -3,10 +3,41 @@ import "../styles/EditChartMain.css";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 const EditChartMain = () => {
+  const data = [
+    { date: "1 May", value: 2 },
+    { date: "2 May", value: 1 },
+    { date: "3 May", value: 7 },
+    { date: "4 May", value: 4 },
+    { date: "5 May", value: 8 },
+    { date: "6 May", value: 3 },
+    { date: "7 May", value: 6 },
+    { date: "8 May", value: 5 },
+    { date: "9 May", value: 9 },
+    { date: "10 May", value: 2 },
+  ];
   const { id } = useParams();
   const [campaign, setCampaigns] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const width = 955;
+  const height = 202;
+  const padding = 50;
+
+  // Calculate the max y value for scaling the y-axis
+  const maxYValue = Math.max(...data.map((d) => d.value)) || 10;
+
+  // Calculate the x and y scaling factors based on data length
+  const xScale = (width - 2 * padding) / (data.length - 1);
+  const yScale = ((height - 2 * padding) / maxYValue) * 1.5; // Adjusts yScale for double the gap
+
+  // Generate the SVG path for the line graph
+  const linePath = data
+    .map((point, i) => {
+      const x = padding + i * xScale;
+      const y = height - padding - point.value * yScale;
+      return `${i === 0 ? "M" : "L"} ${x},${y}`;
+    })
+    .join(" ");
 
   useEffect(() => {
     const fetchCampaigns = async () => {
@@ -108,7 +139,7 @@ const EditChartMain = () => {
                                     <img
                                       alt=""
                                       class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
+                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=JkYdy0xJ7UoQ7kNvgFxhnn1&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AkKjvQovsba9q9a87o6CD4C&oh=00_AYBxzKQrTt_8HgnRcrUnwG3Rhdcvpkj4MjvtHF-tMA71Ww&oe=672465BF"
                                     />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>
@@ -2070,6 +2101,10 @@ const EditChartMain = () => {
                                                                     id="style-k18MS"
                                                                   >
                                                                     <div
+                                                                      style={{
+                                                                        border:
+                                                                          "1px solid gainsboro",
+                                                                      }}
                                                                       aria-selected="false"
                                                                       class="x1bdj1k2 x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xdt5ytf x2lwn1j x1n2onr6 x1afcbsf x13faqbe x3oybdh x1iyjqo2 xs83m0k x1x0l8y7 x1v8p93f xogb00i x16stqrj x1ftr3km x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x78zum5 x450l9j x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1gslohp x12nagc xsgj6o6 xw3qccf xnl74ce xmb4j5p xdx8kah xwmxa91 x31ga2r xcmxnv6 x13afdcp x10va8jt xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1g2896h x1j6awrg xd3xj1f x7nagdb x1rs5hn9 x1pc5pqc style-9Dfer"
                                                                       role="row"
@@ -2131,6 +2166,10 @@ const EditChartMain = () => {
                                                                       </div>
                                                                     </div>
                                                                     <div
+                                                                      style={{
+                                                                        border:
+                                                                          "1px solid gainsboro",
+                                                                      }}
                                                                       aria-selected="false"
                                                                       class="x1bdj1k2 x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xdt5ytf x2lwn1j x1n2onr6 x1afcbsf x13faqbe x3oybdh x1iyjqo2 xs83m0k x1x0l8y7 x1v8p93f xogb00i x16stqrj x1ftr3km x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x78zum5 x450l9j x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1gslohp x12nagc xsgj6o6 xw3qccf xnl74ce xmb4j5p xdx8kah xwmxa91 x31ga2r xcmxnv6 x13afdcp x10va8jt xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1g2896h x1j6awrg xd3xj1f x7nagdb x1rs5hn9 x1pc5pqc"
                                                                       role="row"
@@ -2194,6 +2233,10 @@ const EditChartMain = () => {
                                                                       </div>
                                                                     </div>
                                                                     <div
+                                                                      style={{
+                                                                        border:
+                                                                          "1px solid gainsboro",
+                                                                      }}
                                                                       aria-selected="false"
                                                                       class="x1bdj1k2 x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xdt5ytf x2lwn1j x1n2onr6 x1afcbsf x13faqbe x3oybdh x1iyjqo2 xs83m0k x1x0l8y7 x1v8p93f xogb00i x16stqrj x1ftr3km x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x78zum5 x450l9j x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1gslohp x12nagc xsgj6o6 xw3qccf xnl74ce xmb4j5p xdx8kah xwmxa91 x31ga2r xcmxnv6 x13afdcp x10va8jt xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1g2896h x1j6awrg xd3xj1f x7nagdb x1rs5hn9 x1pc5pqc"
                                                                       role="row"
@@ -2296,569 +2339,148 @@ const EditChartMain = () => {
                                                                               id="style-24Gck"
                                                                             >
                                                                               <svg
-                                                                                aria-describedby="js_1dj"
-                                                                                aria-labelledby="js_1dk"
-                                                                                class="x5yr21d x1plvlek xryxfnj x10l6tqk x17qophe x13vifvy xh8yej3"
-                                                                                height="202"
+                                                                                width={
+                                                                                  width
+                                                                                }
+                                                                                height={
+                                                                                  height
+                                                                                }
+                                                                                aria-label="Dynamic Graph"
                                                                                 role="img"
-                                                                                width="955.1875"
+                                                                                class="x5yr21d x1plvlek xryxfnj x10l6tqk x17qophe x13vifvy xh8yej3"
                                                                               >
-                                                                                <g transform="translate(73, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    1
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(123.95220588235293, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(174.90441176470586, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    3
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(225.85661764705884, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(276.80882352941177, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    5
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(327.7610294117647, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(378.7132352941177, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    7
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(429.66544117647055, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(480.6176470588235, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    9
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(531.5698529411765, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(582.5220588235294, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    11
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(633.4742647058823, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(684.4264705882354, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    13
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(735.3786764705882, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(786.3308823529411, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    15
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(837.2830882352941, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(888.235294117647, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    17
-                                                                                    May
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(939.1875, 169)">
-                                                                                  <line
-                                                                                    y2="0"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    y="8"
-                                                                                    class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  ></text>
-                                                                                </g>
-                                                                                <g transform="translate(41, 169)">
-                                                                                  <line
-                                                                                    x2="898.1875"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    x="-8"
-                                                                                    class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    0
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(41, 128.75)">
-                                                                                  <line
-                                                                                    x2="898.1875"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    x="-8"
-                                                                                    class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    2
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(41, 88.5)">
-                                                                                  <line
-                                                                                    x2="898.1875"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    x="-8"
-                                                                                    class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    4
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(41, 48.25)">
-                                                                                  <line
-                                                                                    x2="898.1875"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    x="-8"
-                                                                                    class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
+                                                                                {/* X-axis labels */}
+                                                                                {data.map(
+                                                                                  (
+                                                                                    point,
+                                                                                    i
+                                                                                  ) => (
+                                                                                    <g
+                                                                                      key={
+                                                                                        i
+                                                                                      }
+                                                                                      transform={`translate(${
+                                                                                        padding +
+                                                                                        i *
+                                                                                          xScale
+                                                                                      }, ${
+                                                                                        height -
+                                                                                        padding
+                                                                                      })`}
+                                                                                    >
+                                                                                      <line
+                                                                                        y2="5"
+                                                                                        stroke="rgba(0,0,0,0.15)"
+                                                                                      />
+                                                                                      <text
+                                                                                        y="15"
+                                                                                        fontSize="10"
+                                                                                        textAnchor="middle"
+                                                                                        fill="rgba(28,43,51,1)"
+                                                                                        class="x9yny3i xw6cgo0 xmi5d70 x1fvot60 xo1l8bm xxio538"
+                                                                                      >
+                                                                                        {
+                                                                                          point.date
+                                                                                        }
+                                                                                      </text>
+                                                                                    </g>
+                                                                                  )
+                                                                                )}
+
+                                                                                {/* Y-axis labels */}
+                                                                                {[
+                                                                                  ...Array(
                                                                                     6
-                                                                                  </text>
-                                                                                </g>
-                                                                                <g transform="translate(41, 8)">
-                                                                                  <line
-                                                                                    x2="898.1875"
-                                                                                    stroke="rgba(0,0,0,0.15)"
-                                                                                  ></line>
-                                                                                  <text
-                                                                                    x="-8"
-                                                                                    class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                                    fill="rgba(28,43,51,1)"
-                                                                                  >
-                                                                                    8
-                                                                                  </text>
-                                                                                </g>
+                                                                                  ).keys(),
+                                                                                ].map(
+                                                                                  (
+                                                                                    i
+                                                                                  ) => {
+                                                                                    const yValue =
+                                                                                      (maxYValue /
+                                                                                        5) *
+                                                                                      i;
+                                                                                    const yPosition =
+                                                                                      height -
+                                                                                      padding -
+                                                                                      yValue *
+                                                                                        yScale;
+                                                                                    return (
+                                                                                      <g
+                                                                                        key={
+                                                                                          i
+                                                                                        }
+                                                                                        transform={`translate(${padding}, ${yPosition})`}
+                                                                                      >
+                                                                                        <line
+                                                                                          x2={
+                                                                                            width -
+                                                                                            2 *
+                                                                                              padding
+                                                                                          }
+                                                                                          stroke="rgba(0,0,0,0.15)"
+                                                                                        />
+                                                                                        <text
+                                                                                          x="-10"
+                                                                                          fontSize="10"
+                                                                                          textAnchor="end"
+                                                                                          fill="rgba(28,43,51,1)"
+                                                                                          class="x1lzn6yi x1nibo1b xmi5d70 x1fvot60 xo1l8bm xxio538"
+                                                                                        >
+                                                                                          {yValue.toFixed(
+                                                                                            1
+                                                                                          )}
+                                                                                        </text>
+                                                                                      </g>
+                                                                                    );
+                                                                                  }
+                                                                                )}
+
+                                                                                {/* Line graph path */}
                                                                                 <path
-                                                                                  class=""
-                                                                                  d="M 837.2830882352941,169 L 888.2352941176471,8 L 939.1875,68.375"
+                                                                                  d={
+                                                                                    linePath
+                                                                                  }
                                                                                   fill="none"
-                                                                                  pointer-events="none"
                                                                                   stroke="rgba(50,205,205,1)"
-                                                                                  stroke-linecap="round"
-                                                                                  stroke-linejoin="round"
-                                                                                  stroke-width="2"
-                                                                                ></path>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="47.52389705882353"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="98.47610294117646"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="149.42830882352942"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="200.38051470588238"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="251.3327205882353"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="302.28492647058823"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="353.2371323529412"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="404.18933823529414"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="455.1415441176471"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="506.09375"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="557.0459558823529"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="607.9981617647059"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="658.9503676470589"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="709.9025735294118"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="760.8547794117648"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="811.8069852941177"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="862.7591911764706"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
-                                                                                <g class="">
-                                                                                  <rect
-                                                                                    fill="transparent"
-                                                                                    height="161"
-                                                                                    width="48.12152777777778"
-                                                                                    x="913.7113970588235"
-                                                                                    y="8"
-                                                                                  ></rect>
-                                                                                </g>
+                                                                                  strokeLinecap="round"
+                                                                                  strokeLinejoin="round"
+                                                                                  strokeWidth="2"
+                                                                                />
+
+                                                                                {/* Transparent rectangles for hover interactions (if needed) */}
+                                                                                {data.map(
+                                                                                  (
+                                                                                    _,
+                                                                                    i
+                                                                                  ) => (
+                                                                                    <rect
+                                                                                      key={
+                                                                                        i
+                                                                                      }
+                                                                                      fill="transparent"
+                                                                                      height={
+                                                                                        height -
+                                                                                        2 *
+                                                                                          padding
+                                                                                      }
+                                                                                      width={
+                                                                                        xScale
+                                                                                      }
+                                                                                      x={
+                                                                                        padding +
+                                                                                        i *
+                                                                                          xScale -
+                                                                                        xScale /
+                                                                                          2
+                                                                                      }
+                                                                                      y={
+                                                                                        padding
+                                                                                      }
+                                                                                    />
+                                                                                  )
+                                                                                )}
                                                                               </svg>
-                                                                              <table
-                                                                                class="x1lliihq x1mwwwfo x1gukg7c x1qvwoe0 xjm9jq1 x10l6tqk x140o2bo x1i1rx1s x6ikm8r x10wlt62"
-                                                                                id="js_1dj"
-                                                                              >
-                                                                                <tbody>
-                                                                                  <tr>
-                                                                                    <th></th>
-                                                                                    <th>
-                                                                                      1714503600
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1714590000
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1714676400
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1714762800
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1714849200
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1714935600
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715022000
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715108400
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715194800
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715281200
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715367600
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715454000
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715540400
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715626800
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715713200
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715799600
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715886000
-                                                                                    </th>
-                                                                                    <th>
-                                                                                      1715972400
-                                                                                    </th>
-                                                                                  </tr>
-                                                                                  <tr>
-                                                                                    <td>
-                                                                                      results
-                                                                                    </td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td>
-                                                                                      0
-                                                                                    </td>
-                                                                                    <td>
-                                                                                      8
-                                                                                    </td>
-                                                                                    <td>
-                                                                                      5
-                                                                                    </td>
-                                                                                  </tr>
-                                                                                </tbody>
-                                                                              </table>
                                                                             </div>
                                                                           </div>
                                                                         </div>
