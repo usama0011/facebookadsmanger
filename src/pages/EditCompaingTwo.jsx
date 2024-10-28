@@ -108,7 +108,7 @@ const EditCompaingTwo = () => {
                                     <img
                                       alt=""
                                       class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
+                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=JkYdy0xJ7UoQ7kNvgFxhnn1&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AMaZpVQ-Z-IQcbJf5Pl7AmI&oh=00_AYBOwFG45-aLlVw5uwmjkjPG0cuUKViGovGzbY9RNiRRqw&oe=672546BF"
                                     />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>
@@ -1824,124 +1824,119 @@ const EditCompaingTwo = () => {
                     </div>
                   </div>
                 </div>
-                <div class="x9f619 xh8yej3 x2izyaf x15bcfbt xolcy6v x3ckiwt xc2dlm9 x178xt8z xcfux6l xso031l xm0m39n xgif2c7 x78zum5 xl56j7k x6s0dn4 x1ejq31n xt7dq6l x1gg8mnh xjexgjb xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6">
+                <div style={{ backgroundColor: "white" }}>
                   <div
-                    class="x2b8uid x10l6tqk xtzzx4i xuuh30 xh8yej3 style-GayID"
-                    id="style-GayID"
+                    class="x78zum5 xh8yej3 xl56j7k snipcss-kOjz5"
+                    id="ads_review_and_edit_tab"
                   >
-                    <div
-                      class="x78zum5 xh8yej3 xl56j7k"
-                      id="ads_review_and_edit_tab"
-                    >
-                      <div class="x1e56ztr">
+                    <div class="x1e56ztr">
+                      <div
+                        class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
+                        role="tablist"
+                      >
                         <div
-                          class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                          role="tablist"
+                          aria-hidden="false"
+                          aria-label="Edit"
+                          aria-selected="true"
+                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
+                          role="tab"
+                          tabindex="0"
+                          data-tracked="true"
+                          data-interactable="|click|"
                         >
-                          <div
-                            aria-hidden="false"
-                            aria-label="Edit"
-                            aria-selected="true"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                            <div
+                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                              role="presentation"
+                            >
                               <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
-                              >
-                                <div
-                                  class="xtwfq29 style-GOn7C"
-                                  id="style-GOn7C"
-                                ></div>
-                              </div>
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
-                              </div>
+                                class="xtwfq29 style-ObdRa"
+                                id="style-ObdRa"
+                              ></div>
+                            </div>
+                            <div
+                              aria-hidden="true"
+                              class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                            >
+                              <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
+                                Edit
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                Edit
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                Edit
+                              </span>
                             </div>
                           </div>
-                          <div
-                            aria-hidden="false"
-                            aria-label="Review"
-                            aria-selected="false"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                        </div>
+                        <div
+                          aria-hidden="false"
+                          aria-label="Review"
+                          aria-selected="false"
+                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
+                          role="tab"
+                          tabindex="0"
+                          data-tracked="true"
+                          data-interactable="|click|"
+                        >
+                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                            <div
+                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                              role="presentation"
+                            >
                               <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
-                              >
-                                <div
-                                  class="xtwfq29 style-PTjfO"
-                                  id="style-PTjfO"
-                                ></div>
-                              </div>
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
-                              </div>
+                                class="xtwfq29 style-geDQF"
+                                id="style-geDQF"
+                              ></div>
+                            </div>
+                            <div
+                              aria-hidden="true"
+                              class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                            >
+                              <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                Review
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                Review
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                Review
+                              </span>
                             </div>
                           </div>
-                          <div
-                            aria-haspopup="true"
-                            aria-hidden="true"
-                            aria-label="More"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
-                            role="button"
-                            tabindex="-1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                        </div>
+                        <div
+                          aria-haspopup="true"
+                          aria-hidden="true"
+                          aria-label="More"
+                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                            <div
+                              aria-hidden="true"
+                              class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                            >
+                              <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                More
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                More
+                              </span>
+                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                More
+                              </span>
+                            </div>
+                            <div
+                              class="x3nfvp2 x120ccyz x1heor9g"
+                              role="presentation"
+                            >
                               <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                              </div>
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g"
-                                role="presentation"
-                              >
-                                <div
-                                  class="xtwfq29 style-qxolY"
-                                  id="style-qxolY"
-                                ></div>
-                              </div>
+                                class="xtwfq29 style-HLKAT"
+                                id="style-HLKAT"
+                              ></div>
                             </div>
                           </div>
                         </div>
@@ -2218,10 +2213,20 @@ const EditCompaingTwo = () => {
                                                                             <div class="x1iyjqo2">
                                                                               <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av">
                                                                                 <label
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
                                                                                   id="js_134"
                                                                                   for="js_133"
                                                                                 >
-                                                                                  <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
+                                                                                  <span
+                                                                                    style={{
+                                                                                      textAlign:
+                                                                                        "left",
+                                                                                    }}
+                                                                                    class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli"
+                                                                                  >
                                                                                     Choose
                                                                                     where
                                                                                     you
@@ -2777,6 +2782,10 @@ const EditCompaingTwo = () => {
                                                                                                                     <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                                                                                       <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xis6omg x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
                                                                                                                         <div
+                                                                                                                          style={{
+                                                                                                                            textAlign:
+                                                                                                                              "left",
+                                                                                                                          }}
                                                                                                                           class="xmi5d70 x1fvot60 xo1l8bm xxio538 xis6omg xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
                                                                                                                           id="js_14q"
                                                                                                                         >
@@ -3750,12 +3759,28 @@ const EditCompaingTwo = () => {
                                                                               </div>
                                                                               <div class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
                                                                                 <div class="x78zum5 xdt5ytf x1iyjqo2">
-                                                                                  <div class="x1iyjqo2">
+                                                                                  <div
+                                                                                    style={{
+                                                                                      textAlign:
+                                                                                        "left",
+                                                                                    }}
+                                                                                    class="x1iyjqo2"
+                                                                                  >
                                                                                     <a
+                                                                                      style={{
+                                                                                        textAlign:
+                                                                                          "left",
+                                                                                      }}
                                                                                       class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
                                                                                       href="#"
                                                                                     >
-                                                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1qsmy5i xq9mrsl x1h4wwuj xeuugli">
+                                                                                      <span
+                                                                                        style={{
+                                                                                          textAlign:
+                                                                                            "left",
+                                                                                        }}
+                                                                                        class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1qsmy5i xq9mrsl x1h4wwuj xeuugli"
+                                                                                      >
                                                                                         Add
                                                                                         entries
                                                                                         in
@@ -4032,8 +4057,20 @@ const EditCompaingTwo = () => {
                                                                               ></div>
                                                                             </div>
                                                                           </div>
-                                                                          <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
-                                                                            <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli">
+                                                                          <span
+                                                                            style={{
+                                                                              textAlign:
+                                                                                "left",
+                                                                            }}
+                                                                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                          >
+                                                                            <div
+                                                                              style={{
+                                                                                textAlign:
+                                                                                  "left",
+                                                                              }}
+                                                                              class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                            >
                                                                               You
                                                                               can
                                                                               set
@@ -4092,7 +4129,13 @@ const EditCompaingTwo = () => {
                                                                                 ></div>
                                                                               </div>
                                                                               <div class="x6s0dn4 x78zum5 x1q0g3np x2lwn1j xeuugli">
-                                                                                <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                                                <div
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
+                                                                                  class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                                                >
                                                                                   You
                                                                                   could
                                                                                   get
@@ -5563,7 +5606,12 @@ const EditCompaingTwo = () => {
                                                                           <div class="_4qxz">
                                                                             <div class="clearfix _4qx_">
                                                                               <div>
-                                                                                <div>
+                                                                                <div
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
+                                                                                >
                                                                                   Your
                                                                                   audience
                                                                                   selection
@@ -5573,28 +5621,26 @@ const EditCompaingTwo = () => {
                                                                                 </div>
                                                                                 <br />
                                                                               </div>
-                                                                              <div>
-                                                                                <div>
-                                                                                  <i
-                                                                                    alt=""
-                                                                                    data-visualcompletion="css-img"
-                                                                                    class="img style-WtiDD"
-                                                                                    id="style-WtiDD"
-                                                                                  ></i>
-                                                                                  <div class="_3-8x clearfix">
-                                                                                    <div class="_ohe">
-                                                                                      <span>
-                                                                                        Specific
-                                                                                      </span>
-                                                                                    </div>
-                                                                                    <div class="_ohf">
-                                                                                      <span>
-                                                                                        Broad
-                                                                                      </span>
-                                                                                    </div>
+                                                                              <div class="snipcss-7KHog">
+                                                                                <i
+                                                                                  alt=""
+                                                                                  data-visualcompletion="css-img"
+                                                                                  class="img style-oJzSc"
+                                                                                  id="style-oJzSc"
+                                                                                ></i>
+                                                                                <div class="_3-8x clearfix">
+                                                                                  <div class="_ohe">
+                                                                                    <span>
+                                                                                      Specific
+                                                                                    </span>
                                                                                   </div>
-                                                                                  <br />
+                                                                                  <div class="_ohf">
+                                                                                    <span>
+                                                                                      Broad
+                                                                                    </span>
+                                                                                  </div>
                                                                                 </div>
+                                                                                <br />
                                                                               </div>
                                                                             </div>
                                                                             <div
@@ -5650,7 +5696,13 @@ const EditCompaingTwo = () => {
                                                                                     id="style-mgrfE"
                                                                                   ></div>
                                                                                 </div>
-                                                                                <span class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xq9mrsl x1h4wwuj xeuugli">
+                                                                                <span
+                                                                                  style={{
+                                                                                    textAlign:
+                                                                                      "left",
+                                                                                  }}
+                                                                                  class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xq9mrsl x1h4wwuj xeuugli"
+                                                                                >
                                                                                   Estimates
                                                                                   may
                                                                                   vary
@@ -5728,11 +5780,21 @@ const EditCompaingTwo = () => {
                                                                           <div class="xh8yej3 x18d9i69 x1plvlek xryxfnj">
                                                                             <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1jyxor1"></div>
                                                                             <div
+                                                                              style={{
+                                                                                textAlign:
+                                                                                  "left",
+                                                                              }}
                                                                               class="x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 x1l90r2v x1swvt13 x1pi30zi xexx8yu"
                                                                               data-auto-logging-component-type="GeoSection"
                                                                               data-auto-logging-dependent-region=""
                                                                             >
-                                                                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                                              <span
+                                                                                style={{
+                                                                                  textAlign:
+                                                                                    "left",
+                                                                                }}
+                                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli"
+                                                                              >
                                                                                 Estimated
                                                                                 daily
                                                                                 results

@@ -2114,7 +2114,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                 sticky
                 pagination={false}
                 rowKey={(record) => record._id}
-                className="campaign-table"
+                className="campaign-table custom-header "
               />
               {error && <div className="error-message">{error}</div>}
             </div>

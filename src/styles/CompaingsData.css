@@ -4827,11 +4827,11 @@ i.img u {
 }
 
 .hoverbuttonsmyspec {
-  display: none;
+  visibility: hidden;
 }
 
 .mainparentcontainer:hover .hoverbuttonsmyspec {
-  display: block;
+  visibility: visible;
 }
 
 .largetimagepenc {
@@ -7006,4 +7006,32 @@ a:hover {
   height: 16px;
   mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png?_nc_eui2=AeGFp6SFQHRlZl8Kn-izkrKIKQHvfMF0Zi4pAe98wXRmLmFikt8CiA0vEgb6etcPBXoz7pPYPva8qQ1TmKkKnKHs");
   mask-position: -34px -239px;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-vjIoB.style-vjIoB {
+  min-height: 52px;
+}
+#reporting_table_column_delivery.style-LxHwA {
+  max-width: 164px;
+}
+#style-StttM.style-StttM {
+  vertical-align: middle;
+}
+#style-WP4UB.style-WP4UB {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/rmRrb0G9Mn7.png");
+  background-position: 0px -855px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* Add this CSS to your stylesheet */
+.custom-header .ant-table-thead > tr > th {
+  background-color: white; /* Set header background to white */
+}
+.custom-header .ant-table-thead > tr > th:hover {
+  background-color: #f6f6f4;
 }

@@ -945,21 +945,23 @@ const EditChartMain = () => {
               </div>
             </div>
           </Link>
-          <div
-            aria-disabled="false"
-            aria-label="See history (Ctrl+I)"
-            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
-            data-pitloot-persistonclick="false"
-            role="button"
-            tabindex="0"
-            data-auto-logging-id="f19b1362991cda8"
-          >
-            <div class="xbsr9hj">
-              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+          <Link to="/history">
+            <div
+              aria-disabled="false"
+              aria-label="See history (Ctrl+I)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f19b1362991cda8"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
@@ -1017,17 +1019,14 @@ const EditChartMain = () => {
                             <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                               <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                  <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
-                                    ​
+                                  <div
+                                    class="x3nfvp2 x120ccyz x4s1yf2"
+                                    role="presentation"
+                                  >
                                     <div
-                                      class="x3nfvp2 x120ccyz x4s1yf2"
-                                      role="presentation"
-                                    >
-                                      <div
-                                        class="xtwfq29 style-op7Dy"
-                                        id="style-op7Dy"
-                                      ></div>
-                                    </div>
+                                      class="xtwfq29 style-GLwTt"
+                                      id="style-GLwTt"
+                                    ></div>
                                   </div>
                                   <input
                                     aria-autocomplete="list"
@@ -1860,114 +1859,119 @@ const EditChartMain = () => {
                       class="x78zum5 xh8yej3 xl56j7k"
                       id="ads_review_and_edit_tab"
                     >
-                      <div class="x1e56ztr">
-                        <div
-                          class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                          role="tablist"
-                        >
+                      <div
+                        class="x78zum5 xh8yej3 xl56j7k snipcss-kOjz5"
+                        id="ads_review_and_edit_tab"
+                      >
+                        <div class="x1e56ztr">
                           <div
-                            aria-hidden="false"
-                            aria-label="Edit"
-                            aria-selected="true"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
+                            class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
+                            role="tablist"
                           >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
-                              >
+                            <div
+                              aria-hidden="false"
+                              aria-label="Edit"
+                              aria-selected="true"
+                              class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
+                              role="tab"
+                              tabindex="0"
+                              data-tracked="true"
+                              data-interactable="|click|"
+                            >
+                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                 <div
-                                  class="xtwfq29 style-GOn7C"
-                                  id="style-GOn7C"
-                                ></div>
-                              </div>
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
+                                  class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                                  role="presentation"
+                                >
+                                  <div
+                                    class="xtwfq29 style-ObdRa"
+                                    id="style-ObdRa"
+                                  ></div>
+                                </div>
+                                <div
+                                  aria-hidden="true"
+                                  class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                >
+                                  <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
+                                    Edit
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    Edit
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    Edit
+                                  </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div
-                            aria-hidden="false"
-                            aria-label="Review"
-                            aria-selected="false"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
-                              >
+                            <div
+                              aria-hidden="false"
+                              aria-label="Review"
+                              aria-selected="false"
+                              class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
+                              role="tab"
+                              tabindex="0"
+                              data-tracked="true"
+                              data-interactable="|click|"
+                            >
+                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                 <div
-                                  class="xtwfq29 style-PTjfO"
-                                  id="style-PTjfO"
-                                ></div>
-                              </div>
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
+                                  class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                                  role="presentation"
+                                >
+                                  <div
+                                    class="xtwfq29 style-geDQF"
+                                    id="style-geDQF"
+                                  ></div>
+                                </div>
+                                <div
+                                  aria-hidden="true"
+                                  class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                >
+                                  <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                    Review
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    Review
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    Review
+                                  </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div
-                            aria-haspopup="true"
-                            aria-hidden="true"
-                            aria-label="More"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
-                            role="button"
-                            tabindex="-1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                              </div>
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g"
-                                role="presentation"
-                              >
+                            <div
+                              aria-haspopup="true"
+                              aria-hidden="true"
+                              aria-label="More"
+                              class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
+                              role="button"
+                              tabindex="-1"
+                            >
+                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                 <div
-                                  class="xtwfq29 style-qxolY"
-                                  id="style-qxolY"
-                                ></div>
+                                  aria-hidden="true"
+                                  class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                >
+                                  <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                    More
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    More
+                                  </span>
+                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                    More
+                                  </span>
+                                </div>
+                                <div
+                                  class="x3nfvp2 x120ccyz x1heor9g"
+                                  role="presentation"
+                                >
+                                  <div
+                                    class="xtwfq29 style-HLKAT"
+                                    id="style-HLKAT"
+                                  ></div>
+                                </div>
                               </div>
                             </div>
                           </div>

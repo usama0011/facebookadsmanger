@@ -8694,3 +8694,13 @@ html {
   mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/-GyEkqKwLX8.png");
   mask-position: -21px -194px;
 }
+
+.day.disabled {
+  background-color: transparent; /* Gray background for disabled dates */
+  color: #a0a0a0; /* Light gray text color */
+  cursor: not-allowed; /* Change cursor to indicate non-clickable */
+}
+
+.day:hover:not(.disabled) {
+  background-color: #f0f0f0; /* Hover effect only for non-disabled dates */
+}

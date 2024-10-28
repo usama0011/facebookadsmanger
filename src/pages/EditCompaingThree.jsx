@@ -916,21 +916,23 @@ const EditCompaingThree = () => {
               </div>
             </div>
           </Link>
-          <div
-            aria-disabled="false"
-            aria-label="See history (Ctrl+I)"
-            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
-            data-pitloot-persistonclick="false"
-            role="button"
-            tabindex="0"
-            data-auto-logging-id="f19b1362991cda8"
-          >
-            <div class="xbsr9hj">
-              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+          <Link to="/history">
+            <div
+              aria-disabled="false"
+              aria-label="See history (Ctrl+I)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f19b1362991cda8"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
@@ -1779,112 +1781,119 @@ const EditCompaingThree = () => {
                     >
                       <div class="x1e56ztr">
                         <div
-                          class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                          role="tablist"
+                          class="x78zum5 xh8yej3 xl56j7k snipcss-kOjz5"
+                          id="ads_review_and_edit_tab"
                         >
-                          <div
-                            aria-hidden="false"
-                            aria-label="Edit"
-                            aria-selected="true"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                          <div class="x1e56ztr">
+                            <div
+                              class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
+                              role="tablist"
+                            >
                               <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
+                                aria-hidden="false"
+                                aria-label="Edit"
+                                aria-selected="true"
+                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d x1xlr1w8 x1qsmy5i x1k4ywey "
+                                role="tab"
+                                tabindex="0"
+                                data-tracked="true"
+                                data-interactable="|click|"
                               >
-                                <div
-                                  class="xtwfq29 style-GOn7C"
-                                  id="style-GOn7C"
-                                ></div>
+                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                                  <div
+                                    class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                                    role="presentation"
+                                  >
+                                    <div
+                                      class="xtwfq29 style-ObdRa"
+                                      id="style-ObdRa"
+                                    ></div>
+                                  </div>
+                                  <div
+                                    aria-hidden="true"
+                                    class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                  >
+                                    <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
+                                      Edit
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      Edit
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      Edit
+                                    </span>
+                                  </div>
+                                </div>
                               </div>
                               <div
+                                aria-hidden="false"
+                                aria-label="Review"
+                                aria-selected="false"
+                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
+                                role="tab"
+                                tabindex="0"
+                                data-tracked="true"
+                                data-interactable="|click|"
+                              >
+                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                                  <div
+                                    class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
+                                    role="presentation"
+                                  >
+                                    <div
+                                      class="xtwfq29 style-geDQF"
+                                      id="style-geDQF"
+                                    ></div>
+                                  </div>
+                                  <div
+                                    aria-hidden="true"
+                                    class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                  >
+                                    <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                      Review
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      Review
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      Review
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                aria-haspopup="true"
                                 aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                aria-label="More"
+                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
+                                role="button"
+                                tabindex="-1"
                               >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Edit
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            aria-hidden="false"
-                            aria-label="Review"
-                            aria-selected="false"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x1i64zmx "
-                            role="tab"
-                            tabindex="0"
-                            data-tracked="true"
-                            data-clickable="1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s"
-                                role="presentation"
-                              >
-                                <div
-                                  class="xtwfq29 style-PTjfO"
-                                  id="style-PTjfO"
-                                ></div>
-                              </div>
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  Review
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            aria-haspopup="true"
-                            aria-hidden="true"
-                            aria-label="More"
-                            class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su x10l6tqk x47corl x1i64zmx xlshs6z"
-                            role="button"
-                            tabindex="-1"
-                          >
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                              <div
-                                aria-hidden="true"
-                                class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
-                              >
-                                <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
-                                  More
-                                </span>
-                              </div>
-                              <div
-                                class="x3nfvp2 x120ccyz x1heor9g"
-                                role="presentation"
-                              >
-                                <div
-                                  class="xtwfq29 style-qxolY"
-                                  id="style-qxolY"
-                                ></div>
+                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
+                                  <div
+                                    aria-hidden="true"
+                                    class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
+                                  >
+                                    <span class="x6ikm8r x10wlt62 xlyipyv xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid">
+                                      More
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x2b8uid xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      More
+                                    </span>
+                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4 xqtp20y xlshs6z x6ikm8r x10wlt62 x87ps6o x47corl">
+                                      More
+                                    </span>
+                                  </div>
+                                  <div
+                                    class="x3nfvp2 x120ccyz x1heor9g"
+                                    role="presentation"
+                                  >
+                                    <div
+                                      class="xtwfq29 style-HLKAT"
+                                      id="style-HLKAT"
+                                    ></div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -7174,7 +7183,7 @@ const EditCompaingThree = () => {
                                                           <div class="x1qjc9v5 x78zum5 x2lwn1j xeuugli">
                                                             <div class="x78zum5 xdt5ytf x2lwn1j xeuugli x1iyjqo2">
                                                               <div class="x1n2onr6">
-                                                                <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d">
+                                                                <div class="x6s0dn4 x78zum5 xl56j7k x2lwn1j xeuugli x5yr21d snipcss-XAtli">
                                                                   <div
                                                                     data-visualcompletion="ignore"
                                                                     class=""
@@ -7196,19 +7205,19 @@ const EditCompaingThree = () => {
                                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                                                             <div class="x3nfvp2 x2lah0s">
                                                                               <i
-                                                                                class="img style-mRFUD"
+                                                                                class="img style-3Q4Xa"
                                                                                 height="16"
                                                                                 width="16"
                                                                                 alt=""
                                                                                 data-visualcompletion="css-img"
-                                                                                id="style-mRFUD"
+                                                                                id="style-3Q4Xa"
                                                                               ></i>
                                                                             </div>
                                                                           </div>
                                                                         </div>
                                                                         <div
                                                                           aria-hidden="false"
-                                                                          aria-label="Feeds, In-stream ads for videos and reels, Search results"
+                                                                          aria-label="Feeds, In-stream ads for videos and reels"
                                                                           aria-selected="false"
                                                                           class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su xm7lytj x1ykpatu x1i64zmx"
                                                                           role="tab"
@@ -7217,19 +7226,19 @@ const EditCompaingThree = () => {
                                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                                                             <div class="x3nfvp2 x2lah0s">
                                                                               <i
-                                                                                class="img style-borkU"
+                                                                                class="img style-adHoG"
                                                                                 height="16"
                                                                                 width="16"
                                                                                 alt=""
                                                                                 data-visualcompletion="css-img"
-                                                                                id="style-borkU"
+                                                                                id="style-adHoG"
                                                                               ></i>
                                                                             </div>
                                                                           </div>
                                                                         </div>
                                                                         <div
                                                                           aria-hidden="false"
-                                                                          aria-label="Stories and Reels, Apps and sites"
+                                                                          aria-label="Stories and Reels"
                                                                           aria-selected="false"
                                                                           class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su xm7lytj x1ykpatu x1i64zmx"
                                                                           role="tab"
@@ -7238,12 +7247,12 @@ const EditCompaingThree = () => {
                                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                                                             <div class="x3nfvp2 x2lah0s">
                                                                               <i
-                                                                                class="img style-AI8v1"
+                                                                                class="img style-tBc8r"
                                                                                 height="16"
                                                                                 width="16"
                                                                                 alt=""
                                                                                 data-visualcompletion="css-img"
-                                                                                id="style-AI8v1"
+                                                                                id="style-tBc8r"
                                                                               ></i>
                                                                             </div>
                                                                           </div>
@@ -7259,12 +7268,12 @@ const EditCompaingThree = () => {
                                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                                                             <div class="x3nfvp2 x2lah0s">
                                                                               <i
-                                                                                class="x1iffjtl img style-9kaLy"
+                                                                                class="x1iffjtl img style-hstfX"
                                                                                 height="16"
                                                                                 width="16"
                                                                                 alt=""
                                                                                 data-visualcompletion="css-img"
-                                                                                id="style-9kaLy"
+                                                                                id="style-hstfX"
                                                                               ></i>
                                                                             </div>
                                                                           </div>
@@ -7283,87 +7292,10 @@ const EditCompaingThree = () => {
                                                                               role="presentation"
                                                                             >
                                                                               <div
-                                                                                class="xtwfq29 style-MqVjn"
-                                                                                id="style-MqVjn"
+                                                                                class="xtwfq29 style-WEzJL"
+                                                                                id="style-WEzJL"
                                                                               ></div>
                                                                             </div>
-                                                                          </div>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                                <div class="x6s0dn4 x78zum5 x2lwn1j xeuugli x10l6tqk x13vifvy x1ey2m1c xds687c xsgj6o6 xw3qccf">
-                                                                  <div
-                                                                    data-visualcompletion="ignore"
-                                                                    class=""
-                                                                  ></div>
-                                                                  <div id="adgroup-preview-error-hub">
-                                                                    <div
-                                                                      class="x78zum5 xdmi676 x193iq5w x6ikm8r x10wlt62 x1n2onr6 xmi5d70 x1fvot60 xo1l8bm xxio538"
-                                                                      role="tablist"
-                                                                    >
-                                                                      <div
-                                                                        aria-hidden="false"
-                                                                        aria-label="Your ad won't deliver to 3 placements"
-                                                                        aria-selected="false"
-                                                                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su xm7lytj x1ykpatu"
-                                                                        role="tab"
-                                                                        tabindex="0"
-                                                                      >
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                                                                          <div class="x3nfvp2 x2lah0s">
-                                                                            <div
-                                                                              class="x3nfvp2 x120ccyz x14ud04y"
-                                                                              role="presentation"
-                                                                            >
-                                                                              <div
-                                                                                class="xtwfq29 style-zf3nS"
-                                                                                id="style-zf3nS"
-                                                                              ></div>
-                                                                            </div>
-                                                                          </div>
-                                                                          <span class="x3nfvp2 xmix8c7 x1n2onr6">
-                                                                            <span class="x6s0dn4 x9f619 x78zum5 xmix8c7 xl56j7k x16xo4sp x1t137rt x1j85h84 xsyo7zv x16hj40l x4p5aij x1n2onr6 xzolkzo x12go9s9 x1rnf11y xprq8jg xmi5d70 xw23nyj x63nzvj xthj1y xuxw1ft x2b8uid x117nqv4 xx86479">
-                                                                              <div class="xmi5d70 xw23nyj x63nzvj x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
-                                                                                3
-                                                                              </div>
-                                                                            </span>
-                                                                            <div
-                                                                              aria-atomic="true"
-                                                                              aria-live="polite"
-                                                                              role="status"
-                                                                              class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                                              data-sscoverage-ignore="true"
-                                                                            >
-                                                                              Your
-                                                                              ad
-                                                                              won't
-                                                                              deliver
-                                                                              to
-                                                                              3
-                                                                              placements
-                                                                            </div>
-                                                                          </span>
-                                                                        </div>
-                                                                      </div>
-                                                                      <div
-                                                                        aria-haspopup="true"
-                                                                        aria-hidden="true"
-                                                                        aria-label="More"
-                                                                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x6s0dn4 x78zum5 x1q0g3np x2lah0s xl56j7k x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ye3gou xn6708d xo1l8bm xbsr9hj x1v911su xm7lytj x1ykpatu x10l6tqk x47corl x1i64zmx xlshs6z"
-                                                                        role="button"
-                                                                        tabindex="-1"
-                                                                      >
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
-                                                                          <div
-                                                                            class="x3nfvp2 x120ccyz x1heor9g"
-                                                                            role="presentation"
-                                                                          >
-                                                                            <div
-                                                                              class="xtwfq29 style-6bmxa"
-                                                                              id="style-6bmxa"
-                                                                            ></div>
                                                                           </div>
                                                                         </div>
                                                                       </div>

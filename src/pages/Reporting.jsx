@@ -3668,7 +3668,7 @@ const Reporting = () => {
                                                 style={{ height: "100%" }}
                                               >
                                                 <Table
-                                                  className="dddd767t6t"
+                                                  className="dddd767t6t custom-header"
                                                   columns={columns}
                                                   bordered={true}
                                                   dataSource={campaings}

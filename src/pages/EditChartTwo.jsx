@@ -914,21 +914,23 @@ const EditChartTwo = () => {
               </div>
             </div>
           </Link>
-          <div
-            aria-disabled="false"
-            aria-label="See history (Ctrl+I)"
-            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
-            data-pitloot-persistonclick="false"
-            role="button"
-            tabindex="0"
-            data-auto-logging-id="f19b1362991cda8"
-          >
-            <div class="xbsr9hj">
-              <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+          <Link to="/history">
+            <div
+              aria-disabled="false"
+              aria-label="See history (Ctrl+I)"
+              class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x4nwuxf snipcss-KmW2A"
+              data-pitloot-persistonclick="false"
+              role="button"
+              tabindex="0"
+              data-auto-logging-id="f19b1362991cda8"
+            >
+              <div class="xbsr9hj">
+                <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
+                  <div class="xtwfq29 style-i8HGz" id="style-i8HGz"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div class="x10l6tqk xwa60dl">
             <div class="x1rg5ohu x67bb7w">
@@ -1080,7 +1082,7 @@ const EditChartTwo = () => {
                               <div class="x6s0dn4 x78zum5 xwvwv9b x1qughib">
                                 <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli xw3qccf xr9ek0c">
                                   <span class="_3dfi _3dfj">
-                                    sssdddd{campaign?.campaingname}
+                                    {campaign?.campaingname}
                                   </span>
                                 </div>
                               </div>
@@ -2071,7 +2073,11 @@ const EditChartTwo = () => {
                   </div>
                 </div>
                 <div class="_96uw">
-                  <div class="_1_tm _9898" id="campaign_structure_tree_root">
+                  <div
+                    style={{ marginLeft: "10px" }}
+                    class="_1_tm _9898"
+                    id="campaign_structure_tree_root"
+                  >
                     <div class="x2izyaf x178xt8z xcfux6l xso031l xy80clv x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x15bcfbt xolcy6v x3ckiwt xc2dlm9 x9f619 xgif2c7 xod5an3 x1yrsyyn x10b6aqq x1ye3gou xn6708d x1n2onr6 xh8yej3">
                       <div class="xgqtt45 xeq5yr9">
                         <div class="x78zum5 xdt5ytf xdl72j9 x1iyjqo2 xeuugli x1n2onr6 xh8yej3">
@@ -2092,7 +2098,10 @@ const EditChartTwo = () => {
                               </div>
                             </div>
                           </div>
-                          <div class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
+                          <div
+                            style={{ paddingLeft: "0px" }}
+                            class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2"
+                          >
                             <div class="x78zum5 xdt5ytf x1iyjqo2">
                               <div class="x1iyjqo2">
                                 <div class="x1n2onr6 xh8yej3">
@@ -2108,8 +2117,8 @@ const EditChartTwo = () => {
                                               role="presentation"
                                             >
                                               <div
-                                                class="xtwfq29 style-op7Dy"
-                                                id="style-op7Dy"
+                                                class="xtwfq29 style-GLwTt"
+                                                id="style-GLwTt"
                                               ></div>
                                             </div>
                                           </div>
@@ -2967,7 +2976,7 @@ const EditChartTwo = () => {
                             id="style-GayID"
                           >
                             <div
-                              class="x78zum5 xh8yej3 xl56j7k"
+                              class="x78zum5 xh8yej3 xl56j7k snipcss-kOjz5"
                               id="ads_review_and_edit_tab"
                             >
                               <div class="x1e56ztr">
@@ -2983,7 +2992,7 @@ const EditChartTwo = () => {
                                     role="tab"
                                     tabindex="0"
                                     data-tracked="true"
-                                    data-clickable="1"
+                                    data-interactable="|click|"
                                   >
                                     <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                       <div
@@ -2991,8 +3000,8 @@ const EditChartTwo = () => {
                                         role="presentation"
                                       >
                                         <div
-                                          class="xtwfq29 style-GOn7C"
-                                          id="style-GOn7C"
+                                          class="xtwfq29 style-ObdRa"
+                                          id="style-ObdRa"
                                         ></div>
                                       </div>
                                       <div
@@ -3019,7 +3028,7 @@ const EditChartTwo = () => {
                                     role="tab"
                                     tabindex="0"
                                     data-tracked="true"
-                                    data-clickable="1"
+                                    data-interactable="|click|"
                                   >
                                     <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x19lwn94 xl56j7k">
                                       <div
@@ -3027,8 +3036,8 @@ const EditChartTwo = () => {
                                         role="presentation"
                                       >
                                         <div
-                                          class="xtwfq29 style-PTjfO"
-                                          id="style-PTjfO"
+                                          class="xtwfq29 style-geDQF"
+                                          id="style-geDQF"
                                         ></div>
                                       </div>
                                       <div
@@ -3075,8 +3084,8 @@ const EditChartTwo = () => {
                                         role="presentation"
                                       >
                                         <div
-                                          class="xtwfq29 style-qxolY"
-                                          id="style-qxolY"
+                                          class="xtwfq29 style-HLKAT"
+                                          id="style-HLKAT"
                                         ></div>
                                       </div>
                                     </div>

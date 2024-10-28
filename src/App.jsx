@@ -81,6 +81,8 @@ const App = () => {
   };
 
   const renderCalendar = (date) => {
+    const today = new Date();
+
     const year = date.getFullYear();
     const month = date.getMonth();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -107,7 +109,8 @@ const App = () => {
         hoverDate &&
         currentDate > startDate &&
         currentDate <= hoverDate;
-
+      // Check if the current date is in the future
+      const isFutureDate = currentDate > today;
       days.push(
         <div
           key={day}
@@ -115,7 +118,7 @@ const App = () => {
             isSelectedStart ? "selected-start" : ""
           } ${isSelectedEnd ? "selected-end" : ""} ${
             isHovering ? "hover" : ""
-          }`}
+          }  ${isFutureDate ? "disabled" : ""}`}
           onClick={() => handleDayClick(currentDate)}
           onMouseEnter={() => handleDayMouseEnter(currentDate)}
         >

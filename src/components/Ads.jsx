@@ -2296,7 +2296,7 @@ const Ads = ({ campaigns, loading, error }) => {
                 bordered
                 pagination={false}
                 rowKey={(record) => record._id}
-                className="campaign-table yete"
+                className="campaign-table yete custom-header"
               />
               {error && <div className="error-message">{error}</div>}
             </div>

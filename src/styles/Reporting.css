@@ -6762,3 +6762,10 @@ i.img {
   display: inline-block;
 }
 
+/* Add this CSS to your stylesheet */
+.custom-header .ant-table-thead > tr > th {
+  background-color: white; /* Set header background to white */
+}
+.custom-header .ant-table-thead > tr > th:hover {
+  background-color: #f6f6f4;
+}

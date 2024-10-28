@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const History = () => {
   return (
     <div>
-      <div class="_2ww1 _7y7x" style={{ width: "40px" }}>
+      <div class="" style={{ width: "40px" }}>
         <div data-pagelet="AdsSideNavWithContent.react" class="">
           <span
             data-surface-wrapper="1"
@@ -835,23 +835,25 @@ const History = () => {
       </div>
       <div class="_2k0c _96v5 _8_1l snipcss-aflOp style-cvCF7" id="style-cvCF7">
         <div class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x4uap5 x18d9i69 xkhd6sd x1iorvi4 x10l6tqk x187nhsf x1vjfegm x5jzwa4">
-          <div
-            class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
-            icon="[object Object]"
-            aria-label="Close"
-            role="button"
-            tabindex="0"
-          >
-            <i
-              alt=""
-              data-visualcompletion="css-img"
-              class="img style-dzMaK"
-              id="style-dzMaK"
-            ></i>
-            <div class="x1rg5ohu x67bb7w">
-              <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
+          <Link to="/">
+            <div
+              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
+              icon="[object Object]"
+              aria-label="Close"
+              role="button"
+              tabindex="0"
+            >
+              <i
+                alt=""
+                data-visualcompletion="css-img"
+                class="img style-dzMaK"
+                id="style-dzMaK"
+              ></i>
+              <div class="x1rg5ohu x67bb7w">
+                <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
+              </div>
             </div>
-          </div>
+          </Link>
           <div id="INSIGHTS_DRAWER_tip">
             <span>
               <div class="x1rg5ohu x67bb7w">
@@ -1517,7 +1519,6 @@ const History = () => {
                                 >
                                   Open
                                 </div>
-                                s
                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
                                   <div class="x3nfvp2 x2lah0s x1c4vz4f">
                                     <i
