@@ -871,6 +871,7 @@ const Reporting = () => {
   };
 
   const renderCalendar = (date) => {
+    const today = new Date();
     const year = date.getFullYear();
     const month = date.getMonth();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -897,7 +898,7 @@ const Reporting = () => {
         hoverDate &&
         currentDate > startDate &&
         currentDate <= hoverDate;
-
+      const isFutureDate = currentDate > today;
       days.push(
         <div
           key={day}
@@ -905,7 +906,7 @@ const Reporting = () => {
             isSelectedStart ? "selected-start" : ""
           } ${isSelectedEnd ? "selected-end" : ""} ${
             isHovering ? "hover" : ""
-          }`}
+          } ${isFutureDate ? "disabled" : ""}`}
           onClick={() => handleDayClick(currentDate)}
           onMouseEnter={() => handleDayMouseEnter(currentDate)}
         >
@@ -2642,7 +2643,7 @@ const Reporting = () => {
                                                                                   <img
                                                                                     alt=""
                                                                                     class="img"
-                                                                                    src="https://scontent.flhe32-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=cbZqWQHSYPgQ7kNvgGcdRwg&amp;_nc_zt=24&amp;_nc_ht=scontent.flhe32-1.fna&amp;_nc_gid=AQpjgn4sDidbn_tskJo-3as&amp;oh=00_AYA-egN7ADyW2IR3TQ6ovzZhCNPr_pMBtUfp4iygcbifVQ&amp;oe=671D95FF"
+                                                                                    src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=vKYsdSdF4xAQ7kNvgF3c1nu&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AKQsanWB4napMjFiZlUis7Q&oh=00_AYAgve8wc9zQCR8cNC2RNGaQM8Mom8k8q39GlJyHcL0YAQ&oe=671574BF"
                                                                                   />
                                                                                   <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                                                                 </div>
@@ -2693,6 +2694,7 @@ const Reporting = () => {
                                               </div>
 
                                               <div
+                                                style={{ marginLeft: "90px" }}
                                                 class="x6s0dn4 x78zum5 x1nhvcw1 x19lwn94 snipcss0-0-0-1 snipcss-vWNUK"
                                                 role="toolbar"
                                                 data-auto-logging-component-type="GeoToolBar"
@@ -2705,7 +2707,8 @@ const Reporting = () => {
                                                     You have unsaved changes
                                                   </span>
                                                   <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x6lvj10 xq9mrsl x1h4wwuj xeuugli snipcss0-2-2-4">
-                                                    Data refreshed 2 minutes ago
+                                                    Data refreshed less than 1
+                                                    minute ago
                                                   </span>
                                                 </div>
                                                 <div
@@ -3829,12 +3832,18 @@ const Reporting = () => {
                                                                                   <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xqcrz7y x2lah0s">
                                                                                     ​
                                                                                     <div class="x3nfvp2">
-                                                                                      <i
-                                                                                        alt=""
-                                                                                        data-visualcompletion="css-img"
-                                                                                        class="img style-w2xJ1"
-                                                                                        id="style-w2xJ1"
-                                                                                      ></i>
+                                                                                      <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
+                                                                                        ​
+                                                                                        <div
+                                                                                          class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                                          role="presentation"
+                                                                                        >
+                                                                                          <div
+                                                                                            class="xtwfq29 style-GLwTt"
+                                                                                            id="style-GLwTt"
+                                                                                          ></div>
+                                                                                        </div>
+                                                                                      </div>
                                                                                     </div>
                                                                                   </div>
                                                                                   <input

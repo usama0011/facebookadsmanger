@@ -7035,3 +7035,103 @@ a:hover {
 .custom-header .ant-table-thead > tr > th:hover {
   background-color: #f6f6f4;
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-5v1qr.style-5v1qr {
+  width: 1420px;
+  height: 64px;
+  z-index: 1;
+  transform: translate(0px, 388px);
+}
+#style-YWjwc.style-YWjwc {
+  width: 1420px;
+  height: 64px;
+}
+#style-VDZbe.style-VDZbe {
+  height: 64px;
+  left: 0px;
+}
+#style-SsonH.style-SsonH {
+  height: 64px;
+  position: absolute;
+  width: 455px;
+  will-change: transform;
+  z-index: 2;
+  transform: translate(0px, 0px);
+}
+#style-w6zhw.style-w6zhw {
+  height: 64px;
+  width: 49px;
+  left: 0px;
+}
+#style-3eBAA.style-3eBAA {
+  height: 64px;
+  width: 86px;
+  left: 49px;
+}
+#style-CmdtE.style-CmdtE {
+  height: 64px;
+  width: 320px;
+  left: 135px;
+}
+#style-35Q3o.style-35Q3o {
+  width: 12px;
+  height: 12px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png");
+  mask-position: -39px -273px;
+}
+#style-PmWtP.style-PmWtP {
+  height: 64px;
+  left: 455px;
+}
+#style-rOitj.style-rOitj {
+  height: 64px;
+  position: absolute;
+  width: 2497px;
+  will-change: transform;
+  z-index: 0;
+  transform: translate(0px, 0px);
+}
+#style-alVNE.style-alVNE {
+  height: 64px;
+  width: 200px;
+  left: 0px;
+}
+#style-Ubl7H.style-Ubl7H {
+  height: 64px;
+  width: 120px;
+  left: 200px;
+}
+#style-eKBgG.style-eKBgG {
+  height: 64px;
+  width: 146px;
+  left: 320px;
+}
+#style-dT7nS.style-dT7nS {
+  height: 64px;
+  width: 146px;
+  left: 466px;
+}
+#style-JS4HQ.style-JS4HQ {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+#style-xvewR.style-xvewR {
+  height: 64px;
+  width: 146px;
+  left: 612px;
+}
+#style-bkcWE.style-bkcWE {
+  height: 64px;
+  width: 146px;
+  left: 758px;
+}
+#style-piRT3.style-piRT3 {
+  height: 64px;
+  width: 134px;
+  left: 904px;
+}
+#style-XhL7n.style-XhL7n {
+  left: 455px;
+  height: 64px;
+}

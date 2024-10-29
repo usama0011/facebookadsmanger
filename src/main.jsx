@@ -34,6 +34,9 @@ import Overview from "./pages/Overview";
 import TestPage from "./components/TestPage";
 import NewTask from "./components/NewTask";
 import History from "./pages/History";
+import AccountList from "./pages/AccountList";
+import AddAccount from "./pages/AddAccount";
+import EditAccount from "./pages/EditAccount";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -74,6 +77,18 @@ const router = createBrowserRouter([
   {
     path: "/history",
     element: <History />,
+  },
+  {
+    path: "/accountlist",
+    element: <AccountList />,
+  },
+  {
+    path: "/add-account",
+    element: <AddAccount />,
+  },
+  {
+    path: "/edit-account/:id",
+    element: <EditAccount />,
   },
   {
     path: "/editcampaingtwo/:id",

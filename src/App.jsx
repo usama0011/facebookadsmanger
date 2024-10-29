@@ -18,6 +18,7 @@ import SearchAndFilter from "./components/SearchAndFilter";
 const App = () => {
   const [showcalender, setShowCalender] = useState(false);
   const [showmyaccount, setShowmyAccount] = useState(false);
+  const [account, setAccount] = useState({});
   const [showcustomizedbanner, setShowCustumizeBanner] = useState(false);
   const [showcustumizedcoloums, setShowCustumizedlayout] = useState(false);
   const [currentfolder, setcurrentFolder] = useState("Campaings");
@@ -249,7 +250,16 @@ const App = () => {
       setLoading(false);
     }
   };
-
+  const fetchAccount = async () => {
+    try {
+      const response = await axios.get(
+        "https://facebookadsmangerserver.vercel.app/api/currentAccount/67200546611ee42d41ae600f"
+      );
+      setAccount(response.data);
+    } catch (error) {
+      console.error("Error fetching account:", error);
+    }
+  };
   useEffect(() => {
     fetchCampaigns();
   }, []);
@@ -1309,6 +1319,13 @@ const App = () => {
     setShowCustumizedlayout(false);
     setShowCustumizeBanner(false);
   };
+  const handleCencelButton = () => {
+    setShowCustumizedlayout(false);
+    setShowCustumizeBanner(false);
+  };
+  useEffect(() => {
+    fetchAccount();
+  }, []);
 
   return (
     <div>
@@ -2318,50 +2335,63 @@ const App = () => {
                                                     }}
                                                     class="x1i64zmx snipcss0-3-3-6"
                                                   >
-                                                    <div class="snipcss0-4-6-7">
-                                                      <div class="snipcss0-5-7-8">
-                                                        <div
-                                                          class="snipcss0-6-8-9 style-Hv2fJ"
-                                                          id="style-Hv2fJ"
-                                                        >
-                                                          <div class="x1a2a7pz xh8yej3 snipcss0-7-9-10">
-                                                            <div
-                                                              style={{
-                                                                display: "flex",
-                                                                alignItems:
-                                                                  "center",
-                                                                justifyContent:
-                                                                  "space-between",
-                                                              }}
-                                                              aria-disabled="false"
-                                                              class="_af4f snipcss0-8-10-11 style-l5AWB onserparent"
-                                                              id="js_7t"
-                                                              role="button"
-                                                              tabindex="0"
-                                                            >
-                                                              <span
-                                                                style={{
-                                                                  paddingLeft:
-                                                                    "10px",
-                                                                }}
-                                                                class=""
+                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj xm7lytj x1ykpatu xlu9dua x1w2lkzu">
+                                                      <div class=""></div>
+                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                        <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                            <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
+                                                              <div
+                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
+                                                                id="js_8u"
                                                               >
-                                                                <span class="">
-                                                                  <span
-                                                                    onClick={(
-                                                                      previous
-                                                                    ) =>
-                                                                      !previous
-                                                                    }
-                                                                    class="snipcss0-11-13-14 style-JHIWA"
-                                                                    id="style-JHIWA"
+                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1qughib">
+                                                                  <div class="x6s0dn4 x78zum5 x1q0g3np xfex06f x3pnbk8 x2lwn1j xeuugli">
+                                                                    <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
+                                                                      <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8">
+                                                                        <img
+                                                                          alt=""
+                                                                          class="img"
+                                                                          src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
+                                                                        />
+                                                                        <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="xjbqb8w xnalus7 xm81vs4 xu3j5b3 xkh2ocl xwebqov xvyu6v8 xrsgblv x10lij0i xdj266r x11i5rnm xat24cr x1mh8g0r"></div>
+                                                                    <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p xzolkzo x12go9s9 x1rnf11y xprq8jg">
+                                                                      <div
+                                                                        class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl x10cdfl8"
+                                                                        role="presentation"
+                                                                      >
+                                                                        <div
+                                                                          class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                          role="presentation"
+                                                                        >
+                                                                          <div
+                                                                            class="xtwfq29 style-jFVi5"
+                                                                            id="style-jFVi5"
+                                                                          ></div>
+                                                                        </div>
+                                                                        <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                                                      {
+                                                                        account?.currentAccountname
+                                                                      }
+                                                                    </div>
+                                                                  </div>
+                                                                  <div
+                                                                    class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                    role="presentation"
                                                                   >
-                                                                    Peak Leadsm
-                                                                    (1387295665246598)
-                                                                  </span>
-                                                                </span>
-                                                              </span>
-                                                              <span class="_aee5 snipcss0-9-11-15"></span>
+                                                                    <div
+                                                                      class="xtwfq29 style-NEN4Q"
+                                                                      id="style-NEN4Q"
+                                                                    ></div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
                                                             </div>
                                                           </div>
                                                         </div>
@@ -2948,6 +2978,13 @@ const App = () => {
                                                             data-clickable="1"
                                                           >
                                                             <div
+                                                              style={{
+                                                                backgroundColor:
+                                                                  "#0a77c1",
+                                                                color: "white",
+                                                                borderRadius:
+                                                                  "4px",
+                                                              }}
                                                               class="x3nfvp2 x193iq5w xxymvpz snipcss0-8-42-43"
                                                               role="none"
                                                             >
@@ -2961,7 +2998,13 @@ const App = () => {
                                                                 <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3 snipcss0-10-44-45">
                                                                   <div class="x78zum5 snipcss0-11-45-46">
                                                                     <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3 snipcss0-12-46-47">
-                                                                      <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli snipcss0-13-47-48">
+                                                                      <div
+                                                                        style={{
+                                                                          color:
+                                                                            "white",
+                                                                        }}
+                                                                        class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli snipcss0-13-47-48"
+                                                                      >
                                                                         Review
                                                                         and
                                                                         publish
@@ -3183,15 +3226,35 @@ const App = () => {
                                                               <div class="x78zum5 x1nhvcw1 x6s0dn4 x1iyjqo2 x1ye3gou xc9qbxq">
                                                                 <div class="x78zum5 x6s0dn4 x5yr21d">
                                                                   <div class="x1kky2od x6s0dn4 x78zum5 x5yr21d">
-                                                                    <i
-                                                                      alt=""
-                                                                      data-visualcompletion="css-img"
-                                                                      class="img style-qZyZz"
-                                                                      id="style-qZyZz"
-                                                                    ></i>
+                                                                    <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
+                                                                      ​
+                                                                      <div
+                                                                        style={{
+                                                                          marginTop:
+                                                                            "10px",
+                                                                        }}
+                                                                        class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                        role="presentation"
+                                                                      >
+                                                                        <div
+                                                                          class="xtwfq29 style-GLwTt"
+                                                                          id="style-GLwTt"
+                                                                        ></div>
+                                                                      </div>
+                                                                    </div>
                                                                   </div>
                                                                   <div class="x1sliqq">
-                                                                    <div class="x6s0dn4 x78zum5">
+                                                                    <div
+                                                                      onClick={() =>
+                                                                        setshowsearchfilterbar(
+                                                                          (
+                                                                            prev
+                                                                          ) =>
+                                                                            !prev
+                                                                        )
+                                                                      }
+                                                                      class="x6s0dn4 x78zum5"
+                                                                    >
                                                                       <input
                                                                         value={
                                                                           searchQuery
@@ -3293,13 +3356,15 @@ const App = () => {
                                                                     </div>
                                                                   </div>
                                                                 </div>
-                                                                <i
-                                                                  aria-hidden="true"
-                                                                  class="_271o img style-fq3tz"
-                                                                  alt=""
-                                                                  data-visualcompletion="css-img"
-                                                                  id="style-fq3tz"
-                                                                ></i>
+                                                                <div
+                                                                  class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                  role="presentation"
+                                                                >
+                                                                  <div
+                                                                    class="xtwfq29 style-NEN4Q"
+                                                                    id="style-NEN4Q"
+                                                                  ></div>
+                                                                </div>
                                                               </div>
                                                             </button>
                                                           </span>
@@ -4164,6 +4229,7 @@ const App = () => {
                         <div class="_ohf snipcss0-8-9-12">
                           <div class="_51-u snipcss0-9-12-13">
                             <button
+                              onClick={handleCencelButton}
                               class="layerCancel _51-t _9l15 _50zy _50-0 _50z- _5upp _42ft snipcss0-10-13-14"
                               type="button"
                               title="Close"
@@ -4798,6 +4864,7 @@ const App = () => {
                                   id="style-G8CJP"
                                 >
                                   <button
+                                    onClick={handleCencelButton}
                                     type="button"
                                     aria-disabled="false"
                                     class="_271k _271m _1qjd layerCancel _ai7j _ai7k _ai7m snipcss0-13-4002-4003 style-PoAoB"

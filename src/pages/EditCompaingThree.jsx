@@ -110,7 +110,7 @@ const EditCompaingThree = () => {
                                     <img
                                       alt=""
                                       class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
+                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
                                     />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>

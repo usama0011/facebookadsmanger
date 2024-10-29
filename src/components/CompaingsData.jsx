@@ -195,7 +195,7 @@ const CompaingsData = ({
       title: (
         <div className="resulsconainer">
           {" "}
-          <div>Campaing</div>
+          <div>Campaign</div>
           <div>
             <CaretDownOutlined style={{ color: "gray" }} color="red" />
           </div>{" "}
@@ -3958,8 +3958,9 @@ const CompaingsData = ({
                 sticky
                 pagination={false}
                 rowKey={(record) => record._id}
-                className="campaign-table custom-header"
+                className="campaign-table custom-header custom-row-background"
               />
+
               {error && <div className="error-message">{error}</div>}
             </div>
           </div>

@@ -8704,3 +8704,35 @@ html {
 .day:hover:not(.disabled) {
   background-color: #f0f0f0; /* Hover effect only for non-disabled dates */
 }
+
+.showmysearchandfilter {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: red;
+  color: white;
+}
+
+/* Apply background color only to sticky columns on odd rows */
+.custom-row-background
+  .ant-table-tbody
+  > tr:nth-child(even)
+  .ant-table-cell-fix-left,
+.custom-row-background
+  .ant-table-tbody
+  > tr:nth-child(even)
+  .ant-table-cell-fix-right {
+  background-color: #f5f6f8;
+}
+/* Custom styling for prominent left and right borders on each cell */
+.custom-row-background .ant-table-tbody > tr > td,
+.custom-row-background .ant-table-thead > tr > th {
+  border-left: 1px solid #e3e4e4; /* Left border for each cell */
+  border-right: 1px solid #e3e4e4; /* Right border for each cell */
+}
+
+/* Ensure left border is applied to the first column */
+.custom-row-background .ant-table-tbody > tr > td:first-child,
+.custom-row-background .ant-table-thead > tr > th:first-child {
+  border-left: 1px solid #e3e4e4;
+}
