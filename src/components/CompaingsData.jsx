@@ -135,7 +135,7 @@ const CompaingsData = ({
           type="checkbox"
         />
       ),
-      width: 35,
+      width: 60,
       key: "checkbox",
       fixed: "left",
 
@@ -148,7 +148,7 @@ const CompaingsData = ({
     },
     {
       title: "Off/On",
-      width: 50,
+      width: 65,
       dataIndex: "currentSwitch",
       key: "currentSwitch",
       fixed: "left",
@@ -230,12 +230,17 @@ const CompaingsData = ({
               </div>
             </div>
             <div className="hoverbuttonsmyspec">
-              <div class="snipcss-gMhxl style-eyGxB" id="style-eyGxB">
+              {/* Now add here new icons */}
+              <div class="snipcss-tPLtC style-6yM46" id="style-6yM46">
                 <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
                   <div class="_9p_z">
                     <div class="_9p_y" role="toolbar">
                       <div class="x78zum5 x2lwn1j xeuugli">
-                        <span class=" " data-tracked="true" data-clickable="1">
+                        <span
+                          class=" "
+                          data-tracked="true"
+                          data-interactable="|click|"
+                        >
                           <a
                             aria-label="View Charts"
                             class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
@@ -247,6 +252,14 @@ const CompaingsData = ({
                                 to={`/editmainchart/${record._id}`}
                               >
                                 <div class="x6s0dn4 x78zum5">
+                                  <div class="xw3qccf x1gslohp">
+                                    <i
+                                      alt=""
+                                      data-visualcompletion="css-img"
+                                      class="img style-8YKLp"
+                                      id="style-8YKLp"
+                                    ></i>
+                                  </div>
                                   <span
                                     class="ellipsis"
                                     data-tooltip-display="overflow"
@@ -258,7 +271,11 @@ const CompaingsData = ({
                             </span>
                           </a>
                         </span>
-                        <span class=" " data-tracked="true" data-clickable="1">
+                        <span
+                          class=" "
+                          data-tracked="true"
+                          data-interactable="|click|"
+                        >
                           <a
                             aria-label="Edit"
                             class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
@@ -270,6 +287,14 @@ const CompaingsData = ({
                                 to={`/editcampaing/${record._id}`}
                               >
                                 <div class="x6s0dn4 x78zum5">
+                                  <div class="xw3qccf x1gslohp">
+                                    <i
+                                      alt=""
+                                      data-visualcompletion="css-img"
+                                      class="img style-fWEEZ"
+                                      id="style-fWEEZ"
+                                    ></i>
+                                  </div>
                                   <span
                                     class="ellipsis"
                                     data-tooltip-display="overflow"
@@ -281,14 +306,27 @@ const CompaingsData = ({
                             </span>
                           </a>
                         </span>
-                        <span class=" " data-tracked="true" data-clickable="1">
+                        <span
+                          class=""
+                          data-tracked="true"
+                          data-interactable="|click|"
+                        >
                           <a
                             aria-label="Duplicate"
                             class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
                             href="#"
+                            data-auto-logging-id="f49051acc"
                           >
                             <span class="_3qjp">
                               <div class="x6s0dn4 x78zum5">
+                                <div class="xw3qccf x1gslohp">
+                                  <i
+                                    alt=""
+                                    data-visualcompletion="css-img"
+                                    class="img style-KmKci"
+                                    id="style-KmKci"
+                                  ></i>
+                                </div>
                                 <span
                                   class="ellipsis"
                                   data-tooltip-display="overflow"
@@ -299,28 +337,31 @@ const CompaingsData = ({
                             </span>
                           </a>
                         </span>
-                        <span id="ads_manager_dcp_updated_inline_entry_point_nux1z">
+                        <span id="ads_manager_dcp_updated_inline_entry_point_nux2n">
                           <div>
                             <div data-visualcompletion="ignore" class=""></div>
                           </div>
                           <span
                             class=" "
                             data-tracked="true"
-                            data-clickable="1"
+                            data-interactable="|click|"
                           >
                             <a
                               aria-label="Compare"
                               class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
                               href="#"
+                              id="js_6s"
                             >
                               <span class="_3qjp">
                                 <div class="x6s0dn4 x78zum5">
-                                  <span
-                                    class="ellipsis"
-                                    data-tooltip-display="overflow"
-                                  >
-                                    Compare
-                                  </span>
+                                  <div class="xw3qccf x1gslohp">
+                                    <i
+                                      alt=""
+                                      data-visualcompletion="css-img"
+                                      class="img style-64VwN"
+                                      id="style-64VwN"
+                                    ></i>
+                                  </div>
                                 </div>
                               </span>
                             </a>
@@ -332,7 +373,7 @@ const CompaingsData = ({
                 </div>
                 <div
                   aria-busy="false"
-                  aria-controls="js_25"
+                  aria-controls="js_2t"
                   aria-expanded="false"
                   aria-haspopup="menu"
                   class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su xurb0ha x1sxyh0 xexx8yu x18d9i69"
@@ -353,8 +394,8 @@ const CompaingsData = ({
                           role="presentation"
                         >
                           <div
-                            class="xtwfq29 style-EMnwe"
-                            id="style-EMnwe"
+                            class="xtwfq29 style-gkYX5"
+                            id="style-gkYX5"
                           ></div>
                         </div>
                         ​
@@ -429,7 +470,7 @@ const CompaingsData = ({
       ),
       dataIndex: "Delivery",
       key: "Delivery",
-      width: 150,
+      width: 120,
       render: (text) => (
         <div className="campaign-name-cell">
           <div
@@ -473,7 +514,10 @@ const CompaingsData = ({
       key: "Budget",
       width: 140,
       render: (text) => (
-        <div style={{ fontSize: "14px" }} className="budygetcontainer">
+        <div
+          style={{ fontSize: "14px", color: "#1c2b33" }}
+          className="budygetcontainer"
+        >
           ${FormatNumbers(text)}
           <br />
           <span style={{ fontSize: "12px", color: "gray" }}>Daily</span>
@@ -486,7 +530,10 @@ const CompaingsData = ({
       key: "Attributionsetting",
       width: 120,
       render: (text) => (
-        <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
+        <div style={{ fontSize: "14px", color: "#1c2b33" }}>
+          {" "}
+          {truncateText(text, 11)}
+        </div>
       ),
     },
     {
@@ -2340,7 +2387,7 @@ const CompaingsData = ({
   const setLayoutWidth = (() => {
     switch (showPerformanceAndClicks) {
       case "performance":
-        return 3000; // Show only the columns array for 'performance'
+        return 2300; // Show only the columns array for 'performance'
 
       case "performanceandclicks":
         return 3000; // Show columns + additionalColumns for 'performanceandclicks'
@@ -2932,7 +2979,10 @@ const CompaingsData = ({
                                                     class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1iyjqo2"
                                                   >
                                                     Columns:{" "}
-                                                    {showPerformanceAndClicks}
+                                                    {showPerformanceAndClicks ===
+                                                    "performanceandclicks"
+                                                      ? "Performance and clicks"
+                                                      : showPerformanceAndClicks}
                                                   </div>
                                                   <div
                                                     class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
@@ -3971,8 +4021,3 @@ const CompaingsData = ({
 };
 
 export default CompaingsData;
-
-/* p
-
-  
-*/

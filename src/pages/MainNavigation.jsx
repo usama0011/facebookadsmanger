@@ -40,6 +40,9 @@ const MainNavigation = () => {
         <Link to="/accountlist" className="nav-button create-adset-button">
           Account List
         </Link>
+        <Link to="/uploadreporting" className="nav-button view-ads-button">
+          Upload Reporting
+        </Link>
       </div>
     </div>
   );

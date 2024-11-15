@@ -37,6 +37,7 @@ import History from "./pages/History";
 import AccountList from "./pages/AccountList";
 import AddAccount from "./pages/AddAccount";
 import EditAccount from "./pages/EditAccount";
+import UpooadReporting from "./pages/UpooadReporting";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
   {
     path: "/accountlist",
     element: <AccountList />,
+  },
+  {
+    path: "/uploadreporting",
+    element: <UpooadReporting />,
   },
   {
     path: "/add-account",

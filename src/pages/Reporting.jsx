@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Reporting.css";
 import { Link } from "react-router-dom";
-import EditImage from "../assets/edit.png";
+import CuteImage from "../assets/Sir.jpeg";
+
 import "react-date-range/dist/styles.css"; // main style file
 import { CaretDownOutlined } from "@ant-design/icons";
 import "react-date-range/dist/theme/default.css"; // theme css file
 import axios from "axios";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import { Table } from "antd";
+import ReportingTableMain from "../components/ReportingTableMain";
 
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
-
+  const [isFocused, setIsFocused] = useState(false);
+  const [campaignbox, setcampaignbox] = useState(false);
   const baseColumns = [
     {
       title: (
@@ -1486,7 +1489,7 @@ const Reporting = () => {
 
     setSelectedMetrics(updatedSelectedMetrics);
     setLoading(true); // Start the loading animation
-
+    console.log("updated selected matrics", updatedSelectedMetrics);
     // Update the dynamic columns
     const updatedColumns = updatedSelectedMetrics.map((metric) => ({
       title: (
@@ -1583,7 +1586,10 @@ const Reporting = () => {
   };
 
   const columns = [...baseColumns, ...dynamicColumns];
-  console.log(columns);
+  const handleCampaignlogicis = () => {
+    setIsFocused(false);
+    setcampaignbox((prev) => !prev);
+  };
   return (
     <div>
       <div
@@ -1724,7 +1730,7 @@ const Reporting = () => {
                                                               <img
                                                                 alt=""
                                                                 class="img"
-                                                                src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=vKYsdSdF4xAQ7kNvgF3c1nu&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AKQsanWB4napMjFiZlUis7Q&oh=00_AYAgve8wc9zQCR8cNC2RNGaQM8Mom8k8q39GlJyHcL0YAQ&oe=671574BF"
+                                                                src={CuteImage}
                                                               />
                                                               <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                                             </div>
@@ -2535,7 +2541,10 @@ const Reporting = () => {
                                 </div>
 
                                 <div
-                                  style={{ backgroundColor: "#f2f2f2" }}
+                                  style={{
+                                    backgroundImage:
+                                      "linear-gradient(to top, #e6effb, #e9f5ef, #f6eef5)",
+                                  }}
                                   class="_2ww2"
                                 >
                                   <div>
@@ -2643,14 +2652,16 @@ const Reporting = () => {
                                                                                   <img
                                                                                     alt=""
                                                                                     class="img"
-                                                                                    src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=vKYsdSdF4xAQ7kNvgF3c1nu&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AKQsanWB4napMjFiZlUis7Q&oh=00_AYAgve8wc9zQCR8cNC2RNGaQM8Mom8k8q39GlJyHcL0YAQ&oe=671574BF"
+                                                                                    src={
+                                                                                      CuteImage
+                                                                                    }
                                                                                   />
                                                                                   <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                                                                 </div>
                                                                               </div>
                                                                               <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                                                Ali
-                                                                                Hamza
+                                                                                Hackta
+                                                                                LLC
                                                                               </div>
                                                                             </div>
                                                                             <div
@@ -2694,19 +2705,33 @@ const Reporting = () => {
                                               </div>
 
                                               <div
-                                                style={{ marginLeft: "90px" }}
+                                                style={{
+                                                  marginLeft: "90px",
+                                                  textAlign: "left",
+                                                }}
                                                 class="x6s0dn4 x78zum5 x1nhvcw1 x19lwn94 snipcss0-0-0-1 snipcss-vWNUK"
                                                 role="toolbar"
                                                 data-auto-logging-component-type="GeoToolBar"
                                               >
                                                 <div
+                                                  style={{ textAlign: "left" }}
                                                   class="x78zum5 xdt5ytf x2lwn1j xeuugli snipcss0-1-1-2 style-nNLsT"
                                                   id="style-nNLsT"
                                                 >
-                                                  <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xp4054r x1h4wwuj xeuugli snipcss0-2-2-3">
+                                                  <span
+                                                    style={{
+                                                      textAlign: "left",
+                                                    }}
+                                                    class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xp4054r x1h4wwuj xeuugli snipcss0-2-2-3"
+                                                  >
                                                     You have unsaved changes
                                                   </span>
-                                                  <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x6lvj10 xq9mrsl x1h4wwuj xeuugli snipcss0-2-2-4">
+                                                  <span
+                                                    style={{
+                                                      textAlign: "left",
+                                                    }}
+                                                    class="x8t9es0 x1fvot60 xo1l8bm xxio538 x6lvj10 xq9mrsl x1h4wwuj xeuugli snipcss0-2-2-4"
+                                                  >
                                                     Data refreshed less than 1
                                                     minute ago
                                                   </span>
@@ -2954,19 +2979,29 @@ const Reporting = () => {
                                                                             </span>
                                                                           </div>
                                                                         </button>
-                                                                        <button
-                                                                          aria-label="Remove Filter"
-                                                                          class="x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk x1fgtraw xdj266r x11i5rnm xat24cr x1mh8g0r x1a2a7pz x1iorvi4 xsyo7zv xjkvuk6 x16hj40l x1pb7wa4 x1ceikm xycp24c x168nmei x1otrzb0 x1i1ezom xo71vjh"
+                                                                        <div
+                                                                          style={{
+                                                                            marginTop:
+                                                                              "8px",
+                                                                          }}
+                                                                          class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xqcrz7y x2lah0s"
                                                                         >
-                                                                          <div class="xlup9mm x1kky2od">
-                                                                            <i
-                                                                              alt=""
-                                                                              data-visualcompletion="css-img"
-                                                                              class="img style-TPsoW"
-                                                                              id="style-TPsoW"
-                                                                            ></i>
+                                                                          ​
+                                                                          <div class="x3nfvp2">
+                                                                            <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
+                                                                              ​
+                                                                              <div
+                                                                                class="x3nfvp2 x120ccyz x4s1yf2"
+                                                                                role="presentation"
+                                                                              >
+                                                                                <div
+                                                                                  class="xtwfq29 style-GLwTt"
+                                                                                  id="style-GLwTt"
+                                                                                ></div>
+                                                                              </div>
+                                                                            </div>
                                                                           </div>
-                                                                        </button>
+                                                                        </div>
                                                                       </div>
                                                                     </div>
                                                                     <div class="_4u-c _8dtd">
@@ -2982,17 +3017,34 @@ const Reporting = () => {
                                                                             id="js_3h"
                                                                           >
                                                                             <input
-                                                                              class="_58al"
-                                                                              aria-autocomplete="list"
-                                                                              aria-controls="js_2j"
-                                                                              aria-haspopup="listbox"
-                                                                              aria-expanded="false"
-                                                                              role="combobox"
-                                                                              placeholder="Search and filter"
-                                                                              autocomplete="off"
-                                                                              autocorrect="off"
+                                                                              className="search-input"
                                                                               type="text"
-                                                                              value=""
+                                                                              placeholder="Search and filter"
+                                                                              onClick={() =>
+                                                                                setIsFocused(
+                                                                                  true
+                                                                                )
+                                                                              }
+                                                                              style={{
+                                                                                width:
+                                                                                  "100%",
+                                                                                height:
+                                                                                  "20px",
+                                                                                padding:
+                                                                                  "3px 8px",
+                                                                                fontSize:
+                                                                                  "13px",
+                                                                                border:
+                                                                                  isFocused
+                                                                                    ? "2px solid #007bff"
+                                                                                    : "1px solid #ccc",
+                                                                                borderRadius:
+                                                                                  "20px",
+                                                                                outline:
+                                                                                  "none",
+                                                                                transition:
+                                                                                  "border 0.3s ease",
+                                                                              }}
                                                                             />
                                                                           </label>
                                                                         </span>
@@ -3034,6 +3086,10 @@ const Reporting = () => {
                                                             <div class="x1iorvi4 xjkvuk6">
                                                               <div>
                                                                 <div
+                                                                  style={{
+                                                                    backgroundColor:
+                                                                      "white",
+                                                                  }}
                                                                   aria-busy="false"
                                                                   class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1ye3gou xn6708d"
                                                                   role="button"
@@ -3041,6 +3097,10 @@ const Reporting = () => {
                                                                 >
                                                                   <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                                     <div
+                                                                      style={{
+                                                                        backgroundColor:
+                                                                          "white",
+                                                                      }}
                                                                       class="x78zum5"
                                                                       onClick={() =>
                                                                         setShowCalender(
@@ -3048,35 +3108,55 @@ const Reporting = () => {
                                                                         )
                                                                       }
                                                                     >
-                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
+                                                                      <div
+                                                                        style={{
+                                                                          backgroundColor:
+                                                                            "white",
+                                                                        }}
+                                                                        class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3"
+                                                                      >
                                                                         <div
-                                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                                          role="presentation"
+                                                                          aria-busy="false"
+                                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d snipcss-RjeQV"
+                                                                          role="button"
+                                                                          tabindex="0"
+                                                                          data-auto-logging-id="f8c148cd6"
                                                                         >
-                                                                          <div
-                                                                            class="xtwfq29 style-OIfFZ"
-                                                                            id="style-OIfFZ"
-                                                                          ></div>
-                                                                        </div>
-                                                                        <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli x1iyjqo2">
-                                                                          This
-                                                                          month:
-                                                                          {formatDate(
-                                                                            startDate
-                                                                          )}{" "}
-                                                                          -
-                                                                          {formatDate(
-                                                                            endDate
-                                                                          )}
-                                                                        </div>
-                                                                        <div
-                                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                                          role="presentation"
-                                                                        >
-                                                                          <div
-                                                                            class="xtwfq29 style-gWmdY"
-                                                                            id="style-gWmdY"
-                                                                          ></div>
+                                                                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                            <div class="x78zum5">
+                                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
+                                                                                <div
+                                                                                  class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                                                                                  role="presentation"
+                                                                                >
+                                                                                  <div
+                                                                                    class="xtwfq29 style-VkEAs"
+                                                                                    id="style-VkEAs"
+                                                                                  ></div>
+                                                                                </div>
+                                                                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1iyjqo2">
+                                                                                  This
+                                                                                  month:{" "}
+                                                                                  {formatDate(
+                                                                                    startDate
+                                                                                  )}{" "}
+                                                                                  -
+                                                                                  {formatDate(
+                                                                                    endDate
+                                                                                  )}
+                                                                                </div>
+                                                                                <div
+                                                                                  class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
+                                                                                  role="presentation"
+                                                                                >
+                                                                                  <div
+                                                                                    class="xtwfq29 style-qM1vx"
+                                                                                    id="style-qM1vx"
+                                                                                  ></div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </span>
                                                                         </div>
                                                                       </div>
                                                                     </div>
@@ -3413,16 +3493,736 @@ const Reporting = () => {
                                                   </div>
                                                 </div>
                                               </div>
-
-                                              {/* header of table goes here  */}
-
+                                              {isFocused && (
+                                                <div
+                                                  style={{
+                                                    position: "absolute",
+                                                    top: "146px",
+                                                    borderRadius: "10px",
+                                                    padding: "5px 10px",
+                                                    left: "170px",
+                                                    zIndex: 999,
+                                                    backgroundColor: "white",
+                                                    width: "380px",
+                                                    boxShadow:
+                                                      "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
+                                                  }}
+                                                >
+                                                  {/* sir filters */}
+                                                  <div
+                                                    style={{
+                                                      textAlign: "left",
+                                                    }}
+                                                    class="x1q85c4o xyi19xy x1ccrb07 xtf3nb5 x1pc53ja xkjj569 x9f619 x1gslohp x6ikm8r x10wlt62 x1l2rt3b snipcss-xQr4l"
+                                                  >
+                                                    <div
+                                                      width="400"
+                                                      class="uiScrollableArea nofade uiScrollableAreaWithShadow contentAfter"
+                                                    >
+                                                      <div
+                                                        class="uiScrollableAreaWrap scrollable style-H7aSM"
+                                                        id="style-H7aSM"
+                                                      >
+                                                        <div
+                                                          class="uiScrollableAreaBody style-SMWs1"
+                                                          id="style-SMWs1"
+                                                        >
+                                                          <div class="uiScrollableAreaContent">
+                                                            <ul></ul>
+                                                            <ul>
+                                                              <div
+                                                                class="xmix8c7 x1xmf6yo xw3qccf x12nagc xsgj6o6 x6ikm8r x10wlt62 x1iorvi4 xn6708d xjkvuk6 x1ye3gou xlyipyv xuxw1ft"
+                                                                id="FILTER_SECTION_ID"
+                                                              >
+                                                                <span
+                                                                  id="style-SskBX"
+                                                                  class="style-SskBX"
+                                                                >
+                                                                  Filters
+                                                                </span>
+                                                              </div>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-8j3Fy"
+                                                                      class="style-8j3Fy"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Had
+                                                                        delivery
+                                                                      </span>
+                                                                    </span>
+                                                                    <div
+                                                                      class="x1rg5ohu x67bb7w"
+                                                                      id="js_3qb"
+                                                                    >
+                                                                      <div class="x8t9es0 x1fvot60 xxio538 x108nfp6 xq9mrsl x1h4wwuj x1fcty0u x78zum5 xl56j7k x6s0dn4">
+                                                                        <span>
+                                                                          ​
+                                                                        </span>
+                                                                        <div class="xjm9jq1 x78zum5 xl56j7k x6s0dn4">
+                                                                          <div class="x78zum5 x1ypdohk x1uuroth x67bb7w xsgj6o6 xw3qccf">
+                                                                            <div
+                                                                              class="x3nfvp2 x120ccyz x4hq6eo"
+                                                                              role="presentation"
+                                                                            >
+                                                                              <div
+                                                                                class="xtwfq29 style-adIs5"
+                                                                                id="style-adIs5"
+                                                                              ></div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div class="x1lcm9me x1yr5g0i xrt01vj x10y3i5r x9f619 xg7h5cd x1gslohp xw3qccf x12nagc xsgj6o6 snipcss0-0-0-1">
+                                                                  <div
+                                                                    class="_741l _741m snipcss0-1-1-2"
+                                                                    data-testid="typeahead-filter-options-group"
+                                                                  >
+                                                                    <div
+                                                                      style={{
+                                                                        display:
+                                                                          "flex",
+                                                                        alignItems:
+                                                                          "center",
+                                                                        justifyContent:
+                                                                          "space-between",
+                                                                      }}
+                                                                      class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv snipcss0-2-2-3"
+                                                                    >
+                                                                      <span
+                                                                        class="snipcss0-3-3-4 style-mdWUh"
+                                                                        id="style-mdWUh"
+                                                                      >
+                                                                        Name/ID
+                                                                      </span>
+                                                                      <div>
+                                                                        <i
+                                                                          class="_741p img snipcss0-2-2-5 style-CUJXw"
+                                                                          alt=""
+                                                                          data-visualcompletion="css-img"
+                                                                          id="style-CUJXw"
+                                                                        ></i>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <ul class="x2izyaf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x9f619 xdj266r xq8finb x12nagc x16n37ib x6ikm8r x10wlt62 snipcss0-1-1-6">
+                                                                    <li class="snipcss0-2-6-7">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-8-9">
+                                                                          <span
+                                                                            class="snipcss0-5-9-10 style-nabHz"
+                                                                            id="style-nabHz"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-10-11">
+                                                                              Campaign
+                                                                              name
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li class="snipcss0-2-6-12">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-13-14">
+                                                                          <span
+                                                                            class="snipcss0-5-14-15 style-DGQHo"
+                                                                            id="style-DGQHo"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-15-16">
+                                                                              Ad
+                                                                              Set
+                                                                              Name
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li class="snipcss0-2-6-17">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou x1b9h4xk"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-18-19">
+                                                                          <span
+                                                                            class="snipcss0-5-19-20 style-mCrYB"
+                                                                            id="style-mCrYB"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-20-21">
+                                                                              Ad
+                                                                              Name
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li
+                                                                      onClick={() => {
+                                                                        setcampaignbox(
+                                                                          true
+                                                                        );
+                                                                        setIsFocused(
+                                                                          false
+                                                                        );
+                                                                      }}
+                                                                      class="snipcss0-2-6-22"
+                                                                    >
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-23-24">
+                                                                          <span
+                                                                            class="snipcss0-5-24-25 style-WJ7BU"
+                                                                            id="style-WJ7BU"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-25-26">
+                                                                              Campaign
+                                                                              ID
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li class="snipcss0-2-6-27">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-28-29">
+                                                                          <span
+                                                                            class="snipcss0-5-29-30 style-CXNTB"
+                                                                            id="style-CXNTB"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-30-31">
+                                                                              Ad
+                                                                              set
+                                                                              ID
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li class="snipcss0-2-6-32">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-33-34">
+                                                                          <span
+                                                                            class="snipcss0-5-34-35 style-P8e8z"
+                                                                            id="style-P8e8z"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-35-36">
+                                                                              Ad
+                                                                              ID
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li class="snipcss0-2-6-37">
+                                                                      <div
+                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                        data-testid="typeahead-filter-option"
+                                                                      >
+                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-38-39">
+                                                                          <span
+                                                                            class="snipcss0-5-39-40 style-qYOdf"
+                                                                            id="style-qYOdf"
+                                                                          >
+                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-40-41">
+                                                                              Page
+                                                                              ID
+                                                                            </span>
+                                                                          </span>
+                                                                        </span>
+                                                                      </div>
+                                                                    </li>
+                                                                  </ul>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="_741l"
+                                                                  data-testid="typeahead-filter-options-group"
+                                                                >
+                                                                  <div
+                                                                    style={{
+                                                                      display:
+                                                                        "flex",
+                                                                      alignItems:
+                                                                        "center",
+                                                                      justifyContent:
+                                                                        "space-between",
+                                                                    }}
+                                                                    class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv"
+                                                                  >
+                                                                    <span
+                                                                      id="style-WWSPP"
+                                                                      class="style-WWSPP"
+                                                                    >
+                                                                      Delivery
+                                                                    </span>
+                                                                    <div>
+                                                                      <i
+                                                                        class="_741p img style-IUEGB"
+                                                                        alt=""
+                                                                        data-visualcompletion="css-img"
+                                                                        id="style-IUEGB"
+                                                                      ></i>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-mrYaN"
+                                                                      class="style-mrYaN"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Objective
+                                                                      </span>
+                                                                    </span>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-AfC3n"
+                                                                      class="style-AfC3n"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Buying
+                                                                        type
+                                                                      </span>
+                                                                    </span>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-eUwjN"
+                                                                      class="style-eUwjN"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Impression
+                                                                        device
+                                                                      </span>
+                                                                    </span>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-lg9SK"
+                                                                      class="style-lg9SK"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Placement
+                                                                      </span>
+                                                                    </span>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="_741l"
+                                                                  data-testid="typeahead-filter-options-group"
+                                                                >
+                                                                  <div class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv">
+                                                                    <span
+                                                                      id="style-t19YL"
+                                                                      class="style-t19YL"
+                                                                    >
+                                                                      Metrics
+                                                                    </span>
+                                                                    <div class="x1rg5ohu x67bb7w">
+                                                                      <div class="x8t9es0 x1fvot60 xxio538 x108nfp6 xq9mrsl x1h4wwuj x1fcty0u x78zum5 xl56j7k x6s0dn4">
+                                                                        <span>
+                                                                          ​
+                                                                        </span>
+                                                                        <div class="xjm9jq1 x78zum5 xl56j7k x6s0dn4">
+                                                                          <div class="x78zum5 x1ypdohk x1uuroth x67bb7w xsgj6o6 xw3qccf">
+                                                                            <div
+                                                                              class="x3nfvp2 x120ccyz x4hq6eo"
+                                                                              role="presentation"
+                                                                            >
+                                                                              <div
+                                                                                class="xtwfq29 style-e25ZD"
+                                                                                id="style-e25ZD"
+                                                                              ></div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <i
+                                                                    class="_741p img style-OE1d1"
+                                                                    alt=""
+                                                                    data-visualcompletion="css-img"
+                                                                    id="style-OE1d1"
+                                                                  ></i>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="_741l"
+                                                                  data-testid="typeahead-filter-options-group"
+                                                                >
+                                                                  <div class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv">
+                                                                    <span
+                                                                      id="style-Nglii"
+                                                                      class="style-Nglii"
+                                                                    >
+                                                                      Creative
+                                                                    </span>
+                                                                  </div>
+                                                                  <i
+                                                                    class="_741p img style-cvhXs"
+                                                                    alt=""
+                                                                    data-visualcompletion="css-img"
+                                                                    id="style-cvhXs"
+                                                                  ></i>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="_741l"
+                                                                  data-testid="typeahead-filter-options-group"
+                                                                >
+                                                                  <div class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv">
+                                                                    <span
+                                                                      id="style-Qv2Pn"
+                                                                      class="style-Qv2Pn"
+                                                                    >
+                                                                      Audience
+                                                                    </span>
+                                                                  </div>
+                                                                  <i
+                                                                    class="_741p img style-kamoc"
+                                                                    alt=""
+                                                                    data-visualcompletion="css-img"
+                                                                    id="style-kamoc"
+                                                                  ></i>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <div
+                                                                  class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
+                                                                  data-testid="typeahead-filter-option"
+                                                                >
+                                                                  <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                                                                    <span
+                                                                      id="style-SiixR"
+                                                                      class="style-SiixR"
+                                                                    >
+                                                                      <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                        Attribution
+                                                                        setting
+                                                                      </span>
+                                                                    </span>
+                                                                  </span>
+                                                                </div>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div
+                                                        class="uiScrollableAreaTrack"
+                                                        data-interactable="|click|"
+                                                      >
+                                                        <div
+                                                          class="uiScrollableAreaGripper style-LeU6O"
+                                                          id="style-LeU6O"
+                                                        ></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              )}
+                                              {campaignbox && (
+                                                <div
+                                                  style={{
+                                                    position: "absolute",
+                                                    top: "146px",
+                                                    borderRadius: "10px",
+                                                    padding: "5px 10px",
+                                                    left: "170px",
+                                                    zIndex: 999,
+                                                    backgroundColor: "white",
+                                                    width: "240px",
+                                                    textAlign: "left",
+                                                    boxShadow:
+                                                      "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
+                                                  }}
+                                                >
+                                                  <div
+                                                    data-surface="/am"
+                                                    data-interactable="|click||input||keydown||keyup||mouseover||change|"
+                                                    class="_53ij snipcss-i4pIO"
+                                                  >
+                                                    <div class="">
+                                                      <div
+                                                        class="_768c style-NPAzz"
+                                                        role="none"
+                                                        data-auto-logging-id="f5563e0dc"
+                                                        id="style-NPAzz"
+                                                      >
+                                                        <div class="_768d">
+                                                          <span
+                                                            id="style-A6p6w"
+                                                            class="style-A6p6w"
+                                                          >
+                                                            Campaign ID
+                                                          </span>
+                                                        </div>
+                                                        <div class="_768e">
+                                                          <div
+                                                            style={{
+                                                              display: "flex",
+                                                              alignItems:
+                                                                "center",
+                                                              margin: "9px 0px",
+                                                            }}
+                                                            class="_768f"
+                                                          >
+                                                            <div
+                                                              style={{
+                                                                marginRight:
+                                                                  "20px",
+                                                                display: "flex",
+                                                                alignItems:
+                                                                  "center",
+                                                              }}
+                                                            >
+                                                              <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                                                                <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                                                                  <div class="x1n2onr6 x14atkfc">
+                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                                                      <div class=""></div>
+                                                                      <input
+                                                                        aria-checked="true"
+                                                                        aria-disabled="false"
+                                                                        aria-describedby="js_yp"
+                                                                        aria-labelledby="js_yq"
+                                                                        class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm"
+                                                                        id="js_yo"
+                                                                        type="radio"
+                                                                        value="IMAGE_OR_VIDEO"
+                                                                        checked=""
+                                                                        name="js_yj"
+                                                                      />
+                                                                      <div class="x13dflua xnnyp6c x12w9bfk x78zum5 x6o7n8i x1hc1fzr x3oybdh">
+                                                                        <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x140t73q x19bke7z"></div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <span
+                                                                style={{
+                                                                  marginLeft:
+                                                                    "10px",
+                                                                }}
+                                                              >
+                                                                is
+                                                              </span>
+                                                            </div>
+                                                            <div
+                                                              style={{
+                                                                display: "flex",
+                                                                alignItems:
+                                                                  "center",
+                                                              }}
+                                                            >
+                                                              <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xqcrz7y x2lah0s">
+                                                                <div class="x1rg5ohu x1n2onr6 x3oybdh">
+                                                                  <div class="x1n2onr6 x14atkfc">
+                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x10cdfl8 xis6omg x9f619 xexx8yu x4uap5 x18d9i69 xkhd6sd xl56j7k xxk0z11 xvy4d1p">
+                                                                      <div class="x1s85apg"></div>
+                                                                      <input
+                                                                        aria-checked="false"
+                                                                        aria-disabled="true"
+                                                                        aria-describedby="js_13q"
+                                                                        aria-labelledby="js_13r"
+                                                                        class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm x47corl"
+                                                                        disabled=""
+                                                                        id="js_13p"
+                                                                        type="radio"
+                                                                        value="INSTAGRAM_PROFILE"
+                                                                        name="js_132"
+                                                                      />
+                                                                      <div class="x13dflua xnnyp6c x12w9bfk x78zum5 xg01cxk x1f85oc2 x6o7n8i">
+                                                                        <div class="xsmyaan x1kpxq89 xzolkzo x12go9s9 x1rnf11y xprq8jg xo1l8bm x22siqj xis6omg"></div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <span
+                                                                style={{
+                                                                  marginLeft:
+                                                                    "10px",
+                                                                }}
+                                                              >
+                                                                is not
+                                                              </span>
+                                                            </div>
+                                                          </div>
+                                                          <div class="_768g">
+                                                            <div class="_6-m8">
+                                                              <div class="xktsk01">
+                                                                <span
+                                                                  class="_6-kx _6-ky _58ah"
+                                                                  placeholder="Typing IDs to select campaigns"
+                                                                >
+                                                                  <label
+                                                                    style={{
+                                                                      borderRadius:
+                                                                        "5px",
+                                                                    }}
+                                                                    class="_58ak _3ct8"
+                                                                    id="js_7v8"
+                                                                  >
+                                                                    <input
+                                                                      style={{
+                                                                        width:
+                                                                          "190px",
+                                                                        padding:
+                                                                          "10px",
+                                                                        textAlign:
+                                                                          "left",
+                                                                        border:
+                                                                          "2px solid #0A78BE",
+                                                                        borderRadius:
+                                                                          "5px",
+                                                                        overflow:
+                                                                          "hidden",
+                                                                      }}
+                                                                      class="_58al"
+                                                                      placeholder="Typing IDs to select campaigns"
+                                                                      type="text"
+                                                                    />
+                                                                  </label>
+                                                                </span>
+                                                              </div>
+                                                              <ul></ul>
+                                                            </div>
+                                                          </div>
+                                                          <br />
+                                                          <div
+                                                            style={{
+                                                              display: "flex",
+                                                              alignSelf:
+                                                                "flex-end",
+                                                            }}
+                                                            class="x78zum5 x1qughib x2lwn1j xeuugli"
+                                                          >
+                                                            <div class="_768h">
+                                                              <div
+                                                                style={{
+                                                                  marginRight:
+                                                                    "10px",
+                                                                }}
+                                                                class="x3nfvp2 x193iq5w xxymvpz x1i64zmx"
+                                                                role="none"
+                                                              >
+                                                                <div
+                                                                  onClick={() =>
+                                                                    setcampaignbox(
+                                                                      (e) => !e
+                                                                    )
+                                                                  }
+                                                                  aria-busy="false"
+                                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm x140t73q x19bke7z x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
+                                                                  role="button"
+                                                                  tabindex="0"
+                                                                >
+                                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                    <div class="x78zum5">
+                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                        <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                                                          Apply
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </span>
+                                                                </div>
+                                                              </div>
+                                                              <div
+                                                                class="x3nfvp2 x193iq5w xxymvpz"
+                                                                role="none"
+                                                              >
+                                                                <div
+                                                                  aria-busy="false"
+                                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
+                                                                  role="button"
+                                                                  tabindex="0"
+                                                                >
+                                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                    <div class="x78zum5">
+                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                        <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                                                          Cancel
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </span>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              )}
                                               <div
                                                 style={{
                                                   backgroundColor: "white",
-                                                  borderTopLeftRadius: "10px",
-                                                  borderTopRightRadius: "10px",
                                                 }}
-                                                class="_4u-c snipcss-UFvW9"
+                                                class="_4u-c"
                                               >
                                                 <div class="_941t">
                                                   <div
@@ -3436,29 +4236,31 @@ const Reporting = () => {
                                                     >
                                                       <div class="x78zum5 xdt5ytf xdl72j9 x1iyjqo2 xeuugli x1n2onr6 xh8yej3">
                                                         <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s style-cADvH"
+                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s style-5MW5s"
                                                           data-sscoverage-ignore="true"
-                                                          id="style-cADvH"
+                                                          id="style-5MW5s"
                                                         >
                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                             <div class="x1iyjqo2">
-                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av">
+                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x65s2av">
                                                                 <label
-                                                                  id="js_2e"
-                                                                  for="js_2d"
+                                                                  id="js_1a"
+                                                                  for="js_19"
                                                                 >
-                                                                  <span class="x8t9es0 x1fvot60 xxio538 x4hq6eo xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
-                                                                    view type
-                                                                    selector for
-                                                                    ads
-                                                                    reporting
+                                                                  <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
+                                                                    <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
+                                                                      view type
+                                                                      selector
+                                                                      for ads
+                                                                      reporting
+                                                                    </span>
                                                                   </span>
                                                                 </label>
                                                               </div>
                                                             </div>
                                                           </div>
                                                         </div>
-                                                        <div class="xhk9q7s x1otrzb0 xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
+                                                        <div class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
                                                           <div class="x78zum5 xdt5ytf x1iyjqo2">
                                                             <div class="x1iyjqo2">
                                                               <div class="xh8yej3">
@@ -3467,22 +4269,22 @@ const Reporting = () => {
                                                                   aria-expanded="false"
                                                                   aria-haspopup="listbox"
                                                                   aria-invalid="false"
-                                                                  aria-labelledby="js_2e js_2h"
-                                                                  aria-owns="js_2c"
+                                                                  aria-labelledby="js_1a js_1d"
+                                                                  aria-owns="js_18"
                                                                   class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1ypdohk xh8yej3 x1t137rt"
-                                                                  id="js_2d"
+                                                                  id="js_19"
                                                                   role="combobox"
                                                                   tabindex="0"
                                                                 >
                                                                   <div class="x1n2onr6 xh8yej3">
-                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xb9moi8 xfth1om x21b0me xmls85d xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1gzqxud x108nfp6 xm7lytj x1ykpatu xlu9dua x1w2lkzu">
+                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj xm7lytj x1ykpatu xlu9dua x1w2lkzu">
                                                                       <div class=""></div>
                                                                       <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                                         <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
                                                                           <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                            <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xqcrz7y x2lah0s">
+                                                                            <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
                                                                               ​
-                                                                              <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xbmpl8g x9otpla x1wsgfga">
+                                                                              <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r xbmpl8g x9otpla x1wsgfga">
                                                                                 <div
                                                                                   class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl"
                                                                                   role="presentation"
@@ -3490,16 +4292,16 @@ const Reporting = () => {
                                                                                   <i
                                                                                     alt=""
                                                                                     data-visualcompletion="css-img"
-                                                                                    class="img style-oW4Bx"
-                                                                                    id="style-oW4Bx"
+                                                                                    class="img style-4NahS"
+                                                                                    id="style-4NahS"
                                                                                   ></i>
                                                                                 </div>
                                                                               </div>
                                                                             </div>
-                                                                            <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 x108nfp6 x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe x8t9es0 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
+                                                                            <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
                                                                               <div
-                                                                                class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
-                                                                                id="js_34"
+                                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
+                                                                                id="js_1d"
                                                                               >
                                                                                 Pivot
                                                                                 Table
@@ -3507,21 +4309,21 @@ const Reporting = () => {
                                                                             </div>
                                                                           </div>
                                                                         </div>
-                                                                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl xqcrz7y x2lah0s">
+                                                                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
                                                                           ​
                                                                           <div
                                                                             class="x3nfvp2 x120ccyz x1heor9g"
                                                                             role="presentation"
                                                                           >
                                                                             <div
-                                                                              class="xtwfq29 style-rIxwB"
-                                                                              id="style-rIxwB"
+                                                                              class="xtwfq29 style-MqSxO"
+                                                                              id="style-MqSxO"
                                                                             ></div>
                                                                           </div>
                                                                         </div>
                                                                       </div>
                                                                     </div>
-                                                                    <div class="xb9moi8 xfth1om x21b0me xmls85d xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
                                                                   </div>
                                                                 </div>
                                                               </div>
@@ -3535,17 +4337,15 @@ const Reporting = () => {
                                                       >
                                                         <div
                                                           aria-busy="false"
-                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x1si8nl4 x1kdmppe x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
+                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
                                                           role="button"
-                                                          tabindex="-1"
-                                                          aria-disabled="true"
-                                                          id="js_tm"
+                                                          tabindex="0"
                                                         >
-                                                          <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                             <div class="x78zum5">
                                                               <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
-                                                                  Group
+                                                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                                                  Ungroup
                                                                   Breakdowns
                                                                 </div>
                                                               </div>
@@ -3556,62 +4356,63 @@ const Reporting = () => {
                                                     </div>
                                                     <div class="x1iyjqo2 xs83m0k xdl72j9"></div>
                                                     <div
-                                                      aria-busy="false"
-                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x1si8nl4 x1kdmppe x1y1aw1k xwib8y2 x1pi30zi x1ye3gou snipcss-ld3oV"
-                                                      role="button"
-                                                      tabindex="-1"
-                                                      aria-disabled="true"
-                                                      id="js_1mq"
-                                                      data-auto-logging-id="fafa914433fc9"
+                                                      class="x3nfvp2 x193iq5w xxymvpz"
+                                                      role="none"
                                                     >
-                                                      <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                        <div class="x78zum5">
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                                              <i
-                                                                alt=""
-                                                                data-visualcompletion="css-img"
-                                                                class="img style-NEqXX"
-                                                                id="style-NEqXX"
-                                                              ></i>
-                                                            </div>
-                                                            <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
-                                                              Reset Column
-                                                              Widths
+                                                      <div
+                                                        aria-busy="false"
+                                                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1pi30zi x1ye3gou"
+                                                        role="button"
+                                                        tabindex="0"
+                                                      >
+                                                        <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                          <div class="x78zum5">
+                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                              <div class="x3nfvp2 x2lah0s x1c4vz4f">
+                                                                <i
+                                                                  alt=""
+                                                                  data-visualcompletion="css-img"
+                                                                  class="img style-QE6kk"
+                                                                  id="style-QE6kk"
+                                                                ></i>
+                                                              </div>
+                                                              <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                                                Reset Column
+                                                                Widths
+                                                              </div>
                                                             </div>
                                                           </div>
-                                                        </div>
-                                                      </span>
+                                                        </span>
+                                                      </div>
                                                     </div>
                                                     <div
-                                                      class="x3oybdh xuxw1ft x1lliihq xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb"
+                                                      class="x3oybdh xuxw1ft x1iknuni xw9jwym x1e2iszw xg0tal0 x1lliihq x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
                                                       role="group"
                                                     >
                                                       <div
-                                                        class="x3nfvp2 x193iq5w xxymvpz style-hdOyp"
+                                                        class="x3nfvp2 x193iq5w xxymvpz style-oFP3Z"
                                                         role="none"
-                                                        id="style-hdOyp"
+                                                        id="style-oFP3Z"
                                                       >
                                                         <div
                                                           aria-busy="false"
-                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1pi30zi x1ye3gou snipcss-n3oft style-ZTMWd"
+                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1pi30zi x1ye3gou style-vK6Pc"
                                                           role="button"
                                                           tabindex="0"
-                                                          data-auto-logging-id="f34a02e38c126f"
-                                                          id="style-ZTMWd"
+                                                          id="style-vK6Pc"
                                                         >
-                                                          <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                             <div class="x78zum5">
                                                               <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
                                                                 <div class="x3nfvp2 x2lah0s x1c4vz4f">
                                                                   <i
                                                                     alt=""
                                                                     data-visualcompletion="css-img"
-                                                                    class="img style-Bh8PG"
-                                                                    id="style-Bh8PG"
+                                                                    class="img style-4MDXR"
+                                                                    id="style-4MDXR"
                                                                   ></i>
                                                                 </div>
-                                                                <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
+                                                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                                   Format
                                                                 </div>
                                                               </div>
@@ -3620,30 +4421,29 @@ const Reporting = () => {
                                                         </div>
                                                       </div>
                                                       <div
-                                                        class="x3nfvp2 x193iq5w xxymvpz style-V4cID"
+                                                        class="x3nfvp2 x193iq5w xxymvpz style-oYfsa"
                                                         role="none"
-                                                        id="style-V4cID"
+                                                        id="style-oYfsa"
                                                       >
                                                         <div
                                                           aria-busy="false"
-                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 x1e4gqcv x1y1aw1k xwib8y2 x1pi30zi x1ye3gou snipcss-REdM5 style-3mDzk"
+                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj xk7z8go x1y1aw1k xwib8y2 x1pi30zi x1ye3gou style-GCvYv"
                                                           role="button"
                                                           tabindex="0"
-                                                          id="js_n7"
-                                                          data-auto-logging-id="f31ac18e838b808"
+                                                          id="js_ar"
                                                         >
-                                                          <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                             <div class="x78zum5">
                                                               <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
                                                                 <div class="x3nfvp2 x2lah0s x1c4vz4f">
                                                                   <i
                                                                     alt=""
                                                                     data-visualcompletion="css-img"
-                                                                    class="img style-SaolC"
-                                                                    id="style-SaolC"
+                                                                    class="img style-qV8vi"
+                                                                    id="style-qV8vi"
                                                                   ></i>
                                                                 </div>
-                                                                <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
+                                                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                                   Customise
                                                                 </div>
                                                               </div>
@@ -3655,42 +4455,19 @@ const Reporting = () => {
                                                   </div>
                                                 </div>
                                               </div>
-                                              {/* Table Goes here brothere */}
-                                              {loading && (
-                                                <div className="loading-bar-container">
-                                                  <div
-                                                    className="loading-bar"
-                                                    style={{
-                                                      width: `${loadingProgress}%`,
-                                                    }}
-                                                  ></div>
-                                                </div>
-                                              )}
                                               <div
-                                                className="campaign-table-container dddd767t6t"
-                                                style={{ height: "100%" }}
+                                                className="mainbarkks"
+                                                style={{
+                                                  width: "100%",
+                                                  height: "480px",
+                                                  backgroundColor: "white",
+                                                  textAlign: "left",
+                                                  overflowX: "auto", // Enables horizontal scrolling
+                                                  overflowY: "auto", // Enables vertical scrolling
+                                                  whiteSpace: "nowrap", // Prevents table cells from wrapping, ensuring the table extends horizontally
+                                                }}
                                               >
-                                                <Table
-                                                  className="dddd767t6t custom-header"
-                                                  columns={columns}
-                                                  bordered={true}
-                                                  dataSource={campaings}
-                                                  size="large"
-                                                  sticky
-                                                  pagination={false}
-                                                  rowKey={(record) =>
-                                                    record._id
-                                                  }
-                                                  scroll={{
-                                                    x: columns.length * 150,
-                                                    y: 2000,
-                                                  }}
-                                                />
-                                                {error && (
-                                                  <div className="error-message">
-                                                    {error}
-                                                  </div>
-                                                )}
+                                                <ReportingTableMain />
                                               </div>
                                             </div>
                                             <div>
@@ -3886,16 +4663,17 @@ const Reporting = () => {
                                                                           drop-down
                                                                           menu
                                                                         </div>
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3 snipcss0-5-48-50">
                                                                           <div
-                                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f snipcss0-6-50-51"
                                                                             role="presentation"
                                                                           >
                                                                             <div
-                                                                              class="xtwfq29 style-67XPZ"
-                                                                              id="style-67XPZ"
+                                                                              class="xtwfq29 snipcss0-7-51-52 style-awlEy"
+                                                                              id="style-awlEy"
                                                                             ></div>
                                                                           </div>
+                                                                          ​
                                                                         </div>
                                                                       </div>
                                                                     </span>
@@ -4185,9 +4963,16 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   )
                                                                                                                 }
-                                                                                                                checked={selectedMetrics.includes(
-                                                                                                                  metric
-                                                                                                                )} // Keeps checkbox state in sync
+                                                                                                                checked={
+                                                                                                                  selectedMetrics.includes(
+                                                                                                                    metric
+                                                                                                                  ) ||
+                                                                                                                  [
+                                                                                                                    "Ad creative",
+                                                                                                                  ].includes(
+                                                                                                                    metric
+                                                                                                                  )
+                                                                                                                } // Keeps checkbox state in sync
                                                                                                               />{" "}
                                                                                                               <span
                                                                                                                 style={{
@@ -4339,7 +5124,7 @@ const Reporting = () => {
                                                                                                           class="x1iyjqo2 xamitd3"
                                                                                                           data-sscoverage-ignore="true"
                                                                                                         >
-                                                                                                          <div class="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
+                                                                                                          <div className="x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x65s2av x78zum5 xeuugli">
                                                                                                             <div
                                                                                                               style={{
                                                                                                                 display:
@@ -4347,7 +5132,7 @@ const Reporting = () => {
                                                                                                                 alignItems:
                                                                                                                   "center",
                                                                                                               }}
-                                                                                                              class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
+                                                                                                              className="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2"
                                                                                                               id="js_2t"
                                                                                                             >
                                                                                                               <input
@@ -4373,10 +5158,23 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   )
                                                                                                                 }
-                                                                                                                checked={selectedMetrics.includes(
-                                                                                                                  metric
-                                                                                                                )} // Keeps checkbox state in sync
-                                                                                                              />{" "}
+                                                                                                                checked={
+                                                                                                                  selectedMetrics.includes(
+                                                                                                                    metric
+                                                                                                                  ) ||
+                                                                                                                  [
+                                                                                                                    "Ad creative",
+                                                                                                                    "Delivery Reach",
+                                                                                                                    "Impressions",
+                                                                                                                    "Reach",
+                                                                                                                    "Frequency",
+                                                                                                                    "Delivery",
+                                                                                                                    "Results",
+                                                                                                                  ].includes(
+                                                                                                                    metric
+                                                                                                                  )
+                                                                                                                }
+                                                                                                              />
                                                                                                               <span
                                                                                                                 style={{
                                                                                                                   fontSize:

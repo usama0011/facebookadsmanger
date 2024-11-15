@@ -8736,3 +8736,50 @@ html {
 .custom-row-background .ant-table-thead > tr > th:first-child {
   border-left: 1px solid #e3e4e4;
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-6yM46.style-6yM46 {
+  display: flex;
+}
+#style-8YKLp.style-8YKLp {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/_gM6dN5ovJM.png");
+  background-position: -272px -266px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#style-fWEEZ.style-fWEEZ {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/_gM6dN5ovJM.png");
+  background-position: -254px -367px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#style-KmKci.style-KmKci {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/_gM6dN5ovJM.png");
+  background-position: -311px -266px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#style-64VwN.style-64VwN {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/_gM6dN5ovJM.png");
+  background-position: -26px -384px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#style-gkYX5.style-gkYX5 {
+  width: 16px;
+  height: 16px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png");
+  mask-position: -34px -239px;
+}
