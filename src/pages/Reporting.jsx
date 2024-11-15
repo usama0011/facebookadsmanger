@@ -4459,7 +4459,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "480px",
+                                                  height: "690px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
@@ -4475,7 +4475,7 @@ const Reporting = () => {
                                                 <div class="">
                                                   <div
                                                     style={{
-                                                      height: "100vh",
+                                                      height: "90vh",
                                                       width: "100%",
                                                     }}
                                                     class="style-P4IHn"
@@ -4822,6 +4822,9 @@ const Reporting = () => {
                                                                       "none",
                                                                     msOverflowStyle:
                                                                       "none",
+
+                                                                    height:
+                                                                      "70vh",
                                                                   }}
                                                                   class="_5jln style-HBNw4"
                                                                   id="style-HBNw4"

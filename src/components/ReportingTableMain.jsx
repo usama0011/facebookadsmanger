@@ -4,10 +4,7 @@ const ReportingTableMain = () => {
   return (
     <>
       <div style={{ position: "relative", overflowX: "scroll" }}>
-        <div
-          style={{ overflowX: "scroll" }}
-          class="xw2csxc x1odjw0f xh8yej3 x18d9i69 snipcss-dcyIp"
-        >
+        <div class="xw2csxc x1odjw0f xh8yej3 x18d9i69 snipcss-dcyIp">
           <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1jyxor1"></div>
 
           <div class="x6ikm8r x10wlt62">
@@ -24768,13 +24765,13 @@ const ReportingTableMain = () => {
       <div
         style={{
           position: "fixed",
-          top: "650px",
+          top: "870px",
           borderBottomLeftRadius: "5px",
           borderBottomRightRadius: "5px",
           backgroundColor: "white",
           left: "0",
           marginLeft: "81px",
-          width: "1118px",
+          width: "74.9%",
           height: "70px",
           zIndex: "999",
           boxShadow:
@@ -24785,7 +24782,7 @@ const ReportingTableMain = () => {
       >
         <div
           style={{
-            width: "1118px",
+            width: "100%",
             height: "70px",
             margin: "0px auto",
             borderBottomLeftRadius: "5px",
@@ -24884,6 +24881,7 @@ const ReportingTableMain = () => {
                   </div>
                 </div>
                 <div
+                  style={{ backgroundColor: "white" }}
                   class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-s3CX9"
                   id="style-s3CX9"
                 >
@@ -24952,7 +24950,11 @@ const ReportingTableMain = () => {
                     </div>
                   </div>
                 </div>
-                <div class="_4lg0 _4h2m _3cer style-Mm6bt" id="style-Mm6bt">
+                <div
+                  style={{ backgroundColor: "white" }}
+                  class="_4lg0 _4h2m _3cer style-Mm6bt"
+                  id="style-Mm6bt"
+                >
                   <div class="_4lgc _4h2u style-y1ogy" id="style-y1ogy">
                     <div class="_4lgd _4h2w">
                       <div class="_4lge _4h2x">
