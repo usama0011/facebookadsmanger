@@ -1018,7 +1018,8 @@ const ReportingTableMain = () => {
                                                                         id="style-IP6p5"
                                                                         class="style-IP6p5"
                                                                       >
-                                                                        Impressions
+                                                                        Links
+                                                                        clicks
                                                                       </div>
                                                                     </div>
                                                                   </div>
@@ -1597,8 +1598,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            Facebook
-                                                                            Stories
+                                                                            Search
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -1698,7 +1698,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            3
+                                                                            7,688
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -1765,7 +1765,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs3.18
+                                                                              $3,086
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -1888,8 +1888,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             Device:
-                                                                            Android
-                                                                            Smartphone
+                                                                            iPhone
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -1959,7 +1958,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            3
+                                                                            4288
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -2026,7 +2025,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs3.18
+                                                                              $987.60
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -2132,9 +2131,8 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            Facebook
-                                                                            profile
-                                                                            feed
+                                                                            video
+                                                                            feeds
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -2234,7 +2232,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            8
+                                                                            3,998
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -2301,7 +2299,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs3.16
+                                                                              $1.605
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -2495,7 +2493,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            3
+                                                                            715
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -2562,7 +2560,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs1.24
+                                                                              $225
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -2663,13 +2661,9 @@ const ReportingTableMain = () => {
                                                                                 data-tooltip-display="overflow"
                                                                                 id="js_18r"
                                                                               >
-                                                                                Roofing
-                                                                                -
-                                                                                Tonic
-                                                                                MAX
-                                                                                MEDIA
-                                                                                T
-                                                                                [08/13/2024]
+                                                                                Solar
+                                                                                Hackta
+                                                                                Jasmine
                                                                               </div>
                                                                             </a>
                                                                           </span>
@@ -2801,7 +2795,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            3,646
+                                                                            30,751
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -2874,7 +2868,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs4,200.67
+                                                                              $12,345
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -3153,7 +3147,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs1,391.85
+                                                                              $1,391.85
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -3238,13 +3232,9 @@ const ReportingTableMain = () => {
                                                                                 data-tooltip-display="overflow"
                                                                                 id="js_19n"
                                                                               >
-                                                                                Roofing
-                                                                                -
-                                                                                Tonic
-                                                                                MAX
-                                                                                MEDIA
-                                                                                T
-                                                                                [08/13/2024]
+                                                                                Solar
+                                                                                Hackta
+                                                                                Jasmine
                                                                               </div>
                                                                             </a>
                                                                           </span>
@@ -3406,7 +3396,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            3,646
+                                                                            30,751
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -3479,7 +3469,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs4,200.67
+                                                                              $12,345
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -3672,7 +3662,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            14
+                                                                            2,058
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -3739,7 +3729,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs4.46
+                                                                              $474.05s
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -3862,7 +3852,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             Device:
-                                                                            iPad
+                                                                            Desktop
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -3932,7 +3922,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            1
+                                                                            807
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -3999,7 +3989,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs6.99
+                                                                              $543
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -4105,10 +4095,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            Overlay
-                                                                            ads
-                                                                            in
-                                                                            Reels
+                                                                            Marketplace
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -4208,7 +4195,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            311
+                                                                            3,690
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -4275,7 +4262,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs101.49
+                                                                              $1481.4
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -4398,7 +4385,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             Device:
-                                                                            Other
+                                                                            Desktop
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -4468,7 +4455,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            6
+                                                                            969
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -4535,7 +4522,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs1.24
+                                                                              $652
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -4729,7 +4716,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            287
+                                                                            660
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -4796,7 +4783,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs94.83
+                                                                              $207
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -5003,7 +4990,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            17
+                                                                            3,075
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -5070,7 +5057,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs29.13
+                                                                              $1234.5
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -5264,7 +5251,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            9
+                                                                            550
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -5331,7 +5318,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs19.36
+                                                                              $173
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -5524,7 +5511,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            7
+                                                                            1,715
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -5591,7 +5578,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs2.77
+                                                                              $395.04
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -5784,7 +5771,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            5
+                                                                            2,230
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -5851,7 +5838,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs1.92
+                                                                              $513.5
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -6045,7 +6032,7 @@ const ReportingTableMain = () => {
                                                                           data-tooltip-display="overflow"
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                            4
+                                                                            2
                                                                           </span>
                                                                         </div>
                                                                       </div>
@@ -6112,7 +6099,7 @@ const ReportingTableMain = () => {
                                                                         >
                                                                           <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                             <span class="_3dfi _3dfj">
-                                                                              Rs0.96
+                                                                              $2
                                                                             </span>
                                                                           </span>
                                                                         </div>
@@ -6276,7 +6263,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Stories
+                                                        feed
                                                       </span>
                                                     </div>
                                                   </div>
@@ -6376,7 +6363,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        6,049
                                                       </span>
                                                     </div>
                                                   </div>
@@ -6443,7 +6430,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $2,186
                                                         </span>
                                                       </span>
                                                     </div>
@@ -6636,7 +6623,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        804
                                                       </span>
                                                     </div>
                                                   </div>
@@ -6703,7 +6690,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $306.8
                                                         </span>
                                                       </span>
                                                     </div>
@@ -6909,7 +6896,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        8
+                                                        3,276
                                                       </span>
                                                     </div>
                                                   </div>
@@ -6976,7 +6963,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.16
+                                                          $1,185
                                                         </span>
                                                       </span>
                                                     </div>
@@ -7169,7 +7156,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        436
                                                       </span>
                                                     </div>
                                                   </div>
@@ -7236,7 +7223,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $166
                                                         </span>
                                                       </span>
                                                     </div>
@@ -7337,8 +7324,8 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_18r"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Roofing Hacka
+                                                            Jasmine
                                                           </div>
                                                         </a>
                                                       </span>
@@ -7470,7 +7457,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        25,205
                                                       </span>
                                                     </div>
                                                   </div>
@@ -7542,7 +7529,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $9,112
                                                         </span>
                                                       </span>
                                                     </div>
@@ -7820,7 +7807,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1,391.85
+                                                          $1,391.85
                                                         </span>
                                                       </span>
                                                     </div>
@@ -7905,8 +7892,9 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_19n"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Roofing Hackta
+                                                            Jasmine MEDIA T
+                                                            [08/13/2024]
                                                           </div>
                                                         </a>
                                                       </span>
@@ -8068,7 +8056,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        25,205
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8140,7 +8128,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $9,112
                                                         </span>
                                                       </span>
                                                     </div>
@@ -8332,7 +8320,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        14
+                                                        2,295
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8399,7 +8387,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4.46
+                                                          $349.8
                                                         </span>
                                                       </span>
                                                     </div>
@@ -8521,7 +8509,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: iPad
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8591,7 +8579,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        1
+                                                        680
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8658,7 +8646,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs6.99
+                                                          $1,002
                                                         </span>
                                                       </span>
                                                     </div>
@@ -8764,7 +8752,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Overlay ads in Reels
+                                                        marketplace
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8864,7 +8852,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        311
+                                                        3025
                                                       </span>
                                                     </div>
                                                   </div>
@@ -8931,7 +8919,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs101.49
+                                                          $1,093.44
                                                         </span>
                                                       </span>
                                                     </div>
@@ -9053,7 +9041,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: Other
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9123,7 +9111,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        6
+                                                        326
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9190,7 +9178,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $481
                                                         </span>
                                                       </span>
                                                     </div>
@@ -9383,7 +9371,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        287
+                                                        403
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9450,7 +9438,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs94.83
+                                                          $153
                                                         </span>
                                                       </span>
                                                     </div>
@@ -9656,7 +9644,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        17
+                                                        6,301
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9723,7 +9711,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs29.13
+                                                          $2,278
                                                         </span>
                                                       </span>
                                                     </div>
@@ -9916,7 +9904,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        9
+                                                        838
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9983,7 +9971,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs19.36
+                                                          $319
                                                         </span>
                                                       </span>
                                                     </div>
@@ -10175,7 +10163,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        7
+                                                        4,781
                                                       </span>
                                                     </div>
                                                   </div>
@@ -10242,7 +10230,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs2.77
+                                                          $729
                                                         </span>
                                                       </span>
                                                     </div>
@@ -10434,7 +10422,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        5
+                                                        2,486
                                                       </span>
                                                     </div>
                                                   </div>
@@ -10501,7 +10489,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.92
+                                                          $379.06
                                                         </span>
                                                       </span>
                                                     </div>
@@ -10693,7 +10681,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        4
+                                                        3
                                                       </span>
                                                     </div>
                                                   </div>
@@ -10760,7 +10748,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs0.96
+                                                          $3
                                                         </span>
                                                       </span>
                                                     </div>
@@ -10920,7 +10908,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Stories
+                                                        feed
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11020,7 +11008,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        6,215
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11087,7 +11075,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $3,896
                                                         </span>
                                                       </span>
                                                     </div>
@@ -11280,7 +11268,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        1,005
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11347,7 +11335,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $545
                                                         </span>
                                                       </span>
                                                     </div>
@@ -11553,7 +11541,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        8
+                                                        3,366
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11620,7 +11608,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.16
+                                                          $2,110
                                                         </span>
                                                       </span>
                                                     </div>
@@ -11813,7 +11801,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        545
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11880,7 +11868,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $295
                                                         </span>
                                                       </span>
                                                     </div>
@@ -11981,8 +11969,8 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_18r"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Kitchen Hackta
+                                                            Jasmine
                                                           </div>
                                                         </a>
                                                       </span>
@@ -12114,7 +12102,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        25,898
                                                       </span>
                                                     </div>
                                                   </div>
@@ -12186,7 +12174,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $16,234
                                                         </span>
                                                       </span>
                                                     </div>
@@ -12464,7 +12452,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1,391.85
+                                                          $1,391.85
                                                         </span>
                                                       </span>
                                                     </div>
@@ -12549,8 +12537,8 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_19n"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Kitchen Hackta
+                                                            Jasmine
                                                           </div>
                                                         </a>
                                                       </span>
@@ -12712,7 +12700,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        25,898
                                                       </span>
                                                     </div>
                                                   </div>
@@ -12784,7 +12772,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $16,234
                                                         </span>
                                                       </span>
                                                     </div>
@@ -12976,7 +12964,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        14
+                                                        2,065
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13043,7 +13031,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4.46
+                                                          $623.4
                                                         </span>
                                                       </span>
                                                     </div>
@@ -13165,7 +13153,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: iPad
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13235,7 +13223,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        1
+                                                        127
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13302,7 +13290,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs6.99
+                                                          $929
                                                         </span>
                                                       </span>
                                                     </div>
@@ -13408,7 +13396,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Overlay ads in Reels
+                                                        marketplace
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13508,7 +13496,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        311
+                                                        3,107
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13575,7 +13563,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs101.49
+                                                          $1,948.08
                                                         </span>
                                                       </span>
                                                     </div>
@@ -13697,7 +13685,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: Other
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13767,7 +13755,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        6
+                                                        486
                                                       </span>
                                                     </div>
                                                   </div>
@@ -13834,7 +13822,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $857
                                                         </span>
                                                       </span>
                                                     </div>
@@ -14027,7 +14015,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        287
+                                                        502
                                                       </span>
                                                     </div>
                                                   </div>
@@ -14094,7 +14082,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs94.83
+                                                          $273
                                                         </span>
                                                       </span>
                                                     </div>
@@ -14300,7 +14288,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        17
+                                                        6,475
                                                       </span>
                                                     </div>
                                                   </div>
@@ -14367,7 +14355,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs29.13
+                                                          $4,059
                                                         </span>
                                                       </span>
                                                     </div>
@@ -14560,7 +14548,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        9
+                                                        1,048
                                                       </span>
                                                     </div>
                                                   </div>
@@ -14627,7 +14615,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs19.36
+                                                          $568
                                                         </span>
                                                       </span>
                                                     </div>
@@ -14819,7 +14807,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        7
+                                                        4,301
                                                       </span>
                                                     </div>
                                                   </div>
@@ -14886,7 +14874,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs2.77
+                                                          $1,299
                                                         </span>
                                                       </span>
                                                     </div>
@@ -15078,7 +15066,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        5
+                                                        2,237
                                                       </span>
                                                     </div>
                                                   </div>
@@ -15145,7 +15133,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.92
+                                                          $675.33
                                                         </span>
                                                       </span>
                                                     </div>
@@ -15337,7 +15325,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        4
+                                                        1
                                                       </span>
                                                     </div>
                                                   </div>
@@ -15404,7 +15392,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs0.96
+                                                          $3
                                                         </span>
                                                       </span>
                                                     </div>
@@ -15565,7 +15553,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Stories
+                                                        feed
                                                       </span>
                                                     </div>
                                                   </div>
@@ -15665,7 +15653,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        5,740
                                                       </span>
                                                     </div>
                                                   </div>
@@ -15732,7 +15720,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $3,655
                                                         </span>
                                                       </span>
                                                     </div>
@@ -15925,7 +15913,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        670
                                                       </span>
                                                     </div>
                                                   </div>
@@ -15992,7 +15980,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $512
                                                         </span>
                                                       </span>
                                                     </div>
@@ -16198,7 +16186,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        8
+                                                        3,109
                                                       </span>
                                                     </div>
                                                   </div>
@@ -16265,7 +16253,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.16
+                                                          $1,980
                                                         </span>
                                                       </span>
                                                     </div>
@@ -16458,7 +16446,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3
+                                                        363
                                                       </span>
                                                     </div>
                                                   </div>
@@ -16525,7 +16513,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $277
                                                         </span>
                                                       </span>
                                                     </div>
@@ -16626,8 +16614,8 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_18r"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Flooring Hackta
+                                                            Jasmine
                                                           </div>
                                                         </a>
                                                       </span>
@@ -16759,7 +16747,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        23,919
                                                       </span>
                                                     </div>
                                                   </div>
@@ -16831,7 +16819,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $15,233
                                                         </span>
                                                       </span>
                                                     </div>
@@ -17109,7 +17097,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1,391.85
+                                                          $1,391.85
                                                         </span>
                                                       </span>
                                                     </div>
@@ -17194,8 +17182,9 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_19n"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Flooring Hackta
+                                                            Jasmine MEDIA T
+                                                            [08/13/2024]
                                                           </div>
                                                         </a>
                                                       </span>
@@ -17357,7 +17346,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        23,919
                                                       </span>
                                                     </div>
                                                   </div>
@@ -17429,7 +17418,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $15,233
                                                         </span>
                                                       </span>
                                                     </div>
@@ -17621,7 +17610,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        14
+                                                        2,021
                                                       </span>
                                                     </div>
                                                   </div>
@@ -17688,7 +17677,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4.46
+                                                          $585
                                                         </span>
                                                       </span>
                                                     </div>
@@ -17810,7 +17799,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: iPad
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -17880,7 +17869,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        1
+                                                        853{" "}
                                                       </span>
                                                     </div>
                                                   </div>
@@ -17947,7 +17936,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs6.99
+                                                          $1,676
                                                         </span>
                                                       </span>
                                                     </div>
@@ -18053,7 +18042,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Overlay ads in Reels
+                                                        marketplace
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18153,7 +18142,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        311
+                                                        2,870
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18220,7 +18209,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs101.49
+                                                          $1,827
                                                         </span>
                                                       </span>
                                                     </div>
@@ -18342,7 +18331,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Device: Other
+                                                        Device: Desktop
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18412,7 +18401,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        6
+                                                        409
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18479,7 +18468,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $804
                                                         </span>
                                                       </span>
                                                     </div>
@@ -18672,7 +18661,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        287
+                                                        335
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18739,7 +18728,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs94.83
+                                                          $256
                                                         </span>
                                                       </span>
                                                     </div>
@@ -19012,7 +19001,275 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs29.13
+                                                          $29.13
+                                                        </span>
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4h2m _3cer style-TEdjM"
+                                          id="style-TEdjM"
+                                        >
+                                          <div
+                                            rowindex="5"
+                                            class="_4lgc _4h2u style-LC1Wp"
+                                            id="style-LC1Wp"
+                                          >
+                                            <div class="_4lgd _4h2w">
+                                              <div class="_4lge _4h2x">
+                                                <div class="_4h2r"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="_1gd6 _1gd8 style-hTfya"
+                                      id="style-hTfya"
+                                    ></div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="_1gd4 _4li _4lo _52nn _8_6t summaryLevel3 _9f1e _3c7k style-HlxfE"
+                                  role="presentation"
+                                  id="style-HlxfE"
+                                >
+                                  <div class="_1gd5">
+                                    <div
+                                      class="_3pzk style-B7CSM"
+                                      id="style-B7CSM"
+                                    >
+                                      <div
+                                        class="_3pzj style-iAWFg"
+                                        id="style-iAWFg"
+                                      >
+                                        <div
+                                          class="_4lg0 _4h2m _3cer _3ces _4psr style-feRzB"
+                                          id="style-feRzB"
+                                        >
+                                          <div
+                                            class="_68tl style-RhZH6"
+                                            id="style-RhZH6"
+                                          >
+                                            <div
+                                              class="_2eqm style-pjxAq"
+                                              id="style-pjxAq"
+                                            >
+                                              <div class="_2eqm _3qn7 _61-0 _2fyi _3qng"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4h2m _3cer _3ces _4psr style-gwzXq"
+                                          id="style-gwzXq"
+                                        >
+                                          <div
+                                            class="_68tl style-zArB3"
+                                            id="style-zArB3"
+                                          >
+                                            <div
+                                              class="_2eqm style-XsoEk"
+                                              id="style-XsoEk"
+                                            >
+                                              <div class="_2eqm _3qn7 _61-0 _2fyi _3qng"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4h2m _3cer _3ces _3cet style-KkDNk"
+                                          id="style-KkDNk"
+                                        >
+                                          <div class="x5yr21d x1n2onr6">
+                                            <div
+                                              class="_68tl style-NaPVN"
+                                              id="style-NaPVN"
+                                            >
+                                              <div
+                                                class="_2eqm style-RiG56"
+                                                id="style-RiG56"
+                                              >
+                                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                                  <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                      data-hover="tooltip"
+                                                      data-tooltip-display="overflow"
+                                                    >
+                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                        search
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4h2m _3cer _3ces _3cet _3ceu style-NeiMo"
+                                          id="style-NeiMo"
+                                        >
+                                          <div class="x5yr21d x1n2onr6">
+                                            <div
+                                              class="_68tl style-vM83m"
+                                              id="style-vM83m"
+                                            >
+                                              <div
+                                                class="_2eqm style-nj8rV"
+                                                id="style-nj8rV"
+                                              >
+                                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                                  <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                      data-hover="tooltip"
+                                                      data-tooltip-display="overflow"
+                                                    >
+                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                        All
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4h2m _3cer style-NAhWO"
+                                          id="style-NAhWO"
+                                        >
+                                          <div class="x5yr21d x1n2onr6 x10qsr78 xu3j5b3 xotfvf0">
+                                            <div
+                                              class="_68tl style-ZaNQa"
+                                              id="style-ZaNQa"
+                                            >
+                                              <div
+                                                class="_2eqm style-It9NO"
+                                                id="style-It9NO"
+                                              >
+                                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                                  <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                      data-hover="tooltip"
+                                                      data-tooltip-display="overflow"
+                                                    >
+                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                        All
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="_3pzk style-vF45Y"
+                                      id="style-vF45Y"
+                                    >
+                                      <div
+                                        class="_3pzj style-FGOwV"
+                                        id="style-FGOwV"
+                                      >
+                                        <div
+                                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-KhS72"
+                                          id="style-KhS72"
+                                        >
+                                          <div class="x5yr21d x1n2onr6">
+                                            <div
+                                              class="_68tl style-gzHgl"
+                                              id="style-gzHgl"
+                                            >
+                                              <div
+                                                class="_2eqm style-iwyiC"
+                                                id="style-iwyiC"
+                                              >
+                                                <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                                  <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                      data-hover="tooltip"
+                                                      data-tooltip-display="overflow"
+                                                    >
+                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                        5,980
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-goG2n"
+                                          id="style-goG2n"
+                                        >
+                                          <div class="x5yr21d x1n2onr6">
+                                            <div class="_87v4">
+                                              <div
+                                                class="_68tl style-jqJtm"
+                                                id="style-jqJtm"
+                                              >
+                                                <div
+                                                  class="_2eqm style-vKT5C"
+                                                  id="style-vKT5C"
+                                                >
+                                                  <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                                    <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                      <div
+                                                        class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                        data-hover="tooltip"
+                                                        data-tooltip-display="overflow"
+                                                      >
+                                                        <div class="x1rg5ohu x67bb7w">
+                                                          <div class="x1rg5ohu">
+                                                            <div class="xt0psk2 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj">
+                                                              —
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-iodrT"
+                                          id="style-iodrT"
+                                        >
+                                          <div class="x5yr21d x1n2onr6">
+                                            <div
+                                              class="_68tl style-vDNS8"
+                                              id="style-vDNS8"
+                                            >
+                                              <div
+                                                class="_2eqm style-HkoJt"
+                                                id="style-HkoJt"
+                                              >
+                                                <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                                  <div class="_as9p _as9q _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="x6ikm8r x10wlt62 x1iorvi4 x150jy0e xjkvuk6 x1e558r4 xuxw1ft xlyipyv"
+                                                      data-hover="tooltip"
+                                                      data-tooltip-display="overflow"
+                                                    >
+                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
+                                                        <span class="_3dfi _3dfj">
+                                                          $3,808
                                                         </span>
                                                       </span>
                                                     </div>
@@ -19205,7 +19462,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        9
+                                                        698
                                                       </span>
                                                     </div>
                                                   </div>
@@ -19272,7 +19529,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs19.36
+                                                          $533
                                                         </span>
                                                       </span>
                                                     </div>
@@ -19464,7 +19721,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        7
+                                                        4,211
                                                       </span>
                                                     </div>
                                                   </div>
@@ -19531,7 +19788,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs2.77
+                                                          $1,219
                                                         </span>
                                                       </span>
                                                     </div>
@@ -19723,7 +19980,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        5
+                                                        2,190
                                                       </span>
                                                     </div>
                                                   </div>
@@ -19790,7 +20047,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.92
+                                                          $633.69
                                                         </span>
                                                       </span>
                                                     </div>
@@ -20049,7 +20306,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs0.96
+                                                          $3
                                                         </span>
                                                       </span>
                                                     </div>
@@ -20210,7 +20467,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Stories
+                                                        feed
                                                       </span>
                                                     </div>
                                                   </div>
@@ -20377,7 +20634,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $3.18
                                                         </span>
                                                       </span>
                                                     </div>
@@ -20637,7 +20894,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.18
+                                                          $3.18
                                                         </span>
                                                       </span>
                                                     </div>
@@ -20843,7 +21100,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        8
+                                                        3,802
                                                       </span>
                                                     </div>
                                                   </div>
@@ -20910,7 +21167,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs3.16
+                                                          $1,358
                                                         </span>
                                                       </span>
                                                     </div>
@@ -21170,7 +21427,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $1.24
                                                         </span>
                                                       </span>
                                                     </div>
@@ -21271,8 +21528,9 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_18r"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Bathroom Hackta
+                                                            Jasmine MEDIA T
+                                                            [08/13/2024]
                                                           </div>
                                                         </a>
                                                       </span>
@@ -21404,7 +21662,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        29,251
                                                       </span>
                                                     </div>
                                                   </div>
@@ -21476,7 +21734,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $10,445
                                                         </span>
                                                       </span>
                                                     </div>
@@ -21754,7 +22012,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1,391.85
+                                                          $1,391.85
                                                         </span>
                                                       </span>
                                                     </div>
@@ -21839,8 +22097,9 @@ const ReportingTableMain = () => {
                                                             data-tooltip-display="overflow"
                                                             id="js_19n"
                                                           >
-                                                            Roofing - Tonic MAX
-                                                            MEDIA T [08/13/2024]
+                                                            Bathroom Hackta
+                                                            Jasmine MEDIA T
+                                                            [08/13/2024]
                                                           </div>
                                                         </a>
                                                       </span>
@@ -22002,7 +22261,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        3,646
+                                                        29,251
                                                       </span>
                                                     </div>
                                                   </div>
@@ -22074,7 +22333,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4,200.67
+                                                          $10,445
                                                         </span>
                                                       </span>
                                                     </div>
@@ -22333,7 +22592,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs4.46
+                                                          $4.46
                                                         </span>
                                                       </span>
                                                     </div>
@@ -22592,7 +22851,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs6.99
+                                                          $6.99
                                                         </span>
                                                       </span>
                                                     </div>
@@ -22698,7 +22957,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Overlay ads in Reels
+                                                        marketplace
                                                       </span>
                                                     </div>
                                                   </div>
@@ -22865,7 +23124,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs101.49
+                                                          $101.49
                                                         </span>
                                                       </span>
                                                     </div>
@@ -23124,7 +23383,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.24
+                                                          $1.24
                                                         </span>
                                                       </span>
                                                     </div>
@@ -23384,7 +23643,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs94.83
+                                                          $94.83
                                                         </span>
                                                       </span>
                                                     </div>
@@ -23657,7 +23916,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs29.13
+                                                          $29.13
                                                         </span>
                                                       </span>
                                                     </div>
@@ -23917,7 +24176,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs19.36
+                                                          $19.36
                                                         </span>
                                                       </span>
                                                     </div>
@@ -24176,7 +24435,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs2.77
+                                                          $2.77
                                                         </span>
                                                       </span>
                                                     </div>
@@ -24435,7 +24694,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs1.92
+                                                          $1.92
                                                         </span>
                                                       </span>
                                                     </div>
@@ -24694,7 +24953,7 @@ const ReportingTableMain = () => {
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                         <span class="_3dfi _3dfj">
-                                                          Rs0.96
+                                                          $0.96
                                                         </span>
                                                       </span>
                                                     </div>
@@ -24730,22 +24989,8 @@ const ReportingTableMain = () => {
                                 </div>
                               </div>
                             </div>
-
-                            <div
-                              class="_3h1e _3h1h style-1E7B8"
-                              id="style-1E7B8"
-                            ></div>
                           </div>
                         </div>
-                        <span
-                          data-surface-wrapper="1"
-                          data-non-int-surface="/am/hero_root:AdsPEReportBuilderContainer.react/hero_root:AdsReportBuilderRootView.react/hero_root:AdsInsightsTableLoadingToastProgressBar.react"
-                          data-auto-logging-id="fec1ebcf7"
-                          id="style-T5fyo"
-                          class="style-T5fyo"
-                        >
-                          <div class=""></div>
-                        </span>
                       </div>
                     </div>
                   </div>
