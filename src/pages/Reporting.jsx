@@ -4950,13 +4950,22 @@ const Reporting = () => {
                                                                                                                   height:
                                                                                                                     "22px",
                                                                                                                   border:
-                                                                                                                    "1px solid gainboro",
+                                                                                                                    "1px solid gainsboro",
                                                                                                                   outline:
                                                                                                                     "none",
                                                                                                                   marginRight:
                                                                                                                     "8px",
+                                                                                                                  borderRadius:
+                                                                                                                    "4px",
+                                                                                                                  appearance:
+                                                                                                                    "none", // Remove default checkbox styling
+                                                                                                                  backgroundColor:
+                                                                                                                    "white", // Set background to white
+                                                                                                                  cursor:
+                                                                                                                    "pointer", // Change cursor to pointer for better UX
                                                                                                                 }}
                                                                                                                 type="checkbox"
+                                                                                                                className="uniquecheckbox"
                                                                                                                 id={`metric-${index}-${idx}`}
                                                                                                                 value={
                                                                                                                   metric
@@ -4976,7 +4985,8 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   )
                                                                                                                 } // Keeps checkbox state in sync
-                                                                                                              />{" "}
+                                                                                                              />
+
                                                                                                               <span
                                                                                                                 style={{
                                                                                                                   fontSize:

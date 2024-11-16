@@ -7093,3 +7093,18 @@ i.img {
   text-align: left;
   color: rgb(28, 30, 33);
 }
+
+/* When the checkbox is checked */
+.uniquecheckbox:checked::after {
+  content: "✔"; /* Add the checkmark symbol */
+  color: #499bcf; /* Set the tick color to #499BCF */
+  font-size: 18px; /* Adjust the size of the tick */
+  position: absolute; /* Position it inside the checkbox */
+  left: 8px; /* Adjust horizontal position */
+  top: 6px; /* Adjust vertical position */
+}
+
+/* Optional: Keep the border color #499BCF when checked */
+.uniquecheckbox:checked {
+  border-color: #499bcf;
+}

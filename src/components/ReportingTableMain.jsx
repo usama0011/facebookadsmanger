@@ -6809,7 +6809,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook profile feed
+                                                        video_feeds
                                                       </span>
                                                     </div>
                                                   </div>
@@ -9556,7 +9556,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Reels
+                                                        search
                                                       </span>
                                                     </div>
                                                   </div>
@@ -11453,7 +11453,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook profile feed
+                                                        video_feeds
                                                       </span>
                                                     </div>
                                                   </div>
@@ -14200,7 +14200,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Reels
+                                                        search
                                                       </span>
                                                     </div>
                                                   </div>
@@ -16098,7 +16098,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook profile feed
+                                                        video_feeds
                                                       </span>
                                                     </div>
                                                   </div>
@@ -18845,7 +18845,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Reels
+                                                        search
                                                       </span>
                                                     </div>
                                                   </div>
@@ -20743,7 +20743,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook profile feed
+                                                        video_feeds
                                                       </span>
                                                     </div>
                                                   </div>
@@ -23490,7 +23490,7 @@ const ReportingTableMain = () => {
                                                       data-tooltip-display="overflow"
                                                     >
                                                       <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        Facebook Reels
+                                                        search
                                                       </span>
                                                     </div>
                                                   </div>
