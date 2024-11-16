@@ -815,10 +815,7 @@ const Reporting = () => {
     // },
   ];
   // Function to handle date selection
-  const handleDateChange = (e) => {
-    const date = new Date(e.target.value);
-    setSelectedDate(date);
-  };
+
   const [showcalender, setShowCalender] = useState(false);
   const [pivottable, setPovitTable] = useState("breakdown");
   const [currentfolder, setcurrentFolder] = useState("Campaings");
@@ -846,7 +843,7 @@ const Reporting = () => {
   const handleDayClick = (date) => {
     if (!selectingEnd) {
       setStartDate(date);
-      setEndDate(null);
+      setEndDate(null); // Clear end date when selecting a new start date
       setSelectingEnd(true);
     } else {
       if (date < startDate) {
@@ -856,6 +853,42 @@ const Reporting = () => {
         setEndDate(date);
       }
       setSelectingEnd(false);
+    }
+  };
+
+  useEffect(() => {
+    if (startDate && endDate) {
+      fetchCampaigns(); // Fetch campaigns only when both dates are selected
+    }
+  }, [startDate, endDate]);
+
+  const fetchCampaigns = async () => {
+    try {
+      setLoading(true); // Start loading state
+      setError(""); // Clear previous errors
+      const response = await axios.get(
+        "https://facebookadsmangerserver.vercel.app/api/newcampaing",
+        {
+          params: {
+            startDate: formatDate(startDate),
+            endDate: formatDate(endDate),
+          },
+        }
+      );
+      setCampaigns(response.data);
+    } catch (err) {
+      setError("Error fetching campaigns");
+    } finally {
+      setLoading(false); // End loading state
+    }
+  };
+
+  const handleupdatebutton = () => {
+    if (startDate && endDate) {
+      setShowCalender(false);
+      fetchCampaigns(); // Allow manual fetch on button click
+    } else {
+      setError("Please select both start and end dates.");
     }
   };
 
@@ -1027,33 +1060,7 @@ const Reporting = () => {
       year: "numeric",
     });
   };
-  const fetchCampaigns = async () => {
-    try {
-      const response = await axios.get(
-        "https://facebookadsmangerserver.vercel.app/api/newcampaing",
-        {
-          params: {
-            startDate: formatDate(startDate),
-            endDate: formatDate(endDate),
-          },
-        }
-      );
-      console.log("Response:", response);
-      setCampaigns(response.data);
-    } catch (err) {
-      setError("Error fetching campaigns");
-    } finally {
-      setLoading(false);
-    }
-  };
 
-  useEffect(() => {
-    fetchCampaigns();
-  }, []);
-  const handleupdatebutton = () => {
-    setShowCalender(false);
-    fetchCampaigns();
-  };
   const handleClickRun = (value) => {
     setcurrentFolder(value);
   };
@@ -3487,6 +3494,10 @@ const Reporting = () => {
                                                                         Cancel
                                                                       </button>
                                                                       <button
+                                                                        disabled={
+                                                                          !startDate ||
+                                                                          !endDate
+                                                                        } // Disable button if dates are incomplete
                                                                         onClick={
                                                                           handleupdatebutton
                                                                         }
