@@ -7108,3 +7108,11 @@ i.img {
 .uniquecheckbox:checked {
   border-color: #499bcf;
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-zlQsk.style-zlQsk {
+  width: 16px;
+  height: 16px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png?_nc_eui2=AeGFp6SFQHRlZl8Kn-izkrKIKQHvfMF0Zi4pAe98wXRmLmFikt8CiA0vEgb6etcPBXoz7pPYPva8qQ1TmKkKnKHs");
+  mask-position: -17px -239px;
+}

@@ -4489,53 +4489,61 @@ const Reporting = () => {
                                                         <div class="x9f619 x78zum5 x1iyjqo2 x5yr21d x2lwn1j x1n2onr6 xh8yej3">
                                                           <div class="xw2csxc x1odjw0f xh8yej3 x18d9i69 uuvcgtrr00">
                                                             <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1jyxor1"></div>
-                                                            <div class="x139jcc6 x1wsgfga">
-                                                              <div class="x9f619 x78zum5 x2lah0s xh8yej3 xyamay9 x1l90r2v x1swvt13 x1pi30zi">
-                                                                <div class="x1iyjqo2 xeuugli">
-                                                                  <div class="x1cy8zhl x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                    <div class="x1iyjqo2 xeuugli">
+                                                            <div class="x1cy8zhl x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 snipcss-LXnKd">
+                                                              <div
+                                                                class="x1iyjqo2 xeuugli"
+                                                                style={{
+                                                                  padding:
+                                                                    "20px 10px",
+                                                                  display:
+                                                                    "flex",
+                                                                  alignItems:
+                                                                    "center",
+                                                                }}
+                                                              >
+                                                                <div
+                                                                  aria-level="3"
+                                                                  class="x1xqt7ti x1uxerd5 x1xlr1w8 xrohxju xbsr9hj xq9mrsl x1yc453h x1mzt3pk x1vvkbs x13faqbe xeuugli"
+                                                                  id="js_1e"
+                                                                  role="heading"
+                                                                >
+                                                                  Customise
+                                                                  pivot table
+                                                                </div>
+                                                              </div>
+                                                              <div class="x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x2lah0s x19lwn94 x6s0dn4 x13a6bvl xu0aao5 x9otpla x1wsgfga">
+                                                                <div
+                                                                  style={{
+                                                                    marginTop:
+                                                                      "22px",
+                                                                  }}
+                                                                  aria-busy="false"
+                                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
+                                                                  role="button"
+                                                                  tabindex="0"
+                                                                >
+                                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                    <div class="x78zum5">
                                                                       <div
-                                                                        aria-level="3"
-                                                                        class="x8t9es0 x1uxerd5 x1xlr1w8 xrohxju x4hq6eo xq9mrsl x1yc453h x1mzt3pk x1vvkbs x13faqbe xeuugli"
-                                                                        id="js_15"
-                                                                        role="heading"
+                                                                        class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                                                        data-sscoverage-ignore="true"
                                                                       >
-                                                                        Customise
-                                                                        pivot
-                                                                        table
+                                                                        Close
+                                                                      </div>
+                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                        <div
+                                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                                                                          role="presentation"
+                                                                        >
+                                                                          <div
+                                                                            class="xtwfq29 style-zlQsk"
+                                                                            id="style-zlQsk"
+                                                                          ></div>
+                                                                        </div>
+                                                                        ​
                                                                       </div>
                                                                     </div>
-                                                                    <div class="x78zum5 x1q0g3np xozqiw3 xeuugli x1iyjqo2 x2lah0s x19lwn94 x6s0dn4 x13a6bvl xu0aao5 x9otpla x1wsgfga">
-                                                                      <div
-                                                                        aria-busy="false"
-                                                                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                                        role="button"
-                                                                        tabindex="0"
-                                                                      >
-                                                                        <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                          <div class="x78zum5">
-                                                                            <div
-                                                                              class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                                              data-sscoverage-ignore="true"
-                                                                            >
-                                                                              Close
-                                                                            </div>
-                                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                              <div
-                                                                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                                                role="presentation"
-                                                                              >
-                                                                                <div
-                                                                                  class="xtwfq29 style-bM9ol"
-                                                                                  id="style-bM9ol"
-                                                                                ></div>
-                                                                              </div>
-                                                                            </div>
-                                                                          </div>
-                                                                        </span>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
+                                                                  </span>
                                                                 </div>
                                                               </div>
                                                             </div>
