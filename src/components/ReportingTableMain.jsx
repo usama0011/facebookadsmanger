@@ -12,12 +12,17 @@ const ReportingTableMain = ({ startDate, endDate }) => {
       end <= new Date("2024-10-31T00:00:00+0500")
     ) {
       return (
-        <div>
+        <div style={{ position: "relative" }}>
           {/* campaing six */}
           <div
+            style={{
+              position: "fixed",
+              top: "197px",
+              left: "81px",
+              width: "1424px",
+            }}
             class="_1mmd _1mme style-GXSUo"
             role="row"
-            style={{ backgroundColor: "white" }}
             id="style-GXSUo"
           >
             <div class="_182x style-Rd1EU" id="style-Rd1EU">
@@ -24301,7 +24306,11 @@ const ReportingTableMain = ({ startDate, endDate }) => {
               >
                 <div class="">
                   <div class="">
-                    <div id="PNG_EXPORT_CROP" class="">
+                    <div
+                      id="PNG_EXPORT_CROP"
+                      class=""
+                      style={{ position: "relative" }}
+                    >
                       <div class="_93ex">
                         <div class="x1n2onr6">
                           <div
@@ -24321,6 +24330,12 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                               </div>
                               {/* Later we fixed */}
                               <div
+                                style={{
+                                  position: "fixed",
+                                  top: "197px",
+                                  left: "81px",
+                                  width: "1424px",
+                                }}
                                 class="_1mmd _1mme style-GXSUo"
                                 role="row"
                                 id="style-GXSUo"
@@ -49196,11 +49211,16 @@ const ReportingTableMain = ({ startDate, endDate }) => {
       );
     }
     return (
-      <div>
+      <div style={{ position: "relative" }}>
         <div
+          style={{
+            position: "fixed",
+            top: "197px",
+            left: "81px",
+            width: "1424px",
+          }}
           class="_1mmd _1mme style-GXSUo"
           role="row"
-          style={{ backgroundColor: "white" }}
           id="style-GXSUo"
         >
           <div class="_182x style-Rd1EU" id="style-Rd1EU">
