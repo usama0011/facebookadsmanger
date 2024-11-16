@@ -15,8 +15,1105 @@ const ReportingTableMain = ({ startDate, endDate }) => {
         <div>
           {/* campaing six */}
           <div
+            class="_1mmd _1mme style-GXSUo"
+            role="row"
+            style={{ backgroundColor: "white" }}
+            id="style-GXSUo"
+          >
+            <div class="_182x style-Rd1EU" id="style-Rd1EU">
+              <div class="_63jp style-oDOqp" id="style-oDOqp">
+                <div class="_1eyh _1eyi style-1fcpn" id="style-1fcpn">
+                  <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                    <div class="_741s _8_x6 _8_vu"></div>
+                    <div class="x1vjfegm xsgj6o6 x1gslohp">
+                      <div class="_3qn7 _61-0 _2fyh _3qnf">
+                        <div class="_3qn7 _61-0 _2fyi _3qnf">
+                          <div
+                            role="columnheader"
+                            tabindex="-1"
+                            data-interactable="|mouseover|"
+                          >
+                            <span
+                              aria-level="2"
+                              class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                              role="heading"
+                            >
+                              <div class="_90u_ style-rFHj4" id="style-rFHj4">
+                                <div
+                                  class="_4ik4 _4ik5 style-qAlZS"
+                                  id="style-qAlZS"
+                                >
+                                  <div id="style-zqMp6" class="style-zqMp6">
+                                    Campaign name
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                      </div>
+                    </div>
+                    <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                      <div class="x1gryazu xxk0z11">
+                        <div>
+                          <button
+                            aria-pressed="false"
+                            type="button"
+                            aria-disabled="false"
+                            class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-X4qQs"
+                            id="style-X4qQs"
+                          >
+                            <div class="_43rl">
+                              <i
+                                aria-hidden="true"
+                                class="_271o img style-DgV47"
+                                alt=""
+                                data-visualcompletion="css-img"
+                                id="style-DgV47"
+                              ></i>
+                              <span class="accessible_elem">
+                                Open Inline Column Action Menu
+                              </span>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-i8yql" id="style-i8yql">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-r79Hm"
+                    id="style-r79Hm"
+                  >
+                    <div class="_3pzk style-TXQVv" id="style-TXQVv">
+                      <div class="_3pzj style-m6vLM" id="style-m6vLM">
+                        <div class="_4lg0 _4h2m style-7Pidp" id="style-7Pidp">
+                          <div
+                            class="_4lg9 style-AM5Lm"
+                            role="separator"
+                            id="style-AM5Lm"
+                          >
+                            <div
+                              class="_4lga _4lgb style-We3lN"
+                              id="style-We3lN"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-8W62S"
+                            id="style-8W62S"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-6cNkW" id="style-6cNkW">
+                    <div class="_3pzk style-GQemB" id="style-GQemB">
+                      <div class="_3pzj style-FkDdI" id="style-FkDdI">
+                        <div
+                          class="_4lg0 _4h2m _3cer style-VkZBM"
+                          id="style-VkZBM"
+                        >
+                          <div
+                            class="_4lg9 style-dGD14"
+                            role="separator"
+                            id="style-dGD14"
+                          >
+                            <div
+                              class="_4lga _4lgb style-3pmno"
+                              id="style-3pmno"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-v82O7" id="style-v82O7">
+                              <div class="_2eqm style-ky9Ie" id="style-ky9Ie">
+                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                  <div class="_8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                      data-auto-logging-id="fb4f3099a"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-rFHj4"
+                                                  id="style-rFHj4"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-qAlZS"
+                                                    id="style-qAlZS"
+                                                  >
+                                                    <div
+                                                      id="style-zqMp6"
+                                                      class="style-zqMp6"
+                                                    >
+                                                      Ad set name
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-X4qQs"
+                                              id="style-X4qQs"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-DgV47"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-DgV47"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-Ih6Ho" id="style-Ih6Ho">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-PvdLD"
+                    id="style-PvdLD"
+                  >
+                    <div class="_3pzk style-5o3Hx" id="style-5o3Hx">
+                      <div class="_3pzj style-ge2Pt" id="style-ge2Pt">
+                        <div class="_4lg0 _4h2m style-SKOV3" id="style-SKOV3">
+                          <div
+                            class="_4lg9 style-c2Ycj"
+                            role="separator"
+                            id="style-c2Ycj"
+                          >
+                            <div
+                              class="_4lga _4lgb style-nNokc"
+                              id="style-nNokc"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-VPAFF"
+                            id="style-VPAFF"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-fUjvU" id="style-fUjvU">
+                    <div class="_3pzk style-wwPFU" id="style-wwPFU">
+                      <div class="_3pzj style-cgGQp" id="style-cgGQp">
+                        <div
+                          class="_4lg0 _4h2m _3cer style-eiyW1"
+                          id="style-eiyW1"
+                        >
+                          <div
+                            class="_4lg9 style-cEJmW"
+                            role="separator"
+                            id="style-cEJmW"
+                          >
+                            <div
+                              class="_4lga _4lgb style-Gy5lI"
+                              id="style-Gy5lI"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-iGhOF" id="style-iGhOF">
+                              <div class="_2eqm style-gXkE8" id="style-gXkE8">
+                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-k5Mzy"
+                                                  id="style-k5Mzy"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-RGUoT"
+                                                    id="style-RGUoT"
+                                                  >
+                                                    <div
+                                                      id="style-Rbq8J"
+                                                      class="style-Rbq8J"
+                                                    >
+                                                      Placement
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-GDwlg"
+                                              id="style-GDwlg"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-orv5n"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-orv5n"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-2q48a" id="style-2q48a">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-C7NWy"
+                    id="style-C7NWy"
+                  >
+                    <div class="_3pzk style-5bVdC" id="style-5bVdC">
+                      <div class="_3pzj style-mjZph" id="style-mjZph">
+                        <div class="_4lg0 _4h2m style-CnRw1" id="style-CnRw1">
+                          <div
+                            class="_4lg9 style-FZJOD"
+                            role="separator"
+                            id="style-FZJOD"
+                          >
+                            <div
+                              class="_4lga _4lgb style-AmRVo"
+                              id="style-AmRVo"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-TPNyw"
+                            id="style-TPNyw"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-YteoG" id="style-YteoG">
+                    <div class="_3pzk style-oav9B" id="style-oav9B">
+                      <div class="_3pzj style-fyU2D" id="style-fyU2D">
+                        <div
+                          class="_4lg0 _4h2m _3cer style-Fx9LR"
+                          id="style-Fx9LR"
+                        >
+                          <div
+                            class="_4lg9 style-N8TbD"
+                            role="separator"
+                            id="style-N8TbD"
+                          >
+                            <div
+                              class="_4lga _4lgb style-qOh6c"
+                              id="style-qOh6c"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-TsK4B" id="style-TsK4B">
+                              <div class="_2eqm style-cOwi7" id="style-cOwi7">
+                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-Ijjm1"
+                                                  id="style-Ijjm1"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-4tIyh"
+                                                    id="style-4tIyh"
+                                                  >
+                                                    <div
+                                                      id="style-oieIT"
+                                                      class="style-oieIT"
+                                                    >
+                                                      Impression device
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-Gsoxo"
+                                              id="style-Gsoxo"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-ooGrG"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-ooGrG"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-o1ctP" id="style-o1ctP">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-k17Dg"
+                    id="style-k17Dg"
+                  >
+                    <div class="_3pzk style-z5VOI" id="style-z5VOI">
+                      <div class="_3pzj style-DPeca" id="style-DPeca">
+                        <div class="_4lg0 _4h2m style-evRtr" id="style-evRtr">
+                          <div
+                            class="_4lg9 style-oNljP"
+                            role="separator"
+                            id="style-oNljP"
+                          >
+                            <div
+                              class="_4lga _4lgb style-MlFYk"
+                              id="style-MlFYk"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-k3ORh"
+                            id="style-k3ORh"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-tBfM1" id="style-tBfM1">
+                    <div class="_3pzk style-b3ETa" id="style-b3ETa">
+                      <div class="_3pzj style-3Mphh" id="style-3Mphh">
+                        <div
+                          class="_4lg0 _4h2m _3cer style-RtGbf"
+                          id="style-RtGbf"
+                        >
+                          <div
+                            class="_4lg9 style-oesYs"
+                            role="separator"
+                            id="style-oesYs"
+                          >
+                            <div
+                              class="_4lga _4lgb style-QFabC"
+                              id="style-QFabC"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6 x10qsr78 xu3j5b3 xotfvf0">
+                            <div class="_68tl style-w3T3I" id="style-w3T3I">
+                              <div class="_2eqm style-iTqdO" id="style-iTqdO">
+                                <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-2hzcc"
+                                                  id="style-2hzcc"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-h6WcA"
+                                                    id="style-h6WcA"
+                                                  >
+                                                    <div
+                                                      id="style-7icMt"
+                                                      class="style-7icMt"
+                                                    >
+                                                      Conversion device
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-Mljgm"
+                                              id="style-Mljgm"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-bY7sy"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-bY7sy"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="_182x style-M6G6E" id="style-M6G6E">
+              <div class="_63jp style-Enbt1" id="style-Enbt1">
+                <div class="_1eyh _1eyi style-Pdf5H" id="style-Pdf5H">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-MvzBd"
+                    id="style-MvzBd"
+                  >
+                    <div class="_3pzk style-Vi1RB" id="style-Vi1RB">
+                      <div class="_3pzj style-9L3NG" id="style-9L3NG">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m style-FkWCV"
+                          id="style-FkWCV"
+                        >
+                          <div
+                            class="_4lg9 style-3T3bG"
+                            role="separator"
+                            id="style-3T3bG"
+                          >
+                            <div
+                              class="_4lga _4lgb style-F8yxy"
+                              id="style-F8yxy"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-6Wp4B"
+                            id="style-6Wp4B"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-PZ5qj" id="style-PZ5qj">
+                    <div class="_3pzk style-QsNHr" id="style-QsNHr">
+                      <div class="_3pzj style-DUFYH" id="style-DUFYH">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-EoAkY"
+                          id="style-EoAkY"
+                        >
+                          <div
+                            class="_4lg9 style-xDQqU"
+                            role="separator"
+                            id="style-xDQqU"
+                          >
+                            <div
+                              class="_4lga _4lgb style-8lg8s"
+                              id="style-8lg8s"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-bjCTO" id="style-bjCTO">
+                              <div class="_2eqm style-L97oi" id="style-L97oi">
+                                <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-wU6VD"
+                                                  id="style-wU6VD"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-vpoNZ"
+                                                    id="style-vpoNZ"
+                                                  >
+                                                    <div
+                                                      id="style-IP6p5"
+                                                      class="style-IP6p5"
+                                                    >
+                                                      Links clicks
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div></div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-UP4ft"
+                                              id="style-UP4ft"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-BsIch"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-BsIch"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-Qmox9" id="style-Qmox9">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-12DOb"
+                    id="style-12DOb"
+                  >
+                    <div class="_3pzk style-Ns3tw" id="style-Ns3tw">
+                      <div class="_3pzj style-PCTog" id="style-PCTog">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m style-pgNUn"
+                          id="style-pgNUn"
+                        >
+                          <div
+                            class="_4lg9 style-47X7j"
+                            role="separator"
+                            id="style-47X7j"
+                          >
+                            <div
+                              class="_4lga _4lgb style-ITCzp"
+                              id="style-ITCzp"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-oY8A7"
+                            id="style-oY8A7"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-vy3Qi" id="style-vy3Qi">
+                    <div class="_3pzk style-GT1h8" id="style-GT1h8">
+                      <div class="_3pzj style-I8gqC" id="style-I8gqC">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-AS2gz"
+                          id="style-AS2gz"
+                        >
+                          <div
+                            class="_4lg9 style-64UIe"
+                            role="separator"
+                            id="style-64UIe"
+                          >
+                            <div
+                              class="_4lga _4lgb style-XzgXk"
+                              id="style-XzgXk"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-QS9YF" id="style-QS9YF">
+                              <div class="_2eqm style-wtLUJ" id="style-wtLUJ">
+                                <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <span
+                                              aria-expanded="false"
+                                              aria-label="information symbol, button, tap for more information"
+                                              class="x1emribx"
+                                            >
+                                              <span>
+                                                <i
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  class="img style-tWKjn"
+                                                  id="style-tWKjn"
+                                                ></i>
+                                              </span>
+                                            </span>
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-cgk2j"
+                                                  id="style-cgk2j"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-Nysnm"
+                                                    id="style-Nysnm"
+                                                  >
+                                                    <div
+                                                      id="style-rpaKB"
+                                                      class="style-rpaKB"
+                                                    >
+                                                      Results
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div></div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-8Odwq"
+                                              id="style-8Odwq"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-JmBx2"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-JmBx2"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-KisUl" id="style-KisUl">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-oR6Pa"
+                    id="style-oR6Pa"
+                  >
+                    <div class="_3pzk style-ScKPP" id="style-ScKPP">
+                      <div class="_3pzj style-JiV5F" id="style-JiV5F">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m style-fvZ3k"
+                          id="style-fvZ3k"
+                        >
+                          <div
+                            class="_4lg9 style-3nNvv"
+                            role="separator"
+                            id="style-3nNvv"
+                          >
+                            <div
+                              class="_4lga _4lgb style-ysUkE"
+                              id="style-ysUkE"
+                            ></div>
+                          </div>
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-22deE"
+                            id="style-22deE"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-OfcD9" id="style-OfcD9">
+                    <div class="_3pzk style-r6OQP" id="style-r6OQP">
+                      <div class="_3pzj style-7Cs1o" id="style-7Cs1o">
+                        <div
+                          class="_4lg0 _4lg5 _4h2p _4h2m _3cer style-Y1RG2"
+                          id="style-Y1RG2"
+                        >
+                          <div
+                            class="_4lg9 style-7SDkl"
+                            role="separator"
+                            id="style-7SDkl"
+                          >
+                            <div
+                              class="_4lga _4lgb style-BGiM1"
+                              id="style-BGiM1"
+                            ></div>
+                          </div>
+                          <div class="x5yr21d x1n2onr6">
+                            <div class="_68tl style-UyU6F" id="style-UyU6F">
+                              <div class="_2eqm style-7PPCS" id="style-7PPCS">
+                                <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
+                                  <div class=" _8wod" draggable="true">
+                                    <a
+                                      aria-label="clickable background"
+                                      class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
+                                      href="#"
+                                    >
+                                      <u class="_8_x7 _3sqf"></u>
+                                    </a>
+                                    <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                      <div class="_741s _8_x6 _8_vu"></div>
+                                      <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                        <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                          <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                            <div
+                                              role="columnheader"
+                                              tabindex="-1"
+                                              data-interactable="|mouseover|"
+                                            >
+                                              <span
+                                                aria-level="2"
+                                                class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                role="heading"
+                                              >
+                                                <div
+                                                  class="_90u_ style-zTS5K"
+                                                  id="style-zTS5K"
+                                                >
+                                                  <div
+                                                    class="_4ik4 _4ik5 style-lHVom"
+                                                    id="style-lHVom"
+                                                  >
+                                                    <div
+                                                      id="style-VoVRE"
+                                                      class="style-VoVRE"
+                                                    >
+                                                      Amount spent
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div></div>
+                                          <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                        </div>
+                                      </div>
+                                      <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                        <div class="x1gryazu xxk0z11">
+                                          <div>
+                                            <button
+                                              aria-pressed="false"
+                                              type="button"
+                                              aria-disabled="false"
+                                              class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-8N14N"
+                                              id="style-8N14N"
+                                            >
+                                              <div class="_43rl">
+                                                <i
+                                                  aria-hidden="true"
+                                                  class="_271o img style-WSHUm"
+                                                  alt=""
+                                                  data-visualcompletion="css-img"
+                                                  id="style-WSHUm"
+                                                ></i>
+                                                <span class="accessible_elem">
+                                                  Open Inline Column Action Menu
+                                                </span>
+                                              </div>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_1eyh _1eyi style-F5b4r" id="style-F5b4r">
+                  <div
+                    class="_1eyb _3h1a _1mib _e-x style-gnBxp"
+                    id="style-gnBxp"
+                  >
+                    <div class="_3pzk style-myDjm" id="style-myDjm">
+                      <div class="_3pzj style-mPBIo" id="style-mPBIo">
+                        <div class="_4lg0 _4h2m style-WxNai" id="style-WxNai">
+                          <div
+                            rowindex="0"
+                            class="_4lgc _4h2u style-omtew"
+                            id="style-omtew"
+                          >
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_1eyb _3h1a _1mib style-yrn7Z" id="style-yrn7Z">
+                    <div class="_3pzk style-5v6lb" id="style-5v6lb">
+                      <div class="_3pzj style-t5Jwh" id="style-t5Jwh">
+                        <div
+                          class="_4lg0 _4h2m _3cer style-zAnio"
+                          id="style-zAnio"
+                        >
+                          <div class="_4lgc _4h2u style-LZisP" id="style-LZisP">
+                            <div class="_4lgd _4h2w">
+                              <div class="_4lge _4h2x">
+                                <div class="_4h2r"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="_1gd6 _1gd8 style-QodZJ" id="style-QodZJ"></div>
+          </div>
+          <div
             class="xw2csxc x1odjw0f xh8yej3 x18d9i69 snipcss-dcyIp"
-            style={{ marginTop: "-96px" }}
+            style={{ marginTop: "0px" }}
           >
             <div class="xjm9jq1 xg01cxk x47corl xh8yej3 x1jyxor1"></div>
 
@@ -23237,175 +24334,67 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                       class="_1eyh _1eyi style-1fcpn"
                                       id="style-1fcpn"
                                     >
-                                      <div
-                                        class="_1eyb _3h1a _1mib _e-x style-kDa88"
-                                        id="style-kDa88"
-                                      >
-                                        <div
-                                          class="_3pzk style-E5Xsm"
-                                          id="style-E5Xsm"
-                                        >
-                                          <div
-                                            class="_3pzj style-XfinT"
-                                            id="style-XfinT"
-                                          >
-                                            <div
-                                              class="_4lg0 _4h2m style-DLLFT"
-                                              id="style-DLLFT"
-                                            >
+                                      <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
+                                        <div class="_741s _8_x6 _8_vu"></div>
+                                        <div class="x1vjfegm xsgj6o6 x1gslohp">
+                                          <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                            <div class="_3qn7 _61-0 _2fyi _3qnf">
                                               <div
-                                                class="_4lg9 style-qVmAp"
-                                                role="separator"
-                                                id="style-qVmAp"
+                                                role="columnheader"
+                                                tabindex="-1"
+                                                data-interactable="|mouseover|"
                                               >
-                                                <div
-                                                  class="_4lga _4lgb style-vm9SX"
-                                                  id="style-vm9SX"
-                                                ></div>
-                                              </div>
-                                              <div
-                                                rowindex="0"
-                                                class="_4lgc _4h2u style-4Q6ch"
-                                                id="style-4Q6ch"
-                                              >
-                                                <div class="_4lgd _4h2w">
-                                                  <div class="_4lge _4h2x">
-                                                    <div class="_4h2r"></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        class="_1eyb _3h1a _1mib style-KXQQp"
-                                        id="style-KXQQp"
-                                      >
-                                        <div
-                                          class="_3pzk style-nolhU"
-                                          id="style-nolhU"
-                                        >
-                                          <div
-                                            class="_3pzj style-fQtDr"
-                                            id="style-fQtDr"
-                                          >
-                                            <div
-                                              class="_4lg0 _4h2m _3cer style-tBmx3"
-                                              id="style-tBmx3"
-                                            >
-                                              <div
-                                                class="_4lg9 style-BModk"
-                                                role="separator"
-                                                id="style-BModk"
-                                              >
-                                                <div
-                                                  class="_4lga _4lgb style-3mrMa"
-                                                  id="style-3mrMa"
-                                                ></div>
-                                              </div>
-                                              <div class="x5yr21d x1n2onr6">
-                                                <div
-                                                  class="_68tl style-tL699"
-                                                  id="style-tL699"
+                                                <span
+                                                  aria-level="2"
+                                                  class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                                                  role="heading"
                                                 >
                                                   <div
-                                                    class="_2eqm style-6lCnQ"
-                                                    id="style-6lCnQ"
+                                                    class="_90u_ style-rFHj4"
+                                                    id="style-rFHj4"
                                                   >
-                                                    <div class="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                                    <div
+                                                      class="_4ik4 _4ik5 style-qAlZS"
+                                                      id="style-qAlZS"
+                                                    >
                                                       <div
-                                                        class=" _8wod"
-                                                        draggable="true"
+                                                        id="style-zqMp6"
+                                                        class="style-zqMp6"
                                                       >
-                                                        <a
-                                                          aria-label="clickable background"
-                                                          class="x1ey2m1c x17qophe x10l6tqk xds687c x13vifvy"
-                                                          href="#"
-                                                        >
-                                                          <u class="_8_x7 _3sqf"></u>
-                                                        </a>
-                                                        <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
-                                                          <div class="_741s _8_x6 _8_vu"></div>
-                                                          <div class="x1vjfegm xsgj6o6 x1gslohp">
-                                                            <div class="_3qn7 _61-0 _2fyh _3qnf">
-                                                              <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                                                <div
-                                                                  role="columnheader"
-                                                                  tabindex="-1"
-                                                                  data-interactable="|mouseover|"
-                                                                  id="js_1w4"
-                                                                >
-                                                                  <span
-                                                                    aria-level="2"
-                                                                    class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
-                                                                    role="heading"
-                                                                  >
-                                                                    <div
-                                                                      class="_8wow _90u_ style-pGsLS"
-                                                                      id="style-pGsLS"
-                                                                    >
-                                                                      <div
-                                                                        class="_4ik4 _4ik5 style-AsAcX"
-                                                                        id="style-AsAcX"
-                                                                      >
-                                                                        <div
-                                                                          id="style-k25KV"
-                                                                          class="style-k25KV"
-                                                                        >
-                                                                          Campaign
-                                                                          name
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </span>
-                                                                </div>
-                                                              </div>
-                                                              <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                                                            </div>
-                                                          </div>
-                                                          <i
-                                                            class="_741s _8_vv img style-a9her"
-                                                            alt=""
-                                                            data-visualcompletion="css-img"
-                                                            id="style-a9her"
-                                                          ></i>
-                                                          <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                                                            <div class="x1gryazu xxk0z11">
-                                                              <div>
-                                                                <button
-                                                                  aria-pressed="false"
-                                                                  type="button"
-                                                                  aria-disabled="false"
-                                                                  class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-55IqS"
-                                                                  id="style-55IqS"
-                                                                >
-                                                                  <div class="_43rl">
-                                                                    <i
-                                                                      aria-hidden="true"
-                                                                      class="_271o img style-oSZkn"
-                                                                      alt=""
-                                                                      data-visualcompletion="css-img"
-                                                                      id="style-oSZkn"
-                                                                    ></i>
-                                                                    <span class="accessible_elem">
-                                                                      Open
-                                                                      Inline
-                                                                      Column
-                                                                      Action
-                                                                      Menu
-                                                                    </span>
-                                                                  </div>
-                                                                </button>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
+                                                        Campaign name
                                                       </div>
                                                     </div>
                                                   </div>
-                                                </div>
+                                                </span>
                                               </div>
+                                            </div>
+                                            <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                                          </div>
+                                        </div>
+                                        <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                                          <div class="x1gryazu xxk0z11">
+                                            <div>
+                                              <button
+                                                aria-pressed="false"
+                                                type="button"
+                                                aria-disabled="false"
+                                                class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-X4qQs"
+                                                id="style-X4qQs"
+                                              >
+                                                <div class="_43rl">
+                                                  <i
+                                                    aria-hidden="true"
+                                                    class="_271o img style-DgV47"
+                                                    alt=""
+                                                    data-visualcompletion="css-img"
+                                                    id="style-DgV47"
+                                                  ></i>
+                                                  <span class="accessible_elem">
+                                                    Open Inline Column Action
+                                                    Menu
+                                                  </span>
+                                                </div>
+                                              </button>
                                             </div>
                                           </div>
                                         </div>
@@ -25508,7 +26497,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                                           >
                                                                             <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
                                                                               <span class="_3dfi _3dfj">
-                                                                                $1.605
+                                                                                $1,605
                                                                               </span>
                                                                             </span>
                                                                           </div>
