@@ -3029,7 +3029,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-U93tj"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              30,073
                                                             </div>
                                                           </div>
                                                           <div
@@ -31685,7 +31685,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-r9JGV"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              25,205
                                                             </div>
                                                           </div>
                                                           <div
@@ -32282,7 +32282,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-U93tj"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              25,205
                                                             </div>
                                                           </div>
                                                           <div
@@ -36327,7 +36327,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-r9JGV"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              25,898
                                                             </div>
                                                           </div>
                                                           <div
@@ -36924,7 +36924,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-U93tj"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              25,898
                                                             </div>
                                                           </div>
                                                           <div
@@ -40970,7 +40970,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-r9JGV"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              23,919
                                                             </div>
                                                           </div>
                                                           <div
@@ -41567,7 +41567,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-U93tj"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              23,919
                                                             </div>
                                                           </div>
                                                           <div
@@ -45881,7 +45881,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-r9JGV"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              29,251
                                                             </div>
                                                           </div>
                                                           <div
@@ -46478,7 +46478,7 @@ const ReportingTableMain = ({ startDate, endDate }) => {
                                                             id="style-U93tj"
                                                           >
                                                             <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              30,751
+                                                              29,251
                                                             </div>
                                                           </div>
                                                           <div
