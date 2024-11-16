@@ -3727,7 +3727,7 @@ const Reporting = () => {
                                                                             id="style-WJ7BU"
                                                                           >
                                                                             <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-25-26">
-                                                                              Campaign
+                                                                              Page
                                                                               ID
                                                                             </span>
                                                                           </span>
@@ -3765,24 +3765,6 @@ const Reporting = () => {
                                                                           >
                                                                             <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-35-36">
                                                                               Ad
-                                                                              ID
-                                                                            </span>
-                                                                          </span>
-                                                                        </span>
-                                                                      </div>
-                                                                    </li>
-                                                                    <li class="snipcss0-2-6-37">
-                                                                      <div
-                                                                        class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
-                                                                        data-testid="typeahead-filter-option"
-                                                                      >
-                                                                        <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia snipcss0-4-38-39">
-                                                                          <span
-                                                                            class="snipcss0-5-39-40 style-qYOdf"
-                                                                            id="style-qYOdf"
-                                                                          >
-                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-40-41">
-                                                                              Page
                                                                               ID
                                                                             </span>
                                                                           </span>
@@ -4046,7 +4028,7 @@ const Reporting = () => {
                                                             id="style-A6p6w"
                                                             class="style-A6p6w"
                                                           >
-                                                            Campaign ID
+                                                            Page ID
                                                           </span>
                                                         </div>
                                                         <div class="_768e">
