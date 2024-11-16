@@ -1086,7 +1086,7 @@ const Reporting = () => {
     {
       title: "Level",
       metrics: [
-        "Camapign name",
+        "Campaign name",
         "ad set name",
         "Ad name",
         "Page name",
@@ -2570,7 +2570,14 @@ const Reporting = () => {
                                             style={{ margin: "20px" }}
                                             class="snipcss0-0-0-1 snipcss-epBXb"
                                           >
-                                            <div class="_5aj7 snipcss0-1-1-2">
+                                            <div
+                                              style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "space-between",
+                                              }}
+                                              class="_5aj7 snipcss0-1-1-2"
+                                            >
                                               <div class="_7r_0 _3qn7 _61-0 _2fyi _3qng snipcss-cqS3X">
                                                 <div>
                                                   <div
@@ -2639,20 +2646,6 @@ const Reporting = () => {
                                                     </div>
                                                   </div>
                                                 </div>
-                                                {/* <div id="style-WqoCY" class="style-WqoCY">
-        <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-            <div aria-busy="false" class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1pi30zi x1ye3gou" role="button" tabindex="0"><span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                    <div class="x78zum5">
-                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                            <div class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f" role="presentation">
-                                <div class="xtwfq29 style-kD1gw" id="style-kD1gw"></div>
-                            </div>
-                            <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">1 Ad Account</div>
-                        </div>
-                    </div>
-                </span></div>
-        </div>
-    </div> */}
                                               </div>
 
                                               <div
@@ -2918,18 +2911,6 @@ const Reporting = () => {
                                                                   <div class="_8dtc">
                                                                     <div class="_765v">
                                                                       <div class="_765u">
-                                                                        <button
-                                                                          aria-label="Edit Filter"
-                                                                          class="x6s0dn4 x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1fgtraw x12ushyc x1a2a7pz xexx8yu x1sxyh0 x18d9i69 xurb0ha x1pb7wa4 x1ceikm xycp24c xhk9q7s x13lgxp2 x5pf9jr x1o6z2jb"
-                                                                          disabled=""
-                                                                        >
-                                                                          <div>
-                                                                            <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x1h4wwuj xeuugli xw3qccf">
-                                                                              Had
-                                                                              delivery
-                                                                            </span>
-                                                                          </div>
-                                                                        </button>
                                                                         <div
                                                                           style={{
                                                                             marginTop:
@@ -4939,7 +4920,11 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   ) ||
                                                                                                                   [
-                                                                                                                    "Ad creative",
+                                                                                                                    "Campaign name",
+                                                                                                                    "Ad set name",
+                                                                                                                    "Placement",
+                                                                                                                    "Impression device",
+                                                                                                                    "Conversion device",
                                                                                                                   ].includes(
                                                                                                                     metric
                                                                                                                   )
