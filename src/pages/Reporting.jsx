@@ -15,6 +15,9 @@ const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [isFocused, setIsFocused] = useState(false);
   const [campaignbox, setcampaignbox] = useState(false);
+  const [showID, setShowID] = useState("");
+  const [showcurrentpageID, setcurrentPageID] = useState(false);
+  console.log(showID);
   const baseColumns = [
     {
       title: (
@@ -811,7 +814,11 @@ const Reporting = () => {
     //   ),
     // },
   ];
-
+  // Function to handle date selection
+  const handleDateChange = (e) => {
+    const date = new Date(e.target.value);
+    setSelectedDate(date);
+  };
   const [showcalender, setShowCalender] = useState(false);
   const [pivottable, setPovitTable] = useState("breakdown");
   const [currentfolder, setcurrentFolder] = useState("Campaings");
@@ -1590,6 +1597,10 @@ const Reporting = () => {
     setIsFocused(false);
     setcampaignbox((prev) => !prev);
   };
+  console.log(startDate, endDate);
+
+  // Determine the text to display based on the selected date
+
   return (
     <div>
       <div
@@ -2936,6 +2947,91 @@ const Reporting = () => {
                                                                         </div>
                                                                       </div>
                                                                     </div>
+                                                                    {showcurrentpageID && (
+                                                                      <div>
+                                                                        <button
+                                                                          style={{
+                                                                            border:
+                                                                              "none",
+                                                                            marginTop:
+                                                                              "6px",
+                                                                            outline:
+                                                                              "none",
+                                                                            backgroundColor:
+                                                                              "#f2f2f2",
+                                                                            padding:
+                                                                              "5px",
+                                                                            borderRadius:
+                                                                              "5px",
+                                                                            display:
+                                                                              "flex",
+                                                                            alignItems:
+                                                                              "center",
+                                                                            marginLeft:
+                                                                              "10px",
+                                                                            marginRight:
+                                                                              "10px",
+                                                                          }}
+                                                                        >
+                                                                          Page
+                                                                          ID is{" "}
+                                                                          <span
+                                                                            style={{
+                                                                              fontWeight:
+                                                                                "bold",
+                                                                              fontSize:
+                                                                                "15px",
+                                                                              marginLeft:
+                                                                                "5px",
+                                                                              marginRight:
+                                                                                "5px",
+                                                                              marginTop:
+                                                                                "-2px",
+                                                                            }}
+                                                                          >
+                                                                            {
+                                                                              showID
+                                                                            }
+                                                                          </span>{" "}
+                                                                          <div
+                                                                            style={{
+                                                                              cursor:
+                                                                                "pointer",
+                                                                            }}
+                                                                            onClick={() =>
+                                                                              setcurrentPageID(
+                                                                                false
+                                                                              )
+                                                                            }
+                                                                            aria-busy="false"
+                                                                          >
+                                                                            <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                              <div class="x78zum5">
+                                                                                <div
+                                                                                  class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                                                                  data-sscoverage-ignore="true"
+                                                                                >
+                                                                                  Close
+                                                                                </div>
+                                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                                  <div
+                                                                                    class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                                                                                    role="presentation"
+                                                                                  >
+                                                                                    <div
+                                                                                      class="xtwfq29 style-zlQsk"
+                                                                                      id="style-zlQsk"
+                                                                                    ></div>
+                                                                                  </div>
+
+                                                                                  ​
+                                                                                </div>
+                                                                              </div>
+                                                                            </span>
+                                                                          </div>
+                                                                        </button>
+                                                                      </div>
+                                                                    )}
                                                                     <div class="_4u-c _8dtd">
                                                                       <div>
                                                                         <span
@@ -2983,6 +3079,7 @@ const Reporting = () => {
                                                                       </div>
                                                                     </div>
                                                                   </div>
+
                                                                   <div class="_8dte"></div>
                                                                   <div class="_4u-c _765w">
                                                                     <div class="x1rg5ohu x67bb7w">
@@ -4078,6 +4175,15 @@ const Reporting = () => {
                                                                           "hidden",
                                                                       }}
                                                                       class="_58al"
+                                                                      onChange={(
+                                                                        e
+                                                                      ) =>
+                                                                        setShowID(
+                                                                          e
+                                                                            .target
+                                                                            .value
+                                                                        )
+                                                                      }
                                                                       placeholder="Typing IDs to select campaigns"
                                                                       type="text"
                                                                     />
@@ -4118,7 +4224,14 @@ const Reporting = () => {
                                                                 >
                                                                   <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                                     <div class="x78zum5">
-                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                      <div
+                                                                        onClick={() =>
+                                                                          setcurrentPageID(
+                                                                            true
+                                                                          )
+                                                                        }
+                                                                        class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3"
+                                                                      >
                                                                         <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                                           Apply
                                                                         </div>
@@ -4405,7 +4518,10 @@ const Reporting = () => {
                                                   whiteSpace: "nowrap", // Prevents table cells from wrapping, ensuring the table extends horizontally
                                                 }}
                                               >
-                                                <ReportingTableMain />
+                                                <ReportingTableMain
+                                                  startDate={startDate}
+                                                  endDate={endDate}
+                                                />
                                               </div>
                                             </div>
                                             <div>
