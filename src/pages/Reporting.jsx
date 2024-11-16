@@ -3102,7 +3102,7 @@ const Reporting = () => {
                                                               style={{
                                                                 position:
                                                                   "absolute",
-                                                                top: "40px",
+                                                                top: "48px",
                                                                 right: "20px",
                                                                 zIndex: 999,
                                                               }}
@@ -3356,7 +3356,13 @@ const Reporting = () => {
                                                                       </div>
                                                                     </div>
                                                                     <div className="footer">
-                                                                      <div class="snipcss-CZB9d">
+                                                                      <div
+                                                                        style={{
+                                                                          textAlign:
+                                                                            "left",
+                                                                        }}
+                                                                        class="snipcss-CZB9d"
+                                                                      >
                                                                         {startDate &&
                                                                         endDate
                                                                           ? `${formatDate(
@@ -3429,10 +3435,10 @@ const Reporting = () => {
                                                 <div
                                                   style={{
                                                     position: "absolute",
-                                                    top: "146px",
+                                                    top: "128px",
                                                     borderRadius: "10px",
                                                     padding: "5px 10px",
-                                                    left: "170px",
+                                                    left: "60px",
                                                     zIndex: 999,
                                                     backgroundColor: "white",
                                                     width: "380px",
@@ -3914,10 +3920,10 @@ const Reporting = () => {
                                                 <div
                                                   style={{
                                                     position: "absolute",
-                                                    top: "146px",
+                                                    top: "125px",
                                                     borderRadius: "10px",
                                                     padding: "5px 10px",
-                                                    left: "170px",
+                                                    left: "68px",
                                                     zIndex: 999,
                                                     backgroundColor: "white",
                                                     width: "240px",

@@ -48247,7 +48247,7 @@ const ReportingTableMain = () => {
                             data-tooltip-text-direction="auto"
                             class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
                           >
-                            5,646
+                            135,024
                           </div>
                           <div
                             class="ellipsis _1ha4"
@@ -48282,7 +48282,7 @@ const ReportingTableMain = () => {
                                 >
                                   <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                     <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli">
-                                      30,751
+                                      135,024
                                     </span>
                                   </div>
                                 </div>
@@ -48317,7 +48317,7 @@ const ReportingTableMain = () => {
                             data-tooltip-text-direction="auto"
                             class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
                           >
-                            <span class="_3dfi _3dfj">$4,200.67</span>
+                            <span class="_3dfi _3dfj">$63,639</span>
                           </div>
                           <div
                             class="ellipsis _1ha4"
