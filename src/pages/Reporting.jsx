@@ -886,6 +886,7 @@ const Reporting = () => {
   const handleupdatebutton = () => {
     if (startDate && endDate) {
       setShowCalender(false);
+      simulateLoadingProgress();
       fetchCampaigns(); // Allow manual fetch on button click
     } else {
       setError("Please select both start and end dates.");
@@ -1619,7 +1620,19 @@ const Reporting = () => {
       endDate.getMonth() === now.getMonth()
     );
   };
+  const simulateLoadingProgress = () => {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 10;
+      setLoadingProgress(progress);
 
+      if (progress >= 100) {
+        clearInterval(interval);
+        setLoading(false); // Stop loading once complete
+        setLoadingProgress(0); // Reset loading progress
+      }
+    }, 100); // Adjust speed as needed
+  };
   return (
     <div>
       <div
@@ -4514,6 +4527,16 @@ const Reporting = () => {
                                                   </div>
                                                 </div>
                                               </div>
+                                              {loading && (
+                                                <div className="progress-bar-container">
+                                                  <div
+                                                    className="progress-bar"
+                                                    style={{
+                                                      width: `${loadingProgress}%`,
+                                                    }}
+                                                  ></div>
+                                                </div>
+                                              )}
                                               {/* future render here */}
                                               <div
                                                 className="mainbarkks"
@@ -4530,6 +4553,14 @@ const Reporting = () => {
                                                 <ReportingTableMain
                                                   startDate={startDate}
                                                   endDate={endDate}
+                                                  loading={loading}
+                                                  setLoading={setLoading}
+                                                  loadingProgress={
+                                                    loadingProgress
+                                                  }
+                                                  setLoadingProgress={
+                                                    setLoadingProgress
+                                                  }
                                                 />
                                               </div>
                                             </div>

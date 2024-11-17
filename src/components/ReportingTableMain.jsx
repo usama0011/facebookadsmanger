@@ -1,6 +1,13 @@
 import React from "react";
 import "../styles/ReportingTableMain.css";
-const ReportingTableMain = ({ startDate, endDate }) => {
+const ReportingTableMain = ({
+  startDate,
+  endDate,
+  setLoadingProgress,
+  setLoading,
+  loading,
+  loadingProgress,
+}) => {
   console.log(startDate, endDate, "tablesection");
 
   const renderContent = () => {
@@ -1116,6 +1123,14 @@ const ReportingTableMain = ({ startDate, endDate }) => {
             </div>
             <div class="_1gd6 _1gd8 style-QodZJ" id="style-QodZJ"></div>
           </div>
+          {loading && (
+            <div className="progress-bar-container">
+              <div
+                className="progress-bar"
+                style={{ width: `${loadingProgress}%`, zIndex: "999" }}
+              ></div>
+            </div>
+          )}
           <div
             class="xw2csxc x1odjw0f xh8yej3 x18d9i69 snipcss-dcyIp"
             style={{ marginTop: "0px" }}
