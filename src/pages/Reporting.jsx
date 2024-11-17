@@ -1101,7 +1101,7 @@ const Reporting = () => {
       title: "Level",
       metrics: [
         "Campaign name",
-        "ad set name",
+        "Ad set name",
         "Ad name",
         "Page name",
         "Campaign ID",
