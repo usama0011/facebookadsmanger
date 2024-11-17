@@ -14,6 +14,8 @@ import ReportingTableMain from "../components/ReportingTableMain";
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [isFocused, setIsFocused] = useState(false);
+  const [finalStartDate, setFinalStartDate] = useState(null);
+  const [finalEndDate, setFinalEndDate] = useState(null);
   const [campaignbox, setcampaignbox] = useState(false);
   const [showID, setShowID] = useState("");
   const [showcurrentpageID, setcurrentPageID] = useState(false);
@@ -849,12 +851,6 @@ const Reporting = () => {
     }
   };
 
-  useEffect(() => {
-    if (startDate && endDate) {
-      fetchCampaigns(); // Fetch campaigns only when both dates are selected
-    }
-  }, [startDate, endDate]);
-
   const fetchCampaigns = async () => {
     try {
       setLoading(true); // Start loading state
@@ -900,19 +896,16 @@ const Reporting = () => {
   };
   const handleUpdateClick = () => {
     if (startDate && endDate) {
-      // Simulate data fetching
       setShowCalender(false);
       console.log("Fetching data for range:", startDate, endDate);
-      fetchData(startDate, endDate);
+      setFinalStartDate(startDate); // Update the final start date
+      setFinalEndDate(endDate); // Update the final end date
+      fetchCampaigns(); // Fetch the data
     } else {
       alert("Please select both start and end dates.");
     }
   };
-  const fetchData = (startDate, endDate) => {
-    // Replace with actual API logic
-    const mockData = `Data for range: ${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`;
-    setData(mockData);
-  };
+
   const renderCalendar = (date) => {
     const today = new Date();
     const year = date.getFullYear();
@@ -1600,10 +1593,7 @@ const Reporting = () => {
   };
 
   const columns = [...baseColumns, ...dynamicColumns];
-  const handleCampaignlogicis = () => {
-    setIsFocused(false);
-    setcampaignbox((prev) => !prev);
-  };
+
   console.log(startDate, endDate);
 
   // Determine the text to display based on the selected date
@@ -1619,19 +1609,7 @@ const Reporting = () => {
       endDate.getMonth() === now.getMonth()
     );
   };
-  const simulateLoadingProgress = () => {
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 10;
-      setLoadingProgress(progress);
 
-      if (progress >= 100) {
-        clearInterval(interval);
-        setLoading(false); // Stop loading once complete
-        setLoadingProgress(0); // Reset loading progress
-      }
-    }, 100); // Adjust speed as needed
-  };
   return (
     <div>
       <div
@@ -4550,8 +4528,8 @@ const Reporting = () => {
                                                 }}
                                               >
                                                 <ReportingTableMain
-                                                  startDate={startDate}
-                                                  endDate={endDate}
+                                                  startDate={finalStartDate}
+                                                  endDate={finalEndDate}
                                                   loading={loading}
                                                   setLoading={setLoading}
                                                   loadingProgress={
