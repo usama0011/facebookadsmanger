@@ -1607,6 +1607,18 @@ const Reporting = () => {
   console.log(startDate, endDate);
 
   // Determine the text to display based on the selected date
+  const isCurrentMonth = (startDate, endDate) => {
+    const now = new Date();
+    const currentMonthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+    const currentMonthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+
+    return (
+      startDate >= currentMonthStart &&
+      endDate <= currentMonthEnd &&
+      startDate.getMonth() === now.getMonth() &&
+      endDate.getMonth() === now.getMonth()
+    );
+  };
 
   return (
     <div>
@@ -3171,8 +3183,11 @@ const Reporting = () => {
                                                                                   ></div>
                                                                                 </div>
                                                                                 <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1iyjqo2">
-                                                                                  This
-                                                                                  month:{" "}
+                                                                                  {isCurrentMonth(
+                                                                                    startDate,
+                                                                                    endDate
+                                                                                  ) &&
+                                                                                    "This month:"}{" "}
                                                                                   {formatDate(
                                                                                     startDate
                                                                                   )}{" "}
