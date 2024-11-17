@@ -841,18 +841,11 @@ const Reporting = () => {
   // Function to handle checkbox changes
 
   const handleDayClick = (date) => {
-    if (!selectingEnd) {
+    if (!startDate || (startDate && endDate)) {
       setStartDate(date);
-      setEndDate(null); // Clear end date when selecting a new start date
-      setSelectingEnd(true);
+      setEndDate(null);
     } else {
-      if (date < startDate) {
-        setStartDate(date);
-        setEndDate(startDate);
-      } else {
-        setEndDate(date);
-      }
-      setSelectingEnd(false);
+      setEndDate(date);
     }
   };
 
@@ -883,18 +876,10 @@ const Reporting = () => {
     }
   };
 
-  const handleupdatebutton = () => {
-    if (startDate && endDate) {
-      setShowCalender(false);
-      simulateLoadingProgress();
-      fetchCampaigns(); // Allow manual fetch on button click
-    } else {
-      setError("Please select both start and end dates.");
-    }
-  };
-
   const handleDayMouseEnter = (date) => {
-    setHoverDate(date);
+    if (startDate && !endDate) {
+      setHoverDate(date);
+    }
   };
 
   const handlePrevMonth = () => {
@@ -913,7 +898,21 @@ const Reporting = () => {
     setStartDate(range.startDate);
     setEndDate(range.endDate);
   };
-
+  const handleUpdateClick = () => {
+    if (startDate && endDate) {
+      // Simulate data fetching
+      setShowCalender(false);
+      console.log("Fetching data for range:", startDate, endDate);
+      fetchData(startDate, endDate);
+    } else {
+      alert("Please select both start and end dates.");
+    }
+  };
+  const fetchData = (startDate, endDate) => {
+    // Replace with actual API logic
+    const mockData = `Data for range: ${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`;
+    setData(mockData);
+  };
   const renderCalendar = (date) => {
     const today = new Date();
     const year = date.getFullYear();
@@ -3527,7 +3526,7 @@ const Reporting = () => {
                                                                           !endDate
                                                                         } // Disable button if dates are incomplete
                                                                         onClick={
-                                                                          handleupdatebutton
+                                                                          handleUpdateClick
                                                                         }
                                                                         className="update-btn"
                                                                       >

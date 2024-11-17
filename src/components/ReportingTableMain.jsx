@@ -1,13 +1,6 @@
 import React from "react";
 import "../styles/ReportingTableMain.css";
-const ReportingTableMain = ({
-  startDate,
-  endDate,
-  setLoadingProgress,
-  setLoading,
-  loading,
-  loadingProgress,
-}) => {
+const ReportingTableMain = ({ startDate, endDate }) => {
   console.log(startDate, endDate, "tablesection");
 
   const renderContent = () => {
@@ -592,7 +585,7 @@ const ReportingTableMain = ({
                                                       id="style-7icMt"
                                                       class="style-7icMt"
                                                     >
-                                                      Conversion device
+                                                      Page ID
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1123,14 +1116,6 @@ const ReportingTableMain = ({
             </div>
             <div class="_1gd6 _1gd8 style-QodZJ" id="style-QodZJ"></div>
           </div>
-          {loading && (
-            <div className="progress-bar-container">
-              <div
-                className="progress-bar"
-                style={{ width: `${loadingProgress}%`, zIndex: "999" }}
-              ></div>
-            </div>
-          )}
           <div
             class="xw2csxc x1odjw0f xh8yej3 x18d9i69 snipcss-dcyIp"
             style={{ marginTop: "0px" }}
@@ -49798,7 +49783,7 @@ const ReportingTableMain = ({
                                                     id="style-7icMt"
                                                     class="style-7icMt"
                                                   >
-                                                    Conversion device
+                                                    Page ID
                                                   </div>
                                                 </div>
                                               </div>

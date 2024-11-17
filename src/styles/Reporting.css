@@ -7212,7 +7212,7 @@ i.img {
   display: inline-block;
 }
 .progress-bar-container {
-  height: 12px;
+  height: 3px;
   background-color: #2b76e6;
   border-radius: 4px;
   z-index: 999;
