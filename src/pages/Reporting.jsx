@@ -5066,6 +5066,9 @@ const Reporting = () => {
                                                                                                                   [
                                                                                                                     "Campaign name",
                                                                                                                     "Ad set name",
+                                                                                                                    "Ad name",
+                                                                                                                    "Page name",
+                                                                                                                    "Ad creative",
                                                                                                                     "Placement",
                                                                                                                     "Impression device",
                                                                                                                     "Conversion device",
