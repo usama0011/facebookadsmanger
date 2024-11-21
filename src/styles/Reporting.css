@@ -7211,7 +7211,7 @@ i.img {
   background-repeat: no-repeat;
   display: inline-block;
 }
-.progress-bar-container {
+/* .progress-bar-container {
   height: 3px;
   background-color: #2b76e6;
   border-radius: 4px;
@@ -7224,4 +7224,4 @@ i.img {
   background-color: #2b76e6;
   transition: width 0.4s ease-in-out;
   z-index: 999;
-}
+} */

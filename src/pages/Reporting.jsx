@@ -10,6 +10,7 @@ import axios from "axios";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import { Table } from "antd";
 import ReportingTableMain from "../components/ReportingTableMain";
+import SimpleTable from "./SimpleTable";
 
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -827,11 +828,11 @@ const Reporting = () => {
   const [error, setError] = useState("");
   const getFirstDayOfMonth = () => {
     const date = new Date();
-    return new Date(date.getFullYear(), date.getMonth(), 1);
+    return new Date(date.getFullYear(), date?.getMonth(), 1);
   };
   const getLastDayOfMonth = () => {
     const date = new Date();
-    return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    return new Date(date.getFullYear(), date?.getMonth() + 1, 0);
   };
   const [startDate, setStartDate] = useState(getFirstDayOfMonth());
   const [endDate, setEndDate] = useState(getLastDayOfMonth());
@@ -880,13 +881,13 @@ const Reporting = () => {
 
   const handlePrevMonth = () => {
     setCurrentMonth(
-      new Date(currentMonth.setMonth(currentMonth.getMonth() - 1))
+      new Date(currentMonth.setMonth(currentMonth?.getMonth() - 1))
     );
   };
 
   const handleNextMonth = () => {
     setCurrentMonth(
-      new Date(currentMonth.setMonth(currentMonth.getMonth() + 1))
+      new Date(currentMonth.setMonth(currentMonth?.getMonth() + 1))
     );
   };
 
@@ -909,7 +910,7 @@ const Reporting = () => {
   const renderCalendar = (date) => {
     const today = new Date();
     const year = date.getFullYear();
-    const month = date.getMonth();
+    const month = date?.getMonth();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const firstDayIndex = new Date(year, month, 1).getDay();
 
@@ -3457,7 +3458,7 @@ const Reporting = () => {
                                                                           {renderCalendar(
                                                                             new Date(
                                                                               currentMonth.getFullYear(),
-                                                                              currentMonth.getMonth() +
+                                                                              currentMonth?.getMonth() +
                                                                                 1
                                                                             )
                                                                           )}
@@ -4527,7 +4528,7 @@ const Reporting = () => {
                                                   whiteSpace: "nowrap", // Prevents table cells from wrapping, ensuring the table extends horizontally
                                                 }}
                                               >
-                                                <ReportingTableMain
+                                                {/* <ReportingTableMain
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
                                                   loading={loading}
@@ -4538,6 +4539,10 @@ const Reporting = () => {
                                                   setLoadingProgress={
                                                     setLoadingProgress
                                                   }
+                                                /> */}
+                                                <SimpleTable
+                                                  startDate={finalStartDate}
+                                                  endDate={finalEndDate}
                                                 />
                                               </div>
                                             </div>
