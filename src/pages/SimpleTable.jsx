@@ -11980,6 +11980,24 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td>—</td>
               </tr>
             </tbody>
+            <div
+              style={{
+                position: "fixed",
+                top: "870px",
+                borderBottomLeftRadius: "5px",
+                borderBottomRightRadius: "5px",
+                backgroundColor: "white",
+                left: "0",
+                marginLeft: "81px",
+                width: "74.9%",
+                height: "70px",
+                zIndex: "999",
+                boxShadow:
+                  "rgba(60, 64, 67, 0.2) 0px -1px 1px 0px, rgba(60, 64, 67, 0.1) 0px -1px 4px 1px",
+              }}
+            >
+              {renderFooter()}
+            </div>
           </table>
         </div>
       );
@@ -12051,7 +12069,7 @@ const SimpleTable = ({ startDate, endDate }) => {
             </td>
             <td
               style={{
-                minWidth: "154px",
+                minWidth: "150px",
                 fontWeight: "bold",
                 textAlign: "center",
               }}
@@ -12192,7 +12210,7 @@ const SimpleTable = ({ startDate, endDate }) => {
             ></td>
             <td
               style={{
-                minWidth: "180px",
+                minWidth: "160px",
                 fontWeight: "bold",
                 textAlign: "center",
               }}
