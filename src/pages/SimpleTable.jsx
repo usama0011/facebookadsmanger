@@ -12069,7 +12069,7 @@ const SimpleTable = ({ startDate, endDate }) => {
             </td>
             <td
               style={{
-                minWidth: "150px",
+                minWidth: "153px",
                 fontWeight: "bold",
                 textAlign: "center",
               }}
@@ -12203,19 +12203,21 @@ const SimpleTable = ({ startDate, endDate }) => {
             ></td>
             <td
               style={{
-                minWidth: "160px",
-                fontWeight: "bold",
-                textAlign: "center",
-              }}
-            ></td>
-            <td
-              style={{
-                minWidth: "160px",
+                minWidth: "166px",
                 fontWeight: "bold",
                 textAlign: "center",
               }}
             >
-              $33,002.08
+              93,007
+            </td>
+            <td
+              style={{
+                minWidth: "153px",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              $23,269.58
             </td>
           </tr>
         </tfoot>
