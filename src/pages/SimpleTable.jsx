@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Table.css";
+import HoverBox from "../components/HoverBox";
 const SimpleTable = ({ startDate, endDate }) => {
   const renderContent = () => {
     const start = new Date(startDate);
@@ -758,7 +759,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>152</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
@@ -774,6 +779,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="For an extraordinary bathing experience,Extraordinary bathroom application for you"
+                          learnmoreabove="bathroom-remodeling-22111..."
+                          campaingImage="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
+                          likesshow={true}
+                          sharesshow={true}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="2"
+                          learnmorecenter="Get Quote"
+                          learnmorebottom="Bathroom Remodel Near..."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -1903,7 +1924,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>25,673</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/fGgmYF6/Whats-App-Image-2024-11-21-at-1-17-27-AM.jpg"
@@ -1919,6 +1944,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Affordable Solar Panel Installation, Sustainable choices for a better future."
+                          learnmoreabove="solar=systems-panels-16899.b..."
+                          campaingImage="https://i.ibb.co/fGgmYF6/Whats-App-Image-2024-11-21-at-1-17-27-AM.jpg"
+                          likesshow={true}
+                          sharesshow={true}
+                          angryshow={true}
+                          happyshow={true}
+                          shares="10"
+                          learnmorecenter="Affordable Solar Panel"
+                          learnmorebottom="Sumpower Solar Panels,H..."
+                          pagename="Emrys Technologies"
+                          commetsshow={true}
+                        />
                       </div>
                     </div>
                   </td>
@@ -3048,7 +3089,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>19,429</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/4pSBQWC/Whats-App-Image-2024-11-21-at-1-17-59-AM.jpg"
@@ -3064,6 +3109,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="How much does it cost to renovate a house? Save, Pay, Profit..! Transform Your Home, Transform Your Life."
+                          learnmoreabove="home-renovation-57447.bond"
+                          campaingImage="https://i.ibb.co/4pSBQWC/Whats-App-Image-2024-11-21-at-1-17-59-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Get Quote"
+                          learnmorebottom="Home Renovation,Home..."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -4193,7 +4254,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>23,330</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/zrTctLR/Whats-App-Image-2024-11-21-at-1-16-25-AM.jpg"
@@ -4209,6 +4274,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Dream Your Mortgage Loan and Make it a Reality.Superior Mortgage, Superior HOme."
+                          learnmoreabove="mortage-84651.bond"
+                          campaingImage="https://i.ibb.co/zrTctLR/Whats-App-Image-2024-11-21-at-1-16-25-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Emrys Technologies"
+                          learnmorebottom="Seneca Mortage,Phh Mor.."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -5338,7 +5419,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>24,423</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/X8yXMZq/Whats-App-Image-2024-11-21-at-1-17-43-AM.jpg"
@@ -5354,6 +5439,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Roofing expertise that goes above and beyound. Providing reliable roofs that withstand the elements."
+                          learnmoreabove="roofing-services-70693.bond"
+                          campaingImage="https://i.ibb.co/X8yXMZq/Whats-App-Image-2024-11-21-at-1-17-43-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Emrys Technologies"
+                          learnmorebottom="Commercial Roofing Servi..."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -6284,7 +6385,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>149</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
@@ -6301,6 +6406,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                       </div>
+                    </div>
+                    <div className="hoverboxshow">
+                      <HoverBox
+                        description="For an extraordinary bathing experience,Extraordinary bathroom application for you"
+                        learnmoreabove="bathroom-remodeling-22111..."
+                        campaingImage="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
+                        likesshow={true}
+                        sharesshow={true}
+                        angryshow={false}
+                        happyshow={false}
+                        shares="2"
+                        learnmorecenter="Get Quote"
+                        learnmorebottom="Bathroom Remodel Near..."
+                        pagename="Emrys Technologies"
+                        commetsshow={false}
+                      />
                     </div>
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
@@ -7447,7 +7568,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>26,540</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/fGgmYF6/Whats-App-Image-2024-11-21-at-1-17-27-AM.jpg"
@@ -7463,6 +7588,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Affordable Solar Panel Installation, Sustainable choices for a better future."
+                          learnmoreabove="solar=systems-panels-16899.b..."
+                          campaingImage="https://i.ibb.co/fGgmYF6/Whats-App-Image-2024-11-21-at-1-17-27-AM.jpg"
+                          likesshow={true}
+                          sharesshow={true}
+                          angryshow={true}
+                          happyshow={true}
+                          shares="10"
+                          learnmorecenter="Affordable Solar Panel"
+                          learnmorebottom="Sumpower Solar Panels,H..."
+                          pagename="Emrys Technologies"
+                          commetsshow={true}
+                        />
                       </div>
                     </div>
                   </td>
@@ -8593,7 +8734,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>9,103.32</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/4pSBQWC/Whats-App-Image-2024-11-21-at-1-17-59-AM.jpg"
@@ -8609,6 +8754,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="How much does it cost to renovate a house? Save, Pay, Profit..! Transform Your Home, Transform Your Life."
+                          learnmoreabove="home-renovation-57447.bond"
+                          campaingImage="https://i.ibb.co/4pSBQWC/Whats-App-Image-2024-11-21-at-1-17-59-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Get Quote"
+                          learnmorebottom="Home Renovation,Home..."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -9738,7 +9899,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>27,540</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/zrTctLR/Whats-App-Image-2024-11-21-at-1-16-25-AM.jpg"
@@ -9754,6 +9919,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Dream Your Mortgage Loan and Make it a Reality.Superior Mortgage, Superior HOme."
+                          learnmoreabove="mortage-84651.bond"
+                          campaingImage="https://i.ibb.co/zrTctLR/Whats-App-Image-2024-11-21-at-1-16-25-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Emrys Technologies"
+                          learnmorebottom="Seneca Mortage,Phh Mor.."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -10883,7 +11064,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td>24,248</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0" }} rowSpan="25">
+                  <td
+                    className="hoverhover"
+                    style={{ padding: "0" }}
+                    rowSpan="25"
+                  >
                     <div className="ad-creative-cell">
                       <img
                         src="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
@@ -10899,6 +11084,22 @@ const SimpleTable = ({ startDate, endDate }) => {
                           Stop compromising the future of...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
+                      </div>
+                      <div className="hoverboxshow">
+                        <HoverBox
+                          description="Roofing expertise that goes above and beyound. Providing reliable roofs that withstand the elements."
+                          learnmoreabove="roofing-services-70693.bond"
+                          campaingImage="https://i.ibb.co/X8yXMZq/Whats-App-Image-2024-11-21-at-1-17-43-AM.jpg"
+                          likesshow={true}
+                          sharesshow={false}
+                          angryshow={false}
+                          happyshow={false}
+                          shares="10"
+                          learnmorecenter="Emrys Technologies"
+                          learnmorebottom="Commercial Roofing Servi..."
+                          pagename="Emrys Technologies"
+                          commetsshow={false}
+                        />
                       </div>
                     </div>
                   </td>
@@ -11806,7 +12007,11 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td>152</td>
               </tr>
               <tr>
-                <td style={{ padding: "0" }} rowSpan="25">
+                <td
+                  style={{ padding: "0" }}
+                  className="hoverhover"
+                  rowSpan="25"
+                >
                   <div className="ad-creative-cell">
                     <img
                       src="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
@@ -11815,15 +12020,30 @@ const SimpleTable = ({ startDate, endDate }) => {
                       className="ad-creative-img"
                     />
                     <div>
-                      <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
-                      </strong>
+                      <strong style={{ fontWeight: "bold" }}>Get Quote</strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        For an extraordinary bathing...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
+                    <div className="hoverboxshow">
+                      <HoverBox
+                        description="For an extraordinary bathing experience,Extraordinary bathroom application for you"
+                        learnmoreabove="bathroom-remodeling-22111..."
+                        campaingImage="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
+                        likesshow={true}
+                        sharesshow={true}
+                        angryshow={false}
+                        happyshow={false}
+                        shares="2"
+                        learnmorecenter="Get Quote"
+                        learnmorebottom="Bathroom Remodel Near..."
+                        pagename="Emrys Technologies"
+                        commetsshow={false}
+                      />
+                    </div>
                   </div>
+                  {/* Absloute box */}
                 </td>
                 <td rowSpan="5">Device: Android Smartphone</td>
                 <td>All</td>
