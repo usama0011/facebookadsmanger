@@ -3214,7 +3214,7 @@ const Reporting = () => {
                                                                   "absolute",
                                                                 top: "48px",
                                                                 right: "20px",
-                                                                zIndex: 999,
+                                                                zIndex: 3000,
                                                               }}
                                                             >
                                                               <div className="date-range-picker">

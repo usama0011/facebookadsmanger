@@ -779,8 +779,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>3,439</td>
+                  <td>$6.42</td>
+                  <td>31</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -809,8 +809,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$22.74</td>
+                  <td>99</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -840,8 +840,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$0.08</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -871,8 +871,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$3.24</td>
+                  <td>13</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -902,8 +902,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$0.03</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -1924,8 +1924,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$540.4</td>
+                  <td>3,153.94</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -1954,8 +1954,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$1,157.04</td>
+                  <td>5,888.04</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -1985,8 +1985,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$4.55</td>
+                  <td>27.68</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -2016,8 +2016,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$1,509.24</td>
+                  <td>8,333.94</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -2047,8 +2047,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$11.72</td>
+                  <td>41</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -3069,8 +3069,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$781.02</td>
+                  <td>2,109.76</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -3099,8 +3099,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$1,891.5</td>
+                  <td>5,145.9</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -3130,8 +3130,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$0</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -3161,8 +3161,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$1,467.4</td>
+                  <td>6,638</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -3192,8 +3192,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$19.15</td>
+                  <td>24</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -4214,8 +4214,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$857.21</td>
+                  <td>3,052</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -4244,8 +4244,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$1,723.1</td>
+                  <td>6,138</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -4275,8 +4275,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$1.04</td>
+                  <td>4</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -4306,8 +4306,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$2,247.73</td>
+                  <td>8,005</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -4337,8 +4337,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$17.45</td>
+                  <td>62</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -5359,8 +5359,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$528</td>
+                  <td>2,670</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -5389,8 +5389,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$1,207.21</td>
+                  <td>5,901</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -5420,8 +5420,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$2.26</td>
+                  <td>12</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -5451,8 +5451,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$1,660</td>
+                  <td>8,113</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -5482,8 +5482,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$6</td>
+                  <td>27</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -6305,7 +6305,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
+                  <td>$7.61</td>
                   <td>3,439</td>
                 </tr>
                 <tr>
@@ -6366,7 +6366,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
+                  <td>$0.17</td>
                   <td>342</td>
                 </tr>
                 <tr>
@@ -6397,7 +6397,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
+                  <td>$3.29</td>
                   <td>380</td>
                 </tr>
                 <tr>
@@ -6428,7 +6428,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
+                  <td>$0.24</td>
                   <td>389</td>
                 </tr>
                 <tr>
@@ -7468,8 +7468,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$1427.86</td>
+                  <td>2734.48</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -7498,8 +7498,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$2680.72</td>
+                  <td>14036.6</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -7529,8 +7529,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$10.56</td>
+                  <td>15.36</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -7560,8 +7560,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$3496.89</td>
+                  <td>1597.42</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -7591,8 +7591,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$27.14</td>
+                  <td>67.69</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -8614,8 +8614,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$1080.83</td>
+                  <td>3122</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -8644,8 +8644,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$2394.97</td>
+                  <td>14169</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -8675,8 +8675,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$9.42</td>
+                  <td>17.36</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -8706,8 +8706,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$3,123.95</td>
+                  <td>1,704.9</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -8737,8 +8737,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$24.25</td>
+                  <td>31.72</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -9759,8 +9759,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$1552.91</td>
+                  <td>4692</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -9789,8 +9789,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$2597.02</td>
+                  <td>12432.76</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -9820,8 +9820,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$10.21</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -9851,8 +9851,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$3,387.72</td>
+                  <td>3,173.23</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -9882,8 +9882,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$26.29</td>
+                  <td>67.96</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -10904,8 +10904,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   </td>
                   <td rowSpan="5">Device: Android Smartphone</td>
                   <td>All</td>
-                  <td>$7.614</td>
-                  <td>443</td>
+                  <td>$1,248.46</td>
+                  <td>2,502</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -10934,8 +10934,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <tr>
                   <td rowSpan="5">Device: iPhone</td>
                   <td>All</td>
-                  <td>$18.36</td>
-                  <td>234</td>
+                  <td>$3,183.08</td>
+                  <td>13,389</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -10965,8 +10965,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Desktop</td>
                   <td>All</td>
 
-                  <td>$342</td>
-                  <td>342</td>
+                  <td>$12.53</td>
+                  <td>9.62</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -10996,8 +10996,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: iPad</td>
                   <td>All</td>
 
-                  <td>$380</td>
-                  <td>380</td>
+                  <td>$4,152.22</td>
+                  <td>2,981</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -11027,8 +11027,8 @@ const SimpleTable = ({ startDate, endDate }) => {
                   <td rowSpan="5">Device: Android Tablet</td>
                   <td>All</td>
 
-                  <td>$389</td>
-                  <td>389</td>
+                  <td>$32.23</td>
+                  <td>68.08</td>
                 </tr>
                 <tr>
                   <td>Marketplace</td>
@@ -11828,7 +11828,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td rowSpan="5">Device: Android Smartphone</td>
                 <td>All</td>
 
-                <td>$7.614</td>
+                <td>$7.61</td>
                 <td>3,439</td>
               </tr>
               <tr>
@@ -11890,7 +11890,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td rowSpan="5">Device: Desktop</td>
                 <td>All</td>
 
-                <td>$342</td>
+                <td>$0.17</td>
                 <td>342</td>
               </tr>
               <tr>
@@ -11921,7 +11921,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td rowSpan="5">Device: iPad</td>
                 <td>All</td>
 
-                <td>$380</td>
+                <td>$3.29</td>
                 <td>380</td>
               </tr>
               <tr>
@@ -11952,7 +11952,7 @@ const SimpleTable = ({ startDate, endDate }) => {
                 <td rowSpan="5">Device: Android Tablet</td>
                 <td>All</td>
 
-                <td>$389</td>
+                <td>$0.24</td>
                 <td>389</td>
               </tr>
               <tr>
