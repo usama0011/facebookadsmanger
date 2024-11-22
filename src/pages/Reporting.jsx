@@ -5093,7 +5093,6 @@ const Reporting = () => {
                                                                                                                     "Ad creative",
                                                                                                                     "Placement",
                                                                                                                     "Impression device",
-                                                                                                                    "Conversion device",
                                                                                                                   ].includes(
                                                                                                                     metric
                                                                                                                   )
