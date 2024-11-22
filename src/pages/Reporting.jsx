@@ -17,6 +17,7 @@ const Reporting = () => {
   const [isFocused, setIsFocused] = useState(false);
   const [finalStartDate, setFinalStartDate] = useState(null);
   const [finalEndDate, setFinalEndDate] = useState(null);
+  const [progress, setProgress] = useState(0);
   const [campaignbox, setcampaignbox] = useState(false);
   const [showID, setShowID] = useState("");
   const [showcurrentpageID, setcurrentPageID] = useState(false);
@@ -896,6 +897,22 @@ const Reporting = () => {
     setEndDate(range.endDate);
   };
   const handleUpdateClick = () => {
+    setLoading(true);
+    setProgress(0); // Reset progress to 0%
+
+    let progressValue = 0;
+    const interval = setInterval(() => {
+      progressValue += 10; // Increment progress
+      setProgress(progressValue);
+
+      if (progressValue >= 100) {
+        clearInterval(interval); // Stop the interval
+        setTimeout(() => {
+          setLoading(false); // Stop loading after a short delay
+          setProgress(0); // Reset the progress bar
+        }, 600);
+      }
+    }, 600); // Adjust speed of progress increments
     if (startDate && endDate) {
       setShowCalender(false);
       console.log("Fetching data for range:", startDate, endDate);
@@ -3553,7 +3570,7 @@ const Reporting = () => {
                                                     borderRadius: "10px",
                                                     padding: "5px 10px",
                                                     left: "60px",
-                                                    zIndex: 999,
+                                                    zIndex: 3000,
                                                     backgroundColor: "white",
                                                     width: "380px",
                                                     boxShadow:
@@ -4020,7 +4037,7 @@ const Reporting = () => {
                                                     borderRadius: "10px",
                                                     padding: "5px 10px",
                                                     left: "68px",
-                                                    zIndex: 999,
+                                                    zIndex: 3000,
                                                     backgroundColor: "white",
                                                     width: "240px",
                                                     textAlign: "left",
@@ -4541,6 +4558,11 @@ const Reporting = () => {
                                                   }
                                                 /> */}
                                                 <SimpleTable
+                                                  progress={progress}
+                                                  loading={loading}
+                                                  loadingProgress={
+                                                    loadingProgress
+                                                  }
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
                                                 />
