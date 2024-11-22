@@ -3175,7 +3175,7 @@ const SimpleTable = ({
                 <td rowSpan="5">Device: Android Smartphone</td>
                 <td>All</td>
                 <td>$7.61</td>
-                <td>3,439</td>
+                <td>43</td>
               </tr>
               <tr>
                 <td>Marketplace</td>
@@ -4440,7 +4440,7 @@ const SimpleTable = ({
                 >
                   <div className="ad-creative-cell">
                     <img
-                      src="https://i.ibb.co/BN7zWVL/Whats-App-Image-2024-11-21-at-1-17-11-AM.jpg"
+                      src="https://i.ibb.co/X8yXMZq/Whats-App-Image-2024-11-21-at-1-17-43-AM.jpg"
                       alt="Whats-App-Image-2024-11-21-at-1-17-11-AM"
                       border="0"
                       className="ad-creative-img"
@@ -5523,7 +5523,7 @@ const SimpleTable = ({
                 <td>All</td>
 
                 <td>$7.61</td>
-                <td>3,439</td>
+                <td>43</td>
               </tr>
               <tr>
                 <td>Marketplace</td>
