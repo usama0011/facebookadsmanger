@@ -3762,7 +3762,7 @@ const Reporting = () => {
                                                                           >
                                                                             <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli snipcss0-6-25-26">
                                                                               Page
-                                                                              Name
+                                                                              ID
                                                                             </span>
                                                                           </span>
                                                                         </span>
