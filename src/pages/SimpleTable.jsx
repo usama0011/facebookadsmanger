@@ -795,11 +795,9 @@ const SimpleTable = ({
                       className="ad-creative-img"
                     />
                     <div>
-                      <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
-                      </strong>
+                      <strong style={{ fontWeight: "bold" }}>Get Quote</strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        For an extraordinary bathing...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
@@ -1120,10 +1118,10 @@ const SimpleTable = ({
                       />
                       <div>
                         <strong style={{ fontWeight: "bold" }}>
-                          Turn up the Brightness
+                          Affordable Solar Panel
                         </strong>
                         <p style={{ fontWeight: "500" }}>
-                          Stop compromising the future of...
+                          Affordable Solar Panel Installation...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                       </div>
@@ -1446,10 +1444,10 @@ const SimpleTable = ({
                       />
                       <div>
                         <strong style={{ fontWeight: "bold" }}>
-                          Turn up the Brightness
+                          Get Quote
                         </strong>
                         <p style={{ fontWeight: "500" }}>
-                          Stop compromising the future of...
+                          How much does it cost to...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                       </div>
@@ -1771,16 +1769,16 @@ const SimpleTable = ({
                       />
                       <div>
                         <strong style={{ fontWeight: "bold" }}>
-                          Turn up the Brightness
+                          Emrys Technologies
                         </strong>
                         <p style={{ fontWeight: "500" }}>
-                          Stop compromising the future of...
+                          Dream Your Mortgage Loan and...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                       </div>
                       <div className="hoverboxshow">
                         <HoverBox
-                          description="Dream Your Mortgage Loan and Make it a Reality.Superior Mortgage, Superior HOme."
+                          description="Dream Your Mortgage Loan and Make it a Reality.Superior Mortgage, Superior Home."
                           learnmoreabove="mortage-84651.bond"
                           campaingImage="https://i.ibb.co/zrTctLR/Whats-App-Image-2024-11-21-at-1-16-25-AM.jpg"
                           likesshow={true}
@@ -2096,10 +2094,10 @@ const SimpleTable = ({
                       />
                       <div>
                         <strong style={{ fontWeight: "bold" }}>
-                          Turn up the Brightness
+                          Emrys Technologies
                         </strong>
                         <p style={{ fontWeight: "500" }}>
-                          Stop compromising the future of...
+                          Roofing expertise that goes above...
                         </p>
                         <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                       </div>
@@ -3146,11 +3144,9 @@ const SimpleTable = ({
                       className="ad-creative-img"
                     />
                     <div>
-                      <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
-                      </strong>
+                      <strong style={{ fontWeight: "bold" }}>Get Quote</strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        For an extraordinary bathing...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
@@ -3472,10 +3468,10 @@ const SimpleTable = ({
                     />
                     <div>
                       <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
+                        Affordable Solar Panel
                       </strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        Affordable Solar Panel Installation...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
@@ -3796,11 +3792,9 @@ const SimpleTable = ({
                       className="ad-creative-img"
                     />
                     <div>
-                      <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
-                      </strong>
+                      <strong style={{ fontWeight: "bold" }}>Get Quote</strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        How much does it cost to...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
@@ -4122,10 +4116,10 @@ const SimpleTable = ({
                     />
                     <div>
                       <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
+                        Emrys Technologies
                       </strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        Dream Your Mortgage Loan...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>
@@ -4447,10 +4441,10 @@ const SimpleTable = ({
                     />
                     <div>
                       <strong style={{ fontWeight: "bold" }}>
-                        Turn up the Brightness
+                        Emrys Technologies
                       </strong>
                       <p style={{ fontWeight: "500" }}>
-                        Stop compromising the future of...
+                        Roofing expertise that goes...
                       </p>
                       <span style={{ fontSize: "13px" }}>Used in 1 ad</span>
                     </div>

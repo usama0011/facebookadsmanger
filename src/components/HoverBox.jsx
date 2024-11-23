@@ -89,6 +89,7 @@ const HoverBox = ({
             style={{
               textWrap: "wrap",
               padding: "10px",
+              textAlign: "left",
               fontSize: "14px",
               color: "black",
               fontWeight: "400",
