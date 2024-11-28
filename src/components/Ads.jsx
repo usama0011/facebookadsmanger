@@ -675,18 +675,14 @@ const Ads = ({ campaigns, loading, error }) => {
       ),
     },
   ];
-  const Footer = () => (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        boxShadow: "0 -4px 8px rgba(0,0,0,0.1)",
-        padding: "10px 20px",
-        background: "#fff",
-      }}
-    >
-      footer
-    </div>
+  // Calculate height based on campaigns length
+  const rowHeight = 50; // Approximate height of one row
+  const headerHeight = 60; // Approximate height of the header
+  const footerHeight = 60; // Approximate height of the footer
+  const maxHeight = 500; // Set a maximum table height
+  const calculatedHeight = Math.min(
+    campaigns.length * rowHeight + headerHeight + footerHeight,
+    maxHeight
   );
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
@@ -2283,23 +2279,248 @@ const Ads = ({ campaigns, loading, error }) => {
               </div>
             </div>
             {/* table start here from */}
-            <div className="campaign-table-container">
+            <div className="">
               <Table
-                style={{ borderRadius: "10px" }}
                 columns={columns}
                 dataSource={campaigns}
-                loading={loading}
-                scroll={{
-                  x: 2000,
-                  y: 420,
+                style={{
+                  maxHeight: `${calculatedHeight}px`,
+                  overflow: "auto",
                 }}
+                scroll={{ y: calculatedHeight }}
                 bordered
                 pagination={false}
-                rowKey={(record) => record._id}
-                className="campaign-table yete custom-header"
+                sticky
+                summary={(pageData) => {
+                  // Calculate sums for specific numeric fields
+                  const totalReach = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Reach) || 0),
+                    0
+                  );
+                  const totalResults = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Results) || 0),
+                    0
+                  );
+                  const totalImpressions = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Impressions) || 0),
+                    0
+                  );
+                  const largestCostPerResult = Math.max(
+                    ...pageData.map(
+                      (record) => Number(record.Costperresult) || 0
+                    )
+                  );
+                  const totalAmountSpent = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Amountspent) || 0),
+                    0
+                  );
+                  const totalCostPerImpression = pageData.reduce(
+                    (sum, record) => sum + (Number(record.CPM) || 0),
+                    0
+                  );
+                  return (
+                    <Table.Summary fixed>
+                      <Table.Summary.Row
+                        fixed
+                        style={{
+                          borderBottomLeftRadius: "10px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {columns.map((col, index) => {
+                          if (index === 0) {
+                            // First column: Span across two columns
+                            return (
+                              <Table.Summary.Cell
+                                key={index}
+                                index={index}
+                                colSpan={2}
+                              >
+                                <div></div>
+                              </Table.Summary.Cell>
+                            );
+                          }
+
+                          if (index === 1) {
+                            // Second column: Skip rendering because it's merged into the first column
+                            return null;
+                          }
+
+                          let value = null;
+
+                          if (col.dataIndex === "Reach")
+                            value = (
+                              <div style={{ textAlign: "right" }}>
+                                <div class="_1b-dar">
+                                  <div class="_e9-rt6">
+                                    <div>
+                                      <div class="xmi-yie xo1-xoz x10-bjv">
+                                        <div>
+                                          <span
+                                            id="style-DUim6"
+                                            class="style-DUim6"
+                                          >
+                                            {totalReach}
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="ell-c6f _1h-d2w">
+                                        <div class="xt0-vq9 xmi-yie xw2-ook xo1-xoz x63-tnz x15-gv8">
+                                          Accounts Centre accounts
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "campaingname")
+                            value = <div></div>;
+                          else if (col.dataIndex === "Attributionsetting")
+                            value = (
+                              <div class="_1b-jyz">
+                                <div class="_e9-vat">
+                                  <div>
+                                    <div class="ell-1jx _1h-tgr">
+                                      <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                        7-day click...
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Results")
+                            value = (
+                              <div>
+                                <div
+                                  style={{ textAlign: "right" }}
+                                  class="_1b-jyz"
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>{totalResults}</span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Impressions")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>{totalImpressions}</span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Costperresult")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>
+                                          ${largestCostPerResult?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Amountspent")
+                            value = (
+                              <div
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  justifyContent: "flex-end",
+                                  width: "100%",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  style={{
+                                    fontSize: 14,
+                                    fontWeight: "normal",
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    marginBottom: 0,
+                                  }}
+                                >
+                                  ${totalAmountSpent}
+                                </span>
+
+                                <span
+                                  style={{
+                                    color: "gray",
+
+                                    paddingTop: 0,
+                                    fontWeight: "normal",
+                                  }}
+                                >
+                                  Total Spend
+                                </span>
+                              </div>
+                            );
+
+                          return (
+                            <Table.Summary.Cell
+                              key={index}
+                              index={index}
+                              style={{ width: col.width }}
+                            >
+                              {value !== null
+                                ? typeof value === "object"
+                                  ? value
+                                  : typeof value === "string"
+                                  ? value
+                                  : value.toFixed(2)
+                                : ""}
+                            </Table.Summary.Cell>
+                          );
+                        })}
+                      </Table.Summary.Row>
+                    </Table.Summary>
+                  );
+                }}
               />
-              {error && <div className="error-message">{error}</div>}
             </div>
+
+            {error && <div className="error-message">{error}</div>}
+
             {/* talbe end here  */}
           </div>
         </div>

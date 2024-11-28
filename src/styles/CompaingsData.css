@@ -7226,6 +7226,8 @@ a:hover {
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1) !important; /* Adjust values as needed */
   position: relative; /* Ensure it doesn’t affect the layout */
   z-index: 1; /* Keeps it above other elements if necessary */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* These were inline style tags. Uses id+class to override almost everything */
@@ -7304,10 +7306,29 @@ a:hover {
 }
 /* Apply shadow to the entire header container */
 .ant-table-header {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important; /* Add shadow */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1) !important; /* Add shadow */
   position: sticky; /* Ensures it stays at the top */
   top: 0;
   z-index: 3;
   background-color: white !important; /* White background for the header */
   border-bottom: none; /* Remove default border if it conflicts with the shadow */
+}
+/* Apply prominent border to table header */
+.ant-table-thead > tr > th {
+  border: 0.9px solid rgba(0, 0, 0, 0.06) !important; /* Adjust border width and color */
+  background-color: white !important; /* Ensure header background is white */
+}
+
+/* Apply prominent border to table body */
+.ant-table-tbody > tr > td {
+  border: 0.9px solid rgba(0, 0, 0, 0.06) !important; /* Adjust border width and color */
+}
+
+/* Apply prominent border to table summary */
+.ant-table-summary {
+  border-top: 0.9px solid rgba(0, 0, 0, 0.06) !important; /* Add border to separate summary */
+}
+
+.ant-table-summary > tr > td {
+  border: 0.9px solid rgba(0, 0, 0, 0.06) !important; /* Ensure summary cells have the same border */
 }

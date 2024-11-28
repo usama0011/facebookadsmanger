@@ -2528,16 +2528,15 @@ const CompaingsData = ({
     );
   }, [MoreColoumsAdds, campaigns]);
 
-  const calculatedHeight = useMemo(() => {
-    const rowHeight = 54; // Approximate height of a single row
-    const baseHeight = 100; // Base height for headers and footers
-    const maxHeight = 500; // Maximum height for the table
-    const campaignRowsHeight = campaigns.length * rowHeight;
-
-    // Total height should not exceed maxHeight
-    return Math.min(baseHeight + campaignRowsHeight, maxHeight);
-  }, [campaigns]);
-  console.log("MoreColoumsAdds:", MoreColoumsAdds);
+  // Calculate height based on campaigns length
+  const rowHeight = 50; // Approximate height of one row
+  const headerHeight = 60; // Approximate height of the header
+  const footerHeight = 60; // Approximate height of the footer
+  const maxHeight = 500; // Set a maximum table height
+  const calculatedHeight = Math.min(
+    campaigns.length * rowHeight + headerHeight + footerHeight,
+    maxHeight
+  );
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -4110,7 +4109,11 @@ const CompaingsData = ({
                 <Table
                   columns={MoreColoumsAdds}
                   dataSource={campaigns}
-                  scroll={{ y: 500 }}
+                  style={{
+                    maxHeight: `${calculatedHeight}px`,
+                    overflow: "auto",
+                  }}
+                  scroll={{ y: calculatedHeight }}
                   bordered
                   pagination={false}
                   sticky
@@ -4143,7 +4146,13 @@ const CompaingsData = ({
                     );
                     return (
                       <Table.Summary fixed>
-                        <Table.Summary.Row fixed>
+                        <Table.Summary.Row
+                          fixed
+                          style={{
+                            borderBottomLeftRadius: "10px",
+                            overflow: "hidden",
+                          }}
+                        >
                           {columns.map((col, index) => {
                             if (index === 0) {
                               // First column: Span across two columns
