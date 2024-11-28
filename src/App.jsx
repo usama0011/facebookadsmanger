@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import CompaingsData from "./components/CompaingsData";
+import MainLogoImage from "./assets/maind.jpeg";
 import AdsSets from "./components/AdsSets";
 import Ads from "./components/Ads";
 import { Link } from "react-router-dom";
@@ -1467,7 +1468,9 @@ const App = () => {
                                                                     <img
                                                                       alt=""
                                                                       class="img"
-                                                                      src="https://scontent.flhe32-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&_nc_ohc=cbZqWQHSYPgQ7kNvgGcdRwg&_nc_zt=24&_nc_ht=scontent.flhe32-1.fna&_nc_gid=AzqetjE_6fNTSPCeUC1d8rp&oh=00_AYBJjp49dui8-A3cGVH38Dl4PvDBIcg642FFv_j58k9ZCw&oe=671D95FF"
+                                                                      src={
+                                                                        MainLogoImage
+                                                                      }
                                                                     />
                                                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                                                   </div>
@@ -2352,7 +2355,9 @@ const App = () => {
                                                                         <img
                                                                           alt=""
                                                                           class="img"
-                                                                          src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
+                                                                          src={
+                                                                            MainLogoImage
+                                                                          }
                                                                         />
                                                                         <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                                                       </div>
@@ -2376,9 +2381,8 @@ const App = () => {
                                                                       </div>
                                                                     </div>
                                                                     <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                                      {
-                                                                        account?.currentAccountname
-                                                                      }
+                                                                      De Cartier
+                                                                      Solutions
                                                                     </div>
                                                                   </div>
                                                                   <div
@@ -2762,21 +2766,8 @@ const App = () => {
                                                                                     </div>
                                                                                     <div class="x78zum5 xdt5ytf x2lwn1j xeuugli">
                                                                                       <div class="x1rg5ohu x67bb7w">
-                                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np x2lwn1j xeuugli">
-                                                                                          <div
-                                                                                            aria-level="4"
-                                                                                            class="x1xqt7ti xsuwoey x1xlr1w8 x63nzvj xbsr9hj x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
-                                                                                            role="heading"
-                                                                                          >
-                                                                                            1387295665246598
-                                                                                          </div>
-                                                                                        </div>
-                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                                                          Ad
-                                                                                          account
-                                                                                          ID:
-                                                                                          1387295665246598
-                                                                                        </div>
+                                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np x2lwn1j xeuugli"></div>
+                                                                                        <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
                                                                                       </div>
                                                                                     </div>
                                                                                   </div>

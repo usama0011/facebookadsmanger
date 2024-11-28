@@ -4775,17 +4775,8 @@ i.img u {
   bottom: 0px;
 }
 
-.campaign-table-container .ant-table-body::-webkit-scrollbar {
-  height: 10px;
-}
-
-.campaign-table-container .ant-table-body::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px;
-}
-
-.campaign-table-container .ant-table-body::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+.campaign-table-container {
+  height: 100% !important;
 }
 
 /* Error message styling */
@@ -7036,3 +7027,275 @@ a:hover {
   background-color: #f6f6f4;
 }
 
+.ant-table-container::-webkit-scrollbar {
+  display: none !important;
+}
+/* Remove horizontal scrollbar in Ant Design Table */
+.ant-table .ant-table-content::-webkit-scrollbar {
+  display: none !important;
+}
+/* Ensure footer and table layout align correctly */
+.custom-footer {
+  display: flex;
+  overflow-x: auto; /* Enable native horizontal scrolling */
+  min-width: 100%;
+  border-top: 1px solid #d9d9d9;
+}
+.custom-footer > div {
+  text-align: right;
+  padding: 8px;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+}
+/* Optional: Ensure vertical scrolling still works */
+.ant-table-body::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit browsers */
+  height: 100% !important;
+}
+
+.ant-table-body {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-RKddy.style-RKddy {
+  width: 12px;
+  height: 12px;
+  mask-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png");
+  mask-position: -39px -273px;
+}
+
+._e9-rt6 {
+  overflow: hidden;
+}
+
+._1b-dar._1b-dar {
+  padding: 4px 8px;
+}
+
+._1b-dar {
+  background-color: #fff;
+  border-width: 0 1px 0 0;
+  color: #4b4f56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+._1b-dar {
+  padding-left: 0px;
+}
+
+._1b-dar._1b-dar {
+  padding: 6px 6px 6px 10px;
+}
+
+._1h-d2w {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  position: relative;
+}
+
+.ell-c6f {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+._4h2m:last-child ._1b-dar {
+  border-right-width: 0;
+}
+
+.xmi-yie {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.xo1-xoz {
+  font-weight: 400;
+}
+
+.xt0-vq9 {
+  display: inline;
+}
+
+.x15-gv8 {
+  color: rgba(28, 43, 51, 0.65);
+}
+
+.x63-tnz {
+  line-height: 1.33334 !important;
+}
+
+.xw2-ook {
+  font-size: 0.75rem !important;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  :root {
+    --hzFeaturedCardSpacing: 24px;
+  }
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-DUim6.style-DUim6 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+._e9-vat {
+  overflow: hidden;
+}
+
+._1b-jyz._1b-jyz {
+  padding: 4px 8px;
+}
+
+._1b-jyz {
+  background-color: #fff;
+  border-width: 0 1px 0 0;
+  color: #4b4f56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+._1b-jyz {
+  padding-left: 0px;
+}
+
+._1b-jyz._1b-jyz {
+  padding: 6px 6px 6px 10px;
+}
+
+._1h-tgr {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  position: relative;
+}
+
+.ell-1jx {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+._4h2m:last-child ._1b-jyz {
+  border-right-width: 0;
+}
+
+.xmi-ayr {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.xo1-g1e {
+  font-weight: 400;
+}
+
+.xt0-wmx {
+  display: inline;
+}
+
+.x15-656 {
+  color: rgba(28, 43, 51, 0.65);
+}
+
+.x63-8h9 {
+  line-height: 1.33334 !important;
+}
+
+.xw2-5dw {
+  font-size: 0.75rem !important;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  :root {
+    --hzFeaturedCardSpacing: 24px;
+  }
+}
+
+.ant-table-summary {
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1) !important; /* Adjust values as needed */
+  position: relative; /* Ensure it doesn’t affect the layout */
+  z-index: 1; /* Keeps it above other elements if necessary */
+}
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-gsxwW.style-gsxwW {  
+   height: 48px;  
+    width: 146px;  
+    left: 320px;  
+}  
+#style-6CnlM.style-6CnlM {  
+   width: 146px;  
+    height: 48px;  
+    top: 0px;  
+}  
+#style-8aFpv.style-8aFpv {  
+   height: 48px;  
+    left: 0px;  
+}  
+#style-1eVaE.style-1eVaE {  
+   height: 48px;  
+    position: absolute;  
+    width: 146px;  
+    will-change: transform;  
+    z-index: 0;  
+    transform: translate(0px, 0px);  
+}  
+#style-gMq7k.style-gMq7k {  
+   height: 48px;  
+    width: 146px;  
+    left: 0px;  
+}  
+#style-J2Q1a.style-J2Q1a {  
+   height: 48px;  
+}  
+#style-aTTUl.style-aTTUl {  
+   height: 48px;  
+}  
+#style-svvfA.style-svvfA {  
+   display: contents;  
+}  
+#style-EOStX.style-EOStX {  
+   height: 48px;  
+}  
+#style-7YopV.style-7YopV {  
+   min-height: 36px;  
+}  
+#ads-1wj.style-3k19z {  
+   max-width: 110px;  
+}  
+#style-RXS4e.style-RXS4e {  
+   cursor: default;  
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/i2UlfA-ITK0.png");  
+    background-position: -491px -723px;  
+    background-size: auto;  
+    width: 12px;  
+    height: 12px;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+}  
+#style-4MCWg.style-4MCWg {  
+   vertical-align: middle;  
+}  
+#style-M22gT.style-M22gT {  
+   width: 0px;  
+}  
+#style-UQA23.style-UQA23 {  
+   background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/rmRrb0G9Mn7.png");  
+    background-position: 0px -855px;  
+    background-size: auto;  
+    width: 12px;  
+    height: 12px;  
+    background-repeat: no-repeat;  
+    display: inline-block;  
+}  

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "../styles/CompaingsData.css";
 import { Switch, Table } from "antd";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
@@ -11,7 +11,13 @@ import {
   PushpinOutlined,
 } from "@ant-design/icons";
 import EditImage from "../assets/edit.png";
-
+// Mock function to calculate the sum for a specific column
+const calculateColumnTotal = (data, dataIndex) => {
+  return data.reduce((sum, item) => {
+    const value = parseFloat(item[dataIndex]) || 0;
+    return sum + value;
+  }, 0);
+};
 const CompaingsData = ({
   campaigns,
   loading,
@@ -205,7 +211,7 @@ const CompaingsData = ({
       key: "campaingname",
       fixed: "left",
       // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
-      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      width: 300,
       render: (text, record) => (
         <>
           <div className="mainparentcontainer">
@@ -538,26 +544,98 @@ const CompaingsData = ({
     },
     {
       title: () => (
-        <div className="resulsconainer">
-          {" "}
-          <div>
+        <div
+          style={{ width: "100%" }}
+          class="_4l-ja9 _4l-lg5 _4h-bor style-gMq7k"
+          id="style-gMq7k"
+        >
+          <div
+            style={{ width: "100%" }}
+            class="_4l-jb8 style-J2Q1a"
+            id="style-J2Q1a"
+          >
             <span
-              style={{ marginRight: "5px" }}
-              id="js_26j"
-              class="snipcss-1Co3h"
+              style={{ width: "100%" }}
+              class="style-svvfA"
+              id="style-svvfA"
             >
-              <i
-                alt=""
-                data-visualcompletion="css-img"
-                class="img style-JFqyS"
-                id="style-JFqyS"
-              ></i>
+              <span>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                  }}
+                  class="style-EOStX"
+                  id="style-EOStX"
+                >
+                  <div>
+                    <span>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          flexDirection: "row",
+                          justifyContent: "space-between",
+                        }}
+                        class="x78-1rg x1q-ix5 x1y-5f2 x12-hyy x6s-is5 x97-xjl xm8-aki x1q-cip xm0-bni x13-y6i x1g-j3h x14-5v9 x4m-d9j x13-l3z xu3-pvm x1q-lhi x26-55c x6i-z36 x1y-p3x xep-226 x1y-1kn xe5-njk x10-x9z x1s-q4o"
+                      >
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            flexDirection: "row",
+                          }}
+                          class="x78-1rg xdt-yrh xl5-v21 x1n-d4c style-7YopV"
+                          id="style-7YopV"
+                        >
+                          <div class="_64-zcs style-3k19z" id="ads-1wj">
+                            <div class="x1x-aof xsu-rfi x63-sd6 xbs-g6h xux-86t x6i-z36 x10-yim xly-zi2 x1h-fri x11-bqy xeu-5mv">
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  flexDirection: "row",
+                                }}
+                                class="x1u-r8p x10-oo6 x1f-pcq x1h-jqn xdy-dx9 x19-zsj x6i-z36 x10-yim x1y-5f2 xly-zi2 xea-6h9"
+                              >
+                                <span class="x1e-tox">
+                                  <span>
+                                    <i
+                                      class="epggf style-RXS4e"
+                                      id="style-RXS4e"
+                                    ></i>
+                                  </span>
+                                </span>
+                                <div
+                                  class="_3e-7d2"
+                                  style={{ marginLeft: "5px" }}
+                                >
+                                  Results
+                                  <span id="style-4MCWg" class="style-4MCWg">
+                                    <div
+                                      id="style-M22gT"
+                                      class="style-M22gT"
+                                    ></div>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <CaretDownOutlined
+                            style={{ color: "gray" }}
+                            color="red"
+                          />
+                        </div>{" "}
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </span>
             </span>
-            Results
           </div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
         </div>
       ),
       dataIndex: "Results",
@@ -672,29 +750,29 @@ const CompaingsData = ({
         </div>
       ),
     },
-    showPerformanceAndClicks === "performance"
-      ? {
-          title: () => (
-            <i
-              alt="Customise columns..."
-              aria-label="Customise columns..."
-              data-visualcompletion="css-img"
-              class="img snipcss-saPsI style-kgHNC"
-              id="style-kgHNC"
-            >
-              <u>Customise columns...</u>
-            </i>
-          ),
-          dataIndex: "Plus",
-          key: "Plus",
-          width: 30,
-          render: (text) => (
-            <div style={{ fontSize: "14px" }} className="budygetcontainer">
-              {text}
-            </div>
-          ),
-        }
-      : {},
+    // showPerformanceAndClicks === "performance"
+    //   ? {
+    //       title: () => (
+    //         <i
+    //           alt="Customise columns..."
+    //           aria-label="Customise columns..."
+    //           data-visualcompletion="css-img"
+    //           class="img snipcss-saPsI style-kgHNC"
+    //           id="style-kgHNC"
+    //         >
+    //           <u>Customise columns...</u>
+    //         </i>
+    //       ),
+    //       dataIndex: "Plus",
+    //       key: "Plus",
+    //       width: 30,
+    //       render: (text) => (
+    //         <div style={{ fontSize: "14px" }} className="budygetcontainer">
+    //           {text}
+    //         </div>
+    //       ),
+    //     }
+    //   : {},
   ];
   const coloumsforengagementstart = [
     {
@@ -774,7 +852,7 @@ const CompaingsData = ({
       key: "campaingname",
       fixed: "left",
       // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
-      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      width: 300,
       render: (text, record) => (
         <>
           <div className="mainparentcontainer">
@@ -1164,7 +1242,7 @@ const CompaingsData = ({
       key: "campaingname",
       fixed: "left",
       // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
-      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      width: 300,
       render: (text, record) => (
         <>
           <div className="mainparentcontainer">
@@ -1547,7 +1625,7 @@ const CompaingsData = ({
       key: "campaingname",
       fixed: "left",
       // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
-      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      width: 300,
       render: (text, record) => (
         <>
           <div className="mainparentcontainer">
@@ -1899,7 +1977,7 @@ const CompaingsData = ({
       key: "campaingname",
       fixed: "left",
       // here i want changne if showPerformanceAndClicks equals to performance then 200 otherwise 300
-      width: showPerformanceAndClicks === "performance" ? 200 : 300,
+      width: 300,
       render: (text, record) => (
         <>
           <div className="mainparentcontainer">
@@ -2363,7 +2441,10 @@ const CompaingsData = ({
       ),
     }));
   };
-  const formattedData = convertSelectedData(selectedValues);
+  const formattedData = useMemo(
+    () => convertSelectedData(selectedValues),
+    [selectedValues]
+  );
 
   const MoreColoumsAdds = (() => {
     switch (showPerformanceAndClicks) {
@@ -2376,9 +2457,9 @@ const CompaingsData = ({
       case "engagement":
         return [...additionalColumnsEngagement, ...formattedData]; // Show columns + engagementColumns for 'engagement'
       case "delivery":
-        return [...additionalColumnsDelivery, ...formattedData]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsDelivery, ...formattedData]; // Show columns + deliveryColumns for 'delivery'
       case "videoengagement":
-        return [...additionalColumnsVedioEngagement, ...formattedData]; // Show columns + engagementColumns for 'engagement'
+        return [...additionalColumnsVedioEngagement, ...formattedData]; // Show columns + videoengagementcoloums for 'videoengagement'
 
       default:
         return [...columns, ...formattedData]; // Fallback to default columns
@@ -2387,7 +2468,7 @@ const CompaingsData = ({
   const setLayoutWidth = (() => {
     switch (showPerformanceAndClicks) {
       case "performance":
-        return 2300; // Show only the columns array for 'performance'
+        return 2500; // Show only the columns array for 'performance'
 
       case "performanceandclicks":
         return 3000; // Show columns + additionalColumns for 'performanceandclicks'
@@ -2411,22 +2492,52 @@ const CompaingsData = ({
   const perfomarnaceandclicks = () => {
     setShowPerformanceAndClicks("performanceandclicks");
   };
-  console.log("udpate data", campaigns);
 
-  const mycustomlaodingbox = () => {
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 10;
-      setLoadingProgress(progress);
+  // Generate footer content based on current columns
+  const footer = useMemo(() => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          overflowX: "auto",
+          minWidth: "100%",
+          width: "100%",
+          borderTop: "1px solid #d9d9d9",
+          tableLayout: "fixed", // Ensure alignment matches table columns
+        }}
+      >
+        {MoreColoumsAdds.map((col) => (
+          <div
+            key={`footer-${col.key}`}
+            style={{
+              minWidth: col.width || "auto", // Use column width or default
+              width: col.width || "auto", // Ensure it matches the column width
+              textAlign: "right",
+              padding: "8px",
+              borderRight: "1px solid #d9d9d9",
+              borderBottom: "1px solid #d9d9d9",
+              boxSizing: "border-box",
+            }}
+          >
+            {col.dataIndex
+              ? calculateColumnTotal(campaigns, col.dataIndex)
+              : "--"}
+          </div>
+        ))}
+      </div>
+    );
+  }, [MoreColoumsAdds, campaigns]);
 
-      if (progress >= 100) {
-        clearInterval(interval);
-        setLoading(false);
-        setLoadingProgress(0);
-      }
-    }, 100);
-  };
+  const calculatedHeight = useMemo(() => {
+    const rowHeight = 54; // Approximate height of a single row
+    const baseHeight = 100; // Base height for headers and footers
+    const maxHeight = 500; // Maximum height for the table
+    const campaignRowsHeight = campaigns.length * rowHeight;
 
+    // Total height should not exceed maxHeight
+    return Math.min(baseHeight + campaignRowsHeight, maxHeight);
+  }, [campaigns]);
+  console.log("MoreColoumsAdds:", MoreColoumsAdds);
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -3758,7 +3869,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "600px",
                   top: 0,
-                  left: "420px",
+                  left: "510px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3811,8 +3922,8 @@ const CompaingsData = ({
                   position: "absolute",
                   width: "250px",
                   height: "450px",
-                  top: "150px",
-                  left: "410px",
+                  top: "100px",
+                  left: "510px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3859,8 +3970,8 @@ const CompaingsData = ({
                   position: "absolute",
                   width: "250px",
                   height: "300px",
-                  top: "250px",
-                  left: "405px",
+                  top: "255px",
+                  left: "510px",
                   borderRadius: "5px",
                   zIndex: 999,
                   padding: "10px",
@@ -3902,7 +4013,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "300px",
                   top: "300px",
-                  left: "410px",
+                  left: "510px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3940,9 +4051,9 @@ const CompaingsData = ({
                 style={{
                   position: "absolute",
                   width: "250px",
-                  height: "300px",
-                  top: "300px",
-                  left: "410px",
+                  height: "420px",
+                  top: "100px",
+                  left: "510px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3995,21 +4106,276 @@ const CompaingsData = ({
               style={{ height: "100%", backgroundColor: "#f5f6f7" }}
               className="campaign-table-container"
             >
-              <Table
-                style={{ borderRadius: "10px", height: "100%" }}
-                columns={MoreColoumsAdds}
-                bordered={true}
-                dataSource={campaigns}
-                loading={loading}
-                scroll={{
-                  x: setLayoutWidth,
-                  y: 500,
-                }}
-                sticky
-                pagination={false}
-                rowKey={(record) => record._id}
-                className="campaign-table custom-header custom-row-background"
-              />
+              <div className="">
+                <Table
+                  columns={MoreColoumsAdds}
+                  dataSource={campaigns}
+                  scroll={{ y: 500 }}
+                  bordered
+                  pagination={false}
+                  sticky
+                  summary={(pageData) => {
+                    // Calculate sums for specific numeric fields
+                    const totalReach = pageData.reduce(
+                      (sum, record) => sum + (Number(record.Reach) || 0),
+                      0
+                    );
+                    const totalResults = pageData.reduce(
+                      (sum, record) => sum + (Number(record.Results) || 0),
+                      0
+                    );
+                    const totalImpressions = pageData.reduce(
+                      (sum, record) => sum + (Number(record.Impressions) || 0),
+                      0
+                    );
+                    const largestCostPerResult = Math.max(
+                      ...pageData.map(
+                        (record) => Number(record.Costperresult) || 0
+                      )
+                    );
+                    const totalAmountSpent = pageData.reduce(
+                      (sum, record) => sum + (Number(record.Amountspent) || 0),
+                      0
+                    );
+                    const totalCostPerImpression = pageData.reduce(
+                      (sum, record) => sum + (Number(record.CPM) || 0),
+                      0
+                    );
+                    return (
+                      <Table.Summary fixed>
+                        <Table.Summary.Row fixed>
+                          {columns.map((col, index) => {
+                            if (index === 0) {
+                              // First column: Span across two columns
+                              return (
+                                <Table.Summary.Cell
+                                  key={index}
+                                  index={index}
+                                  colSpan={2}
+                                >
+                                  <div></div>
+                                </Table.Summary.Cell>
+                              );
+                            }
+
+                            if (index === 1) {
+                              // Second column: Skip rendering because it's merged into the first column
+                              return null;
+                            }
+
+                            let value = null;
+
+                            if (col.dataIndex === "Reach")
+                              value = (
+                                <div style={{ textAlign: "right" }}>
+                                  <div class="_1b-dar">
+                                    <div class="_e9-rt6">
+                                      <div>
+                                        <div class="xmi-yie xo1-xoz x10-bjv">
+                                          <div>
+                                            <span
+                                              id="style-DUim6"
+                                              class="style-DUim6"
+                                            >
+                                              {totalReach}
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div class="ell-c6f _1h-d2w">
+                                          <div class="xt0-vq9 xmi-yie xw2-ook xo1-xoz x63-tnz x15-gv8">
+                                            Accounts Centre accounts
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            else if (col.dataIndex === "campaingname")
+                              value = (
+                                <div>
+                                  <span
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: "normal",
+                                      display: "flex",
+                                      flexDirection: "row",
+                                      alignItems: "center",
+                                      marginBottom: 0,
+                                    }}
+                                  >
+                                    Results from {campaigns?.length || 0}{" "}
+                                    campaings{" "}
+                                    <div
+                                      id="style-RKddy"
+                                      className="style-RKddy"
+                                      style={{
+                                        width: 12,
+                                        height: 12,
+                                        maskImage:
+                                          'url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png")', // Add the icon URL here
+                                        maskPosition: "-39px -273px",
+                                        backgroundColor: "black", // Use desired icon color
+                                        marginLeft: "8px",
+                                        marginBottom: 0,
+                                      }}
+                                    ></div>
+                                  </span>
+
+                                  <span
+                                    style={{
+                                      color: "gray",
+
+                                      paddingTop: 0,
+                                      fontWeight: "normal",
+                                    }}
+                                  >
+                                    Excludes deleted items
+                                  </span>
+                                </div>
+                              );
+                            else if (col.dataIndex === "Attributionsetting")
+                              value = (
+                                <div class="_1b-jyz">
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          7-day click...
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            else if (col.dataIndex === "Results")
+                              value = (
+                                <div>
+                                  <div
+                                    style={{ textAlign: "right" }}
+                                    class="_1b-jyz"
+                                  >
+                                    <div class="_e9-vat">
+                                      <div>
+                                        <div class="xmi-ayr xo1-g1e x10-yi2">
+                                          <span>{totalResults}</span>
+                                        </div>
+                                        <div class="ell-1jx _1h-tgr">
+                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                            Link Clicks
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            else if (col.dataIndex === "Impressions")
+                              value = (
+                                <div>
+                                  <div
+                                    class="_1b-jyz"
+                                    style={{ textAlign: "right" }}
+                                  >
+                                    <div class="_e9-vat">
+                                      <div>
+                                        <div class="xmi-ayr xo1-g1e x10-yi2">
+                                          <span>{totalImpressions}</span>
+                                        </div>
+                                        <div class="ell-1jx _1h-tgr">
+                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                            Link Clicks
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            else if (col.dataIndex === "Costperresult")
+                              value = (
+                                <div>
+                                  <div
+                                    class="_1b-jyz"
+                                    style={{ textAlign: "right" }}
+                                  >
+                                    <div class="_e9-vat">
+                                      <div>
+                                        <div class="xmi-ayr xo1-g1e x10-yi2">
+                                          <span>
+                                            ${largestCostPerResult?.toFixed(2)}
+                                          </span>
+                                        </div>
+                                        <div class="ell-1jx _1h-tgr">
+                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                            Link Clicks
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            else if (col.dataIndex === "Amountspent")
+                              value = (
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    alignItems: "center",
+                                    justifyContent: "flex-end",
+                                    width: "100%",
+                                    height: "100%",
+                                  }}
+                                >
+                                  <span
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: "normal",
+                                      display: "flex",
+                                      flexDirection: "row",
+                                      alignItems: "center",
+                                      marginBottom: 0,
+                                    }}
+                                  >
+                                    ${totalAmountSpent}
+                                  </span>
+
+                                  <span
+                                    style={{
+                                      color: "gray",
+
+                                      paddingTop: 0,
+                                      fontWeight: "normal",
+                                    }}
+                                  >
+                                    Total Spend
+                                  </span>
+                                </div>
+                              );
+
+                            return (
+                              <Table.Summary.Cell
+                                key={index}
+                                index={index}
+                                style={{ width: col.width }}
+                              >
+                                {value !== null
+                                  ? typeof value === "object"
+                                    ? value
+                                    : typeof value === "string"
+                                    ? value
+                                    : value.toFixed(2)
+                                  : ""}
+                              </Table.Summary.Cell>
+                            );
+                          })}
+                        </Table.Summary.Row>
+                      </Table.Summary>
+                    );
+                  }}
+                />
+              </div>
 
               {error && <div className="error-message">{error}</div>}
             </div>

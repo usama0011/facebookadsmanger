@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/EditChartThree.css";
 import { Link, useParams } from "react-router-dom";
 import LOgoLOgo from "../assets/logologo.jpeg";
+import MainLogoImage from "../assets/maind.jpeg";
 import axios from "axios";
 const EditChartThree = () => {
   const { id } = useParams();
@@ -107,11 +108,7 @@ const EditChartThree = () => {
                                     class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8"
                                     role="img"
                                   >
-                                    <img
-                                      alt=""
-                                      class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=19114f&amp;_nc_ohc=4TsCt3nmUrkQ7kNvgF-MhP1&amp;_nc_ht=scontent.flhe3-1.fna&amp;_nc_gid=A3iIw_XVUd9pvI1tRN5o396&amp;oh=00_AYAafkUkmWmqI9FID5YTmB0pyqd4inQpY_N38zMLFctXcw&amp;oe=670B917F"
-                                    />
+                                    <img src={MainLogoImage} alt="" />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>
                                 </div>
