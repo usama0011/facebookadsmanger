@@ -4797,6 +4797,7 @@ i.img u {
 
 .ant-table-thead > tr > th {
   padding: 4px 8px !important;
+  background-color: white !important;
 }
 
 .ant-table-tbody > tr:nth-child(even) {
@@ -7021,7 +7022,7 @@ a:hover {
 
 /* Add this CSS to your stylesheet */
 .custom-header .ant-table-thead > tr > th {
-  background-color: white; /* Set header background to white */
+  background-color: white !important; /* Set header background to white */
 }
 .custom-header .ant-table-thead > tr > th:hover {
   background-color: #f6f6f4;
@@ -7227,75 +7228,86 @@ a:hover {
   z-index: 1; /* Keeps it above other elements if necessary */
 }
 
-
 /* These were inline style tags. Uses id+class to override almost everything */
-#style-gsxwW.style-gsxwW {  
-   height: 48px;  
-    width: 146px;  
-    left: 320px;  
-}  
-#style-6CnlM.style-6CnlM {  
-   width: 146px;  
-    height: 48px;  
-    top: 0px;  
-}  
-#style-8aFpv.style-8aFpv {  
-   height: 48px;  
-    left: 0px;  
-}  
-#style-1eVaE.style-1eVaE {  
-   height: 48px;  
-    position: absolute;  
-    width: 146px;  
-    will-change: transform;  
-    z-index: 0;  
-    transform: translate(0px, 0px);  
-}  
-#style-gMq7k.style-gMq7k {  
-   height: 48px;  
-    width: 146px;  
-    left: 0px;  
-}  
-#style-J2Q1a.style-J2Q1a {  
-   height: 48px;  
-}  
-#style-aTTUl.style-aTTUl {  
-   height: 48px;  
-}  
-#style-svvfA.style-svvfA {  
-   display: contents;  
-}  
-#style-EOStX.style-EOStX {  
-   height: 48px;  
-}  
-#style-7YopV.style-7YopV {  
-   min-height: 36px;  
-}  
-#ads-1wj.style-3k19z {  
-   max-width: 110px;  
-}  
-#style-RXS4e.style-RXS4e {  
-   cursor: default;  
-    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/i2UlfA-ITK0.png");  
-    background-position: -491px -723px;  
-    background-size: auto;  
-    width: 12px;  
-    height: 12px;  
-    background-repeat: no-repeat;  
-    display: inline-block;  
-}  
-#style-4MCWg.style-4MCWg {  
-   vertical-align: middle;  
-}  
-#style-M22gT.style-M22gT {  
-   width: 0px;  
-}  
-#style-UQA23.style-UQA23 {  
-   background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/rmRrb0G9Mn7.png");  
-    background-position: 0px -855px;  
-    background-size: auto;  
-    width: 12px;  
-    height: 12px;  
-    background-repeat: no-repeat;  
-    display: inline-block;  
-}  
+#style-gsxwW.style-gsxwW {
+  height: 48px;
+  width: 146px;
+  left: 320px;
+}
+#style-6CnlM.style-6CnlM {
+  width: 146px;
+  height: 48px;
+  top: 0px;
+}
+#style-8aFpv.style-8aFpv {
+  height: 48px;
+  left: 0px;
+}
+#style-1eVaE.style-1eVaE {
+  height: 48px;
+  position: absolute;
+  width: 146px;
+  will-change: transform;
+  z-index: 0;
+  transform: translate(0px, 0px);
+}
+#style-gMq7k.style-gMq7k {
+  height: 48px;
+  width: 146px;
+  left: 0px;
+}
+#style-J2Q1a.style-J2Q1a {
+  height: 48px;
+}
+#style-aTTUl.style-aTTUl {
+  height: 48px;
+}
+#style-svvfA.style-svvfA {
+  display: contents;
+}
+#style-EOStX.style-EOStX {
+  height: 48px;
+}
+#style-7YopV.style-7YopV {
+  min-height: 36px;
+}
+#ads-1wj.style-3k19z {
+  max-width: 110px;
+}
+#style-RXS4e.style-RXS4e {
+  cursor: default;
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/i2UlfA-ITK0.png");
+  background-position: -491px -723px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#style-4MCWg.style-4MCWg {
+  vertical-align: middle;
+}
+#style-M22gT.style-M22gT {
+  width: 0px;
+}
+#style-UQA23.style-UQA23 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/rmRrb0G9Mn7.png");
+  background-position: 0px -855px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.ant-table-thead > tr > th {
+  background-color: white !important;
+}
+/* Apply shadow to the entire header container */
+.ant-table-header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important; /* Add shadow */
+  position: sticky; /* Ensures it stays at the top */
+  top: 0;
+  z-index: 3;
+  background-color: white !important; /* White background for the header */
+  border-bottom: none; /* Remove default border if it conflicts with the shadow */
+}
