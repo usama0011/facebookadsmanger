@@ -2529,10 +2529,11 @@ const CompaingsData = ({
   }, [MoreColoumsAdds, campaigns]);
 
   // Calculate height based on campaigns length
-  const rowHeight = 50; // Approximate height of one row
+  const rowHeight = 60; // Approximate height of one row
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
   const maxHeight = 500; // Set a maximum table height
+
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
