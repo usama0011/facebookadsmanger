@@ -684,6 +684,7 @@ const Ads = ({ campaigns, loading, error }) => {
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
   );
+  console.log("calcualted", calculatedHeight);
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">

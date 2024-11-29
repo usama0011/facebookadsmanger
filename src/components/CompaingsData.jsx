@@ -2532,12 +2532,20 @@ const CompaingsData = ({
   const rowHeight = 60; // Approximate height of one row
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
-  const maxHeight = 500; // Set a maximum table height
+  const paddingCorrection = 10; // Small padding adjustment to avoid extra space
+  const maxHeight = 515; // Set a maximum table height
 
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
   );
+
+  // Adjust the container height to avoid gaps
+  const tableContainerHeight =
+    calculatedHeight - headerHeight - footerHeight - paddingCorrection;
+
+  console.log("Calculated Table Height:", tableContainerHeight);
+
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -2551,10 +2559,13 @@ const CompaingsData = ({
               <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
                 <div class="_9p_z">
                   <div class="_9p_y" role="toolbar">
-                    <div class="_9p_w"></div>
-                    <div data-pagelet="AdsPEMainPaneRightToolbar">
-                      <div class="_3c5b _7jnt snipcss-TW8gO" id="pe_toolbar">
-                        <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
+                    <div data-pagelet="">
+                      <div
+                        style={{ width: "100%" }}
+                        class="_3c5b _7jnt snipcss-TW8gO"
+                        id="pe_toolbar"
+                      >
+                        <div class="">
                           <div class="_9p_z">
                             <div class="_9p_y" role="toolbar">
                               <div>
@@ -4103,17 +4114,16 @@ const CompaingsData = ({
               </div>
             )}
             <div
-              style={{ height: "100%", backgroundColor: "#f5f6f7" }}
+              style={{
+                maxHeight: calculatedHeight,
+                backgroundColor: "#f5f6f7",
+              }}
               className="campaign-table-container"
             >
               <div className="">
                 <Table
                   columns={MoreColoumsAdds}
                   dataSource={campaigns}
-                  style={{
-                    maxHeight: `${calculatedHeight}px`,
-                    overflow: "auto",
-                  }}
                   scroll={{ y: calculatedHeight }}
                   bordered
                   pagination={false}
