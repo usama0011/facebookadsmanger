@@ -30,18 +30,18 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  // Helper functions to get the first and last day of the current month
+  // Helper functions to get the first day of the current month
   const getFirstDayOfMonth = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth(), 1);
   };
 
-  const getLastDayOfMonth = () => {
-    const date = new Date();
-    return new Date(date.getFullYear(), date.getMonth() + 1, 0); // Correctly get the last day
+  // Helper function to get today's date
+  const getToday = () => {
+    return new Date(); // Returns the current date
   };
   const [startDate, setStartDate] = useState(getFirstDayOfMonth());
-  const [endDate, setEndDate] = useState(getLastDayOfMonth());
+  const [endDate, setEndDate] = useState(getToday());
 
   const [hoverDate, setHoverDate] = useState(null);
   const [selectingEnd, setSelectingEnd] = useState(false);
@@ -84,20 +84,6 @@ const App = () => {
     setEndDate(range.endDate);
   };
   // When currentMonth changes, dynamically update the selected dates
-  useEffect(() => {
-    const firstDay = new Date(
-      currentMonth.getFullYear(),
-      currentMonth.getMonth(),
-      1
-    );
-    const lastDay = new Date(
-      currentMonth.getFullYear(),
-      currentMonth.getMonth() + 1,
-      0
-    );
-    setStartDate(firstDay);
-    setEndDate(lastDay);
-  }, [currentMonth]);
 
   // Function to render the calendar days
   const renderCalendar = (date) => {
@@ -126,6 +112,7 @@ const App = () => {
         startDate && currentDate.getTime() === startDate.getTime();
       const isSelectedEnd =
         endDate && currentDate.getTime() === endDate.getTime();
+
       const isHovering =
         startDate &&
         !endDate &&
@@ -1350,7 +1337,26 @@ const App = () => {
   useEffect(() => {
     fetchAccount();
   }, []);
+  // Dynamically update startDate and endDate when the currentMonth changes
+  // Dynamically update the selected start and end dates when the current month changes
+  useEffect(() => {
+    const firstDay = new Date(
+      currentMonth.getFullYear(),
+      currentMonth.getMonth(),
+      1
+    );
+    const today = new Date();
+    const isCurrentMonth =
+      today.getFullYear() === currentMonth.getFullYear() &&
+      today.getMonth() === currentMonth.getMonth();
 
+    setStartDate(firstDay);
+    setEndDate(
+      isCurrentMonth
+        ? today
+        : new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0)
+    );
+  }, [currentMonth]);
   return (
     <div>
       <div
