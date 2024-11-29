@@ -30,6 +30,7 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  // Helper functions to get the first and last day of the current month
   const getFirstDayOfMonth = () => {
     const date = new Date();
     return new Date(date.getFullYear(), date.getMonth(), 1);
@@ -37,10 +38,11 @@ const App = () => {
 
   const getLastDayOfMonth = () => {
     const date = new Date();
-    return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    return new Date(date.getFullYear(), date.getMonth() + 1, 0); // Correctly get the last day
   };
   const [startDate, setStartDate] = useState(getFirstDayOfMonth());
   const [endDate, setEndDate] = useState(getLastDayOfMonth());
+
   const [hoverDate, setHoverDate] = useState(null);
   const [selectingEnd, setSelectingEnd] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -81,19 +83,38 @@ const App = () => {
     setStartDate(range.startDate);
     setEndDate(range.endDate);
   };
+  // When currentMonth changes, dynamically update the selected dates
+  useEffect(() => {
+    const firstDay = new Date(
+      currentMonth.getFullYear(),
+      currentMonth.getMonth(),
+      1
+    );
+    const lastDay = new Date(
+      currentMonth.getFullYear(),
+      currentMonth.getMonth() + 1,
+      0
+    );
+    setStartDate(firstDay);
+    setEndDate(lastDay);
+  }, [currentMonth]);
 
+  // Function to render the calendar days
   const renderCalendar = (date) => {
-    const today = new Date();
-
     const year = date.getFullYear();
     const month = date.getMonth();
+    const today = new Date();
+
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const firstDayIndex = new Date(year, month, 1).getDay();
 
     const days = [];
+    // Add empty spaces for days before the first day of the month
     for (let i = 0; i < firstDayIndex; i++) {
       days.push(<div key={`empty-${month}-${i}`} className="day empty"></div>);
     }
+
+    // Add days of the month
     for (let day = 1; day <= daysInMonth; day++) {
       const currentDate = new Date(year, month, day);
       const isInRange =
@@ -111,8 +132,9 @@ const App = () => {
         hoverDate &&
         currentDate > startDate &&
         currentDate <= hoverDate;
-      // Check if the current date is in the future
+
       const isFutureDate = currentDate > today;
+
       days.push(
         <div
           key={day}
@@ -120,7 +142,7 @@ const App = () => {
             isSelectedStart ? "selected-start" : ""
           } ${isSelectedEnd ? "selected-end" : ""} ${
             isHovering ? "hover" : ""
-          }  ${isFutureDate ? "disabled" : ""}`}
+          } ${isFutureDate ? "disabled" : ""}`}
           onClick={() => handleDayClick(currentDate)}
           onMouseEnter={() => handleDayMouseEnter(currentDate)}
         >
@@ -128,6 +150,7 @@ const App = () => {
         </div>
       );
     }
+
     return days;
   };
 
@@ -2381,8 +2404,9 @@ const App = () => {
                                                                       </div>
                                                                     </div>
                                                                     <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                                      De Cartier
-                                                                      Solutions
+                                                                      {
+                                                                        account?.currentAccountname
+                                                                      }
                                                                     </div>
                                                                   </div>
                                                                   <div
