@@ -2932,7 +2932,10 @@ const CompaingsData = ({
                         </span>
                         <span>
                           <span>
-                            <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4">
+                            <div
+                              style={{ height: "36px" }}
+                              class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4"
+                            >
                               <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
                                 <div class="x78-k5m">
                                   <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
@@ -2942,9 +2945,7 @@ const CompaingsData = ({
                                         id="style-yNFri"
                                       ></div>
                                     </div>
-                                    <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs x1i-mop">
-                                      Breakdown
-                                    </div>
+
                                     <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
                                       <div
                                         class="xtw-bqe style-MoQpO"
@@ -2959,7 +2960,10 @@ const CompaingsData = ({
                           <div></div>
                         </span>
                         <span>
-                          <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4">
+                          <div
+                            style={{ height: "36px" }}
+                            class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4"
+                          >
                             <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
                               <div class="x78-k5m">
                                 <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
@@ -2969,9 +2973,7 @@ const CompaingsData = ({
                                       id="style-WMwKF"
                                     ></div>
                                   </div>
-                                  <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs x1i-mop">
-                                    Reports
-                                  </div>
+
                                   <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
                                     <div
                                       class="xtw-bqe style-LHbUw"
@@ -2983,7 +2985,10 @@ const CompaingsData = ({
                             </span>
                           </div>
                         </span>
-                        <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 x1i-i9h">
+                        <div
+                          style={{ height: "36px" }}
+                          class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 x1i-i9h"
+                        >
                           <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
                             <div class="x78-k5m">
                               <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
@@ -2993,9 +2998,7 @@ const CompaingsData = ({
                                     id="style-fTD3b"
                                   ></div>
                                 </div>
-                                <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs x1i-mop">
-                                  Export
-                                </div>
+
                                 <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
                                   <div
                                     class="xtw-bqe style-hRzox"
@@ -3007,7 +3010,10 @@ const CompaingsData = ({
                           </span>
                         </div>
                         <div class="x3n-f59 x19-22g xxy-2rh">
-                          <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp">
+                          <div
+                            style={{ height: "36px", marginRight: "5px" }}
+                            class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp"
+                          >
                             <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
                               <div class="x78-k5m">
                                 <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
@@ -3016,9 +3022,6 @@ const CompaingsData = ({
                                       class="xtw-bqe style-tqGhF"
                                       id="style-tqGhF"
                                     ></div>
-                                  </div>
-                                  <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs">
-                                    Charts
                                   </div>
                                 </div>
                               </div>

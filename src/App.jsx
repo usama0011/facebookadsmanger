@@ -85,7 +85,6 @@ const App = () => {
   };
   // When currentMonth changes, dynamically update the selected dates
 
-  // Function to render the calendar days
   const renderCalendar = (date) => {
     const year = date.getFullYear();
     const month = date.getMonth();
@@ -95,6 +94,17 @@ const App = () => {
     const firstDayIndex = new Date(year, month, 1).getDay();
 
     const days = [];
+
+    // Normalize dates to remove time components
+    const normalizeDate = (d) => {
+      if (!d) return null;
+      return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    };
+
+    const normalizedStartDate = normalizeDate(startDate);
+    const normalizedEndDate = normalizeDate(endDate);
+    const normalizedHoverDate = normalizeDate(hoverDate);
+
     // Add empty spaces for days before the first day of the month
     for (let i = 0; i < firstDayIndex; i++) {
       days.push(<div key={`empty-${month}-${i}`} className="day empty"></div>);
@@ -103,24 +113,30 @@ const App = () => {
     // Add days of the month
     for (let day = 1; day <= daysInMonth; day++) {
       const currentDate = new Date(year, month, day);
+      const normalizedCurrentDate = normalizeDate(currentDate);
+
       const isInRange =
-        startDate &&
-        endDate &&
-        currentDate >= startDate &&
-        currentDate <= endDate;
+        normalizedStartDate &&
+        normalizedEndDate &&
+        normalizedCurrentDate >= normalizedStartDate &&
+        normalizedCurrentDate <= normalizedEndDate;
+
       const isSelectedStart =
-        startDate && currentDate.getTime() === startDate.getTime();
+        normalizedStartDate &&
+        normalizedCurrentDate.getTime() === normalizedStartDate.getTime();
+
       const isSelectedEnd =
-        endDate && currentDate.getTime() === endDate.getTime();
+        normalizedEndDate &&
+        normalizedCurrentDate.getTime() === normalizedEndDate.getTime();
 
       const isHovering =
-        startDate &&
-        !endDate &&
-        hoverDate &&
-        currentDate > startDate &&
-        currentDate <= hoverDate;
+        normalizedStartDate &&
+        !normalizedEndDate &&
+        normalizedHoverDate &&
+        normalizedCurrentDate > normalizedStartDate &&
+        normalizedCurrentDate <= normalizedHoverDate;
 
-      const isFutureDate = currentDate > today;
+      const isFutureDate = normalizedCurrentDate > today;
 
       days.push(
         <div
@@ -130,8 +146,8 @@ const App = () => {
           } ${isSelectedEnd ? "selected-end" : ""} ${
             isHovering ? "hover" : ""
           } ${isFutureDate ? "disabled" : ""}`}
-          onClick={() => handleDayClick(currentDate)}
-          onMouseEnter={() => handleDayMouseEnter(currentDate)}
+          onClick={() => handleDayClick(normalizedCurrentDate)}
+          onMouseEnter={() => handleDayMouseEnter(normalizedCurrentDate)}
         >
           {day}
         </div>
@@ -1357,6 +1373,7 @@ const App = () => {
         : new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0)
     );
   }, [currentMonth]);
+
   return (
     <div>
       <div
@@ -4917,7 +4934,7 @@ const App = () => {
                                       class="_271k _271m _1qjd layerConfirm _ai7j _ai7k _ai7m snipcss0-14-4007-4008 style-kKnrS"
                                       id="style-kKnrS"
                                     >
-                                      <div class="_43rl snipcss0-15-4008-4009"> 
+                                      <div class="_43rl snipcss0-15-4008-4009">
                                         <div
                                           onClick={handleapplybutton}
                                           data-hover="tooltip"
