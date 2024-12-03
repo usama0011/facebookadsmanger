@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "../styles/CompaingsData.css";
 import { Switch, Table } from "antd";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronRightIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 
 import { Link } from "react-router-dom";
 import {
@@ -433,11 +433,13 @@ const CompaingsData = ({
                     <div class="_3ea9" id="js_2a4">
                       Delivery
                       <span id="style-I46WW" class="style-I46WW">
-                        <i
-                          alt=""
-                          data-visualcompletion="css-img"
-                          class="img"
-                        ></i>
+                        <ArrowUpIcon
+                          style={{
+                            width: "15px",
+                            height: "15px",
+                            color: "blue",
+                          }}
+                        />
                       </span>
                     </div>
                   </div>
@@ -504,7 +506,15 @@ const CompaingsData = ({
       ),
     },
     {
-      title: "Bid Strategy",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div>Bid Strategy</div>
+          <div>
+            <CaretDownOutlined style={{ color: "black" }} color="black" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "Bidstrategy",
       key: "Bidstrategy",
       width: 120,
@@ -515,7 +525,15 @@ const CompaingsData = ({
       ),
     },
     {
-      title: "Budget",
+      title: (
+        <div className="resulsconainer">
+          {" "}
+          <div>Budget</div>
+          <div>
+            <CaretDownOutlined style={{ color: "black" }} color="red" />
+          </div>{" "}
+        </div>
+      ),
       dataIndex: "Budget",
       key: "Budget",
       width: 140,
@@ -607,7 +625,7 @@ const CompaingsData = ({
                           <div>
                             <CaretDownOutlined
                               style={{ color: "black" }}
-                              color="red"
+                              color=""
                             />
                           </div>
                         </div>{" "}
@@ -637,7 +655,7 @@ const CompaingsData = ({
           {" "}
           <div>Reach</div>
           <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+            <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>{" "}
         </div>
       ),
@@ -656,7 +674,7 @@ const CompaingsData = ({
           {" "}
           <div>Impressions</div>
           <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+            <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>{" "}
         </div>
       ),
@@ -677,7 +695,7 @@ const CompaingsData = ({
             Cost Per <br /> Results
           </div>
           <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+            <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>{" "}
         </div>
       ),
@@ -688,7 +706,7 @@ const CompaingsData = ({
         <div style={{ fontSize: "14px" }} className="budygetcontainer">
           ${FormatNumbers(text)}
           <br />
-          <span style={{ fontSize: "12px", color: "gray" }}>
+          <span style={{ fontSize: "12px", color: "black" }}>
             Per link click
           </span>
         </div>
@@ -3905,7 +3923,13 @@ const CompaingsData = ({
                                               fontSize: "14px",
                                             }}
                                           >
-                                            {totalReach}
+                                            {Number(totalReach).toLocaleString(
+                                              undefined,
+                                              {
+                                                minimumFractionDigits: 2,
+                                                maximumFractionDigits: 2,
+                                              }
+                                            )}
                                           </span>
                                         </div>
                                       </div>
@@ -3992,7 +4016,9 @@ const CompaingsData = ({
                                             fontSize: "14px",
                                           }}
                                         >
-                                          {totalResults}
+                                          {Number(
+                                            totalResults
+                                          ).toLocaleString()}
                                         </span>
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
@@ -4021,7 +4047,9 @@ const CompaingsData = ({
                                             fontSize: "14px",
                                           }}
                                         >
-                                          {totalImpressions}
+                                          {Number(
+                                            totalImpressions
+                                          ).toLocaleString()}
                                         </span>
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
@@ -4108,7 +4136,13 @@ const CompaingsData = ({
                                             fontSize: "14px",
                                           }}
                                         >
-                                          ${totalAmountSpent?.toFixed(2)}
+                                          $
+                                          {Number(
+                                            totalAmountSpent
+                                          ).toLocaleString(undefined, {
+                                            minimumFractionDigits: 2,
+                                            maximumFractionDigits: 2,
+                                          })}
                                         </span>
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
