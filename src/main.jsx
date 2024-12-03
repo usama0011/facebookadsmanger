@@ -38,6 +38,7 @@ import AccountList from "./pages/AccountList";
 import AddAccount from "./pages/AddAccount";
 import EditAccount from "./pages/EditAccount";
 import UpooadReporting from "./pages/UpooadReporting";
+import ReportingCalendar from "./components/ReportingCalender";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -90,6 +91,10 @@ const router = createBrowserRouter([
   {
     path: "/add-account",
     element: <AddAccount />,
+  },
+  {
+    path: "/reportingcalender",
+    element: <ReportingCalendar />,
   },
   {
     path: "/edit-account/:id",

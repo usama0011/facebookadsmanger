@@ -577,6 +577,7 @@ const CompaingsData = ({
                           alignItems: "center",
                           flexDirection: "row",
                           justifyContent: "space-between",
+                          width: "100%",
                         }}
                         class="x78-1rg x1q-ix5 x1y-5f2 x12-hyy x6s-is5 x97-xjl xm8-aki x1q-cip xm0-bni x13-y6i x1g-j3h x14-5v9 x4m-d9j x13-l3z xu3-pvm x1q-lhi x26-55c x6i-z36 x1y-p3x xep-226 x1y-1kn xe5-njk x10-x9z x1s-q4o"
                       >
@@ -589,45 +590,26 @@ const CompaingsData = ({
                           class="x78-1rg xdt-yrh xl5-v21 x1n-d4c style-7YopV"
                           id="style-7YopV"
                         >
-                          <div class="_64-zcs style-3k19z" id="ads-1wj">
-                            <div class="x1x-aof xsu-rfi x63-sd6 xbs-g6h xux-86t x6i-z36 x10-yim xly-zi2 x1h-fri x11-bqy xeu-5mv">
-                              <div
-                                style={{
-                                  display: "flex",
-                                  alignItems: "center",
-                                  flexDirection: "row",
-                                }}
-                                class="x1u-r8p x10-oo6 x1f-pcq x1h-jqn xdy-dx9 x19-zsj x6i-z36 x10-yim x1y-5f2 xly-zi2 xea-6h9"
-                              >
-                                <span class="x1e-tox">
-                                  <span>
-                                    <i
-                                      class="epggf style-RXS4e"
-                                      id="style-RXS4e"
-                                    ></i>
-                                  </span>
-                                </span>
-                                <div
-                                  class="_3e-7d2"
-                                  style={{ marginLeft: "5px" }}
-                                >
-                                  Results
-                                  <span id="style-4MCWg" class="style-4MCWg">
-                                    <div
-                                      id="style-M22gT"
-                                      class="style-M22gT"
-                                    ></div>
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
+                          <span class="x1e-tox">
+                            <span>
+                              <i class="epggf style-RXS4e" id="style-RXS4e"></i>
+                            </span>
+                          </span>
+                          <div
+                            class="_3e-7d2"
+                            style={{ marginLeft: "5px", marginRight: "50px" }}
+                          >
+                            Results
+                            <span id="style-4MCWg" class="style-4MCWg">
+                              <div id="style-M22gT" class="style-M22gT"></div>
+                            </span>
                           </div>
-                        </div>
-                        <div>
-                          <CaretDownOutlined
-                            style={{ color: "gray" }}
-                            color="red"
-                          />
+                          <div>
+                            <CaretDownOutlined
+                              style={{ color: "black" }}
+                              color="red"
+                            />
+                          </div>
                         </div>{" "}
                       </div>
                     </span>
@@ -3837,7 +3819,7 @@ const CompaingsData = ({
                 maxHeight: calculatedHeight,
                 backgroundColor: "#f5f6f7",
               }}
-              className="campaign-table-container"
+              className="campaign-table-container custom-row-background"
             >
               <Table
                 columns={MoreColoumsAdds}
@@ -3858,6 +3840,10 @@ const CompaingsData = ({
                   );
                   const totalImpressions = pageData.reduce(
                     (sum, record) => sum + (Number(record.Impressions) || 0),
+                    0
+                  );
+                  const tatalCPMCost = pageData.reduce(
+                    (sum, record) => sum + (Number(record.CPM) || 0),
                     0
                   );
                   const largestCostPerResult = Math.max(
@@ -3882,7 +3868,7 @@ const CompaingsData = ({
                           overflow: "hidden",
                         }}
                       >
-                        {columns.map((col, index) => {
+                        {MoreColoumsAdds.map((col, index) => {
                           if (index === 0) {
                             // First column: Span across two columns
                             return (
@@ -3914,6 +3900,10 @@ const CompaingsData = ({
                                           <span
                                             id="style-DUim6"
                                             class="style-DUim6"
+                                            style={{
+                                              fontWeight: "500",
+                                              fontSize: "14px",
+                                            }}
                                           >
                                             {totalReach}
                                           </span>
@@ -3996,7 +3986,14 @@ const CompaingsData = ({
                                   <div class="_e9-vat">
                                     <div>
                                       <div class="xmi-ayr xo1-g1e x10-yi2">
-                                        <span>{totalResults}</span>
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {totalResults}
+                                        </span>
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
@@ -4018,7 +4015,14 @@ const CompaingsData = ({
                                   <div class="_e9-vat">
                                     <div>
                                       <div class="xmi-ayr xo1-g1e x10-yi2">
-                                        <span>{totalImpressions}</span>
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {totalImpressions}
+                                        </span>
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
@@ -4040,7 +4044,12 @@ const CompaingsData = ({
                                   <div class="_e9-vat">
                                     <div>
                                       <div class="xmi-ayr xo1-g1e x10-yi2">
-                                        <span>
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
                                           ${largestCostPerResult?.toFixed(2)}
                                         </span>
                                       </div>
@@ -4054,41 +4063,62 @@ const CompaingsData = ({
                                 </div>
                               </div>
                             );
+                          else if (col.dataIndex === "CPM")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          ${tatalCPMCost?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Per 1,000 Impressions
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
                           else if (col.dataIndex === "Amountspent")
                             value = (
-                              <div
-                                style={{
-                                  display: "flex",
-                                  flexDirection: "column",
-                                  alignItems: "center",
-                                  justifyContent: "flex-end",
-                                  width: "100%",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  style={{
-                                    fontSize: 14,
-                                    fontWeight: "normal",
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    alignItems: "center",
-                                    marginBottom: 0,
-                                  }}
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
                                 >
-                                  ${totalAmountSpent}
-                                </span>
-
-                                <span
-                                  style={{
-                                    color: "gray",
-
-                                    paddingTop: 0,
-                                    fontWeight: "normal",
-                                  }}
-                                >
-                                  Total Spend
-                                </span>
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          ${totalAmountSpent?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Total Spend
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             );
 
