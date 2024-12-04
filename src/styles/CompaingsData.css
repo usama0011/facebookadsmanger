@@ -8244,3 +8244,7 @@ i.borcb {
   right: 60px;
   z-index: 202;
 }
+
+.campaign-table-container::-webkit-scrollbar {
+  display: none;
+}
