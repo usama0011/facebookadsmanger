@@ -2533,7 +2533,7 @@ const CompaingsData = ({
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
   const paddingCorrection = 10; // Small padding adjustment to avoid extra space
-  const maxHeight = 516; // Set a maximum table height
+  const maxHeight = 800; // Set a maximum table height
 
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
