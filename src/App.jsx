@@ -28,7 +28,7 @@ const App = () => {
   const [displayID, setDisplayID] = useState(false);
   const [showsearchfilterbar, setshowsearchfilterbar] = useState(false);
   const [currentPageID, setCurrentPageID] = useState(""); // State for input
-  const [showPageIDBar, setShowPageIDBar] = useState(true); // State for visibility
+  const [showPageIDBar, setShowPageIDBar] = useState(false); // State for visibility
   const [selectedValues, setSelectedValues] = useState([]);
   const [showupdatejustnow, setShowUpdateJustNow] = useState(false);
   const [campaings, setCampaigns] = useState([]);
