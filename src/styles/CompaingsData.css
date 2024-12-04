@@ -8263,4 +8263,6 @@ i.borcb {
 
 .custom-progress-bar .ant-progress-inner {
   height: 4px !important; /* Adjust container height */
+  background: transparent !important; /* Set the background to transparent */
+
 }
