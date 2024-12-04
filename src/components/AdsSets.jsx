@@ -538,11 +538,14 @@ const AdsSets = ({ campaigns, loading, error }) => {
       ),
     },
   ];
+
   // Calculate height based on campaigns length
-  const rowHeight = 50; // Approximate height of one row
+  const rowHeight = 60; // Approximate height of one row
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
-  const maxHeight = 500; // Set a maximum table height
+
+  const maxHeight = 900; // Set a maximum table height
+
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
@@ -552,777 +555,480 @@ const AdsSets = ({ campaigns, loading, error }) => {
       <div class="_2utz style-Seeed" id="style-Seeed">
         <div class="_1hv5 style-voLCB" id="style-voLCB">
           <div id="style-C85Qh" class="style-C85Qh">
-            <div class="_3c5b _7jnt" id="pe_toolbar">
-              <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
-                <div class="_9p_z">
-                  <div class="_9p_y" role="toolbar">
-                    <div class="_9p_w">
-                      <div class="_3c5b _7jnt" id="pe_toolbar">
-                        <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
-                          <div class="_9p_z">
-                            <div class="_9p_y" role="toolbar">
-                              <div class="_9p_w"></div>
-                              <div data-pagelet="AdsPEMainPaneRightToolbar">
-                                <div
-                                  class="_3c5b _7jnt snipcss-TW8gO"
-                                  id="pe_toolbar"
-                                >
-                                  <div class="x78zum5 x6ikm8r x10wlt62 x1n2onr6">
-                                    <div class="_9p_z">
-                                      <div class="_9p_y" role="toolbar">
-                                        <div>
-                                          <div class="_9p_y">
-                                            <div class="_9p_y">
-                                              <span
-                                                class=" "
-                                                data-tracked="true"
-                                                data-clickable="1"
-                                              >
-                                                <span
-                                                  class=" "
-                                                  data-tracked="true"
-                                                  data-clickable="1"
-                                                >
-                                                  <div
-                                                    class="x3nfvp2 x193iq5w xxymvpz"
-                                                    role="none"
-                                                  >
-                                                    <div
-                                                      aria-busy="false"
-                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm x140t73q xqkc6xh x1y1aw1k xwib8y2 x1pi30zi x1ye3gou"
-                                                      role="button"
-                                                      tabindex="0"
-                                                    >
-                                                      <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                        <div class="x78zum5">
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                                              <i
-                                                                alt=""
-                                                                data-visualcompletion="css-img"
-                                                                class="img style-1DD73"
-                                                                id="style-1DD73"
-                                                              ></i>
-                                                            </div>
-                                                            <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                              Create
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </span>
-                                              </span>
-                                              <div id="DUPLICATE_BUTTON_ID">
-                                                <div
-                                                  class="x3oybdh xuxw1ft x1iknuni xw9jwym x1e2iszw xg0tal0 x3nfvp2 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x193iq5w xeuugli"
-                                                  role="group"
-                                                >
-                                                  <div
-                                                    aria-busy="false"
-                                                    aria-disabled="true"
-                                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-rzmbi"
-                                                    role="button"
-                                                    tabindex="-1"
-                                                    id="style-rzmbi"
-                                                  >
-                                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                      <div class="x78zum5">
-                                                        <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                          data-sscoverage-ignore="true"
-                                                        >
-                                                          Duplicate
-                                                        </div>
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                          <div
-                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                            role="presentation"
-                                                          >
-                                                            <div
-                                                              class="xtwfq29 style-hUaof"
-                                                              id="style-hUaof"
-                                                            ></div>
-                                                          </div>
-                                                          ​
-                                                        </div>
-                                                      </div>
-                                                    </span>
-                                                  </div>
-                                                  <div class="x1rg5ohu x39eecv">
-                                                    <div
-                                                      aria-busy="false"
-                                                      aria-controls="js_q"
-                                                      aria-disabled="true"
-                                                      aria-expanded="false"
-                                                      aria-haspopup="menu"
-                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-bAnJd"
-                                                      role="button"
-                                                      tabindex="-1"
-                                                      id="style-bAnJd"
-                                                    >
-                                                      <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                        <div class="x78zum5">
-                                                          <div
-                                                            class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                            data-sscoverage-ignore="true"
-                                                          >
-                                                            Open Drop-down
-                                                          </div>
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                            ​
-                                                            <div
-                                                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                              role="presentation"
-                                                            >
-                                                              <div
-                                                                class="xtwfq29 style-k5Z5K"
-                                                                id="style-k5Z5K"
-                                                              ></div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <span
-                                                class=" "
-                                                data-tracked="true"
-                                                data-clickable="1"
-                                              >
-                                                <div
-                                                  class="x3oybdh xuxw1ft x1iknuni xw9jwym x1e2iszw xg0tal0 x3nfvp2 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x193iq5w xeuugli"
-                                                  role="group"
-                                                >
-                                                  <div
-                                                    aria-busy="false"
-                                                    aria-disabled="true"
-                                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1pi30zi x1ye3gou style-y2K5C"
-                                                    role="button"
-                                                    tabindex="-1"
-                                                    id="style-y2K5C"
-                                                  >
-                                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                      <div class="x78zum5">
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                          <div
-                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                            role="presentation"
-                                                          >
-                                                            <div
-                                                              class="xtwfq29 style-6O2GU"
-                                                              id="style-6O2GU"
-                                                            ></div>
-                                                          </div>
-                                                          <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                            Edit
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </span>
-                                                  </div>
-                                                  <div class="x1rg5ohu x39eecv">
-                                                    <div
-                                                      aria-busy="false"
-                                                      aria-controls="js_s"
-                                                      aria-disabled="true"
-                                                      aria-expanded="false"
-                                                      aria-haspopup="menu"
-                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-3jXPL"
-                                                      role="button"
-                                                      tabindex="-1"
-                                                      id="style-3jXPL"
-                                                    >
-                                                      <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                        <div class="x78zum5">
-                                                          <div
-                                                            class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                            data-sscoverage-ignore="true"
-                                                          >
-                                                            Edit
-                                                          </div>
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                            ​
-                                                            <div
-                                                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                              role="presentation"
-                                                            >
-                                                              <div
-                                                                class="xtwfq29 style-LeZOe"
-                                                                id="style-LeZOe"
-                                                              ></div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </span>
-                                              <div
-                                                class="x3nfvp2 x193iq5w xxymvpz"
-                                                role="none"
-                                              >
-                                                <div
-                                                  aria-busy="false"
-                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1pi30zi x1ye3gou"
-                                                  role="button"
-                                                  tabindex="0"
-                                                >
-                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                    <div class="x78zum5">
-                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                        <div
-                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                          role="presentation"
-                                                        >
-                                                          <div
-                                                            class="xtwfq29 style-ZM8pl"
-                                                            id="style-ZM8pl"
-                                                          ></div>
-                                                        </div>
-                                                        <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                          A/B test
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <div
-                                                class="x3nfvp2 x193iq5w xxymvpz"
-                                                role="none"
-                                              >
-                                                <div
-                                                  aria-busy="false"
-                                                  aria-disabled="true"
-                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                  role="button"
-                                                  tabindex="-1"
-                                                >
-                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                    <div class="x78zum5">
-                                                      <div
-                                                        class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                        data-sscoverage-ignore="true"
-                                                      >
-                                                        You haven't copied any
-                                                        items.
-                                                      </div>
-                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                        <div
-                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                          role="presentation"
-                                                        >
-                                                          <div
-                                                            class="xtwfq29 style-OtyZT"
-                                                            id="style-OtyZT"
-                                                          ></div>
-                                                        </div>
-                                                        ​
-                                                      </div>
-                                                    </div>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <div
-                                                class="x3oybdh xuxw1ft x1iknuni xw9jwym x1e2iszw xg0tal0 x1rg5ohu x1lcm9me x1yr5g0i xrt01vj x10y3i5r"
-                                                role="group"
-                                              >
-                                                <div
-                                                  class="x3nfvp2 x193iq5w xxymvpz style-1FK91"
-                                                  role="none"
-                                                  id="style-1FK91"
-                                                >
-                                                  <div
-                                                    aria-busy="false"
-                                                    aria-disabled="true"
-                                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-e6f8D"
-                                                    role="button"
-                                                    tabindex="-1"
-                                                    id="style-e6f8D"
-                                                  >
-                                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                      <div class="x78zum5">
-                                                        <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                          data-sscoverage-ignore="true"
-                                                        >
-                                                          Discard draft
-                                                        </div>
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                          <div
-                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                            role="presentation"
-                                                          >
-                                                            <div
-                                                              class="xtwfq29 style-ggVnf"
-                                                              id="style-ggVnf"
-                                                            ></div>
-                                                          </div>
-                                                          ​
-                                                        </div>
-                                                      </div>
-                                                    </span>
-                                                  </div>
-                                                </div>
-                                                <div
-                                                  class="x3nfvp2 x193iq5w xxymvpz style-qrJrx"
-                                                  role="none"
-                                                  id="style-qrJrx"
-                                                >
-                                                  <div
-                                                    aria-busy="false"
-                                                    aria-disabled="true"
-                                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-h2fck"
-                                                    role="button"
-                                                    tabindex="-1"
-                                                    id="style-h2fck"
-                                                  >
-                                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                      <div class="x78zum5">
-                                                        <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                          data-sscoverage-ignore="true"
-                                                        >
-                                                          Delete isn't available
-                                                          with your current
-                                                          campaign selection.
-                                                        </div>
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                          <div
-                                                            class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                            role="presentation"
-                                                          >
-                                                            <div
-                                                              class="xtwfq29 style-9eTbA"
-                                                              id="style-9eTbA"
-                                                            ></div>
-                                                          </div>
-                                                          ​
-                                                        </div>
-                                                      </div>
-                                                    </span>
-                                                  </div>
-                                                </div>
-                                                <div
-                                                  class="x3nfvp2 x193iq5w xxymvpz style-55MkN"
-                                                  role="none"
-                                                  id="style-55MkN"
-                                                >
-                                                  <div
-                                                    aria-busy="false"
-                                                    aria-controls="js_u"
-                                                    aria-expanded="false"
-                                                    aria-haspopup="menu"
-                                                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d style-Xbso8"
-                                                    role="button"
-                                                    tabindex="0"
-                                                    id="style-Xbso8"
-                                                  >
-                                                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                      <div class="x78zum5">
-                                                        <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                          data-sscoverage-ignore="true"
-                                                        >
-                                                          Export and import ad
-                                                          configuration data
-                                                        </div>
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                          <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                                            <i
-                                                              alt=""
-                                                              data-visualcompletion="css-img"
-                                                              class="img style-KJRle"
-                                                              id="style-KJRle"
-                                                            ></i>
-                                                          </div>
-                                                          ​
-                                                        </div>
-                                                      </div>
-                                                    </span>
-                                                  </div>
-                                                </div>
-                                                <span class="">
-                                                  <div class="x1rg5ohu x67bb7w">
-                                                    <div
-                                                      class="x3nfvp2 x193iq5w xxymvpz style-A2osp"
-                                                      role="none"
-                                                      id="style-A2osp"
-                                                    >
-                                                      <div
-                                                        aria-busy="false"
-                                                        aria-disabled="true"
-                                                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1h6gzvc x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xtpvj6k xaatb59 x1qgsegg xo1l8bm x1v911su xis6omg x1y1aw1k xwib8y2 x1ye3gou xn6708d style-RIw1l"
-                                                        role="button"
-                                                        tabindex="-1"
-                                                        id="js_1a"
-                                                      >
-                                                        <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                          <div class="x78zum5">
-                                                            <div
-                                                              class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                              data-sscoverage-ignore="true"
-                                                            >
-                                                              Tag
-                                                            </div>
-                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                              <div
-                                                                class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                                role="presentation"
-                                                              >
-                                                                <div
-                                                                  class="xtwfq29 style-HPZb7"
-                                                                  id="style-HPZb7"
-                                                                ></div>
-                                                              </div>
-                                                              ​
-                                                            </div>
-                                                          </div>
-                                                        </span>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </span>
-                                              </div>
-                                            </div>
-                                            <span>
-                                              <div>
-                                                <div
-                                                  aria-busy="false"
-                                                  aria-controls="js_1d"
-                                                  aria-expanded="false"
-                                                  aria-haspopup="menu"
-                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1swvt13 xn6708d"
-                                                  id="js_v"
-                                                  role="button"
-                                                  tabindex="0"
-                                                >
-                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                    <div class="x78zum5">
-                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                        <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1iyjqo2">
-                                                          Rules
-                                                        </div>
-                                                        <div
-                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                          role="presentation"
-                                                        >
-                                                          <div
-                                                            class="xtwfq29 style-ScxYr"
-                                                            id="style-ScxYr"
-                                                          ></div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </span>
-                                                </div>
-                                                <div
-                                                  data-visualcompletion="ignore"
-                                                  class=""
-                                                ></div>
-                                              </div>
-                                            </span>
-                                          </div>
+            <div class="_3c-mro _7j-8dy">
+              <div class="x78-k5m x6i-llv x10-p3v x1n-ebg">
+                <div class="_9p-ozl">
+                  <div class="_9p-mlx">
+                    <div>
+                      <div class="_9p-mlx">
+                        <div class="_9p-mlx">
+                          <span>
+                            <span>
+                              <div class="x3n-f59 x19-22g xxy-2rh">
+                                <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x1t-x6v x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn xo1-mec x14-1lb xas-1qp x1y-cz7 xwi-az6 x1p-fay x1y-fvp">
+                                  <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                    <div class="x78-k5m">
+                                      <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                        <div class="x3n-f59 x2l-x9n x1c-s9e">
+                                          <i
+                                            class="borcb style-1FvAr"
+                                            id="style-1FvAr"
+                                          ></i>
                                         </div>
-                                        <div class="_9p_w"></div>
-                                        <div>
-                                          <div class="_9p_y">
-                                            <div class="x1rg5ohu x67bb7w">
-                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
-                                                <div>
-                                                  <div class="x78zum5 x2lwn1j xeuugli">
-                                                    <label
-                                                      class="x1ypdohk"
-                                                      for="js_w"
-                                                    >
-                                                      <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                        View Setup
-                                                      </span>
-                                                    </label>
-                                                  </div>
-                                                </div>
-                                                <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                                                  <input
-                                                    aria-checked="false"
-                                                    aria-label="View Setup"
-                                                    role="switch"
-                                                    aria-describedby="js_x"
-                                                    class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm"
-                                                    id="js_w"
-                                                    type="checkbox"
-                                                    value="false"
-                                                  />
-                                                  <div class="x1n2onr6 xh8yej3">
-                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
-                                                      <div class=""></div>
-                                                      <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
-                                                    </div>
-                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <span>
-                                              <span
-                                                class=" "
-                                                data-tracked="true"
-                                                data-clickable="1"
-                                              >
-                                                <div id="ads_manager_table_column_dropdown_id">
-                                                  <div id="ads_manager_nux_for_attribution_setting_column_aem_v2_mai_action_dropdown_nux">
-                                                    <div
-                                                      aria-busy="false"
-                                                      aria-controls="js_1f"
-                                                      aria-expanded="false"
-                                                      aria-haspopup="menu"
-                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d xyq1l15"
-                                                      role="button"
-                                                      tabindex="0"
-                                                    >
-                                                      <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                        <div class="x78zum5">
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                            <div
-                                                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                              role="presentation"
-                                                            >
-                                                              <div
-                                                                class="xtwfq29 style-avcxa"
-                                                                id="style-avcxa"
-                                                              ></div>
-                                                            </div>
-                                                            <div
-                                                              style={{
-                                                                position:
-                                                                  "relative",
-                                                              }}
-                                                              onClick={() =>
-                                                                setShowCustumizeBanner(
-                                                                  (prev) =>
-                                                                    !prev
-                                                                )
-                                                              }
-                                                              class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1iyjqo2"
-                                                            >
-                                                              Columns:{" "}
-                                                              {
-                                                                showPerformanceAndClicks
-                                                              }
-                                                            </div>
-                                                            <div
-                                                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                              role="presentation"
-                                                            >
-                                                              <div
-                                                                class="xtwfq29 style-ZULGQ"
-                                                                id="style-ZULGQ"
-                                                              ></div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                  <div
-                                                    data-visualcompletion="ignore"
-                                                    class=""
-                                                  ></div>
-                                                </div>
-                                              </span>
-                                            </span>
-                                            <span
-                                              class=""
-                                              id="ads_manager_breakdown_dropdown_id"
-                                            >
-                                              <span
-                                                class=" "
-                                                data-tracked="true"
-                                                data-clickable="1"
-                                              >
-                                                <div
-                                                  aria-busy="false"
-                                                  aria-controls="js_10"
-                                                  aria-expanded="false"
-                                                  aria-haspopup="menu"
-                                                  class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                  role="button"
-                                                  tabindex="0"
-                                                >
-                                                  <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                    <div class="x78zum5">
-                                                      <div
-                                                        class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                        data-sscoverage-ignore="true"
-                                                      >
-                                                        Breakdown
-                                                      </div>
-                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                        <div
-                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                          role="presentation"
-                                                        >
-                                                          <div
-                                                            class="xtwfq29 style-8rUPo"
-                                                            id="style-8rUPo"
-                                                          ></div>
-                                                        </div>
-                                                        ​
-                                                        <div
-                                                          class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                          role="presentation"
-                                                        >
-                                                          <div
-                                                            class="xtwfq29 style-mYiAr"
-                                                            id="style-mYiAr"
-                                                          ></div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </span>
-                                                </div>
-                                              </span>
-                                              <div
-                                                data-visualcompletion="ignore"
-                                                class=""
-                                              ></div>
-                                            </span>
-                                            <span id="ads_manager_reports_dropdown_id">
-                                              <div
-                                                aria-busy="false"
-                                                aria-controls="js_12"
-                                                aria-expanded="false"
-                                                aria-haspopup="menu"
-                                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                role="button"
-                                                tabindex="0"
-                                              >
-                                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                  <div class="x78zum5">
-                                                    <div
-                                                      class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                      data-sscoverage-ignore="true"
-                                                    >
-                                                      Reports
-                                                    </div>
-                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                      <div
-                                                        class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                        role="presentation"
-                                                      >
-                                                        <div
-                                                          class="xtwfq29 style-jLBRO"
-                                                          id="style-jLBRO"
-                                                        ></div>
-                                                      </div>
-                                                      ​
-                                                      <div
-                                                        class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                        role="presentation"
-                                                      >
-                                                        <div
-                                                          class="xtwfq29 style-y8oAW"
-                                                          id="style-y8oAW"
-                                                        ></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </span>
-                                              </div>
-                                            </span>
-                                            <div
-                                              aria-busy="false"
-                                              aria-controls="js_14"
-                                              aria-expanded="false"
-                                              aria-haspopup="menu"
-                                              class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d x1i64zmx"
-                                              role="button"
-                                              tabindex="0"
-                                            >
-                                              <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                <div class="x78zum5">
-                                                  <div
-                                                    class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                    data-sscoverage-ignore="true"
-                                                  >
-                                                    Export
-                                                  </div>
-                                                  <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk x1nhvcw1 xh8yej3">
-                                                    <div
-                                                      class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                      role="presentation"
-                                                    >
-                                                      <div
-                                                        class="xtwfq29 style-WS2xV"
-                                                        id="style-WS2xV"
-                                                      ></div>
-                                                    </div>
-                                                    ​
-                                                    <div
-                                                      class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f x1gryazu"
-                                                      role="presentation"
-                                                    >
-                                                      <div
-                                                        class="xtwfq29 style-9Fp7o"
-                                                        id="style-9Fp7o"
-                                                      ></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </span>
-                                            </div>
-                                            <div
-                                              class="x3nfvp2 x193iq5w xxymvpz"
-                                              role="none"
-                                            >
-                                              <div
-                                                aria-busy="false"
-                                                class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                role="button"
-                                                tabindex="0"
-                                              >
-                                                <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                  <div class="x78zum5">
-                                                    <div
-                                                      class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                      data-sscoverage-ignore="true"
-                                                    >
-                                                      Charts
-                                                    </div>
-                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                      <div
-                                                        class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                                                        role="presentation"
-                                                      >
-                                                        <div
-                                                          class="xtwfq29 style-j4721"
-                                                          id="style-j4721"
-                                                        ></div>
-                                                      </div>
-                                                      ​
-                                                    </div>
-                                                  </div>
-                                                </span>
-                                              </div>
-                                            </div>
-                                            <div
-                                              id="style-h3se4"
-                                              class="style-h3se4"
-                                            ></div>
-                                          </div>
+                                        <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs">
+                                          Create
                                         </div>
                                       </div>
                                     </div>
+                                  </span>
+                                </div>
+                              </div>
+                            </span>
+                          </span>
+                          <div>
+                            <div class="x3o-2lm xux-rea x1i-ehz xw9-lt2 xg0-r68 x3n-f59 x1l-avb x1y-bvg xrt-o8q x10-omn x19-22g xeu-5cs">
+                              <div
+                                class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp style-FfghQ"
+                                id="style-FfghQ"
+                              >
+                                <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                  <div class="x78-k5m">
+                                    <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                      <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                        <div
+                                          class="xtw-bqe style-mFT1E"
+                                          id="style-mFT1E"
+                                        ></div>
+                                      </div>
+                                      <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs">
+                                        Duplicate
+                                      </div>
+                                    </div>
                                   </div>
+                                </span>
+                              </div>
+                              <div class="x1r-1gm x39-os4">
+                                <div
+                                  class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-sI7MI"
+                                  id="style-sI7MI"
+                                >
+                                  <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                    <div class="x78-k5m">
+                                      <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                        Open Drop-down
+                                      </div>
+                                      <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                        ​
+                                        <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                          <div
+                                            class="xtw-bqe style-6MTPS"
+                                            id="style-6MTPS"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </span>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div></div>
+                          <span>
+                            <div class="x3o-2lm xux-rea x1i-ehz xw9-lt2 xg0-r68 x3n-f59 x1l-avb x1y-bvg xrt-o8q x10-omn x19-22g xeu-5cs">
+                              <div
+                                class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp style-ocmvQ"
+                                id="style-ocmvQ"
+                              >
+                                <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                  <div class="x78-k5m">
+                                    <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                      <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                        <div
+                                          class="xtw-bqe style-S9GaE"
+                                          id="style-S9GaE"
+                                        ></div>
+                                      </div>
+                                      <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs">
+                                        Edit
+                                      </div>
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                              <div class="x1r-1gm x39-os4">
+                                <div
+                                  class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-kwi9O"
+                                  id="style-kwi9O"
+                                >
+                                  <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                    <div class="x78-k5m">
+                                      <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                        Edit
+                                      </div>
+                                      <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                        ​
+                                        <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                          <div
+                                            class="xtw-bqe style-kqMMq"
+                                            id="style-kqMMq"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </span>
+                          <div class="x3n-f59 x19-22g xxy-2rh">
+                            <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp">
+                              <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                <div class="x78-k5m">
+                                  <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                    <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                      <div
+                                        class="xtw-bqe style-aVvrT"
+                                        id="style-aVvrT"
+                                      ></div>
+                                    </div>
+                                    <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs">
+                                      A/B test
+                                    </div>
+                                  </div>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="x3n-f59 x19-22g xxy-2rh">
+                            <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x1h-vob x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn xtp-4qp xaa-nrq x1q-vbb xo1-mec x1v-7i1 xis-j6e x1y-cz7 xwi-az6 x1y-fvp xn6-yn4">
+                              <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                <div class="x78-k5m">
+                                  <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                    You haven't copied any items.
+                                  </div>
+                                  <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                    <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                      <div
+                                        class="xtw-bqe style-sLPyn"
+                                        id="style-sLPyn"
+                                      ></div>
+                                    </div>
+                                    ​
+                                  </div>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="x3o-2lm xux-rea x1i-ehz xw9-lt2 xg0-r68 x1r-1gm x1l-avb x1y-bvg xrt-o8q x10-omn">
+                            <div
+                              class="x3n-f59 x19-22g xxy-2rh style-gENPJ"
+                              id="style-gENPJ"
+                            >
+                              <div
+                                class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x1h-vob x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn xtp-4qp xaa-nrq x1q-vbb xo1-mec x1v-7i1 xis-j6e x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-VqK81"
+                                id="style-VqK81"
+                              >
+                                <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                  <div class="x78-k5m">
+                                    <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                      Discard only works on drafts
+                                    </div>
+                                    <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                      <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                        <div
+                                          class="xtw-bqe style-YaoOb"
+                                          id="style-YaoOb"
+                                        ></div>
+                                      </div>
+                                      ​
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="x3n-f59 x19-22g xxy-2rh style-coeVR"
+                              id="style-coeVR"
+                            >
+                              <div
+                                class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-QBAGF"
+                                id="style-QBAGF"
+                              >
+                                <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                  <div class="x78-k5m">
+                                    <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                      Delete (Ctrl+Backspace)
+                                    </div>
+                                    <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                      <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                        <div
+                                          class="xtw-bqe style-qcoIr"
+                                          id="style-qcoIr"
+                                        ></div>
+                                      </div>
+                                      ​
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="x3n-f59 x19-22g xxy-2rh style-e5TYC"
+                              id="style-e5TYC"
+                            >
+                              <div
+                                class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-YN1WA"
+                                id="style-YN1WA"
+                              >
+                                <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                  <div class="x78-k5m">
+                                    <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                      Export and import ad configuration data
+                                    </div>
+                                    <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                      <div class="x3n-f59 x2l-x9n x1c-s9e">
+                                        <i
+                                          class="borcb style-L47SC"
+                                          id="style-L47SC"
+                                        ></i>
+                                      </div>
+                                      ​
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                            </div>
+                            <span>
+                              <div class="x1r-1gm x67-vdc">
+                                <div
+                                  class="x3n-f59 x19-22g xxy-2rh style-yeQ6D"
+                                  id="style-yeQ6D"
+                                >
+                                  <div
+                                    class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 style-sgBfr"
+                                    id="js_-y1s"
+                                  >
+                                    <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                      <div class="x78-k5m">
+                                        <div class="x1q-729 xjm-mwh x1y-zwe xcw-b3g x1j-rxo x39-os4 x6i-llv x10-p3v x10-k12 xux-rea x1i-gfe">
+                                          Tag
+                                        </div>
+                                        <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                          <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                            <div
+                                              class="xtw-bqe style-ybtCU"
+                                              id="style-ybtCU"
+                                            ></div>
+                                          </div>
+                                          ​
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                          </div>
                         </div>
+                        <span>
+                          <div>
+                            <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1s-1or xn6-yn4">
+                              <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                <div class="x78-k5m">
+                                  <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                    <div class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs x1i-mop">
+                                      Rules
+                                    </div>
+                                    <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                      <div
+                                        class="xtw-bqe style-LkNRy"
+                                        id="style-LkNRy"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </span>
+                            </div>
+                            <div></div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="_9p-foo"></div>
+                    <div>
+                      <div class="_9p-mlx">
+                        <div class="x1r-1gm x67-vdc">
+                          <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x19-o7c x1c-s9e">
+                            <div>
+                              <div class="x78-k5m x2l-sy7 xeu-5cs">
+                                <label class="x1y-3tx" for="js_y">
+                                  <span class="xmi-jdh x1f-3w5 xo1-mec xxi-osf xbs-smn xq9-ccb x1h-n1x xeu-5cs">
+                                    View Setup
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="x1r-1gm x1n-ebg x3o-2lm">
+                              <input
+                                class="xjy-xqo x1y-3tx x5y-93y x17-29q xdj-7xw x11-km9 xat-gqj x1m-qix x1w-l2r x1t-x6v x10-k12 x13-jc2 xh8-7rm x1v-ozd"
+                                id="js_-9qo"
+                                type="checkbox"
+                                value="false"
+                              />
+                              <div class="x1n-ebg xh8-7rm">
+                                <div class="x6s-b1g x78-k5m x13-jfd xu3-lxl x1q-5lp x26-3ri x17-b29 xm8-jje xso-get xy8-5bs xwe-zcy xvy-dnv xrs-p2s x10-p9s xzo-esl x12-lai x1r-i5q xpr-kba x1g-2oj xbs-smn x13-1xr xxz-6j3 x14-cwj xex-hqt x4u-5xd x18-1nv xkh-4dw x15-lyv">
+                                  <div></div>
+                                  <div class="xw4-zzn x1q-b5x x12-ota x1h-scw xzo-esl x12-lai x1r-i5q xpr-kba x13-1xr x6o-z2g xxz-6j3 x4s-l7o"></div>
+                                </div>
+                                <div class="xwe-zcy xvy-dnv xrs-p2s x10-p9s xzo-esl x12-lai x1r-i5q xpr-kba x13-jfd xu3-lxl x1q-5lp x26-3ri x17-b29 xm8-jje xso-get xy8-5bs x13-1xr x6o-z2g xxz-6j3 xg0-zjx x47-i7f x10-k12 x17-29q xds-w4f x13-jc2 x1e-14k x6i-llv x10-p3v xnl-tca xmb-miv xdx-v6t xwm-aby xmn-8hy x8l-3ny x2t-xr7 x1b-6ok xhh-2ac x14-mnt x1w-2s9 x1n-ayl x1t-myr x1t-nw7 xe2-zda xsp-a2m x1s-bec x1w-r56 x1j-9it x9o-hdk x1r-2tj x1h-kyx x1t-941"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span>
+                          <span>
+                            <div>
+                              <div>
+                                <div class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 xyq-3l2">
+                                  <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                    <div class="x78-k5m">
+                                      <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                        <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                          <div
+                                            class="xtw-bqe style-dKFAS"
+                                            id="style-dKFAS"
+                                          ></div>
+                                        </div>
+                                        <div
+                                          style={{
+                                            position: "relative",
+                                          }}
+                                          onClick={() =>
+                                            setShowCustumizeBanner(
+                                              (prev) => !prev
+                                            )
+                                          }
+                                          class="x1x-gir x1f-3w5 xk5-yrq xxi-osf x1h-z9p xux-rea x6i-llv x10-p3v xly-yd3 x1h-n1x xeu-5cs x1i-mop"
+                                        >
+                                          Columns:{" "}
+                                          {showPerformanceAndClicks ===
+                                          "performanceandclicks"
+                                            ? "Performance and clicks"
+                                            : showPerformanceAndClicks}
+                                        </div>
+                                        <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                          <div
+                                            class="xtw-bqe style-xor6d"
+                                            id="style-xor6d"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </span>
+                        </span>
+                        <span>
+                          <span>
+                            <div
+                              style={{ height: "36px" }}
+                              class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4"
+                            >
+                              <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                                <div class="x78-k5m">
+                                  <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                    <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                      <div
+                                        class="xtw-bqe style-yNFri"
+                                        id="style-yNFri"
+                                      ></div>
+                                    </div>
+
+                                    <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                      <div
+                                        class="xtw-bqe style-MoQpO"
+                                        id="style-MoQpO"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </span>
+                            </div>
+                          </span>
+                          <div></div>
+                        </span>
+                        <span>
+                          <div
+                            style={{ height: "36px" }}
+                            class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4"
+                          >
+                            <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                              <div class="x78-k5m">
+                                <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                  <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                    <div
+                                      class="xtw-bqe style-WMwKF"
+                                      id="style-WMwKF"
+                                    ></div>
+                                  </div>
+
+                                  <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                    <div
+                                      class="xtw-bqe style-LHbUw"
+                                      id="style-LHbUw"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                          </div>
+                        </span>
+                        <div
+                          style={{ height: "36px" }}
+                          class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1y-fvp xn6-yn4 x1i-i9h"
+                        >
+                          <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                            <div class="x78-k5m">
+                              <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 x1n-ohs xh8-7rm">
+                                <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                  <div
+                                    class="xtw-bqe style-fTD3b"
+                                    id="style-fTD3b"
+                                  ></div>
+                                </div>
+
+                                <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e x1g-ktz">
+                                  <div
+                                    class="xtw-bqe style-hRzox"
+                                    id="style-hRzox"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                        <div class="x3n-f59 x19-22g xxy-2rh">
+                          <div
+                            style={{ height: "36px", marginRight: "5px" }}
+                            class="x1i-jzs xjq-fo1 xa4-581 xqe-pjo x2h-pyx x97-b4z xcf-7s5 x1q-q5j xm0-qg8 x9f-niv x1y-3tx xe8-io3 xdj-7xw x11-km9 xat-gqj x1m-qix x2l-sy7 xeu-5cs x16-qjz xgg-jek x1j-oce x6s-b1g x1e-wo3 xd1-m2q x1s-j5t x17-1rv x3n-f59 xdl-moy x1q-je5 x2l-x9n x19-22g x1n-ebg x1h-cqc x87-k99 xxy-2rh xvm-5tg x1l-qqn x1g-wjy x1l-avb x1y-bvg xrt-o8q x10-omn x1o-qi9 xaa-nrq x1q-vbb xo1-mec xbs-smn x1v-7i1 x1y-cz7 xwi-az6 x1p-fay x1y-fvp"
+                          >
+                            <span class="xmi-jdh x1f-3w5 xxi-osf x1h-z9p xq9-ccb x1h-n1x x1p-bmo xeu-5cs xh8-7rm">
+                              <div class="x78-k5m">
+                                <div class="x6s-b1g x78-k5m x1q-je5 xoz-ire x2l-sy7 xeu-5cs x1i-mop x19-o7c x1h-9kw x13-1xr x6o-z2g xxz-6j3 xl5-e2e xh8-7rm">
+                                  <div class="x3n-f59 x1h-z9p x2l-x9n x1c-s9e">
+                                    <div
+                                      class="xtw-bqe style-tqGhF"
+                                      id="style-tqGhF"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                          </div>
+                        </div>
+                        <div id="style-X3XOX" class="style-X3XOX"></div>
                       </div>
                     </div>
                   </div>
@@ -1891,7 +1597,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                   width: "250px",
                   height: "600px",
                   top: 0,
-                  left: "420px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -1945,7 +1651,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                   width: "250px",
                   height: "450px",
                   top: "150px",
-                  left: "410px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -1993,7 +1699,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                   width: "250px",
                   height: "300px",
                   top: "250px",
-                  left: "405px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                   padding: "10px",
@@ -2035,7 +1741,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                   width: "250px",
                   height: "300px",
                   top: "300px",
-                  left: "410px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -2075,7 +1781,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
                   width: "250px",
                   height: "300px",
                   top: "300px",
-                  left: "410px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -2116,296 +1822,294 @@ const AdsSets = ({ campaigns, loading, error }) => {
             )}
 
             <div
-              style={{ height: "100%", backgroundColor: "#f5f6f7" }}
-              className="campaign-table-container"
+              style={{
+                maxHeight: calculatedHeight,
+                backgroundColor: "#f5f6f7",
+                overflow: "scroll",
+              }}
+              className="campaign-table-container custom-row-background"
             >
-              <div className="custom-row-background">
-                <Table
-                  columns={columns}
-                  dataSource={campaigns}
-                  style={{
-                    maxHeight: `${calculatedHeight}px`,
-                    overflow: "auto",
-                  }}
-                  scroll={{ y: calculatedHeight }}
-                  bordered
-                  pagination={false}
-                  sticky
-                  summary={(pageData) => {
-                    // Calculate sums for specific numeric fields
-                    const totalReach = pageData.reduce(
-                      (sum, record) => sum + (Number(record.Reach) || 0),
-                      0
-                    );
-                    const totalResults = pageData.reduce(
-                      (sum, record) => sum + (Number(record.Results) || 0),
-                      0
-                    );
-                    const totalImpressions = pageData.reduce(
-                      (sum, record) => sum + (Number(record.Impressions) || 0),
-                      0
-                    );
-                    const largestCostPerResult = Math.max(
-                      ...pageData.map(
-                        (record) => Number(record.Costperresult) || 0
-                      )
-                    );
-                    const totalAmountSpent = pageData.reduce(
-                      (sum, record) => sum + (Number(record.Amountspent) || 0),
-                      0
-                    );
-                    const totalCostPerImpression = pageData.reduce(
-                      (sum, record) => sum + (Number(record.CPM) || 0),
-                      0
-                    );
-                    return (
-                      <Table.Summary fixed>
-                        <Table.Summary.Row
-                          fixed
-                          style={{
-                            borderBottomLeftRadius: "10px",
-                            overflow: "hidden",
-                          }}
-                        >
-                          {columns.map((col, index) => {
-                            if (index === 0) {
-                              // First column: Span across two columns
-                              return (
-                                <Table.Summary.Cell
-                                  key={index}
-                                  index={index}
-                                  colSpan={2}
-                                >
-                                  <div></div>
-                                </Table.Summary.Cell>
-                              );
-                            }
-
-                            if (index === 1) {
-                              // Second column: Skip rendering because it's merged into the first column
-                              return null;
-                            }
-
-                            let value = null;
-
-                            if (col.dataIndex === "Reach")
-                              value = (
-                                <div style={{ textAlign: "right" }}>
-                                  <div class="_1b-dar">
-                                    <div class="_e9-rt6">
-                                      <div>
-                                        <div class="xmi-yie xo1-xoz x10-bjv">
-                                          <div>
-                                            <span
-                                              id="style-DUim6"
-                                              class="style-DUim6"
-                                            >
-                                              {totalReach}
-                                            </span>
-                                          </div>
-                                        </div>
-                                        <div class="ell-c6f _1h-d2w">
-                                          <div class="xt0-vq9 xmi-yie xw2-ook xo1-xoz x63-tnz x15-gv8">
-                                            Accounts Centre accounts
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            else if (col.dataIndex === "campaingname")
-                              value = (
-                                <div>
-                                  <span
-                                    style={{
-                                      fontSize: 14,
-                                      fontWeight: "normal",
-                                      display: "flex",
-                                      flexDirection: "row",
-                                      alignItems: "center",
-                                      marginBottom: 0,
-                                    }}
-                                  >
-                                    Results from {campaigns?.length || 0}{" "}
-                                    campaings{" "}
-                                    <div
-                                      id="style-RKddy"
-                                      className="style-RKddy"
-                                      style={{
-                                        width: 12,
-                                        height: 12,
-                                        maskImage:
-                                          'url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png")', // Add the icon URL here
-                                        maskPosition: "-39px -273px",
-                                        backgroundColor: "black", // Use desired icon color
-                                        marginLeft: "8px",
-                                        marginBottom: 0,
-                                      }}
-                                    ></div>
-                                  </span>
-
-                                  <span
-                                    style={{
-                                      color: "gray",
-
-                                      paddingTop: 0,
-                                      fontWeight: "normal",
-                                    }}
-                                  >
-                                    Excludes deleted items
-                                  </span>
-                                </div>
-                              );
-                            else if (col.dataIndex === "Attributionsetting")
-                              value = (
-                                <div class="_1b-jyz">
-                                  <div class="_e9-vat">
-                                    <div>
-                                      <div class="ell-1jx _1h-tgr">
-                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                          7-day click...
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            else if (col.dataIndex === "Results")
-                              value = (
-                                <div>
-                                  <div
-                                    style={{ textAlign: "right" }}
-                                    class="_1b-jyz"
-                                  >
-                                    <div class="_e9-vat">
-                                      <div>
-                                        <div class="xmi-ayr xo1-g1e x10-yi2">
-                                          <span>{totalResults}</span>
-                                        </div>
-                                        <div class="ell-1jx _1h-tgr">
-                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                            Link Clicks
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            else if (col.dataIndex === "Impressions")
-                              value = (
-                                <div>
-                                  <div
-                                    class="_1b-jyz"
-                                    style={{ textAlign: "right" }}
-                                  >
-                                    <div class="_e9-vat">
-                                      <div>
-                                        <div class="xmi-ayr xo1-g1e x10-yi2">
-                                          <span>{totalImpressions}</span>
-                                        </div>
-                                        <div class="ell-1jx _1h-tgr">
-                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                            Link Clicks
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            else if (col.dataIndex === "Costperresult")
-                              value = (
-                                <div>
-                                  <div
-                                    class="_1b-jyz"
-                                    style={{ textAlign: "right" }}
-                                  >
-                                    <div class="_e9-vat">
-                                      <div>
-                                        <div class="xmi-ayr xo1-g1e x10-yi2">
-                                          <span>
-                                            ${largestCostPerResult?.toFixed(2)}
-                                          </span>
-                                        </div>
-                                        <div class="ell-1jx _1h-tgr">
-                                          <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                            Link Clicks
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            else if (col.dataIndex === "Amountspent")
-                              value = (
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    alignItems: "center",
-                                    justifyContent: "flex-end",
-                                    width: "100%",
-                                    height: "100%",
-                                  }}
-                                >
-                                  <span
-                                    style={{
-                                      fontSize: 14,
-                                      fontWeight: "normal",
-                                      display: "flex",
-                                      flexDirection: "row",
-                                      alignItems: "center",
-                                      marginBottom: 0,
-                                    }}
-                                  >
-                                    $
-                                    {Number(totalAmountSpent).toLocaleString(
-                                      undefined,
-                                      {
-                                        minimumFractionDigits: 2,
-                                        maximumFractionDigits: 2,
-                                      }
-                                    )}
-                                  </span>
-
-                                  <span
-                                    style={{
-                                      color: "gray",
-
-                                      paddingTop: 0,
-                                      fontWeight: "normal",
-                                    }}
-                                  >
-                                    Total Spend
-                                  </span>
-                                </div>
-                              );
-
+              <Table
+                columns={columns}
+                dataSource={campaigns}
+                scroll={{ y: calculatedHeight }}
+                bordered
+                pagination={false}
+                sticky
+                summary={(pageData) => {
+                  // Calculate sums for specific numeric fields
+                  const totalReach = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Reach) || 0),
+                    0
+                  );
+                  const totalResults = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Results) || 0),
+                    0
+                  );
+                  const totalImpressions = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Impressions) || 0),
+                    0
+                  );
+                  const largestCostPerResult = Math.max(
+                    ...pageData.map(
+                      (record) => Number(record.Costperresult) || 0
+                    )
+                  );
+                  const totalAmountSpent = pageData.reduce(
+                    (sum, record) => sum + (Number(record.Amountspent) || 0),
+                    0
+                  );
+                  const totalCostPerImpression = pageData.reduce(
+                    (sum, record) => sum + (Number(record.CPM) || 0),
+                    0
+                  );
+                  return (
+                    <Table.Summary fixed>
+                      <Table.Summary.Row
+                        fixed
+                        style={{
+                          borderBottomLeftRadius: "10px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {columns.map((col, index) => {
+                          if (index === 0) {
+                            // First column: Span across two columns
                             return (
                               <Table.Summary.Cell
                                 key={index}
                                 index={index}
-                                style={{ width: col.width }}
+                                colSpan={2}
                               >
-                                {value !== null
-                                  ? typeof value === "object"
-                                    ? value
-                                    : typeof value === "string"
-                                    ? value
-                                    : value.toFixed(2)
-                                  : ""}
+                                <div></div>
                               </Table.Summary.Cell>
                             );
-                          })}
-                        </Table.Summary.Row>
-                      </Table.Summary>
-                    );
-                  }}
-                />
-              </div>
+                          }
+
+                          if (index === 1) {
+                            // Second column: Skip rendering because it's merged into the first column
+                            return null;
+                          }
+
+                          let value = null;
+
+                          if (col.dataIndex === "Reach")
+                            value = (
+                              <div style={{ textAlign: "right" }}>
+                                <div class="_1b-dar">
+                                  <div class="_e9-rt6">
+                                    <div>
+                                      <div class="xmi-yie xo1-xoz x10-bjv">
+                                        <div>
+                                          <span
+                                            id="style-DUim6"
+                                            class="style-DUim6"
+                                          >
+                                            {totalReach}
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="ell-c6f _1h-d2w">
+                                        <div class="xt0-vq9 xmi-yie xw2-ook xo1-xoz x63-tnz x15-gv8">
+                                          Accounts Centre accounts
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "campaingname")
+                            value = (
+                              <div>
+                                <span
+                                  style={{
+                                    fontSize: 14,
+                                    fontWeight: "normal",
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    marginBottom: 0,
+                                  }}
+                                >
+                                  Results from {campaigns?.length || 0}{" "}
+                                  campaings{" "}
+                                  <div
+                                    id="style-RKddy"
+                                    className="style-RKddy"
+                                    style={{
+                                      width: 12,
+                                      height: 12,
+                                      maskImage:
+                                        'url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/2qdc4_H3cyf.png")', // Add the icon URL here
+                                      maskPosition: "-39px -273px",
+                                      backgroundColor: "black", // Use desired icon color
+                                      marginLeft: "8px",
+                                      marginBottom: 0,
+                                    }}
+                                  ></div>
+                                </span>
+
+                                <span
+                                  style={{
+                                    color: "gray",
+
+                                    paddingTop: 0,
+                                    fontWeight: "normal",
+                                  }}
+                                >
+                                  Excludes deleted items
+                                </span>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Attributionsetting")
+                            value = (
+                              <div class="_1b-jyz">
+                                <div class="_e9-vat">
+                                  <div>
+                                    <div class="ell-1jx _1h-tgr">
+                                      <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                        7-day click...
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Results")
+                            value = (
+                              <div>
+                                <div
+                                  style={{ textAlign: "right" }}
+                                  class="_1b-jyz"
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>{totalResults}</span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Impressions")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>{totalImpressions}</span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Costperresult")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span>
+                                          ${largestCostPerResult?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Link Clicks
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "Amountspent")
+                            value = (
+                              <div
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  justifyContent: "flex-end",
+                                  width: "100%",
+                                  height: "100%",
+                                }}
+                              >
+                                <span
+                                  style={{
+                                    fontSize: 14,
+                                    fontWeight: "normal",
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    alignItems: "center",
+                                    marginBottom: 0,
+                                  }}
+                                >
+                                  $
+                                  {Number(totalAmountSpent).toLocaleString(
+                                    undefined,
+                                    {
+                                      minimumFractionDigits: 2,
+                                      maximumFractionDigits: 2,
+                                    }
+                                  )}
+                                </span>
+
+                                <span
+                                  style={{
+                                    color: "gray",
+
+                                    paddingTop: 0,
+                                    fontWeight: "normal",
+                                  }}
+                                >
+                                  Total Spend
+                                </span>
+                              </div>
+                            );
+
+                          return (
+                            <Table.Summary.Cell
+                              key={index}
+                              index={index}
+                              style={{ width: col.width }}
+                            >
+                              {value !== null
+                                ? typeof value === "object"
+                                  ? value
+                                  : typeof value === "string"
+                                  ? value
+                                  : value.toFixed(2)
+                                : ""}
+                            </Table.Summary.Cell>
+                          );
+                        })}
+                      </Table.Summary.Row>
+                    </Table.Summary>
+                  );
+                }}
+              />
 
               {error && <div className="error-message">{error}</div>}
             </div>

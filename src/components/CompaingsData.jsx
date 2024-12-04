@@ -2533,12 +2533,14 @@ const CompaingsData = ({
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
   const paddingCorrection = 10; // Small padding adjustment to avoid extra space
-  const maxHeight = 900; // Set a maximum table height
+  const maxHeight = 1100; // Set a maximum table height
 
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
   );
+
+  // Adjust the container height to avoid gaps
 
   useEffect(() => {
     if (loadingProgress < 100) {
@@ -3601,8 +3603,8 @@ const CompaingsData = ({
                   position: "absolute",
                   width: "250px",
                   height: "600px",
-                  top: 0,
-                  left: "510px",
+                  top: "0px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3656,7 +3658,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "450px",
                   top: "100px",
-                  left: "510px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3704,7 +3706,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "300px",
                   top: "255px",
-                  left: "510px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                   padding: "10px",
@@ -3746,7 +3748,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "300px",
                   top: "300px",
-                  left: "510px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3786,7 +3788,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "420px",
                   top: "100px",
-                  left: "510px",
+                  left: "900px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3830,6 +3832,8 @@ const CompaingsData = ({
               style={{
                 maxHeight: calculatedHeight,
                 backgroundColor: "#f5f6f7",
+                height: "100%",
+                overflow: "scroll",
               }}
               className="campaign-table-container custom-row-background"
             >
@@ -4126,7 +4130,6 @@ const CompaingsData = ({
                                       <div class="xmi-ayr xo1-g1e x10-yi2">
                                         <span
                                           style={{
-                                            fontWeight: "500",
                                             fontSize: "14px",
                                           }}
                                         >
