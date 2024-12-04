@@ -347,7 +347,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
       title: "Last Significant Edit",
       dataIndex: "lastSignificent",
       key: "lastSignificent",
-      width: 120,
+      width: 160,
       render: (text) => (
         <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
       ),
@@ -356,7 +356,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
       title: "Attribution Settings",
       dataIndex: "Attributionsetting",
       key: "Attributionsetting",
-      width: 90,
+      width: 150,
       render: (text) => (
         <div style={{ fontSize: "14px" }}> {truncateText(text, 11)}</div>
       ),
@@ -510,6 +510,11 @@ const AdsSets = ({ campaigns, loading, error }) => {
       dataIndex: "schedule",
       key: "schedule",
       width: 200,
+      render: (text) => (
+        <div style={{ fontSize: "14px" }} className="budygetcontainer">
+          {text}
+        </div>
+      ),
     },
     {
       title: () => (
@@ -2114,7 +2119,7 @@ const AdsSets = ({ campaigns, loading, error }) => {
               style={{ height: "100%", backgroundColor: "#f5f6f7" }}
               className="campaign-table-container"
             >
-              <div className="">
+              <div className="custom-row-background">
                 <Table
                   columns={columns}
                   dataSource={campaigns}
@@ -2356,7 +2361,14 @@ const AdsSets = ({ campaigns, loading, error }) => {
                                       marginBottom: 0,
                                     }}
                                   >
-                                    ${totalAmountSpent}
+                                    $
+                                    {Number(totalAmountSpent).toLocaleString(
+                                      undefined,
+                                      {
+                                        minimumFractionDigits: 2,
+                                        maximumFractionDigits: 2,
+                                      }
+                                    )}
                                   </span>
 
                                   <span

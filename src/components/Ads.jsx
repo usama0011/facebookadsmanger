@@ -566,12 +566,12 @@ const Ads = ({ campaigns, loading, error }) => {
           </div>{" "}
         </div>
       ),
-      dataIndex: "Amountspent",
-      key: "Amountspent",
+      dataIndex: "qualityRanking",
+      key: "qualityRanking",
       width: 150,
       render: (text) => (
         <div style={{ fontSize: "14px" }} className="budygetcontainer">
-          {FormatNumbers(text)}
+          {text}
         </div>
       ),
     },
@@ -587,7 +587,7 @@ const Ads = ({ campaigns, loading, error }) => {
       ),
       dataIndex: "engagementrateranking",
       key: "engagementrateranking",
-      width: 150,
+      width: 210,
       render: (text) => (
         <div style={{ fontSize: "14px" }} className="budygetcontainer">
           {text}
@@ -606,7 +606,7 @@ const Ads = ({ campaigns, loading, error }) => {
       ),
       dataIndex: "conversionrateranking",
       key: "conversionrateranking",
-      width: 150,
+      width: 200,
       render: (text) => (
         <div style={{ fontSize: "14px" }} className="budygetcontainer">
           {text}
@@ -2280,7 +2280,7 @@ const Ads = ({ campaigns, loading, error }) => {
               </div>
             </div>
             {/* table start here from */}
-            <div className="">
+            <div className="custom-row-background">
               <Table
                 columns={columns}
                 dataSource={campaigns}
@@ -2461,39 +2461,37 @@ const Ads = ({ campaigns, loading, error }) => {
                             );
                           else if (col.dataIndex === "Amountspent")
                             value = (
-                              <div
-                                style={{
-                                  display: "flex",
-                                  flexDirection: "column",
-                                  alignItems: "center",
-                                  justifyContent: "flex-end",
-                                  width: "100%",
-                                  height: "100%",
-                                }}
-                              >
-                                <span
-                                  style={{
-                                    fontSize: 14,
-                                    fontWeight: "normal",
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    alignItems: "center",
-                                    marginBottom: 0,
-                                  }}
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
                                 >
-                                  ${totalAmountSpent}
-                                </span>
-
-                                <span
-                                  style={{
-                                    color: "gray",
-
-                                    paddingTop: 0,
-                                    fontWeight: "normal",
-                                  }}
-                                >
-                                  Total Spend
-                                </span>
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontWeight: "500",
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          $
+                                          {Number(
+                                            totalAmountSpent
+                                          ).toLocaleString(undefined, {
+                                            minimumFractionDigits: 2,
+                                            maximumFractionDigits: 2,
+                                          })}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Total Spend
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             );
 

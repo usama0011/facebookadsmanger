@@ -20,7 +20,6 @@ import PageID from "./components/PageID";
 const App = () => {
   const [showcalender, setShowCalender] = useState(false);
   const [showmyaccount, setShowmyAccount] = useState(false);
-
   const [account, setAccount] = useState({});
   const [showcustomizedbanner, setShowCustumizeBanner] = useState(false);
   const [showcustumizedcoloums, setShowCustumizedlayout] = useState(false);
@@ -3336,6 +3335,7 @@ const App = () => {
                                                                                 setDisplayID(
                                                                                   false
                                                                                 );
+                                                                                fetchCampaigns();
                                                                               }}
                                                                               class="xlup9mm x1kky2od"
                                                                             >
@@ -3841,6 +3841,8 @@ const App = () => {
                                                 setShowPageIDBar={
                                                   setShowPageIDBar
                                                 }
+                                                campaigns={campaings}
+                                                setCampaigns={setCampaigns}
                                               />
                                             </div>
                                           )}

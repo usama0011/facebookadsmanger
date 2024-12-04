@@ -8248,3 +8248,11 @@ i.borcb {
 .campaign-table-container::-webkit-scrollbar {
   display: none;
 }
+
+.custom-progress-bar .ant-progress-bg {
+  height: 4px !important; /* Adjust the height as desired */
+}
+
+.custom-progress-bar .ant-progress-inner {
+  height: 4px !important; /* Adjust the height of the container */
+}

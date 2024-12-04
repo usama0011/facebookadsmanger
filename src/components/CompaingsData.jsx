@@ -517,7 +517,7 @@ const CompaingsData = ({
       ),
       dataIndex: "Bidstrategy",
       key: "Bidstrategy",
-      width: 120,
+      width: 140,
       render: (text) => (
         <div style={{ fontSize: "14px", color: "#1c2b33" }}>
           {truncateText(text, 16)}
@@ -3831,21 +3831,6 @@ const CompaingsData = ({
               </div>
             )}
 
-            {/* {loadingProgress < 100 && (
-              <div
-                style={{
-                  marginBottom: "16px",
-                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                }}
-              >
-                <Progress
-                  percent={loadingProgress}
-                  strokeColor="#0A77C1"
-                  showInfo={false}
-                  status="active"
-                />
-              </div>
-            )} */}
             <div
               style={{
                 maxHeight: calculatedHeight,

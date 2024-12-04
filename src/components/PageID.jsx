@@ -5,7 +5,18 @@ const PageID = ({
   setCurrentPageID,
   setShowPageIDBar,
   setDisplayID,
+  campaigns,
+  setCampaigns,
 }) => {
+  const handleApply = () => {
+    setShowPageIDBar(false);
+    setDisplayID(true);
+    // Close the bar and filter campaigns
+    const filteredCampaigns = campaigns.filter(
+      (campaign) => campaign.pageID === currentPageID
+    );
+    setCampaigns(filteredCampaigns); // Update parent state
+  };
   return (
     <div class="_5v-0 _53ik" data-interactable="|mouseover|">
       <div
@@ -340,10 +351,7 @@ const PageID = ({
                       </div>
                     </div>
                     <div
-                      onClick={() => {
-                        setShowPageIDBar(false);
-                        setDisplayID(true);
-                      }} // Close the bar on Apply
+                      onClick={handleApply} // Close the bar on Apply
                       class="x3nfvp2 x193iq5w xxymvpz x1i64zmx"
                       role="none"
                     >
