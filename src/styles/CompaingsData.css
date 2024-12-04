@@ -8249,10 +8249,18 @@ i.borcb {
   display: none;
 }
 
+/* Parent container for table and progress bar */
+.progress-bar-wrapper {
+  position: absolute;
+  top: 100px; /* Adjust as needed to align with the table header */
+  width: 100%;
+  z-index: 5000; /* Ensure it appears above the table */
+}
+
 .custom-progress-bar .ant-progress-bg {
-  height: 4px !important; /* Adjust the height as desired */
+  height: 4px !important; /* Slim progress bar */
 }
 
 .custom-progress-bar .ant-progress-inner {
-  height: 4px !important; /* Adjust the height of the container */
+  height: 4px !important; /* Adjust container height */
 }

@@ -2540,17 +2540,31 @@ const CompaingsData = ({
     maxHeight
   );
 
-  // Adjust the container height to avoid gaps
-
   useEffect(() => {
-    if (loadingProgress < 100) {
+    if (loading) {
+      setLoadingProgress(0); // Initialize progress at 0
+      let progress = 0; // Use a local variable to control progress
+
       const interval = setInterval(() => {
-        setLoadingProgress((prev) => Math.min(prev + 20, 100));
+        progress += 20; // Increment progress
+        if (progress >= 90) {
+          clearInterval(interval); // Stop incrementing when reaching 90%
+          progress = 90; // Ensure progress caps at 90%
+        }
+        setLoadingProgress(progress); // Update the state
       }, 1000);
 
-      return () => clearInterval(interval);
+      const timeout = setTimeout(() => {
+        setLoading(false); // Stop loading after 5 seconds
+      }, 5000);
+
+      return () => {
+        clearInterval(interval);
+        clearTimeout(timeout);
+      };
     }
-  }, [loadingProgress]);
+  }, [loading, setLoading]);
+
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -3827,6 +3841,7 @@ const CompaingsData = ({
                 </div>
               </div>
             )}
+            {/* Progress Line */}
 
             <div
               style={{
@@ -4174,7 +4189,18 @@ const CompaingsData = ({
                   );
                 }}
               />
-
+              {/* Progress Bar */}
+              {loading && (
+                <div className="progress-bar-wrapper">
+                  <Progress
+                    percent={loadingProgress}
+                    strokeColor="#0977C1"
+                    showInfo={false}
+                    status="active"
+                    className="custom-progress-bar" // Custom class
+                  />
+                </div>
+              )}
               {error && <div className="error-message">{error}</div>}
             </div>
           </div>

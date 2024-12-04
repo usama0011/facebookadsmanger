@@ -299,6 +299,7 @@ const App = () => {
     fetchCampaigns();
   };
   const handleupdatebutton = () => {
+    setLoading(true); // Start loading
     setShowCalender(false);
     fetchCampaigns();
   };
