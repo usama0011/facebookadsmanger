@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/SearchFilter.css";
-const SearchAndFilter = () => {
+import { ChevronUpIcon } from "@heroicons/react/16/solid";
+const SearchAndFilter = ({ setShowPageIDBar, setshowsearchfilterbar }) => {
   return (
     <div>
       <div
@@ -71,14 +72,94 @@ const SearchAndFilter = () => {
                         Name/ID
                       </span>
                     </div>
-                    <i
-                      class="_741p img style-nZmLD"
-                      alt=""
-                      data-visualcompletion="css-img"
-                      id="style-nZmLD"
-                    ></i>
+                    <ChevronUpIcon
+                      style={{ width: "18px", height: "18px", color: "gray" }}
+                    />
                   </div>
                 </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Campaign name
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Ad set name
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Ad name
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Campaign ID
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Ad ID
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li
+                  onClick={() => {
+                    setShowPageIDBar(true);
+                    setshowsearchfilterbar(false);
+                  }}
+                >
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Page ID
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
+                    <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">
+                      <span id="style-1mVSh" class="style-1mVSh">
+                        <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                          Product catalogue ID
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+
                 <li>
                   <div class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou">
                     <span class="x1iyjqo2 x6ikm8r x10wlt62 xlyipyv x1sdyfia">

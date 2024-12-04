@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "../styles/CompaingsData.css";
-import { Switch, Table } from "antd";
+import { Progress, Switch, Table } from "antd";
 import { ChevronRightIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 
 import { Link } from "react-router-dom";
@@ -2545,7 +2545,15 @@ const CompaingsData = ({
     calculatedHeight - headerHeight - footerHeight - paddingCorrection;
 
   console.log("Calculated Table Height:", tableContainerHeight);
+  useEffect(() => {
+    if (loadingProgress < 100) {
+      const interval = setInterval(() => {
+        setLoadingProgress((prev) => Math.min(prev + 20, 100));
+      }, 1000);
 
+      return () => clearInterval(interval);
+    }
+  }, [loadingProgress]);
   return (
     <div class="_3-9a style-5nd4I" id="style-5nd4I">
       <div class="_2utz style-Seeed" id="style-Seeed">
@@ -3822,16 +3830,22 @@ const CompaingsData = ({
                 </div>
               </div>
             )}
-            {loading && (
-              <div className="loading-bar-container">
-                <div
-                  className="loading-bar"
-                  style={{
-                    width: `${loadingProgress}%`,
-                  }}
-                ></div>
+
+            {/* {loadingProgress < 100 && (
+              <div
+                style={{
+                  marginBottom: "16px",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                }}
+              >
+                <Progress
+                  percent={loadingProgress}
+                  strokeColor="#0A77C1"
+                  showInfo={false}
+                  status="active"
+                />
               </div>
-            )}
+            )} */}
             <div
               style={{
                 maxHeight: calculatedHeight,

@@ -15,15 +15,20 @@ import {
 } from "@heroicons/react/16/solid";
 import "./styles/NewCalender.css";
 import SearchAndFilter from "./components/SearchAndFilter";
+import PageID from "./components/PageID";
 
 const App = () => {
   const [showcalender, setShowCalender] = useState(false);
   const [showmyaccount, setShowmyAccount] = useState(false);
+
   const [account, setAccount] = useState({});
   const [showcustomizedbanner, setShowCustumizeBanner] = useState(false);
   const [showcustumizedcoloums, setShowCustumizedlayout] = useState(false);
   const [currentfolder, setcurrentFolder] = useState("Campaings");
+  const [displayID, setDisplayID] = useState(false);
   const [showsearchfilterbar, setshowsearchfilterbar] = useState(false);
+  const [currentPageID, setCurrentPageID] = useState(""); // State for input
+  const [showPageIDBar, setShowPageIDBar] = useState(true); // State for visibility
   const [selectedValues, setSelectedValues] = useState([]);
   const [showupdatejustnow, setShowUpdateJustNow] = useState(false);
   const [campaings, setCampaigns] = useState([]);
@@ -3289,6 +3294,63 @@ const App = () => {
                                                                       </div>
                                                                     </div>
                                                                   </div>
+                                                                  {displayID && (
+                                                                    <div>
+                                                                      <div class="_8dtc snipcss-nomQU">
+                                                                        <div class="_765u">
+                                                                          <button
+                                                                            aria-label="Edit Filter"
+                                                                            class="x6s0dn4 x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1fgtraw x1a2a7pz xexx8yu x1sxyh0 x18d9i69 xurb0ha x1pb7wa4 x1ceikm xycp24c xhk9q7s x13lgxp2 x5pf9jr x1o6z2jb x1ypdohk x19zqmas"
+                                                                            data-auto-logging-id="ffebaadd"
+                                                                          >
+                                                                            <div>
+                                                                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x1h4wwuj xeuugli xw3qccf">
+                                                                                Page
+                                                                                ID
+                                                                              </span>
+                                                                            </div>
+                                                                            <div>
+                                                                              <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x1h4wwuj xeuugli xw3qccf">
+                                                                                =
+                                                                              </span>
+                                                                            </div>
+                                                                            <div
+                                                                              aria-level="4"
+                                                                              class="x1xqt7ti xsuwoey x1xlr1w8 x63nzvj xbsr9hj x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xlpf1d2"
+                                                                              role="heading"
+                                                                            >
+                                                                              {
+                                                                                currentPageID
+                                                                              }
+                                                                            </div>
+                                                                          </button>
+                                                                          <button
+                                                                            aria-label="Remove Filter"
+                                                                            class="x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk x1fgtraw xdj266r x11i5rnm xat24cr x1mh8g0r x1a2a7pz x1iorvi4 xsyo7zv xjkvuk6 x16hj40l x1pb7wa4 x1ceikm xycp24c x168nmei x1otrzb0 x1i1ezom xo71vjh"
+                                                                          >
+                                                                            <div
+                                                                              onClick={() => {
+                                                                                setCurrentPageID(
+                                                                                  ""
+                                                                                );
+                                                                                setDisplayID(
+                                                                                  false
+                                                                                );
+                                                                              }}
+                                                                              class="xlup9mm x1kky2od"
+                                                                            >
+                                                                              <i
+                                                                                alt=""
+                                                                                data-visualcompletion="css-img"
+                                                                                class="img style-OZnyR"
+                                                                                id="style-OZnyR"
+                                                                              ></i>
+                                                                            </div>
+                                                                          </button>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  )}
                                                                   <div class="x1sliqq">
                                                                     <div
                                                                       onClick={() =>
@@ -3749,7 +3811,37 @@ const App = () => {
                                                 backgroundColor: "white",
                                               }}
                                             >
-                                              <SearchAndFilter />
+                                              <SearchAndFilter
+                                                setshowsearchfilterbar={
+                                                  setshowsearchfilterbar
+                                                }
+                                                setShowPageIDBar={
+                                                  setShowPageIDBar
+                                                }
+                                              />
+                                            </div>
+                                          )}
+                                          {showPageIDBar && (
+                                            <div
+                                              className=""
+                                              style={{
+                                                position: "absolute",
+                                                top: "100px",
+                                                zIndex: "999",
+                                                left: "55px",
+                                                backgroundColor: "",
+                                              }}
+                                            >
+                                              <PageID
+                                                currentPageID={currentPageID}
+                                                setDisplayID={setDisplayID}
+                                                setCurrentPageID={
+                                                  setCurrentPageID
+                                                }
+                                                setShowPageIDBar={
+                                                  setShowPageIDBar
+                                                }
+                                              />
                                             </div>
                                           )}
                                           <div class="_3-8r" id="peTabs">
