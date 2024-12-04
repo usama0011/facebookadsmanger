@@ -2533,18 +2533,13 @@ const CompaingsData = ({
   const headerHeight = 60; // Approximate height of the header
   const footerHeight = 60; // Approximate height of the footer
   const paddingCorrection = 10; // Small padding adjustment to avoid extra space
-  const maxHeight = 800; // Set a maximum table height
+  const maxHeight = 900; // Set a maximum table height
 
   const calculatedHeight = Math.min(
     campaigns.length * rowHeight + headerHeight + footerHeight,
     maxHeight
   );
 
-  // Adjust the container height to avoid gaps
-  const tableContainerHeight =
-    calculatedHeight - headerHeight - footerHeight - paddingCorrection;
-
-  console.log("Calculated Table Height:", tableContainerHeight);
   useEffect(() => {
     if (loadingProgress < 100) {
       const interval = setInterval(() => {
