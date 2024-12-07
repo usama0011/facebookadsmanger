@@ -1106,7 +1106,9 @@ const CompaingsData = ({
       key: "clicksAll",
       width: 180,
       render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}</div>
+        <div style={{ fontSize: "14px", textAlign: "right" }}>
+          {text?.toLocaleString()}
+        </div>
       ),
     },
     {
@@ -3875,10 +3877,14 @@ const CompaingsData = ({
                     (sum, record) => sum + (Number(record.Impressions) || 0),
                     0
                   );
-                  const tatalCPMCost = pageData.reduce(
-                    (sum, record) => sum + (Number(record.CPM) || 0),
-                    0
-                  );
+
+                  const tatalCPMCost = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) => sum + (Number(record.CPM) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+
                   const largestCostPerResult = Math.max(
                     ...pageData.map(
                       (record) => Number(record.Costperresult) || 0
@@ -3898,18 +3904,21 @@ const CompaingsData = ({
                         0
                       ) / pageData.length
                     : 0; // Handle case where pageData might be empty
+
                   const totalCPCImpression = pageData.length
                     ? pageData.reduce(
                         (sum, record) => sum + (Number(record.CPC) || 0),
                         0
                       ) / pageData.length
                     : 0; // Handle case where pageData might be empty
+
                   const totalCTRAll = pageData.length
                     ? pageData.reduce(
                         (sum, record) => sum + (Number(record.CTRALL) || 0),
                         0
                       ) / pageData.length
                     : 0; // Handle case where pageData might be empty
+
                   const totalCPCAll = pageData.length
                     ? pageData.reduce(
                         (sum, record) => sum + (Number(record.CPCAll) || 0),
