@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/EditCompaingThree.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import LOgoLogo from "../assets/logologo.jpeg";
+import LOgoLogo from "../assets/maind.jpeg";
 
 const EditCompaingThree = () => {
   const { id } = useParams();
@@ -2391,10 +2391,13 @@ const EditCompaingThree = () => {
                                                                                                 class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x10cdfl8"
                                                                                                 role="img"
                                                                                               >
+                                                                                                {/* yahan */}
                                                                                                 <img
-                                                                                                  height="30"
-                                                                                                  src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
-                                                                                                  width="30"
+                                                                                                  height="45"
+                                                                                                  src={
+                                                                                                    LOgoLogo
+                                                                                                  }
+                                                                                                  width="45"
                                                                                                   alt=""
                                                                                                   class="img"
                                                                                                 />
@@ -2407,8 +2410,9 @@ const EditCompaingThree = () => {
                                                                                             class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
                                                                                             id="js_5h"
                                                                                           >
-                                                                                            Valentino
-                                                                                            Technologies
+                                                                                            De
+                                                                                            Cartier
+                                                                                            Solutions
                                                                                           </div>
                                                                                         </div>
                                                                                       </div>
@@ -2751,7 +2755,7 @@ const EditCompaingThree = () => {
                                                                     textAlign:
                                                                       "left",
                                                                     marginLeft:
-                                                                      "-50px",
+                                                                      "0px",
                                                                   }}
                                                                   class="xmi5d70 xw23nyj xo1l8bm x63nzvj xbsr9hj"
                                                                 >
@@ -7538,7 +7542,7 @@ const EditCompaingThree = () => {
                                                                                                                                   <img
                                                                                                                                     class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
                                                                                                                                     src={
-                                                                                                                                      campaign.campaingImage
+                                                                                                                                      LOgoLogo
                                                                                                                                     }
                                                                                                                                     alt=""
                                                                                                                                   />
@@ -8737,7 +8741,7 @@ const EditCompaingThree = () => {
                                                                                                                                 <img
                                                                                                                                   class="_67w_ img"
                                                                                                                                   src={
-                                                                                                                                    campaign.campaingImage
+                                                                                                                                    LOgoLogo
                                                                                                                                   }
                                                                                                                                   alt=""
                                                                                                                                 />
