@@ -310,9 +310,15 @@ const App = () => {
     setSearchQuery(event.target.value);
   };
   console.log(searchQuery);
-  const filteredCampaigns = campaings?.filter((campaign) =>
-    campaign.campaingname.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredCampaigns = campaings?.filter((campaign) => {
+    const matchesSearchQuery = campaign.campaingname
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+    const matchesCurrentPageID =
+      !currentPageID || campaign.pageID === currentPageID;
+    return matchesSearchQuery && matchesCurrentPageID;
+  });
+
   const [activeSection, setActiveSection] = useState(null); // Track active section
 
   const handleSectionClick = (index) => {

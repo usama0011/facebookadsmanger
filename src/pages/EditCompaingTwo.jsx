@@ -1489,37 +1489,36 @@ const EditCompaingTwo = () => {
                   class="x9f619 xn3w4p2 xh8yej3 x2izyaf x15bcfbt xolcy6v x3ckiwt xc2dlm9 x178xt8z xcfux6l xso031l xm0m39n xgif2c7 x1iorvi4 xjkvuk6 x4uap5 x1ye3gou style-yNQ1D"
                   id="style-yNQ1D"
                 >
-                  <div class="x6s0dn4 x1ypdohk x78zum5 xq8finb">
-                    <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
-                      <div
-                        aria-busy="false"
-                        class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                        role="button"
-                        tabindex="0"
-                        id="js_t4"
-                      >
-                        <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                          <div class="x78zum5">
-                            <div
-                              class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                              data-sscoverage-ignore="true"
-                            >
-                              Open
-                            </div>
-                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                              <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                <i
-                                  alt=""
-                                  data-visualcompletion="css-img"
-                                  class="img style-j7s6N"
-                                  id="style-j7s6N"
-                                ></i>
-                              </div>
-                            </div>
+                  <div
+                    style={{ marginRight: "15px" }}
+                    aria-busy="false"
+                    class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d snipcss-XfqzJ"
+                    role="button"
+                    tabindex="0"
+                    id="js_o1"
+                    data-auto-logging-id="f281397a5db011c"
+                  >
+                    <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                      <div class="x78zum5">
+                        <div
+                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                          data-sscoverage-ignore="true"
+                        >
+                          Open
+                        </div>
+                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                          <div class="x3nfvp2 x2lah0s x1c4vz4f">
+                            <i
+                              alt=""
+                              data-visualcompletion="css-img"
+                              class="img style-sRVqT"
+                              id="style-sRVqT"
+                            ></i>
                           </div>
-                        </span>
+                          ​
+                        </div>
                       </div>
-                    </div>
+                    </span>
                   </div>
                   <div class="x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k x1qughib x6ikm8r x10wlt62">
                     <div class="x6s0dn4 x3nfvp2 x1r8uery x1iyjqo2 xq8finb xeuugli stle">

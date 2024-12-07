@@ -4189,6 +4189,7 @@ const CompaingsData = ({
                                         <span
                                           style={{
                                             fontSize: "14px",
+                                            fontWeight: "500",
                                           }}
                                         >
                                           $
