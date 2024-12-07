@@ -5358,9 +5358,9 @@ html {
   width: 330px;
   min-height: 300px;
   overflow-y: scroll;
-  top: 55px;
+  top: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  right: 274px;
+  right: 130px;
   z-index: 987 !important;
 }
 .custommadeui::-webkit-scrollbar {
@@ -8264,5 +8264,4 @@ i.borcb {
 .custom-progress-bar .ant-progress-inner {
   height: 4px !important; /* Adjust container height */
   background: transparent !important; /* Set the background to transparent */
-
 }
