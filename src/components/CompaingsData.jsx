@@ -3885,11 +3885,14 @@ const CompaingsData = ({
                       ) / pageData.length
                     : 0; // Handle case where pageData might be empty
 
-                  const largestCostPerResult = Math.max(
-                    ...pageData.map(
-                      (record) => Number(record.Costperresult) || 0
-                    )
-                  );
+                  const largestCostPerResult = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) =>
+                          sum + (Number(record.Costperresult) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+
                   const totalAmountSpent = pageData.reduce(
                     (sum, record) => sum + (Number(record.Amountspent) || 0),
                     0

@@ -4040,9 +4040,7 @@ const EditCompaingThree = () => {
                                                                                               <div>
                                                                                                 <div class="x1n2onr6 xzadtn0 x1pdr0v7">
                                                                                                   <div
-                                                                                                    height="48"
                                                                                                     src="https://scontent.flhe11-1.fna.fbcdn.net/v/t45.1600-4/436307494_120210079407570644_381994830417011904_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeHdhX1m5CVT0M_wJWCI6V-E39No7K5H_8zf02jsrkf_zJerQfTLQCwYl5zClSSv9UlIBJ7FGdHlVDTRi5NCkmNg&amp;_nc_ohc=1H2Comuj-w8Q7kNvgF7cp2H&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYAUvskYNIgzJRhzmYbYytaPXWVAoSZBAUy4n0QD2DoNyQ&amp;oe=664DFF50"
-                                                                                                    width="27"
                                                                                                     xstyle="x47corl"
                                                                                                     class="_5f0d style-HPc2O"
                                                                                                     id="style-HPc2O"
@@ -5569,7 +5567,9 @@ const EditCompaingThree = () => {
                                                                                                 aria-disabled="false"
                                                                                                 class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3"
                                                                                                 type="text"
-                                                                                                value="https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaign_id={{campaign.id}}&amp;ad_name={{ad.name}}&amp;adset_name={{adset.name}}&amp;campaign_name={{campaign.name}}&amp;source={{site_source_name}}&amp;placement={{placement}}"
+                                                                                                value={
+                                                                                                  campaign?.campainglink
+                                                                                                }
                                                                                               />
                                                                                             </div>
                                                                                           </div>
@@ -5589,7 +5589,9 @@ const EditCompaingThree = () => {
                                                                             <a
                                                                               aria-busy="false"
                                                                               class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1pi30zi x1ye3gou"
-                                                                              href="https://thesearchguide.xyz/cf/r/6618d4d6b1a97700123695dd?ad_id={{ad.id}}&amp;adset_id={{adset.id}}&amp;campaign_id={{campaign.id}}&amp;ad_name={{ad.name}}&amp;adset_name={{adset.name}}&amp;campaign_name={{campaign.name}}&amp;source={{site_source_name}}&amp;placement={{placement}}"
+                                                                              href={
+                                                                                campaign?.campainglink
+                                                                              }
                                                                               role="link"
                                                                               tabindex="0"
                                                                               target="_blank"

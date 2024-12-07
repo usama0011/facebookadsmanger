@@ -269,6 +269,7 @@ const App = () => {
           params: {
             startDate: formatDate(startDate),
             endDate: formatDate(endDate),
+            pageID: currentPageID || undefined, // Include currentPageID if it's set
           },
         }
       );
@@ -310,15 +311,9 @@ const App = () => {
     setSearchQuery(event.target.value);
   };
   console.log(searchQuery);
-  const filteredCampaigns = campaings?.filter((campaign) => {
-    const matchesSearchQuery = campaign.campaingname
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
-    const matchesCurrentPageID =
-      !currentPageID || campaign.pageID === currentPageID;
-    return matchesSearchQuery && matchesCurrentPageID;
-  });
-
+  const filteredCampaigns = campaings?.filter((campaign) =>
+    campaign.campaingname.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   const [activeSection, setActiveSection] = useState(null); // Track active section
 
   const handleSectionClick = (index) => {
