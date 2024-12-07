@@ -2401,36 +2401,6 @@ const App = () => {
                                                               >
                                                                 <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1qughib">
                                                                   <div class="x6s0dn4 x78zum5 x1q0g3np xfex06f x3pnbk8 x2lwn1j xeuugli">
-                                                                    <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
-                                                                      <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8">
-                                                                        <img
-                                                                          alt=""
-                                                                          class="img"
-                                                                          src={
-                                                                            MainLogoImage
-                                                                          }
-                                                                        />
-                                                                        <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                                      </div>
-                                                                    </div>
-                                                                    <div class="xjbqb8w xnalus7 xm81vs4 xu3j5b3 xkh2ocl xwebqov xvyu6v8 xrsgblv x10lij0i xdj266r x11i5rnm xat24cr x1mh8g0r"></div>
-                                                                    <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p xzolkzo x12go9s9 x1rnf11y xprq8jg">
-                                                                      <div
-                                                                        class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl x10cdfl8"
-                                                                        role="presentation"
-                                                                      >
-                                                                        <div
-                                                                          class="x3nfvp2 x120ccyz x4s1yf2"
-                                                                          role="presentation"
-                                                                        >
-                                                                          <div
-                                                                            class="xtwfq29 style-jFVi5"
-                                                                            id="style-jFVi5"
-                                                                          ></div>
-                                                                        </div>
-                                                                        <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                                      </div>
-                                                                    </div>
                                                                     <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                                       {
                                                                         account?.currentAccountname
