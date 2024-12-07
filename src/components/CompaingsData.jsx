@@ -1051,7 +1051,9 @@ const CompaingsData = ({
       key: "LinksClicks",
       width: 180,
       render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "right" }}>{text}</div>
+        <div style={{ fontSize: "14px", textAlign: "right" }}>
+          {text?.toLocaleString()}
+        </div>
       ),
     },
     {
@@ -3890,6 +3892,38 @@ const CompaingsData = ({
                     (sum, record) => sum + (Number(record.CPM) || 0),
                     0
                   );
+                  const totalCTRImpression = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) => sum + (Number(record.CTR) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+                  const totalCPCImpression = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) => sum + (Number(record.CPC) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+                  const totalCTRAll = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) => sum + (Number(record.CTRALL) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+                  const totalCPCAll = pageData.length
+                    ? pageData.reduce(
+                        (sum, record) => sum + (Number(record.CPCAll) || 0),
+                        0
+                      ) / pageData.length
+                    : 0; // Handle case where pageData might be empty
+                  const tatalClicksAll = pageData.reduce(
+                    (sum, record) => sum + (Number(record.clicksAll) || 0),
+                    0
+                  );
+                  const LinkClicksAll = pageData.reduce(
+                    (sum, record) => sum + (Number(record.LinksClicks) || 0),
+                    0
+                  );
                   return (
                     <Table.Summary fixed>
                       <Table.Summary.Row
@@ -4160,6 +4194,174 @@ const CompaingsData = ({
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
                                           Total Spend
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "CTR")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {totalCTRImpression?.toFixed(2)}%
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Per Impressions
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "CPC")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          ${totalCPCImpression?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Per Impressions
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "clicksAll")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {tatalClicksAll?.toLocaleString()}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Total
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "CTRALL")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {totalCTRAll?.toFixed(2)}%
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Per Impression
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "CPCAll")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          ${totalCPCAll?.toFixed(2)}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Per Click
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          else if (col.dataIndex === "LinksClicks")
+                            value = (
+                              <div>
+                                <div
+                                  class="_1b-jyz"
+                                  style={{ textAlign: "right" }}
+                                >
+                                  <div class="_e9-vat">
+                                    <div>
+                                      <div class="xmi-ayr xo1-g1e x10-yi2">
+                                        <span
+                                          style={{
+                                            fontSize: "14px",
+                                          }}
+                                        >
+                                          {LinkClicksAll?.toLocaleString()}
+                                        </span>
+                                      </div>
+                                      <div class="ell-1jx _1h-tgr">
+                                        <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                          Total
                                         </div>
                                       </div>
                                     </div>
