@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/EditCompaingtwo.css";
 import MainLogoImage from "../assets/maind.jpeg";
 import { Link, useNavigate, useParams } from "react-router-dom";
+
 import axios from "axios";
 const EditCompaingTwo = () => {
   const { id } = useParams();

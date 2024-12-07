@@ -3,7 +3,7 @@ import "../styles/EditCompaingThree.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import LOgoLogo from "../assets/maind.jpeg";
-
+import MainLogoImage from "../assets/maind.jpeg";
 const EditCompaingThree = () => {
   const { id } = useParams();
   const [campaign, setCampaigns] = useState({});
@@ -110,7 +110,7 @@ const EditCompaingThree = () => {
                                     <img
                                       alt=""
                                       class="img"
-                                      src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
+                                      src={MainLogoImage}
                                     />
                                     <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                   </div>
@@ -5937,6 +5937,10 @@ const EditCompaingThree = () => {
                                                                     <div class="x1xmf6yo">
                                                                       <div class="x1e56ztr">
                                                                         <label
+                                                                          style={{
+                                                                            textAlign:
+                                                                              "left",
+                                                                          }}
                                                                           class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                                                                           tabindex="-1"
                                                                         >
@@ -5986,6 +5990,8 @@ const EditCompaingThree = () => {
                                                                                 style={{
                                                                                   textAlign:
                                                                                     "left",
+                                                                                  marginLeft:
+                                                                                    "-35px",
                                                                                 }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
@@ -6059,6 +6065,8 @@ const EditCompaingThree = () => {
                                                                                 style={{
                                                                                   textAlign:
                                                                                     "left",
+                                                                                  marginLeft:
+                                                                                    "-35px",
                                                                                 }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
@@ -6158,6 +6166,8 @@ const EditCompaingThree = () => {
                                                                                 style={{
                                                                                   textAlign:
                                                                                     "left",
+                                                                                  marginLeft:
+                                                                                    "-35px",
                                                                                 }}
                                                                                 class="x1iyjqo2 xamitd3"
                                                                                 data-sscoverage-ignore="true"
@@ -6192,6 +6202,10 @@ const EditCompaingThree = () => {
                                                           </div>
                                                           <div class="x1e56ztr">
                                                             <label
+                                                              style={{
+                                                                marginLeft:
+                                                                  "30px",
+                                                              }}
                                                               class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                                                               tabindex="-1"
                                                             >
@@ -6239,6 +6253,8 @@ const EditCompaingThree = () => {
                                                                     style={{
                                                                       textAlign:
                                                                         "left",
+                                                                      marginLeft:
+                                                                        "-35px",
                                                                     }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
@@ -6267,6 +6283,10 @@ const EditCompaingThree = () => {
                                                           </div>
                                                           <div class="x1e56ztr">
                                                             <label
+                                                              style={{
+                                                                marginLeft:
+                                                                  "30px",
+                                                              }}
                                                               class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt"
                                                               tabindex="-1"
                                                             >
@@ -6314,6 +6334,8 @@ const EditCompaingThree = () => {
                                                                     style={{
                                                                       textAlign:
                                                                         "left",
+                                                                      marginLeft:
+                                                                        "-35px",
                                                                     }}
                                                                     class="x1iyjqo2 xamitd3"
                                                                     data-sscoverage-ignore="true"
