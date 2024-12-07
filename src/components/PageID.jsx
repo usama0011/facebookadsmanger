@@ -11,12 +11,19 @@ const PageID = ({
   const handleApply = () => {
     setShowPageIDBar(false);
     setDisplayID(true);
+
+    // Save currentPageID to localStorage
+    if (currentPageID) {
+      localStorage.setItem("currentPageID", currentPageID);
+    }
+
     // Close the bar and filter campaigns
     const filteredCampaigns = campaigns.filter(
       (campaign) => campaign.pageID === currentPageID
     );
     setCampaigns(filteredCampaigns); // Update parent state
   };
+
   return (
     <div class="_5v-0 _53ik" data-interactable="|mouseover|">
       <div

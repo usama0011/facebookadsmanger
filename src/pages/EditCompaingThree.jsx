@@ -2387,21 +2387,22 @@ const EditCompaingThree = () => {
                                                                                           ​
                                                                                           <div class="xbmpl8g x9otpla x1wsgfga">
                                                                                             <div class="x1lliihq x1n2onr6 x2lah0s xlup9mm x1kky2od xzolkzo x12go9s9 x1rnf11y xprq8jg">
-                                                                                              <div
-                                                                                                class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x10cdfl8"
-                                                                                                role="img"
-                                                                                              >
-                                                                                                {/* yahan */}
-                                                                                                <img
-                                                                                                  height="45"
-                                                                                                  src={
-                                                                                                    LOgoLogo
-                                                                                                  }
-                                                                                                  width="45"
-                                                                                                  alt=""
-                                                                                                  class="img"
-                                                                                                />
-                                                                                              </div>
+                                                                                              <img
+                                                                                                style={{
+                                                                                                  width:
+                                                                                                    "20px",
+                                                                                                  height:
+                                                                                                    "20px",
+                                                                                                  objectFit:
+                                                                                                    "cover",
+                                                                                                  borderRadius:
+                                                                                                    "50%",
+                                                                                                  marginTop:
+                                                                                                    "-1px",
+                                                                                                }}
+                                                                                                src="https://i.ibb.co/Ytf6zgC/Whats-App-Image-2024-12-07-at-8-00-23-PM.jpg"
+                                                                                                alt=""
+                                                                                              />
                                                                                             </div>
                                                                                           </div>
                                                                                         </div>
@@ -4476,7 +4477,9 @@ const EditCompaingThree = () => {
                                                                                             aria-disabled="false"
                                                                                             class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3"
                                                                                             type="text"
-                                                                                            value="Valentino Technologies"
+                                                                                            value=" De
+                                                                                            Cartier
+                                                                                            Solutions"
                                                                                           />
                                                                                         </div>
                                                                                       </div>
@@ -7576,8 +7579,9 @@ const EditCompaingThree = () => {
                                                                                                                                     <div>
                                                                                                                                       <span class="x1fzdab9 x1f6kntn xuy8w9f">
                                                                                                                                         <span class="x1xlr1w8">
-                                                                                                                                          Valentino
-                                                                                                                                          Technologies
+                                                                                                                                          De
+                                                                                                                                          Cartier
+                                                                                                                                          Solutions
                                                                                                                                         </span>
                                                                                                                                       </span>
                                                                                                                                     </div>
@@ -7691,8 +7695,9 @@ const EditCompaingThree = () => {
                                                                                                                                               data-ad-preview="headline"
                                                                                                                                               dir=""
                                                                                                                                             >
-                                                                                                                                              Valentino
-                                                                                                                                              Technologies
+                                                                                                                                              De
+                                                                                                                                              Cartier
+                                                                                                                                              Solutions
                                                                                                                                             </span>
                                                                                                                                           </div>
                                                                                                                                         </div>
@@ -8770,8 +8775,9 @@ const EditCompaingThree = () => {
                                                                                                                                   alt=""
                                                                                                                                 />
                                                                                                                                 <div class="_67x2">
-                                                                                                                                  Valentino
-                                                                                                                                  Technologies
+                                                                                                                                  De
+                                                                                                                                  Cartier
+                                                                                                                                  Solutions
                                                                                                                                   &nbsp;{" "}
                                                                                                                                   <div></div>
                                                                                                                                 </div>

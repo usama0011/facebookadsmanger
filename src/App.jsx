@@ -269,7 +269,10 @@ const App = () => {
           params: {
             startDate: formatDate(startDate),
             endDate: formatDate(endDate),
-            pageID: currentPageID || undefined, // Include currentPageID if it's set
+            pageID:
+              localStorage.getItem("currentPageID") ||
+              currentPageID ||
+              undefined, // Include currentPageID if it's set
           },
         }
       );
@@ -3265,7 +3268,10 @@ const App = () => {
                                                                       </div>
                                                                     </div>
                                                                   </div>
-                                                                  {displayID && (
+                                                                  {(displayID ||
+                                                                    localStorage.getItem(
+                                                                      "currentPageID"
+                                                                    )) && (
                                                                     <div>
                                                                       <div class="_8dtc snipcss-nomQU">
                                                                         <div class="_765u">
@@ -3290,9 +3296,10 @@ const App = () => {
                                                                               class="x1xqt7ti xsuwoey x1xlr1w8 x63nzvj xbsr9hj x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xlpf1d2"
                                                                               role="heading"
                                                                             >
-                                                                              {
-                                                                                currentPageID
-                                                                              }
+                                                                              {currentPageID ||
+                                                                                localStorage.getItem(
+                                                                                  "currentPageID"
+                                                                                )}
                                                                             </div>
                                                                           </button>
                                                                           <button
@@ -3303,11 +3310,14 @@ const App = () => {
                                                                               onClick={() => {
                                                                                 setCurrentPageID(
                                                                                   ""
-                                                                                );
+                                                                                ); // Clear the currentPageID
+                                                                                localStorage.removeItem(
+                                                                                  "currentPageID"
+                                                                                ); // Remove from localStorage
                                                                                 setDisplayID(
                                                                                   false
-                                                                                );
-                                                                                fetchCampaigns();
+                                                                                ); // Hide the display
+                                                                                fetchCampaigns(); // Fetch campaigns without filters
                                                                               }}
                                                                               class="xlup9mm x1kky2od"
                                                                             >

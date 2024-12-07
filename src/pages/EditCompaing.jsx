@@ -9,7 +9,10 @@ const EditCompaing = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const navigation = useNavigate();
-
+  const handleNavigation = () => {
+    // Perform any logic before navigation
+    navigation("/"); // Navigate to the home page without refreshing
+  };
   useEffect(() => {
     const fetchCampaigns = async () => {
       try {
@@ -862,26 +865,25 @@ const EditCompaing = () => {
           style={{ marginLeft: "14px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"
         >
-          <Link to="/">
-            <div
-              class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r snipcss-2972g"
-              icon="[object Object]"
-              aria-label="Close"
-              role="button"
-              tabindex="0"
-              data-auto-logging-id="f3f1c09c92ec05"
-            >
-              <i
-                alt=""
-                data-visualcompletion="css-img"
-                class="img style-NqtPU"
-                id="style-NqtPU"
-              ></i>
-              <div class="x1rg5ohu x67bb7w">
-                <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
-              </div>
+          <div
+            onClick={handleNavigation}
+            class="xlup9mm x1gslohp xw3qccf x12nagc xsgj6o6 x1a2a7pz x1kky2od x889kno x1iji9kk x1a8lsjc x1sln4lm x1ypdohk x4nwuxf xmbozn3 x1lcm9me x1yr5g0i xrt01vj x10y3i5r snipcss-2972g"
+            icon="[object Object]"
+            aria-label="Close"
+            role="button"
+            tabindex="0"
+            data-auto-logging-id="f3f1c09c92ec05"
+          >
+            <i
+              alt=""
+              data-visualcompletion="css-img"
+              class="img style-NqtPU"
+              id="style-NqtPU"
+            ></i>
+            <div class="x1rg5ohu x67bb7w">
+              <div class="x1ypdohk xlup9mm x1anpbxc xmo9yow xyorhqc x17adc0v x1kky2od x1ejq31n xd10rxx x1sy0etr x17r0tee x1a2a7pz"></div>
             </div>
-          </Link>
+          </div>
 
           <div
             aria-disabled="false"

@@ -3,7 +3,7 @@ import "../styles/CompaingsData.css";
 import { Progress, Switch, Table } from "antd";
 import { ChevronRightIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   BarChartOutlined,
   CaretDownOutlined,
@@ -34,7 +34,7 @@ const CompaingsData = ({
   const [ishoverEngagement, setIsHoveredEngagement] = useState(false);
   const [ishoverDelivery, setIsHoveredDelivery] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
-
+  const navigation = useNavigate();
   const [ishovervedioengagement, setIsHoveredvedioengagement] = useState(false);
 
   const [showPerformanceAndClicks, setShowPerformanceAndClicks] =
@@ -287,28 +287,26 @@ const CompaingsData = ({
                             class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
                             href="#"
                           >
-                            <span class="_3qjp">
-                              <Link
-                                style={{ color: "unset" }}
-                                to={`/editcampaing/${record._id}`}
-                              >
-                                <div class="x6s0dn4 x78zum5">
-                                  <div class="xw3qccf x1gslohp">
-                                    <i
-                                      alt=""
-                                      data-visualcompletion="css-img"
-                                      class="img style-fWEEZ"
-                                      id="style-fWEEZ"
-                                    ></i>
-                                  </div>
-                                  <span
-                                    class="ellipsis"
-                                    data-tooltip-display="overflow"
-                                  >
-                                    Edit
-                                  </span>
+                            <span
+                              onClick={() => handleNavigation(record._id)}
+                              class="_3qjp"
+                            >
+                              <div class="x6s0dn4 x78zum5">
+                                <div class="xw3qccf x1gslohp">
+                                  <i
+                                    alt=""
+                                    data-visualcompletion="css-img"
+                                    class="img style-fWEEZ"
+                                    id="style-fWEEZ"
+                                  ></i>
                                 </div>
-                              </Link>
+                                <span
+                                  class="ellipsis"
+                                  data-tooltip-display="overflow"
+                                >
+                                  Edit
+                                </span>
+                              </div>
                             </span>
                           </a>
                         </span>
@@ -2449,7 +2447,9 @@ const CompaingsData = ({
     () => convertSelectedData(selectedValues),
     [selectedValues]
   );
-
+  const handleNavigation = (id) => {
+    navigation(`/editcampaing/${id}`);
+  };
   const MoreColoumsAdds = (() => {
     switch (showPerformanceAndClicks) {
       case "performance":
