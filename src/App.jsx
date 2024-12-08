@@ -44,8 +44,15 @@ const App = () => {
   const getToday = () => {
     return new Date(); // Returns the current date
   };
-  const [startDate, setStartDate] = useState(getFirstDayOfMonth());
-  const [endDate, setEndDate] = useState(getToday());
+  const [startDate, setStartDate] = useState(() => {
+    const storedStartDate = localStorage.getItem("startDate");
+    return storedStartDate ? new Date(storedStartDate) : getFirstDayOfMonth();
+  });
+
+  const [endDate, setEndDate] = useState(() => {
+    const storedEndDate = localStorage.getItem("endDate");
+    return storedEndDate ? new Date(storedEndDate) : getToday();
+  });
 
   const [hoverDate, setHoverDate] = useState(null);
   const [selectingEnd, setSelectingEnd] = useState(false);
@@ -306,7 +313,12 @@ const App = () => {
     setLoading(true); // Start loading
     setShowCalender(false);
     fetchCampaigns();
+
+    // Save updated dates to localStorage
+    localStorage.setItem("startDate", startDate.toISOString());
+    localStorage.setItem("endDate", endDate.toISOString());
   };
+
   const handleClickRun = (value) => {
     setcurrentFolder(value);
   };
@@ -1362,8 +1374,6 @@ const App = () => {
   useEffect(() => {
     fetchAccount();
   }, []);
-  // Dynamically update startDate and endDate when the currentMonth changes
-  // Dynamically update the selected start and end dates when the current month changes
   useEffect(() => {
     const firstDay = new Date(
       currentMonth.getFullYear(),
@@ -1375,12 +1385,18 @@ const App = () => {
       today.getFullYear() === currentMonth.getFullYear() &&
       today.getMonth() === currentMonth.getMonth();
 
-    setStartDate(firstDay);
-    setEndDate(
-      isCurrentMonth
-        ? today
-        : new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0)
-    );
+    // Only update if startDate and endDate are not already set
+    if (
+      !localStorage.getItem("startDate") &&
+      !localStorage.getItem("endDate")
+    ) {
+      setStartDate(firstDay);
+      setEndDate(
+        isCurrentMonth
+          ? today
+          : new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0)
+      );
+    }
   }, [currentMonth]);
 
   return (
