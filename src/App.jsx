@@ -32,8 +32,10 @@ const App = () => {
   const [showupdatejustnow, setShowUpdateJustNow] = useState(false);
   const [campaings, setCampaigns] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [filerwithcmapaignname, setFilerThatCampaignName] = useState("");
   const [showSearchSuggestions, setShowSearchSuggestions] = useState(false);
-
+  const [currentfiltercampaigshow, setcurrentfiltercampaingShow] =
+    useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   // Helper functions to get the first day of the current month
@@ -320,7 +322,12 @@ const App = () => {
     localStorage.setItem("startDate", startDate.toISOString());
     localStorage.setItem("endDate", endDate.toISOString());
   };
-
+  const RemoveCapaignname = () => {
+    setLoading(true);
+    setcurrentfiltercampaingShow(false);
+    localStorage.removeItem("filteredCampaignName");
+    fetchCampaigns();
+  };
   const handleClickRun = (value) => {
     setcurrentFolder(value);
   };
@@ -330,9 +337,9 @@ const App = () => {
     setShowSearchSuggestions(value.trim().length > 0); // Show suggestions only if the input is not empty
   };
   console.log(searchQuery);
-  const filteredCampaigns = campaings?.filter((campaign) =>
-    campaign.campaingname.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // const filteredCampaigns = campaings?.filter((campaign) =>
+  //   campaign.campaingname.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
   const [activeSection, setActiveSection] = useState(null); // Track active section
 
   const handleSectionClick = (index) => {
@@ -3358,6 +3365,58 @@ const App = () => {
                                                                       </div>
                                                                     </div>
                                                                   )}
+                                                                  {/* Camaping name Display here  */}
+                                                                  {(currentfiltercampaigshow ||
+                                                                    localStorage.getItem(
+                                                                      "filteredCampaignName"
+                                                                    )) && (
+                                                                    <div>
+                                                                      <div class="_765u snipcss-ehjKp">
+                                                                        <button
+                                                                          aria-label="Edit Filter"
+                                                                          class="x6s0dn4 x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1fgtraw x12ushyc x1a2a7pz xexx8yu x1sxyh0 x18d9i69 xurb0ha x1pb7wa4 x1ceikm xycp24c xhk9q7s x13lgxp2 x5pf9jr x1o6z2jb x1ypdohk"
+                                                                        >
+                                                                          <div class="xlyipyv x6ikm8r x10wlt62">
+                                                                            <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x1h4wwuj xeuugli xw3qccf">
+                                                                              Campaign
+                                                                              Name
+                                                                            </span>
+                                                                          </div>
+                                                                          <div>
+                                                                            <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x1h4wwuj xeuugli xw3qccf">
+                                                                              contains
+                                                                            </span>
+                                                                          </div>
+                                                                          <div
+                                                                            aria-level="4"
+                                                                            class="x1xqt7ti xsuwoey x1xlr1w8 x63nzvj xbsr9hj x1yc453h xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xlpf1d2"
+                                                                            role="heading"
+                                                                          >
+                                                                            {filerwithcmapaignname ||
+                                                                              localStorage.getItem(
+                                                                                "filteredCampaignName"
+                                                                              )}
+                                                                          </div>
+                                                                        </button>
+                                                                        <button
+                                                                          onClick={
+                                                                            RemoveCapaignname
+                                                                          }
+                                                                          aria-label="Remove Filter"
+                                                                          class="x1jzvqpb x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk x1fgtraw xdj266r x11i5rnm xat24cr x1mh8g0r x1a2a7pz x1iorvi4 xsyo7zv xjkvuk6 x16hj40l x1pb7wa4 x1ceikm xycp24c x168nmei x1otrzb0 x1i1ezom xo71vjh"
+                                                                        >
+                                                                          <div class="xlup9mm x1kky2od">
+                                                                            <i
+                                                                              alt=""
+                                                                              data-visualcompletion="css-img"
+                                                                              class="img style-JzPRp"
+                                                                              id="style-JzPRp"
+                                                                            ></i>
+                                                                          </div>
+                                                                        </button>
+                                                                      </div>
+                                                                    </div>
+                                                                  )}
                                                                   <div class="x1sliqq">
                                                                     <div
                                                                       onClick={() =>
@@ -3820,11 +3879,27 @@ const App = () => {
                                             >
                                               <SearchAndFilter
                                                 searchQuery={searchQuery}
+                                                setSearchQuery={setSearchQuery}
+                                                setFilerThatCampaignName={
+                                                  setFilerThatCampaignName
+                                                }
+                                                setLoading={setLoading}
+                                                filerwithcmapaignname={
+                                                  filerwithcmapaignname
+                                                }
+                                                campaings={campaings}
+                                                setCampaigns={setCampaigns}
                                                 showSearchSuggestions={
                                                   showSearchSuggestions
                                                 }
+                                                setshowsearchfilterbar={
+                                                  setshowsearchfilterbar
+                                                }
                                                 setShowPageIDBar={
                                                   setShowPageIDBar
+                                                }
+                                                setcurrentfiltercampaingShow={
+                                                  setcurrentfiltercampaingShow
                                                 }
                                               />
                                             </div>
@@ -4276,7 +4351,7 @@ const App = () => {
                                               setShowCustumizedlayout={
                                                 setShowCustumizedlayout
                                               }
-                                              campaigns={filteredCampaigns}
+                                              campaigns={campaings}
                                               loading={loading}
                                               setLoading={setLoading}
                                               setError={setError}
@@ -4291,7 +4366,7 @@ const App = () => {
                                           )}
                                           {currentfolder === "AdsSets" && (
                                             <AdsSets
-                                              campaigns={filteredCampaigns}
+                                              campaigns={campaings}
                                               loading={loading}
                                               setLoading={setLoading}
                                               setError={setError}
@@ -4299,7 +4374,7 @@ const App = () => {
                                           )}
                                           {currentfolder === "Ads" && (
                                             <Ads
-                                              campaigns={filteredCampaigns}
+                                              campaigns={campaings}
                                               loading={loading}
                                               setLoading={setLoading}
                                               setError={setError}

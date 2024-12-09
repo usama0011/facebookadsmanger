@@ -6,7 +6,41 @@ const SearchAndFilter = ({
   setShowPageIDBar,
   setshowsearchfilterbar,
   showSearchSuggestions,
+  setcurrentfiltercampaingShow,
+  setSearchQuery,
+  campaings,
+  setCampaigns,
+  filerwithcmapaignname,
+  setLoading,
+  setFilerThatCampaignName,
 }) => {
+  const handleGrabName = () => {
+    setLoading(true);
+    setcurrentfiltercampaingShow(true);
+    setshowsearchfilterbar(false);
+
+    // Save the current search query to localStorage
+    if (searchQuery) {
+      localStorage.setItem("filteredCampaignName", searchQuery);
+      setFilerThatCampaignName(searchQuery);
+    }
+
+    // Get the saved campaign name from localStorage
+    const savedCampaignName = localStorage.getItem("filteredCampaignName");
+
+    // Use the searchQuery for filtering if it exists, otherwise fall back to savedCampaignName
+    const filterName = searchQuery || savedCampaignName;
+
+    // Filter campaigns based on the determined name
+    const filteredCampaigns = campaings?.filter((campaign) =>
+      campaign.campaingname.toLowerCase().includes(filterName.toLowerCase())
+    );
+
+    setCampaigns(filteredCampaigns); // Update filtered campaigns
+    setSearchQuery(""); // Clear the search query
+    setLoading(false); // Stop loading
+  };
+
   return (
     <div>
       <div
@@ -39,7 +73,7 @@ const SearchAndFilter = ({
                             Suggested searches
                           </span>
                         </div>
-                        <li>
+                        <li onClick={handleGrabName}>
                           <div
                             class="xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1ypdohk x78zum5 xmix8c7 x1gslohp xw3qccf x12nagc xsgj6o6 x1iorvi4 xn6708d xjkvuk6 x1ye3gou"
                             data-testid="typeahead-filter-option"
@@ -51,7 +85,13 @@ const SearchAndFilter = ({
                                   contains
                                 </span>{" "}
                                 <span id="style-5qWlG" class="style-5qWlG">
-                                  <span class="x1e4ktmx x1gmknla">
+                                  <span
+                                    class="x1e4ktmx x1gmknla"
+                                    style={{
+                                      color: "#1461cc",
+                                      backgroundColor: "#f5f5f5",
+                                    }}
+                                  >
                                     {searchQuery}
                                   </span>
                                 </span>
@@ -71,7 +111,13 @@ const SearchAndFilter = ({
                                   contains
                                 </span>{" "}
                                 <span id="style-QWPHd" class="style-QWPHd">
-                                  <span class="x1e4ktmx x1gmknla">
+                                  <span
+                                    class="x1e4ktmx x1gmknla"
+                                    style={{
+                                      color: "#1461cc",
+                                      backgroundColor: "#f5f5f5",
+                                    }}
+                                  >
                                     {searchQuery}
                                   </span>
                                 </span>
@@ -92,7 +138,13 @@ const SearchAndFilter = ({
                                   contains
                                 </span>{" "}
                                 <span id="style-GTwJt" class="style-GTwJt">
-                                  <span class="x1e4ktmx x1gmknla">
+                                  <span
+                                    class="x1e4ktmx x1gmknla"
+                                    style={{
+                                      color: "#1461cc",
+                                      backgroundColor: "#f5f5f5",
+                                    }}
+                                  >
                                     {searchQuery}
                                   </span>
                                 </span>

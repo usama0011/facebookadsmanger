@@ -9130,3 +9130,232 @@ input {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+._765u {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  margin: 0 calc(4px);
+}
+
+button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+button {
+  margin: 0;
+}
+
+.x1a2a7pz {
+  outline: none;
+}
+
+.x13lgxp2 {
+  border-top-right-radius: 0;
+}
+
+.x1jzvqpb {
+  background-color: var(--geodesic-color-interactive-background-wash-idle);
+}
+
+.x1o6z2jb {
+  border-bottom-left-radius: 6px;
+}
+
+.x1sxyh0 {
+  padding-right: 8px;
+}
+
+.x1ypdohk {
+  cursor: pointer;
+}
+
+.x5pf9jr {
+  border-bottom-right-radius: 0;
+}
+
+.x6s0dn4 {
+  align-items: center;
+}
+
+.xcfux6l {
+  border-right-width: 0;
+}
+
+.xhk9q7s {
+  border-top-left-radius: 6px;
+}
+
+.xm0m39n {
+  border-left-width: 0;
+}
+
+.xurb0ha {
+  padding-left: 8px;
+}
+
+.x12ushyc {
+  max-width: 400px;
+}
+
+.x1fgtraw {
+  height: 28px;
+}
+
+.x1qhh985 {
+  border-bottom-width: 0;
+}
+
+.x972fbf {
+  border-top-width: 0;
+}
+
+._61ve button {
+  font-family: inherit;
+}
+
+._6nw._61ve button {
+  font-family: inherit;
+}
+
+.x1pb7wa4:hover {
+  background-color: var(--geodesic-color-interactive-background-wash-focused);
+}
+
+.x11i5rnm {
+  margin-right: 0;
+}
+
+.x168nmei {
+  border-top-left-radius: 0;
+}
+
+.x16hj40l {
+  padding-left: 6px;
+}
+
+.x1i1ezom {
+  border-bottom-right-radius: 6px;
+}
+
+.x1mh8g0r {
+  margin-left: 0;
+}
+
+.x1otrzb0 {
+  border-top-right-radius: 6px;
+}
+
+.xo71vjh {
+  border-bottom-left-radius: 0;
+}
+
+.xsyo7zv {
+  padding-right: 6px;
+}
+
+.x1iorvi4 {
+  padding-top: 4px;
+}
+
+.xat24cr {
+  margin-bottom: 0;
+}
+
+.xdj266r {
+  margin-top: 0;
+}
+
+.xjkvuk6 {
+  padding-bottom: 4px;
+}
+
+.xlyipyv {
+  text-overflow: ellipsis;
+}
+
+.x1h4wwuj {
+  word-wrap: normal;
+}
+
+.x1xlr1w8 {
+  font-weight: 700;
+}
+
+.x1yc453h {
+  text-align: start;
+}
+
+.xuxw1ft {
+  white-space: nowrap;
+}
+
+.xlpf1d2 {
+  min-width: 1.2em;
+}
+
+.x1xqt7ti {
+  font-family: Optimistic Display, system-ui, sans-serif !important;
+}
+
+.x63nzvj {
+  line-height: 1.33334 !important;
+}
+
+.xbsr9hj {
+  color: rgba(28, 43, 51, 1);
+}
+
+.xsuwoey {
+  font-size: 0.9375rem !important;
+}
+
+.x1kky2od {
+  width: 16px;
+}
+
+.xlup9mm {
+  height: 16px;
+}
+
+.xmi5d70 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.xo1l8bm {
+  font-weight: 400;
+}
+
+.xw3qccf {
+  margin-right: 4px;
+}
+
+.xeuugli {
+  min-width: 0;
+}
+
+.x1fvot60 {
+  font-size: 0.875rem !important;
+}
+
+.xxio538 {
+  line-height: 1.42858 !important;
+}
+
+i.img {
+  -ms-high-contrast-adjust: none;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-JzPRp.style-JzPRp {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/y2/r/2qdc4_H3cyf.png");
+  background-position: 0px -239px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
