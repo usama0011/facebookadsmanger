@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/PaymentPage.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import LogoLogo from "../assets/maind.jpeg";
 const PaymentPage = () => {
   const [transactions, setTransactions] = useState([]);
   const [account, setAccount] = useState({});
@@ -130,7 +131,7 @@ const PaymentPage = () => {
                                               <img
                                                 alt=""
                                                 class="img"
-                                                src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=AyCf0TshZia23ExxFhX-NV8&oh=00_AYDWEm2JLR4CS-AEzwO-HmmJAf70h3jAjAcuKYT2y8eNUw&oe=6725EF7F"
+                                                src={LogoLogo}
                                               />
                                               <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
                                             </div>
@@ -398,14 +399,16 @@ const PaymentPage = () => {
                                               class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
                                               to="/payment"
                                             >
-                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 xwpu04d xlvp1be snipcss-LmlsY">
-                                                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xwpu04d xvy4d1p xxk0z11">
-                                                  <div class="x3nfvp2">
-                                                    <i
-                                                      alt=""
-                                                      data-visualcompletion="css-img"
-                                                      class="img sp_PXwHJ2PWq00 sx_12ef6d"
-                                                    ></i>
+                                              <div class="x78zum5 x1iyjqo2">
+                                                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 x1xlr1w8 x1qsmy5i x1k4ywey">
+                                                  <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11 snipcss0-1-1-2">
+                                                    <div class="x3nfvp2 snipcss0-2-2-3">
+                                                      <i
+                                                        alt=""
+                                                        data-visualcompletion="css-img"
+                                                        class="img sp_BCSohYmDE5w sx_4fb158 snipcss0-3-3-4"
+                                                      ></i>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -940,87 +943,6 @@ const PaymentPage = () => {
                                           <div class="x6s0dn4 x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k xavht8x xqui205 xqmxbcd x1hq5gj4 xmupa6y">
                                             <div class="x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k xavht8x xh8yej3">
                                               <div class="x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x1kxxb1g">
-                                                <div
-                                                  style={{
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                  }}
-                                                >
-                                                  <div
-                                                    aria-level="2"
-                                                    class="x8t9es0 xm46was x1xlr1w8 x63nzvj x4hq6eo xq9mrsl x1yc453h x1h4wwuj xeuugli"
-                                                    role="heading"
-                                                  >
-                                                    Billing &amp; payments
-                                                  </div>
-                                                  <div
-                                                    style={{
-                                                      marginLeft: "10px",
-                                                      minWidth: "250px",
-                                                    }}
-                                                    class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj xm7lytj x1ykpatu xlu9dua x1w2lkzu"
-                                                  >
-                                                    <div class=""></div>
-                                                    <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                      <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                          <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
-                                                            <div
-                                                              class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
-                                                              id="js_8u"
-                                                            >
-                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1qughib">
-                                                                <div class="x6s0dn4 x78zum5 x1q0g3np xfex06f x3pnbk8 x2lwn1j xeuugli">
-                                                                  <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
-                                                                    <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8">
-                                                                      <img
-                                                                        alt=""
-                                                                        class="img"
-                                                                        src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
-                                                                      />
-                                                                      <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="xjbqb8w xnalus7 xm81vs4 xu3j5b3 xkh2ocl xwebqov xvyu6v8 xrsgblv x10lij0i xdj266r x11i5rnm xat24cr x1mh8g0r"></div>
-                                                                  <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p xzolkzo x12go9s9 x1rnf11y xprq8jg">
-                                                                    <div
-                                                                      class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl x10cdfl8"
-                                                                      role="presentation"
-                                                                    >
-                                                                      <div
-                                                                        class="x3nfvp2 x120ccyz x4s1yf2"
-                                                                        role="presentation"
-                                                                      >
-                                                                        <div
-                                                                          class="xtwfq29 style-jFVi5"
-                                                                          id="style-jFVi5"
-                                                                        ></div>
-                                                                      </div>
-                                                                      <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                                                    Ali Hamza
-                                                                  </div>
-                                                                </div>
-                                                                <div
-                                                                  class="x3nfvp2 x120ccyz x4s1yf2"
-                                                                  role="presentation"
-                                                                >
-                                                                  <div
-                                                                    class="xtwfq29 style-NEN4Q"
-                                                                    id="style-NEN4Q"
-                                                                  ></div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
                                                 <div class="x1qjc9v5 x78zum5 x2lwn1j xeuugli">
                                                   <div class="x78zum5 x2lwn1j xeuugli x1c4vz4f x2lah0s x1h5jrl4">
                                                     <div class="xnq0rdo x65caj5 x1lq5wgf xgqcy7u x30kzoy x9jhf4c x6ikm8r x10wlt62">

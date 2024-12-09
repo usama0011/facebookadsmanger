@@ -2400,7 +2400,9 @@ const EditCompaingThree = () => {
                                                                                                   marginTop:
                                                                                                     "-1px",
                                                                                                 }}
-                                                                                                src="https://i.ibb.co/Ytf6zgC/Whats-App-Image-2024-12-07-at-8-00-23-PM.jpg"
+                                                                                                src={
+                                                                                                  MainLogoImage
+                                                                                                }
                                                                                                 alt=""
                                                                                               />
                                                                                             </div>
@@ -2411,9 +2413,8 @@ const EditCompaingThree = () => {
                                                                                             class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
                                                                                             id="js_5h"
                                                                                           >
-                                                                                            De
-                                                                                            Cartier
-                                                                                            Solutions
+                                                                                            ATech
+                                                                                            Guides
                                                                                           </div>
                                                                                         </div>
                                                                                       </div>
@@ -4477,9 +4478,7 @@ const EditCompaingThree = () => {
                                                                                             aria-disabled="false"
                                                                                             class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3"
                                                                                             type="text"
-                                                                                            value=" De
-                                                                                            Cartier
-                                                                                            Solutions"
+                                                                                            value=" ATech Guides"
                                                                                           />
                                                                                         </div>
                                                                                       </div>
@@ -7579,9 +7578,8 @@ const EditCompaingThree = () => {
                                                                                                                                     <div>
                                                                                                                                       <span class="x1fzdab9 x1f6kntn xuy8w9f">
                                                                                                                                         <span class="x1xlr1w8">
-                                                                                                                                          De
-                                                                                                                                          Cartier
-                                                                                                                                          Solutions
+                                                                                                                                          ATech
+                                                                                                                                          Guides
                                                                                                                                         </span>
                                                                                                                                       </span>
                                                                                                                                     </div>
@@ -7695,9 +7693,8 @@ const EditCompaingThree = () => {
                                                                                                                                               data-ad-preview="headline"
                                                                                                                                               dir=""
                                                                                                                                             >
-                                                                                                                                              De
-                                                                                                                                              Cartier
-                                                                                                                                              Solutions
+                                                                                                                                              ATech
+                                                                                                                                              Guides
                                                                                                                                             </span>
                                                                                                                                           </div>
                                                                                                                                         </div>
@@ -8775,9 +8772,8 @@ const EditCompaingThree = () => {
                                                                                                                                   alt=""
                                                                                                                                 />
                                                                                                                                 <div class="_67x2">
-                                                                                                                                  De
-                                                                                                                                  Cartier
-                                                                                                                                  Solutions
+                                                                                                                                  ATech
+                                                                                                                                  Guides
                                                                                                                                   &nbsp;{" "}
                                                                                                                                   <div></div>
                                                                                                                                 </div>

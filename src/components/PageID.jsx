@@ -7,11 +7,12 @@ const PageID = ({
   setDisplayID,
   campaigns,
   setCampaigns,
+  setLoading,
 }) => {
   const handleApply = () => {
     setShowPageIDBar(false);
     setDisplayID(true);
-
+    setLoading(true);
     // Save currentPageID to localStorage
     if (currentPageID) {
       localStorage.setItem("currentPageID", currentPageID);

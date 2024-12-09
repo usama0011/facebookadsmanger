@@ -363,19 +363,25 @@ const EditCompaing = () => {
                                     class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
                                     to="/payment"
                                   >
-                                    <div class="x78zum5 x1iyjqo2">
-                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1y1aw1k xwib8y2 xurb0ha x1sxyh0 xo1l8bm xbsr9hj x1v911su">
+                                    <div class="x10l6tqk x8knxv4 x3nfvp2 x1iyjqo2 x2lah0s x17qophe xds687c x13vifvy x1ey2m1c xurb0ha x1sxyh0 snipcss-BlaFv">
+                                      <a
+                                        aria-labelledby="js_k"
+                                        class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 xggy1nq x1ja2u2z x1t137rt x1iyjqo2 x1hl2dhg x1lku1pv"
+                                        role="link"
+                                        tabindex="0"
+                                        href="/billing_hub/payment_activity/?placement=ads_manager&amp;asset_id=1387295665246598"
+                                      >
                                         <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
                                           <div class="x3nfvp2">
                                             <i
                                               alt=""
                                               data-visualcompletion="css-img"
-                                              class="img style-wA5Re"
-                                              id="style-wA5Re"
+                                              class="img style-yZkhQ"
+                                              id="style-yZkhQ"
                                             ></i>
                                           </div>
                                         </div>
-                                      </div>
+                                      </a>
                                     </div>
                                   </Link>
                                 </div>

@@ -2545,28 +2545,34 @@ const CompaingsData = ({
   );
 
   useEffect(() => {
+    let interval;
+    let timeout;
+
     if (loading) {
-      setLoadingProgress(0); // Initialize progress at 0
-      let progress = 0; // Use a local variable to control progress
+      setLoadingProgress(0); // Initialize progress to 0
 
-      const interval = setInterval(() => {
-        progress += 20; // Increment progress
+      let progress = 0;
+      interval = setInterval(() => {
+        progress += 10; // Increment progress by 10
         if (progress >= 90) {
-          clearInterval(interval); // Stop incrementing when reaching 90%
-          progress = 90; // Ensure progress caps at 90%
+          clearInterval(interval); // Stop incrementing at 90%
+          progress = 90;
         }
-        setLoadingProgress(progress); // Update the state
-      }, 1000);
+        setLoadingProgress(progress); // Update state
+      }, 300); // Adjust increment speed for smoothness
 
-      const timeout = setTimeout(() => {
-        setLoading(false); // Stop loading after 5 seconds
-      }, 5000);
-
-      return () => {
-        clearInterval(interval);
-        clearTimeout(timeout);
-      };
+      timeout = setTimeout(() => {
+        setLoadingProgress(100); // Complete progress to 100%
+        setTimeout(() => {
+          setLoading(false); // Stop loading after showing 100%
+        }, 500); // Slight delay to keep 100% visible for a moment
+      }, 4000); // Ensure at least 4 seconds for progress
     }
+
+    return () => {
+      clearInterval(interval); // Cleanup interval
+      clearTimeout(timeout); // Cleanup timeout
+    };
   }, [loading, setLoading]);
 
   return (
