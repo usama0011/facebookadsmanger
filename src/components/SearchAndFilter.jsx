@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/SearchFilter.css";
 import { ChevronUpIcon } from "@heroicons/react/16/solid";
 const SearchAndFilter = ({
@@ -14,6 +14,36 @@ const SearchAndFilter = ({
   setLoading,
   setFilerThatCampaignName,
 }) => {
+  useEffect(() => {
+    // On page load, check if there's a saved filter name in localStorage
+    const savedCampaignName = localStorage.getItem("filteredCampaignName");
+
+    if (savedCampaignName) {
+      setLoading(true); // Set loading to true while filtering
+      setcurrentfiltercampaingShow(true); // Display the current filtered campaigns
+      setshowsearchfilterbar(false); // Hide the search filter bar
+
+      // Filter campaigns based on the saved name
+      const filteredCampaigns = campaings?.filter((campaign) =>
+        campaign.campaingname
+          .toLowerCase()
+          .includes(savedCampaignName.toLowerCase())
+      );
+
+      setCampaigns(filteredCampaigns); // Update the filtered campaigns
+      setLoading(false); // Stop loading
+    } else {
+      // If no saved name, show all campaigns
+      setCampaigns(campaings);
+    }
+  }, [
+    campaings,
+    setCampaigns,
+    setcurrentfiltercampaingShow,
+    setLoading,
+    setshowsearchfilterbar,
+  ]);
+
   const handleGrabName = () => {
     setLoading(true);
     setcurrentfiltercampaingShow(true);

@@ -35,6 +35,8 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filerwithcmapaignname, setFilerThatCampaignName] = useState("");
   const [showSearchSuggestions, setShowSearchSuggestions] = useState(false);
+  const savedCampaignName = localStorage.getItem("filteredCampaignName");
+
   const [currentfiltercampaigshow, setcurrentfiltercampaingShow] =
     useState(false);
   const [loading, setLoading] = useState(true);
@@ -1418,7 +1420,23 @@ const App = () => {
       );
     }
   }, [currentMonth]);
+  useEffect(() => {
+    // Check if `filteredCampaignName` exists in localStorage
+    const savedCampaignName = localStorage.getItem("filteredCampaignName");
 
+    if (savedCampaignName) {
+      // Filter the campaigns based on the saved name
+      const filtered = campaings.filter((campaign) =>
+        campaign.campaingname
+          .toLowerCase()
+          .includes(savedCampaignName.toLowerCase())
+      );
+      setCampaigns(filtered);
+    } else {
+      // If no saved name, show all campaigns
+      setCampaigns(campaings);
+    }
+  }, [loading]);
   return (
     <div>
       <div
