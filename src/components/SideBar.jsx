@@ -490,21 +490,22 @@ const SideBar = () => {
               ​
             </div>
           </div>
-          <NavLink to="/mainnavigation">
-            <div className="search-icon">
-              <div className="">
-                <div className="x3nfvp2 x2lah0s x1c4vz4f">
+
+          <div className="search-icon">
+            <div className="">
+              <div className="x3nfvp2 x2lah0s x1c4vz4f">
+                <NavLink to="/mainnavigation">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
                     className="img style-oF4KY"
                     id="style-oF4KY"
                   ></i>
-                </div>
-                ​
+                </NavLink>
               </div>
+              ​
             </div>
-          </NavLink>
+          </div>
         </div>
       </div>
     </div>
