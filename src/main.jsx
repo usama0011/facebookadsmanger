@@ -39,6 +39,7 @@ import AddAccount from "./pages/AddAccount";
 import EditAccount from "./pages/EditAccount";
 import UpooadReporting from "./pages/UpooadReporting";
 import ReportingCalendar from "./components/ReportingCalender";
+import SideBar from "./components/SideBar";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -123,6 +124,10 @@ const router = createBrowserRouter([
   {
     path: "/editmainchartthree/:id",
     element: <EditChartThree />,
+  },
+  {
+    path: "/sidebar",
+    element: <SideBar />,
   },
   {
     path: "/payment",

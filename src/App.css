@@ -9359,3 +9359,7 @@ i.img {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+.ant-table-tbody {
+  border: 1px solid red !important;
+}
