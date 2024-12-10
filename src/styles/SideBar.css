@@ -1,3 +1,6 @@
+:root {
+  --geodesic-color-border-element-default-active: rgba(0, 0, 0, 0.15);
+}
 .sidebarmaincontainer {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,7 +11,9 @@
   left: 0;
   z-index: 5000;
 }
-
+.letbordchange {
+  border: 1px solid var(--geodesic-color-border-element-default-active);
+}
 .sidebar {
   width: 60px;
   background-color: white;
@@ -61,9 +66,12 @@
 .menu li {
   display: flex;
   align-items: center;
-  padding: 8px 15px;
+  padding: 8px 10px;
   cursor: pointer;
   color: #333;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -335,6 +343,12 @@ i.img {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.sirthisactive {
-  background-color: #d93616 !important;
+
+.actissssveBtn {
+  background-color: #333 !important;
+  color: white; /* Add this to make text visible */
+}
+#sidebar-container .actissssveBtn {
+  background-color: #333;
+  color: white;
 }

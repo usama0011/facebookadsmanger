@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../styles/SideBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import MainLogoNavBar from "../assets/maind.jpeg";
 const SideBar = () => {
   const [isHovered, setIsHovered] = useState(false);
-
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <div className="sidebarmaincontainer">
       <div
@@ -24,7 +25,7 @@ const SideBar = () => {
         >
           <img
             alt="Meta"
-            class="img"
+            className="img"
             height="28"
             width="28"
             src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg"
@@ -49,6 +50,7 @@ const SideBar = () => {
         <ul className="menu">
           <li>
             <div
+              className="letbordchange"
               style={
                 isHovered
                   ? {
@@ -99,39 +101,42 @@ const SideBar = () => {
                         justifySelf: "flex-end",
                         width: "1005",
                       }}
-                      class="x3nfvp2 x120ccyz x4s1yf2"
+                      className="x3nfvp2 x120ccyz x4s1yf2"
                       role="presentation"
                     >
-                      <div class="xtwfq29 style-NEN4Q" id="style-NEN4Q"></div>
+                      <div
+                        className="xtwfq29 style-NEN4Q"
+                        id="style-NEN4Q"
+                      ></div>
                     </div>
                   </div>
                 </>
               )}
             </div>
           </li>
-          <NavLink
-            style={{ textDecoration: "none" }}
-            to="/overviewaccount"
-            className={({ isActive }) =>
-              isActive ? "sirthisactive" : "notactive"
-            }
-          >
-            <li>
-              <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div class="x3nfvp2">
+          <NavLink to="/overviewaccount" style={{ textDecoration: "none" }}>
+            <li
+              style={
+                location.pathname === "/overviewaccount"
+                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                  : { textDecoration: "none" }
+              }
+            >
+              <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                <div className="x3nfvp2">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
-                    class="img style-sSl3X"
+                    className="img style-sSl3X"
                     id="style-sSl3X"
                   ></i>
                 </div>
-                <div class="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
+                <div className="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
               </div>
               {isHovered && (
                 <span style={{ marginLeft: "20px" }}>
                   <div
-                    class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                     id="js_h"
                   >
                     Account overview
@@ -145,22 +150,61 @@ const SideBar = () => {
             className={({ isActive }) => (isActive ? "myactivelink" : "")}
             style={{ textDecoration: "none" }}
           >
-            <li>
-              <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                <div class="x3nfvp2">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    class="img style-bolNn"
-                    id="style-bolNn"
-                  ></i>
+            <li
+              style={
+                location.pathname === "/" ||
+                location.pathname.startsWith("/editcampaing/") ||
+                location.pathname.startsWith("/editcampaingtwo/") ||
+                location.pathname.startsWith("/editcampaingthree/")
+                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                  : { textDecoration: "none" }
+              }
+            >
+              {location.pathname === "/" ||
+              location.pathname.startsWith("/editcampaing/") ||
+              location.pathname.startsWith("/editcampaingtwo/") ||
+              location.pathname.startsWith("/editcampaingthree/") ? (
+                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                  <div class="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      class="img style-bolNn"
+                      id="style-bolNn"
+                    ></i>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div class="">
+                  <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                    <div class="x3nfvp2">
+                      <i
+                        alt=""
+                        data-visualcompletion="css-img"
+                        class="img style-9ysPi"
+                        id="style-9ysPi"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {isHovered && (
                 <span style={{ marginLeft: "20px" }}>
                   <div
-                    class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                     id="js_h"
+                    style={
+                      location.pathname === "/" ||
+                      location.pathname.startsWith("/editcampaing/") ||
+                      location.pathname.startsWith("/editcampaingtwo/") ||
+                      location.pathname.startsWith("/editcampaingthree/")
+                        ? {
+                            textDecoration: "none",
+                            color: "#0866ff",
+                          }
+                        : { textDecoration: "none" }
+                    }
                   >
                     Campaigns
                   </div>
@@ -174,22 +218,50 @@ const SideBar = () => {
             className={({ isActive }) => (isActive ? "myactivelink" : "")}
             style={{ textDecoration: "none" }}
           >
-            <li>
-              <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div class="x3nfvp2">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    class="img style-Gd5tE"
-                    id="style-Gd5tE"
-                  ></i>
+            <li
+              style={
+                location.pathname === "/reporting"
+                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                  : { textDecoration: "none" }
+              }
+            >
+              {location.pathname === "/reporting" ? (
+                <div class="">
+                  <div class="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      class="img style-K9LEW"
+                      id="style-K9LEW"
+                    ></i>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                  <div className="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      className="img style-Gd5tE"
+                      id="style-Gd5tE"
+                    ></i>
+                  </div>
+                </div>
+              )}
+
               {isHovered && (
                 <span style={{ marginLeft: "20px" }}>
                   <div
-                    class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                     id="js_h"
+                    style={
+                      location.pathname === "/reporting"
+                        ? {
+                            textDecoration: "none",
+                            color: "#0866ff",
+                          }
+                        : { textDecoration: "none" }
+                    }
                   >
                     Ads Reporting
                   </div>
@@ -199,12 +271,12 @@ const SideBar = () => {
           </NavLink>
 
           <li>
-            <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-              <div class="x3nfvp2">
+            <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+              <div className="x3nfvp2">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  class="img style-4NOtb"
+                  className="img style-4NOtb"
                   id="style-4NOtb"
                 ></i>
               </div>
@@ -212,7 +284,7 @@ const SideBar = () => {
             {isHovered && (
               <span style={{ marginLeft: "20px" }}>
                 <div
-                  class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                 >
                   Audience
@@ -225,22 +297,51 @@ const SideBar = () => {
             className={({ isActive }) => (isActive ? "myactivelink" : "")}
             style={{ textDecoration: "none" }}
           >
-            <li>
-              <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div class="x3nfvp2">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    class="img style-yZkhQ"
-                    id="style-yZkhQ"
-                  ></i>
+            <li
+              style={
+                location.pathname === "/payment"
+                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                  : { textDecoration: "none" }
+              }
+            >
+              {location.pathname === "/payment" ? (
+                <div class="">
+                  <div class="">
+                    <div class="x3nfvp2">
+                      <i
+                        alt=""
+                        data-visualcompletion="css-img"
+                        class="img sp_BCSohYmDE5w sx_4fb158"
+                      ></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                  <div className="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      className="img style-yZkhQ"
+                      id="style-yZkhQ"
+                    ></i>
+                  </div>
+                </div>
+              )}
+
               {isHovered && (
                 <span style={{ marginLeft: "20px" }}>
                   <div
-                    class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                     id="js_h"
+                    style={
+                      location.pathname === "/payment"
+                        ? {
+                            textDecoration: "none",
+                            color: "#0866ff",
+                          }
+                        : { textDecoration: "none" }
+                    }
                   >
                     Billing & payment
                   </div>
@@ -249,12 +350,12 @@ const SideBar = () => {
             </li>
           </NavLink>
           <li>
-            <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-              <div class="x3nfvp2">
+            <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+              <div className="x3nfvp2">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  class="img style-qjhZw"
+                  className="img style-qjhZw"
                   id="style-qjhZw"
                 ></i>
               </div>
@@ -262,7 +363,7 @@ const SideBar = () => {
             {isHovered && (
               <span style={{ marginLeft: "20px" }}>
                 <div
-                  class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                 >
                   Advertising settings
@@ -271,15 +372,15 @@ const SideBar = () => {
             )}
           </li>
           <li>
-            <div class="">
-              <div class="x78zum5 x1iyjqo2">
-                <div class="">
-                  <div class="">
-                    <div class="x3nfvp2">
+            <div className="">
+              <div className="x78zum5 x1iyjqo2">
+                <div className="">
+                  <div className="">
+                    <div className="x3nfvp2">
                       <i
                         alt=""
                         data-visualcompletion="css-img"
-                        class="img style-8dtnG"
+                        className="img style-8dtnG"
                         id="style-8dtnG"
                       ></i>
                     </div>
@@ -291,7 +392,7 @@ const SideBar = () => {
             {isHovered && (
               <span style={{ marginLeft: "20px" }}>
                 <div
-                  class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                 >
                   Event Manager
@@ -300,12 +401,12 @@ const SideBar = () => {
             )}
           </li>
           <li>
-            <div class="">
-              <div class="x3nfvp2">
+            <div className="">
+              <div className="x3nfvp2">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  class="img style-rRLCD"
+                  className="img style-rRLCD"
                   id="style-rRLCD"
                 ></i>
               </div>
@@ -314,7 +415,7 @@ const SideBar = () => {
             {isHovered && (
               <span style={{ marginLeft: "20px" }}>
                 <div
-                  class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                 >
                   All Tools
@@ -323,11 +424,11 @@ const SideBar = () => {
             )}
           </li>
           <li>
-            <div class="">
+            <div className="">
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                class="img style-M9oOk"
+                className="img style-M9oOk"
                 id="style-M9oOk"
               ></i>
             </div>
@@ -335,7 +436,7 @@ const SideBar = () => {
             {isHovered && (
               <span style={{ marginLeft: "20px" }}>
                 <div
-                  class="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                 >
                   Help
@@ -347,31 +448,20 @@ const SideBar = () => {
         <hr className="divider" />
         <div className="bottom-icons">
           <div className="search-icon">
-            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-              <div
-                class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                role="presentation"
-              >
-                <div class="xtwfq29 style-9KpMj" id="style-9KpMj"></div>
-                <div class="notification-badge">8</div>
-              </div>
-            </div>
-          </div>
-          <div className="search-icon">
-            <div class="x3nfvp2 x2lah0s x1c4vz4f">
+            <div className="x3nfvp2 x2lah0s x1c4vz4f">
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                class="img style-2xUJN"
+                className="img style-2xUJN"
                 id="style-2xUJN"
               ></i>
             </div>
           </div>
           <div className="search-icon">
-            <div class="">
+            <div className="">
               <i
                 aria-hidden="true"
-                class="_271o img style-ZBf6z"
+                className="_271o img style-ZBf6z"
                 alt=""
                 data-visualcompletion="css-img"
                 id="style-ZBf6z"
@@ -380,23 +470,23 @@ const SideBar = () => {
           </div>
 
           <div className="search-icon">
-            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+            <div className="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
               <div
-                class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                className="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
                 role="presentation"
               >
-                <div class="xtwfq29 style-AA4xG" id="style-AA4xG"></div>
+                <div className="xtwfq29 style-AA4xG" id="style-AA4xG"></div>
               </div>
               ​
             </div>
           </div>
           <div className="search-icon">
-            <div class="">
-              <div class="x3nfvp2 x2lah0s x1c4vz4f">
+            <div className="">
+              <div className="x3nfvp2 x2lah0s x1c4vz4f">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  class="img style-oF4KY"
+                  className="img style-oF4KY"
                   id="style-oF4KY"
                 ></i>
               </div>
