@@ -89,7 +89,7 @@ const SideBar = () => {
                         fontSize: "13px",
                       }}
                     >
-                      Ali Hamza
+                      Tayyab Rashid
                     </span>
                     <div
                       style={{
