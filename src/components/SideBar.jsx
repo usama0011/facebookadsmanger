@@ -448,6 +448,16 @@ const SideBar = () => {
         <hr className="divider" />
         <div className="bottom-icons">
           <div className="search-icon">
+            <div className="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+              <div
+                className="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                role="presentation"
+              >
+                <div className="xtwfq29 style-9KpMj" id="style-9KpMj"></div>
+              </div>
+            </div>
+          </div>
+          <div className="search-icon">
             <div className="x3nfvp2 x2lah0s x1c4vz4f">
               <i
                 alt=""

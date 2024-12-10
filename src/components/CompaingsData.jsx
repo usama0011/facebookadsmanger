@@ -137,18 +137,40 @@ const CompaingsData = ({
     {
       title: () => (
         <input
-          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          style={{
+            width: "24px",
+            height: "23px",
+            border: "1px solid gainsboro",
+            outline: "none",
+            marginRight: "8px",
+            borderRadius: "4px",
+            appearance: "none", // Remove default checkbox styling
+            backgroundColor: "white", // Set background to white
+            cursor: "pointer", // Change cursor to pointer for better UX
+          }}
           type="checkbox"
+          className="uniquecheckbox"
         />
       ),
-      width: 60,
+      width: 55,
       key: "checkbox",
       fixed: "left",
 
       render: () => (
         <input
-          style={{ width: "30px", height: "23px", border: "1px solid #f5f4f4" }}
+          style={{
+            width: "24px",
+            height: "23px",
+            border: "1px solid gainsboro",
+            outline: "none",
+            marginRight: "8px",
+            borderRadius: "4px",
+            appearance: "none", // Remove default checkbox styling
+            backgroundColor: "white", // Set background to white
+            cursor: "pointer", // Change cursor to pointer for better UX
+          }}
           type="checkbox"
+          className="uniquecheckbox"
         />
       ),
     },
