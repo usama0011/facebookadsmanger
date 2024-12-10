@@ -4141,7 +4141,7 @@ const CompaingsData = ({
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                          Link Clicks
+                                          Total
                                         </div>
                                       </div>
                                     </div>
@@ -4170,7 +4170,7 @@ const CompaingsData = ({
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                          Link Clicks
+                                          Per link click
                                         </div>
                                       </div>
                                     </div>
@@ -4346,7 +4346,7 @@ const CompaingsData = ({
                                       </div>
                                       <div class="ell-1jx _1h-tgr">
                                         <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
-                                          Per Impression
+                                          Per Impressions
                                         </div>
                                       </div>
                                     </div>
