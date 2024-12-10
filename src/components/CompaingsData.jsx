@@ -492,7 +492,7 @@ const CompaingsData = ({
             </div>
           </div>
           <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
+            <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>
         </div>
       ),
