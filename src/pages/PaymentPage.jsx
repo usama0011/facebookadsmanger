@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../styles/PaymentPage.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import LogoLogo from "../assets/maind.jpeg";
 import SideBar from "../components/SideBar";
+import { Spin } from "antd";
 const PaymentPage = () => {
   const [transactions, setTransactions] = useState([]);
   const [account, setAccount] = useState({});
@@ -19,26 +19,61 @@ const PaymentPage = () => {
         setTransactions(response.data);
       } catch (err) {
         setError("Error fetching transactions");
-      } finally {
-        setLoading(false);
       }
     };
 
-    fetchTransactions();
+    const fetchAccount = async () => {
+      try {
+        const response = await axios.get(
+          "https://facebookadsmangerserver.vercel.app/api/currentAccount/67200546611ee42d41ae600f"
+        );
+        setAccount(response.data);
+      } catch (error) {
+        console.error("Error fetching account:", error);
+      }
+    };
+
+    const loadData = async () => {
+      await Promise.all([fetchTransactions(), fetchAccount()]);
+      // Simulate 5 seconds loading time
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    };
+
+    loadData();
   }, []);
-  const fetchAccount = async () => {
-    try {
-      const response = await axios.get(
-        "https://facebookadsmangerserver.vercel.app/api/currentAccount/67200546611ee42d41ae600f"
-      );
-      setAccount(response.data);
-    } catch (error) {
-      console.error("Error fetching account:", error);
-    }
-  };
-  useEffect(() => {
-    fetchAccount();
-  }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          height: "100vh",
+          backgroundImage: "linear-gradient(to top, #e6effb, #e9f5ef, #f6eef5)",
+        }}
+      >
+        <h4 style={{ fontSize: "18px", marginBottom: "4px" }}>
+          Billing & Payment
+        </h4>
+        <span style={{ marginBottom: "5px" }}>Take a moment...</span>
+        <div
+          style={{
+            width: "18px",
+            height: "18px",
+            border: "5px solid #f3f3f3",
+            borderTop: "5px solid #555",
+            borderRadius: "50%",
+            animation: "spin 1s linear infinite",
+          }}
+        ></div>
+      </div>
+    );
+  }
   return (
     <div>
       <div
@@ -1029,194 +1064,192 @@ const PaymentPage = () => {
                                                                       </tr>
                                                                     </thead>
                                                                     <tbody class="x1lliihq xh8yej3 x1n2onr6 x1ja2u2z">
-                                                                      {loading
-                                                                        ? "loading..."
-                                                                        : transactions?.map(
-                                                                            (
-                                                                              item
-                                                                            ) => (
-                                                                              <tr
-                                                                                class="xb9moi8 xfth1om x21b0me xmls85d xso031l x1q0q8m5 x9f619 style-X3i3i"
-                                                                                role="row"
-                                                                                id="style-X3i3i"
-                                                                              >
-                                                                                <td
-                                                                                  aria-colindex="1"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-BvBVj"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-BvBVj"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <div>
-                                                                                      <a
-                                                                                        class="xt0psk2 x1hl2dhg xt0b8zv x8t9es0 x1fvot60 xxio538 xjnfcd9 xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
-                                                                                        target="_blank"
-                                                                                        href="#"
-                                                                                      >
+                                                                      {transactions?.map(
+                                                                        (
+                                                                          item
+                                                                        ) => (
+                                                                          <tr
+                                                                            class="xb9moi8 xfth1om x21b0me xmls85d xso031l x1q0q8m5 x9f619 style-X3i3i"
+                                                                            role="row"
+                                                                            id="style-X3i3i"
+                                                                          >
+                                                                            <td
+                                                                              aria-colindex="1"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-BvBVj"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-BvBVj"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <div>
+                                                                                  <a
+                                                                                    class="xt0psk2 x1hl2dhg xt0b8zv x8t9es0 x1fvot60 xxio538 xjnfcd9 xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
+                                                                                    target="_blank"
+                                                                                    href="#"
+                                                                                  >
+                                                                                    {
+                                                                                      item?.TransactionID
+                                                                                    }
+                                                                                  </a>
+                                                                                </div>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="2"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FMneT"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-FMneT"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                                  {
+                                                                                    item?.Date
+                                                                                  }
+                                                                                </span>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="3"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FFoY8"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-FFoY8"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                                  {
+                                                                                    item?.Amount
+                                                                                  }
+                                                                                </span>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="4"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FdKoK"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-FdKoK"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <div class="x6s0dn4 x78zum5 x1nhvcw1">
+                                                                                  <div class="xl010v5 x1gslohp">
+                                                                                    <img
+                                                                                      src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/gCsiyENN5zZ.png?_nc_eui2=AeHLUbMNoQ88YPZEOMsGfTU6vuJ6vQ-YpFm-4nq9D5ikWRrNQz_P-aAT6soN2Rhc9fRK086-aZgg4LLPx07AWcLA"
+                                                                                      alt=""
+                                                                                      class="img"
+                                                                                    />
+                                                                                  </div>
+                                                                                  <div class="xeuugli">
+                                                                                    <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                                      MasterCard&nbsp;·&nbsp;5649
+                                                                                    </div>
+                                                                                    <div class="x8t9es0 xw23nyj x63nzvj x4hq6eo xq9mrsl x1h4wwuj x1fcty0u xeuugli">
+                                                                                      {
+                                                                                        item?.Paymentmethod
+                                                                                      }
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="5"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-Zaj7G"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-Zaj7G"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <div class="x78zum5">
+                                                                                  <span class="x3nfvp2 xmix8c7 x1n2onr6">
+                                                                                    <span class="x6s0dn4 x9f619 x78zum5 xmix8c7 xl56j7k x16xo4sp x1t137rt x1j85h84 xsyo7zv x16hj40l x4p5aij x1n2onr6 xzolkzo x12go9s9 x1rnf11y xprq8jg x8t9es0 xw23nyj x63nzvj x1fp01tm xuxw1ft x2b8uid x117nqv4 x1fwvgxd">
+                                                                                      <div class="x8t9es0 xw23nyj x63nzvj x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
                                                                                         {
-                                                                                          item?.TransactionID
+                                                                                          item?.Paymentstatus
                                                                                         }
-                                                                                      </a>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="2"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FMneT"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-FMneT"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
-                                                                                      {
-                                                                                        item?.Date
-                                                                                      }
-                                                                                    </span>
-                                                                                  </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="3"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FFoY8"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-FFoY8"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
-                                                                                      {
-                                                                                        item?.Amount
-                                                                                      }
-                                                                                    </span>
-                                                                                  </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="4"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-FdKoK"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-FdKoK"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <div class="x6s0dn4 x78zum5 x1nhvcw1">
-                                                                                      <div class="xl010v5 x1gslohp">
-                                                                                        <img
-                                                                                          src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/gCsiyENN5zZ.png?_nc_eui2=AeHLUbMNoQ88YPZEOMsGfTU6vuJ6vQ-YpFm-4nq9D5ikWRrNQz_P-aAT6soN2Rhc9fRK086-aZgg4LLPx07AWcLA"
-                                                                                          alt=""
-                                                                                          class="img"
-                                                                                        />
                                                                                       </div>
-                                                                                      <div class="xeuugli">
-                                                                                        <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
-                                                                                          MasterCard&nbsp;·&nbsp;5649
-                                                                                        </div>
-                                                                                        <div class="x8t9es0 xw23nyj x63nzvj x4hq6eo xq9mrsl x1h4wwuj x1fcty0u xeuugli">
-                                                                                          {
-                                                                                            item?.Paymentmethod
-                                                                                          }
-                                                                                        </div>
-                                                                                      </div>
+                                                                                    </span>
+                                                                                    <div
+                                                                                      aria-atomic="true"
+                                                                                      aria-live="polite"
+                                                                                      role="status"
+                                                                                      class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                                                                      data-sscoverage-ignore="true"
+                                                                                    >
+                                                                                      Paid
                                                                                     </div>
-                                                                                  </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="5"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-Zaj7G"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-Zaj7G"
+                                                                                  </span>
+                                                                                </div>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="6"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-jRhH7"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-jRhH7"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
+                                                                                  {
+                                                                                    item?.VATinvoiceID
+                                                                                  }
+                                                                                </span>
+                                                                              </div>
+                                                                            </td>
+                                                                            <td
+                                                                              aria-colindex="7"
+                                                                              class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-sK6Me"
+                                                                              role="gridcell"
+                                                                              tabindex="0"
+                                                                              id="style-sK6Me"
+                                                                            >
+                                                                              <div class="x1iyjqo2 xh8yej3 xmz0i5r">
+                                                                                <div
+                                                                                  class="xeq5yr9"
+                                                                                  title="Download"
                                                                                 >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <div class="x78zum5">
-                                                                                      <span class="x3nfvp2 xmix8c7 x1n2onr6">
-                                                                                        <span class="x6s0dn4 x9f619 x78zum5 xmix8c7 xl56j7k x16xo4sp x1t137rt x1j85h84 xsyo7zv x16hj40l x4p5aij x1n2onr6 xzolkzo x12go9s9 x1rnf11y xprq8jg x8t9es0 xw23nyj x63nzvj x1fp01tm xuxw1ft x2b8uid x117nqv4 x1fwvgxd">
-                                                                                          <div class="x8t9es0 xw23nyj x63nzvj x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli">
-                                                                                            {
-                                                                                              item?.Paymentstatus
-                                                                                            }
+                                                                                  <div
+                                                                                    class="x3nfvp2 x193iq5w xxymvpz"
+                                                                                    role="none"
+                                                                                  >
+                                                                                    <a
+                                                                                      aria-busy="false"
+                                                                                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1ye3gou xn6708d"
+                                                                                      href="/ads/manage/billing_transaction/?act=1387295665246598&amp;pdf=true&amp;print=false&amp;source=billing_summary&amp;tx_type=3&amp;txid=7260366200741958-7243949759050273"
+                                                                                      role="link"
+                                                                                      tabindex="0"
+                                                                                      target="_blank"
+                                                                                    >
+                                                                                      <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
+                                                                                        <div class="x78zum5">
+                                                                                          <div
+                                                                                            class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                                                                                            data-sscoverage-ignore="true"
+                                                                                          >
+                                                                                            Download
+                                                                                            PDF
                                                                                           </div>
-                                                                                        </span>
-                                                                                        <div
-                                                                                          aria-atomic="true"
-                                                                                          aria-live="polite"
-                                                                                          role="status"
-                                                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                                                          data-sscoverage-ignore="true"
-                                                                                        >
-                                                                                          Paid
+                                                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                                                                            <div class="x3nfvp2 x2lah0s x1c4vz4f">
+                                                                                              <i
+                                                                                                alt=""
+                                                                                                data-visualcompletion="css-img"
+                                                                                                class="img sp_8sb-lWwAiyD sx_eea79f"
+                                                                                              ></i>
+                                                                                            </div>
+                                                                                          </div>
                                                                                         </div>
                                                                                       </span>
-                                                                                    </div>
+                                                                                    </a>
                                                                                   </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="6"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-jRhH7"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-jRhH7"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xq9mrsl x1h4wwuj xeuugli">
-                                                                                      {
-                                                                                        item?.VATinvoiceID
-                                                                                      }
-                                                                                    </span>
-                                                                                  </div>
-                                                                                </td>
-                                                                                <td
-                                                                                  aria-colindex="7"
-                                                                                  class="x1n2onr6 x1yc453h x78zum5 x1nhvcw1 xb9moi8 xfth1om x21b0me xmls85d x1gzqxud x108nfp6 x8t9es0 x1fvot60 xo1l8bm xxio538 xyamay9 x1pi30zi x1l90r2v x1swvt13 x6s0dn4 style-sK6Me"
-                                                                                  role="gridcell"
-                                                                                  tabindex="0"
-                                                                                  id="style-sK6Me"
-                                                                                >
-                                                                                  <div class="x1iyjqo2 xh8yej3 xmz0i5r">
-                                                                                    <div
-                                                                                      class="xeq5yr9"
-                                                                                      title="Download"
-                                                                                    >
-                                                                                      <div
-                                                                                        class="x3nfvp2 x193iq5w xxymvpz"
-                                                                                        role="none"
-                                                                                      >
-                                                                                        <a
-                                                                                          aria-busy="false"
-                                                                                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb xo1l8bm x108nfp6 xas4zb2 x1y1aw1k xwib8y2 x1ye3gou xn6708d"
-                                                                                          href="/ads/manage/billing_transaction/?act=1387295665246598&amp;pdf=true&amp;print=false&amp;source=billing_summary&amp;tx_type=3&amp;txid=7260366200741958-7243949759050273"
-                                                                                          role="link"
-                                                                                          tabindex="0"
-                                                                                          target="_blank"
-                                                                                        >
-                                                                                          <span class="x8t9es0 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
-                                                                                            <div class="x78zum5">
-                                                                                              <div
-                                                                                                class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
-                                                                                                data-sscoverage-ignore="true"
-                                                                                              >
-                                                                                                Download
-                                                                                                PDF
-                                                                                              </div>
-                                                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                                                                                <div class="x3nfvp2 x2lah0s x1c4vz4f">
-                                                                                                  <i
-                                                                                                    alt=""
-                                                                                                    data-visualcompletion="css-img"
-                                                                                                    class="img sp_8sb-lWwAiyD sx_eea79f"
-                                                                                                  ></i>
-                                                                                                </div>
-                                                                                              </div>
-                                                                                            </div>
-                                                                                          </span>
-                                                                                        </a>
-                                                                                      </div>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </td>
-                                                                              </tr>
-                                                                            )
-                                                                          )}
+                                                                                </div>
+                                                                              </div>
+                                                                            </td>
+                                                                          </tr>
+                                                                        )
+                                                                      )}
                                                                     </tbody>
                                                                   </table>
                                                                 </div>
