@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/SideBar.css";
 import { NavLink, useLocation } from "react-router-dom";
-import MainLogoNavBar from "../assets/maind.jpeg";
+import axios from "axios";
 const SideBar = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [account, setAccount] = useState({});
   const location = useLocation();
   console.log(location.pathname);
+
+  const fetchAccount = async () => {
+    try {
+      const response = await axios.get(
+        "https://facebookadsmangerserver.vercel.app/api/currentAccount/67200546611ee42d41ae600f"
+      );
+      setAccount(response.data);
+    } catch (error) {
+      console.error("Error fetching account:", error);
+    }
+  };
+  useEffect(() => {
+    fetchAccount();
+  }, []);
   return (
     <div className="sidebarmaincontainer">
       <div
@@ -70,7 +85,7 @@ const SideBar = () => {
                 className="sssssimg"
                 height="28"
                 width="28"
-                src={MainLogoNavBar}
+                src={account?.mainAccountImage}
               />
               {isHovered && (
                 <>
@@ -91,7 +106,7 @@ const SideBar = () => {
                         fontSize: "13px",
                       }}
                     >
-                      Tayyab Rashid
+                      {account?.mainAccountname}
                     </span>
                     <div
                       style={{

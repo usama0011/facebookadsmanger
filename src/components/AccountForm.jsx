@@ -1,8 +1,13 @@
 // src/pages/AccountForm.js
 import React, { useState } from "react";
+import { Form, Input, Button } from "antd";
 
 const AccountForm = ({
-  initialData = { currentAccountname: "" },
+  initialData = {
+    currentAccountname: "",
+    mainAccountname: "",
+    mainAccountImage: "",
+  },
   onSubmit,
 }) => {
   const [formData, setFormData] = useState(initialData);
@@ -12,24 +17,66 @@ const AccountForm = ({
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     onSubmit(formData);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Account Name:
-        <input
-          type="text"
+    <Form
+      layout="vertical"
+      initialValues={formData}
+      onFinish={handleSubmit}
+      style={{ maxWidth: "400px", margin: "0 auto" }}
+    >
+      <Form.Item
+        label="Account Name"
+        name="currentAccountname"
+        rules={[{ required: true, message: "Please enter the account name" }]}
+      >
+        <Input
           name="currentAccountname"
           value={formData.currentAccountname}
           onChange={handleChange}
         />
-      </label>
-      <button type="submit">Save</button>
-    </form>
+      </Form.Item>
+
+      <Form.Item
+        label="Main Account Name"
+        name="mainAccountname"
+        rules={[
+          { required: true, message: "Please enter the main account name" },
+        ]}
+      >
+        <Input
+          name="mainAccountname"
+          value={formData.mainAccountname}
+          onChange={handleChange}
+        />
+      </Form.Item>
+
+      <Form.Item
+        label="Main Account Image URL"
+        name="mainAccountImage"
+        rules={[
+          {
+            required: true,
+            message: "Please enter the main account image URL",
+          },
+        ]}
+      >
+        <Input
+          name="mainAccountImage"
+          value={formData.mainAccountImage}
+          onChange={handleChange}
+        />
+      </Form.Item>
+
+      <Form.Item>
+        <Button type="primary" htmlType="submit">
+          Save
+        </Button>
+      </Form.Item>
+    </Form>
   );
 };
 
