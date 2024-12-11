@@ -1578,9 +1578,7 @@ const EditCompaingThree = () => {
                                                                                                   marginTop:
                                                                                                     "-1px",
                                                                                                 }}
-                                                                                                src={
-                                                                                                  MainLogoImage
-                                                                                                }
+                                                                                                src="https://i.ibb.co/CwvMM0Q/Whats-App-Image-2024-12-11-at-6-06-33-PM.jpg"
                                                                                                 alt=""
                                                                                               />
                                                                                             </div>
@@ -1591,8 +1589,7 @@ const EditCompaingThree = () => {
                                                                                             class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
                                                                                             id="js_5h"
                                                                                           >
-                                                                                            ATech
-                                                                                            Guides
+                                                                                            Codzilla
                                                                                           </div>
                                                                                         </div>
                                                                                       </div>
@@ -3656,7 +3653,7 @@ const EditCompaingThree = () => {
                                                                                             aria-disabled="false"
                                                                                             class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1rffpxw xh8yej3"
                                                                                             type="text"
-                                                                                            value=" ATech Guides"
+                                                                                            value="Codzilla"
                                                                                           />
                                                                                         </div>
                                                                                       </div>
@@ -6745,9 +6742,7 @@ const EditCompaingThree = () => {
                                                                                                                                 <div class="x78zum5 x16dsc37 x1sxyh0">
                                                                                                                                   <img
                                                                                                                                     class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                                                                                                                                    src={
-                                                                                                                                      LOgoLogo
-                                                                                                                                    }
+                                                                                                                                    src="https://i.ibb.co/CwvMM0Q/Whats-App-Image-2024-12-11-at-6-06-33-PM.jpg"
                                                                                                                                     alt=""
                                                                                                                                   />
                                                                                                                                 </div>
@@ -6756,8 +6751,7 @@ const EditCompaingThree = () => {
                                                                                                                                     <div>
                                                                                                                                       <span class="x1fzdab9 x1f6kntn xuy8w9f">
                                                                                                                                         <span class="x1xlr1w8">
-                                                                                                                                          ATech
-                                                                                                                                          Guides
+                                                                                                                                          Codzilla
                                                                                                                                         </span>
                                                                                                                                       </span>
                                                                                                                                     </div>
@@ -6871,8 +6865,7 @@ const EditCompaingThree = () => {
                                                                                                                                               data-ad-preview="headline"
                                                                                                                                               dir=""
                                                                                                                                             >
-                                                                                                                                              ATech
-                                                                                                                                              Guides
+                                                                                                                                              Codzilla
                                                                                                                                             </span>
                                                                                                                                           </div>
                                                                                                                                         </div>
@@ -7944,14 +7937,11 @@ const EditCompaingThree = () => {
                                                                                                                               <div>
                                                                                                                                 <img
                                                                                                                                   class="_67w_ img"
-                                                                                                                                  src={
-                                                                                                                                    LOgoLogo
-                                                                                                                                  }
+                                                                                                                                  src="https://i.ibb.co/CwvMM0Q/Whats-App-Image-2024-12-11-at-6-06-33-PM.jpg"
                                                                                                                                   alt=""
                                                                                                                                 />
                                                                                                                                 <div class="_67x2">
-                                                                                                                                  ATech
-                                                                                                                                  Guides
+                                                                                                                                  Codzilla
                                                                                                                                   &nbsp;{" "}
                                                                                                                                   <div></div>
                                                                                                                                 </div>
