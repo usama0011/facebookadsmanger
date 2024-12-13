@@ -1,12 +1,27 @@
 import React, { useEffect, useState } from "react";
 import "../styles/SideBar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 const SideBar = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
   const [account, setAccount] = useState({});
   const location = useLocation();
   console.log(location.pathname);
+
+  const handleNavigation = (page) => {
+    if (page === "overviewaccount") {
+      navigate("/overviewaccount");
+    } else if (page === "reporting") {
+      navigate("/reporting");
+    } else if (page === "payment") {
+      navigate("/payment");
+    } else if (page === "mainnavigation") {
+      navigate("/mainnavigation");
+    } else {
+      navigate("/"); // Default to home
+    }
+  };
 
   const fetchAccount = async () => {
     try {
@@ -129,161 +144,152 @@ const SideBar = () => {
               )}
             </div>
           </li>
-          <NavLink to="/overviewaccount" style={{ textDecoration: "none" }}>
-            <li
-              style={
-                location.pathname === "/overviewaccount"
-                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
-                  : { textDecoration: "none" }
-              }
-            >
+
+          <li
+            onClick={() => handleNavigation("overviewaccount")}
+            style={
+              location.pathname === "/overviewaccount"
+                ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                : { textDecoration: "none" }
+            }
+          >
+            <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+              <div className="x3nfvp2">
+                <i
+                  alt=""
+                  data-visualcompletion="css-img"
+                  className="img style-sSl3X"
+                  id="style-sSl3X"
+                ></i>
+              </div>
+              <div className="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
+            </div>
+            {isHovered && (
+              <span style={{ marginLeft: "20px" }}>
+                <div
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  id="js_h"
+                >
+                  Account overview
+                </div>
+              </span>
+            )}
+          </li>
+
+          <li
+            onClick={() => handleNavigation("")}
+            style={
+              location.pathname === "/" ||
+              location.pathname.startsWith("/editcampaing/") ||
+              location.pathname.startsWith("/editcampaingtwo/") ||
+              location.pathname.startsWith("/editcampaingthree/")
+                ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                : { textDecoration: "none" }
+            }
+          >
+            {location.pathname === "/" ||
+            location.pathname.startsWith("/editcampaing/") ||
+            location.pathname.startsWith("/editcampaingtwo/") ||
+            location.pathname.startsWith("/editcampaingthree/") ? (
+              <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                <div class="x3nfvp2">
+                  <i
+                    alt=""
+                    data-visualcompletion="css-img"
+                    class="img style-bolNn"
+                    id="style-bolNn"
+                  ></i>
+                </div>
+              </div>
+            ) : (
+              <div class="">
+                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                  <div class="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      class="img style-9ysPi"
+                      id="style-9ysPi"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {isHovered && (
+              <span style={{ marginLeft: "20px" }}>
+                <div
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  id="js_h"
+                  style={
+                    location.pathname === "/" ||
+                    location.pathname.startsWith("/editcampaing/") ||
+                    location.pathname.startsWith("/editcampaingtwo/") ||
+                    location.pathname.startsWith("/editcampaingthree/")
+                      ? {
+                          textDecoration: "none",
+                          color: "#0866ff",
+                        }
+                      : { textDecoration: "none" }
+                  }
+                >
+                  Campaigns
+                </div>
+              </span>
+            )}
+          </li>
+
+          <li
+            onClick={() => handleNavigation("reporting")}
+            style={
+              location.pathname === "/reporting"
+                ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                : { textDecoration: "none" }
+            }
+          >
+            {location.pathname === "/reporting" ? (
+              <div class="">
+                <div class="x3nfvp2">
+                  <i
+                    alt=""
+                    data-visualcompletion="css-img"
+                    class="img style-K9LEW"
+                    id="style-K9LEW"
+                  ></i>
+                </div>
+              </div>
+            ) : (
               <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
                 <div className="x3nfvp2">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
-                    className="img style-sSl3X"
-                    id="style-sSl3X"
+                    className="img style-Gd5tE"
+                    id="style-Gd5tE"
                   ></i>
                 </div>
-                <div className="x13dflua xxziih7 x12w9bfk x10l6tqk x1fo6t33 xoo4vsp x78zum5 x6s0dn4 x11xpdln x3oybdh"></div>
               </div>
-              {isHovered && (
-                <span style={{ marginLeft: "20px" }}>
-                  <div
-                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                    id="js_h"
-                  >
-                    Account overview
-                  </div>
-                </span>
-              )}
-            </li>
-          </NavLink>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "myactivelink" : "")}
-            style={{ textDecoration: "none" }}
-          >
-            <li
-              style={
-                location.pathname === "/" ||
-                location.pathname.startsWith("/editcampaing/") ||
-                location.pathname.startsWith("/editcampaingtwo/") ||
-                location.pathname.startsWith("/editcampaingthree/")
-                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
-                  : { textDecoration: "none" }
-              }
-            >
-              {location.pathname === "/" ||
-              location.pathname.startsWith("/editcampaing/") ||
-              location.pathname.startsWith("/editcampaingtwo/") ||
-              location.pathname.startsWith("/editcampaingthree/") ? (
-                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                  <div class="x3nfvp2">
-                    <i
-                      alt=""
-                      data-visualcompletion="css-img"
-                      class="img style-bolNn"
-                      id="style-bolNn"
-                    ></i>
-                  </div>
-                </div>
-              ) : (
-                <div class="">
-                  <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                    <div class="x3nfvp2">
-                      <i
-                        alt=""
-                        data-visualcompletion="css-img"
-                        class="img style-9ysPi"
-                        id="style-9ysPi"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              )}
+            )}
 
-              {isHovered && (
-                <span style={{ marginLeft: "20px" }}>
-                  <div
-                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                    id="js_h"
-                    style={
-                      location.pathname === "/" ||
-                      location.pathname.startsWith("/editcampaing/") ||
-                      location.pathname.startsWith("/editcampaingtwo/") ||
-                      location.pathname.startsWith("/editcampaingthree/")
-                        ? {
-                            textDecoration: "none",
-                            color: "#0866ff",
-                          }
-                        : { textDecoration: "none" }
-                    }
-                  >
-                    Campaigns
-                  </div>
-                </span>
-              )}
-            </li>
-          </NavLink>
-
-          <NavLink
-            to="/reporting"
-            className={({ isActive }) => (isActive ? "myactivelink" : "")}
-            style={{ textDecoration: "none" }}
-          >
-            <li
-              style={
-                location.pathname === "/reporting"
-                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
-                  : { textDecoration: "none" }
-              }
-            >
-              {location.pathname === "/reporting" ? (
-                <div class="">
-                  <div class="x3nfvp2">
-                    <i
-                      alt=""
-                      data-visualcompletion="css-img"
-                      class="img style-K9LEW"
-                      id="style-K9LEW"
-                    ></i>
-                  </div>
+            {isHovered && (
+              <span style={{ marginLeft: "20px" }}>
+                <div
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  id="js_h"
+                  style={
+                    location.pathname === "/reporting"
+                      ? {
+                          textDecoration: "none",
+                          color: "#0866ff",
+                        }
+                      : { textDecoration: "none" }
+                  }
+                >
+                  Ads Reporting
                 </div>
-              ) : (
-                <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                  <div className="x3nfvp2">
-                    <i
-                      alt=""
-                      data-visualcompletion="css-img"
-                      className="img style-Gd5tE"
-                      id="style-Gd5tE"
-                    ></i>
-                  </div>
-                </div>
-              )}
-
-              {isHovered && (
-                <span style={{ marginLeft: "20px" }}>
-                  <div
-                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                    id="js_h"
-                    style={
-                      location.pathname === "/reporting"
-                        ? {
-                            textDecoration: "none",
-                            color: "#0866ff",
-                          }
-                        : { textDecoration: "none" }
-                    }
-                  >
-                    Ads Reporting
-                  </div>
-                </span>
-              )}
-            </li>
-          </NavLink>
+              </span>
+            )}
+          </li>
 
           <li>
             <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
@@ -307,63 +313,60 @@ const SideBar = () => {
               </span>
             )}
           </li>
-          <NavLink
-            to="/payment"
-            className={({ isActive }) => (isActive ? "myactivelink" : "")}
-            style={{ textDecoration: "none" }}
+
+          <li
+            onClick={() => handleNavigation("payment")}
+            style={
+              location.pathname === "/payment"
+                ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
+                : { textDecoration: "none" }
+            }
           >
-            <li
-              style={
-                location.pathname === "/payment"
-                  ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
-                  : { textDecoration: "none" }
-              }
-            >
-              {location.pathname === "/payment" ? (
+            {location.pathname === "/payment" ? (
+              <div class="">
                 <div class="">
-                  <div class="">
-                    <div class="x3nfvp2">
-                      <i
-                        alt=""
-                        data-visualcompletion="css-img"
-                        class="img sp_BCSohYmDE5w sx_4fb158"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                  <div className="x3nfvp2">
+                  <div class="x3nfvp2">
                     <i
                       alt=""
                       data-visualcompletion="css-img"
-                      className="img style-yZkhQ"
-                      id="style-yZkhQ"
+                      class="img sp_BCSohYmDE5w sx_4fb158"
                     ></i>
                   </div>
                 </div>
-              )}
+              </div>
+            ) : (
+              <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                <div className="x3nfvp2">
+                  <i
+                    alt=""
+                    data-visualcompletion="css-img"
+                    className="img style-yZkhQ"
+                    id="style-yZkhQ"
+                  ></i>
+                </div>
+              </div>
+            )}
 
-              {isHovered && (
-                <span style={{ marginLeft: "20px" }}>
-                  <div
-                    className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
-                    id="js_h"
-                    style={
-                      location.pathname === "/payment"
-                        ? {
-                            textDecoration: "none",
-                            color: "#0866ff",
-                          }
-                        : { textDecoration: "none" }
-                    }
-                  >
-                    Billing & payment
-                  </div>
-                </span>
-              )}
-            </li>
-          </NavLink>
+            {isHovered && (
+              <span style={{ marginLeft: "20px" }}>
+                <div
+                  className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
+                  id="js_h"
+                  style={
+                    location.pathname === "/payment"
+                      ? {
+                          textDecoration: "none",
+                          color: "#0866ff",
+                        }
+                      : { textDecoration: "none" }
+                  }
+                >
+                  Billing & payment
+                </div>
+              </span>
+            )}
+          </li>
+
           <li>
             <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
               <div className="x3nfvp2">
@@ -508,15 +511,16 @@ const SideBar = () => {
 
           <div className="search-icon">
             <div className="">
-              <div className="x3nfvp2 x2lah0s x1c4vz4f">
-                <NavLink to="/mainnavigation">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    className="img style-oF4KY"
-                    id="style-oF4KY"
-                  ></i>
-                </NavLink>
+              <div
+                onClick={() => handleNavigation("mainnavigation")}
+                className="x3nfvp2 x2lah0s x1c4vz4f"
+              >
+                <i
+                  alt=""
+                  data-visualcompletion="css-img"
+                  className="img style-oF4KY"
+                  id="style-oF4KY"
+                ></i>
               </div>
               ​
             </div>
