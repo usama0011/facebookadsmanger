@@ -43,6 +43,9 @@ const MainNavigation = () => {
         <Link to="/uploadreporting" className="nav-button view-ads-button">
           Upload Reporting
         </Link>
+        <Link to="/uploadReportingCSV" className="nav-button view-ads-button">
+          Upload CSV Reporting
+        </Link>
       </div>
     </div>
   );

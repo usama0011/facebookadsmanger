@@ -4488,10 +4488,10 @@ i.img {
   display: inline-block;
 }
 
-.yete .ant-table-tbody > tr {
+.yete > .ant-table-tbody > tr {
   padding: 0 !important;
 }
 
-.yete .ant-table-tbody > tr > td {
+.yete > .ant-table-tbody > tr > td {
   padding: 0px 8px !important;
 }

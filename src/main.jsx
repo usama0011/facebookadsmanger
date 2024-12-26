@@ -40,6 +40,8 @@ import EditAccount from "./pages/EditAccount";
 import UpooadReporting from "./pages/UpooadReporting";
 import ReportingCalendar from "./components/ReportingCalender";
 import SideBar from "./components/SideBar";
+import FBAReporting from "./pages/FBAReporting";
+import UploadReportingCSV from "./pages/UploadReportingCSV";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -151,8 +153,16 @@ const router = createBrowserRouter([
     element: <CreateAdsSet />,
   },
   {
+    path: "/uploadReportingCSV",
+    element: <UploadReportingCSV />,
+  },
+  {
     path: "/createcampaing",
     element: <CreateCampaing />,
+  },
+  {
+    path: "/FBAReporting",
+    element: <FBAReporting />,
   },
   {
     path: "/viewmyampaings",

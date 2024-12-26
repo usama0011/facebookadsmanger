@@ -12,6 +12,7 @@ import { Table } from "antd";
 import ReportingTableMain from "../components/ReportingTableMain";
 import SimpleTable from "./SimpleTable";
 import SideBar from "../components/SideBar";
+import FBAReporting from "./FBAReporting";
 
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -3658,7 +3659,7 @@ const Reporting = () => {
                                                     setLoadingProgress
                                                   }
                                                 /> */}
-                                                <SimpleTable
+                                                {/* <SimpleTable
                                                   progress={progress}
                                                   loading={loading}
                                                   loadingProgress={
@@ -3666,6 +3667,11 @@ const Reporting = () => {
                                                   }
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
+                                                /> */}
+                                                <FBAReporting
+                                                  selectedMetrics={
+                                                    selectedMetrics
+                                                  }
                                                 />
                                               </div>
                                             </div>
@@ -4365,16 +4371,27 @@ const Reporting = () => {
                                                                                                                 style={{
                                                                                                                   width:
                                                                                                                     "22px",
+                                                                                                                  minWidth:
+                                                                                                                    "22px",
                                                                                                                   height:
                                                                                                                     "22px",
                                                                                                                   border:
-                                                                                                                    "1px solid gainboro",
+                                                                                                                    "1px solid gainsboro",
                                                                                                                   outline:
                                                                                                                     "none",
                                                                                                                   marginRight:
                                                                                                                     "8px",
+                                                                                                                  borderRadius:
+                                                                                                                    "4px",
+                                                                                                                  appearance:
+                                                                                                                    "none", // Remove default checkbox styling
+                                                                                                                  backgroundColor:
+                                                                                                                    "white", // Set background to white
+                                                                                                                  cursor:
+                                                                                                                    "pointer", // Change cursor to pointer for better UX
                                                                                                                 }}
                                                                                                                 type="checkbox"
+                                                                                                                className="uniquecheckbox"
                                                                                                                 id={`metric-${index}-${idx}`}
                                                                                                                 value={
                                                                                                                   metric
@@ -4389,17 +4406,17 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   ) ||
                                                                                                                   [
+                                                                                                                    "Campaign name",
+                                                                                                                    "Ad set name",
+                                                                                                                    "Ad name",
+                                                                                                                    "Page name",
                                                                                                                     "Ad creative",
-                                                                                                                    "Delivery Reach",
-                                                                                                                    "Impressions",
-                                                                                                                    "Reach",
-                                                                                                                    "Frequency",
-                                                                                                                    "Delivery",
-                                                                                                                    "Results",
+                                                                                                                    "Placement",
+                                                                                                                    "Impression device",
                                                                                                                   ].includes(
                                                                                                                     metric
                                                                                                                   )
-                                                                                                                }
+                                                                                                                } // Keeps checkbox state in sync
                                                                                                               />
                                                                                                               <span
                                                                                                                 style={{
