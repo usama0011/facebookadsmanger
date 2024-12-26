@@ -3,8 +3,7 @@ import { Table, Button, Upload } from "antd";
 import "../styles/FBAReporting.css";
 import axios from "axios";
 
-const FBAReporting = ({ selectedMetrics }) => {
-  console.log(selectedMetrics);
+const FBAReporting = () => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   const [loading, setLoading] = useState(false);

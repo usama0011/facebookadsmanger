@@ -3668,11 +3668,7 @@ const Reporting = () => {
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
                                                 /> */}
-                                                <FBAReporting
-                                                  selectedMetrics={
-                                                    selectedMetrics
-                                                  }
-                                                />
+                                                <FBAReporting />
                                               </div>
                                             </div>
                                             <div>
