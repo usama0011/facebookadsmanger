@@ -220,43 +220,46 @@ const FBAReporting = ({ selectedMetrics }) => {
             }
             if (key === "Campaign Name") {
               const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
+
               return (
                 <div
                   style={{
                     color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
                   }}
                 >
-                  {value}
+                  {truncatedValue}
                 </div>
               );
             }
             if (key === "Ad Name") {
               const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
+
               return (
                 <div
                   style={{
-                    width: "200px", // Match the column width
-                    wordWrap: "break-word",
-                    whiteSpace: "normal",
                     color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
                   }}
                 >
-                  {value}
+                  {truncatedValue}
                 </div>
               );
             }
             if (key === "Ad Set Name") {
               const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
+
               return (
                 <div
                   style={{
-                    width: "200px", // Match the column width
-                    wordWrap: "break-word",
-                    whiteSpace: "normal",
                     color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
                   }}
                 >
-                  {value}
+                  {truncatedValue}
                 </div>
               );
             }
