@@ -842,7 +842,17 @@ const Reporting = () => {
   const [hoverDate, setHoverDate] = useState(null);
   const [selectingEnd, setSelectingEnd] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date());
-  const [selectedMetrics, setSelectedMetrics] = useState([]);
+  const [selectedMetrics, setSelectedMetrics] = useState([
+    "Page Name",
+    "Campaign Name",
+    "Ad Set Name",
+    "Ad Name",
+    "Ad Creative",
+    "Impression Device",
+    "Placement",
+    "Amount Spent",
+    "Impressions",
+  ]);
 
   // Function to handle checkbox changes
 
@@ -3668,7 +3678,11 @@ const Reporting = () => {
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
                                                 /> */}
-                                                <FBAReporting />
+                                                <FBAReporting
+                                                  selectedMetrics={
+                                                    selectedMetrics
+                                                  }
+                                                />
                                               </div>
                                             </div>
                                             <div>

@@ -3,21 +3,11 @@ import { Table, Button, Upload } from "antd";
 import "../styles/FBAReporting.css";
 import axios from "axios";
 
-const FBAReporting = () => {
+const FBAReporting = ({ selectedMetrics }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [selectedMetrics, setSelectedMetrics] = useState([
-    "Page Name",
-    "Campaign Name",
-    "Ad Set Name",
-    "Ad Name",
-    "Ad Creative",
-    "Impression Device",
-    "Placement",
-    "Amount Spent",
-    "Impressions",
-  ]);
+
   const calculateRowSpan = (data, rowIndex, key) => {
     if (
       rowIndex === 0 ||
@@ -46,26 +36,11 @@ const FBAReporting = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "https://facebookadsmangerserver.vercel.app/api/reporting/get-data"
+        "http://localhost:3001/api/reporting/get-data"
       );
       setLoading(false);
       const csvData = response.data
         .map((row) => {
-          row["Impression Device"] =
-            row["Impression Device"] && isNaN(row["Impression Device"])
-              ? row["Impression Device"]
-              : "All";
-          row["Placement"] =
-            row["Placement"] && isNaN(row["Placement"])
-              ? row["Placement"]
-              : "All";
-
-          row["Results"] = parseInt(row["Results"] || 0, 10);
-          row["Link Clicks"] = parseInt(row["Link Clicks"] || 0, 10);
-          row["Impressions"] = parseInt(row["Impressions"] || 0, 10);
-          row["Reach"] = parseInt(row["Reach"] || 0, 10);
-          row["Amount Spent"] = parseFloat(row["Amount Spent"] || 0);
-
           if (
             row["Ad Creative"] &&
             typeof row["Ad Creative"] === "string" &&
@@ -124,58 +99,6 @@ const FBAReporting = () => {
             (value) => value !== "—" && value !== 0 && value !== "All"
           )
         );
-
-      const pageNameSums = {}; // To store sums for each page name
-      const campaignSums = {}; // To store sums for each campaign
-
-      csvData.forEach((row) => {
-        const pageName = row["Page Name"];
-        const campaignName = row["Campaign Name"];
-        const impressionDevice = row["Impression Device"];
-
-        if (!campaignSums[campaignName]) {
-          campaignSums[campaignName] = {
-            sum: 0,
-            impressions: 0,
-            reach: 0,
-            results: 0,
-            linkClicks: 0,
-            devices: new Set(),
-          };
-        }
-
-        if (!campaignSums[campaignName].devices.has(impressionDevice)) {
-          campaignSums[campaignName].sum += row["Amount Spent"] || 0;
-          campaignSums[campaignName].impressions += row["Impressions"] || 0;
-          campaignSums[campaignName].reach += row["Reach"] || 0;
-          campaignSums[campaignName].results += row["Results"] || 0;
-          campaignSums[campaignName].linkClicks += row["Link Clicks"] || 0;
-          campaignSums[campaignName].devices.add(impressionDevice);
-        }
-
-        if (!pageNameSums[pageName]) {
-          pageNameSums[pageName] = {
-            sum: 0,
-            impressions: 0,
-            reach: 0,
-            results: 0,
-            linkClicks: 0,
-            campaigns: new Set(),
-          };
-        }
-
-        if (!pageNameSums[pageName].campaigns.has(campaignName)) {
-          // Add the correct campaign sums to the page sums
-          pageNameSums[pageName].sum += campaignSums[campaignName].sum;
-          pageNameSums[pageName].impressions +=
-            campaignSums[campaignName].impressions;
-          pageNameSums[pageName].reach += campaignSums[campaignName].reach;
-          pageNameSums[pageName].results += campaignSums[campaignName].results;
-          pageNameSums[pageName].linkClicks +=
-            campaignSums[campaignName].linkClicks;
-          pageNameSums[pageName].campaigns.add(campaignName);
-        }
-      });
 
       const updatedColumns = Object.keys(csvData[0] || {})
         .filter(
@@ -269,7 +192,7 @@ const FBAReporting = () => {
               : key === "Amount Spent"
               ? 150
               : key === "Impression Device"
-              ? 270
+              ? 240
               : key === "Link Clicks"
               ? 150
               : 200,
@@ -292,33 +215,6 @@ const FBAReporting = () => {
             return {};
           },
           render: (value, record, index) => {
-            if (key === "Amount Spent") {
-              const pageName = record["Page Name"];
-              const campaignName = record["Campaign Name"];
-              const rowSpan = calculateRowSpan(csvData, index, "Page Name");
-              const campaignRowSpan = calculateRowSpan(
-                csvData,
-                index,
-                "Campaign Name"
-              );
-
-              // Show the calculated sum for each page name in the first row
-              if (
-                rowSpan > 0 &&
-                index ===
-                  csvData.findIndex((row) => row["Page Name"] === pageName)
-              ) {
-                return pageNameSums[pageName]?.sum.toFixed(2) || "0.00";
-              }
-
-              // Show the calculated sum for each campaign in the first row of the campaign
-              if (campaignRowSpan > 0) {
-                return campaignSums[campaignName]?.sum.toFixed(2) || "0.00";
-              }
-
-              // For other rows, show the original value without modification
-              return record["Amount Spent"]?.toFixed(2) || "0.00";
-            }
             if (key === "Page Name") {
               return <div style={{ color: "#1c2b33" }}>{value}</div>;
             }
@@ -464,35 +360,6 @@ const FBAReporting = () => {
                 </div>
               );
             }
-            if (
-              ["Impressions", "Reach", "Results", "Link Clicks"].includes(key)
-            ) {
-              const pageName = record["Page Name"];
-              const campaignName = record["Campaign Name"];
-              const rowSpan = calculateRowSpan(csvData, index, "Page Name");
-              const campaignRowSpan = calculateRowSpan(
-                csvData,
-                index,
-                "Campaign Name"
-              );
-
-              // Show the calculated sum for each page name's metrics in the first row
-              if (
-                rowSpan > 0 &&
-                index ===
-                  csvData.findIndex((row) => row["Page Name"] === pageName)
-              ) {
-                return pageNameSums[pageName]?.[key.toLowerCase()] || 0;
-              }
-
-              // Show the calculated sum for each campaign's metrics in the first row of the campaign
-              if (campaignRowSpan > 0) {
-                return campaignSums[campaignName]?.[key.toLowerCase()] || 0;
-              }
-
-              // For other rows, show the original value without modification
-              return record[key] || 0;
-            }
 
             if (key === "Ad Creative") {
               const rowSpan = calculateRowSpan(
@@ -567,19 +434,81 @@ const FBAReporting = () => {
         loading={loading}
         pagination={false}
         rowKey={(record, index) => index}
-        scroll={{ y: 380 }} // Adds vertical scroll
+        scroll={{ y: 555 }} // Adds vertical scroll
         sticky // Makes the table headers sticky
         rowClassName={getRowClassName}
         summary={() => (
           <Table.Summary fixed>
             <Table.Summary.Row>
-              {columns.map((col, index) => (
-                <Table.Summary.Cell key={index} index={index}>
-                  {summary[col.dataIndex] !== undefined
-                    ? summary[col.dataIndex].toFixed(2)
-                    : "—"}
-                </Table.Summary.Cell>
-              ))}
+              {columns.map((col, index) => {
+                if (col.dataIndex === "Page Name") {
+                  return (
+                    <Table.Summary.Cell key={index} index={index}>
+                      <div>
+                        <div className="_2pi7">
+                          <div className="_68tl style-BF6vh" id="style-BF6vh">
+                            <div className="_2eqm style-msgLz" id="style-msgLz">
+                              <div className="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                                <div className="_3qn7 _61-0 _2fyh _3qnf">
+                                  <div className="_3qn7 _61-0 _2fyi _3qng">
+                                    <div className="xmi5d70 x1fvot60 xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli">
+                                      Total results
+                                    </div>
+                                  </div>
+                                  <div className="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                    56/56 rows displayed
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Table.Summary.Cell>
+                  );
+                }
+                if (col.dataIndex === "Amount Spent") {
+                  return (
+                    <Table.Summary.Cell
+                      style={{ border: "none" }}
+                      key={index}
+                      index={index}
+                    >
+                      <div class="_e9n">
+                        <div class="">
+                          <div
+                            geotextcolor="value"
+                            data-hover="tooltip"
+                            data-tooltip-display="overflow"
+                            data-tooltip-text-direction="auto"
+                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                          >
+                            <span class="_3dfi _3dfj">$75,087</span>
+                          </div>
+                          <div
+                            class="ellipsis _1ha4"
+                            data-hover="tooltip"
+                            data-tooltip-display="overflow"
+                            data-tooltip-text-direction="auto"
+                          >
+                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                              Total Spent
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Table.Summary.Cell>
+                  );
+                }
+
+                return (
+                  <Table.Summary.Cell key={index} index={index}>
+                    {summary[col.dataIndex] !== undefined
+                      ? summary[col.dataIndex].toFixed(2)
+                      : ""}
+                  </Table.Summary.Cell>
+                );
+              })}
             </Table.Summary.Row>
           </Table.Summary>
         )}
