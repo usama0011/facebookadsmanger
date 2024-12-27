@@ -36,7 +36,7 @@ const FBAReporting = ({ selectedMetrics }) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "http://localhost:3001/api/reporting/get-data"
+        "https://facebookadsmangerserver.vercel.app/api/reporting/get-data"
       );
       setLoading(false);
       const csvData = response.data
