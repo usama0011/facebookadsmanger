@@ -3,12 +3,19 @@ import { Table, Button, Upload } from "antd";
 import "../styles/FBAReporting.css";
 import axios from "axios";
 
-const FBAReporting = ({ selectedMetrics }) => {
+const FBAReporting = () => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(100);
+  const [total, setTotal] = useState(0); // Total records
 
   const calculateRowSpan = (data, rowIndex, key) => {
+    if (!data || !data[rowIndex] || !key) {
+      return 0; // Return 0 if data or key is not available
+    }
+
     if (
       rowIndex === 0 ||
       JSON.stringify(data[rowIndex][key]) !==
@@ -32,14 +39,18 @@ const FBAReporting = ({ selectedMetrics }) => {
     return 0; // Hide duplicate rows
   };
 
-  const fetchData = async () => {
+  const fetchData = async (page = 1, pageSize = 100) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        "https://facebookadsmangerserver.vercel.app/api/reporting/get-data"
+        `https://facebookadsmangerserver.vercel.app/api/reporting/get-data?page=${page}&pageSize=${pageSize}`
       );
-      setLoading(false);
-      const csvData = response.data
+
+      const { data: fetchedData, total: fetchedTotal } = response.data;
+      if (fetchedData && fetchedData.length > 0) {
+      }
+      // Map and process the fetched data
+      const csvData = fetchedData
         .map((row) => {
           if (
             row["Ad Creative"] &&
@@ -100,6 +111,7 @@ const FBAReporting = ({ selectedMetrics }) => {
           )
         );
 
+      // Dynamically generate columns based on the data keys
       const updatedColumns = Object.keys(csvData[0] || {})
         .filter(
           (key) =>
@@ -197,6 +209,10 @@ const FBAReporting = ({ selectedMetrics }) => {
               ? 150
               : 200,
           onCell: (record, rowIndex) => {
+            if (!csvData || !csvData[rowIndex]) {
+              return {}; // Return an empty object if data is not available
+            }
+
             if (
               [
                 "Page Name",
@@ -214,6 +230,7 @@ const FBAReporting = ({ selectedMetrics }) => {
             }
             return {};
           },
+
           render: (value, record, index) => {
             if (key === "Page Name") {
               return <div style={{ color: "#1c2b33" }}>{value}</div>;
@@ -390,9 +407,14 @@ const FBAReporting = ({ selectedMetrics }) => {
           },
         }));
 
-      setData(csvData);
+      setData((prevData) => [...prevData, ...csvData]); // Append new data for pagination
       setColumns(updatedColumns);
-    } catch (error) {}
+      setTotal(fetchedTotal); // Set the total count
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      console.error("Error fetching data:", error);
+    }
   };
 
   const calculateSummary = (data) => {
@@ -414,16 +436,305 @@ const FBAReporting = ({ selectedMetrics }) => {
   };
 
   const summary = calculateSummary(data);
-  const getRowClassName = (record, index) => {
-    // Check if the row is the first for a specific "Page Name"
-    const isFirstRowForPageName =
-      index ===
-      data.findIndex((row) => row["Page Name"] === record["Page Name"]);
-
-    // Apply a unique class only for the first row
-    return isFirstRowForPageName ? "highlight-first-cell-row" : "";
+  const handleScroll = (event) => {
+    const { scrollTop, scrollHeight, clientHeight } = event.target;
+    if (scrollTop + clientHeight >= scrollHeight && data.length < total) {
+      fetchData(currentPage + 1, pageSize); // Load next page
+    }
   };
+  // Recalculate columns dynamically when data changes
+  useEffect(() => {
+    if (data?.length > 0) {
+      const updatedColumns = Object.keys(data[0])
+        .filter(
+          (key) =>
+            key !== "Page ID" &&
+            key !== "_id" &&
+            key !== "Entry Date" &&
+            key !== "__v" &&
+            key !== "Results" &&
+            key !== "Ad Creative Key"
+        )
+        .map((key) => ({
+          title: (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "flex-start", // Align items to the top
+                justifyContent: "flex-start", // Align items horizontally to the start
+                minWidth: "120px",
+                minHeight: "50px",
+              }}
+            >
+              <div class="x1vjfegm xsgj6o6 x1gslohp">
+                <div class="_3qn7 _61-0 _2fyh _3qnf">
+                  <div class="_3qn7 _61-0 _2fyi _3qnf">
+                    <div
+                      role="columnheader"
+                      tabindex="-1"
+                      data-interactable="|mouseover|"
+                    >
+                      <span
+                        aria-level="2"
+                        class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
+                        role="heading"
+                      >
+                        <div class="_90u_ style-rFHj4" id="style-rFHj4">
+                          <div class="_4ik4 _4ik5 style-qAlZS" id="style-qAlZS">
+                            <div id="style-zqMp6" class="style-zqMp6">
+                              {key}
+                            </div>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
+                </div>
+              </div>
+              <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
+                <div class="x1gryazu xxk0z11">
+                  <div>
+                    <button
+                      aria-pressed="false"
+                      type="button"
+                      aria-disabled="false"
+                      class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-X4qQs"
+                      id="style-X4qQs"
+                    >
+                      <div class="_43rl">
+                        <i
+                          aria-hidden="true"
+                          class="_271o img style-DgV47"
+                          alt=""
+                          data-visualcompletion="css-img"
+                          id="style-DgV47"
+                        ></i>
+                        <span class="accessible_elem">
+                          Open Inline Column Action Menu
+                        </span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ),
+          dataIndex: key,
+          key,
+          width:
+            key === "Page Name"
+              ? 150
+              : key === "Campaign Name"
+              ? 230
+              : key === "Ad Set Name"
+              ? 230
+              : key === "Ad Name"
+              ? 230
+              : key === "Ad Creative"
+              ? 300
+              : key === "Placement"
+              ? 180
+              : key === "Amount Spent"
+              ? 150
+              : key === "Impression Device"
+              ? 240
+              : key === "Link Clicks"
+              ? 150
+              : 200,
+          onCell: (record, rowIndex) => {
+            if (
+              [
+                "Page Name",
+                "Campaign Name",
+                "Ad Set Name",
+                "Ad Name",
+                "Ad Creative",
+                "Impression Device",
+              ].includes(key)
+            ) {
+              const spanKey = key === "Ad Creative" ? "Ad Creative Key" : key;
+              return {
+                rowSpan: calculateRowSpan(data, rowIndex, spanKey),
+              };
+            }
+            return {};
+          },
+          render: (value, record, index) => {
+            if (key === "Page Name") {
+              return <div style={{ color: "#1c2b33" }}>{value}</div>;
+            }
+            if (key === "Campaign Name") {
+              const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
 
+              return (
+                <div
+                  style={{
+                    color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
+                  }}
+                >
+                  {truncatedValue}
+                </div>
+              );
+            }
+            if (key === "Ad Name") {
+              const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
+
+              return (
+                <div
+                  style={{
+                    color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
+                  }}
+                >
+                  {truncatedValue}
+                </div>
+              );
+            }
+            if (key === "Ad Set Name") {
+              const isAll = value === "All";
+              const truncatedValue =
+                value && value.length > 25 ? value.slice(0, 25) + "..." : value;
+
+              return (
+                <div
+                  style={{
+                    color: isAll ? "#1c2b33" : "#0a78be", // Dynamic color assignment
+                  }}
+                >
+                  {truncatedValue}
+                </div>
+              );
+            }
+            if (key === "Impression Device") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    width: "200px", // Match the column width
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Placement") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    width: "200px", // Match the column width
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Amount Spent") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    width: "200px", // Match the column width
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Reach") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Results") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Link Clicks") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+            if (key === "Ad Creative") {
+              return (
+                <div
+                  style={{
+                    width: "280px", // Match the column width
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                  }}
+                >
+                  {value}
+                </div>
+              );
+            }
+
+            if (key === "Ad Creative") {
+              const rowSpan = calculateRowSpan(data, index, "Ad Creative Key");
+              if (rowSpan === 0) return null; // Hide duplicates
+              if (record[key] === "All") return "All"; // Show "All" explicitly
+            }
+
+            if (
+              [
+                "Page Name",
+                "Campaign Name",
+                "Ad Set Name",
+                "Ad Name",
+                "Impression Device",
+              ].includes(key)
+            ) {
+              const rowSpan = calculateRowSpan(data, index, key);
+              if (rowSpan === 0) return null; // Hide duplicates
+            }
+            return value !== undefined && value !== null ? value : "—";
+          },
+        }));
+
+      setColumns(updatedColumns);
+    }
+  }, [data]); // Recalculate columns when data changes
   useEffect(() => {
     fetchData();
   }, []);
@@ -437,9 +748,9 @@ const FBAReporting = ({ selectedMetrics }) => {
         loading={loading}
         pagination={false}
         rowKey={(record, index) => index}
-        scroll={{ y: 555 }} // Adds vertical scroll
-        sticky // Makes the table headers sticky
-        rowClassName={getRowClassName}
+        scroll={{ y: 555 }}
+        sticky
+        onScroll={handleScroll} // Attach scroll event
         summary={() => (
           <Table.Summary fixed>
             <Table.Summary.Row>
@@ -519,5 +830,4 @@ const FBAReporting = ({ selectedMetrics }) => {
     </div>
   );
 };
-
 export default FBAReporting;
