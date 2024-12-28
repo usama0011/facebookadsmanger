@@ -417,25 +417,6 @@ const FBAReporting = () => {
     }
   };
 
-  const calculateSummary = (data) => {
-    const totals = {
-      "Amount Spent": 0,
-      Impressions: 0,
-      Reach: 0,
-      Results: 0,
-      "Link Clicks": 0,
-    };
-    data.forEach((row) => {
-      totals["Amount Spent"] += row["Amount Spent"] || 0;
-      totals.Impressions += row.Impressions || 0;
-      totals.Reach += row.Reach || 0;
-      totals.Results += row.Results || 0;
-      totals["Link Clicks"] += row["Link Clicks"] || 0;
-    });
-    return totals;
-  };
-
-  const summary = calculateSummary(data);
   const handleScroll = (event) => {
     const { scrollTop, scrollHeight, clientHeight } = event.target;
     if (scrollTop + clientHeight >= scrollHeight && data.length < total) {
@@ -751,81 +732,6 @@ const FBAReporting = () => {
         scroll={{ y: 555 }}
         sticky
         onScroll={handleScroll} // Attach scroll event
-        summary={() => (
-          <Table.Summary fixed>
-            <Table.Summary.Row>
-              {columns.map((col, index) => {
-                if (col.dataIndex === "Page Name") {
-                  return (
-                    <Table.Summary.Cell key={index} index={index}>
-                      <div>
-                        <div className="_2pi7">
-                          <div className="_68tl style-BF6vh" id="style-BF6vh">
-                            <div className="_2eqm style-msgLz" id="style-msgLz">
-                              <div className="_2eqm _3qn7 _61-0 _2fyi _3qng">
-                                <div className="_3qn7 _61-0 _2fyh _3qnf">
-                                  <div className="_3qn7 _61-0 _2fyi _3qng">
-                                    <div className="xmi5d70 x1fvot60 xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli">
-                                      Total results
-                                    </div>
-                                  </div>
-                                  <div className="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                    56/56 rows displayed
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Table.Summary.Cell>
-                  );
-                }
-                if (col.dataIndex === "Amount Spent") {
-                  return (
-                    <Table.Summary.Cell
-                      style={{ border: "none" }}
-                      key={index}
-                      index={index}
-                    >
-                      <div class="_e9n">
-                        <div class="">
-                          <div
-                            geotextcolor="value"
-                            data-hover="tooltip"
-                            data-tooltip-display="overflow"
-                            data-tooltip-text-direction="auto"
-                            class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
-                          >
-                            <span class="_3dfi _3dfj">$75,087</span>
-                          </div>
-                          <div
-                            class="ellipsis _1ha4"
-                            data-hover="tooltip"
-                            data-tooltip-display="overflow"
-                            data-tooltip-text-direction="auto"
-                          >
-                            <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
-                              Total Spent
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Table.Summary.Cell>
-                  );
-                }
-
-                return (
-                  <Table.Summary.Cell key={index} index={index}>
-                    {summary[col.dataIndex] !== undefined
-                      ? summary[col.dataIndex].toFixed(2)
-                      : ""}
-                  </Table.Summary.Cell>
-                );
-              })}
-            </Table.Summary.Row>
-          </Table.Summary>
-        )}
       />
     </div>
   );
