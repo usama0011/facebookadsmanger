@@ -3,14 +3,14 @@ import { Table, Button, Upload } from "antd";
 import "../styles/FBAReporting.css";
 import axios from "axios";
 
-const FBAReporting = () => {
+const FBAReporting = ({ finalStartDate, finalEndDate }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(100);
   const [total, setTotal] = useState(0); // Total records
-
+  const [progress, setProgress] = useState(0);
   const calculateRowSpan = (data, rowIndex, key) => {
     if (!data || !data[rowIndex] || !key) {
       return 0; // Return 0 if data or key is not available
@@ -42,6 +42,8 @@ const FBAReporting = () => {
   const fetchData = async (page = 1, pageSize = 100) => {
     try {
       setLoading(true);
+      setProgress(0); // Reset progress
+      simulateProgress(); // Start simulating the progress bar
       const response = await axios.get(
         `https://facebookadsmangerserver.vercel.app/api/reporting/get-data?page=${page}&pageSize=${pageSize}`
       );
@@ -414,9 +416,24 @@ const FBAReporting = () => {
     } catch (error) {
       setLoading(false);
       console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false);
+      setProgress(100); // Complete the progress bar
+      setTimeout(() => setProgress(0), 500); // Reset progress after completion
     }
   };
-
+  const simulateProgress = () => {
+    let progressInterval;
+    progressInterval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 90) {
+          clearInterval(progressInterval);
+          return prev;
+        }
+        return prev + 10; // Increment progress
+      });
+    }, 200); // Adjust interval speed as needed
+  };
   const handleScroll = (event) => {
     const { scrollTop, scrollHeight, clientHeight } = event.target;
     if (scrollTop + clientHeight >= scrollHeight && data.length < total) {
@@ -719,18 +736,277 @@ const FBAReporting = () => {
   useEffect(() => {
     fetchData();
   }, []);
+  const calculateSummary = (data) => {
+    const totals = {
+      "Amount Spent": 0,
+      Impressions: 0,
+      Reach: 0,
+      Results: 0,
+      "Link Clicks": 0,
+    };
+    data?.forEach((row) => {
+      totals["Amount Spent"] += row["Amount Spent"] || 0;
+      totals.Impressions += row.Impressions || 0;
+      totals.Reach += row.Reach || 0;
+      totals.Results += row.Results || 0;
+      totals["Link Clicks"] += row["Link Clicks"] || 0;
+    });
+    return totals;
+  };
 
+  const summary = calculateSummary(data);
   return (
     <div className="testmyreproing">
+      {/* Progress Bar */}
+      {/* <div className="loading-baroo">
+        <div
+          className="loading-progressoo"
+          style={{ width: `${progress}%` }}
+        ></div>
+      </div> */}
       <Table
         dataSource={data}
         columns={columns}
         bordered
-        loading={loading}
         pagination={false}
         rowKey={(record, index) => index}
         scroll={{ y: 555 }}
         sticky
+        summary={() => (
+          <Table.Summary fixed>
+            <Table.Summary.Row>
+              {columns.map((col, index) => (
+                <Table.Summary.Cell key={index} index={index}>
+                  {col.dataIndex === "Page Name" ? (
+                    <div>
+                      <div className="_2pi7">
+                        <div className="_68tl style-BF6vh" id="style-BF6vh">
+                          <div className="_2eqm style-msgLz" id="style-msgLz">
+                            <div className="_2eqm _3qn7 _61-0 _2fyi _3qng">
+                              <div className="_3qn7 _61-0 _2fyh _3qnf">
+                                <div className="_3qn7 _61-0 _2fyi _3qng">
+                                  <div className="xmi5d70 x1fvot60 xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x117nqv4 xeuugli">
+                                    Total results
+                                  </div>
+                                </div>
+                                <div className="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
+                                  56/56 rows displayed
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Amount Spent" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            ${data[0]?.[col.dataIndex]?.toLocaleString()}
+                          </span>
+                        </div>
+                        <div
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Total Spent
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Impressions" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            {data[0]?.[col.dataIndex]}
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Total
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "CPC (cost per link click)" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            ${data[0]?.[col.dataIndex]}
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Per Action
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Reach" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            {data[0]?.[col.dataIndex]}
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Accounts Centre accounts
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Link Clicks" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            {data[0]?.[col.dataIndex]}
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Total
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "CPM (cost per 1,000 impressions)" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            ${data[0]?.[col.dataIndex]}
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Per 1,000 Impressions
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "CTR (all)" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            {data[0]?.[col.dataIndex]}%
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Per 1,000 Impressions
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Campaign Name" ||
+                    col.dataIndex === "Ad Set Name" ||
+                    col.dataIndex === "Ad Name" ||
+                    col.dataIndex === "Impression Device" ||
+                    col.dataIndex === "Placement" ||
+                    col.dataIndex === "Ad Creative" ? (
+                    <div></div>
+                  ) : (
+                    <div>{data[0]?.[col.dataIndex] || "N/A"}</div>
+                  )}
+                </Table.Summary.Cell>
+              ))}
+            </Table.Summary.Row>
+          </Table.Summary>
+        )}
         onScroll={handleScroll} // Attach scroll event
       />
     </div>

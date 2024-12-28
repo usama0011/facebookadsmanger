@@ -104,3 +104,24 @@
 .testmyreproing .ant-table-tbody > tr {
   padding: 10px 8px !important;
 }
+
+.testmyreproing {
+  position: relative;
+}
+
+.loading-baroo {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 70px;
+  z-index: 999;
+  background-color: #f0f0f0; /* Background for the progress bar container */
+  overflow: hidden;
+}
+
+.loading-progressoo {
+  height: 100%;
+  background-color: #1890ff; /* Progress bar color */
+  transition: width 0.2s ease-in-out; /* Smooth animation */
+  width: 0;
+}

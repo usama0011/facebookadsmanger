@@ -865,27 +865,6 @@ const Reporting = () => {
     }
   };
 
-  const fetchCampaigns = async () => {
-    try {
-      setLoading(true); // Start loading state
-      setError(""); // Clear previous errors
-      const response = await axios.get(
-        "https://facebookadsmangerserver.vercel.app/api/newcampaing",
-        {
-          params: {
-            startDate: formatDate(startDate),
-            endDate: formatDate(endDate),
-          },
-        }
-      );
-      setCampaigns(response.data);
-    } catch (err) {
-      setError("Error fetching campaigns");
-    } finally {
-      setLoading(false); // End loading state
-    }
-  };
-
   const handleDayMouseEnter = (date) => {
     if (startDate && !endDate) {
       setHoverDate(date);
@@ -930,7 +909,6 @@ const Reporting = () => {
       console.log("Fetching data for range:", startDate, endDate);
       setFinalStartDate(startDate); // Update the final start date
       setFinalEndDate(endDate); // Update the final end date
-      fetchCampaigns(); // Fetch the data
     } else {
       alert("Please select both start and end dates.");
     }
@@ -1623,8 +1601,6 @@ const Reporting = () => {
   };
 
   const columns = [...baseColumns, ...dynamicColumns];
-
-  console.log(startDate, endDate);
 
   // Determine the text to display based on the selected date
   const isCurrentMonth = (startDate, endDate) => {
@@ -3673,7 +3649,7 @@ const Reporting = () => {
                                                   progress={progress}
                                                   loading={loading}
                                                   loadingProgress={
-                                                    loadingProgress
+                                                    loadingProgres
                                                   }
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
@@ -3682,6 +3658,8 @@ const Reporting = () => {
                                                   selectedMetrics={
                                                     selectedMetrics
                                                   }
+                                                  finalStartDate={startDate}
+                                                  finalEndDate={endDate}
                                                 />
                                               </div>
                                             </div>
