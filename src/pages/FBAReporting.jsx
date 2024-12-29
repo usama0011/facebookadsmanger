@@ -568,14 +568,14 @@ const FBAReporting = ({ startDate, endDate }) => {
   }, [formattedStartDate, formattedEndDate]);
 
   return (
-    <div className="testmyreproing">
+    <div className="testmyreproing" style={{ position: "relative" }}>
       <Table
         dataSource={data}
         columns={columns}
         bordered
         pagination={false}
         rowKey={(record, index) => index}
-        scroll={{ y: 555 }} // Adds vertical scroll
+        scroll={{ y: 570 }} // Adds vertical scroll
         sticky // Makes the table headers sticky
         title={() => (
           <div style={{ position: "relative" }}>

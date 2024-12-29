@@ -3610,7 +3610,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "690px",
+                                                  height: "725px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
@@ -3618,27 +3618,6 @@ const Reporting = () => {
                                                   whiteSpace: "nowrap", // Prevents table cells from wrapping, ensuring the table extends horizontally
                                                 }}
                                               >
-                                                {/* <ReportingTableMain
-                                                  startDate={finalStartDate}
-                                                  endDate={finalEndDate}
-                                                  loading={loading}
-                                                  setLoading={setLoading}
-                                                  loadingProgress={
-                                                    loadingProgress
-                                                  }
-                                                  setLoadingProgress={
-                                                    setLoadingProgress
-                                                  }
-                                                /> */}
-                                                {/* <SimpleTable
-                                                  progress={progress}
-                                                  loading={loading}
-                                                  loadingProgress={
-                                                    loadingProgres
-                                                  }
-                                                  startDate={finalStartDate}
-                                                  endDate={finalEndDate}
-                                                /> */}
                                                 <FBAReporting
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
