@@ -579,12 +579,11 @@ const FBAReporting = ({ startDate, endDate }) => {
         sticky // Makes the table headers sticky
         title={() => (
           <div style={{ position: "relative" }}>
-            <div>Custom Table Header</div>
             {loadingProgress > 0 && (
               <div
                 style={{
                   position: "absolute",
-                  top: "106px",
+                  top: "86px",
                   left: "-15px",
                   width: `${loadingProgress}%`,
                   height: "4px",
