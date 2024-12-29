@@ -4079,7 +4079,10 @@ const CompaingsData = ({
                                 <div class="_e9-vat">
                                   <div>
                                     <div class="ell-1jx _1h-tgr">
-                                      <div class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656">
+                                      <div
+                                        style={{ fontSize: "14px" }}
+                                        class="xt0-wmx xmi-ayr xw2-5dw xo1-g1e x63-8h9 x15-656"
+                                      >
                                         7-day click...
                                       </div>
                                     </div>

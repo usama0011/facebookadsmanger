@@ -103,7 +103,12 @@ const FBAReporting = ({ startDate, endDate }) => {
             try {
               const adCreative = JSON.parse(row["Ad Creative"]);
               row["Ad Creative"] = (
-                <div className="ad-creative">
+                <div
+                  className="ad-creative"
+                  style={{
+                    position: "relative",
+                  }}
+                >
                   <div>
                     {adCreative.image && (
                       <img
@@ -113,6 +118,8 @@ const FBAReporting = ({ startDate, endDate }) => {
                           width: "60px",
                           height: "60px",
                           marginRight: "5px",
+                          objectFit: "cover",
+                          backgroundSize: "cover",
                         }}
                       />
                     )}
@@ -136,7 +143,7 @@ const FBAReporting = ({ startDate, endDate }) => {
               );
               row[
                 "Ad Creative Key"
-              ] = `${adCreative.title}-${adCreative.description}`;
+              ] = ` ${adCreative.title}-${adCreative.description}`;
             } catch (error) {
               console.error("Invalid Ad Creative JSON:", row["Ad Creative"]);
               row["Ad Creative"] = "Invalid Ad Creative Data";
@@ -272,6 +279,7 @@ const FBAReporting = ({ startDate, endDate }) => {
             if (key === "Page Name") {
               return <div style={{ color: "#1c2b33" }}>{value}</div>;
             }
+
             if (key === "Campaign Name") {
               const isAll = value === "All";
               const truncatedValue =
@@ -613,7 +621,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                                   </div>
                                 </div>
                                 <div className="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                  56/56 rows displayed
+                                  {data?.length}/{data?.length} rows displayed
                                 </div>
                               </div>
                             </div>
