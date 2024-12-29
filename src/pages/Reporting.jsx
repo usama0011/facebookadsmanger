@@ -17,8 +17,7 @@ import FBAReporting from "./FBAReporting";
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [isFocused, setIsFocused] = useState(false);
-  const [finalStartDate, setFinalStartDate] = useState(null);
-  const [finalEndDate, setFinalEndDate] = useState(null);
+
   const [progress, setProgress] = useState(0);
   const [campaignbox, setcampaignbox] = useState(false);
   const [showID, setShowID] = useState("");
@@ -839,6 +838,8 @@ const Reporting = () => {
   };
   const [startDate, setStartDate] = useState(getFirstDayOfMonth());
   const [endDate, setEndDate] = useState(getLastDayOfMonth());
+  const [finalStartDate, setFinalStartDate] = useState(getFirstDayOfMonth());
+  const [finalEndDate, setFinalEndDate] = useState(getLastDayOfMonth());
   const [hoverDate, setHoverDate] = useState(null);
   const [selectingEnd, setSelectingEnd] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -888,25 +889,9 @@ const Reporting = () => {
     setEndDate(range.endDate);
   };
   const handleUpdateClick = () => {
-    setLoading(true);
-    setProgress(0); // Reset progress to 0%
-
-    let progressValue = 0;
-    const interval = setInterval(() => {
-      progressValue += 10; // Increment progress
-      setProgress(progressValue);
-
-      if (progressValue >= 100) {
-        clearInterval(interval); // Stop the interval
-        setTimeout(() => {
-          setLoading(false); // Stop loading after a short delay
-          setProgress(0); // Reset the progress bar
-        }, 600);
-      }
-    }, 600); // Adjust speed of progress increments
     if (startDate && endDate) {
       setShowCalender(false);
-      console.log("Fetching data for range:", startDate, endDate);
+
       setFinalStartDate(startDate); // Update the final start date
       setFinalEndDate(endDate); // Update the final end date
     } else {
@@ -3655,11 +3640,8 @@ const Reporting = () => {
                                                   endDate={finalEndDate}
                                                 /> */}
                                                 <FBAReporting
-                                                  selectedMetrics={
-                                                    selectedMetrics
-                                                  }
-                                                  finalStartDate={startDate}
-                                                  finalEndDate={endDate}
+                                                  startDate={finalStartDate}
+                                                  endDate={finalEndDate}
                                                 />
                                               </div>
                                             </div>
@@ -4477,4 +4459,4 @@ const Reporting = () => {
 };
 
 export default Reporting;
-// usamsa ha
+// usamsa has
