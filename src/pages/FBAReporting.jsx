@@ -56,6 +56,7 @@ const FBAReporting = ({ startDate, endDate }) => {
     }
     try {
       setLoading(true);
+      setData([]);
       setLoadingProgress(0); // Reset progress bar
       const interval = setInterval(() => {
         setLoadingProgress((prev) => (prev < 90 ? prev + 10 : prev));
@@ -63,37 +64,10 @@ const FBAReporting = ({ startDate, endDate }) => {
       const response = await axios.get(
         `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
       );
-      //adds
-      console.log(response);
-      const keyOrder = [
-        "Page ID",
-        "Page Name",
-        "Campaign Name",
-        "Ad Set Name",
-        "Ad Name",
-        "Ad Creative",
-        "Impression Device",
-        "Placement",
-        "Amount Spent",
-        "Impressions",
-        "Reach",
-        "Link Clicks",
-        "CPC",
-        "CPM",
-        "CTR",
-      ];
-      const reorderData = (data, keyOrder) => {
-        return data.map((row) => {
-          const reorderedRow = {};
-          keyOrder.forEach((key) => {
-            reorderedRow[key] = row[key] !== undefined ? row[key] : "—"; // Add "—" for missing keys
-          });
-          return reorderedRow;
-        });
-      };
-      const reorderedData = reorderData(response.data, keyOrder);
 
-      const csvData = reorderedData
+      console.log(response);
+
+      const csvData = response.data
         .map((row) => {
           if (
             row["Ad Creative"] &&
@@ -103,12 +77,7 @@ const FBAReporting = ({ startDate, endDate }) => {
             try {
               const adCreative = JSON.parse(row["Ad Creative"]);
               row["Ad Creative"] = (
-                <div
-                  className="ad-creative"
-                  style={{
-                    position: "relative",
-                  }}
-                >
+                <div className="ad-creative">
                   <div>
                     {adCreative.image && (
                       <img
@@ -118,8 +87,6 @@ const FBAReporting = ({ startDate, endDate }) => {
                           width: "60px",
                           height: "60px",
                           marginRight: "5px",
-                          objectFit: "cover",
-                          backgroundSize: "cover",
                         }}
                       />
                     )}
@@ -143,7 +110,7 @@ const FBAReporting = ({ startDate, endDate }) => {
               );
               row[
                 "Ad Creative Key"
-              ] = ` ${adCreative.title}-${adCreative.description}`;
+              ] = `${adCreative.title}-${adCreative.description}`;
             } catch (error) {
               console.error("Invalid Ad Creative JSON:", row["Ad Creative"]);
               row["Ad Creative"] = "Invalid Ad Creative Data";
@@ -160,6 +127,7 @@ const FBAReporting = ({ startDate, endDate }) => {
             (value) => value !== "—" && value !== 0 && value !== "All"
           )
         );
+      // Ensure "All" rows are rendered first
 
       const updatedColumns = Object.keys(csvData[0] || {})
         .filter(
@@ -197,7 +165,15 @@ const FBAReporting = ({ startDate, endDate }) => {
                         <div class="_90u_ style-rFHj4" id="style-rFHj4">
                           <div class="_4ik4 _4ik5 style-qAlZS" id="style-qAlZS">
                             <div id="style-zqMp6" class="style-zqMp6">
-                              {key}
+                              {
+                                key === "CPC"
+                                  ? "CPC (Cost per Link Click)"
+                                  : key === "CPM"
+                                  ? "CPM (Cost per 1,000 Impressions)"
+                                  : key === "CTR"
+                                  ? "CTR (All)"
+                                  : key // Default to the key itself for other titles
+                              }
                             </div>
                           </div>
                         </div>
@@ -268,11 +244,13 @@ const FBAReporting = ({ startDate, endDate }) => {
                 "Impression Device",
               ].includes(key)
             ) {
+              console.log(key, "key");
               const spanKey = key === "Ad Creative" ? "Ad Creative Key" : key;
               return {
                 rowSpan: calculateRowSpan(csvData, rowIndex, spanKey),
               };
             }
+
             return {};
           },
           render: (value, record, index) => {
@@ -368,6 +346,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                     color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
                   }}
                 >
+                  $
                   {typeof value === "number"
                     ? value.toLocaleString(undefined, {
                         maximumFractionDigits: 2,
@@ -436,6 +415,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                     color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
                   }}
                 >
+                  $
                   {typeof value === "number"
                     ? value.toLocaleString(undefined, {
                         maximumFractionDigits: 2,
@@ -454,6 +434,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                     color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
                   }}
                 >
+                  $
                   {typeof value === "number"
                     ? value.toLocaleString(undefined, {
                         maximumFractionDigits: 2,
@@ -477,6 +458,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                         maximumFractionDigits: 2,
                       })
                     : value}
+                  %
                 </div>
               );
             }
@@ -537,6 +519,7 @@ const FBAReporting = ({ startDate, endDate }) => {
             return value !== undefined && value !== null ? value : "—";
           },
         }));
+
       clearInterval(interval); // Stop progress increment
       setLoadingProgress(100); // Complete the progress bar
       setData(csvData);

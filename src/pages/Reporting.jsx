@@ -1156,14 +1156,14 @@ const Reporting = () => {
     {
       title: "Popular Metrics",
       metrics: [
-        "Amount spent",
+        "Amount Spent",
         "Impressions",
         "Reach",
         "Results",
         "Cost per result",
         "Delivery",
         "Frequency",
-        "Link clicks",
+        "Link Clicks",
         "CPC (cost per link click)",
         "CPM (cost per 1,000 impressions)",
         "CTR (all)",
@@ -1182,7 +1182,7 @@ const Reporting = () => {
         "Frequency",
         "Impressions",
         "Delivery",
-        "Amount spent",
+        "Amount Spent",
         "Clicks (all)",
         "CPC (all)",
         "CTR (all)",
@@ -1254,7 +1254,7 @@ const Reporting = () => {
         "Cost per 2-second continuous video play",
         "Cost per 3-second video play",
         "Cost per ThruPlay",
-        "Link clicks",
+        "Link Clicks",
         "Unique link clicks",
         "Outbound clicks",
         "Unique outbound clicks",
@@ -3903,12 +3903,13 @@ const Reporting = () => {
                                                                             ? {
                                                                                 backgroundColor:
                                                                                   "#e7f1fd",
+
                                                                                 color:
                                                                                   "#1461cc",
                                                                               }
                                                                             : {
                                                                                 backgroundColor:
-                                                                                  "none",
+                                                                                  "white",
                                                                               }
                                                                         }
                                                                         onClick={() =>
@@ -4360,7 +4361,13 @@ const Reporting = () => {
                                                                                                                     "Ad name",
                                                                                                                     "Page name",
                                                                                                                     "Ad creative",
+                                                                                                                    "Link Clicks",
+                                                                                                                    "Reach",
+                                                                                                                    "Results",
                                                                                                                     "Placement",
+                                                                                                                    "CPC (cost per link click)",
+                                                                                                                    "CPM (cost per 1,000 impressions)",
+                                                                                                                    "CTR (all)",
                                                                                                                     "Impression device",
                                                                                                                   ].includes(
                                                                                                                     metric

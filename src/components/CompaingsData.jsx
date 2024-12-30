@@ -176,7 +176,7 @@ const CompaingsData = ({
     },
     {
       title: "Off/On",
-      width: 65,
+      width: 78,
       dataIndex: "currentSwitch",
       key: "currentSwitch",
       fixed: "left",
@@ -572,7 +572,7 @@ const CompaingsData = ({
       title: "Attribution Settings",
       dataIndex: "Attributionsetting",
       key: "Attributionsetting",
-      width: 120,
+      width: 160,
       render: (text) => (
         <div style={{ fontSize: "14px", color: "#1c2b33" }}>
           {" "}
@@ -711,9 +711,7 @@ const CompaingsData = ({
       title: (
         <div className="resulsconainer">
           {" "}
-          <div style={{ padding: 0, margin: 0 }}>
-            Cost Per <br /> Results
-          </div>
+          <div style={{ padding: 0, margin: 0 }}>Cost Pe Results</div>
           <div>
             <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>{" "}
