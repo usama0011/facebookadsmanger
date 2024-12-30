@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { Suspense, lazy } from "react";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
 import EditCompaing from "./pages/EditCompaing";
 import EditCompaingTwo from "./pages/EditCompaingTwo";
 import EditCompaingThree from "./pages/EditCompaingThree";
@@ -29,7 +28,6 @@ import Login from "./pages/Login";
 import CurrentAccount from "./pages/currentAccount";
 import NewCalender from "./pages/NewCalender";
 import UplaodCampaings from "./pages/UplaodCampaings";
-import Reporting from "./pages/Reporting";
 import Overview from "./pages/Overview";
 import TestPage from "./components/TestPage";
 import NewTask from "./components/NewTask";
@@ -42,10 +40,19 @@ import ReportingCalendar from "./components/ReportingCalender";
 import SideBar from "./components/SideBar";
 import FBAReporting from "./pages/FBAReporting";
 import UploadReportingCSV from "./pages/UploadReportingCSV";
+import LoadingDiv from "./components/LoadingDivReporting";
+import CampaigsnPageLoading from "./components/CampaigsnPageLoading";
+const Reporting = lazy(() => import("./pages/./Reporting"));
+const App = lazy(() => import("./App"));
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Suspense fallback={<CampaigsnPageLoading />}>
+        <App />
+      </Suspense>
+    ),
   },
   {
     path: "/editcampaing/:id",
@@ -69,7 +76,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/reporting",
-    element: <Reporting />,
+    element: (
+      <Suspense fallback={<LoadingDiv />}>
+        <Reporting />
+      </Suspense>
+    ),
   },
   {
     path: "/login",
