@@ -4807,6 +4807,9 @@ i.img u {
 .campaign-table-container .ant-table-tbody > tr > td {
   padding: 5px 8px !important;
 }
+.campaign-table-container .ant-table-tbody > {
+  padding: 5px 8px !important;
+}
 
 .ant-table-tbody > tr.ant-table-row:hover > td {
   background-color: #dadbe5;
@@ -8251,7 +8254,7 @@ i.borcb {
 /* Parent container for table and progress bar */
 .progress-bar-wrapper {
   position: absolute;
-  top: 100px; /* Adjust as needed to align with the table header */
+  top: 125px; /* Adjust as needed to align with the table header */
   width: 100%;
   z-index: 5000; /* Ensure it appears above the table */
 }

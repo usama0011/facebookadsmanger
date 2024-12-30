@@ -3877,6 +3877,7 @@ const CompaingsData = ({
               style={{
                 maxHeight: calculatedHeight,
                 backgroundColor: "#f5f6f7",
+                minHeight: "200px",
                 height: "100%",
                 overflow: "scroll",
               }}
