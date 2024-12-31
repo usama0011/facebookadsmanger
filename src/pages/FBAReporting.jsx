@@ -119,7 +119,7 @@ const FBAReporting = ({ startDate, endDate }) => {
           } else {
             row["Ad Creative Key"] = row["Ad Creative"];
           }
-
+          row.Results = row["Link Clicks"];
           return row;
         })
         .filter((row) =>
@@ -374,6 +374,24 @@ const FBAReporting = ({ startDate, endDate }) => {
               );
             }
             if (key === "Impressions") {
+              const isAll = value === "All";
+              return (
+                <div
+                  style={{
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
+                  }}
+                >
+                  {typeof value === "number"
+                    ? value.toLocaleString(undefined, {
+                        maximumFractionDigits: 2,
+                      })
+                    : value}
+                </div>
+              );
+            }
+            if (key === "Results") {
               const isAll = value === "All";
               return (
                 <div
@@ -748,6 +766,43 @@ const FBAReporting = ({ startDate, endDate }) => {
                       </div>
                     </div>
                   ) : col.dataIndex === "Link Clicks" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            <span class="_3dfi _3dfj">
+                              {typeof data[0]?.[col.dataIndex] === "number"
+                                ? data[0]?.[col.dataIndex].toLocaleString(
+                                    undefined,
+                                    {
+                                      maximumFractionDigits: 2,
+                                    }
+                                  )
+                                : data[0]?.[col.dataIndex]}
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Total
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Results" ? (
                     <div class="_e9n">
                       <div class="">
                         <div
