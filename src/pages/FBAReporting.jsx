@@ -135,7 +135,6 @@ const FBAReporting = ({ startDate, endDate }) => {
             key !== "Page ID" &&
             key !== "_id" &&
             key !== "Entry Date" &&
-            key !== "Ad Creative" &&
             key !== "__v" &&
             key !== "Ad Creative Key"
         )

@@ -13,6 +13,7 @@ import ReportingTableMain from "../components/ReportingTableMain";
 import SimpleTable from "./SimpleTable";
 import SideBar from "../components/SideBar";
 import FBAReporting from "./FBAReporting";
+import TestPage from "../components/TestPage";
 
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -1491,101 +1492,7 @@ const Reporting = () => {
     setLoading(true); // Start the loading animation
     console.log("updated selected matrics", updatedSelectedMetrics);
     // Update the dynamic columns
-    const updatedColumns = updatedSelectedMetrics.map((metric) => ({
-      title: (
-        <div className="resulsconainer">
-          <div class="_2eqm snipcss-3BVgC style-IBedm" id="style-IBedm">
-            <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
-              <div class="_8wod" draggable="true">
-                <a
-                  aria-label="clickable background"
-                  class="_3sqf"
-                  href="#"
-                  data-auto-logging-id="f3709fc3201cc98"
-                >
-                  <u class="_8_x7 _3sqf"></u>
-                </a>
-                <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
-                  <div class="x1vjfegm xsgj6o6 x1gslohp">
-                    <div class="_741s _8_x6 _8_vu"></div>
-                    <div class="_3qn7 _61-0 _2fyh _3qnf">
-                      <div class="_3qn7 _61-0 _2fyi _3qnf">
-                        <div
-                          role="columnheader"
-                          tabindex="-1"
-                          data-mouseoverable="1"
-                        >
-                          <div class="_90u_ style-3NWtE" id="style-3NWtE">
-                            <div
-                              class="_4ik4 _4ik5 style-UPjyp"
-                              id="style-UPjyp"
-                            >
-                              <div id="style-g376k" class="style-g376k">
-                                {metric}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div class="x8t9es0 xw23nyj xo1l8bm x63nzvj x6lvj10 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                    </div>
-                  </div>
-                  <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                    <div class="x1gryazu xxk0z11">
-                      <div>
-                        <button
-                          aria-pressed="false"
-                          type="button"
-                          aria-disabled="false"
-                          class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-BsqPo"
-                          id="style-BsqPo"
-                        >
-                          <div class="_43rl">
-                            <i
-                              aria-hidden="true"
-                              class="_271o img style-4vf2H"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-4vf2H"
-                            ></i>
-                            <span class="accessible_elem">
-                              Open Inline Column Action Menu
-                            </span>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      dataIndex: metric,
-      key: metric,
-      width: 150,
-      render: (text) => <span>{text}</span>,
-    }));
-
-    setDynamicColumns(updatedColumns);
-
-    // Simulate loading progress with animation
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 10;
-      setLoadingProgress(progress);
-
-      if (progress >= 100) {
-        clearInterval(interval);
-        setLoading(false); // Stop loading once it reaches 100%
-        setLoadingProgress(0); // Reset loading progress
-      }
-    }, 100); // Adjust speed as needed
   };
-
-  const columns = [...baseColumns, ...dynamicColumns];
 
   // Determine the text to display based on the selected date
   const isCurrentMonth = (startDate, endDate) => {
