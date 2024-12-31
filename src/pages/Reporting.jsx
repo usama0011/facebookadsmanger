@@ -960,13 +960,13 @@ const Reporting = () => {
     thisWeekStart.setDate(today.getDate() - today.getDay());
     const lastWeekStart = new Date(thisWeekStart);
     lastWeekStart.setDate(thisWeekStart.getDate() - 7);
-    const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+    const thisMonthStart = new Date(today.getFullYear(), today?.getMonth(), 1);
     const lastMonthStart = new Date(
       today.getFullYear(),
-      today.getMonth() - 1,
+      today?.getMonth() - 1,
       1
     );
-    const lastMonthEnd = new Date(today.getFullYear(), today.getMonth(), 0);
+    const lastMonthEnd = new Date(today.getFullYear(), today?.getMonth(), 0);
     return (
       <div className="presets">
         <div
@@ -1590,14 +1590,14 @@ const Reporting = () => {
   // Determine the text to display based on the selected date
   const isCurrentMonth = (startDate, endDate) => {
     const now = new Date();
-    const currentMonthStart = new Date(now.getFullYear(), now.getMonth(), 1);
-    const currentMonthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+    const currentMonthStart = new Date(now.getFullYear(), now?.getMonth(), 1);
+    const currentMonthEnd = new Date(now.getFullYear(), now?.getMonth() + 1, 0);
 
     return (
       startDate >= currentMonthStart &&
       endDate <= currentMonthEnd &&
-      startDate.getMonth() === now.getMonth() &&
-      endDate.getMonth() === now.getMonth()
+      startDate?.getMonth() === now?.getMonth() &&
+      endDate?.getMonth() === now?.getMonth()
     );
   };
 
@@ -2473,8 +2473,8 @@ const Reporting = () => {
                                                                             </div>
                                                                             <div>
                                                                               {new Date(
-                                                                                currentMonth.getFullYear(),
-                                                                                currentMonth.getMonth() +
+                                                                                currentMonth?.getFullYear(),
+                                                                                currentMonth?.getMonth() +
                                                                                   1
                                                                               ).toLocaleString(
                                                                                 "default",
@@ -2547,7 +2547,7 @@ const Reporting = () => {
                                                                         <div className="days">
                                                                           {renderCalendar(
                                                                             new Date(
-                                                                              currentMonth.getFullYear(),
+                                                                              currentMonth?.getFullYear(),
                                                                               currentMonth?.getMonth() +
                                                                                 1
                                                                             )

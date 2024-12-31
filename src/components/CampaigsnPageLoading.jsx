@@ -17,7 +17,7 @@ const loadingDivStyle = {
   alignItems: "center",
   height: "100vh",
   flexDirection: "column",
-  backgroundColor: "#f9f9f9", // Optional: light background
+  backgroundImage: "linear-gradient(to top, #e6effb, #e9f5ef, #f6eef5)",
 };
 
 const spinnerStyle = {

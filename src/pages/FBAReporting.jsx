@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table, Button, Upload } from "antd";
 import "../styles/FBAReporting.css";
 import axios from "axios";
-// lelds
+// leldssss
 const FBAReporting = ({ startDate, endDate }) => {
   // Helper function to format the date
   const formatDate = (date) => {
@@ -135,6 +135,7 @@ const FBAReporting = ({ startDate, endDate }) => {
             key !== "Page ID" &&
             key !== "_id" &&
             key !== "Entry Date" &&
+            key !== "Ad Creative" &&
             key !== "__v" &&
             key !== "Ad Creative Key"
         )
@@ -568,6 +569,7 @@ const FBAReporting = ({ startDate, endDate }) => {
         rowKey={(record, index) => index}
         scroll={{ y: 570 }} // Adds vertical scroll
         sticky // Makes the table headers sticky
+        locale={{ emptyText: null }} // Removes the "No Data" message
         title={() => (
           <div style={{ position: "relative" }}>
             {loadingProgress > 0 && (
