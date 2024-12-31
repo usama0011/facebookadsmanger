@@ -413,7 +413,12 @@ const FBAReporting = ({ startDate, endDate }) => {
                         })
                       : value}
                   </span>
-                  <p style={{ padding: 0, margin: 0 }}>Link clicks</p>
+                  <p
+                    class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf"
+                    style={{ padding: 0, margin: 0 }}
+                  >
+                    Link clicks
+                  </p>
                 </div>
               );
             }
@@ -588,7 +593,7 @@ const FBAReporting = ({ startDate, endDate }) => {
               <div
                 style={{
                   position: "absolute",
-                  top: "86px",
+                  top: "78px",
                   left: "-15px",
                   width: `${loadingProgress}%`,
                   height: "4px",
