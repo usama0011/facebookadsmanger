@@ -834,7 +834,7 @@ const FBAReporting = ({ startDate, endDate }) => {
                           data-tooltip-text-direction="auto"
                         >
                           <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
-                            Total
+                            Link clicks
                           </div>
                         </div>
                       </div>
