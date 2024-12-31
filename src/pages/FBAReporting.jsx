@@ -398,31 +398,26 @@ const FBAReporting = ({ startDate, endDate }) => {
                   style={{
                     wordWrap: "break-word",
                     whiteSpace: "normal",
+                    display: "flex",
+                    flexDirection: "column",
+                    padding: "2px",
+                    alignItems: "end",
                     color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
                   }}
                 >
-                  {typeof value === "number"
-                    ? value.toLocaleString(undefined, {
-                        maximumFractionDigits: 2,
-                      })
-                    : value}
+                  <span style={{ padding: 0, margin: 0 }}>
+                    {" "}
+                    {typeof value === "number"
+                      ? value.toLocaleString(undefined, {
+                          maximumFractionDigits: 2,
+                        })
+                      : value}
+                  </span>
+                  <p style={{ padding: 0, margin: 0 }}>Link clicks</p>
                 </div>
               );
             }
-            if (key === "Results") {
-              const isAll = value === "All";
-              return (
-                <div
-                  style={{
-                    wordWrap: "break-word",
-                    whiteSpace: "normal",
-                    color: isAll ? "#1c2b33" : "#1c2b33", // Dynamic color assignment
-                  }}
-                >
-                  {value}
-                </div>
-              );
-            }
+
             if (key === "CPC") {
               const isAll = value === "All";
               return (

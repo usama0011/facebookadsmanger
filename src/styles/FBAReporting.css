@@ -82,7 +82,7 @@
 }
 
 .testmyreproing .ant-table-cell {
-  padding: 8px !important; /* Adjust padding for cells if needed */
+  padding: 5px !important; /* Adjust padding for cells if needed */
 }
 
 .testmyreproing .ant-table-thead > tr > th {
@@ -91,6 +91,7 @@
 
 .testmyreproing .ant-table-tbody > tr > td {
   margin: 0 !important; /* Remove margin in body cells */
+  padding: 0px 5px !important;
 }
 .testmyreproing .ant-table-summary {
   height: 60px !important; /* Adjust this value to your desired height */
@@ -102,7 +103,7 @@
 }
 
 .testmyreproing .ant-table-tbody > tr {
-  padding: 10px 8px !important;
+  padding: 4px 8px !important;
 }
 
 .testmyreproing {
