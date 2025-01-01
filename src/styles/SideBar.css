@@ -19,6 +19,7 @@
   background-color: white;
   border-right: 1px solid #e5e5e5;
   height: 100vh;
+  z-index: 9500;
   transition: width 0.3s;
   overflow: hidden;
   display: flex;

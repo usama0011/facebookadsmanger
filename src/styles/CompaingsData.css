@@ -8256,7 +8256,7 @@ i.borcb {
   position: absolute;
   top: 125px; /* Adjust as needed to align with the table header */
   width: 100%;
-  z-index: 5000; /* Ensure it appears above the table */
+  z-index: 3000; /* Ensure it appears above the table */
 }
 
 .custom-progress-bar .ant-progress-bg {
