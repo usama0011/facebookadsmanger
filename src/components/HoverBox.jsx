@@ -16,7 +16,10 @@ const HoverBox = ({
 }) => {
   return (
     <div>
-      <div className="x2i-6ma x1m-ihi x1y-lb7 xdj-ec5 xkr-x4b xat-oal x1g-2n1 xw2-x5l x1o-j9m stopethisyar x47-iig x87-ri1">
+      <div
+        style={{ textAlign: "left" }}
+        className="x2i-6ma x1m-ihi x1y-lb7 xdj-ec5 xkr-x4b xat-oal x1g-2n1 xw2-x5l x1o-j9m stopethisyar x47-iig x87-ri1"
+      >
         <div
           class=""
           style={{
@@ -84,20 +87,18 @@ const HoverBox = ({
             <i class="x1d-9kn xam-vod ifvad style-a9NYn" id="style-a9NYn"></i>
           </div>
         </div>
-        <div class="">
-          <span
-            style={{
-              textWrap: "wrap",
-              padding: "10px",
-              textAlign: "left",
-              fontSize: "14px",
-              color: "black",
-              fontWeight: "400",
-            }}
-          >
-            {description}
-          </span>
-        </div>
+        <span
+          style={{
+            textWrap: "wrap",
+            padding: "10px",
+            textAlign: "left",
+            fontSize: "14px",
+            color: "black",
+            fontWeight: "400",
+          }}
+        >
+          {description}
+        </span>
         <div class="x1n-xis x1j-eyf x1m-ihi x1e-twr">
           <div class="x1n-xis">
             <div class="x10-4mo x17-ki8 x13-xkl xqv-qxt x1m-ihi x1v-wv3 x17-4d9 x13-7gs"></div>
