@@ -13,7 +13,6 @@ import ReportingTableMain from "../components/ReportingTableMain";
 import SimpleTable from "./SimpleTable";
 import SideBar from "../components/SideBar";
 import FBAReporting from "./FBAReporting";
-import TestPage from "../components/TestPage";
 
 const Reporting = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -1065,11 +1064,11 @@ const Reporting = () => {
     {
       title: "Popular breakdowns",
       metrics: [
-        "Campaign name",
-        "Ad set name",
-        "Ad name",
-        "Page name",
-        "Ad creative",
+        "Campaign Name",
+        "Ad Set Name",
+        "Ad Name",
+        "Page Name",
+        "Ad Creative",
         "Gender",
         "Country",
         "Region",
@@ -1087,15 +1086,14 @@ const Reporting = () => {
     {
       title: "Level",
       metrics: [
-        "Campaign name",
-        "Ad set name",
-        "Ad name",
-        "Page name",
-        "Campaign ID",
+        "Campaign Name",
+        "Ad Set Name",
+        "Ad Name",
+        "Page Name",
+        "Ad Creative",
         "Ad set ID",
         "Ad ID",
         "Page ID",
-        "Ad creative",
       ], // No data available
     },
     {
@@ -1111,7 +1109,7 @@ const Reporting = () => {
         "Country",
         "Region",
         "DMA region",
-        "Impression device",
+        "Impression Device",
         "Platform",
         "Placement",
         "Device platform",
@@ -1165,9 +1163,9 @@ const Reporting = () => {
         "Delivery",
         "Frequency",
         "Link Clicks",
-        "CPC (cost per link click)",
-        "CPM (cost per 1,000 impressions)",
-        "CTR (all)",
+        "CPC",
+        "CPM",
+        "CTR",
       ],
     },
     {
@@ -1186,7 +1184,7 @@ const Reporting = () => {
         "Amount Spent",
         "Clicks (all)",
         "CPC (all)",
-        "CTR (all)",
+        "CTR",
         "Gross impressions (includes invalid impressions from non-human traffic)",
         "Auto-refresh impressions",
         "Attribution setting",
@@ -1264,15 +1262,14 @@ const Reporting = () => {
         "Outbound CTR (click-through rate)",
         "Unique outbound CTR (click-through rate)",
         "Unique clicks (all)",
-        "Unique CTR (all)",
+        "Unique CTR",
         "Instant Experience clicks to open",
         "Instant Experience clicks to start",
         "Instant Experience outbound clicks",
         "Net reminders on",
         "Instagram profile visits",
-        "CPC (cost per link click)",
-        "Cost per unique link click",
-        "Cost per outbound click",
+        "CPC",
+        "CPM",
         "Cost per unique outbound click",
         "Cost per unique click (all)",
         "Estimated ad recall lift (people)",
@@ -3517,7 +3514,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "725px",
+                                                  height: "500px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
@@ -4045,22 +4042,9 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   )
                                                                                                                 }
-                                                                                                                checked={
-                                                                                                                  selectedMetrics.includes(
-                                                                                                                    metric
-                                                                                                                  ) ||
-                                                                                                                  [
-                                                                                                                    "Campaign name",
-                                                                                                                    "Ad set name",
-                                                                                                                    "Ad name",
-                                                                                                                    "Page name",
-                                                                                                                    "Ad creative",
-                                                                                                                    "Placement",
-                                                                                                                    "Impression device",
-                                                                                                                  ].includes(
-                                                                                                                    metric
-                                                                                                                  )
-                                                                                                                } // Keeps checkbox state in sync
+                                                                                                                checked={selectedMetrics.includes(
+                                                                                                                  metric
+                                                                                                                )} // Keeps checkbox state in sync
                                                                                                               />
 
                                                                                                               <span
@@ -4258,28 +4242,9 @@ const Reporting = () => {
                                                                                                                     metric
                                                                                                                   )
                                                                                                                 }
-                                                                                                                checked={
-                                                                                                                  selectedMetrics.includes(
-                                                                                                                    metric
-                                                                                                                  ) ||
-                                                                                                                  [
-                                                                                                                    "Campaign name",
-                                                                                                                    "Ad set name",
-                                                                                                                    "Ad name",
-                                                                                                                    "Page name",
-                                                                                                                    "Ad creative",
-                                                                                                                    "Link Clicks",
-                                                                                                                    "Reach",
-                                                                                                                    "Results",
-                                                                                                                    "Placement",
-                                                                                                                    "CPC (cost per link click)",
-                                                                                                                    "CPM (cost per 1,000 impressions)",
-                                                                                                                    "CTR (all)",
-                                                                                                                    "Impression device",
-                                                                                                                  ].includes(
-                                                                                                                    metric
-                                                                                                                  )
-                                                                                                                } // Keeps checkbox state in sync
+                                                                                                                checked={selectedMetrics.includes(
+                                                                                                                  metric
+                                                                                                                )} // Keeps checkbox state in sync
                                                                                                               />
                                                                                                               <span
                                                                                                                 style={{
