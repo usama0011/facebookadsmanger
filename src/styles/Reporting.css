@@ -7226,3 +7226,176 @@ i.img {
   transition: width 0.4s ease-in-out;
   z-index: 999;
 } */
+
+/* LatestVersionTwoCalender.css */
+
+.latestreporting-calendar-container {
+  display: flex;
+  flex-direction: row; /* Ensure left options and calendars are side by side */
+  font-family: Arial, sans-serif;
+  align-items: flex-start;
+  background-color: white;
+  max-width: 700px;
+  padding: 10px 0;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 5px;
+  height: 350px;
+}
+
+.latestreporting-left-options {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  width: 300px; /* Maintain the width for the side options */
+  max-height: 350px; /* Set max height */
+  overflow-y: auto; /* Enable scrolling when content overflows */
+  box-sizing: border-box; /* Prevent shrinkage due to padding or borders */
+}
+
+.latestreporting-option {
+  display: flex;
+  align-items: center;
+}
+
+.latestreporting-option input {
+  margin-right: 10px;
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.latestreporting-option label {
+  color: #606770;
+  white-space: nowrap;
+}
+.latestreporting-day-labels {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.latestreporting-day-labels > div {
+  color: #828484;
+}
+
+.latestreporting-calendar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.latestreporting-calendar {
+  max-width: 280px; /* Ensure both calendars have the same width */
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.latestreporting-month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.latestreporting-month button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.latestreporting-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 4px;
+  text-align: center;
+}
+.latestreporting-day {
+  padding: 4px 6px;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.latestreporting-day:hover {
+  background-color: #e0e0e0;
+}
+
+.latestreporting-selected {
+  background-color: #0978bf;
+}
+
+.latestreporting-highlight {
+  background-color: #0978bf !important;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.latestreporting-range {
+  background-color: #d8e7f8;
+}
+
+.latestreporting-empty-day {
+  visibility: hidden;
+}
+
+.latestreporting-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.latestreporting-footer input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.latestreporting-footer select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.latestreporting-footer button {
+  background-color: #0978bf;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.latestreporting-footer button:hover {
+  background-color: #005f99;
+}
+
+/* Loading grid table */
+.loading-grid-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  height: 300px; /* Fixed height for the table */
+  overflow-y: hidden;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.loading-grid-item {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 50px;
+  animation: shimmer 1.5s infinite;
+}

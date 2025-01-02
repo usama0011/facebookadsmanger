@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VersoinTwo.css";
 import HoverBox from "../components/HoverBox";
+
 const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
@@ -34,7 +35,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
       }, 200);
 
       const response = await fetch(
-        `http://localhost:3001/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
+        `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
       );
       const result = await response.json();
       setData(result);
@@ -237,10 +238,10 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           <div
             style={{
               position: "absolute",
-              top: 0,
+              top: "65px",
               left: 0,
               width: `${loadingProgress}%`,
-              height: "4px",
+              height: "5px",
               backgroundColor: "#1890ff",
               transition: "width 0.2s ease-in-out",
             }}
@@ -443,7 +444,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           ) : (
             <tr>
               <td colSpan={columns.length} style={{ textAlign: "center" }}>
-                {loading ? "Loading..." : "No Data Available"}
+                {loading ? <div></div> : "No Data Available"}
               </td>
             </tr>
           )}

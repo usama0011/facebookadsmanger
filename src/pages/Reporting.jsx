@@ -1,848 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Reporting.css";
-import { Link } from "react-router-dom";
-import CuteImage from "../assets/Sir.jpeg";
-
 import "react-date-range/dist/styles.css"; // main style file
 import { CaretDownOutlined } from "@ant-design/icons";
 import "react-date-range/dist/theme/default.css"; // theme css file
-import axios from "axios";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
-import { Table } from "antd";
-import ReportingTableMain from "../components/ReportingTableMain";
-import SimpleTable from "./SimpleTable";
 import SideBar from "../components/SideBar";
-import FBAReporting from "./FBAReporting";
+import VersionTwoReporting from "./VersionTwoReporting";
 
 const Reporting = () => {
-  const [loadingProgress, setLoadingProgress] = useState(0);
   const [isFocused, setIsFocused] = useState(false);
-
-  const [progress, setProgress] = useState(0);
   const [campaignbox, setcampaignbox] = useState(false);
   const [showID, setShowID] = useState("");
   const [showcurrentpageID, setcurrentPageID] = useState(false);
-  console.log(showID);
-  const baseColumns = [
-    {
-      title: (
-        <div className="resulsconainer">
-          <div class="_2eqm snipcss-3BVgC style-IBedm" id="style-IBedm">
-            <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
-              <div class="_8wod" draggable="true">
-                <a
-                  aria-label="clickable background"
-                  class="_3sqf"
-                  href="#"
-                  data-auto-logging-id="f3709fc3201cc98"
-                >
-                  <u class="_8_x7 _3sqf"></u>
-                </a>
-                <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
-                  <div class="x1vjfegm xsgj6o6 x1gslohp">
-                    <div class="_741s _8_x6 _8_vu"></div>
-                    <div class="_3qn7 _61-0 _2fyh _3qnf">
-                      <div class="_3qn7 _61-0 _2fyi _3qnf">
-                        <div
-                          role="columnheader"
-                          tabindex="-1"
-                          data-mouseoverable="1"
-                        >
-                          <div class="_90u_ style-3NWtE" id="style-3NWtE">
-                            <div
-                              class="_4ik4 _4ik5 style-UPjyp"
-                              id="style-UPjyp"
-                            >
-                              <div id="style-g376k" class="style-g376k">
-                                Ad Creative
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div class="x8t9es0 xw23nyj xo1l8bm x63nzvj x6lvj10 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                    </div>
-                  </div>
-                  <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                    <div class="x1gryazu xxk0z11">
-                      <div>
-                        <button
-                          aria-pressed="false"
-                          type="button"
-                          aria-disabled="false"
-                          class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-BsqPo"
-                          id="style-BsqPo"
-                        >
-                          <div class="_43rl">
-                            <i
-                              aria-hidden="true"
-                              class="_271o img style-4vf2H"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-4vf2H"
-                            ></i>
-                            <span class="accessible_elem">
-                              Open Inline Column Action Menu
-                            </span>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      dataIndex: "campaingname",
-      key: "campaingname",
-      fixed: "left",
-      width: 300,
-
-      render: (text, record) => (
-        <>
-          <div
-            style={{ zIndex: "auto", overflow: "visible" }}
-            className="campign-row"
-          >
-            <div
-              style={{
-                textTransform: "uppercase",
-                fontSize: "13px",
-                display: "flex",
-                alignItems: "center",
-              }}
-              className="campaign-name"
-            >
-              <div
-                style={{ width: "60px", height: "60px" }}
-                className="largeimgcontainerme"
-              >
-                <img
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src={record.campaingImage}
-                  alt=""
-                />
-              </div>
-
-              <div
-                style={{
-                  marginLeft: "10px",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <span style={{ fontWeight: "bold" }}>
-                  {record?.quoteheading}
-                </span>
-                <span>{truncateText(record?.quotetext, 24)}</span>
-                <span style={{ color: "gray" }}>Used in 1 Ad</span>
-              </div>
-            </div>
-            <div className="myabosuotediv" style={{ zIndex: 999 }}>
-              <div
-                style={{ zIndex: 999 }}
-                class="_ag3c _2ph- _228q snipcss-tDqHs"
-                id="fd4aae0d273d82a55"
-              >
-                <div style={{ zIndex: 999 }} class="" id="fd4aae0d273d82a55-2">
-                  <div
-                    style={{ zIndex: 999 }}
-                    data-testid="ad-preview-mobile-feed-standard"
-                    data-react-ad-preview="reactPreviewContainer"
-                    data-clickable="1"
-                    data-inputable="1"
-                    data-keydownable="1"
-                    data-keyupable="1"
-                    data-mouseoverable="1"
-                    data-changeable="1"
-                    data-auto-logging-id="f32b2c60d2c8bb4"
-                    class=""
-                  >
-                    <div
-                      style={{ zIndex: 999 }}
-                      class="x2izyaf x1m258z3 x1yc453h xdj266r xkrivgy xat24cr x1gryazu xw2csxc x1odjw0f x47corl x87ps6o"
-                    >
-                      <div class="x78zum5 xdj266r x11i5rnm xod5an3 x1mh8g0r x889kno x1iji9kk x18d9i69 x1sln4lm x1cy8zhl">
-                        <div class="x78zum5 x16dsc37 x1sxyh0">
-                          <img
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              borderRadius: "50%",
-                              objectFit: "cover",
-                            }}
-                            class="x14yjl9h xudhj91 x18nykt9 xww2gxu x100vrsf x1vqgdyp x3ajldb img"
-                            src="https://i.postimg.cc/jqBmLCXY/VC.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="x78zum5 xamitd3">
-                          <div class="x78zum5 xdt5ytf xamitd3 x1ajhdc7 xh8yej3">
-                            <div>
-                              <span class="x1fzdab9 x1f6kntn xuy8w9f">
-                                <span class="x1xlr1w8">
-                                  {record?.quoteheading}
-                                </span>
-                              </span>
-                            </div>
-                            <div class="x1hjcb3a x1pg5gke x9438zm x1n2onr6 x17ocude xt0psk2">
-                              <div class="xt0psk2">Sponsored</div> ·{" "}
-                              <img src="" alt="" class="img" />
-                            </div>
-                          </div>
-                          <div class="x78zum5 x1q0g3np x1gfops9 xh8yej3 x13a6bvl">
-                            <i
-                              class="xamitd3 img style-nwXBp"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-nwXBp"
-                            ></i>
-                            <i
-                              class="x1d52u69 xamitd3 img style-5DRac"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-5DRac"
-                            ></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="x1xmf6yo x11i5rnm x1e56ztr x1mh8g0r xexx8yu x1iji9kk x18d9i69 x1sln4lm _3qn7 _61-0 _2fyh _1a9e">
-                        <div
-                          class="xogfrqt x1f6kntn xd4r4e8 x1vvkbs"
-                          data-ad-preview="message"
-                          data-react-ad-preview="message"
-                        >
-                          <div>
-                            <div class="" dir="">
-                              <span>
-                                <span>{record?.quotetext}</span>
-                                <br />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="x1n2onr6 x1ja2u2z x1m258z3 x1e56ztr">
-                        <div class="x1n2onr6">
-                          <div class="x10l6tqk x178xt8z x13fuv20 xqvba61 x1m258z3 x1vjfegm x17qophe x13vifvy"></div>
-                          <div
-                            class="x1n2onr6"
-                            data-ad-preview="image-container"
-                            data-react-ad-preview="image-container"
-                          >
-                            <img
-                              class="x1lliihq x193iq5w img"
-                              data-ad-preview="image"
-                              data-react-ad-preview="image"
-                              height="268"
-                              src={record.campaingImage}
-                              width="320"
-                              alt=""
-                            />
-                          </div>
-                          <div class="xz9dl7a xn6708d xsag5q8 x1ye3gou xz2iaq5 x1ba4aug _3qn7 _61-0 _2fyi _3qng">
-                            <div
-                              class="_6g3g x6ikm8r x10wlt62 x1vvkbs x1qughib x1jquxbb style-VtzRr"
-                              id="style-VtzRr"
-                            >
-                              <div>
-                                <div
-                                  class="xh8yej3 x1d3mw78"
-                                  data-ad-preview="display-link-container"
-                                >
-                                  <span class="x1nxh6w3 x1kyqaxf _6i6a">
-                                    <span id="style-Nd7I6" class="style-Nd7I6">
-                                      scqg4t8trk.com
-                                    </span>
-                                  </span>
-                                </div>
-                                <div class="xowg6hp">
-                                  <div>
-                                    <span
-                                      class="xh8yej3 x1fc57z9 x6prxxf x117nqv4"
-                                      data-ad-preview="headline"
-                                      dir=""
-                                    >
-                                      Get Quotes
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                data-ad-preview="link-description"
-                                dir=""
-                                id="style-MCo8H"
-                                class="style-MCo8H"
-                              >
-                                <span class="x1fc57z9 x6prxxf _6i6a"></span>
-                              </div>
-                            </div>
-                            <div class="x16n37ib">
-                              <div data-ad-preview="cta">
-                                <div
-                                  aria-label="Learn more"
-                                  class="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  <div
-                                    role="none"
-                                    class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou x1qhmfi1 x1r1pt67"
-                                  >
-                                    <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
-                                      <div
-                                        role="none"
-                                        class="x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x1fbi1t2 xl8fo4v"
-                                      >
-                                        <span
-                                          class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f x1dem4cn"
-                                          dir="auto"
-                                        >
-                                          <span class="x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft">
-                                            Learn more
-                                          </span>
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="x1ey2m1c xds687c x17qophe xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m"
-                                      role="none"
-                                      data-visualcompletion="ignore"
-                                    ></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="x10l6tqk xso031l x1q0q8m5 x1mpk314 x1m258z3 x1vjfegm xds687c x1ey2m1c"></div>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div class="x1anpbxc _3qn7 _61-0 _2fyh _3qnf">
-                        <div
-                          class="_6g3g xdzyupr x1nn3v0j x1iji9kk x10b6aqq x1sln4lm style-aqORe"
-                          id="style-aqORe"
-                        >
-                          <div class="_3qn7 _61-0 _2fyi _3qnf">
-                            <div class="_3qn7 _61-0 _2fyi _3qnf">
-                              <div
-                                class="_6g3g x150jy0e style-1wrWr"
-                                id="style-1wrWr"
-                              >
-                                <span class="_9zc _9--">
-                                  <i class="_3j7o _2p78 _9--"></i>
-                                </span>
-                              </div>
-                              <div
-                                class="_6g3g x150jy0e style-P5Xwp"
-                                id="style-P5Xwp"
-                              >
-                                <span class="_9zc _9--">
-                                  <i class="_3j7l _2p78 _9--"></i>
-                                </span>
-                              </div>
-                              <div
-                                class="_6g3g x150jy0e style-Nzfiw"
-                                id="style-Nzfiw"
-                              >
-                                <span class="_9zc _9--">
-                                  <i class="_3j7r _2p78 _9--"></i>
-                                </span>
-                              </div>
-                            </div>
-                            <div
-                              class="_6g3g x1h0ha7o x1mpkggp xeuugli x11hbpws style-2qTEy"
-                              id="style-2qTEy"
-                            >
-                              <div class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
-                                6
-                              </div>
-                            </div>
-                            <div
-                              class="_6g3g x11hbpws x1f6kntn x14atkfc style-mNjX6"
-                              id="style-mNjX6"
-                            >
-                              <div class="_3qn7 _61-2 _2fyi _3qnf">
-                                <div
-                                  class="_6g3g x1iji9kk xmix8c7 style-UfDqt"
-                                  id="style-UfDqt"
-                                >
-                                  <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">
-                                    18 comments
-                                  </span>
-                                </div>
-                                <div class="_6g3v style-LWq4i" id="style-LWq4i">
-                                  <span class="x8t9es0 x1fvot60 xo1l8bm xxio538 x1heor9g xq9mrsl x1h4wwuj xeuugli">
-                                    1 share
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="x14nfmen xjm9jq1 x1gryazu xkrivgy xdzyupr"></div>
-                        <div
-                          class="_6g3g xdzyupr x1y1aw1k x1iji9kk x1120s5i x1sln4lm style-IgisJ"
-                          id="style-IgisJ"
-                        >
-                          <div class="x1s688f x11hbpws _3qn7 _6twk _2fyi _3qnf">
-                            <div class="_6g3g style-BPkH6" id="style-BPkH6">
-                              <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                <div
-                                  class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-yv87C"
-                                  id="style-yv87C"
-                                >
-                                  <i
-                                    alt=""
-                                    data-visualcompletion="css-img"
-                                    class="img style-T8S7e"
-                                    id="style-T8S7e"
-                                  ></i>
-                                </div>
-                                <div class="_6g3g style-chr2o" id="style-chr2o">
-                                  Like
-                                </div>
-                              </div>
-                            </div>
-                            <div class="_6g3g style-NtcKA" id="style-NtcKA">
-                              <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                <div
-                                  class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-5vX2W"
-                                  id="style-5vX2W"
-                                >
-                                  <i
-                                    alt=""
-                                    data-visualcompletion="css-img"
-                                    class="img style-aLrB1"
-                                    id="style-aLrB1"
-                                  ></i>
-                                </div>
-                                <div class="_6g3g style-3ewDP" id="style-3ewDP">
-                                  Comment
-                                </div>
-                              </div>
-                            </div>
-                            <div class="_6g3g style-HbYLn" id="style-HbYLn">
-                              <div class="_3qn7 _61-0 _2fyi _3qnf">
-                                <div
-                                  class="_6g3g x1sxyh0 x1j85h84 xg32yw2 style-SJoY1"
-                                  id="style-SJoY1"
-                                >
-                                  <i
-                                    alt=""
-                                    data-visualcompletion="css-img"
-                                    class="img style-ddTp4"
-                                    id="style-ddTp4"
-                                  ></i>
-                                </div>
-                                <div class="_6g3g style-kiSNV" id="style-kiSNV">
-                                  Share
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          <div class="_2eqm snipcss-3BVgC style-IBedm" id="style-IBedm">
-            <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
-              <div class="_8wod" draggable="true">
-                <a
-                  aria-label="clickable background"
-                  class="_3sqf"
-                  href="#"
-                  data-auto-logging-id="f3709fc3201cc98"
-                >
-                  <u class="_8_x7 _3sqf"></u>
-                </a>
-                <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
-                  <div class="x1vjfegm xsgj6o6 x1gslohp">
-                    <div class="_741s _8_x6 _8_vu"></div>
-                    <div class="_3qn7 _61-0 _2fyh _3qnf">
-                      <div class="_3qn7 _61-0 _2fyi _3qnf">
-                        <div
-                          role="columnheader"
-                          tabindex="-1"
-                          data-mouseoverable="1"
-                        >
-                          <div class="_90u_ style-3NWtE" id="style-3NWtE">
-                            <div
-                              class="_4ik4 _4ik5 style-UPjyp"
-                              id="style-UPjyp"
-                            >
-                              <div id="style-g376k" class="style-g376k">
-                                Delivery
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div class="x8t9es0 xw23nyj xo1l8bm x63nzvj x6lvj10 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                    </div>
-                  </div>
-                  <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                    <div class="x1gryazu xxk0z11">
-                      <div>
-                        <button
-                          aria-pressed="false"
-                          type="button"
-                          aria-disabled="false"
-                          class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-BsqPo"
-                          id="style-BsqPo"
-                        >
-                          <div class="_43rl">
-                            <i
-                              aria-hidden="true"
-                              class="_271o img style-4vf2H"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-4vf2H"
-                            ></i>
-                            <span class="accessible_elem">
-                              Open Inline Column Action Menu
-                            </span>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      dataIndex: "Delivery",
-      key: "Delivery",
-      width: 100,
-      render: (text) => (
-        <div className="campaign-name-cell">
-          <div
-            style={{ position: "relative", display: "flex" }}
-            className="campaign-name"
-          >
-            {text === "Active" ? (
-              <div
-                style={{
-                  width: "8px",
-                  marginRight: "5px",
-                  height: "8px",
-                  borderRadius: "50%",
-                  backgroundColor: "#66be0f",
-                }}
-              ></div>
-            ) : null}
-            <div style={{ fontSize: "14px", marginTop: "-7px" }}>
-              <div>{text}</div>
-              <div style={{ fontSize: "12px", color: "gray" }}>Ad</div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          <div class="_2eqm snipcss-3BVgC style-IBedm" id="style-IBedm">
-            <div class="_2eqm _3qn7 _61-2 _2fyi _3qng">
-              <div class="_8wod" draggable="true">
-                <a
-                  aria-label="clickable background"
-                  class="_3sqf"
-                  href="#"
-                  data-auto-logging-id="f3709fc3201cc98"
-                >
-                  <u class="_8_x7 _3sqf"></u>
-                </a>
-                <div class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e">
-                  <div class="x1vjfegm xsgj6o6 x1gslohp">
-                    <div class="_741s _8_x6 _8_vu"></div>
-                    <div class="_3qn7 _61-0 _2fyh _3qnf">
-                      <div class="_3qn7 _61-0 _2fyi _3qnf">
-                        <div
-                          role="columnheader"
-                          tabindex="-1"
-                          data-mouseoverable="1"
-                        >
-                          <div class="_90u_ style-3NWtE" id="style-3NWtE">
-                            <div
-                              class="_4ik4 _4ik5 style-UPjyp"
-                              id="style-UPjyp"
-                            >
-                              <div id="style-g376k" class="style-g376k">
-                                Reach
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div class="x8t9es0 xw23nyj xo1l8bm x63nzvj x6lvj10 xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                    </div>
-                  </div>
-                  <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                    <div class="x1gryazu xxk0z11">
-                      <div>
-                        <button
-                          aria-pressed="false"
-                          type="button"
-                          aria-disabled="false"
-                          class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-BsqPo"
-                          id="style-BsqPo"
-                        >
-                          <div class="_43rl">
-                            <i
-                              aria-hidden="true"
-                              class="_271o img style-4vf2H"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-4vf2H"
-                            ></i>
-                            <span class="accessible_elem">
-                              Open Inline Column Action Menu
-                            </span>
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      dataIndex: "Reach",
-      key: "Reach",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "left" }}>
-          {FormatNumbers(text)}
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div>Impressions</div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Impressions",
-      key: "Impressions",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "left" }}>
-          {FormatNumbers(text)}
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div>Frequency</div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "frequency",
-      key: "frequency",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "left" }}>
-          {FormatNumbers(text)}
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div>Attribute Setting</div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Attributionsetting",
-      key: "Attributionsetting",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px", textAlign: "left" }}>{text}</div>
-      ),
-    },
-    {
-      title: () => (
-        <div className="resulsconainer">
-          {" "}
-          <div>
-            <span
-              style={{ marginRight: "5px" }}
-              id="js_26j"
-              class="snipcss-1Co3h"
-            >
-              <i
-                alt=""
-                data-visualcompletion="css-img"
-                class="img style-JFqyS"
-                id="style-JFqyS"
-              ></i>
-            </span>
-            Results
-          </div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Results",
-      key: "Results",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px" }} className="budygetcontainer">
-          {FormatNumbers(text)}
-          <br />
-          <span style={{ fontSize: "12px", color: "gray" }}>Link clicks</span>
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div style={{ padding: 0, margin: 0 }}>Amount Spend</div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Amountspent",
-      key: "Amountspent",
-      width: 150,
-      render: (text) => (
-        <div style={{ fontSize: "14px" }} className="budygetcontainer">
-          ${FormatNumbers(text)}
-        </div>
-      ),
-    },
-
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div style={{ padding: 0, margin: 0 }}>
-            Cost Per <br /> Results
-          </div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="red" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Costperresult",
-      key: "Costperresult",
-      width: 150,
-      render: (text) => (
-        <div
-          style={{ fontSize: "14px", textAlign: "right" }}
-          className="budygetcontainer"
-        >
-          ${FormatNumbers(text)}
-          <br />
-          <span style={{ fontSize: "12px", color: "gray" }}>
-            Per link click
-          </span>
-        </div>
-      ),
-    },
-
-    {
-      title: (
-        <div className="resulsconainer">
-          {" "}
-          <div style={{ padding: 0, margin: 0 }}>Schedule</div>
-          <div>
-            <CaretDownOutlined style={{ color: "gray" }} color="blue" />
-          </div>{" "}
-        </div>
-      ),
-      dataIndex: "Ends",
-      key: "Ends",
-      width: 150,
-      render: (text) => (
-        <div
-          style={{ fontSize: "14px", textAlign: "left" }}
-          className="budygetcontainer"
-        >
-          --
-        </div>
-      ),
-    },
-    // {
-    //   title: () => (
-    //     <i
-    //       alt="Customise columns..."
-    //       aria-label="Customise columns..."
-    //       data-visualcompletion="css-img"
-    //       class="img snipcss-saPsI style-kgHNC"
-    //       id="style-kgHNC"
-    //     >
-    //       <u>Customise columns...</u>
-    //     </i>
-    //   ),
-    //   dataIndex: "Plus",
-    //   key: "Plus",
-    //   width: 30,
-    //   render: (text) => (
-    //     <div style={{ fontSize: "14px" }} className="budygetcontainer">
-    //       {text}
-    //     </div>
-    //   ),
-    // },
-  ];
-  // Function to handle date selection
-
   const [showcalender, setShowCalender] = useState(false);
   const [pivottable, setPovitTable] = useState("breakdown");
-  const [currentfolder, setcurrentFolder] = useState("Campaings");
-  const [dynamicColumns, setDynamicColumns] = useState([]); // Track dynamic columns
-  const [campaings, setCampaigns] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const getFirstDayOfMonth = () => {
-    const date = new Date();
-    return new Date(date.getFullYear(), date?.getMonth(), 1);
-  };
-  const getLastDayOfMonth = () => {
-    const date = new Date();
-    return new Date(date.getFullYear(), date?.getMonth() + 1, 0);
-  };
-  const [startDate, setStartDate] = useState(getFirstDayOfMonth());
-  const [endDate, setEndDate] = useState(getLastDayOfMonth());
-  const [finalStartDate, setFinalStartDate] = useState(getFirstDayOfMonth());
-  const [finalEndDate, setFinalEndDate] = useState(getLastDayOfMonth());
-  const [hoverDate, setHoverDate] = useState(null);
-  const [selectingEnd, setSelectingEnd] = useState(false);
-  const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedMetrics, setSelectedMetrics] = useState([
     "Page Name",
     "Campaign Name",
@@ -855,8 +26,17 @@ const Reporting = () => {
     "Impressions",
   ]);
 
-  // Function to handle checkbox changes
+  const getFirstDayOfMonth = () =>
+    new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+  const getTodayDate = () => new Date();
 
+  const [selectedOption, setSelectedOption] = useState("This Month");
+  const [startDate, setStartDate] = useState(getFirstDayOfMonth());
+  const [endDate, setEndDate] = useState(getTodayDate());
+  const [hoverDate, setHoverDate] = useState(null);
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [finalStartDate, setFinalStartDate] = useState(getFirstDayOfMonth());
+  const [finalEndDate, setFinalEndDate] = useState(getTodayDate());
   const handleDayClick = (date) => {
     if (!startDate || (startDate && endDate)) {
       setStartDate(date);
@@ -874,42 +54,58 @@ const Reporting = () => {
 
   const handlePrevMonth = () => {
     setCurrentMonth(
-      new Date(currentMonth.setMonth(currentMonth?.getMonth() - 1))
+      new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1)
     );
   };
 
   const handleNextMonth = () => {
     setCurrentMonth(
-      new Date(currentMonth.setMonth(currentMonth?.getMonth() + 1))
+      new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1)
     );
   };
 
-  const setPresetDates = (range) => {
-    setStartDate(range.startDate);
-    setEndDate(range.endDate);
-  };
-  const handleUpdateClick = () => {
-    if (startDate && endDate) {
-      setShowCalender(false);
+  const handleOptionChange = (option) => {
+    setSelectedOption(option);
 
-      setFinalStartDate(startDate); // Update the final start date
-      setFinalEndDate(endDate); // Update the final end date
-    } else {
-      alert("Please select both start and end dates.");
+    const today = new Date();
+    if (option === "This Month") {
+      setStartDate(new Date(today.getFullYear(), today.getMonth(), 1));
+      setEndDate(today);
+    } else if (option === "Last Month") {
+      const firstDayLastMonth = new Date(
+        today.getFullYear(),
+        today.getMonth() - 1,
+        1
+      );
+      const lastDayLastMonth = new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        0
+      );
+      setStartDate(firstDayLastMonth);
+      setEndDate(lastDayLastMonth);
+    } else if (option === "Today") {
+      setStartDate(today);
+      setEndDate(today);
+    } else if (option === "Yesterday") {
+      const yesterday = new Date(today);
+      yesterday.setDate(today.getDate() - 1);
+      setStartDate(yesterday);
+      setEndDate(yesterday);
     }
   };
 
-  const renderCalendar = (date) => {
-    const today = new Date();
-    const year = date.getFullYear();
-    const month = date?.getMonth();
+  const renderDays = (year, month) => {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const firstDayIndex = new Date(year, month, 1).getDay();
 
     const days = [];
     for (let i = 0; i < firstDayIndex; i++) {
-      days.push(<div key={`empty-${month}-${i}`} className="day empty"></div>);
+      days.push(
+        <div key={`empty-${i}`} className="latestreporting-empty-day"></div>
+      );
     }
+
     for (let day = 1; day <= daysInMonth; day++) {
       const currentDate = new Date(year, month, day);
       const isInRange =
@@ -927,15 +123,15 @@ const Reporting = () => {
         hoverDate &&
         currentDate > startDate &&
         currentDate <= hoverDate;
-      const isFutureDate = currentDate > today;
+
       days.push(
         <div
           key={day}
-          className={`day ${isInRange ? "in-range" : ""} ${
-            isSelectedStart ? "selected-start" : ""
-          } ${isSelectedEnd ? "selected-end" : ""} ${
-            isHovering ? "hover" : ""
-          } ${isFutureDate ? "disabled" : ""}`}
+          className={`latestreporting-day ${
+            isInRange ? "latestreporting-range" : ""
+          } ${isSelectedStart ? "latestreporting-highlight" : ""} ${
+            isSelectedEnd ? "latestreporting-highlight" : ""
+          } ${isHovering ? "latestreporting-hover" : ""}`}
           onClick={() => handleDayClick(currentDate)}
           onMouseEnter={() => handleDayMouseEnter(currentDate)}
         >
@@ -945,100 +141,19 @@ const Reporting = () => {
     }
     return days;
   };
+  // Function to handle checkbox changes
 
-  const renderDatePresets = () => {
-    const today = new Date();
-    const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
-    const last7Days = new Date(today);
-    last7Days.setDate(today.getDate() - 7);
-    const last14Days = new Date(today);
-    last14Days.setDate(today.getDate() - 14);
-    const last30Days = new Date(today);
-    last30Days.setDate(today.getDate() - 30);
-    const thisWeekStart = new Date(today);
-    thisWeekStart.setDate(today.getDate() - today.getDay());
-    const lastWeekStart = new Date(thisWeekStart);
-    lastWeekStart.setDate(thisWeekStart.getDate() - 7);
-    const thisMonthStart = new Date(today.getFullYear(), today?.getMonth(), 1);
-    const lastMonthStart = new Date(
-      today.getFullYear(),
-      today?.getMonth() - 1,
-      1
-    );
-    const lastMonthEnd = new Date(today.getFullYear(), today?.getMonth(), 0);
-    return (
-      <div className="presets">
-        <div
-          onClick={() => setPresetDates({ startDate: today, endDate: today })}
-        >
-          Today
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: yesterday, endDate: yesterday })
-          }
-        >
-          Yesterday
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: last7Days, endDate: today })
-          }
-        >
-          Last 7 days
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: last14Days, endDate: today })
-          }
-        >
-          Last 14 days
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: last30Days, endDate: today })
-          }
-        >
-          Last 30 days
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: thisWeekStart, endDate: today })
-          }
-        >
-          This week
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({
-              startDate: lastWeekStart,
-              endDate: new Date(
-                lastWeekStart.getTime() + 6 * 24 * 60 * 60 * 1000
-              ),
-            })
-          }
-        >
-          Last week
-        </div>
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: thisMonthStart, endDate: today })
-          }
-        >
-          This month
-        </div>
+  const handleUpdateClick = () => {
+    if (startDate && endDate) {
+      setShowCalender(false);
 
-        <div
-          onClick={() =>
-            setPresetDates({ startDate: lastMonthStart, endDate: lastMonthEnd })
-          }
-        >
-          Last month
-        </div>
-      </div>
-    );
+      setFinalStartDate(startDate); // Update the final start date
+      setFinalEndDate(endDate); // Update the final end date
+    } else {
+      alert("Please select both start and end dates.");
+    }
   };
+
   const formatDate = (date) => {
     return date?.toLocaleDateString("en-GB", {
       day: "numeric",
@@ -1047,19 +162,6 @@ const Reporting = () => {
     });
   };
 
-  const handleClickRun = (value) => {
-    setcurrentFolder(value);
-  };
-  const FormatNumbers = (entrynum) => {
-    let nf = new Intl.NumberFormat();
-    return nf.format(entrynum); // "1,234,567,890"
-  };
-  const truncateText = (text, charLimit = 30) => {
-    if (text?.length > charLimit) {
-      return text.slice(0, charLimit) + "...";
-    }
-    return text;
-  };
   const breakdownData = [
     {
       title: "Popular breakdowns",
@@ -1486,7 +588,6 @@ const Reporting = () => {
       : [...selectedMetrics, metric];
 
     setSelectedMetrics(updatedSelectedMetrics);
-    setLoading(true); // Start the loading animation
     console.log("updated selected matrics", updatedSelectedMetrics);
     // Update the dynamic columns
   };
@@ -2211,320 +1312,373 @@ const Reporting = () => {
                                                                 zIndex: 3000,
                                                               }}
                                                             >
-                                                              <div className="date-range-picker">
-                                                                <div className="content">
-                                                                  <div className="ss">
-                                                                    <div class="_3-95 snipcss-i26Cr">
-                                                                      <div class="_3qn7 _61-3 _2fyi _3qnf">
-                                                                        <div class="_3-8_"></div>
-                                                                        <div class="_2pic _38_g">
-                                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x19lwn94 x1c4vz4f">
-                                                                            <div>
-                                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x65s2av">
-                                                                                <label
-                                                                                  class="x1ypdohk"
-                                                                                  for="js_81"
-                                                                                >
-                                                                                  <span class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli">
-                                                                                    Compare
-                                                                                    dates
-                                                                                  </span>
-                                                                                </label>
-                                                                              </div>
-                                                                            </div>
-                                                                            <div class="x1rg5ohu x1n2onr6 x3oybdh">
-                                                                              <input
-                                                                                aria-checked="false"
-                                                                                aria-label="Compare dates"
-                                                                                role="switch"
-                                                                                aria-describedby="js_82"
-                                                                                class="xjyslct x1ypdohk x5yr21d x17qophe xdj266r x11i5rnm xat24cr x1mh8g0r x1w3u9th x1t137rt x10l6tqk x13vifvy xh8yej3 x1vjfegm"
-                                                                                id="js_81"
-                                                                                type="checkbox"
-                                                                                value="false"
-                                                                              />
-                                                                              <div class="x1n2onr6 xh8yej3">
-                                                                                <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x1gzqxud xbsr9hj x13dflua xxziih7 x12w9bfk x14qfxbe xexx8yu x4uap5 x18d9i69 xkhd6sd x15406qy">
-                                                                                  <div class=""></div>
-                                                                                  <div class="xw4jnvo x1qx5ct2 x12y6twl x1h45990 xzolkzo x12go9s9 x1rnf11y xprq8jg x13dflua x6o7n8i xxziih7 x12w9bfk x4s1yf2"></div>
-                                                                                </div>
-                                                                                <div class="xwebqov xvyu6v8 xrsgblv x10lij0i xzolkzo x12go9s9 x1rnf11y xprq8jg x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
-                                                                              </div>
-                                                                            </div>
-                                                                          </div>
-                                                                        </div>
-                                                                      </div>
+                                                              <div className="latestreporting-calendar-container">
+                                                                <div className="latestreporting-left-options">
+                                                                  {[
+                                                                    "Maximum",
+                                                                    "Today",
+                                                                    "Yesterday",
+                                                                    "Last 7 Days",
+                                                                    "Last 14 Days",
+                                                                    "Last 30 Days",
+                                                                    "This Week",
+                                                                    "Last Week",
+                                                                    "This Month",
+                                                                    "Last Month",
+                                                                    "This Quarter",
+                                                                    "Last Quarter",
+                                                                    "This Year",
+                                                                    "Last Year",
+                                                                    "Custom",
+                                                                  ].map(
+                                                                    (
+                                                                      option
+                                                                    ) => (
                                                                       <div
-                                                                        id="style-qjCAo"
-                                                                        class="style-qjCAo"
-                                                                      ></div>
-                                                                    </div>
-                                                                    <div className="calendars">
-                                                                      <div className="calendar">
-                                                                        <div className="month-title">
-                                                                          <div
-                                                                            style={{
-                                                                              display:
-                                                                                "flex",
-                                                                              alignItems:
-                                                                                "center",
-                                                                              justifyContent:
-                                                                                "space-between",
-                                                                            }}
-                                                                          >
-                                                                            <button
-                                                                              className="moveicon"
-                                                                              onClick={
-                                                                                handlePrevMonth
-                                                                              }
-                                                                            >
-                                                                              <ChevronLeftIcon className="cheronleft" />
-                                                                            </button>
-                                                                            <div>
-                                                                              {currentMonth.toLocaleString(
-                                                                                "default",
-                                                                                {
-                                                                                  month:
-                                                                                    "long",
-                                                                                  year: "numeric",
-                                                                                }
-                                                                              )}
-                                                                            </div>
-                                                                            <div
-                                                                              style={{
-                                                                                visibility:
-                                                                                  "hidden",
-                                                                              }}
-                                                                            >
-                                                                              s
-                                                                            </div>
-                                                                          </div>
-                                                                          <div>
-                                                                            <ul
-                                                                              class="_owx uiList _4ki _509- snipcss-Hwb3w"
-                                                                              role="row"
-                                                                            >
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Sun
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Mon
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Tues
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Wed
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Thurs
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Fri
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Sat
-                                                                              </li>
-                                                                            </ul>
-                                                                          </div>
-                                                                        </div>
-                                                                        <div className="days">
-                                                                          {renderCalendar(
-                                                                            currentMonth
-                                                                          )}
-                                                                        </div>
-                                                                      </div>
-                                                                      <div className="calendar">
-                                                                        <div className="month-title">
-                                                                          <div
-                                                                            style={{
-                                                                              display:
-                                                                                "flex",
-                                                                              alignItems:
-                                                                                "center",
-                                                                              justifyContent:
-                                                                                "space-between",
-                                                                            }}
-                                                                          >
-                                                                            <div
-                                                                              style={{
-                                                                                visibility:
-                                                                                  "hidden",
-                                                                              }}
-                                                                            >
-                                                                              s
-                                                                            </div>
-                                                                            <div>
-                                                                              {new Date(
-                                                                                currentMonth?.getFullYear(),
-                                                                                currentMonth?.getMonth() +
-                                                                                  1
-                                                                              ).toLocaleString(
-                                                                                "default",
-                                                                                {
-                                                                                  month:
-                                                                                    "long",
-                                                                                  year: "numeric",
-                                                                                }
-                                                                              )}
-                                                                            </div>
-                                                                            <button
-                                                                              className="moveicon"
-                                                                              onClick={
-                                                                                handleNextMonth
-                                                                              }
-                                                                            >
-                                                                              <ChevronRightIcon className="cheronleft" />
-                                                                            </button>
-                                                                          </div>
-                                                                          <div>
-                                                                            <ul
-                                                                              class="_owx uiList _4ki _509- snipcss-Hwb3w"
-                                                                              role="row"
-                                                                            >
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Sun
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Mon
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Tues
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Wed
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Thurs
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Fri
-                                                                              </li>
-                                                                              <li
-                                                                                class="_oww"
-                                                                                role="columnheader"
-                                                                              >
-                                                                                Sat
-                                                                              </li>
-                                                                            </ul>
-                                                                          </div>
-                                                                        </div>
-                                                                        <div className="days">
-                                                                          {renderCalendar(
-                                                                            new Date(
-                                                                              currentMonth?.getFullYear(),
-                                                                              currentMonth?.getMonth() +
-                                                                                1
-                                                                            )
-                                                                          )}
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                    <div className="footer">
-                                                                      <div
-                                                                        style={{
-                                                                          textAlign:
-                                                                            "left",
-                                                                        }}
-                                                                        class="snipcss-CZB9d"
+                                                                        key={
+                                                                          option
+                                                                        }
+                                                                        className="latestreporting-option"
                                                                       >
-                                                                        {startDate &&
-                                                                        endDate
-                                                                          ? `${formatDate(
-                                                                              startDate
-                                                                            )} - ${formatDate(
-                                                                              endDate
-                                                                            )} Karachi Time`
-                                                                          : "Select a date range"}
-                                                                        <div class="_5wr">
-                                                                          Karachi
-                                                                          Time
-                                                                        </div>
+                                                                        <input
+                                                                          type="radio"
+                                                                          id={
+                                                                            option
+                                                                          }
+                                                                          name="date-range"
+                                                                          value={
+                                                                            option
+                                                                          }
+                                                                          checked={
+                                                                            selectedOption ===
+                                                                            option
+                                                                          }
+                                                                          onChange={() =>
+                                                                            handleOptionChange(
+                                                                              option
+                                                                            )
+                                                                          }
+                                                                        />
+                                                                        <label
+                                                                          htmlFor={
+                                                                            option
+                                                                          }
+                                                                        >
+                                                                          {
+                                                                            option
+                                                                          }
+                                                                        </label>
                                                                       </div>
+                                                                    )
+                                                                  )}
+                                                                </div>
+                                                                <div>
+                                                                  <div className="latestreporting-calendar-wrapper">
+                                                                    <div className="latestreporting-calendar">
+                                                                      <div className="latestreporting-month">
+                                                                        <button
+                                                                          onClick={
+                                                                            handlePrevMonth
+                                                                          }
+                                                                        >
+                                                                          <ChevronLeftIcon
+                                                                            style={{
+                                                                              width:
+                                                                                "20px",
+                                                                              height:
+                                                                                "20px",
+                                                                            }}
+                                                                          />
+                                                                        </button>
+                                                                        <span>
+                                                                          {currentMonth.toLocaleString(
+                                                                            "default",
+                                                                            {
+                                                                              month:
+                                                                                "long",
+                                                                            }
+                                                                          )}{" "}
+                                                                          {currentMonth.getFullYear()}
+                                                                        </span>
+                                                                      </div>
+                                                                      <div className="latestreporting-day-labels">
+                                                                        {[
+                                                                          "Sun",
+                                                                          "Mon",
+                                                                          "Tues",
+                                                                          "Wed",
+                                                                          "Thurs",
+                                                                          "Fri",
+                                                                          "Sat",
+                                                                        ].map(
+                                                                          (
+                                                                            day
+                                                                          ) => (
+                                                                            <div
+                                                                              key={
+                                                                                day
+                                                                              }
+                                                                            >
+                                                                              {
+                                                                                day
+                                                                              }
+                                                                            </div>
+                                                                          )
+                                                                        )}
+                                                                      </div>
+                                                                      <div className="latestreporting-days">
+                                                                        {renderDays(
+                                                                          currentMonth.getFullYear(),
+                                                                          currentMonth.getMonth()
+                                                                        )}
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div className="latestreporting-calendar">
+                                                                      <div
+                                                                        className="latestreporting-month"
+                                                                        style={{
+                                                                          display:
+                                                                            "flex",
+                                                                          alignItems:
+                                                                            "center",
+                                                                          justifyContent:
+                                                                            "space-between",
+                                                                        }}
+                                                                      >
+                                                                        <span
+                                                                          style={{
+                                                                            visibility:
+                                                                              "hidden",
+                                                                          }}
+                                                                        >
+                                                                          ss
+                                                                        </span>
+                                                                        <span>
+                                                                          {new Date(
+                                                                            currentMonth.getFullYear(),
+                                                                            currentMonth.getMonth() +
+                                                                              1
+                                                                          ).toLocaleString(
+                                                                            "default",
+                                                                            {
+                                                                              month:
+                                                                                "long",
+                                                                            }
+                                                                          )}{" "}
+                                                                          {new Date(
+                                                                            currentMonth.getFullYear(),
+                                                                            currentMonth.getMonth() +
+                                                                              1
+                                                                          ).getFullYear()}
+                                                                        </span>
+                                                                        <button
+                                                                          onClick={
+                                                                            handleNextMonth
+                                                                          }
+                                                                        >
+                                                                          <ChevronRightIcon
+                                                                            style={{
+                                                                              width:
+                                                                                "20px",
+                                                                              height:
+                                                                                "20px",
+                                                                            }}
+                                                                          />
+                                                                        </button>
+                                                                      </div>
+                                                                      <div className="latestreporting-day-labels">
+                                                                        {[
+                                                                          "Sun",
+                                                                          "Mon",
+                                                                          "Tues",
+                                                                          "Wed",
+                                                                          "Thurs",
+                                                                          "Fri",
+                                                                          "Sat",
+                                                                        ].map(
+                                                                          (
+                                                                            day
+                                                                          ) => (
+                                                                            <div
+                                                                              key={
+                                                                                day
+                                                                              }
+                                                                            >
+                                                                              {
+                                                                                day
+                                                                              }
+                                                                            </div>
+                                                                          )
+                                                                        )}
+                                                                      </div>
+                                                                      <div className="latestreporting-days">
+                                                                        {renderDays(
+                                                                          currentMonth.getFullYear(),
+                                                                          currentMonth.getMonth() +
+                                                                            1
+                                                                        )}
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div
+                                                                    style={{
+                                                                      marginRight:
+                                                                        "45px",
+                                                                    }}
+                                                                    className="latestreporting-footer"
+                                                                  >
+                                                                    <select
+                                                                      style={{
+                                                                        height:
+                                                                          "40px",
+                                                                      }}
+                                                                      value={
+                                                                        selectedOption
+                                                                      }
+                                                                      onChange={(
+                                                                        e
+                                                                      ) =>
+                                                                        handleOptionChange(
+                                                                          e
+                                                                            .target
+                                                                            .value
+                                                                        )
+                                                                      }
+                                                                    >
+                                                                      {[
+                                                                        "Maximum",
+                                                                        "Today",
+                                                                        "Yesterday",
+                                                                        "Last 7 Days",
+                                                                        "Last 14 Days",
+                                                                        "Last 30 Days",
+                                                                        "This Week",
+                                                                        "Last Week",
+                                                                        "This Month",
+                                                                        "Last Month",
+                                                                        "This Quarter",
+                                                                        "Last Quarter",
+                                                                        "This Year",
+                                                                        "Last Year",
+                                                                        "Custom",
+                                                                      ].map(
+                                                                        (
+                                                                          option
+                                                                        ) => (
+                                                                          <option
+                                                                            key={
+                                                                              option
+                                                                            }
+                                                                            value={
+                                                                              option
+                                                                            }
+                                                                          >
+                                                                            {
+                                                                              option
+                                                                            }
+                                                                          </option>
+                                                                        )
+                                                                      )}
+                                                                    </select>
+                                                                    <input
+                                                                      style={{
+                                                                        height:
+                                                                          "28px",
+                                                                      }}
+                                                                      type="text"
+                                                                      value={
+                                                                        startDate
+                                                                          ? startDate.toDateString()
+                                                                          : ""
+                                                                      }
+                                                                      readOnly
+                                                                    />
+                                                                    <input
+                                                                      style={{
+                                                                        height:
+                                                                          "28px",
+                                                                      }}
+                                                                      type="text"
+                                                                      value={
+                                                                        endDate
+                                                                          ? endDate.toDateString()
+                                                                          : ""
+                                                                      }
+                                                                      readOnly
+                                                                    />
+                                                                  </div>
+                                                                  <br />
+                                                                  <div
+                                                                    style={{
+                                                                      display:
+                                                                        "flex",
+                                                                      alignItems:
+                                                                        "center",
+                                                                      justifyContent:
+                                                                        "space-between",
+                                                                      marginRight:
+                                                                        "45px",
+                                                                    }}
+                                                                  >
+                                                                    <p
+                                                                      style={{
+                                                                        color:
+                                                                          "gray",
+                                                                        textAlign:
+                                                                          "left",
+                                                                      }}
+                                                                    >
+                                                                      Dates are
+                                                                      shown in
+                                                                      Karachi
+                                                                      Time
+                                                                    </p>
+                                                                    <div>
                                                                       <button
-                                                                        className="cancel-btn"
-                                                                        onClick={() => {
-                                                                          setStartDate(
-                                                                            null
-                                                                          );
-                                                                          setEndDate(
-                                                                            null
-                                                                          );
+                                                                        style={{
+                                                                          padding:
+                                                                            "10px",
+                                                                          border:
+                                                                            "1px solid gainsboro",
+                                                                          backgroundColor:
+                                                                            "transparent",
+                                                                          borderRadius:
+                                                                            "5px",
+                                                                          width:
+                                                                            "80px",
+                                                                          fontWeight:
+                                                                            "bold",
+                                                                          marginRight:
+                                                                            "5px",
                                                                         }}
                                                                       >
                                                                         Cancel
                                                                       </button>
                                                                       <button
-                                                                        disabled={
-                                                                          !startDate ||
-                                                                          !endDate
-                                                                        } // Disable button if dates are incomplete
                                                                         onClick={
                                                                           handleUpdateClick
                                                                         }
-                                                                        className="update-btn"
+                                                                        style={{
+                                                                          padding:
+                                                                            "10px",
+                                                                          width:
+                                                                            "80px",
+                                                                          border:
+                                                                            "1px solid gainsboro",
+                                                                          backgroundColor:
+                                                                            "#0978bf",
+                                                                          color:
+                                                                            "white",
+                                                                          outline:
+                                                                            "none",
+                                                                          borderRadius:
+                                                                            "5px",
+                                                                        }}
                                                                       >
                                                                         Update
                                                                       </button>
                                                                     </div>
-                                                                  </div>
-                                                                  <div>
-                                                                    <span className="datepresetns">
-                                                                      <li
-                                                                        style={{
-                                                                          listStyle:
-                                                                            "none",
-                                                                          marginLeft:
-                                                                            "13px",
-                                                                        }}
-                                                                        data-hover="tooltip"
-                                                                        data-tooltip-display="overflow"
-                                                                        class="_1qpp snipcss-PwavB"
-                                                                      >
-                                                                        Date
-                                                                        presets
-                                                                      </li>
-                                                                    </span>
-                                                                    {renderDatePresets()}
                                                                   </div>
                                                                 </div>
                                                               </div>
@@ -3499,16 +2653,7 @@ const Reporting = () => {
                                                   </div>
                                                 </div>
                                               </div>
-                                              {loading && (
-                                                <div className="progress-bar-container">
-                                                  <div
-                                                    className="progress-bar"
-                                                    style={{
-                                                      width: `${loadingProgress}%`,
-                                                    }}
-                                                  ></div>
-                                                </div>
-                                              )}
+
                                               {/* future render here */}
                                               <div
                                                 className="mainbarkks"
@@ -3522,9 +2667,12 @@ const Reporting = () => {
                                                   whiteSpace: "nowrap", // Prevents table cells from wrapping, ensuring the table extends horizontally
                                                 }}
                                               >
-                                                <FBAReporting
+                                                <VersionTwoReporting
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
+                                                  selectedMetrics={
+                                                    selectedMetrics
+                                                  }
                                                 />
                                               </div>
                                             </div>

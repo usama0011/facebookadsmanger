@@ -42,6 +42,7 @@ import FBAReporting from "./pages/FBAReporting";
 import UploadReportingCSV from "./pages/UploadReportingCSV";
 import LoadingDiv from "./components/LoadingDivReporting";
 import CampaigsnPageLoading from "./components/CampaigsnPageLoading";
+import LatestVersionTwoCalender from "./components/LatestVersionTwoCalender";
 const Reporting = lazy(() => import("./pages/./Reporting"));
 const App = lazy(() => import("./App"));
 
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/versiontwotest",
+    element: <LatestVersionTwoCalender />,
   },
   {
     path: "/calender",
