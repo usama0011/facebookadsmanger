@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VersoinTwo.css";
 import HoverBox from "../components/HoverBox";
-import axios from "axios";
-
 const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
@@ -35,12 +33,12 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
         setLoadingProgress((prev) => (prev < 90 ? prev + 10 : prev));
       }, 200);
 
-      const response = await axios.get(
+      const response = await fetch(
         `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
       );
-      const result = await response.data;
+      const result = await response.json();
       setData(result);
-      console.log("resonse sjons", result);
+      console.log(result);
       clearInterval(interval);
       setLoadingProgress(100);
       setTimeout(() => setLoadingProgress(0), 500);
@@ -239,10 +237,10 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           <div
             style={{
               position: "absolute",
-              top: "65px",
+              top: 0,
               left: 0,
               width: `${loadingProgress}%`,
-              height: "5px",
+              height: "4px",
               backgroundColor: "#1890ff",
               transition: "width 0.2s ease-in-out",
             }}
@@ -445,7 +443,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           ) : (
             <tr>
               <td colSpan={columns.length} style={{ textAlign: "center" }}>
-                {loading ? <div></div> : "No Data Available"}
+                {loading ? "Loading..." : "No Data Available"}
               </td>
             </tr>
           )}
