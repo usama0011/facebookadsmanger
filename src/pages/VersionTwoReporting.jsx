@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VersoinTwo.css";
 import HoverBox from "../components/HoverBox";
+import axios from "axios";
 
 const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
   const [data, setData] = useState([]);
@@ -34,12 +35,12 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
         setLoadingProgress((prev) => (prev < 90 ? prev + 10 : prev));
       }, 200);
 
-      const response = await fetch(
+      const response = await axios.get(
         `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
       );
-      const result = await response.json();
+      const result = await response.data;
       setData(result);
-
+      console.log("resonse sjons", result);
       clearInterval(interval);
       setLoadingProgress(100);
       setTimeout(() => setLoadingProgress(0), 500);
